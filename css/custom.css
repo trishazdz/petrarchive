@@ -1,1 +1,40 @@
 /* Place project-specific CSS here */
+
+html {width:44em;}
+
+lg[type = 'sonnet']:before {
+display:block;
+clear:both;
+font-weight:bold;
+content: attr(n) " (sonnet)";
+}
+
+lg[type = 'dblhemi'] {
+height:24pt;
+display:block;
+clear:both;
+margin-top:.25em;
+margin-bottom:.25em;
+}
+
+lg[type = 'dblhemi']:first-of-type l:last-of-type {
+padding-top:.7em;
+}
+
+lg[type = 'dblhemi'] l:first-of-type {
+float:left;
+margin-right:1.5em;
+}
+
+lg[type = 'dblhemi'] l:last-of-type {
+float:left;
+}
+
+choice reg {display:none}
+
+subst add {color:gray;
+vertical-align:baseline;}
+
+#teibpToolbox {
+left:70em;
+}

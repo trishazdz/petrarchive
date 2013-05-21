@@ -17,4 +17,5 @@
     <xsl:template match="tei:g" priority="99">
         <xsl:value-of select="normalize-space(id(substring-after(@ref,'#'))/tei:mapping[@type = 'visual'])"/>
     </xsl:template>
+    
 </xsl:stylesheet>

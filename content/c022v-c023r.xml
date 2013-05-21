@@ -65,7 +65,7 @@
          </charDecl>
       </encodingDesc>
    </teiHeader>
-   <!-- replaced PUA u+f1f7 w/ the proper character for virgule u+002f. -->
+   <!-- replaced PUA u+f1f7 w/ the proper character for virgule (the common slash, or solidus): u+002f. -->
    <!-- MS Word label [5; s] becomes <lg type="sonnet" n="5"> -->
    <!--
        The standard solution below does not allow us to italicize only the "m" in "sempre."
@@ -87,18 +87,18 @@
                <l n="1"><hi rendition="#red #fs24pt"
                   >M</hi><hi rendition="#small-caps">a</hi>i <choice><abbr>nō</abbr><expan>non</expan></choice> 
                   uo piu cantarẹ<g ref="#punctelevhiback"/> comio soleua</l>
-               <l n="2">Chaltri no mintendeua ondebbi scorno</l>
+               <l n="2">Chaltri no mintendeua<g ref="#punctelevhiback"/> ondebbi scorno</l>
             </lg>
             <lg type="dblhemi">
                <l n="3">Et puossi in bel soggiorno ‘ esser molesto.</l>
-               <l n="4">Il sempre sospirar nulla releua.</l>
+               <l n="4">Il sempre sospirar<g ref="#punctelevhiback"/> nulla releua.</l>
             </lg>
             <lg type="dblhemi">
-               <l n="5">Gia su per lalpi neua dognintorno</l>
-               <l n="6">Et e gia presso al giorno ondio son desto.</l>
+               <l n="5">Gia su per lalpi neua<g ref="#punctelevhiback"/> dognintorno</l>
+               <l n="6">Et e gia presso al giorno<g ref="#punctelevhiback"/> ondio son desto.</l>
             </lg>
             <lg type="dblhemi">
-               <l n="7">Vn acto dolce honesto e gentil cosa.</l>
+               <l n="7">Vn acto dolce honesto<g ref="#punctelevhiback"/> e gentil cosa.</l>
                <l n="8">Et in donna amorosa ‘ anchor maggrada.</l>
             </lg>
             <lg type="dblhemi">
@@ -107,7 +107,7 @@
             </lg>
             <lg type="dblhemi">
                <l n="11">Amor regge suo imperio sença spada.</l>
-               <l n="12">Chi smarrita a la strada torni in dietro.</l>
+               <l n="12">Chi smarrita a la strada<g ref="#punctelevhiback"/> torni in dietro.</l>
             </lg>
             <lg type="dblhemi">
                <l n="13">Chi <choice><abbr>nō</abbr><expan>non</expan></choice> a albergo &virg; posisi insul uerde.</l>
@@ -117,20 +117,20 @@
          </lg>
          <lg type="stanza">
             <lg type="dblhemi">
-               <l n="16"><hi rendition="#blue #fs24pt">¶</hi>I die in guarda a san Pietro or <choice><abbr>nō</abbr><expan>non</expan></choice> piú no.</l>
+               <l n="16"><hi rendition="#blue #fs24pt">¶</hi>I die in guarda a san Pietro<g ref="#punctelevhiback"/> or <choice><abbr>nō</abbr><expan>non</expan></choice> piú no.</l>
                <l n="17">Intendami chi po. chimintendio.</l>
             </lg>
             <lg type="dblhemi">
                <l n="18">Graue soma e un mal fio. a mantenerlo.</l>
-               <l n= "19">Quanto posso mi spetro &amp7; sol mi sto.</l>
+               <l n= "19">Quanto posso mi spetro<g ref="#punctelevhiback"/> &amp7; sol mi sto.</l>
             </lg>
             <lg type="dblhemi">
                <l n="20">Fetonte odo chen po ‘ cadde. et morio.</l>
                <l n="21">Et gia di la dal rio ‘ passato el merlo.</l>
             </lg>
             <lg type="dblhemi">
-               <l n="22">De uenite a uederlo or i non uoglio</l>
-               <l n="23">Non e gioco uno scoglio &in; meçço londe.</l>
+               <l n="22">De uenite a uederlo<g ref="#punctelevhiback"/> or i non uoglio</l>
+               <l n="23">Non e gioco uno scoglio<g ref="#punctelevhiback"/> &in; meçço londe.</l>
             </lg>
             <lg type="dblhemi">
                <l n="24">Entra le fronde ‘ il uisco. assai mi doglio.</l>
@@ -148,15 +148,15 @@
          </lg>
             <lg type="stanza">
             <lg type="dblhemi">
-               <l n="31"><hi rendition="#red #fs24pt">¶</hi>Prouerbio ama chi tama e fatto antico.</l>
-               <l n="32">I so ben quel chio dico or lassandare.</l>
+               <l n="31"><hi rendition="#red #fs24pt">¶</hi>Prouerbio ama chi tama<g ref="#punctelevhiback"/> e fatto antico.</l>
+               <l n="32">I so ben quel chio dico<g ref="#punctelevhiback"/> or lassandare.</l>
             </lg>
             <lg type="dblhemi">
-               <l n="33">Che conuen chaltri impare ale sue spese.</l>
+               <l n="33">Che conuen chaltri impare<g ref="#punctelevhiback"/> ale sue spese.</l>
                <l n="34">Vn humil <choice><abbr>dōna</abbr><expan>donna</expan></choice> grama ‘ Vn dolce amico.</l>
             </lg>
             <lg type="dblhemi">
-               <l n="35">Mal si conosce il fico a me pur pare</l>
+               <l n="35">Mal si conosce il fico<g ref="#punctelevhiback"/> a me pur pare</l>
                <l n="36">Senno a <choice><abbr>nō</abbr><expan>non</expan></choice> cominciare ‘ troppalte imprese.</l>
             </lg>
             <lg type="dblhemi">
@@ -188,11 +188,11 @@
             </lg>
             <lg type="dblhemi">
                <l n="50">Per bene star si scende ‘ molte miglia.</l>
-               <l n="51">Tal par gran merauiglia &amp7; poi si spreçça.</l>
+               <l n="51">Tal par gran merauiglia<g ref="#punctelevhiback"/> &amp7; poi si spreçça.</l>
             </lg>
             <lg type="dblhemi">
                <l n="52">Vna chiusa belleçça ‘ e piu soaue.</l>
-               <l n="53">Benedetta la chiaue che sauuolse</l>
+               <l n="53">Benedetta la chiaue<g ref="#punctelevhiback"/> che sauuolse</l>
             </lg>
             <lg type="dblhemi">
                <l n="54">Al cor &virg; &amp7; sciolse ‘ lalma. &amp7; scossa laue</l>
@@ -220,7 +220,7 @@
                </lg>
                <lg type="dblhemi">
                   <l n="65">Et le fere seluagge ‘ entra le mura.</l>
-                  <l n="66">Et la dolce paura el bel costume.</l>
+                  <l n="66">Et la dolce paura<g ref="#punctelevhiback"/> el bel costume.</l>
                </lg>
                <lg type="dblhemi">
                   <l n="67">Et di duo fonti un fiume ‘ &in; pace uolto </l>
@@ -243,14 +243,14 @@
             <lg type="stanza">
                <lg type="dblhemi">
                   <l n="76"><hi rendition="#blue #fs24pt">¶</hi>De passati miei danni ‘ piango et rido</l>
-                  <l n="77"><choice><abbr>ꝑche</abbr><expan>perche</expan></choice> molto mi fido in quel chi odo.</l>
+                  <l n="77"><choice><abbr>ꝑche</abbr><expan>perche</expan></choice> molto mi fido<g ref="#punctelevhiback"/> in quel chi odo.</l>
                </lg>
                <lg type="dblhemi">
-                  <l n="78">Del presente mi godo  et meglio aspetto.</l>
-                  <l n="79">Et uo <choice><abbr>contāto</abbr><expan>contando</expan></choice> gli anni  &amp7; taccio &amp7; grido.</l>
+                  <l n="78">Del presente mi godo <g ref="#punctelevhiback"/> et meglio aspetto.</l>
+                  <l n="79">Et uo <choice><abbr>contāto</abbr><expan>contando</expan></choice> gli anni <g ref="#punctelevhiback"/> &amp7; taccio &amp7; grido.</l>
                </lg>
                <lg type="dblhemi">
-                  <l n="80">En bel ramo <choice><abbr>mānido</abbr><expan>mannido</expan></choice>  et in tal modo &virg;</l>
+                  <l n="80">En bel ramo <choice><abbr>mānido</abbr><expan>mannido</expan></choice> <g ref="#punctelevhiback"/> et in tal modo &virg;</l>
                   <l n="81">Chi ne ringratio &virg; &amp7; lodo ‘ il gran disdetto</l>
                </lg>
                <lg type="dblhemi">
@@ -258,12 +258,12 @@
                   <l n="83">Et ne lalma depinto ‘ i sare udito.</l>
                </lg>
                <lg type="dblhemi">
-                  <l n="84">Et mostratone a dito  et <choice><abbr>āne</abbr><expan>anne</expan></choice> extinto.</l>
+                  <l n="84">Et mostratone a dito <g ref="#punctelevhiback"/> et <choice><abbr>āne</abbr><expan>anne</expan></choice> extinto.</l>
                   <l n="85">Tanto inançi son pinto.</l>
                </lg>
                <lg type="dblhemi">
                   <l n="86">Chil pur diro &virg; Non fostu tantardito.</l>
-                  <l n="87">Chi mal fianco ferito  &amp7; chil risalda.</l>
+                  <l n="87">Chi mal fianco ferito <g ref="#punctelevhiback"/> &amp7; chil risalda.</l>
                </lg>
                <lg type="dblhemi">
                   <l n="88">Per cui nel cor uia piu chen carta scriuo.</l>

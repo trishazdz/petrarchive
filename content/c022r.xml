@@ -294,7 +294,7 @@ the line wraps. -->
    <text>
       <body>
          <pb n="Charta 1" facs="../images/vat-lat3195-f/vat-lat3195-f-022r.jpg" />
-         <lg type="sonnet" n="[Rvf Number]">
+         <lg type="sonnet" n="102">
             <lg type="dblhemi">
                <l n="1"><hi rendition="#red #fs24pt"
                   >C</hi><hi rendition="#small-caps">e</hi>sare poi chel traditor degitto</l>
@@ -328,7 +328,7 @@ the line wraps. -->
             <!-- Pero abbreviated ꝑo -->
             
          </lg>
-         <lg type="sonnet" n="[Rvf Number]">
+         <lg type="sonnet" n="103">
             <lg type="dblhemi">
                <l n="1"><hi rendition="#blue #fs24pt"
                   >U</hi><hi rendition="#small-caps">i</hi>nse hanibal. et non seppe usar poi</l>
@@ -361,7 +361,7 @@ the line wraps. -->
                   <choice><abbr>mōdo</abbr><expan>mondo</expan></choice> honor &amp7; fama.</l>
             </lg>
          </lg> 
-         <lg type="sonnet" n="[Rvf Number]">
+         <lg type="sonnet" n="104">
             <lg type="dblhemi">
                <l n="1"><hi rendition="#red #fs24pt"
                   >L</hi><hi rendition="#small-caps">a</hi>spectata uertu chen uoi fioriua</l>

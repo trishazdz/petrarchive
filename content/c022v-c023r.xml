@@ -14,8 +14,8 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <!-- Update Carta number and verso/recto. -->
-            <title>Petrarch's <title>Rerum vulgarium fragmenta</title>: Carta 22 verso</title>
+            <!-- Update Charta number and verso/recto. -->
+            <title>Petrarch's <title>Rerum vulgarium fragmenta</title>: Chartae 22 verso and 23 recto</title>
             <editor xml:id="hws">H. Wayne Storey</editor>
             <respStmt>
                <resp><!-- role/title --></resp>

@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="petrarchive.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-stylesheet type="text/xsl" href="teibp.xsl"?>
+<?xml-stylesheet type="text/xsl" href="petrarchive.xsl"?>
 <!DOCTYPE TEI [
 <!ENTITY amp7 "<choice><abbr>&amp;</abbr><expan>et</expan></choice>">
 <!ENTITY per "<choice><abbr>ꝑ</abbr><expan>per</expan></choice>">
 <!ENTITY virg "/">
 <!ENTITY sempre "<choice><abbr>sēpre</abbr><expan>sempre</expan></choice>">
 <!ENTITY quanto "<choice><abbr>quāto</abbr><expan>quanto</expan></choice>">
+<!ENTITY in "<choice><abbr>ī</abbr><expan>in</expan></choice>">
+<!ENTITY punctelevhiback "&#xF1FA;">
 ]>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <!-- Update Carta number and verso/recto. -->
-            <title>Petrarch's <title>Rerum vulgarium fragmenta</title>: Carta 1 verso</title>
+            <title>Petrarch's <title>Rerum vulgarium fragmenta</title>: Carta 22 verso</title>
             <editor xml:id="hws">H. Wayne Storey</editor>
             <respStmt>
                <resp><!-- role/title --></resp>
@@ -49,6 +51,18 @@
                font-variant:small-caps;
             </rendition>
          </tagsDecl>
+         <charDecl>
+            <char xml:id="punctelevhiback">
+               <charName>PUNCTUS ELEVATUS WITH HIGH BACK</charName>
+               <charProp>
+                  <localName>entity</localName>
+                  <value>punctelevhiback</value>
+               </charProp>
+               <mapping type="visual">.&#x0312;</mapping>
+               <mapping type="MUFI">U+F1FA</mapping>
+               <mapping type="PUA">U+F1FA</mapping>
+            </char>
+         </charDecl>
       </encodingDesc>
    </teiHeader>
    <!-- replaced PUA u+f1f7 w/ the proper character for virgule u+002f. -->
@@ -66,13 +80,13 @@
 
    <text>
       <body>
-         <pb n="c22v" facs="../images/vat-lat3915-f/VAT-LAT3195-F-022v.jpg"/>
-         <lg type="canzone" n="[Rvf Number]">
+         <pb n="c22v" facs="../images/vat-lat3195-f/vat-lat3195-f-022v.jpg"/>
+         <lg type="canzone" n="105">
          <lg type="stanza">
             <lg type="dblhemi">
                <l n="1"><hi rendition="#red #fs24pt"
                   >M</hi><hi rendition="#small-caps">a</hi>i <choice><abbr>nō</abbr><expan>non</expan></choice> 
-                  uo piu cantarẹ comio soleua</l>
+                  uo piu cantarẹ<g ref="#punctelevhiback"/> comio soleua</l>
                <l n="2">Chaltri no mintendeua ondebbi scorno</l>
             </lg>
             <lg type="dblhemi">
@@ -101,9 +115,9 @@
             </lg>
             <l n="15">Spenga la sete sua <choice><abbr>cō</abbr><expan>con</expan></choice> un bel uetro.</l>
          </lg>
-            <lg type="stanza">
+         <lg type="stanza">
             <lg type="dblhemi">
-               <l n="16">I die in guarda a san Pietro or <choice><abbr>nō</abbr><expan>non</expan></choice> piú no.</l>
+               <l n="16"><hi rendition="#blue #fs24pt">¶</hi>I die in guarda a san Pietro or <choice><abbr>nō</abbr><expan>non</expan></choice> piú no.</l>
                <l n="17">Intendami chi po. chimintendio.</l>
             </lg>
             <lg type="dblhemi">
@@ -116,7 +130,7 @@
             </lg>
             <lg type="dblhemi">
                <l n="22">De uenite a uederlo or i non uoglio</l>
-               <l n="23">Non e gioco uno scoglio <choice><abbr>ī</abbr><expan>in</expan></choice> meçço londe.</l>
+               <l n="23">Non e gioco uno scoglio &in; meçço londe.</l>
             </lg>
             <lg type="dblhemi">
                <l n="24">Entra le fronde ‘ il uisco. assai mi doglio.</l>
@@ -128,14 +142,13 @@
             </lg>
             <lg type="dblhemi">
                <l n="28">Altri chil prega si delegua et fugge.</l>
-               <l n="29">A‹l›tri al ghiaccio si strugge. </l>
+               <l n="29">A<add rendition="#super">l</add> <subst><del type="erasure"><gap reason="illegible"/></del><add>tri al ghiaccio si stru</add></subst>gge.</l>
             </lg>
-            
                <l n="30">Altri di &amp7; notte la sua morte brama.</l>
-            </lg>
+         </lg>
             <lg type="stanza">
             <lg type="dblhemi">
-               <l n="31">Prouerbio ama chi tama e fatto antico.</l>
+               <l n="31"><hi rendition="#red #fs24pt">¶</hi>Prouerbio ama chi tama e fatto antico.</l>
                <l n="32">I so ben quel chio dico or lassandare.</l>
             </lg>
             <lg type="dblhemi">
@@ -164,9 +177,9 @@
             </lg>
                <l n="45"><subst><del type="erasure"><gap reason="illegible"/></del><add>Mi</add></subst> meni a passo omai tra le sue gregge.</l>
             </lg>
-            <lg type="stanza">
+         <lg type="stanza">
             <lg type="dblhemi">
-               <l n="46">Forse chogniuom che legge ‘ non sintende.</l>
+               <l n="46"><hi rendition="#blue #fs24pt">¶</hi>Forse chogniuom che legge ‘ non sintende.</l>
                <l n="47">Et la rete tal tende   che non piglia.</l>
             </lg>
             <lg type="dblhemi">
@@ -193,11 +206,125 @@
                <l n="58">Et dolendo adolcisse il mio dolore.</l>
                <l n="59">Ondio ringratio amore</l>
             </lg>
-               <pb n="c23r" facs="../images/vat-lat3915-f/VAT-LAT3195-F-023r.jpg"/>
-            <!-- blank space on line 16? Abbreviation "non", frequent? line 29 and 45, erasure? paragraph markers? -->
-            <l>…</l>
+            <pb n="c23r" facs="../images/vat-lat3195-f/vat-lat3195-f-023r.jpg"/>
+            <!-- line 29 and 45, erasure? -->
+               <l n="60">Che piu nol sento. et e non men che suole.</l>
+            <lg type="stanza">
+               <lg type="dblhemi">
+                  <l n="61"><hi rendition="#red #fs24pt">¶</hi>In silentio parole ‘ accorte et sagge</l>
+                  <l n="62">El suon che mi sottragge ‘ ogni altra cura.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="63">Et la pregione oscura ‘ ouel bel lume.</l>
+                  <l n="64">Le nocturne uiole ‘ per le piagge.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="65">Et le fere seluagge ‘ entra le mura.</l>
+                  <l n="66">Et la dolce paura el bel costume.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="67">Et di duo fonti un fiume ‘ &in; pace uolto </l>
+                  <l n="68">Douio bramo &amp7; ra‹c›colto ‘ oue che sia.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="69">Amor &amp7; gelosia ‘ manno il cor tolto.</l>
+                  <l n="70">Ei segni del bel uolto</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="71">Che mi conducon &per; piu piana uia.</l>
+                  <l n="72">A la sperança mia ‘ al fin de gliaffanni </l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="73">O riposto mio bene. et quel che segue.</l>
+                  <l n="74">Or pace &virg; or guerra &virg; or triegue &virg;</l>
+            </lg>
+               <l n="75">Mai non mabbandonate &in; questi <choice><abbr>pāni</abbr><expan>panni</expan></choice>.</l>
+         </lg>
+            <lg type="stanza">
+               <lg type="dblhemi">
+                  <l n="76"><hi rendition="#blue #fs24pt">¶</hi>De passati miei danni ‘ piango et rido</l>
+                  <l n="77"><choice><abbr>ꝑche</abbr><expan>perche</expan></choice> molto mi fido in quel chi odo.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="78">Del presente mi godo  et meglio aspetto.</l>
+                  <l n="79">Et uo <choice><abbr>contāto</abbr><expan>contando</expan></choice> gli anni  &amp7; taccio &amp7; grido.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="80">En bel ramo <choice><abbr>mānido</abbr><expan>mannido</expan></choice>  et in tal modo &virg;</l>
+                  <l n="81">Chi ne ringratio &virg; &amp7; lodo ‘ il gran disdetto</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="82">Che lindurato affecto ‘ al fine a uinto.</l>
+                  <l n="83">Et ne lalma depinto ‘ i sare udito.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="84">Et mostratone a dito  et <choice><abbr>āne</abbr><expan>anne</expan></choice> extinto.</l>
+                  <l n="85">Tanto inançi son pinto.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="86">Chil pur diro &virg; Non fostu tantardito.</l>
+                  <l n="87">Chi mal fianco ferito  &amp7; chil risalda.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="88">Per cui nel cor uia piu chen carta scriuo.</l>
+                  <l n="89">Chi mi fa morto et uiuo.</l>
+               </lg>
+               <l n="90">Chin un punto magghiaccia. &amp7; mi riscalda.</l>
+            </lg>
+         </lg>
+            <lg type="madrigal" n="[Rvf Number]">
+               <lg type="dblhemi">
+                  <l n="1"><hi rendition="#red #fs24pt"
+                     >N</hi><hi rendition="#small-caps">o</hi>ua angeletta soura lale accorta</l>
+                  <l n="2">Scese dal cielo in su la fresca riua &virg;</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="3">Landio passaua sol &per; mio destino.</l>
+                  <l n="4">Poi che sença compagna &amp7; sença scorta</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="5">Mi uide &virg; un laccio che di seta ordiua</l>
+                  <l n="6">Tese fra lerba &virg; onde uerde il camino.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="7">Allor fui preso. &amp7; <choice><abbr>nō</abbr><expan>non</expan></choice> mi spiacque poi.</l>
+                  <l n="8">Si dolce lume uscia de gliocchi suoi.</l>
+               </lg>
+            </lg>
+            <lg type="sonnet" n="[Rvf Number]">
+               <lg type="dblhemi">
+                  <l n="1"><hi rendition="#blue #fs24pt"
+                     >N</hi><hi rendition="#small-caps">o</hi>n ueggio oue scampar mi possa omai</l>
+                  <l n="2">Si <choice><abbr>lūga</abbr><expan>lunga</expan></choice> guerra i begliocchi mi fanno.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="3">Chi temo lasso nol souerchio affanno</l>
+                  <l n="4">Distrugal cor che triegua non a mai.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="5">Fuggir uorrei. magliamorosi rai</l>
+                  <l n="6">Che di et notte ne la mente stanno</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="7">Risplendon si chal quintodecimo <choice><abbr>ãno</abbr><expan>anno</expan></choice></l>
+                  <l n="8">Mabbaglian piu chel primo giorno assai.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="9">Et limagine lor son si cosparte</l>
+                  <l n="10">Che uoluer non mi posso &virg; ouio non ueggia.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="11">O quella o simil indi accesa luce.</l>
+                  <l n="12">Solo dun lauro tal selua uerdeggia</l>
+            </lg>
+               <lg type="dblhemi">
+                  <l n="13">Chel mio aduersario <choice><abbr>cō</abbr><expan>con</expan></choice> mirabil arte</l>
+                  <l n="14">Vago fra i rami ouunque uuol madduce.</l>
+               </lg>
             </lg>
          </lg>
       </body>
    </text>
 </TEI>
+
+<!-- line 79 contando (d/t). Punctuation. Stanza and canzone: signals error -->

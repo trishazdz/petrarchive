@@ -30,6 +30,7 @@
         <moduleRef key="namesdates"/>
         <moduleRef key="linking"/>
         <moduleRef key="analysis"/>
+        <moduleRef key="gaiji"/>
         
         <elementSpec ident="lg" mode="change" module="textstructure">
           <attList>
@@ -39,15 +40,26 @@
                 <rng:ref xmlns:rng="http://relaxng.org/ns/structure/1.0" name="datatype.Code"/>
               </datatype>
               <valList type="closed" mode="replace">
-                
                 <valItem ident="sonnet">
                   <gloss>sonnet</gloss>
                 </valItem>
                 <valItem ident="dblhemi">
-                  <gloss>double hemitich</gloss>
+                  <gloss>double hemistich</gloss>
+                </valItem>
+                <valItem ident="trplhemi">
+                	<gloss>triple hemistich</gloss>
                 </valItem>
                 <valItem ident="sestina">
                   <gloss>sestina</gloss>
+                </valItem>
+                <valItem ident="madrigal">
+                	<gloss>madrigal</gloss>
+               	</valItem>
+               	<valItem ident="canzone">
+               		<gloss>canzone</gloss>
+              	</valItem>
+                <valItem ident="stanza">
+                  <gloss>stanza</gloss>
                 </valItem>
               </valList>
             </attDef>

@@ -9,7 +9,7 @@ namespace svg = "http://www.w3.org/2000/svg"
 namespace xi = "http://www.w3.org/2001/XInclude"
 namespace xlink = "http://www.w3.org/1999/xlink"
 
-# Schema generated from ODD source 2013-04-22T15:33:13Z. 
+# Schema generated from ODD source 2013-04-29T22:58:45Z. 
 # Edition: 2.3.0. Last updated on 17th January 2013.
 # Edition Location: http://www.tei-c.org/Vault/P5/2.3.0/
 #
@@ -1168,7 +1168,7 @@ model.global.meta =
   | interp
   | interpGrp
 model.milestoneLike = milestone | gb | pb | lb | cb | fw | anchor
-model.gLike = notAllowed
+model.gLike = g
 model.biblLike =
   bibl | biblStruct | biblFull | msDesc | listRelation | relationGrp
 model.biblLike_alternation =
@@ -1587,6 +1587,7 @@ model.encodingDescPart =
   | classDecl
   | geoDecl
   | appInfo
+  | charDecl
 model.editorialDeclPart =
   correction
   | normalization
@@ -2778,11 +2779,23 @@ lg =
       ##  (sonnet) 
       "sonnet"
       | 
-        ##  (double hemitich) 
+        ##  (double hemistich) 
         "dblhemi"
+      | 
+        ##  (triple hemistich) 
+        "trplhemi"
       | 
         ##  (sestina) 
         "sestina"
+      | 
+        ##  (madrigal) 
+        "madrigal"
+      | 
+        ##  (canzone) 
+        "canzone"
+      | 
+        ##  (stanza) 
+        "stanza"
     },
     empty
   }
@@ -6838,4 +6851,94 @@ interpGrp =
     att.interpLike.attributes,
     empty
   }
+g =
+  
+  ## (character or glyph) represents a glyph, or a non-standard character. [5. ]
+  element g {
+    text,
+    att.global.attributes,
+    att.typed.attributes,
+    
+    ## points to a description of the character or glyph intended.
+    attribute ref { data.pointer }?,
+    empty
+  }
+char =
+  
+  ## (character) provides descriptive information about a character. 
+  element char {
+    (charName?,
+     model.descLike*,
+     charProp*,
+     mapping*,
+     figure*,
+     model.graphicLike*,
+     model.noteLike*),
+    att.global.attributes,
+    empty
+  }
+charName =
+  
+  ## (character name) contains the name of a character, expressed following Unicode conventions. 
+  element charName { text, att.global.attributes, empty }
+charProp =
+  
+  ## (character property) provides a name and value for some property of the parent character or glyph. 
+  element charProp {
+    ((unicodeName | localName), value),
+    att.global.attributes,
+    att.typed.attributes,
+    empty
+  }
+charDecl =
+  
+  ## (character declarations) provides information about nonstandard characters and glyphs. 
+  element charDecl {
+    (desc?, (char | glyph)+),
+    att.global.attributes,
+    empty
+  }
+glyph =
+  
+  ## (character glyph) provides descriptive information about a character glyph. 
+  element glyph {
+    (glyphName?,
+     model.descLike*,
+     charProp*,
+     mapping*,
+     figure*,
+     model.graphicLike*,
+     model.noteLike*),
+    att.global.attributes,
+    empty
+  }
+glyphName =
+  
+  ## (character glyph name) contains the name of a glyph, expressed following Unicode conventions for character names. 
+  element glyphName { text, att.global.attributes, empty }
+localName =
+  
+  ## (locally-defined property name) contains a locally defined name for some property. 
+  element localName { text, att.global.attributes, empty }
+mapping =
+  
+  ## (character mapping) contains one or more characters which are related to the parent character or glyph in some respect, as specified by the type attribute.
+  element mapping {
+    macro.xtext, att.global.attributes, att.typed.attributes, empty
+  }
+unicodeName =
+  
+  ## (unicode property name) contains the name of a registered Unicode normative or informative property. 
+  element unicodeName {
+    text,
+    att.global.attributes,
+    
+    ## specifies the version number of the Unicode Standard in which this property name is defined.
+    attribute version { data.version }?,
+    empty
+  }
+value =
+  
+  ## (value) contains a single value for some property, attribute, or other analysis.
+  element value { macro.xtext, att.global.attributes, empty }
 start = TEI

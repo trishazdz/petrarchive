@@ -6,7 +6,12 @@ lg[type = 'sonnet']:before {
 display:block;
 clear:both;
 font-weight:bold;
-content: attr(n) " (sonnet)";
+content:attr(n);
+color:gray;
+font-size:10pt;
+top:40px;
+left:-50px;
+position:relative;
 }
 
 lg[type = 'dblhemi'] {

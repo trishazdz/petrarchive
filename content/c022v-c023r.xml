@@ -142,7 +142,7 @@
             </lg>
             <lg type="dblhemi">
                <l n="28">Altri chil prega si delegua et fugge.</l>
-               <l n="29">A<add rendition="#super">l</add> <subst><del type="erasure"><gap reason="illegible"/></del><add>tri al ghiaccio si stru</add></subst>gge.</l>
+               <l n="29">A<add rendition="#super" place="above"><!-- caret? -->l</add> <subst><del type="erasure"><gap reason="illegible"/></del><add>tri al ghiaccio si stru</add></subst>gge.</l>
             </lg>
                <l n="30">Altri di &amp7; notte la sua morte brama.</l>
          </lg>
@@ -291,7 +291,7 @@
                   <l n="8">Si dolce lume uscia de gliocchi suoi.</l>
                </lg>
             </lg>
-            <lg type="sonnet" n="[Rvf Number]">
+            <lg type="sonnet">
                <lg type="dblhemi">
                   <l n="1"><hi rendition="#blue #fs24pt"
                      >N</hi><hi rendition="#small-caps">o</hi>n ueggio oue scampar mi possa omai</l>

@@ -2,7 +2,7 @@
 
 html {width:44em;}
 
-lg[type = 'sonnet']:before {
+lg[type = 'sonnet']:before ,  lg[type = 'madrigal']:before, lg[type = 'canzone']:before {
 display:block;
 clear:both;
 font-weight:bold;

@@ -5,7 +5,7 @@ html {width:44em;}
 lg[type = 'sonnet']:before ,  lg[type = 'madrigal']:before, lg[type = 'canzone']:before {
 display:block;
 clear:both;
-font-weight:bold;
+font-weight:normal;
 content:attr(n);
 color:gray;
 font-size:10pt;
@@ -42,4 +42,8 @@ vertical-align:baseline;}
 
 #teibpToolbox {
 left:70em;
+}
+
+footer {
+margin-top:2.5em;
 }

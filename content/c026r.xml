@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="petrarchive.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="teibp.xsl"?>
+<!DOCTYPE TEI [
+<!ENTITY amp7 "<choice><abbr>&amp;</abbr><expan>et</expan></choice>">
+<!ENTITY per "<choice><abbr>ꝑ</abbr><expan>per</expan></choice>">
+<!ENTITY virg "/">
+<!ENTITY sempre "<choice><abbr>sēpre</abbr><expan>sempre</expan></choice>">
+<!ENTITY quanto "<choice><abbr>quāto</abbr><expan>quanto</expan></choice>">
+<!ENTITY in "<choice><abbr>ī</abbr><expan>in</expan></choice>">
+<!ENTITY non "<choice><abbr>nō</abbr><expan>non</expan></choice>">
+<!ENTITY quando "<choice><abbr>quādo</abbr><expan>quando</expan></choice>">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <!-- Update Carta number and verso/recto. -->
+            <title>Petrarch's <title>Rerum vulgarium fragmenta</title>: Carta 26 recto</title>
+            <editor xml:id="hws">H. Wayne Storey</editor>
+            <respStmt>
+               <resp><!-- role/title --></resp>
+               <name xml:id="jaw">John A. Walsh</name>
+            </respStmt>
+            <respStmt>
+               <resp><!-- role/title --></resp>
+               <name xml:id="amm">Allison M. McCormack</name>
+            </respStmt>
+            <respStmt>
+               <resp><!-- role/title --></resp>
+               <name xml:id="im">Isabella Magni</name>
+            </respStmt>
+         </titleStmt>
+            <publicationStmt xml:base="includes/publicationStmt.xml">
+               <p/>
+            </publicationStmt>
+         <sourceDesc>
+               <p/>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <tagsDecl>
+            <rendition xml:id="red" scheme="css"
+               >color:#9f1706;</rendition>
+            <rendition xml:id="blue" scheme="css"
+               >color:#12398c;</rendition>
+            <rendition xml:id="fs18pt" scheme="css"
+               >font-size:18pt;</rendition>
+            <rendition xml:id="fs24pt" scheme="css"
+               >font-size:24pt;</rendition>
+            <rendition xml:id="small-caps" n="tiebp:small-caps" scheme="css">
+               font-variant:small-caps;
+            </rendition>
+         </tagsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <!-- replaced PUA u+f1f7 w/ the proper character for virgule u+002f. -->
+   <!-- MS Word label [5; s] becomes <lg type="sonnet" n="5"> -->
+   <!--
+       The standard solution below does not allow us to italicize only the "m" in "sempre."
+       
+       <choice><abbr>sēpre</abbr><expan>sempre</expan></choice>
+  -->
+   <!-- What character is the Italian ampersand/7? -->
+
+   <!-- For p with stroke through descender, I am using ꝑ (u+A751). -->
+
+   <!-- Can erasures be read? -->
+
+   <text>
+      <body>
+         <lg type="madrigal" n="121">
+         <lg type="stanza">
+            <lg type="dblhemi">
+               <l n="1"><hi rendition="#red #fs24pt">O</hi>r uedi amor che giouenetta 
+                  <choice><abbr>dōna</abbr><expan>donna</expan></choice> &virg;</l>
+               <l n="2">Tuo regno spreçça. et del mio mal &non; cura.</l>
+            </lg>
+               <l n="3">&amp; tra duo ta nemici e si secura.</l>
+            <lg type="dblhemi">
+               <l n="4">Tu se armato. &amp; ella &in; treccie 
+                  <choice><abbr>engōna</abbr><expan>engonna</expan></choice> &virg;</l>
+               <l n="5">Si siede et scalça &virg; in meçço i fiori &amp; lerba.</l>
+            </lg>
+            <l n="6">Ver me spietata &virg; <choice><abbr>encōtra</abbr><expan>encontra</expan></choice> 
+               te superba.</l>
+            <lg type="dblhemi">
+               <l n="7">&amp; son pregion &virg; ma sepieta 
+                  <choice><abbr>āchor</abbr><expan>anchor</expan></choice> serba &virg;</l>
+               <l n="8">Larco tuo saldo. &amp; qualchuna saetta.</l>
+            </lg>
+            <l n="9">Fa di te &virg; &amp; di me signor uendetta.</l>
+         </lg>
+         </lg>
+         
+         <!-- Madrigal 121: Initial (it was D, transformed into O, additional erasure?) 
+            + the whole madrigal written over erasure 
+            + different handwriting 
+         How to encode all this?-->
+         
+            <lg type="sonnet" n="122">
+               <lg type="dblhemi">
+                  <l n="1"><hi rendition="#blue #fs24pt"
+                     >D</hi><hi rendition="#small-caps">i</hi>cesette anni a gia riuolto il cielo </l>
+                  <l n="2">Poi chemprima arsi.&amp; gia mai &non; mi 
+                     <choice><abbr>spēsi</abbr><expan>spensi</expan></choice>.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="3">Ma &quando; auen chal mio stato 
+                     <choice><abbr>ripēsi</abbr><expan>ripensi</expan></choice></l>
+                  <l n="4">Sento nel meçço de le 
+                     <choice><abbr>fiāme</abbr><expan>fiamme</expan></choice> un gielo.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="5">Vero el prouerbio &virg; chaltri 
+                     <choice><abbr>cāgia</abbr><expan>cangia</expan></choice> il pelo</l>
+                  <l n="6">Ançi chel ueçço. et &per; lentar i sensi</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="7">Gliumani affecti &non; son meno 
+                     <choice><abbr>intēsi</abbr><expan>intensi</expan></choice>.</l>
+                  <l n="8">Cio ne fa lombra ria del graue uelo.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="9">Oi me lasso &virg; e &quando; fia quel giorno</l>
+                  <l n="10">Che mirando il fuggir de 
+                     <choice><abbr>gliāni</abbr><expan>glianni</expan></choice> miei</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="11">Esca del foco. et di si lunghe pene.</l>
+                  <l n="12">Vedro mai il di che pur quantio uorrei</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="13">Quel aria dolce del bel uiso adorno</l>
+                  <l n="14">Piaccia a questocchi. &amp; quanto si conuene </l>
+               </lg>
+            </lg>
+         
+         <!-- Sonnet 122: End of line 14: punctus elevatus? -->
+         
+            <lg type="sonnet" n="123">
+               <lg type="dblhemi">
+                  <l n="1"><hi rendition="#red #fs24pt"
+                     >Q</hi><hi rendition="#small-caps">v</hi>el uago impallidir chel dolce riso</l>
+                  <l n="2">Dunamorosa nebbia ricoperse</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="3">Con tanta maiestade al cor sofferse</l>
+                  <l n="4">Che li si fece incontra meççol uiso.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="5">Conobbi allor si come in paradiso </l>
+                  <l n="6">Vede lun laltro. in tal guisa saperse</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="7">Quel pietoso penser chaltri &non; scerse.</l>
+                  <l n="8">Ma uidilio &virg; chaltroue &non; maffiso</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="9">Ogni angelica uista. ogniatto humile</l>
+                  <l n="10">Che giamai &in; <choice><abbr>dōna</abbr><expan>donna</expan></choice>
+                     ouamor fosse apparue</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="11">Fora uno sdegno a lato a quel chi dico.</l>
+                  <l n="12">Chinaua a terra il bel guardo gentile.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="13">Et tacendo dicea &virg; come a me parue &virg;</l>
+                  <l n="14">Chi mallontana il mio fedele amico.</l>
+               </lg>
+            </lg>
+         <lg type="sonnet" n="124">
+            <lg type="dblhemi">
+               <l n="1"><hi rendition="#blue #fs24pt"
+                  >A</hi><hi rendition="#small-caps">m</hi>or fortuna &virg; 
+                  et la mia mente schiua</l>
+               <l n="2">Di quel che uede &virg; e nel passato uolta</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="3">Maffligon si chio porto alcuna uolta</l>
+               <l n="4">Inuidia a quei che son su laltra riua.</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="5">Amor mi struggel cor &virg; fortuna il priua</l>
+               <l n="6">Dogni conforto. onde la mente stolta.</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="7">Sadira &amp; piange. &amp; cosi in pena molta</l>
+               <l n="8">Sempre conuen che 
+                  <choice><abbr>cōbattendo</abbr><expan>combattendo</expan></choice> uiua.</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="9">Ne spero i dolci di tornino in dietro</l>
+               <l n="10">Ma pur di male &in; peggio quel chauança</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="11">Et di mio corso o gia passatol meçço.</l>
+               <l n="12">Lasso &non; di diamante &virg; ma dun uetro</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="13">Veggio di man cadermi ogni sperança.</l>
+               <l n="14">Et tutti miei pensier romper nel meçço.</l>
+            </lg>
+            
+            <!-- Sonnet 124: period end of line 6 -->
+            <!-- 26r has 30 transcriptional lines!!! Encoding? -->
+            
+         </lg>
+      </body>
+   </text>
+</TEI>
+
+

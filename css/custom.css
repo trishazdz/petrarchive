@@ -1,6 +1,6 @@
 /* Place project-specific CSS here */
 
-html {width:64em;}
+html {width:80em;}
 
 lg[type = 'sonnet']:before ,  lg[type = 'madrigal']:before, lg[type = 'canzone']:before {
 display:block;

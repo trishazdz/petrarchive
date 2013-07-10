@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://digitalculturelab.atlassian.net/wiki/download/attachments/622635/petrarchive.rnc?version=1&modificationDate=1362503464737&api=v2" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="teibp.xsl"?>
+<!DOCTYPE TEI [
+<!ENTITY amp7 "<choice><abbr>&amp;</abbr><expan>et</expan></choice>">
+<!ENTITY Amp7 "<choice><abbr>&amp;></abbr><expan>Et</expan></choice>">
+<!ENTITY per "<choice><abbr>ꝑ</abbr><expan>per</expan></choice>">
+<!ENTITY Per "<choice><abbr>ꝑ</abbr><expan>Per</expan></choice>">
+<!ENTITY virg "/">
+<!ENTITY sempre "<choice><abbr>sēpre</abbr><expan>sempre</expan></choice>">
+<!ENTITY Sempre "<choice><abbr>sēpre</abbr><expan>Sempre</expan></choice>">
+<!ENTITY quanto "<choice><abbr>quāto</abbr><expan>quanto</expan></choice>">
+<!ENTITY Quanto "<choice><abbr>quāto</abbr><expan>Quanto</expan></choice>">
+<!ENTITY quando "<choice><abbr>quādo</abbr><expan>quando</expan></choice>">
+<!ENTITY Quando "<choice><abbr>quādo</abbr><expan>Quando</expan></choice>">
+<!ENTITY giorno "<choice><abbr>giõno</abbr><expan>giorno</expan></choice>">
+<!ENTITY non "<choice><abbr>nō</abbr><expan>non</expan></choice>">
+<!ENTITY Non "<choice><abbr>nō</abbr><expan>Non</expan></choice>">
+<!ENTITY in "<choice><abbr>ī</abbr><expan>in</expan></choice>">
+<!ENTITY pre "<choice><abbr>&p-macron;</abbr><expan>pre</expan></choice">
+<!ENTITY con "<choice><abbr>cō</abbr><expan>con</expan></choice>">
+<!ENTITY Con "<choice><abbr>cō</abbr><expan>Con</expan></choice>">
+<!ENTITY q-tilde "q&#x0303;">
+<!ENTITY q-macron "q&#x0304;">
+<!ENTITY p-macron "p&#x0304;">
+<!ENTITY b-combtild "b&#xFE23;">
+<!ENTITY p-dot "p&#x0307;">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Petrarch's <title>Rerum vulgarium fragmenta</title>: Carta 06 verso</title>
+                <editor xml:id="hws">H. Wayne Storey</editor>
+                <respStmt>
+                    <resp><!-- role/title --></resp>
+                    <name xml:id="jaw">John A. Walsh</name>
+                </respStmt>
+                <respStmt>
+                    <resp><!-- role/title --></resp>
+                    <name xml:id="amm">Allison M. McCormack</name>
+                </respStmt>
+                <respStmt>
+                    <resp><!-- role/title --></resp>
+                    <name xml:id="im">Isabella Magni</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt xml:base="includes/publicationStmt.xml">
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <tagsDecl>
+                <rendition xml:id="red" scheme="css"
+                    >color:#9f1706;</rendition>
+                <rendition xml:id="blue" scheme="css"
+                    >color:#12398c;</rendition>
+                <rendition xml:id="fs18pt" scheme="css"
+                    >font-size:18pt;</rendition>
+                <rendition xml:id="fs24pt" scheme="css"
+                    >font-size:24pt;</rendition>
+                <rendition xml:id="small-caps" n="tiebp:small-caps" scheme="css">
+                    font-variant:small-caps;
+                </rendition>
+            </tagsDecl>
+            <charDecl>
+                <char xml:id="qbardes">
+                    <charName>LATIN SMALL LETTER Q WITH STROKE THROUGH DESCENDER</charName>
+                    <charProp>
+                        <localName>entity</localName>
+                        <value>qbardes</value>
+                    </charProp>
+                    <mapping type="visual"><!-- how to mark? --></mapping>
+                    <mapping type="MUFI">U+A757</mapping>
+                    <mapping type="PUA">U+A757</mapping>
+                </char>
+            </charDecl>
+            <!-- Used in line 106 of coding. Correct? -->
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="c069v_virtual" />
+            <lg type="canzone" n="360?">
+                <lg type="dblhemi"><l n="1">¶Quel <choice><abbr>ātiquo</abbr><expan>antiquo</expan></choice> mio dolce¦empio signore</l>	<l n="2">Fatto citar <choice><abbr>dināçi</abbr><expan>dināçi</expan></choice> ala reina</l></lg>
+                <lg type="dblhemi"><l n="3">Che laparte diuina		.25.</l>    <l n="4">Tien di nostra natura</l></lg>
+                <lg type="dblhemi"><l n="5">encima sede. Iui comoro che nel foco affina</l> <l n="6"><choice><abbr>Mirap&p-macron;sēto</abbr><expan>Mirappresento</expan></choice> carco didolore.</l></lg>
+                <lg type="dblhemi"><l n="7">Di paura &amp7; dorrore.</l>  <l n="8">Quasi huom che teme morte  &amp7; raigon chiede.</l></lg>
+                <lg type="dblhemi"><l n="9">Encomincio  <choice><abbr>madōna</abbr><expan>madonna</expan></choice> <choice><abbr>ilmāco</abbr><expan>ilmanco</expan></choice> piede</l>    <l n="10">Giouenetto posio nelcostui regno.</l></lg>
+                <lg type="dblhemi"><l n="11">Odaltro chira &amp7; sdegno </l> <l n="12">&Non; ebbi mai. &amp7; <choice><abbr>tāti</abbr><expan>tanti</expan></choice> &amp7; si diuersi  </l></lg>
+                <lg type="dblhemi"><l n="13"><choice><abbr>Tormēti</abbr><expan>Tormenti</expan></choice> iui soffersi </l> <l n="14">Chalfine <choice><abbr>vīta</abbr><expan>vinta</expan></choice> fu <choice><abbr>quellīfinita</abbr><expan>quellinfinita</expan></choice>  </l></lg>
+                <lg type="dblhemi"><l n="15">Mia <choice><abbr>patiētia</abbr><expan>patientia</expan></choice>. enodio ebbi lauita.</l></lg>
+                <lg type="dblhemi"><l n="16">¶Cosilmio <choice><abbr>tēpo</abbr><expan>tempo</expan></choice> <choice><abbr>īfin</abbr><expan>infin</expan></choice> qui trapassato</l> <l n="17">E <choice><abbr>īfiāma</abbr><expan>infiamma</expan></choice> enpene. &amp7; quante utili honeste </l></lg>
+                <lg type="dblhemi"><l n="18">Vie spreççai  <choice><abbr>quāte</abbr><expan>quante</expan></choice> feste</l>  <l n="19">&Per; seruir <choice><abbr>&q-macron;sto</abbr><expan>questo</expan></choice> <choice><abbr>lusīghier</abbr><expan>lusinghier</expan></choice> crudele.</l></lg>
+                <lg type="dblhemi"><l n="20">&Amp7; qual <choice><abbr>īgegno</abbr><expan>ingegno</expan></choice> asiparole <choice><abbr>&p-macron;ste</abbr><expan>preste</expan></choice> </l>    <l n="21">Che <choice><abbr>strīger</abbr><expan>stringer</expan></choice> possalmio <choice><abbr>īfelice</abbr><expan>infelice</expan></choice> stato.</l></lg>
+                <lg type="dblhemi"><l n="22">&Amp7; le mie dest <choice><abbr>īgrato</abbr><expan>ingrato</expan></choice></l>  <l n="23"><choice><abbr>Tāte</abbr><expan>Tante</expan></choice>  &amp7; si graui  &amp7; si giuste querele.</l></lg>
+                <lg type="dblhemi"><l n="24">O poco mel  molto aloe con fele</l>   <l n="25">In &quanto; amaro  a lamia uita aueçça.</l></lg>
+                <lg type="dblhemi"><l n="26">&Con; sua falsa dolceçça </l> <l n="27">Laqual matrasse alamorosa schiera</l></lg>
+                <lg type="dblhemi"><l n="28">Che si &non; <choice><abbr>mīgāno</abbr><expan>minganno</expan></choice>  era </l>   <l n="29">Disposto a solleuarmi alto daterra.</l></lg>
+                <lg type="dblhemi"><l n="30">E mi tolse dispace &amp7; pose &in; guerra.</l></lg>
+                <lg type="dblhemi"><l n="31">¶Questi ma fatto men amare Dio</l>  <l n="32">Chi &non; deueua. &amp7; men curar me stesso.</l></lg>
+                <lg type="dblhemi"><l n="33">&Per; una <choice><abbr>dōna</abbr><expan>donna</expan></choice> o messo</l>   <l n="34"><choice><abbr>Egualmēte</abbr><expan>Egualmente</expan></choice> &in; &non; cale ogni <choice><abbr>pēsero</abbr><expan>pensero</expan></choice>.</l></lg>
+                <lg type="dblhemi"><l n="35">Dicio mestato <choice><abbr>cōsiglier</abbr><expan>consiglier</expan></choice>¦solesso.</l> <l n="36"><choice><abbr>Sēpraguççādo</abbr><expan>Sempraguççando</expan></choice> ilgiouenil desio </l></lg>
+                <lg type="dblhemi"><l n="37"><choice><abbr>Alēpia</abbr><expan>Alempia</expan></choice> cote  ondio </l> <l n="38">Sperai riposo alsuo giogo aspro &amp7; fero.</l></lg>
+                <lg type="dblhemi"><l n="39">Misero ache quelchiaro <choice><abbr>īgegno></abbr><expan>ingegno</expan></choice> altero.</l> <l n="40">Et lal<unclear reason="erasure">r</unclear><hi rendition="#sub">t</hi>re doti ame date dalcielo</l></lg>
+                <lg type="dblhemi"><l n="41">Che uo <choice><abbr>cāgiādol</abbr><expan>cangiandol</expan></choice> pelo.</l>   <l n="42">Ne <choice><abbr>cāgiar</abbr><expan>cangiar</expan></choice> posso lostinata uoglia.</l></lg>
+                <lg type="dblhemi"><l n="43">Cosi &in; tutto mi spoglia </l> <l n="44">Di <choice><abbr>li&b-combtild;ta</abbr><expan>liberta</expan></choice> <choice><abbr>&q-macron;sto</abbr><expan>questo</expan></choice> crudel chi accuso.</l></lg>
+                <lg type="dblhemi"><l n="45">Chamaro uiuer mauolto &in; dolce uso.</l></lg>
+                <lg type="dblhemi"><l n="46">¶Cercar mafatto deserti paesi.</l> <l n="47">Fiere  &amp7; ladri rapaci. hispidi dumi.</l></lg>
+                <lg type="dblhemi"><l n="48">Dure genti. &amp7; costumi.</l>    <l n="49">&Amp7; ogni error che pellegrini <choice><abbr>ītrica</abbr><expan>intrica</expan></choice>.</l></lg>
+                <lg type="dblhemi"><l n="50"><choice><abbr>Mōti</abbr><expan>Monti</expan></choice>  ualli  paludi  &amp7; mari  &amp7; fumi.</l>   <l n="51">Mille lacciuoli &in; ogni <choice><abbr>pāte</abbr><expan>parte</expan></choice> tesi.</l></lg>
+                <lg type="dblhemi"><l n="52">Eluerno &in; strani mesi.</l>  <l n="53">Con <choice><abbr>ꝑicol</abbr><expan>pericol</expan></choice> <choice><abbr>presēte</abbr><expan>presente</expan></choice>  &amp7; &con; fatica.</l></lg>
+                <lg type="dblhemi"><l n="54">Ne costui ne quellaltra mica nemica</l>    <l n="55">Chi fuggia milasciauan sol un <choice><abbr>pūto</abbr><expan>punto</expan></choice>.</l></lg>
+                <lg type="dblhemi"><l n="56">Onde si &non; <add>son</add> <choice><abbr>giūto</abbr><expan>giunto</expan></choice> </l>  <l n="57">Ançi <choice><abbr>tēpo</abbr><expan>tempo</expan></choice> damorte acerba  &amp7; dura</l></lg>
+                <lg type="dblhemi"><l n="58">Pieta celeste a¦cura </l> <l n="59">Dimia salute  &non; <choice><abbr>&q-macron;sto</abbr><expan>questo</expan></choice> <choice><abbr>tirāno</abbr><expan>tiranno</expan></choice>.</l></lg>
+            </lg>
+        </body>
+    </text>
+</TEI>

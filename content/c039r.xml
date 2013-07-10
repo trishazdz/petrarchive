@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="petrarchive.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="teibp.xsl"?>
+<!DOCTYPE TEI [
+<!ENTITY amp7 "<choice><abbr>&amp;</abbr><expan>et</expan></choice>">
+<!ENTITY per "<choice><abbr>ꝑ</abbr><expan>per</expan></choice>">
+<!ENTITY Per "<choice><abbr>ꝑ</abbr><expan>Per</expan></choice>">
+<!ENTITY pero "<choice><abbr>ꝑo</abbr><expan>pero</expan></choice>">
+<!ENTITY virg "/">
+<!ENTITY sempre "<choice><abbr>sēpre</abbr><expan>sempre</expan></choice>">
+<!ENTITY quanto "<choice><abbr>quāto</abbr><expan>quanto</expan></choice>">
+<!ENTITY in "<choice><abbr>ī</abbr><expan>in</expan></choice>">
+<!ENTITY non "<choice><abbr>nō</abbr><expan>non</expan></choice>">
+<!ENTITY Non "<choice><abbr>Nō</abbr><expan>Non</expan></choice>">
+<!ENTITY quando "<choice><abbr>quādo</abbr><expan>quando</expan></choice>">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <!-- Update Carta number and verso/recto. -->
+            <title>Petrarch's <title>Rerum vulgarium fragmenta</title>: Carta 39 recto</title>
+            <editor xml:id="hws">H. Wayne Storey</editor>
+            <respStmt>
+               <resp><!-- role/title --></resp>
+               <name xml:id="jaw">John A. Walsh</name>
+            </respStmt>
+            <respStmt>
+               <resp><!-- role/title --></resp>
+               <name xml:id="amm">Allison M. McCormack</name>
+            </respStmt>
+            <respStmt>
+               <resp><!-- role/title --></resp>
+               <name xml:id="im">Isabella Magni</name>
+            </respStmt>
+         </titleStmt>
+            <publicationStmt xml:base="includes/publicationStmt.xml">
+               <p/>
+            </publicationStmt>
+         <sourceDesc>
+               <p/>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <tagsDecl>
+            <rendition xml:id="red" scheme="css"
+               >color:#9f1706;</rendition>
+            <rendition xml:id="blue" scheme="css"
+               >color:#12398c;</rendition>
+            <rendition xml:id="fs18pt" scheme="css"
+               >font-size:18pt;</rendition>
+            <rendition xml:id="fs24pt" scheme="css"
+               >font-size:24pt;</rendition>
+            <rendition xml:id="small-caps" n="tiebp:small-caps" scheme="css">
+               font-variant:small-caps;
+            </rendition>
+         </tagsDecl>
+         <charDecl>
+            <char xml:id="punctinter">
+               <charName>BROKEN BAR</charName>
+               <charProp>
+                  <localName>entity</localName>
+                  <value>brvbar</value>
+               </charProp>
+               <mapping type="visual">&#166;</mapping>
+               <mapping type="MUFI">U+00A6</mapping>
+               <mapping type="PUA">U+00A6</mapping>
+            </char>
+         </charDecl>
+         
+         <!-- check "broken bar" -->
+         
+      </encodingDesc>
+   </teiHeader>
+   
+   <!-- replaced PUA u+f1f7 w/ the proper character for virgule u+002f. -->
+   <!-- MS Word label [5; s] becomes <lg type="sonnet" n="5"> -->
+   <!--
+       The standard solution below does not allow us to italicize only the "m" in "sempre."
+       
+       <choice><abbr>sēpre</abbr><expan>sempre</expan></choice>
+  -->
+   <!-- What character is the Italian ampersand/7? -->
+
+   <!-- For p with stroke through descender, I am using ꝑ (u+A751). -->
+
+   <!-- Can erasures be read? -->
+
+   <text>
+      <body>
+         <ab type="blockSubst">
+            <!-- jawalsh: Do we know the sonnet underneath?" -->
+         <note resp="#jaw">Sonnet 194 has been written over an erased version of ???.</note>
+         <subst>
+            <del type="erasure">
+               <!-- jawalsh: Do we know the sonnet underneath?" -->s
+               <lg type="sonnet" n="???">
+                  <lg type="dblhemi">
+                     <l n="1"></l>
+                     <l n="2"></l>
+                  </lg>
+                  <lg type="dblhemi">
+                     <l n="3"></l>
+                     <l n="4"></l>
+                  </lg>
+                  <lg type="dblhemi">
+                     <l n="5"></l>
+                     <l n="6"></l>
+                  </lg>
+                  <lg type="dblhemi">
+                     <l n="7"></l>
+                     <l n="8"></l>
+                  </lg>
+                  <lg type="dblhemi">
+                     <l n="9"></l>
+                     <l n="10"></l>
+                  </lg>
+                  <lg type="dblhemi">
+                     <l n="11"></l>
+                     <l n="12"></l>
+                  </lg>
+                  <lg type="dblhemi">
+                     <l n="13"></l>
+                     <l n="14"></l>
+                  </lg>
+               </lg>
+            </del>
+            <add>
+         <lg type="sonnet" n="194">
+            <lg type="dblhemi">
+               <l n="1"><hi rendition="#red #fs24pt">L</hi><hi rendition="#small-caps">a</hi>ura 
+                  gentil / che rasserena i poggi</l>
+               <l n="2">Destando i fior &per; questo ombroso bosco.</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="3">Alsoaue suo spirto riconosco.</l>
+               <l n="4">&Per; cui <choice><abbr>cōuen</abbr><expan>conuen</expan></choice> 
+                  chen pena enfama poggi.</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="5">&Per; ritrouar ouel cor lassoappoggi</l>
+               <l n="6">Fuggo dal mi natio dolce aere tosco.</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="7">&Per; far lume <choice><abbr>alpēser</abbr><expan>alpenser</expan></choice> 
+                  torbido / &amp7; fosco</l>
+               <l n="8">Cercol mio sole &amp7; spero uederlo oggi</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="9">Nel qual prouo dolceççe <choice><abbr>tāte</abbr><expan>tante</expan></choice> 
+                  &amp7; tali</l>
+               <l n="10">Chamor &per; força alui mi riconduce.</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="11">Poi simabbaglia chelfuggir metardo</l>
+               <l n="12">I chiedrei <choice><abbr>ascāpar</abbr><expan>ascampar</expan></choice> 
+                  &non; arme ançi ali.</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="13">Maperir mi dalciel per questa luce.</l>
+               <l n="14">Che <choice><abbr>dalūge</abbr><expan>dalunge</expan></choice> mistruggo. 
+                  etda presso <g ref="#brvbar"/>¦ardo</l>
+            </lg>
+         </lg>
+         </add>
+         </subst>
+         </ab>
+         
+         <!-- check "broken bar" + the whole sonnet is over erasure-->
+         
+            <lg type="sonnet" n="195">
+               <lg type="dblhemi">
+                  <l n="1"><hi rendition="#blue #fs24pt"
+                     >D</hi><hi rendition="#small-caps">i</hi> di in di uo 
+                     <choice><abbr>cāgiando</abbr><expan>cangiando</expan></choice> iluiso elpelo.</l>
+                  <l n="2">Ne &pero; smorso i dolce inescati hami.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="3">Ne sbranco iuerdi &amp7; 
+                     <choice><abbr>īuescati</abbr><expan>inuescati</expan></choice> rami</l>
+                  <l n="4">Delarbor che ne sol cura ne gielo.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="5">Sençacqua il mare. &amp7; <choice><abbr>sēça</abbr><expan>sença</expan></choice> 
+                     stelle il cielo.</l>
+                  <l n="6">Fia <choice><abbr>īançi</abbr><expan>inançi</expan></choice> 
+                     chio &non; sempre tema / &amp7; brami</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="7">Lasua bellombra. &amp7; chi &non; odi / &amp7; ami.</l>
+                  <l n="8">Lalta piaga amorosa / che mal celo.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="9">&Non; spero delmio <choice><abbr>affāno</abbr><expan>affanno</expan></choice> 
+                     auer mai posa.</l>
+                  <l n="10">Infin chi mi disosso / &amp7; sneruo / &amp7; spolpo.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="11">O la nemica mia pieta nauesse.</l>
+                  <l n="12">Esser po <choice><abbr>īprima</abbr><expan>inprima</expan></choice> 
+                     ogni <choice><abbr>īpossibil</abbr><expan>impossibil</expan></choice> cosa.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="13">Chaltri che morte / odella / sanilcolpo.</l>
+                  <l n="14">Chamor cosuoi belli occhi alcor 
+                     <choice><abbr>mīpresse</abbr><expan>mimpresse</expan></choice>.</l>
+               </lg>
+            </lg>
+            <lg type="sonnet" n="196">
+               <lg type="dblhemi">
+                  <l n="1"><hi rendition="#red #fs24pt"
+                     >L</hi><hi rendition="#small-caps">a</hi>ura serena che fra uerdi fronde</l>
+                  <l n="2">Mormorando aferir nel uolto 
+                     <choice><abbr>uiēme</abbr><expan>uiemme</expan></choice> /</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="3"><choice><abbr>Fāmi</abbr><expan>Fammi</expan></choice> risouenir 
+                     <choice><abbr>quādamor</abbr><expan>quandamor</expan></choice> 
+                     <subst><del type="erasure"><gap reason="illegible"/></del><add><choice><abbr>diēme</abbr><expan>diemme</expan></choice></add></subst></l>
+                  <l n="4">Le prime piaghe / si dolci profonde.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="5">Elbel uiso ueder / chaltri masconde.</l>
+                  <l n="6">Che sdegno / o gelosia celato 
+                     <choice><abbr>tiēme</abbr><expan>tiemme</expan></choice>.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="7">&amp7; lechiome or auolte &in; perle / 
+                     <choice><abbr>engēme</abbr><expan>engemme</expan></choice>.</l>
+                  <l n="8">Allora sciolte. &amp7; soura or terso bionde.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="9">Lequali ella spargea / si dolcemente.</l>
+                  <l n="10">&amp7; raccoglea <choice><abbr>cōsi</abbr><expan>consi</expan></choice> 
+                     leggiadri modi.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="11">Che<subst><del type="erasure"><gap reason="illegible"/></del><add><choice><abbr>ripēsando</abbr><expan>ripensando</expan></choice></add></subst> 
+                     anch<subst><del type="erasure"><gap reason="illegible"/></del><add>or</add></subst> 
+                     trema l<subst><del type="erasure"><gap reason="illegible"/></del><add><choice><abbr>amēte</abbr><expan>amente</expan></choice></add></subst>.</l>
+                  <l n="12">Torsele <choice><abbr>iltēpo</abbr><expan>iltempo</expan></choice> 
+                     poi &in; piu saldi nodi.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="13">&amp7; <choice><abbr>strīsel</abbr><expan>strinsel</expan></choice> 
+                     cor dun laccio si possente.</l>
+                  <l n="14">Che morte sola fia chindi lo snodi.</l>
+               </lg>
+            </lg>
+         <lg type="sonnet" n="197">
+            <lg type="dblhemi">
+               <l n="1"><hi rendition="#blue #fs24pt"
+                  >L</hi><hi rendition="#small-caps">a</hi>ura celeste chen quel uerde lauro.</l>
+               <l n="2">Spira / ouamor feri nel fianco apollo.</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="3">Et a me pose un dolce giogo al collo.</l>
+               <l n="4">Tal chemia liberta / tardi restauro.</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="5">Po quello in me / 
+                  <choice><abbr>chenelgrā</abbr><expan>chenelgran</expan></choice> uecchio mauro</l>
+               <l n="6">Medusa &quando; in selce 
+                  <choice><abbr>trāsformollo</abbr><expan>transformollo</expan></choice>.</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="7">Neposso <subst><del type="erasure"><gap reason="illegible"/></del><add>dal</add></subst> 
+                  bel nodo omai dar crollo.</l>
+               <l n="8">Laue il sol perde. &non; pur lambra / olauro.</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="9">Dico lechiome <choice><abbr>biōde</abbr><expan>bionde</expan></choice> / el crespo laccio.</l>
+               <l n="10"><subst><del type="erasure"><gap reason="illegible"/></del><add>Chesisoauemente lega</add></subst> 
+                  ―― &amp7; stringe.	</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="11"><subst><del type="erasure"><gap reason="illegible"/></del><add>Lalma che 
+                  dumiltate e&non; daltrarmo</add></subst></l>
+               <l n="12">Lombra sua sola 
+                  <subst><del type="erasure"><gap reason="illegible"/></del><add>falmio cor</add></subst> 
+                  / un ghiaccio.</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="13">&amp7; di bianca paura il uiso tinge.</l>
+               <l n="14">Ma liocchi <choice><abbr>āno</abbr><expan>anno</expan></choice> 
+                  uertu di farne un marmo.</l>
+            </lg>
+            
+            <!-- Sonnet 197: erasures, different?-->
+            <!-- Sonnet 197: line 10, hoe to encode blank space? -->
+            
+         </lg>
+      </body>
+   </text>
+</TEI>
+
+

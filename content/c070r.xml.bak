@@ -76,7 +76,7 @@
     </teiHeader>
     <text>
         <body>
-            <pb n="Charta 70 recto" facs="https://info.slis.indiana.edu/~jawalsh/petrarchive/images/vat-lat3195-f/vat-lat3195-f-070r.jpg" />
+            <pb n="Charta 70 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-070r.jpg" />
             <lg type="canzone" n="360?">
                 <lg type="trplhemi"><l n="94">Vnaltro &amp7; di uertute &amp7; difortuna.</l>   <l n="95">Comasciasc<unclear reason="faded">un</unclear> le sue stelle ordinaro </l>   <l n="96">Lasciai cader &in; uilamor <choice><abbr>dācille</abbr><expan>dancille</expan></choice>.</l></lg>
                 <lg type="trplhemi"><l n="97">Et acostui di mille </l> <l n="98"><choice><abbr>Dōne</abbr><expan>Donne</expan></choice> electe <choice><abbr>excellēti</abbr><expan>excellenti</expan></choice> nelessi una.</l>   <l n="99">Qual &non; siuedra mai sotto laluna.</l></lg>

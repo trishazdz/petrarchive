@@ -36,6 +36,10 @@ float:left;
 margin-right:1.5em;
 }
 
+lg[type = 'dblhemi']+l {
+    clear:both;
+}
+
 choice reg {display:none}
 
 subst add {color:gray;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="petrarchive.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-stylesheet type="text/xsl" href="teibp.xsl"?>
+<?xml-stylesheet type="text/xsl" href="petrarchive.xsl"?>
 <!DOCTYPE TEI [
 <!ENTITY amp7 "<choice><abbr>&amp;</abbr><expan>et</expan></choice>">
 <!ENTITY per "<choice><abbr>ꝑ</abbr><expan>per</expan></choice>">
@@ -19,7 +19,8 @@
       <fileDesc>
          <titleStmt>
             <!-- Update Carta number and verso/recto. -->
-            <title>Petrarch's <title>Rerum vulgarium fragmenta</title>: Carta 39 recto</title>
+            <title type="main">Petrarch's <title rendition="#i">Rerum vulgarium fragmenta</title></title>
+            <title type="sub">Carta 39 recto</title>
             <editor xml:id="hws">H. Wayne Storey</editor>
             <respStmt>
                <resp><!-- role/title --></resp>
@@ -27,11 +28,11 @@
             </respStmt>
             <respStmt>
                <resp><!-- role/title --></resp>
-               <name xml:id="amm">Allison M. McCormack</name>
+               <name xml:id="im">Isabella Magni</name>
             </respStmt>
             <respStmt>
                <resp><!-- role/title --></resp>
-               <name xml:id="im">Isabella Magni</name>
+               <name xml:id="amm">Allison M. McCormack</name>
             </respStmt>
          </titleStmt>
             <publicationStmt xml:base="includes/publicationStmt.xml">
@@ -53,6 +54,9 @@
                >font-size:24pt;</rendition>
             <rendition xml:id="small-caps" n="tiebp:small-caps" scheme="css">
                font-variant:small-caps;
+            </rendition>
+            <rendition xml:id="i" n="tiebp:italic" scheme="css">
+               font-style:italic;
             </rendition>
          </tagsDecl>
          <charDecl>
@@ -93,37 +97,8 @@
          <note resp="#jaw">Sonnet 194 has been written over an erased version of ???.</note>
          <subst>
             <del type="erasure">
-               <!-- jawalsh: Do we know the sonnet underneath?" -->s
-               <lg type="sonnet" n="???">
-                  <lg type="dblhemi">
-                     <l n="1"></l>
-                     <l n="2"></l>
-                  </lg>
-                  <lg type="dblhemi">
-                     <l n="3"></l>
-                     <l n="4"></l>
-                  </lg>
-                  <lg type="dblhemi">
-                     <l n="5"></l>
-                     <l n="6"></l>
-                  </lg>
-                  <lg type="dblhemi">
-                     <l n="7"></l>
-                     <l n="8"></l>
-                  </lg>
-                  <lg type="dblhemi">
-                     <l n="9"></l>
-                     <l n="10"></l>
-                  </lg>
-                  <lg type="dblhemi">
-                     <l n="11"></l>
-                     <l n="12"></l>
-                  </lg>
-                  <lg type="dblhemi">
-                     <l n="13"></l>
-                     <l n="14"></l>
-                  </lg>
-               </lg>
+               <!-- jawalsh: Do we know the sonnet and/or any of the text underneath?" -->
+               <gap reason="canceled" extent="lg-sonnet"/>
             </del>
             <add>
          <lg type="sonnet" n="194">

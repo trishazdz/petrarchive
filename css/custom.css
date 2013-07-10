@@ -48,3 +48,7 @@ left:70em;
 footer {
 margin-top:2.5em;
 }
+
+titleStmt > tei-title[type = 'sub'] {
+font-size:125%;    
+}

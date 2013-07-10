@@ -42,11 +42,11 @@
                 </respStmt>
                 <respStmt>
                     <resp><!-- role/title --></resp>
-                    <name xml:id="amm">Allison M. McCormack</name>
+                    <name xml:id="im">Isabella Magni</name>
                 </respStmt>
                 <respStmt>
                     <resp><!-- role/title --></resp>
-                    <name xml:id="im">Isabella Magni</name>
+                    <name xml:id="amm">Allison M. McCormack</name>
                 </respStmt>
             </titleStmt>
             <publicationStmt xml:base="includes/publicationStmt.xml">

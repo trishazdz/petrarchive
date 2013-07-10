@@ -56,3 +56,7 @@ margin-top:2.5em;
 titleStmt > tei-title[type = 'sub'] {
 font-size:125%;    
 }
+
+.-teibp-pb {
+width:80%;
+}

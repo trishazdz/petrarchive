@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="petrarchive.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="petrarchive.xsl"?>
+<!DOCTYPE TEI [
+<!ENTITY amp7 "<choice><abbr>&amp;</abbr><expan>et</expan></choice>">
+<!ENTITY per "<choice><abbr>ꝑ</abbr><expan>per</expan></choice>">
+<!ENTITY Per "<choice><abbr>ꝑ</abbr><expan>Per</expan></choice>">
+<!ENTITY pero "<choice><abbr>ꝑo</abbr><expan>pero</expan></choice>">
+<!ENTITY virg "/">
+<!ENTITY sempre "<choice><abbr>sēpre</abbr><expan>sempre</expan></choice>">
+<!ENTITY quanto "<choice><abbr>quāto</abbr><expan>quanto</expan></choice>">
+<!ENTITY in "<choice><abbr>ī</abbr><expan>in</expan></choice>">
+<!ENTITY non "<choice><abbr>nō</abbr><expan>non</expan></choice>">
+<!ENTITY Non "<choice><abbr>Nō</abbr><expan>Non</expan></choice>">
+<!ENTITY quando "<choice><abbr>quādo</abbr><expan>quando</expan></choice>">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <!-- Update Carta number and verso/recto. -->
+            <title>Petrarch's <title>Rerum vulgarium fragmenta</title>: Carta 14 verso</title>
+            <editor xml:id="hws">H. Wayne Storey</editor>
+            <respStmt>
+               <resp><!-- role/title --></resp>
+               <name xml:id="jaw">John A. Walsh</name>
+            </respStmt>
+            <respStmt>
+               <resp><!-- role/title --></resp>
+               <name xml:id="amm">Allison M. McCormack</name>
+            </respStmt>
+            <respStmt>
+               <resp><!-- role/title --></resp>
+               <name xml:id="im">Isabella Magni</name>
+            </respStmt>
+         </titleStmt>
+            <publicationStmt xml:base="includes/publicationStmt.xml">
+               <p/>
+            </publicationStmt>
+         <sourceDesc>
+               <p/>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <tagsDecl>
+            <rendition xml:id="red" scheme="css"
+               >color:#9f1706;</rendition>
+            <rendition xml:id="blue" scheme="css"
+               >color:#12398c;</rendition>
+            <rendition xml:id="fs18pt" scheme="css"
+               >font-size:18pt;</rendition>
+            <rendition xml:id="fs24pt" scheme="css"
+               >font-size:24pt;</rendition>
+            <rendition xml:id="small-caps" n="tiebp:small-caps" scheme="css">
+               font-variant:small-caps;
+            </rendition>
+         </tagsDecl>       
+      </encodingDesc>
+   </teiHeader>
+
+   <text>
+      <body>
+         <lg type="sestina" n="66" rendition="#columns_2">
+            <cb n="1-of-2"/>
+            <l n="1"><hi rendition="#red #fs24pt">L</hi><hi rendition="#small-caps">a</hi>ere 
+               grauato et limportuna nebba</l>
+            <l n="2"><choice><abbr>Cōpressa</abbr><expan>Compressa</expan></choice> 
+               intorno da rabbiosi uenti</l>
+            <l n="3">Tosto <choice><abbr>cōuen</abbr><expan>conuen</expan></choice> che si 
+               <choice><abbr>cōuerta</abbr><expan>conuerta</expan></choice> &in; pioggia.   </l>             
+            <l n="4">Et gia son quasi di cristallo i fiumi.</l>
+            <l n="5">En uece de lerbetta per le ualli</l>
+            <l n="6">&Non; se uedaltro che pruine &amp; ghiaccio.</l>
+            <l n="7"><hi rendition="#blue #fs24pt">¶</hi>Et io nel cor uia piu freddo che ghiaccio</l>
+            <l n="8">O di graui pensier tal una nebbia &virg;</l>
+            <l n="9">Qual si leua talor di queste ualli &virg;</l>
+            <l n="10">Serrate incontra agliamorosi uenti &virg;</l>
+            <l n="11">Et <choice><abbr>circūdate</abbr><expan>circundate</expan></choice> 
+               di stagnanti fiumi &virg;</l>
+            <l n="12">Quando cade dal ciel piu lenta pioggia.</l>
+            <l n="13"><hi rendition="#red #fs24pt">¶</hi>In picciol 
+               <choice><abbr>tēpo</abbr><expan>tempo</expan></choice> passa ogni 
+               <choice><abbr>grā</abbr><expan>gran</expan></choice> pioggia.</l>
+            <l n="14">El caldo fa sparir le neui el ghiaccio.</l>
+            <l n="15">Di che uanno superbi in uista i fiumi.</l>
+            <l n="16">Ne mai nascose il ciel si folta nebbia</l>
+            <l n="17">Che sopragiunta dal furor di uenti</l>
+            <l n="18">Non fugisse dai poggi &amp; da le ualli.</l>
+            <l n="19"><hi rendition="#blue #fs24pt">¶</hi>Ma &virg; lasso &virg; a me non ual fiorir de ualli.</l>
+            <l n="20">Ançi piango al sereno et a la pioggia</l>
+            <l n="21">Et a gelati &virg; et a soaui uenti.</l>
+            <l n="22">Challor fia un di <choice><abbr>madōna</abbr><expan>madonna</expan></choice> 
+               <choice><abbr>sēçal</abbr><expan>sençal</expan></choice> ghiaccio</l>
+            
+            <cb n="2-of-2" />
+            
+            
+            <l n="23">Dentro. &amp; di for sença lusata nebbia</l>
+            <l n="24">Chi uedro secco il mare &amp; e laghi &amp; e i fiumi.</l>
+            <l n="25"><hi rendition="#blue #fs24pt">¶</hi>Mentre chal mar descenderanno i fiumi</l>
+            <l n="26">Et le fiere ameranno ombrose ualli</l>
+            <l n="27">Fia di nançi a begliocchi quella nebbia</l>
+            <l n="28">Che fa nascer di miei continua pioggia.</l>
+            <l n="29">Et nel bel petto lindurato ghiaccio</l>
+            <l n="30">Che tra del mio si dolorosi uenti.</l>
+            <l n="31"><hi rendition="#red #fs24pt">¶</hi>Ben debbo io perdonare a tutti uenti.</l>
+            <l n="32">Per amor dun chenmeçço di duo fiumi</l>
+            <l n="33">Mi chiuse tral bel uerde el dolce ghiaccio.</l>
+            <l n="34">Tal chi depinsi poi per mille ualli</l>
+            <l n="35">Llombra &virg; ouio fui. che ne calor &virg; ne pioggia &virg;</l>
+            <l n="36">Ne suon curaua di speççata nebbia.</l>
+            <l n="37"><hi rendition="#blue #fs24pt">¶</hi>Ma non fuggio giamai nebbia &per; 
+               <choice><abbr>uēti</abbr><expan>uenti</expan></choice>.</l>
+            <l n="38">Come quel di. ne mai fiumi &per; pioggia.</l>
+            <l n="39">Ne ghiaccio &virg; <choice><abbr>quādol</abbr><expan>quandol</expan></choice> 
+               sole apr<subst><del type="erasure"><gap reason="illegible"/></del><add>e</add></subst> le ualli.</l>            
+         </lg>
+         
+         <!-- check encoding erasue line 39 + space column 2 -->
+         
+            <lg type="sonnet" n="67">
+               <lg type="dblhemi">
+                  <l n="1"><hi rendition="#red #fs24pt">D</hi><hi rendition="#small-caps">e</hi>l mar 
+                     tirreno a la sinistra riua &virg;</l>
+                  <l n="2">Doue rotte dal uento piangon londe &virg;</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="3">Subito uidi quella altera <choice><abbr>frōde</abbr><expan>fronde</expan></choice></l>
+                  <l n="4">Di cui conuen chen tante carte scriua.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="5">Amor che dentro a lanima bolliua</l>
+                  <l n="6">Per rimembrança de le treccie bionde</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="7">Mi spinse. onde &in; un rio che lerba asconde</l>
+                  <l n="8">Caddi &virg; &non; gia come persona uiua.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="9">Solo ouio era tra boschetti et colli</l>
+                  <l n="10">Vergogna ebbi di me. chal cor gentile</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="11">Basta ben <choice><abbr>tāto</abbr><expan>tanto</expan></choice>. &amp; altro 
+                     spron &non; uolli.</l>
+                  <l n="12">Piacemi almen dauer cangiato stile</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="13">Da gliocchi a pie &virg; se del lor esser molli</l>
+                  <l n="14">Glialtri asciugasse un piu cortese aprile.</l>
+               </lg>
+            </lg> 
+      </body>
+   </text>
+</TEI>
+
+

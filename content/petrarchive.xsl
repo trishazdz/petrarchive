@@ -18,4 +18,28 @@
         <xsl:value-of select="normalize-space(id(substring-after(@ref,'#'))/tei:mapping[@type = 'visual'])"/>
     </xsl:template>
     
+    <xsl:template match="tei:cb[@n='1-of-2']">
+        <xsl:variable name="mycb" select="."/>
+        <div style="float:left; width:500px; margin-right:2em;">
+            <xsl:apply-templates select="//tei:*[preceding-sibling::tei:cb[@n = '1-of-2'] = $mycb and following-sibling::tei:cb[@n='2-of-2']]" mode="process"/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="tei:cb[@n='2-of-2']">
+        <xsl:variable name="mycb" select="."/>
+        <div style="float:left; width:500px; margin-right:2em;">
+            <xsl:apply-templates select="//tei:*[preceding-sibling::tei:cb[@n = '2-of-2'] = $mycb]" mode="process"/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="tei:l[preceding-sibling::tei:cb]"/>
+    <xsl:template match="tei:l[preceding-sibling::tei:cb]" mode="process">
+            <xsl:element name="{local-name()}">
+                <xsl:call-template name="addID"/>
+                <xsl:apply-templates select="@*|node()"/>
+            </xsl:element>
+    </xsl:template>
+    
+    
+    
 </xsl:stylesheet>

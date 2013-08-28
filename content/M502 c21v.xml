@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="petrarchive.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="teibp.xsl"?>
+<!DOCTYPE TEI [
+<!ENTITY amp7 "<choice><abbr>&amp;</abbr><expan>et</expan></choice>">
+<!ENTITY per "<choice><abbr>ꝑ</abbr><expan>per</expan></choice>">
+<!ENTITY virg "/">
+<!ENTITY sempre "<choice><abbr>sēpre</abbr><expan>sempre</expan></choice>">
+<!ENTITY quanto "<choice><abbr>quāto</abbr><expan>quanto</expan></choice>">
+<!ENTITY in "<choice><abbr>ī</abbr><expan>in</expan></choice>">
+<!ENTITY non "<choice><abbr>nō</abbr><expan>non</expan></choice>">
+<!ENTITY quando "<choice><abbr>quādo</abbr><expan>quando</expan></choice>">
+<!ENTITY fiamma "<choice><abbr>fiāma</abbr><expan>fiamma</expan></choice>">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            
+            
+            <!-- Manuscript M502!!! -->
+            
+            
+            <title>Petrarch's <title>Rerum vulgarium fragmenta</title>: Carta 21 verso</title>
+            <editor xml:id="hws">H. Wayne Storey</editor>
+            <respStmt>
+               <resp><!-- role/title --></resp>
+               <name xml:id="jaw">John A. Walsh</name>
+            </respStmt>
+            <respStmt>
+               <resp><!-- role/title --></resp>
+               <name xml:id="amm">Allison M. McCormack</name>
+            </respStmt>
+            <respStmt>
+               <resp><!-- role/title --></resp>
+               <name xml:id="im">Isabella Magni</name>
+            </respStmt>
+         </titleStmt>
+            <publicationStmt xml:base="includes/publicationStmt.xml">
+               <p/>
+            </publicationStmt>
+         <sourceDesc>
+               <p/>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <tagsDecl>
+            <rendition xml:id="red" scheme="css"
+               >color:#9f1706;</rendition>
+            <rendition xml:id="blue" scheme="css"
+               >color:#12398c;</rendition>
+            <rendition xml:id="fs18pt" scheme="css"
+               >font-size:18pt;</rendition>
+            <rendition xml:id="fs24pt" scheme="css"
+               >font-size:24pt;</rendition>
+            <rendition xml:id="small-caps" n="tiebp:small-caps" scheme="css">
+               font-variant:small-caps;
+            </rendition>
+         </tagsDecl>
+         <charDecl>
+            <char xml:id="punctelevhiback">
+               <charName>PUNCTUS ELEVATUS WITH HIGH BACK</charName>
+               <charProp>
+                  <localName>entity</localName>
+                  <value>punctelevhiback</value>
+               </charProp>
+               <mapping type="visual">.&#x0312;</mapping>
+               <mapping type="MUFI">U+F1FA</mapping>
+               <mapping type="PUA">U+F1FA</mapping>
+            </char>
+         </charDecl>
+         <charDecl>
+            <char xml:id="verbar">
+               <charName>VERTICAL LINE</charName>
+               <charProp>
+                  <localName>entity</localName>
+                  <value>verbar</value>
+               </charProp>
+               <mapping type="visual"></mapping>
+               <mapping type="MUFI"></mapping>
+               <mapping type="PUA"></mapping>
+            </char>
+         </charDecl>
+         <charDecl>
+            <char xml:id="">
+               <charName>LEFT CURLY BRACKET UPPER HOOK</charName>
+               <charProp>
+                  <localName>entity</localName>
+                  <value></value>
+               </charProp>
+               <mapping type="visual"></mapping>
+               <mapping type="MUFI"></mapping>
+               <mapping type="PUA"></mapping>
+            </char>
+         </charDecl>
+         
+         <!-- CHECK PUNCTUATION! -->
+         
+      </encodingDesc>
+   </teiHeader>
+ 
+
+   <text>
+      <body>
+         <lg type="ballata">
+            <lg type="dblhemi">
+               <l n="1"><hi rendition="#fs24pt">D</hi><choice><abbr>ōna</abbr><expan>onna</expan></choice> 
+                  mi uene spesso ne la mente )</l>
+               <l n="2">Altra <choice><abbr>dōna</abbr><expan>donna</expan></choice> ue sempre ./<!-- look at punctuation in image --></l>
+            </lg>
+            <l n="3">Ondio temo si stempre &virg; il cor ardente .</l>
+            <lg type="dblhemi">
+               <l n="4">Quella il notrica in amorosa &fiamma; |</l>
+               <l n="5">Con un dolce martir pien di desire .</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="6">Questa lo strugge oltra mesura en &fiamma; | </l>
+               <l n="7">Tanto chadoppio e força che sospire .</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="8">Ne ual perchio madire &virg; &amp; arme il core <g ref="#punctelevhiback"/></l>
+               <l n="9">Chi non so come amore <g ref="#punctelevhiback"/></l>
+            </lg>
+            <l n="10">Di che forte mi sdegno lel consente.,</l>    
+         </lg>
+            
+         <!-- CHECK PUNCTUATION: 
+            1) END OF v. 2; 
+            2) VERTICAL BAR v. 4 and 6 
+            3) PUNCTUS ELEVATUS? vv. 8 and 9; 
+            4) LEFT CURLY BRACKET UPPER HOOK, beginning of lines 5 and 9 -->
+         
+            <!-- CHECK INITAL -->
+
+      </body>
+   </text>
+</TEI>
+
+

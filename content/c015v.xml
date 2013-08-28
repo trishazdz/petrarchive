@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="petrarchive.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="petrarchive.xsl"?>
+<!DOCTYPE TEI [
+<!ENTITY amp7 "<choice><abbr>&amp;</abbr><expan>et</expan></choice>">
+<!ENTITY per "<choice><abbr>ꝑ</abbr><expan>per</expan></choice>">
+<!ENTITY virg "/">
+<!ENTITY sempre "<choice><abbr>sēpre</abbr><expan>sempre</expan></choice>">
+<!ENTITY quanto "<choice><abbr>quāto</abbr><expan>quanto</expan></choice>">
+<!ENTITY in "<choice><abbr>ī</abbr><expan>in</expan></choice>">
+<!ENTITY non "<choice><abbr>nō</abbr><expan>non</expan></choice>">
+<!ENTITY punctelevhiback "&#xF1FA;">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <!-- Update Charta number and verso/recto. -->
+            <title>Petrarch's <title>Rerum vulgarium fragmenta</title>: Charta 15 verso</title>
+            <editor xml:id="hws">H. Wayne Storey</editor>
+            <respStmt>
+               <resp><!-- role/title --></resp>
+               <name xml:id="jaw">John A. Walsh</name>
+            </respStmt>
+            <respStmt>
+               <resp><!-- role/title --></resp>
+               <name xml:id="amm">Allison M. McCormack</name>
+            </respStmt>
+            <respStmt>
+               <resp><!-- role/title --></resp>
+               <name xml:id="im">Isabella Magni</name>
+            </respStmt>
+         </titleStmt>
+            <publicationStmt xml:base="includes/publicationStmt.xml">
+               <p/>
+            </publicationStmt>
+         <sourceDesc>
+               <p/>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <tagsDecl>
+            <rendition xml:id="red" scheme="css"
+               >color:#9f1706;</rendition>
+            <rendition xml:id="blue" scheme="css"
+               >color:#12398c;</rendition>
+            <rendition xml:id="fs18pt" scheme="css"
+               >font-size:18pt;</rendition>
+            <rendition xml:id="fs24pt" scheme="css"
+               >font-size:24pt;</rendition>
+            <rendition xml:id="small-caps" n="tiebp:small-caps" scheme="css">
+               font-variant:small-caps;
+            </rendition>
+         </tagsDecl>
+         <charDecl>
+            <char xml:id="punctelevhiback">
+               <charName>PUNCTUS ELEVATUS WITH HIGH BACK</charName>
+               <charProp>
+                  <localName>entity</localName>
+                  <value>punctelevhiback</value>
+               </charProp>
+               <mapping type="visual">.&#x0312;</mapping>
+               <mapping type="MUFI">U+F1FA</mapping>
+               <mapping type="PUA">U+F1FA</mapping>
+            </char>
+         </charDecl>
+         <charDecl>
+            <char xml:id="virgsusp">
+               <charName>VIRGULA SUSPENSIVA</charName>
+               <charProp>
+                  <localName>entity</localName>
+                  <value>virgsusp</value>
+               </charProp>
+               <mapping type="visual"></mapping>
+               <mapping type="MUFI">U+F1F4</mapping>
+               <mapping type="PUA">U+F1F4</mapping>
+            </char>
+         </charDecl>
+         <charDecl>
+            <char xml:id="punctinter">
+               <charName>PUNCTUS INTERROGATIVUS</charName>
+               <charProp>
+                  <localName>entity</localName>
+                  <value>punctinter</value>
+               </charProp>
+               <mapping type="visual"></mapping>
+               <mapping type="MUFI">U+F160</mapping>
+               <mapping type="PUA">U+F160</mapping>
+            </char>
+         </charDecl>
+         <charDecl>
+            <char xml:id="brvbar">
+               <charName>BROKEN BAR</charName>
+               <charProp>
+                  <localName>entity</localName>
+                  <value>brvbar</value>
+               </charProp>
+               <mapping type="visual">&#166;</mapping>
+               <mapping type="MUFI">U+00A6</mapping>
+               <mapping type="PUA">U+00A6</mapping>
+            </char>
+         </charDecl>
+         
+         <!-- check "broken bar"!!! line 17, canzone 71-->
+         
+         <!-- virgula suspensiva? mapping type="visual"?? vd p. 149 MUFI pdf-->
+         
+      </encodingDesc>
+   </teiHeader>
+   
+ 
+
+   <text>
+      <body>
+         <lg type="canzone" n="70">
+         <lg type="stanza">
+            <lg type="dblhemi">
+               <l n="31"><hi rendition="#red #fs24pt">¶</hi>Che parlo &virg; o doue sono &virg; et chi 
+                  <choice><abbr>mingāna</abbr><expan>minganna</expan></choice> <g ref="#punctinter"/></l>
+               <l n="32">Altri chio stesso el desiar souerchio.</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="33">Gia si trascorro il ciel di cerchio &in; cerchio &virg;</l>
+               <l n="34">Nessun pianeta a pianger mi 
+                  <choice><abbr>condāna</abbr><expan>condanna</expan></choice></l>
+            </lg>
+            <lg type="trplhemi">
+               <l n="35">Se mortal uelo il mio ueder appanna</l>
+               <l n="36">Che colpa e de le stelle &virg;</l>
+               <l n="37">O de le cose belle <g ref="#punctinter"/></l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="38">Meco si sta chi di et notte maffanna.</l>
+               <l n="39">Poi che del suo piacer mi fe gir graue</l>
+            </lg>
+            <l n="40">La dolce uista &virg; el bel guardo soaue.</l>
+         <lg type="stanza">
+            <lg type="dblhemi">
+               <l n="41"><hi rendition="#blue #fs24pt">¶</hi>Tutte le cose di chel mondo e adorno &virg;</l>
+               <l n="42">Vscir buone de man del mastro eterno.</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="43">Ma me che cosi adentro non discerno</l>
+               <l n= "44">Abbaglia il bel che mi si mostra intorno.</l>
+            </lg>
+            <lg type="trplhemi">
+               <l n="45">Et sal<g ref="#brvbar"/>uero splendor giamai ritorno &virg;</l>
+               <l n="46">Locchio &non; po star fermo.</l>
+               <l n="47">Cosi la fatto infermo</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="48">Pur la sua propria colpa. &amp; &non; quel giorno</l>
+               <l n="49">Chi uolsi inuer langelica beltade.</l>
+            </lg>
+            <l n="50">Nel dolce tempo de la prima etade.</l>
+         </lg>
+            
+            <lg type="canzone" n="71">
+               <lg type="stanza">
+                  <lg type="dblhemi">
+                     <l n="1"><hi rendition="#red #fs24pt">P</hi><hi rendition="#small-caps">e</hi>rche 
+                        la uita e breue.</l>
+                     <l n="2">Et lingegno pauenta a lalta impresa.</l>
+                  </lg>
+                  <lg type="dblhemi">
+                     <l n="3">Ne di lui &virg; ne di lei molto mi fido.</l>
+                     <l n="4">Ma spero che sia intesa</l>
+                  </lg>
+                  <lg type="dblhemi">
+                     <l n="5">La douio bramo &virg; et la doue esser deue</l>
+                     <l n="6">La doglia mia la qual tacendo i grido.</l>
+                  </lg>
+                  <lg type="dblhemi">
+                     <l n="7">Occhi leggiadri doue amor fa nido.</l>
+                     <l n="8">A uoi riuolgo il mio debile stile &virg;</l>
+                  </lg>
+                  <lg type="dblhemi">
+                     <l n="9">Pigro da se &virg; mal gran piacer lo sprona.</l>
+                     <l n="10">Et chi di uoi ragiona</l>
+                  </lg>
+                     <lg type="dblhemi">
+                        <l n="11">Tien dal soggetto un habito gentile.</l>
+                        <l n="12">Che con lale amorose</l>
+                     </lg>
+                     <lg type="dblhemi">
+                        <l n="13">Leuando il parte dogni pensier uile.</l>
+                        <l n= "14">Con queste alçato uengo a dire<g ref="#brvbar"/>or cose</l>
+                     </lg>
+                  <l n="15">Cho portate nel cor gran tempo ascose.</l>
+               </lg>
+               <lg type="stanza">
+                     <lg type="dblhemi">
+                        <l n="16"><hi rendition="#blue #fs24pt">¶</hi>Non perchio non maueggia &virg;</l>
+                        <l n="17">Quanto mia laude<g ref="#brvbar"/><subst><del type="erasure"><gap reason="illegible"/></del><add>e</add></subst>ngiuriosa 
+                           a uoi.</l>
+                     </lg>
+                     <lg type="dblhemi">
+                        <l n="18">Ma contrastar non posso al gran desio &virg;</l>
+                        <l n="19">Lo quale <subst><del type="erasure"><gap reason="illegible"/></del><add>e</add></subst>n 
+                           me da poi</l>
+                     </lg>
+                     <lg type="dblhemi">
+                        <l n="20">Chi uidi quel che pensier non pareggia.</l>
+                        <l n="21">Non che lauagli altrui parlar &virg; o mio.</l>
+                     </lg>
+                     <lg type="dblhemi">
+                        <l n="22">Principio del mio dolce stato rio &virg;</l>
+                        <l n="23">Altri che uoi so ben che &non; mintende.</l>
+                     </lg>
+                     <lg type="dblhemi">
+                        <l n="24">Quando agliardenti rai neue diuegno.</l>
+                        <l n="25">Vostro gentile sdegno</l>
+                     </lg>
+                     <lg type="dblhemi">
+                        <l n="26">Forse challor mia indignitate offende.</l>
+                        <l n="27">O se questa temença</l>
+                     </lg>
+                     <lg type="dblhemi">
+                        <l n="28">Non temprasse larsura che mincende</l>
+                        <l n="29">Beato uenir meno. chen lor presença</l>
+                     </lg>
+                     <l n="30">Me piu caro il morir &virg; chel uiuer sença.</l>
+                  </lg>
+               <lg type="stanza">
+                     <lg type="dblhemi">
+                        <l n="31"><hi rendition="#red #fs24pt">¶</hi>Dunque chi non misfaccia.</l>
+                        <l n="32">Si frale obgetto a si possente foco.</l>
+                     </lg>
+                     <lg type="dblhemi">
+                        <l n="33">Non e proprio ualor che me ne 
+                           <choice><abbr>scāpi</abbr><expan>scampi</expan></choice>.</l>
+                        <l n="34">Ma la paura un poco.</l>
+                     </lg>
+                     <lg type="dblhemi">
+                        <l n="35">Chel sangue uago &per; le uene agghiaccia</l>
+                        <l n="36">Risaldal cor &virg; perche piu 
+                           <choice><abbr>tēpo</abbr><expan>tempo</expan></choice> auampi.</l>
+                     </lg>
+                     <lg type="dblhemi">
+                        <l n="37">O poggi &virg; o ualli &virg; o fiumi &virg; o selue &virg; o campi.</l>
+                        <l n="38">O testimon de la mia graue uita.</l>
+                     </lg>
+                  </lg>
+            </lg>
+      </body>
+   </text>
+</TEI>
+
+<!-- line 18 canzone 71 -->

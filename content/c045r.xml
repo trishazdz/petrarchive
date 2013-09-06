@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="petrarchive.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="petrarchive.xsl"?>
+<!DOCTYPE TEI [
+<!ENTITY amp7 "<choice><abbr>&amp;</abbr><expan>et</expan></choice>">
+<!ENTITY per "<choice><abbr>ꝑ</abbr><expan>per</expan></choice>">
+<!ENTITY Per "<choice><abbr>ꝑ</abbr><expan>Per</expan></choice>">
+<!ENTITY pero "<choice><abbr>ꝑo</abbr><expan>pero</expan></choice>">
+<!ENTITY virg "/">
+<!ENTITY sempre "<choice><abbr>sēpre</abbr><expan>sempre</expan></choice>">
+<!ENTITY quanto "<choice><abbr>quāto</abbr><expan>quanto</expan></choice>">
+<!ENTITY in "<choice><abbr>ī</abbr><expan>in</expan></choice>">
+<!ENTITY non "<choice><abbr>nō</abbr><expan>non</expan></choice>">
+<!ENTITY Non "<choice><abbr>Nō</abbr><expan>Non</expan></choice>">
+<!ENTITY quando "<choice><abbr>quādo</abbr><expan>quando</expan></choice>">
+<!ENTITY con "<choice><abbr>cō</abbr><expan>con</expan></choice>">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <!-- Update Carta number and verso/recto. -->
+            <title>Petrarch's <title>Rerum vulgarium fragmenta</title>: Carta 45 recto</title>
+            <editor xml:id="hws">H. Wayne Storey</editor>
+            <respStmt>
+               <resp><!-- role/title --></resp>
+               <name xml:id="jaw">John A. Walsh</name>
+            </respStmt>
+            <respStmt>
+               <resp><!-- role/title --></resp>
+               <name xml:id="amm">Allison M. McCormack</name>
+            </respStmt>
+            <respStmt>
+               <resp><!-- role/title --></resp>
+               <name xml:id="im">Isabella Magni</name>
+            </respStmt>
+         </titleStmt>
+            <publicationStmt xml:base="includes/publicationStmt.xml">
+               <p/>
+            </publicationStmt>
+         <sourceDesc>
+               <p/>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <tagsDecl>
+            <rendition xml:id="red" scheme="css"
+               >color:#9f1706;</rendition>
+            <rendition xml:id="blue" scheme="css"
+               >color:#12398c;</rendition>
+            <rendition xml:id="fs18pt" scheme="css"
+               >font-size:18pt;</rendition>
+            <rendition xml:id="fs24pt" scheme="css"
+               >font-size:24pt;</rendition>
+            <rendition xml:id="small-caps" n="tiebp:small-caps" scheme="css">
+               font-variant:small-caps;
+            </rendition>
+         </tagsDecl>
+         <charDecl>
+            <char xml:id="brvbar">
+               <charName>BROKEN BAR</charName>
+               <charProp>
+                  <localName>entity</localName>
+                  <value>brvbar</value>
+               </charProp>
+               <mapping type="visual">&#166;</mapping>
+               <mapping type="MUFI">U+00A6</mapping>
+               <mapping type="PUA">U+00A6</mapping>
+            </char>
+         </charDecl>
+         <charDecl>
+            <char xml:id="punctinter">
+               <charName>PUNCTUS INTERROGATIVUS</charName>
+               <charProp>
+                  <localName>entity</localName>
+                  <value>punctinter</value>
+               </charProp>
+               <mapping type="visual"></mapping>
+               <mapping type="MUFI">U+F160</mapping>
+               <mapping type="PUA">U+F160</mapping>
+            </char>
+         </charDecl>
+         
+         <!-- check "broken bar" and "punctus interrogativus -->
+         
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <pb n="Charta 45 recto" facs="https://info.slis.indiana.edu/~jawalsh/petrarchive/images/vat-lat3195-f/vat-lat3195-f-045r.jpg" />
+         <lg type="sonnet" n="232">
+            <lg type="dblhemi">
+               <l n="1"><hi rendition="#fs24pt">V</hi>incitore Alexandro lira uinse.</l>
+               <l n="2">&amp; fel minore &in; parte che Philippo.</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="3">Che liual se Pyrgotile et 
+                  lys<subst><del type="erasure"><gap reason="illegible"/></del><add>i</add></subst>ppo</l>
+               <l n="4">Lintagliar. solo &amp; appelle il depinse<g ref="#punctinter"/></l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="5">Lira tydeo a tal rabbia sospinse.</l>
+               <l n="6">Che morendo ei &virg; sirose menalippo.</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="7">L<subst><del type="erasure"><gap reason="illegible"/></del><add>ira cieco</add></subst> 
+                  deltutto &virg; &non; pur lippo</l>
+               <l n="8">Fatto auea silla. Alultimo lextinse.</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="9">Sal valentinian &virg; cha simil pena &virg;</l>
+               <l n="10">Ira conduce. &amp; sal quei che nemore &virg;</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="11">Aiace &in; molti. &amp; poi &in; sestesso forte.</l>
+               <l n="12">Ira e breue furore. &amp; chi nol frena &virg;</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="13">E furor <choice><abbr>lūgo</abbr><expan>lungo</expan></choice>. chel suo possessore</l>
+               <l n="14">Spesso auergogna. &amp; talor menaamorte.</l>
+            </lg>
+         </lg>
+         
+         <!-- check encoding of erasures: vv. 3 and 7 -->
+         
+            <lg type="sonnet" n="233">
+               <lg type="dblhemi">
+                  <l n="1"><hi rendition="#fs24pt"
+                     >V</hi><hi rendition="#small-caps">v</hi>al 
+                     <choice><abbr>uētura</abbr><expan>uentura</expan></choice> mi fu. quando daluno</l>
+                  <l n="2">De duo i piu belliocchi che mai furo.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="3"><choice><abbr>Mirādol</abbr><expan>Mirandol</expan></choice> didolor 
+                     turbato &amp; scuro.</l>
+                  <l n="4">Mosse uertu. che felmio <choice><abbr>īfermo</abbr><expan>infermo</expan></choice>
+                     &amp; bruno.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="5">Sendio tornato asoluer ildigiuno</l>
+                  <l n="6">Di ueder lei che sola almondo curo.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="7"><choice><abbr>Fūmi</abbr><expan>Fummi</expan></choice> ilciel &amp; amor 
+                     men chemai duro.</l>
+                  <l n="8">Se tutte altre mie gratie <choice><abbr>īseme</abbr><expan>inseme</expan></choice> 
+                     aduno.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="9">Che dal dextrocchio  <choice><abbr>āçi</abbr><expan>ançi</expan></choice> 
+                     daldextro sole</l>
+                  <l n="10">Delamia <choice><abbr>dōna</abbr><expan>donna</expan></choice>. 
+                     almio dextrocchio <choice><abbr>vēne</abbr><expan>venne</expan></choice></l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="11">Ilmal chemi diletta. &amp; &non; midole.</l>
+                  <l n="12">&amp; pur <choice><abbr>comītellecto</abbr><expan>comintellecto</expan></choice> 
+                     auesse &virg; &amp; penne</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="13"><subst><del type="erasure"><gap reason="illegible"/></del><add>Passo quasi 
+                     una stella chenciel uole.</add></subst></l>
+                  <l n="14"><subst><del type="erasure"><gap reason="illegible"/></del><add>&amp; natura 
+                     &amp; pietate ilcorso tenne.</add></subst></l>
+               </lg>
+            </lg>
+         
+         <!-- v. 9 = virgula suspensiva? mapping type="visual"?? vd p. 149 MUFI pdf-->
+         <!-- check encoding of erasures: vv. 13 and 14 -->
+         
+         
+            <lg type="sonnet" n="234">
+               <lg type="dblhemi">
+                  <l n="1"><hi rendition="#fs24pt"
+                     >O</hi> <hi rendition="#small-caps">C</hi>ameretta che gia fosti un porto.</l>
+                  <l n="2">Ale graui tempeste mie diurne.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="3"><choice><abbr>Fōte</abbr><expan>Fonte</expan></choice> 
+                     se or dilagrime nocturne &amp;</l>
+                  <l n="4">Cheldi celate &per; uergogna porto.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="5">O letticciuol che requie eri &amp; 
+                     <choice><abbr>cōforto</abbr><expan>conforto</expan></choice></l>
+                  <l n="6">In <choice><abbr>tāti</abbr><expan>tanti</expan></choice> 
+                     <choice><abbr>affāni</abbr><expan>affanni</expan></choice> &virg; diche doglioseurne</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="7">Ti bagna amor &virg; &con; quelle mani eburne.</l>
+                  <l n="8">Solo uer me crudeli a sigran torto.</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="9">Ne pur il mio secreto &virg; el mio riposo &virg;</l>
+                  <l n="10">Fuggo. ma 
+                     <subst><del type="erasure"><gap reason="illegible"/></del><add>piu</add></subst> 
+                     me stesso &virg; elmio <choice><abbr>pēsero</abbr><expan>pensero</expan></choice> &virg;</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="11">Che <choice><abbr>seguēdol</abbr><expan>seguendol</expan></choice> talor 
+                     &virg; <choice><abbr>leuōmi</abbr><expan>leuommi</expan></choice> a uolo.</l>
+                  <l n="12">Eluulgo ame nemico &virg; &amp; odioso</l>
+               </lg>
+               <lg type="dblhemi">
+                  <l n="13">Chilpenso mai &virg; &per; mio refugio chero.</l>
+                  <l n="14">Talpaura o &virg; di ritrouarmi solo. </l>
+               </lg>
+            </lg>
+         <lg type="sonnet" n="235">
+            <lg type="dblhemi">
+               <l n="1"><hi rendition="#fs24pt"
+                  >L</hi><hi rendition="#small-caps">a</hi>sso &virg; Amor mi trasporta &virg; 
+                  ouio &non; uoglio.</l>
+               <l n="2">&amp; ben maccorgo cheldeuer si uarcha.</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="3">Onde &virg; a chi nelmio cor siede monarcha.</l>
+               <l n="4">Sono <choice><abbr>īportuno</abbr><expan>importuno</expan></choice> assai 
+                  piu chi&non; soglio.</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="5">Ne mai saggio nocchier guardo dascoglio &virg;</l>
+               <l n="6">Naue 
+                  dim<subst><del type="erasure"><gap reason="illegible"/></del><add>erc</add></subst>i 
+                  pretiose carcha.</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="7"><choice><abbr>Quātio</abbr><expan>Quantio</expan></choice> sempre ladebile mia barcha</l>
+               <l n="8">Dale <choice><abbr>ꝑcosse</abbr><expan>percosse</expan></choice> del suo duro orgoglio.</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="9">Ma lagrimosa pioggia &virg; &amp; fieri uenti.</l>
+               <l n="10">Dinfiniti sospiri &virg; or lanno spinta &virg;</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="11">Che nel mio mare horribil notte &amp; uerno.</l>
+               <l n="12"><subst><del type="erasure"><gap reason="illegible"/></del><add>Oualtrui 
+                  noie ¦ a se doglie &amp;</add></subst> tormenti &virg;</l>
+            </lg>
+            <lg type="dblhemi">
+               <l n="13">porta &virg; &amp; &non; altro. gia dalonde uinta.</l>
+               <l n="14">Disarmata di uele &virg; &amp; di gouerno.</l>
+            </lg>
+            
+            <!-- Check broken bar - v. 12 -->
+            <!-- v. 12 = virgula suspensiva? mapping type="visual"?? vd p. 149 MUFI pdf-->
+            
+         </lg>
+      </body>
+   </text>
+</TEI>
+
+

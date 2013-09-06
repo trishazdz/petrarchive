@@ -40,6 +40,29 @@
             </xsl:element>
     </xsl:template>
     
-    
+    <xsl:template name="htmlHead">
+        <head>
+            <script type="text/javascript" src="//use.typekit.net/ctk5ksw.js"></script>
+            <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+            <meta charset="UTF-8"/>
+            <link id="maincss" rel="stylesheet" type="text/css" href="{$teibpCSS}"/>
+            <link id="customcss" rel="stylesheet" type="text/css" href="{$customCSS}"/>
+            <script type="text/javascript" src="{$jqueryJS}"></script>
+            <script type="text/javascript" src="{$jqueryBlockUIJS}"></script>
+            <script type="text/javascript" src="{$teibpJS}"></script>
+            <script type="text/javascript">
+                $(document).ready(function() {
+                $("html > head > title").text($("TEI > teiHeader > fileDesc > titleStmt > title:first").text());
+                $.unblockUI();	
+                });
+            </script>
+            <xsl:call-template name="rendition2style"/>
+            <title><!-- don't leave empty. --></title>
+            <xsl:if test="$includeAnalytics = true()">
+                <xsl:call-template name="analytics"/>
+            </xsl:if>
+        </head>
+    </xsl:template>
+        
     
 </xsl:stylesheet>

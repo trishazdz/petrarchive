@@ -1,6 +1,8 @@
 /* Place project-specific CSS here */
 
-html {width:80em;}
+html {width:80em;
+font-family: cochin, serif;
+font-size:24px;}
 
 lg {line-height: 145%;}
 
@@ -10,10 +12,14 @@ clear:both;
 font-weight:normal;
 content:attr(n);
 color:gray;
-font-size:10pt;
+font-size:15px;
 top:40px;
-left:-50px;
+left:-80px;
 position:relative;
+}
+
+text body lg:first-of-type {
+margin-top:0;
 }
 
 lg[type = 'dblhemi'], lg[type = 'trplhemi'] {
@@ -25,7 +31,13 @@ margin-bottom:.25em;
 }
 
 lg[type = 'dblhemi']:first-of-type l:last-of-type {
-padding-top:.7em;
+/* padding-top:.7em; */
+}
+
+lg[type = 'dblhemi']:first-of-type {
+position:relative;
+left:-1.2em;
+margin-top:0;
 }
 
 lg[type = 'dblhemi'] l:first-of-type, lg[type = 'trplhemi'] l:first-of-type {
@@ -56,7 +68,17 @@ margin-top:2.5em;
 }
 
 titleStmt > tei-title[type = 'sub'] {
-font-size:125%;    
+font-size:100%;    
+}
+
+titleStmt > tei-title {
+font-size:105%;
+}
+
+teiHeader {
+font-size:80%;
+width:800px;
+margin-bottom:.5em;
 }
 
 .-teibp-pb {
@@ -147,7 +169,7 @@ choice:hover expan{
 		overflow: visible;
 		margin-top:-50px;
 		display: inline;
-		margin-left: -60px;		
+		margin-left: -80px;
 	}
 
 

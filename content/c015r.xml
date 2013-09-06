@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="petrarchive.rnc"?>
+<?xml-stylesheet type="text/xsl" href="petrarchive.xsl"?>
+<!DOCTYPE TEI [
+<!ENTITY amp7 "<choice><abbr>&amp;</abbr><expan>et</expan></choice>">
+<!ENTITY Amp7 "<choice><abbr>&amp;></abbr><expan>Et</expan></choice>">
+<!ENTITY per "<choice><abbr>ꝑ</abbr><expan>per</expan></choice>">
+<!ENTITY Per "<choice><abbr>ꝑ</abbr><expan>Per</expan></choice>">
+<!ENTITY virg "/">
+<!ENTITY sempre "<choice><abbr>sēpre</abbr><expan>sempre</expan></choice>">
+<!ENTITY Sempre "<choice><abbr>sēpre</abbr><expan>Sempre</expan></choice>">
+<!ENTITY quanto "<choice><abbr>quāto</abbr><expan>quanto</expan></choice>">
+<!ENTITY Quanto "<choice><abbr>quāto</abbr><expan>Quanto</expan></choice>">
+<!ENTITY quando "<choice><abbr>quādo</abbr><expan>quando</expan></choice>">
+<!ENTITY Quando "<choice><abbr>quādo</abbr><expan>Quando</expan></choice>">
+<!ENTITY giorno "<choice><abbr>giõno</abbr><expan>giorno</expan></choice>">
+<!ENTITY non "<choice><abbr>nō</abbr><expan>non</expan></choice>">
+<!ENTITY Non "<choice><abbr>nō</abbr><expan>Non</expan></choice>">
+<!ENTITY in "<choice><abbr>ī</abbr><expan>in</expan></choice>">
+<!ENTITY pre "<choice><abbr>&p-macron;</abbr><expan>pre</expan></choice">
+<!ENTITY con "<choice><abbr>cō</abbr><expan>con</expan></choice>">
+<!ENTITY Con "<choice><abbr>cō</abbr><expan>Con</expan></choice>">
+<!ENTITY son "<choice><abbr>sō</abbr><expan>son</expan></choice>">
+<!ENTITY Son "<choice><abbr>sō</abbr><expan>Son</expan></choice>">
+<!ENTITY q-tilde "q&#x0303;">
+<!ENTITY q-macron "q&#x0304;">
+<!ENTITY p-macron "p&#x0304;">
+<!ENTITY b-combtild "b&#xFE23;">
+<!ENTITY p-dot "p&#x0307;">
+<!ENTITY u-vert-tilde "u&#x033E;">
+<!ENTITY p-vert-line "p&#x030D;">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Petrarch's <title>Rerum vulgarium fragmenta</title>: Carta 06 verso</title>
+                <editor xml:id="hws">H. Wayne Storey</editor>
+                <respStmt>
+                    <resp><!-- role/title --></resp>
+                    <name xml:id="jaw">John A. Walsh</name>
+                </respStmt>
+                <respStmt>
+                    <resp><!-- role/title --></resp>
+                    <name xml:id="amm">Allison M. McCormack</name>
+                </respStmt>
+                <respStmt>
+                    <resp><!-- role/title --></resp>
+                    <name xml:id="im">Isabella Magni</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt xml:base="includes/publicationStmt.xml">
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <tagsDecl>
+                <rendition xml:id="red" scheme="css"
+                    >color:#9f1706;</rendition>
+                <rendition xml:id="blue" scheme="css"
+                    >color:#12398c;</rendition>
+                <rendition xml:id="fs18pt" scheme="css"
+                    >font-size:18pt;</rendition>
+                <rendition xml:id="fs24pt" scheme="css"
+                    >font-size:24pt;</rendition>
+                <rendition xml:id="small-caps" n="tiebp:small-caps" scheme="css">
+                    font-variant:small-caps;
+                </rendition>
+                <rendition xml:id="black" scheme="css"
+                    >color:#000000;</rendition>
+            </tagsDecl>
+            <charDecl>
+                <char xml:id="pflour">
+                    <charName>LATIN SMALL LETTER P WITH FLOURISH</charName>
+                    <charProp>
+                        <localName>entity</localName>
+                        <value>pflour</value>
+                    </charProp>
+                    <mapping type="visual"><!-- how to mark? --></mapping>
+                    <mapping type="MUFI">U+A753</mapping>
+                    <mapping type="PUA">U+A753</mapping>
+                </char>
+            </charDecl>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="c015r" />
+            <lg type="sonnet" n="68">
+                <!-- How to encode different hand/darkened text in line 11? Currently I have it as a "correction" -->
+                <lg type="dblhemi"><l n="1"><hi rendition="#red #fs24pt">L</hi><hi rendition="#small-caps">a</hi>spetto sacro de la terro uostra</l> <l n="2">Mi fa del mal passato tragger guai.</l></lg>
+                <lg type="dblhemi"><l n="3">Gridando  sta su misero. che fai</l> <l n="4">Et la uia de salir al ciel mi mostra.</l></lg>
+                <lg type="dblhemi"><l n="5">Ma con questo pensier un altro giostra.</l> <l n="6">Et dice a me perche fuggendo uai</l></lg>
+                <lg type="dblhemi"><l n="7">Se ti rimembra  il <choice><abbr>tēpo</abbr><expan>tempo</expan></choice> passa omai</l> <l n="8">Di tornar a ueder la donna nostra.</l></lg>
+                <lg type="dblhemi"><l n="9">I chel suo ragionar intendo allora</l> <l n="10">Magghiaccio dentro  &in; guisa duom chascolta</l></lg>
+                <lg type="dblhemi"><l n="11">Qual uincera non so. manfino a<corr>dor</corr>a</l> <l n="12">Combattuto anno. et &non; pur una uolta.</l></lg>
+            </lg>
+            <lg type="sonnet" n="69">
+                <lg type="dblhemi"><l n="1"><hi rendition="#blue #fs24pt">B</hi><hi rendition="#small-caps">e</hi>n sapeua io che natural consiglio</l> <l n="2">Amor contra di te giamai non ualse.</l></lg>
+                <lg type="dblhemi"><l n="3">Tanti lacciuol  tante <choice><abbr>im<g ref="#pflour"></g>messe</abbr><expan>impromesse</expan></choice> false.</l> <l n="4">Tanto prouato aueal tuo fiero artiglio.</l></lg>
+<!-- How to fix this error (above)? -->
+                <lg type="dblhemi"><l n="5">Ma nouamente  ondio mi merau<unclear reason="faded">ig</unclear>lio </l> <l n="6">Dirol  come persona a cui ne calse.</l></lg>
+                <lg type="dblhemi"><l n="7">Et chel notai la sopra ạ lacque salse.</l> <l n="8">Tra la riua toscana  et lelba  et giglio.</l></lg>
+                <lg type="dblhemi"><l n="9">I fuggia le tue mani. et per camino</l> <l n="10">Agitandomi uenti  el ciel et londe.</l></lg>
+                <lg type="dblhemi"><l n="11">Mandaua sconosciuto  &amp7; pellegrino.</l> <l n="12">&Quando; ecco <corr>i</corr> tuoi ministri ̣ <choice><abbr>inō</abbr><expan>inon</expan></choice> so donde</l></lg>
+                <lg type="dblhemi"><l n="13">Per darmi a diueder chal suo destino</l> <l n="14">Mal chi contrasta. et mal chi si nasconde.</l></lg>
+            </lg>
+            <lg type="canzone" n="70">
+                <lg type="dblhemi"><l n="1"><hi rendition="#red #fs24pt">L</hi><hi rendition="#small-caps">a</hi>sso me. chi &non; so &in; qual parte pieghi</l> <l n="2">L<unclear reason="faded">a s</unclear>peme  che tradita omai piu uolte</l></lg>
+                <lg type="dblhemi"><l n="3">Che se non e chi &con; pieta mascolte.</l> <l n="4">Perche sparger al ciel si spessi preghi</l></lg>
+                <lg type="trplhemi"><l n="5">Ma segli auen chanchor &non; mi si nieghi</l> <l n="6">Finir ançil mio fine </l> <l n="9">Queste uoci meschine.</l></lg>
+                <lg type="dblhemi"><l n="8">Non graui al mio signor <choice><abbr>ꝑchio</abbr><expan>perchio</expan></choice> il ripreghi</l> <l n="9">Di dir libero un di tra lerbe e i fiori.</l></lg>
+                <lg type="dblhemi"><l n="10">Dreç &amp7; rayson es quieu ciant  e <unclear reason="faded">m</unclear> demori.</l></lg>
+                <lg type="dblhemi"><l n="11"><hi rendition="#blue">¶</hi>Raigon e ben chalcuna uolta io canti</l> <l n="12">Pero cho sospirato si gran tempo</l></lg>
+                <lg type="dblhemi"><l n="13">Che mai non <choice><abbr>īcomincio</abbr><expan>incomincio</expan></choice> assai &per; tempo</l> <l n="14">Per adequar col riso i dolor tanti</l></lg>
+                <lg type="trplhemi"><l n="15">Et sio potesse far chagliocchi san<unclear reason="different hand">ti</unclear></l> <l n="16">Porgesse alcun dilecto</l> <l n="17">Qual che dolce mio detto.</l></lg>
+                <lg type="dblhemi"><l n="18">O me beato sopra glialtri amanti.</l> <l n="19">Ma piu  quandio diro sença mentire</l></lg>
+                <lg type="dblhemi"><l n="20">Donna mi priegha perchio uoglio dire.</l></lg>
+                <lg type="dblhemi"><l n="21"><hi rendition="#red">¶</hi>Vaghi pensier che cosi passo passo</l> <l n="22">Scorto mauete a ragionar tantalto.</l></lg>
+                <lg type="dblhemi"><l n="23">Vedete che <choice><abbr>madōna</abbr><expan>madonna</expan></choice> al cor di smalto.</l> <l n="24">Si forte  chio per me dentro nol passo.</l></lg>
+                <lg type="trplhemi"><l n="25">Ella non degna di mirar si basso.</l> <l n="26">Che di nostre parole</l> <l n="27">Curi  chel ciel no<del>n</del><!-- what to do here? --> uole</l></lg>
+                <lg type="dblhemi"><l n="28">Al qual pur contrastando i son gia lasso.</l> <l n="29">Onde come nel cor minduro enaspro</l></lg>
+                <lg type="dblhemi"><l n="30">Cosi nel mio parlar uoglio esser aspro.</l></lg>
+            </lg>
+        </body>
+    </text>
+</TEI>
+

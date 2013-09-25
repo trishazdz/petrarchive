@@ -88,7 +88,7 @@
     </teiHeader>
     <text>
         <body>
-            <pb n="c015r" />
+            <pb n="charta 15 recto" facs="https://info.slis.indiana.edu/~jawalsh/petrarchive/images/vat-lat3195-f/vat-lat3195-f-015r.jpg" />
             <lg type="sonnet" n="68">
                 <!-- How to encode different hand/darkened text in line 11? Currently I have it as a "correction" -->
                 <lg type="dblhemi"><l n="1"><hi rendition="#red #fs24pt">L</hi><hi rendition="#small-caps">a</hi>spetto sacro de la terro uostra</l> <l n="2">Mi fa del mal passato tragger guai.</l></lg>

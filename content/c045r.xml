@@ -87,7 +87,7 @@
    </teiHeader>
    <text>
       <body>
-         <pb n="Charta 45 recto" facs="https://info.slis.indiana.edu/~jawalsh/petrarchive/images/vat-lat3195-f/vat-lat3195-f-045r.jpg" />
+         <pb n="charta 45 recto" facs="https://info.slis.indiana.edu/~jawalsh/petrarchive/images/vat-lat3195-f/vat-lat3195-f-045r.jpg" />
          <lg type="sonnet" n="232">
             <lg type="dblhemi">
                <l n="1"><hi rendition="#fs24pt">V</hi>incitore Alexandro lira uinse.</l>

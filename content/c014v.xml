@@ -13,6 +13,7 @@
 <!ENTITY non "<choice><abbr>nō</abbr><expan>non</expan></choice>">
 <!ENTITY Non "<choice><abbr>Nō</abbr><expan>Non</expan></choice>">
 <!ENTITY quando "<choice><abbr>quādo</abbr><expan>quando</expan></choice>">
+<!ENTITY Quando "<choice><abbr>Quādo</abbr><expan>Quando</expan></choice>">
 ]>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
@@ -60,7 +61,7 @@
 
    <text>
       <body>
-         <pb n="Charta 1 verso" facs="https://info.slis.indiana.edu/~jawalsh/petrarchive/images/vat-lat3195-f/vat-lat3195-f-014v.jpg" />
+         <pb n="Charta 14 verso" facs="https://info.slis.indiana.edu/~jawalsh/petrarchive/images/vat-lat3195-f/vat-lat3195-f-014v.jpg" />
          <lg type="sestina" n="66" rendition="#columns_2">
             <cb n="1-of-2"/>
             <l n="1"><hi rendition="#red #fs24pt">L</hi><hi rendition="#small-caps">a</hi>ere 
@@ -76,9 +77,8 @@
             <l n="8">O di graui pensier tal una nebbia &virg;</l>
             <l n="9">Qual si leua talor di queste ualli &virg;</l>
             <l n="10">Serrate incontra agliamorosi uenti &virg;</l>
-            <l n="11">Et <choice><abbr>circūdate</abbr><expan>circundate</expan></choice> 
-               di stagnanti fiumi &virg;</l>
-            <l n="12">Quando cade dal ciel piu lenta pioggia.</l>
+            <l n="11">Et circundate di stagnanti fiumi &virg;</l>
+            <l n="12">&Quando; cade dal ciel piu lenta pioggia.</l>
             <l n="13"><hi rendition="#red #fs24pt">¶</hi>In picciol 
                <choice><abbr>tēpo</abbr><expan>tempo</expan></choice> passa ogni 
                <choice><abbr>grā</abbr><expan>gran</expan></choice> pioggia.</l>
@@ -117,7 +117,8 @@
                sole apr<subst><del type="erasure"><gap reason="illegible"/></del><add>e</add></subst> le ualli.</l>            
          </lg>
          
-         <!-- check encoding erasue line 39 + space column 2 -->
+         <!-- check encoding erasure line 39 + space column 2 -->
+         <!--  TWO LINES BLANK SPEACE BETWEEN Rvf 66 and Rvf 67!!! -->
          
             <lg type="sonnet" n="67">
                <lg type="dblhemi">

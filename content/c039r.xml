@@ -59,21 +59,6 @@
                font-style:italic;
             </rendition>
          </tagsDecl>
-         <charDecl>
-            <char xml:id="punctinter">
-               <charName>BROKEN BAR</charName>
-               <charProp>
-                  <localName>entity</localName>
-                  <value>brvbar</value>
-               </charProp>
-               <mapping type="visual">&#166;</mapping>
-               <mapping type="MUFI">U+00A6</mapping>
-               <mapping type="PUA">U+00A6</mapping>
-            </char>
-         </charDecl>
-         
-         <!-- check "broken bar" -->
-         
       </encodingDesc>
    </teiHeader>
    
@@ -92,6 +77,7 @@
 
    <text>
       <body>
+         <pb n="c22v" facs="https://info.slis.indiana.edu/~jawalsh/petrarchive/images/vat-lat3195-f/vat-lat3195-f-039r.jpg"/>
          <ab type="blockSubst">
             <!-- jawalsh: Do we know the sonnet underneath?" -->
          <note resp="#jaw">Sonnet 194 has been written over an erased version of ???.</note>
@@ -133,8 +119,7 @@
             </lg>
             <lg type="dblhemi">
                <l n="13">Maperir mi dalciel per questa luce.</l>
-               <l n="14">Che <choice><abbr>dalūge</abbr><expan>dalunge</expan></choice> mistruggo. 
-                  etda presso <g ref="#brvbar"/>¦ardo</l>
+               <l n="14">Che <choice><abbr>dalūge</abbr><expan>dalunge</expan></choice> mistruggo. etda <choice><orig>presso¦ardo</orig><reg>presso ardo</reg></choice></l>
             </lg>
          </lg>
          </add>

@@ -14,6 +14,18 @@
          <titleStmt>
             <title>Petrarch’s <title rendition="#i">Rerum vulgarium fragmenta</title>: Charta 1 verso</title>
             <editor xml:id="hws">H. Wayne Storey</editor>
+            <respStmt>
+               <resp><!-- role/title --></resp>
+               <name xml:id="jaw">John A. Walsh</name>
+            </respStmt>
+            <respStmt>
+               <resp><!-- role/title --></resp>
+               <name xml:id="amm">Allison M. McCormack</name>
+            </respStmt>
+            <respStmt>
+               <resp><!-- role/title --></resp>
+               <name xml:id="im">Isabella Magni</name>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <p>Publication Information</p>

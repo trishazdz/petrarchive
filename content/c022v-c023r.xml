@@ -63,6 +63,18 @@
                <mapping type="PUA">U+F1FA</mapping>
             </char>
          </charDecl>
+         <charDecl>
+            <char xml:id="virgsusp">
+               <charName>VIRGULA SUSPENSIVA</charName>
+               <charProp>
+                  <localName>entity</localName>
+                  <value>virgsusp</value>
+               </charProp>
+               <mapping type="visual">[VIRGULA SUSPENSIVA]</mapping>
+               <mapping type="MUFI">U+F1F4</mapping>
+               <mapping type="PUA">U+F1F4</mapping>
+            </char>
+         </charDecl>
       </encodingDesc>
    </teiHeader>
    <!-- replaced PUA u+f1f7 w/ the proper character for virgule (the common slash, or solidus): u+002f. -->
@@ -117,7 +129,7 @@
          </lg>
          <lg type="stanza">
             <lg type="dblhemi">
-               <l n="16"><hi rendition="#blue #fs24pt">¶</hi>I die in guarda a san Pietro<g ref="#punctelevhiback"/> or <choice><abbr>nō</abbr><expan>non</expan></choice> piú no.</l>
+               <l n="16"><hi rendition="#blue #fs24pt">¶</hi>I die in guarda a san Pietro <g ref="#punctelevhiback"/> or <choice><abbr>nō</abbr><expan>non</expan></choice> piú no.</l>
                <l n="17">Intendami chi po. chimintendio.</l>
             </lg>
             <lg type="dblhemi">
@@ -211,7 +223,7 @@
                <l n="60">Che piu nol sento. et e non men che suole.</l>
             <lg type="stanza">
                <lg type="dblhemi">
-                  <l n="61"><hi rendition="#red #fs24pt">¶</hi>In silentio parole ‘ accorte et sagge</l>
+                  <l n="61"><hi rendition="#red #fs24pt">¶</hi>In silentio parole ‘ accorte et sagg<subst><del type="erasure"><gap reason="illegible"/></del><add>e</add></subst></l>
                   <l n="62">El suon che mi sottragge ‘ ogni altra cura.</l>
                </lg>
                <lg type="dblhemi">
@@ -224,7 +236,7 @@
                </lg>
                <lg type="dblhemi">
                   <l n="67">Et di duo fonti un fiume ‘ &in; pace uolto </l>
-                  <l n="68">Douio bramo &amp7; ra‹c›colto ‘ oue che sia.</l>
+                  <l n="68">Douio bramo &amp7; ra<add rendition="#super" place="above">c</add>colto ‘ oue che sia.</l>
                </lg>
                <lg type="dblhemi">
                   <l n="69">Amor &amp7; gelosia ‘ manno il cor tolto.</l>
@@ -232,7 +244,7 @@
                </lg>
                <lg type="dblhemi">
                   <l n="71">Che mi conducon &per; piu piana uia.</l>
-                  <l n="72">A la sperança mia ‘ al fin de gliaffanni </l>
+                  <l n="72">A la sperança mia ‘ al fin de gliaffanni <g ref="#virgsusp"/></l>
                </lg>
                <lg type="dblhemi">
                   <l n="73">O riposto mio bene. et quel che segue.</l>
@@ -291,7 +303,7 @@
                   <l n="8">Si dolce lume uscia de gliocchi suoi.</l>
                </lg>
             </lg>
-            <lg type="sonnet">
+            <lg type="sonnet" n="107">
                <lg type="dblhemi">
                   <l n="1"><hi rendition="#blue #fs24pt"
                      >N</hi><hi rendition="#small-caps">o</hi>n ueggio oue scampar mi possa omai</l>

@@ -52,6 +52,18 @@
                font-variant:small-caps;
             </rendition>
          </tagsDecl>
+         <charDecl>
+            <char xml:id="punctinter">
+               <charName>PUNCTUS INTERROGATIVUS</charName>
+               <charProp>
+                  <localName>entity</localName>
+                  <value>punctinter</value>
+               </charProp>
+               <mapping type="visual">?</mapping>
+               <mapping type="MUFI">U+F160</mapping>
+               <mapping type="PUA">U+F160</mapping>
+            </char>
+         </charDecl>
       </encodingDesc>
    </teiHeader>
    <!-- replaced PUA u+f1f7 w/ the proper character for virgule u+002f. -->
@@ -69,6 +81,7 @@
 
    <text>
       <body>
+         <pb n="c22v" facs="../images/vat-lat3195-f/vat-lat3195-f-026r.jpg"/>
          <lg type="madrigal" n="121">
          <lg type="stanza">
             <lg type="dblhemi">
@@ -132,7 +145,7 @@
                </lg>
                <lg type="dblhemi">
                   <l n="13">Quel aria dolce del bel uiso adorno</l>
-                  <l n="14">Piaccia a questocchi. &amp; quanto si conuene </l>
+                  <l n="14">Piaccia a questocchi. &amp; quanto si <choice><abbr>cōuene</abbr><expan>conuene</expan></choice><g ref="#punctinter"/></l>
                </lg>
             </lg>
          

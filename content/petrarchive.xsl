@@ -13,9 +13,18 @@
     <xsl:import href="teibp.xsl"/>
     
     <xsl:param name="includeToolbox" select="false()"/>
+    <xsl:param name="pbNote" select="''"/>
     
     <xsl:template match="tei:g" priority="99">
-        <xsl:value-of select="normalize-space(id(substring-after(@ref,'#'))/tei:mapping[@type = 'visual'])"/>
+        
+        <xsl:choose>
+            <xsl:when test="id(substring-after(@ref,'#'))/tei:mapping[@type = 'visual']">
+                <xsl:value-of select="normalize-space(id(substring-after(@ref,'#'))/tei:mapping[@type = 'visual'])"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="concat('[',normalize-space(id(substring-after(@ref,'#'))/tei:charName),']')"/>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
     <xsl:template match="tei:cb[@n='1-of-2']">
@@ -63,6 +72,12 @@
             </xsl:if>
         </head>
     </xsl:template>
+    
+    <xsl:variable name="htmlFooter">
+        <footer> © 2013. This document is part of the <cite>Petr<span style="font-style:normal;">archive</span></cite>.<br />
+            By H. Wayne Storey, John A. Walsh, Isabella Magni, and Allison M. McCormack. <br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" /></a>&#x00a0;<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Petrarchive</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>. <br />Powered by <a href="{$teibpHome}">TEI Boilerplate</a>. 
+        </footer>
+    </xsl:variable>
         
     
 </xsl:stylesheet>

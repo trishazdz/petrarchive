@@ -75,7 +75,7 @@
                   <localName>entity</localName>
                   <value>punctinter</value>
                </charProp>
-               <mapping type="visual"></mapping>
+               <mapping type="visual">?</mapping>
                <mapping type="MUFI">U+F160</mapping>
                <mapping type="PUA">U+F160</mapping>
             </char>

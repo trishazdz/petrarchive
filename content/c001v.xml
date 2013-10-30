@@ -43,6 +43,12 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <p n="ms lines">In Petrarch's personal copy of the RVF, he consistently uses a ruled 31-line “canvas” for the layout of the poems. There is one exception, Rvf XXX, where an extra line is added to the underlying canvas. Elements that occupy a ruled manuscript line are tagged with the attribute <code>@corresp="#msline"</code>, where <code>#msline</code> references a category in a taxonomy of "graphic features" in the <gi>teiHeader</gi></p>
+         <classDecl>
+            <taxonomy n="graphic features">
+               <category xml:id="msline"><catDesc>A single ruled line in a manuscript</catDesc></category>
+            </taxonomy>
+         </classDecl>
          <charDecl>
             <char xml:id="punctelevhiback">
                <charName>PUNCTUS ELEVATUS WITH HIGH BACK</charName>
@@ -308,48 +314,48 @@ the line wraps. -->
       <body>
          <pb n="charta 1 verso" facs="https://info.slis.indiana.edu/~jawalsh/petrarchive/images/vat-lat3195-f/vat-lat3195-f-001v.jpg" />
          <lg type="sonnet" n="5">
-            <lg type="dblhemi">
+            <lg type="dblhemi" corresp="#msline">
                <l n="1"><hi rendition="#red #fs24pt"
                   >Q</hi><hi rendition="#small-caps">u</hi>ando io mouo i sospiri a chiamar uoi</l>
                <l n="2">El nome che nel cor mi scrisse amore /</l>
             </lg>
-            <lg type="dblhemi">
+            <lg type="dblhemi" corresp="#msline">
                <l n="3">Laudando sincomincia udir di fore</l>
                <l n="4">Il suon de primi dolci accenti suoi.</l>
             </lg>
-            <lg type="dblhemi">
+            <lg type="dblhemi" corresp="#msline">
                <l n="5">Vostro stato real chencontro poi /</l>
                <l n="6">Raddoppia alalta impresa il mio ualore.</l>
             </lg>
-            <lg type="dblhemi">
+            <lg type="dblhemi" corresp="#msline">
                <l n="7">Ma taci grida il fin che farle honore</l>
                <l n="8">E daltri homeri soma / che da tuoi.</l>
             </lg>
-            <lg type="dblhemi">
+            <lg type="dblhemi" corresp="#msline">
                <l n="9">Cosi laudare &amp7; reuerire insegna</l>
                <l n="10">La uoce stessa pur chaltri ui chiami</l>
             </lg>
-            <lg type="dblhemi">
+            <lg type="dblhemi" corresp="#msline">
                <l n="11">O dogni reuerença et donor degna.</l>
                <l n="12">Se non che forse apollo si disdegna.</l>
             </lg>
             <!-- Don't know what's going on here? -->
-            <lg type="dblhemi">
+            <lg type="dblhemi" corresp="#msline">
                <l n="13">Cha parlar de suoi &sempre; uerdi rami</l>
                <l n="14">Lingua mortal presumptuosa uegna.</l>
             </lg>
          </lg>
-
+         <space corresp="#msline"/>
          <lg type="sonnet" n="6">
-            <lg type="dblhemi">
+            <lg type="dblhemi" corresp="#msline">
                <l n="1"><hi rendition="#blue #fs24pt">S</hi><hi rendition="#small-caps">i</hi> trauiato el folle mi desio</l>
                <l n="2">A seguitar costei chen fuga e uolta.</l>
             </lg>
-            <lg type="dblhemi">
+            <lg type="dblhemi" corresp="#msline">
                <l n="3">Et de lacci damor leggiera &amp7; sciolta</l>
                <l n="4">Vola di nançi allento correr mio.</l>
             </lg>
-            <lg type="dblhemi">
+            <lg type="dblhemi" corresp="#msline">
                <l n="5">Che 
                   <choice>
                      <abbr>quāto</abbr>
@@ -358,27 +364,27 @@ the line wraps. -->
                   richiamando piu lenuio</l>
                <l n="6">Per la secura strada men mascolta.</l>
             </lg>
-            <lg type="dblhemi">
+            <lg type="dblhemi" corresp="#msline">
                <l n="7">Ne mi uale spronarlo o dargli uolta.</l>
                <l n="8">Chamor &per; sua natura il fa
                   restio.</l>
             </lg>
-            <lg type="dblhemi">
+            <lg type="dblhemi" corresp="#msline">
                <l n="9">Et poi chel fren &per; força a se raccoglie /</l>
                <l n="10">Imi rimango in signoria di lui /</l>
             </lg>
-            <lg type="dblhemi">
+            <lg type="dblhemi" corresp="#msline">
                <l n="11">Che mal mio grado a morte mi trasporta.</l>
                <l n="12">Sol &per; uenir allauro onde si coglie</l>
             </lg>
-            <lg type="dblhemi">
+            <lg type="dblhemi" corresp="#msline">
                <l n="13">Acerbo frutto. che le piaghe altrui</l>
                <l n="14">Gustando afflige piu che non conforta.</l>
             </lg>
          </lg>
-
+         <space corresp="#msline"/>
          <lg type="sonnet" n="7">
-            <lg type="dblhemi">
+            <lg type="dblhemi" corresp="#msline">
                <l n="1"><hi rendition="#red #fs24pt">L</hi><hi rendition="#small-caps">a</hi> gola el somno et lotiose piume</l>
                <l n="2">Anno del mondo ogni uertu 
                   <choice>
@@ -386,23 +392,23 @@ the line wraps. -->
                      <expan>sbandita</expan>
                   </choice>.</l>
             </lg>
-            <lg type="dblhemi">
+            <lg type="dblhemi" corresp="#msline">
                <l n="3">Onde dal corso suo quasi smarrita</l>
                <l n="4">Nostra natura uinta dal costume.</l>
             </lg>
-            <lg type="dblhemi">
+            <lg type="dblhemi" corresp="#msline">
                <l n="5">Et e si spento ogni benigno lume</l>
                <l n="6">Del ciel &per; cui sinforma humana uita.</l>
             </lg>
-            <lg type="dblhemi">
+            <lg type="dblhemi" corresp="#msline">
                <l n="7">Che per cosa mirabile saddita</l>
                <l n="8">Chi uol far delicona nascer fiume.</l>
             </lg>
-            <lg type="dblhemi">
+            <lg type="dblhemi" corresp="#msline">
                <l n="9">Qual uagheçça di lauro / qual di mirto</l>
                <l n="10">Pouera et nuda uai philosophia</l>
             </lg>
-            <lg type="dblhemi">
+            <lg type="dblhemi" corresp="#msline">
                <l n="11">Dice la turba al uil guadagno intesa</l>
                <l n="12">Pochi 
                   <choice>
@@ -410,7 +416,7 @@ the line wraps. -->
                      <expan>compagni</expan>
                   </choice> aurai &per; laltra uia.</l>
             </lg>
-            <lg type="dblhemi">
+            <lg type="dblhemi" corresp="#msline">
                <l n="13">Tanto ti prego piu gentile spirto</l>
                <l n="14">
                   <choice>
@@ -425,9 +431,9 @@ the line wraps. -->
                   </choice>.</l>
             </lg>
          </lg>
-
+         <space corresp="#msline"/>
          <lg type="sonnet" n="8">
-            <lg type="dblhemi">
+            <lg type="dblhemi" corresp="#msline">
                <l n="1"><hi rendition="#fs24pt #blue">A</hi>
                   <choice>
                      <orig>
@@ -443,12 +449,12 @@ the line wraps. -->
                   </choice> oue la bella uesta</l>
                <l n="2">Prese de le terrene membra pria</l>
             </lg>
-            <lg type="dblhemi">
+            <lg type="dblhemi" corresp="#msline">
                <l n="3">La donna che colui cha te nenuia</l>
                <l n="4">Spesso dal somno lagrimando
                   desta</l>
             </lg>
-            <lg type="dblhemi">
+            <lg type="dblhemi" corresp="#msline">
                <l n="5">Libere in pace passauam per
                   questa</l>
                <l n="6">Vita mortal / 
@@ -459,19 +465,19 @@ the line wraps. -->
                      <reg>chogni</reg>
                   </choice> animal desia.</l>
             </lg>
-            <lg type="dblhemi">
+            <lg type="dblhemi" corresp="#msline">
                <l n="7">Sença sospetto di trouar fra uia</l>
                <l n="8">Cosa chalnostrandar fosse molesta.</l>
             </lg>
-            <lg type="dblhemi">
+            <lg type="dblhemi" corresp="#msline">
                <l n="9">Ma del misero stato oue noi semo</l>
                <l n="10">Condotte da la uita altra serena</l>
             </lg>
-            <lg type="dblhemi">
+            <lg type="dblhemi" corresp="#msline">
                <l n="11">Vn sol conforto et de la morte auemo</l>
                <l n="12">Che uendetta e di lui cha cio nemena</l>
             </lg>
-            <lg type="dblhemi">
+            <lg type="dblhemi" corresp="#msline">
                <l n="13">Lo qual inforça altrui presso
                   <choice><orig>alext<supplied resp="#hws">r</supplied><add place="above" >e</add>mo</orig><reg>alextremo</reg></choice></l>
                <l n="14">Riman legato con maggior catena.</l>

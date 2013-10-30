@@ -31,6 +31,7 @@
         <moduleRef key="linking"/>
         <moduleRef key="analysis"/>
         <moduleRef key="gaiji"/>
+        <moduleRef key="tagdocs"/>
         
         <elementSpec ident="lg" mode="change" module="textstructure">
           <attList>

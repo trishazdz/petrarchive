@@ -65,25 +65,13 @@
             </char>
          </charDecl>
          <charDecl>
-            <char xml:id="virgsusp">
-               <charName>VIRGULA SUSPENSIVA</charName>
-               <charProp>
-                  <localName>entity</localName>
-                  <value>virgsusp</value>
-               </charProp>
-               <mapping type="visual"></mapping>
-               <mapping type="MUFI">U+F1F4</mapping>
-               <mapping type="PUA">U+F1F4</mapping>
-            </char>
-         </charDecl>
-         <charDecl>
             <char xml:id="punctinter">
                <charName>PUNCTUS INTERROGATIVUS</charName>
                <charProp>
                   <localName>entity</localName>
                   <value>punctinter</value>
                </charProp>
-               <mapping type="visual"></mapping>
+               <mapping type="visual">?</mapping>
                <mapping type="MUFI">U+F160</mapping>
                <mapping type="PUA">U+F160</mapping>
             </char>
@@ -95,15 +83,14 @@
                   <localName>entity</localName>
                   <value>brvbar</value>
                </charProp>
-               <mapping type="visual">&#166;</mapping>
+               <mapping type="visual"></mapping>
                <mapping type="MUFI">U+00A6</mapping>
                <mapping type="PUA">U+00A6</mapping>
             </char>
          </charDecl>
          
-         <!-- check "broken bar"!!! line 17, canzone 71-->
-         
-         <!-- virgula suspensiva? mapping type="visual"?? vd p. 149 MUFI pdf-->
+         <!-- need "visual" for PUNCTUS INTERROGATIVUS (Rvf.70, v.31 and v.37); 
+            VIRGUAL SUSPENSIVA (Rvf.71, v.18); and BROKEN BAR (Rvf.71, v.17) -->
          
       </encodingDesc>
    </teiHeader>
@@ -112,12 +99,12 @@
 
    <text>
       <body>
-         <pb n="charta 15 verso" facs="https://info.slis.indiana.edu/~jawalsh/petrarchive/images/vat-lat3195-f/vat-lat3195-f-015v.jpg"/>
+         <pb n="charta 15 verso" facs="https://info.slis.indiana.edu/~jawalsh/petrarchive/images/vat-lat3195-f/vat-lat3195-f-015v.jpg" />
          <lg type="canzone" n="70">
          <lg type="stanza">
             <lg type="dblhemi">
                <l n="31"><hi rendition="#red #fs24pt">¶</hi>Che parlo &virg; o doue sono &virg; et chi 
-                  <choice><abbr>mingāna</abbr><expan>minganna</expan></choice> <g ref="#punctinter"/></l>
+                  <choice><abbr>mingāna</abbr><expan>minganna</expan></choice><g ref="#punctinter"/></l>
                <l n="32">Altri chio stesso el desiar souerchio.</l>
             </lg>
             <lg type="dblhemi">
@@ -128,13 +115,14 @@
             <lg type="trplhemi">
                <l n="35">Se mortal uelo il mio ueder appanna</l>
                <l n="36">Che colpa e de le stelle &virg;</l>
-               <l n="37">O de le cose belle <g ref="#punctinter"/></l>
+               <l n="37">O de le cose belle<g ref="#punctinter"/></l>
             </lg>
             <lg type="dblhemi">
                <l n="38">Meco si sta chi di et notte maffanna.</l>
                <l n="39">Poi che del suo piacer mi fe gir graue</l>
             </lg>
             <l n="40">La dolce uista &virg; el bel guardo soaue.</l>
+         </lg>
          <lg type="stanza">
             <lg type="dblhemi">
                <l n="41"><hi rendition="#blue #fs24pt">¶</hi>Tutte le cose di chel mondo e adorno &virg;</l>
@@ -155,8 +143,9 @@
             </lg>
             <l n="50">Nel dolce tempo de la prima etade.</l>
          </lg>
+         </lg>
             
-            <lg type="canzone" n="71">
+            <lg xml:id="rvf071" type="canzone" n="71">
                <lg type="stanza">
                   <lg type="dblhemi">
                      <l n="1"><hi rendition="#red #fs24pt">P</hi><hi rendition="#small-caps">e</hi>rche 
@@ -196,7 +185,7 @@
                            a uoi.</l>
                      </lg>
                      <lg type="dblhemi">
-                        <l n="18">Ma contrastar non posso al gran desio &virg;</l>
+                        <l n="18">Ma contrastar non posso al gran desio <g ref="#punctelevhiback"/></l>
                         <l n="19">Lo quale <subst><del type="erasure"><gap reason="illegible"/></del><add>e</add></subst>n 
                            me da poi</l>
                      </lg>
@@ -247,4 +236,3 @@
    </text>
 </TEI>
 
-<!-- line 18 canzone 71 -->

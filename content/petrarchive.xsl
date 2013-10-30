@@ -29,20 +29,24 @@
     
     <xsl:template match="tei:cb[@n='1-of-2']">
         <xsl:variable name="mycb" select="."/>
-        <div style="float:left; margin-right:2em;">
-            <xsl:apply-templates select="//tei:*[preceding-sibling::tei:cb[@n = '1-of-2'] = $mycb and following-sibling::tei:cb[@n='2-of-2']]" mode="process"/>
+        <div style="float:left;">
+            <xsl:apply-templates select="ancestor::tei:lg[@type = 'sestina']//tei:l[preceding::tei:cb[@n = '1-of-2'] = $mycb and following::tei:cb[@n='2-of-2']]" mode="process"/>
         </div>
     </xsl:template>
     
     <xsl:template match="tei:cb[@n='2-of-2']">
         <xsl:variable name="mycb" select="."/>
         <div style="float:left; margin-right:2em;">
-            <xsl:apply-templates select="//tei:*[preceding-sibling::tei:cb[@n = '2-of-2'] = $mycb]" mode="process"/>
+            <xsl:apply-templates select="ancestor::tei:lg[@type = 'sestina']//tei:l[preceding::tei:cb[@n = '2-of-2'] = $mycb]" mode="process"/>
         </div>
     </xsl:template>
     
-    <xsl:template match="tei:l[preceding-sibling::tei:cb]"/>
-    <xsl:template match="tei:l[preceding-sibling::tei:cb]" mode="process">
+    <xsl:template match="tei:lg[@type = 'sestina']//tei:l[preceding::tei:cb]"/>
+    <xsl:template match="tei:lg[@type = 'sestian']//tei:lg">
+        <xsl:apply-templates/>
+    </xsl:template>
+    
+    <xsl:template match="tei:lg[@type = 'sestina']//tei:l[preceding::tei:cb]" mode="process">
             <xsl:element name="{local-name()}">
                 <xsl:call-template name="addID"/>
                 <xsl:apply-templates select="@*|node()"/>

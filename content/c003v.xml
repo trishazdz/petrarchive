@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="petrarchive.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="teibp.xsl"?>
+<!DOCTYPE TEI [
+<!ENTITY amp7 "<choice><abbr>&amp;</abbr><expan>et</expan></choice>">
+<!ENTITY per "<choice><abbr>ꝑ</abbr><expan>per</expan></choice>">
+<!ENTITY virg "/">
+<!ENTITY sempre "<choice><abbr>sēpre</abbr><expan>sempre</expan></choice>">
+<!ENTITY quanto "<choice><abbr>quāto</abbr><expan>quanto</expan></choice>">
+<!ENTITY quando "<choice><abbr>quādo</abbr><expan>quando</expan></choice>">
+<!ENTITY giorno "<choice><abbr>giõno</abbr><expan>giorno</expan></choice>">
+<!ENTITY non "<choice><abbr>nō</abbr><expan>non</expan></choice>">
+<!ENTITY in "<choice><abbr>ī</abbr><expan>in</expan></choice>">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Petrarch's <title>Rerum vulgarium fragmenta</title>: Carta 3 verso</title>
+            <editor xml:id="hws">H. Wayne Storey</editor>
+            <respStmt>
+               <resp><!-- role/title --></resp>
+               <name xml:id="jaw">John A. Walsh</name>
+            </respStmt>
+            <respStmt>
+               <resp><!-- role/title --></resp>
+               <name xml:id="amm">Allison M. McCormack</name>
+            </respStmt>
+            <respStmt>
+               <resp><!-- role/title --></resp>
+               <name xml:id="im">Isabella Magni</name>
+            </respStmt>
+         </titleStmt>
+            <publicationStmt xml:base="includes/publicationStmt.xml">
+               <p/>
+            </publicationStmt>
+         <sourceDesc>
+               <p/>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <tagsDecl>
+            <rendition xml:id="red" scheme="css"
+               >color:#9f1706;</rendition>
+            <rendition xml:id="blue" scheme="css"
+               >color:#12398c;</rendition>
+            <rendition xml:id="fs18pt" scheme="css"
+               >font-size:18pt;</rendition>
+            <rendition xml:id="fs24pt" scheme="css"
+               >font-size:24pt;</rendition>
+            <rendition xml:id="small-caps" n="tiebp:small-caps" scheme="css">
+               font-variant:small-caps;
+            </rendition>
+         </tagsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <!-- replaced PUA u+f1f7 w/ the proper character for virgule u+002f. -->
+   <!-- MS Word label [5; s] becomes <lg type="sonnet" n="5"> -->
+   <!--
+       The standard solution below does not allow us to italicize only the "m" in "sempre."
+       
+       <choice><abbr>sēpre</abbr><expan>sempre</expan></choice>
+  -->
+   <!-- What character is the Italian ampersand/7? -->
+
+   <!-- For p with stroke through descender, I am using ꝑ (u+A751). -->
+
+   <!-- Can erasures be read? -->
+
+   <text>
+      <body>
+         <lg type="sonnet" n="7">
+            <lg type="dblhemi"><l n="1"><hi rendition="#red #fs24pt">M</hi>Ille fiate o dolce mia guerrera</l>	<l n="2">Per auer co be gliocchi uostri pace</l></lg>
+            <lg type="dblhemi"><l n="3">Vaggio proferto il cor. ma uoi &non; piace</l>	<l n="4">Mirar si basso collamente altera.</l></lg>
+            <lg type="dblhemi"><l n="5">Et se di lui forsaltra donna spera</l> <l n="6">Viue in sperança debile et fallace.</l></lg>
+            <lg type="dblhemi"><l n="7">Mio ꝑche sdegno cio cha uoi dispiace</l>	<l n="8">Esser &non; puo giamai cosi comera.</l></lg>
+            <lg type="dblhemi"><l n="9">Or sio lo scaccio. et <choice><abbr>enō</abbr><expan>enon</expan></choice> troua in uoi</l> <l n="10">Nel exilio infelice alcun soccorso.</l></lg>
+            <lg type="dblhemi"><l n="11">Ne sa star sol. ne gire oualtri il chiama.</l> <l n="12">Poria smarrire il suo <choice><abbr>natǎl</abbr><expan>natural</expan></choice> corso.</l></lg>
+            <lg type="dblhemi"><l n="13">Che graue colpa fia dambeduo noi.</l> <l n="14">Et tanto piú de uoi &quanto; piu uama.</l></lg>
+         </lg>
+         
+         <lg type="sestina" n="39">
+            <lg type="column">
+               <l n="1"><hi rendition="#blue #fs24pt">A</hi>Qual<choice><abbr>ū</abbr>abbr><expan>un</expan></choice>que animale alberga &in; terra</l>
+               <l n="2">Se &non; se <choice><abbr>alquāti</abbr><expan>alquanti</expan></choice> <choice><abbr>chāno</abbr><expan>channo</expan></choice> &in; odio il sole</l>
+               <l n="3"><choice><abbr>Tēpo</abbr>Tempo</choice> da trauagliare e <choice><abbr>qñto</abbr><expan>quanto</expan></choice> el &giorno;.</l>
+               <l n="4">Ma poi chel ciel accende le sue stelle</l>
+               <l n="5">Qual torna a casa. &amp7; <choice><abbr>q<hi rend="superscript">~</hi>l</abbr><expan>qual</expan></choice></l> sanida &in; selua</l>
+         <!-- Couldn't find a character: q with tilde over it/over two letters -->
+               <l n="6">&Per; auer posa al meno in fin a lalba.</l>
+               <l n="7"><hi rendition="#red #fs24pt">¶</hi>Et io da che comincia la bella alba</l>
+               <l n="8">A scuoter lombra intorno dela terra</l>
+               <l n="9"><choice><abbr>Sugeliādo</abbr><expan>Sugeliando</expan></choice> gli animali &in; ogni selua</l>
+               <l n="10">&non; o mai triegua di sospir col sole.</l>
+               <l n="11">Poi <choice><abbr>quādio</abbr><expan>quandio</expan></choice> ueggio <choice><abbr>fiāmeggiar</abbr><expan>fiammeggiar</expan></choice> le stelle</l>
+               <l n="12">Vo <choice><abbr>lagrimādo</abbr><expan>lagrimando</expan></choice>. &amp7; disiando il giorno.</l>
+               <l n="13"><hi rendition="#blue #fs24pt">¶</hi>&Quando; la sera scaccia il chiaro &giorno;</l>
+               <l n="14">Et le tenebre nostre altriu <choice><abbr>fāno</abbr><expan>fanno</expan></choice> alba</l>
+               <l n="15">Miro pensoso le crudeli stelle</l>
+               <l n="16">Che <choice><abbr>māno</abbr><expan>manno</expan></choice> facto di sensibil terra.</l>
+               <l n="17">Et maledico il di chi uidil sole</l>
+               <l n="18">Che mi fa &in; uista un huom nuditro <choice><abbr>īselua</abbr><expan>inselua</expan></choice>.</l>
+               <l n="19"><hi rendition="#red #fs24pt">¶</hi>&Non; credo che pascesse mai &per; selua</l>
+               <l n="20">Si aspra fera o di nocte o di giorno</l>
+               <l n="21">Come costei chi <choice><abbr>piāgo</abbr><expan>piango</expan></choice> <choice><abbr>alōbra</abbr><expan>alombra</expan></choice> e al sole.</l>
+               <l n="22">Et &non; mi stanchi <choice><abbr>ṗmo</abbr><expan>primo</expan></choice> <choice><abbr>sōno</abbr><expan>sonno</expan></choice> odalba.</l>
+               <l n="23">Che ben chi sia mortal corpo di terra</l>
+         </lg>
+         <lg type="column">
+            <l n="24">Lo mio fermo desir uien a le stelle.</l>
+            <l n="25"><hi rendition="#blue #fs24pt">¶</hi>Prima chi torno a uoi <choice><abbr>lucēti</abbr><expan>lucenti</expan></choice> stelle</l>
+            <l n="26">O tomo giu nelamorosa selua</l>
+            <l n="27">Lassando il corpo che fia trita terra.</l>
+            <l n="28">Vedessio &in; le pieta <choice><abbr>chēn</abbr><expan>chen</expan></choice> un sol giorno</l>
+            <l n="29">Puo ristorar <choice><abbr>moltāni</abbr><expan>moltanni</expan></choice>. <choice><abbr>enāçi</abbr><expan>enançi</expan></choice> lalba</l>
+            <l n="30"><choice><abbr>Puōmi</abbr><expan>Puommi</expan></choice> a richir dal <choice><abbr>tramōtar</abbr><expan>tramontar</expan></choice> del sole.</l>
+            <l n="31"><hi rendition="#red #fs24pt">¶</hi>Con lei fossio da che si parte il sole.</l>
+            <l n="32">Et &non; ci uedessaltri che le stelle.</l>
+            <l n="33">Sol una nocte. &amp7; mai &non; fosse lalba.</l>
+            <l n="34">Et &non; se transformasse &in; uerde selua</l>
+            <l n="35">&Per; uscirmi di braccia come il giorno</l>
+            <l n="36">Chapollo la seguia qua giu &per; terra.</l>
+            <l n="37"><hi rendition="#blue #fs24pt">¶</hi>Ma io sa<damage>ro</damage> sotterra &in; secca selua.</l>
+            <l n="38">El giorno andra pien di minute stelle</l>
+            <l n="39">Prima cha si dolce alba arriui ilsole.</l>     
+         </lg>
+      </lg>
+      <space type="stop-space" extent="7" />
+         
+      </body>
+   </text>
+</TEI>

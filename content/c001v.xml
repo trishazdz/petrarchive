@@ -31,7 +31,7 @@
             <p>Publication Information</p>
          </publicationStmt>
          <sourceDesc>
-            <msDesc>
+            <msDesc xml:id="vat.lat.3195">
                <msIdentifier>
                   <country>Vatican City</country>
                   <repository>Vatican Library</repository>

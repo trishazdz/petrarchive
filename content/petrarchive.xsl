@@ -12,8 +12,11 @@
     exclude-result-prefixes="xsl tei xd eg fn #default">
     <xsl:import href="teibp.xsl"/>
     
-    <xsl:param name="includeToolbox" select="false()"/>
+    <xsl:param name="includeToolbox" select="true()"/>
     <xsl:param name="pbNote" select="''"/>
+    
+    <xsl:param name="customCSS.norm" select="concat($filePrefix,'/css/custom_norm.css')"/>
+    <xsl:param name="customCSS" select="concat($filePrefix,'/css/custom.css')"/>
     
     <xsl:template match="tei:g" priority="99">
         
@@ -68,6 +71,10 @@
                 $("html > head > title").text($("TEI > teiHeader > fileDesc > titleStmt > title:first").text());
                 $.unblockUI();	
                 });
+                
+                function switchCustomCSS(theme) {
+                document.getElementById('customcss').href=theme.options[theme.selectedIndex].value;
+                }
             </script>
             <xsl:call-template name="rendition2style"/>
             <title><!-- don't leave empty. --></title>
@@ -75,6 +82,23 @@
                 <xsl:call-template name="analytics"/>
             </xsl:if>
         </head>
+    </xsl:template>
+    
+    <!-- Petrarchive Toolbox -->
+    <xsl:template name="teibpToolbox">
+        <div id="teibpToolbox">
+            <h1>Toolbox</h1>
+            <label for="pbToggle">Hide page breaks</label>
+            <input type="checkbox" id="pbToggle" /> 
+            <div>
+                <h3>Themes:</h3>
+                
+                <select id="themeBox" onchange="switchCustomCSS(this);">
+                    <option value="{$customCSS}" >diplomatic transcription</option>
+                    <option value="{$customCSS.norm}">edited text</option>
+                </select>			
+            </div>
+        </div>
     </xsl:template>
     
     <xsl:variable name="htmlFooter">

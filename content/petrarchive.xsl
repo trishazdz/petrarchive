@@ -87,13 +87,9 @@
     <!-- Petrarchive Toolbox -->
     <xsl:template name="teibpToolbox">
         <div id="teibpToolbox">
-            <h1>Toolbox</h1>
-            <label for="pbToggle">Hide page breaks</label>
-            <input type="checkbox" id="pbToggle" /> 
             <div>
-                <h3>Themes:</h3>
-                
-                <select id="themeBox" onchange="switchCustomCSS(this);">
+                <h3 style="display:inline;">text view:</h3>
+                <select style="display:inline;" id="themeBox" onchange="switchCustomCSS(this);">
                     <option value="{$customCSS}" >diplomatic transcription</option>
                     <option value="{$customCSS.norm}">edited text</option>
                 </select>			

@@ -30,10 +30,18 @@
 <!ENTITY u-vert-tilde "u&#x033E;">
 <!ENTITY p-vert-line "p&#x030D;">
 <!ENTITY uia "<choice><orig>uia</orig><reg>via</reg></choice>">
+<!ENTITY uai "<choice><orig>uai</orig><reg>vai</reg></choice>">
+
 <!-- period "p" to "2" comma "c" -->
 <!ENTITY p2c "<choice><orig>.</orig><reg>,</reg></choice>">
+<!ENTITY p2colon "<choice><orig>.</orig><reg>:</reg></choice>">
+<!ENTITY p2e "<choice><orig>.</orig><reg>!</reg></choice>">
+<!ENTITY c2p "<choice><orig>,</orig><reg>.</reg></choice>">
+<!ENTITY v2c "<choice><orig> /</orig><reg>,</reg></choice>">
 <!ENTITY regapos "<reg>’</reg>">
 <!ENTITY uolta "<choice><orig>uolta</orig><reg>volta</reg></choice>">
+<!ENTITY egrave_reg "<choice><orig>e</orig><reg>è</reg></choice>">
+<!ENTITY si "<choice><orig>si</orig><reg>sì</reg></choice>">
 ]>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
@@ -151,19 +159,23 @@
         </encodingDesc>
     </teiHeader>
     <text>
+        <!-- jawalsh:
+            
+            for encoding guidlines:
+            
+            * basic orig/reg
+            * reg w/o choice for supplied punctuation
+            * del[@type = 'editorial' and @resp = '#hws'] for editorial deletions
+            
+            -->
         <body>
             <pb n="charta 15 recto"
                 facs="https://info.slis.indiana.edu/~jawalsh/petrarchive/images/vat-lat3195-f/vat-lat3195-f-015r.jpg"/>
             <lg type="sonnet" n="68">
                 <!-- How to encode different hand/darkened text in line 11? Currently I have it as a "correction" -->
                 <lg type="dblhemi">
-                    <l n="1"><hi rendition="#red #fs24pt"
-                            >L</hi><reg>’</reg><hi
-                            rendition="#small-caps"
-                        >a</hi>spetto sacro de la terro
-                        <choice><orig>uostra</orig><reg>vostra</reg></choice></l>
-                    <l n="2">Mi fa del mal passato tragger
-                        guai<choice><orig>.</orig><reg>,</reg></choice></l>
+                    <l n="1"><hi rendition="#red #fs24pt">L</hi><reg>’</reg><hi rendition="#small-caps">a</hi>spetto sacro de la <!-- jawalsh: check following. --> <choice><orig>terro</orig><reg>terra</reg></choice> <choice><orig>uostra</orig><reg>vostra</reg></choice></l>
+                    <l n="2">Mi fa del mal passato tragger guai<choice><orig>.</orig><reg>,</reg></choice></l>
                 </lg>
                 <lg type="dblhemi">
                     <l n="3">Gridando<choice><orig> /</orig><reg>:</reg></choice> <choice><orig>sta</orig><reg>Sta</reg></choice><reg>’</reg> su misero<choice><orig>.</orig><reg>,</reg></choice> che fai<choice><!-- Is this choice necessary, since we are already displaying a modern question mark (?)?--><orig><g ref="#punctinter"/></orig><reg>?</reg></choice></l>
@@ -174,7 +186,7 @@
                     <l n="5">Ma con questo pensier un altro
                         giostra<choice><orig>.</orig><reg>,</reg></choice></l>
                     <l n="6">Et dice a me<reg>:</reg> <choice><orig>perche</orig><reg>Perché</reg></choice> fuggendo
-                        &uia;<choice><orig><g ref="#punctinter"/></orig><reg>?</reg></choice></l>
+                        &uai;<choice><orig><g ref="#punctinter"/></orig><reg>?</reg></choice></l>
                 </lg>
                 <lg type="dblhemi">
                     <l n="7">Se ti rimembra<choice><orig> /</orig><reg>,</reg></choice> il <choice>
@@ -184,12 +196,12 @@
                     <l n="8">Di tornar a <choice><orig>ueder</orig><reg>veder</reg></choice> la donna nostra.</l>
                 </lg>
                 <lg type="dblhemi">
-                    <l n="9">I<reg>’</reg> che<reg>’</reg>l suo ragionar intendo allora</l>
+                    <l n="9">I&regapos; che&regapos;l suo ragionar intendo allora</l>
                     <l n="10">M<reg>’</reg>agghiaccio dentro<choice><orig> /</orig><reg/></choice> &in; guisa d<reg>’</reg>uom ch&regapos;ascolta</l>
                 </lg>
                 <lg type="dblhemi">
                     <l n="11"><choice><orig>Nouella</orig><reg>Novella</reg></choice> che di subito l&regapos;accora.</l>
-                    <l n="12">Poi torna il primo. &amp7; questo <choice><orig>da</orig><reg>dà</reg></choice> la &uolta;.</l>
+                    <l n="12">Poi torna il primo&p2c; &amp7; questo <choice><orig>da</orig><reg>dà</reg></choice> la &uolta;.</l>
                 </lg>
                 <lg type="dblhemi">
                     <l n="13">Qual <choice><orig>uincera</orig><reg>vincerà</reg></choice><reg>,</reg> non so<choice><orig>.</orig><reg>;</reg></choice> ma<reg> ’</reg>nfino <choice><orig>a<corr>dor</corr>a</orig><reg>ad ora</reg></choice></l>
@@ -199,102 +211,83 @@
             </lg>
             <lg type="sonnet" n="69">
                 <lg type="dblhemi">
-                    <l n="1"><hi rendition="#blue #fs24pt"
-                            >B</hi><hi
-                            rendition="#small-caps">e</hi>n
-                        sapeua io che natural consiglio</l>
-                    <l n="2">Amor contra di te giamai non
-                        ualse.</l>
+                    <l n="1"><hi rendition="#blue #fs24pt">B</hi><hi rendition="#small-caps">e</hi>n
+                        <choice><orig>sapeua</orig><reg>sapeva</reg></choice> io che natural consiglio<reg>,</reg></l>
+                    <l n="2">Amor<reg>,</reg> contra di te giamai non
+                        <choice><orig>ualse</orig><reg>valse</reg></choice>&p2c;</l>
                 </lg>
                 <lg type="dblhemi">
-                    <l n="3">Tanti lacciuol / tante <choice>
+                    <l n="3">Tanti lacciuol<reg>’</reg><choice><orig> /</orig><reg>,</reg></choice> tante <choice>
                             <abbr>im<g ref="#pflour"
                               />messe</abbr>
                             <expan>impromesse</expan>
-                        </choice> false.</l>
-                    <l n="4">Tanto prouato aueal tuo fiero
+                        </choice> false&p2c;</l>
+                    <l n="4">Tanto <choice><orig>prouato</orig><reg>provato</reg></choice> <choice><orig>aueal</orig><reg>avea ’l</reg></choice> tuo fiero
                         artiglio.</l>
                 </lg>
                 <!-- How to fix this error (above)? -->
                 <lg type="dblhemi">
-                    <l n="5">Ma nouamente / ondio mi
-                            merau<unclear reason="faded"
-                            >ig</unclear>lio /</l>
-                    <l n="6">Dirol / come persona a cui ne
-                        calse.</l>
+                    <l n="5">Ma <choice><orig>nouamente</orig><reg>novamente</reg></choice><choice><orig> /</orig><reg>,</reg></choice> <choice><orig>ondio</orig><reg>ond’io</reg></choice> mi
+                            <choice><orig>merau<unclear reason="faded"
+                            >ig</unclear>lio</orig><reg>meraviglio</reg></choice><choice><orig> /</orig><reg>,</reg></choice></l>
+                    <l n="6"><choice><orig>Dirol</orig><reg>Diròl</reg></choice><choice><orig> /</orig><reg>,</reg></choice> come persona a cui ne
+                        calse&p2c;</l>
                 </lg>
                 <lg type="dblhemi">
-                    <l n="7">Et chel notai la sopra ạ lacque
-                        salse.</l>
-                    <l n="8">Tra la riua toscana / et lelba
-                        / et giglio.</l>
+                    <l n="7">Et <choice><orig>chel</orig><reg>che ’l </reg></choice> notai <choice><orig>la</orig><reg>là</reg></choice> sopra <!-- jawalsh: what's going on here? --><del type="editorial" resp="#hws">ạ</del> <choice><orig>lacque</orig><reg>l’acque</reg></choice> salse&p2c;</l>
+                    <l n="8">Tra la <choice><orig>riua</orig><reg>riva</reg></choice> toscana<del type="editorial" resp="#hws"> /</del> et <choice><orig>lelba</orig><reg>l’Elba</reg></choice><del type="editorial" resp="#hws"> /</del> et <choice><orig>giglio</orig><reg>Giglio</reg></choice>&p2c;</l>
                 </lg>
                 <lg type="dblhemi">
-                    <l n="9">I fuggia le tue mani. et per
+                    <l n="9">I&regapos; fuggia le tue mani&p2c; et per
                         camino</l>
-                    <l n="10">Agitandomi uenti / el ciel et
-                        londe.</l>
+                    <l n="10"><choice><orig>Agitandomi</orig><reg>Agitandom’ i</reg></choice> <choice><orig>uenti</orig><reg>venti</reg></choice><del type="editorial" resp="#hws"> /</del> <choice><orig>el</orig><reg>e ’l</reg></choice> ciel et
+                        l&regapos;onde&p2c;</l>
                 </lg>
                 <lg type="dblhemi">
-                    <l n="11">Mandaua sconosciuto / &amp7;
+                    <l n="11"><choice><orig>Mandaua</orig><reg>M’andava</reg></choice> sconosciuto<del type="editorial" resp="#hws"> /</del> <choice><orig>&amp7;</orig><reg>et</reg></choice>
                         pellegrino.</l>
-                    <l n="12">&Quando; ecco <corr>i</corr>
-                        tuoi ministri /̣ <choice>
+                    <l n="12">&Quando; ecco <corr>i</corr><!-- jawalsh: underlined in edition? -->
+                        tuoi ministri<choice><orig> /</orig><reg>,</reg></choice> <choice><orig><choice>
                             <abbr>inō</abbr>
-                            <expan>inon</expan>
-                        </choice> so donde</l>
+                            <expan>inon</expan></choice></orig><reg>i’ non</reg></choice> so donde<reg>,</reg></l>
                 </lg>
                 <lg type="dblhemi">
-                    <l n="13">Per darmi a diueder chal suo
+                    <l n="13">Per darmi a <choice><orig>diueder</orig><reg>diveder</reg></choice> ch&regapos;al suo
                         destino</l>
-                    <l n="14">Mal chi contrasta. et mal chi
+                    <l n="14">Mal chi contrasta&p2c; et mal chi
                         si nasconde.</l>
                 </lg>
             </lg>
             <lg type="canzone" n="70">
                 <lg type="dblhemi">
-                    <l n="1"><hi rendition="#red #fs24pt"
-                            >L</hi><hi
-                            rendition="#small-caps"
-                        >a</hi>sso me. chi &non; so &in;
-                        qual parte pieghi</l>
-                    <l n="2">L<unclear reason="faded">a
-                            s</unclear>peme / che tradita
-                        omai piu uolte</l>
+                    <l n="1"><hi rendition="#red #fs24pt">L</hi><hi rendition="#small-caps">a</hi>sso me&p2e; <choice><orig>chi</orig><reg>ch’i’</reg></choice> &non; so &in; qual parte pieghi</l>
+                    <l n="2">L<unclear reason="faded">a s</unclear>peme&v2c; <choice><orig>che</orig><reg>ch’è</reg></choice> tradita omai <choice><orig>piu</orig><reg>piú</reg></choice> &uolta;<reg>:</reg></l>
                 </lg>
                 <lg type="dblhemi">
-                    <l n="3">Che se non e chi &con; pieta
-                        mascolte.</l>
-                    <l n="4">Perche sparger al ciel si
-                        spessi preghi<g ref="#punctinter"
-                        /></l>
+                    <l n="3">Che se non <choice><orig>e</orig><reg>è</reg></choice> chi &con; <choice><orig>pieta</orig><reg>pietà</reg></choice>
+                        <choice><orig>mascolte</orig><reg>m’ascolte</reg></choice>&p2c;</l>
+                    <l n="4"><choice><orig>Perche</orig><reg>Perché</reg></choice> sparger al ciel <choice><orig>si</orig><reg>sì</reg></choice> spessi preghi<g ref="#punctinter" /><!-- jawalsh: orig/reg with #punctinter?--></l>
                 </lg>
                 <lg type="trplhemi">
-                    <l n="5">Ma segli auen chanchor &non; mi
-                        si nieghi</l>
-                    <l n="6">Finir ançil mio fine /</l>
-                    <l n="9">Queste uoci meschine.</l>
+                    <l n="5">Ma <choice><orig>segli</orig><reg>s’egli</reg></choice> auen <choice><orig>chanchor</orig><reg>ch’anchor</reg></choice> &non; mi si nieghi</l>
+                    <l n="6">Finir <!-- jawalsh: check following. --><choice><orig>ançil</orig><reg>anzi ’l</reg></choice> mio fine<del type="editorial" resp="#hws"> /</del></l>
+                    <l n="9">Queste uoci meschine&p2c;</l>
                 </lg>
                 <lg type="dblhemi">
-                    <l n="8">Non graui al mio signor <choice>
-                            <abbr>ꝑchio</abbr>
-                            <expan>perchio</expan>
-                        </choice> il ripreghi</l>
-                    <l n="9">Di dir libero un di tra lerbe e
-                        i fiori.</l>
+                    <l n="8">Non <choice><orig>graui</orig><reg>gravi</reg></choice> al mio signor <choice><orig><choice><abbr>ꝑchio</abbr><expan>perchio</expan></choice></orig><reg>perch’io</reg></choice> il ripreghi</l>
+                    <l n="9">Di dir libero un <choice><orig>di</orig><reg>dì</reg></choice> tra <choice><orig>lerbe</orig><reg>l’erbe</reg></choice> e i fiori&p2colon;</l>
                 </lg>
                 <lg type="dblhemi">
-                    <l n="10">Dreç &amp7; rayson es quieu
-                        ciant / e <unclear reason="faded"
-                            >m</unclear> demori.</l>
+                    <l n="10"><choice><orig>Dreç</orig><reg>Drez</reg></choice> &amp7; rayson es <choice><orig>quieu</orig><reg>qu’ ieu</reg></choice> ciant&v2c; e <unclear reason="faded">m</unclear> demori.</l>
                 </lg>
                 <lg type="dblhemi">
-                    <l n="11"><hi rendition="#blue"
-                        >¶</hi>Raigon e ben chalcuna uolta
-                        io canti</l>
-                    <l n="12">Pero cho sospirato si gran
+                    <!-- jawalsh: Are we replacing pilcrows with section symbols (§)? -->                    <l n="11"><hi rendition="#blue"
+                        >¶</hi><choice><orig>Raigon</orig><reg>Ragion</reg></choice> &egrave_reg; ben <choice><orig>chalcuna</orig><reg>ch’alcuna</reg></choice> &uolta;
+                        io canti<reg>,</reg></l>
+                    <l n="12"><choice><orig>Pero</orig><reg>Però</reg></choice> <choice><orig>cho</orig><reg>ch’ò</reg></choice> sospirato &si; gran
                         tempo</l>
                 </lg>
+                <!-- jawalsh: stopped here. -->
                 <lg type="dblhemi">
                     <l n="13">Che mai non <choice>
                             <abbr>īcomincio</abbr>

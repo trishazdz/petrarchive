@@ -138,7 +138,7 @@ choice:hover expan{
 */
 
  
-    choice {
+    choice > abbr {
     border-bottom: 1px dotted gray;
     }
     
@@ -243,6 +243,27 @@ lg[type = 'stanza'] {
 /* Edition Stuff */
 reg {
 display:none;
+}
+
+
+#teibpToolbox {
+	left: 55em; 
+	top: 10em;
+	position:fixed;
+	font-size: 70%;
+	margin-right:1em;
+	padding:1em;
+	border-radius:15px;
+	border: 1px solid @border-color;
+	background: @note-background-color;
+	font-family: Arvo, Verdana, sans-serif;
+	text-align:justify;
+	.box-shadow;
+	width:inherit;
+}
+
+del[resp = '#hws'] {
+    text-decoration:none;
 }
 
 

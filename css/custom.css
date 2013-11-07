@@ -49,7 +49,7 @@ lg[type = 'dblhemi']:first-of-type l:last-of-type {
 /* padding-top:.7em; */
 }
 
-lg[type = 'dblhemi']:first-of-type, lg[type = 'sestina'] l[n = '1'], lg[type = 'sestina'] l[n = '7'], lg[type = 'sestina'] l[n = '13'], lg[type = 'sestina'] l[n = '19'], lg[type = 'sestina'] l[n = '25'], lg[type = 'sestina'] l[n = '31'], lg[type = 'sestina'] l[n = '37']  {
+lg[type = 'dblhemi']:first-of-type, lg[type = 'sestina'] l[n = '1'], lg[type = 'sestina'] l[n = '7'], lg[type = 'sestina'] l[n = '13'], lg[type = 'sestina'] l[n = '19'], lg[type = 'sestina'] l[n = '25'], lg[type = 'sestina'] l[n = '31'], lg[type = 'sestina'] l[n = '37'], lg[type = 'canzone'] l[n = '11'], lg[type = 'canzone'] l[n = '21'] {
 position:relative;
 left:-.8em;
 margin-top:0;

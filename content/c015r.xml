@@ -51,8 +51,8 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Petrarch's <title>Rerum vulgarium
-                        fragmenta</title>: Carta 15
+                <title>Petrarch's <title rendition="#i">Rerum vulgarium
+                        fragmenta</title>: Charta 15
                     recto</title>
                 <editor xml:id="hws">H. Wayne
                     Storey</editor>

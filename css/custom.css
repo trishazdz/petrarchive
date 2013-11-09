@@ -24,10 +24,10 @@ lg[type = 'sonnet']:before ,  lg[type = 'madrigal']:before, lg[type = 'canzone']
 display:block;
 clear:both;
 font-family:"Helvetica Neue","Gill Sans","Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
-font-weight:normal;
+font-weight:100;
 content:attr(n);
 color:gray;
-font-size:15px;
+font-size:20px;
 top:40px;
 left:-80px;
 position:relative;
@@ -258,13 +258,61 @@ display:none;
 	background: @note-background-color;
 	font-family: Arvo, Verdana, sans-serif;
 	text-align:left;
-	.box-shadow;
-	width:200px;
+	-webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+	width:15em;
+}
+
+#teibpToolbox h1 {
+  font-weight: normal;
+  font-size: inherit;
+  border-bottom:none;
 }
 
 del[resp = '#hws'] {
     text-decoration:none;
 }
+
+
+/* special css for line numbers and proper line alignment */
+
+span.lno {
+    width:50px;
+    float:left;
+    display:block;  
+    position:relative;
+    left:-50px;
+    font-family:"Helvetica Neue","Gill Sans","Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    color:gray;
+    font-size:12px;
+    
+}
+
+lg[type = 'sonnet'] l[n = '5'], 
+lg[type = 'sonnet'] l[n = '6'], 
+lg[type = 'sonnet'] l[n = '9'],  
+lg[type = 'sonnet'] l[n = '10'],
+lg[type = 'canzone'] l[n = '5'],
+lg[type = 'canzone'] l[n = '6'],
+lg[type = 'canzone'] l[n = '7'],
+lg[type = 'canzone'] l[n = '10'],
+lg[type = 'canzone'] l[n = '15'],
+lg[type = 'canzone'] l[n = '16'],
+lg[type = 'canzone'] l[n = '17'],
+lg[type = 'canzone'] l[n = '20'],
+lg[type = 'canzone'] l[n = '25'],
+lg[type = 'canzone'] l[n = '26'],
+lg[type = 'canzone'] l[n = '27'],
+lg[type = 'canzone'] l[n = '30']
+{
+    position:relative;
+    left:-50px;
+}
+
+
+
+
 
 
 

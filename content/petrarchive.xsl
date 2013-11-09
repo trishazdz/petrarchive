@@ -88,7 +88,7 @@
     <xsl:template name="teibpToolbox">
         <div id="teibpToolbox">
             <div>
-                <h3 style="display:inline;">text view:</h3>
+                <h1 style="display:inline;">text view </h1>
                 <select style="display:inline;" id="themeBox" onchange="switchCustomCSS(this);">
                     <option value="{$customCSS}" >diplomatic transcription</option>
                     <option value="{$customCSS.norm}">edited text</option>
@@ -102,6 +102,14 @@
             By H. Wayne Storey, John A. Walsh, Isabella Magni, and Allison M. McCormack. <br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" /></a>&#x00a0;<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Petrarchive</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>. <br />Powered by <a href="{$teibpHome}">TEI Boilerplate</a>. 
         </footer>
     </xsl:variable>
+    
+    <xsl:template match="tei:lg[@type = 'sonnet']//tei:l[@n = '5']|tei:lg[@type = 'sonnet']//tei:l[@n = '9']|tei:lg[@type = 'canzone']//tei:l[@n mod 5 = 0]">
+        <span class="lno"><xsl:value-of select="@n"/></span>
+            <xsl:element name="{local-name()}">
+                <xsl:call-template name="addID"/>
+                <xsl:apply-templates select="@*|node()"/>
+            </xsl:element>
+    </xsl:template>
         
     
 </xsl:stylesheet>

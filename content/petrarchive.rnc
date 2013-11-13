@@ -10,7 +10,7 @@ namespace svg = "http://www.w3.org/2000/svg"
 namespace xi = "http://www.w3.org/2001/XInclude"
 namespace xlink = "http://www.w3.org/1999/xlink"
 
-# Schema generated from ODD source 2013-10-30T12:06:47Z. 
+# Schema generated from ODD source 2013-11-10T20:27:34Z. 
 # Edition: 2.5.0. Last updated on
 #	26th July 2013.
 # Edition Location: http://www.tei-c.org/Vault/P5/2.5.0/
@@ -2891,6 +2891,9 @@ lg =
       
       ## (sonnet) 
       "sonnet"
+      | 
+        ## (A line “group” that contains a single line) 
+        "single"
       | 
         ## (double hemistich) 
         "dblhemi"

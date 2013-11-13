@@ -1,10 +1,16 @@
 @import "custom.css";
 
-choice reg { display: inline; }
+choice > reg, reg { display:inline; }
+choice expan {
+    display:inline !important;
+}
 choice > abbr { border-bottom: none; }
 choice > abbr { display: none; }
 choice > orig { display: none; }
 
 /* choice > expan */
-del[resp = '#hws'] { display: none; }
+del { display: none; }
+
+ab[type = 'edition'] {display:block;}
+ab[type = 'diplomatic'] {display:none}
 

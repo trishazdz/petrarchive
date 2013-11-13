@@ -6,6 +6,7 @@ font-size:24px;
 background-color:white;
 width:1400px;
 padding-top:0;
+margin-left:4em;
 }
 
 html > body {
@@ -35,7 +36,7 @@ content:attr(n);
 color:gray;
 font-size:20px;
 top:40px;
-left:-80px;
+left:-120px;
 position:relative;
 }
 
@@ -43,7 +44,7 @@ text body lg:first-of-type {
 margin-top:0;
 }
 
-lg[type = 'dblhemi'], lg[type = 'trplhemi'] {
+lg[type = 'dblhemi'], lg[type = 'trplhemi'], lg[type = 'single'] {
 height:24pt;
 display:block;
 clear:both;
@@ -55,18 +56,16 @@ lg[type = 'dblhemi']:first-of-type l:last-of-type {
 /* padding-top:.7em; */
 }
 
-lg[type = 'dblhemi']:first-of-type, lg[type = 'sestina'] l[n = '1'], lg[type = 'sestina'] l[n = '7'], lg[type = 'sestina'] l[n = '13'], lg[type = 'sestina'] l[n = '19'], lg[type = 'sestina'] l[n = '25'], lg[type = 'sestina'] l[n = '31'], lg[type = 'sestina'] l[n = '37'], lg[type = 'canzone'] l[n = '11'], lg[type = 'canzone'] l[n = '21'] {
-position:relative;
-left:-.8em;
-margin-top:0;
-}
 
-lg[type = 'dblhemi'] l:first-of-type, lg[type = 'trplhemi'] l:first-of-type {
+
+lg[type = 'dblhemi'] l:first-of-type,
+lg[type = 'trplhemi'] l:first-of-type {
 float:left;
 margin-right:1.5em;
 }
 
-lg[type = 'dblhemi'] l:last-of-type, lg[type = 'trplhemi'] l {
+lg[type = 'dblhemi'] l:last-of-type,
+lg[type = 'trplhemi'] l {
 float:left;
 margin-right:1.5em;
 }
@@ -143,7 +142,7 @@ choice:hover expan{
 
 */
 
- 
+ /*
     choice > abbr {
     border-bottom: 1px dotted gray;
     }
@@ -189,7 +188,11 @@ choice:hover expan{
 	    transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
     }
     
+    */
+    
     /*a.tooltip > span:hover,*/
+    
+    /*
 	choice:hover > expan
 	{
 		opacity: 1;
@@ -210,11 +213,10 @@ choice > expan {
 	background: -moz-linear-gradient(top, #FBF5E6 0%, #FFFFFF 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FBF5E6), color-stop(100%,#FFFFFF));
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FBF5E6', endColorstr='#FFFFFF',GradientType=0 );
-	    
 	border: 1px solid #CFB57C;	     
 }    
 	 
-	 
+	 */
 	 /* Choice elements */
 choice abbr + expan:before,
 choice expan + abbr:before,
@@ -251,6 +253,10 @@ reg {
 display:none;
 }
 
+choice expan {
+    display:none;
+}
+
 
 #teibpToolbox {
 	left: 1em; 
@@ -260,8 +266,8 @@ display:none;
 	margin-right:1em;
 	padding:1em;
 	border-radius:15px;
-	border: 1px solid @border-color;
-	background: @note-background-color;
+	border: 1px solid #aaaaaa;
+	background: #fafafa;
 	font-family: Arvo, Verdana, sans-serif;
 	text-align:left;
 	-webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
@@ -295,6 +301,22 @@ span.lno {
     
 }
 
+lg[type = 'dblhemi']:first-of-type, 
+lg[type = 'trplhemi']:first-of-type,
+lg[type = 'sestina'] l[n = '1'], 
+lg[type = 'sestina'] l[n = '7'], 
+lg[type = 'sestina'] l[n = '13'],
+lg[type = 'sestina'] l[n = '19'],
+lg[type = 'sestina'] l[n = '25'],
+lg[type = 'sestina'] l[n = '31'],
+lg[type = 'sestina'] l[n = '37'],
+lg[type = 'canzone'] l[n = '11'],
+lg[type = 'canzone'] l[n = '21'] {
+position:relative;
+left:-.8em;
+margin-top:0;
+}
+
 lg[type = 'sonnet'] l[n = '5'], 
 lg[type = 'sonnet'] l[n = '6'], 
 lg[type = 'sonnet'] l[n = '9'],  
@@ -302,19 +324,124 @@ lg[type = 'sonnet'] l[n = '10'],
 lg[type = 'canzone'] l[n = '5'],
 lg[type = 'canzone'] l[n = '6'],
 lg[type = 'canzone'] l[n = '7'],
-lg[type = 'canzone'] l[n = '10'],
+/* lg[type = 'canzone'] l[n = '10'], */
 lg[type = 'canzone'] l[n = '15'],
 lg[type = 'canzone'] l[n = '16'],
 lg[type = 'canzone'] l[n = '17'],
-lg[type = 'canzone'] l[n = '20'],
+/* lg[type = 'canzone'] l[n = '20'], */
 lg[type = 'canzone'] l[n = '25'],
 lg[type = 'canzone'] l[n = '26'],
-lg[type = 'canzone'] l[n = '27'],
-lg[type = 'canzone'] l[n = '30']
+lg[type = 'canzone'] l[n = '27']
+/* lg[type = 'canzone'] l[n = '30'] */
 {
     position:relative;
     left:-50px;
 }
+
+/* rvf360 start */
+
+   
+lg[id = 'rvf360'] l[n = '16'], 
+lg[id = 'rvf360'] l[n = '17'],
+lg[id = 'rvf360'] l[n = '18'],
+lg[id = 'rvf360'] l[n = '31'],
+lg[id = 'rvf360'] l[n = '32'],
+lg[id = 'rvf360'] l[n = '33'],
+lg[id = 'rvf360'] l[n = '46'],
+lg[id = 'rvf360'] l[n = '47'],
+lg[id = 'rvf360'] l[n = '48'],
+lg[id = 'rvf360'] l[n = '61'],
+lg[id = 'rvf360'] l[n = '62'],
+lg[id = 'rvf360'] l[n = '63'],
+lg[id = 'rvf360'] l[n = '76'],
+lg[id = 'rvf360'] l[n = '77'],
+lg[id = 'rvf360'] l[n = '78'],
+lg[id = 'rvf360'] l[n = '91'],
+lg[id = 'rvf360'] l[n = '92'],
+lg[id = 'rvf360'] l[n = '93'] {
+    position:relative !important;
+    left:-.8em !important;
+    margin-top:0 !important;
+}
+
+lg[id = 'rvf360'] l[n = '10'],
+lg[id = 'rvf360'] l[n = '11'],
+lg[id = 'rvf360'] l[n = '12'],
+lg[id = 'rvf360'] l[n = '40'],
+lg[id = 'rvf360'] l[n = '41'],
+lg[id = 'rvf360'] l[n = '42'],
+lg[id = 'rvf360'] l[n = '55'],
+lg[id = 'rvf360'] l[n = '56'],
+lg[id = 'rvf360'] l[n = '57'],
+lg[id = 'rvf360'] l[n = '70'],
+lg[id = 'rvf360'] l[n = '71'],
+lg[id = 'rvf360'] l[n = '72'],
+lg[id = 'rvf360'] l[n = '85'],
+lg[id = 'rvf360'] l[n = '86'],
+lg[id = 'rvf360'] l[n = '87'],
+lg[id = 'rvf360'] l[n = '100'],
+lg[id = 'rvf360'] l[n = '101'],
+lg[id = 'rvf360'] l[n = '102'],
+lg[id = 'rvf360'] l[n = '115'],
+lg[id = 'rvf360'] l[n = '116'],
+lg[id = 'rvf360'] l[n = '117'],
+lg[id = 'rvf360'] l[n = '130'],
+lg[id = 'rvf360'] l[n = '131'],
+lg[id = 'rvf360'] l[n = '132'],
+lg[id = 'rvf360'] l[n = '145'],
+lg[id = 'rvf360'] l[n = '146'],
+lg[id = 'rvf360'] l[n = '147'] {
+    position:relative;
+    left:-50px;   
+}
+
+lg[id = 'rvf360'] {
+    font-size:80%;
+}
+
+/* code below hides line numbers we don't want displayed. */
+lg[id = 'rvf360'] l[n = '4'] + span.lno,
+lg[id = 'rvf360'] l[n = '14'] + span.lno,
+lg[id = 'rvf360'] l[n = '19'] + span.lno,
+lg[id = 'rvf360'] l[n = '29'] + span.lno,
+lg[id = 'rvf360'] l[n = '34'] + span.lno,
+lg[id = 'rvf360'] l[n = '44'] + span.lno,
+lg[id = 'rvf360'] l[n = '49'] + span.lno,
+lg[id = 'rvf360'] l[n = '59'] + span.lno, 
+lg[id = 'rvf360'] l[n = '64'] + span.lno,
+lg[id = 'rvf360'] l[n = '74'] + span.lno,
+lg[id = 'rvf360'] l[n = '79'] + span.lno,
+lg[id = 'rvf360'] l[n = '84'] + span.lno,
+lg[id = 'rvf360'] l[n = '89'] + span.lno,
+lg[id = 'rvf360'] l[n = '94'] + span.lno,
+lg[id = 'rvf360'] l[n = '104'] + span.lno,
+lg[id = 'rvf360'] l[n = '109'] + span.lno,
+lg[id = 'rvf360'] l[n = '119'] + span.lno,
+lg[id = 'rvf360'] l[n = '124'] + span.lno,
+lg[id = 'rvf360'] l[n = '134'] + span.lno,
+lg[id = 'rvf360'] l[n = '139'] + span.lno,
+lg[id = 'rvf360'] l[n = '149'] + span.lno,
+lg[id = 'rvf360'] l[n = '154'] + span.lno
+{
+    display:none;
+}
+
+lg[id = 'rvf360'] l[n = '5'],
+lg[id = 'rvf360'] l[n = '6'],
+lg[id = 'rvf360'] l[n = '7'],
+lg[id = 'rvf360'] l[n = '15'],
+lg[id = 'rvf360'] l[n = '20'],
+lg[id = 'rvf360'] l[n = '21'],
+lg[id = 'rvf360'] l[n = '30'],
+lg[id = 'rvf360'] l[n = '45']
+{
+    /* fixes line alignment for rvf360 dipl */
+    position:static !important;
+}
+
+ab[type = 'edition'] {display:none;}
+
+/* rfv360 end */
 
 
 

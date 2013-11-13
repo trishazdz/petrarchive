@@ -110,6 +110,10 @@
                 <xsl:apply-templates select="@*|node()"/>
             </xsl:element>
     </xsl:template>
+    
+    <xsl:template match="*[@sameAs]">
+        <xsl:apply-templates select="id(substring-after(@sameAs,'#'))"/>
+    </xsl:template>
         
     
 </xsl:stylesheet>

@@ -44,6 +44,9 @@
                 <valItem ident="sonnet">
                   <gloss>sonnet</gloss>
                 </valItem>
+                <valItem ident="single">
+                  <gloss>A line “group” that contains a single line</gloss>
+                </valItem>
                 <valItem ident="dblhemi">
                   <gloss>double hemistich</gloss>
                 </valItem>

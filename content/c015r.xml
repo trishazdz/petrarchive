@@ -460,8 +460,7 @@ the line wraps. -->
                 </lg>
                 <lg type="dblhemi" corresp="#msline">
                     <l n="5">Ma <choice><orig>nouamente</orig><reg>novamente</reg></choice><choice><orig> /</orig><reg>,</reg></choice> <choice><orig>ondio</orig><reg>ond’io</reg></choice> mi
-                            <choice><orig>merau<unclear reason="faded"
-                            >ig</unclear>lio</orig><reg>meraviglio</reg></choice><choice><orig> /</orig><reg>,</reg></choice></l>
+                        <choice><orig>merau<subst><del type="erasure"><gap reason="illegible"/></del><add>ig</add></subst>lio</orig><reg>meraviglio</reg></choice><choice><orig> /</orig><reg>,</reg></choice></l>
                     <l n="6"><choice><orig>Dirol</orig><reg>Diròl</reg></choice><choice><orig> /</orig><reg>,</reg></choice> come persona a cui ne
                         calse&p2c;</l>
                 </lg>
@@ -479,7 +478,7 @@ the line wraps. -->
                     <l n="11"><choice><orig>Mandaua</orig><reg>M’andava</reg></choice> sconosciuto<del type="editorial" resp="#hws"> /</del> <choice><orig>&amp7;</orig><reg>et</reg></choice>
                         pellegrino.</l>
                     <l n="12">&Quando; ecco <corr>i</corr><!-- jawalsh: should be underlined in dipl but not in edition.-->
-                        tuoi ministri<choice><orig> /</orig><reg>,</reg></choice> <choice><orig><choice>
+                        tuoi ministri<choice><orig> /<!-- preceding virgule should be virgule with an under-dot.--></orig><reg>,</reg></choice> <choice><orig><choice>
                             <abbr>inō</abbr>
                             <expan>inon</expan></choice></orig><reg>i’ non</reg></choice> so donde<reg>,</reg></l>
                 </lg>
@@ -492,7 +491,7 @@ the line wraps. -->
             <lg type="canzone" n="70">
                 <lg type="dblhemi" corresp="#msline">
                     <l n="1"><hi rendition="#red #fs24pt">L</hi><hi rendition="#small-caps">a</hi>sso me&p2e; <choice><orig>chi</orig><reg>ch’i’</reg></choice> &non; so &in; qual parte pieghi</l>
-                    <l n="2">L<unclear reason="faded">a s</unclear>peme&v2c; <choice><orig>che</orig><reg>ch’è</reg></choice> tradita omai <choice><orig>piu</orig><reg>piú</reg></choice> &uolte;<reg>:</reg></l>
+                    <l n="2">L<subst><del><gap reason="erasure"/></del><add>a s</add></subst>peme&v2c; <choice><orig>che</orig><reg>ch’è</reg></choice> tradita omai <choice><orig>piu</orig><reg>piú</reg></choice> &uolte;<reg>:</reg></l>
                 </lg>
                 <lg type="dblhemi" corresp="#msline">
                     <l n="3">Che se non <choice><orig>e</orig><reg>è</reg></choice> chi &con; <choice><orig>pieta</orig><reg>pietà</reg></choice>
@@ -509,7 +508,7 @@ the line wraps. -->
                     <l n="9">Di dir libero un <choice><orig>di</orig><reg>dì</reg></choice> tra <choice><orig>lerba</orig><reg>l’erba</reg></choice> e i fiori&p2colon;</l>
                 </lg>
                 <lg type="single" corresp="#msline">
-                    <l n="10"><choice><orig>Dreç</orig><reg>Drez</reg></choice> &amp7; rayson es <choice><orig>quieu</orig><reg>qu’ ieu</reg></choice> ciant&v2c; e <unclear reason="faded">m</unclear> demori.<!-- jawalsh: what's going on with period/dot in Word document after initial "e" in "e m demori"--></l>
+                    <l n="10"><choice><orig>Dreç</orig><reg>Drez</reg></choice> &amp7; rayson es <choice><orig>quieu</orig><reg>qu’ ieu</reg></choice> ciant&v2c; e<reg>·</reg> <subst><del><gap reason="erasure"/></del><add>m</add></subst> demori.<!-- jawalsh: what's going on with period/dot in Word document after initial "e" in "e m demori"--></l>
                 </lg>
                 <lg type="dblhemi" corresp="#msline">
                     <!-- jawalsh: Are we replacing pilcrows with section symbols (§)? Yes! -->                    <l n="11"><hi rendition="#blue"
@@ -523,7 +522,7 @@ the line wraps. -->
                         tanti<reg>.</reg></l>
                 </lg>
                 <lg type="trplhemi" corresp="#msline">
-                    <l n="15">Et <choice><orig>sio</orig><reg>s’io</reg></choice> potesse far <choice><orig>chagliocchi</orig><reg>ch’agli occhi</reg></choice> san<unclear reason="different hand">ti</unclear></l>
+                    <l n="15">Et <choice><orig>sio</orig><reg>s’io</reg></choice> potesse far <choice><orig>chagliocchi</orig><reg>ch’agli occhi</reg></choice> san<subst><del><gap reason="erasure"/></del><add>ti</add></subst></l>
                     <l n="16">Porgesse alcun dilecto</l>
                     <l n="17"><choice><orig>Qual che</orig><reg>Qualche</reg></choice> dolce mio detto&p2c;</l>
                 </lg>
@@ -553,7 +552,7 @@ the line wraps. -->
                     <l n="25">Ella non degna di mirar &si; basso&p2c;</l>
                     <l n="26">Che di nostre parole</l>
                     <l n="27">Curi&v2c; <choice><orig>chel</orig><reg>ché ’l</reg></choice> ciel
-                            no<del>n</del><!-- what to do here? --> <choice><orig>uole</orig><reg>vole</reg></choice></l>
+                        no<subst><del><gap reason="erasure"/></del><add>n</add></subst> <choice><orig>uole</orig><reg>vole</reg></choice></l>
                 </lg>
                 <lg type="dblhemi" corresp="#msline">
                     <l n="28">Al qual pur contrastando i&regapos; son

@@ -56,28 +56,29 @@
             </xsl:element>
     </xsl:template>
     
+    <xsl:param name="htmlTitle">
+        <xsl:value-of select="normalize-space(/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[1])"/>        
+    </xsl:param>
+    
     <xsl:template name="htmlHead">
         <head>
+            <!--
             <script type="text/javascript" src="//use.typekit.net/ctk5ksw.js"></script>
             <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+            -->
             <meta charset="UTF-8"/>
             <link id="maincss" rel="stylesheet" type="text/css" href="{$teibpCSS}"/>
             <link id="customcss" rel="stylesheet" type="text/css" href="{$customCSS}"/>
-            <script type="text/javascript" src="{$jqueryJS}"></script>
-            <script type="text/javascript" src="{$jqueryBlockUIJS}"></script>
-            <script type="text/javascript" src="{$teibpJS}"></script>
+          <!-- <script type="text/javascript" src="{$jqueryJS}"></script> -->
+          <!--  <script type="text/javascript" src="{$jqueryBlockUIJS}"></script> -->
+          <!--  <script type="text/javascript" src="{$teibpJS}"></script> -->
             <script type="text/javascript">
-                $(document).ready(function() {
-                $("html > head > title").text($("TEI > teiHeader > fileDesc > titleStmt > title:first").text());
-                $.unblockUI();	
-                });
-                
                 function switchCustomCSS(theme) {
                 document.getElementById('customcss').href=theme.options[theme.selectedIndex].value;
                 }
             </script>
             <xsl:call-template name="rendition2style"/>
-            <title><!-- don't leave empty. --></title>
+            <title><xsl:value-of select="$htmlTitle"/><!-- don't leave empty. --></title>
             <xsl:if test="$includeAnalytics = true()">
                 <xsl:call-template name="analytics"/>
             </xsl:if>
@@ -112,7 +113,8 @@
     </xsl:template>
     
     <xsl:template match="*[@sameAs]">
-        <xsl:apply-templates select="id(substring-after(@sameAs,'#'))"/>
+        <xsl:param name="sameAs" select="substring-after(@sameAs,'#')"/>
+        <xsl:apply-templates select="//*[@xml:id = $sameAs]"/>
     </xsl:template>
         
     

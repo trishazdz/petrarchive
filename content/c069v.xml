@@ -100,6 +100,7 @@
    <text>
       <body>
          <pb n="charta 69 verso" facs="https://info.slis.indiana.edu/~jawalsh/petrarchive/images/vat-lat3195-f/vat-lat3195-f-069v.jpg" />
+ 
          <ab type="diplomatic">
          <lg type="canzone" xml:id="rvf360" n="356 [360]">
             <lg type="trplhemi"><l xml:id="rvf360.1" n="1">¶Quel <choice><abbr>ātiquo</abbr><expan>antiquo</expan></choice> mio dolce¦empio signore</l>	<l xml:id="rvf360.2" n="2">Fatto citar <choice><abbr>dināçi</abbr><expan>dināçi</expan></choice> ala reina</l>  <l xml:id="rvf360.3" n="3">Che laparte diuina</l> <fw>.25.</fw></lg>
@@ -158,7 +159,7 @@
             <lg type="trplhemi"><l xml:id="rvf360.157" n="157">Ma piu tempo bisogna <choice><abbr>atāta</abbr><expan>atanta</expan></choice> lite.</l></lg>
          </lg>
          </ab>
-         <ab type="edition">
+                 <ab type="edition">
            <lg type="canzone" xml:id="rvf360v" n="356 [360]">
             <lg type="dblhemi">
                <l sameAs="#rvf360.1"/>

@@ -340,6 +340,8 @@ lg[type = 'canzone'] l[n = '27']
 
 /* rvf360 start */
 
+#rvf360v {display:none;}
+
    
 lg[id = 'rvf360'] l[n = '16'], 
 lg[id = 'rvf360'] l[n = '17'],
@@ -439,7 +441,7 @@ lg[id = 'rvf360'] l[n = '45']
     position:static !important;
 }
 
-ab[type = 'edition'] {display:none;}
+
 
 /* rfv360 end */
 

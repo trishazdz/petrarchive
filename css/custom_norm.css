@@ -11,6 +11,6 @@ choice > orig { display: none; }
 /* choice > expan */
 del { display: none; }
 
-ab[type = 'edition'] {display:block;}
-ab[type = 'diplomatic'] {display:none}
+#rvf360v {display:block;}
+#rvf360 {display:none;}
 

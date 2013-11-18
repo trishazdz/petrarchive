@@ -69,9 +69,9 @@
             <meta charset="UTF-8"/>
             <link id="maincss" rel="stylesheet" type="text/css" href="{$teibpCSS}"/>
             <link id="customcss" rel="stylesheet" type="text/css" href="{$customCSS}"/>
-          <!-- <script type="text/javascript" src="{$jqueryJS}"></script> -->
-          <!--  <script type="text/javascript" src="{$jqueryBlockUIJS}"></script> -->
-          <!--  <script type="text/javascript" src="{$teibpJS}"></script> -->
+          <script type="text/javascript" src="{$jqueryJS}"></script>
+          <!-- <script type="text/javascript" src="{$jqueryBlockUIJS}"></script>-->
+          <script type="text/javascript" src="{$teibpJS}"></script>
             <script type="text/javascript">
                 function switchCustomCSS(theme) {
                 document.getElementById('customcss').href=theme.options[theme.selectedIndex].value;
@@ -116,6 +116,40 @@
         <xsl:param name="sameAs" select="substring-after(@sameAs,'#')"/>
         <xsl:apply-templates select="//*[@xml:id = $sameAs]"/>
     </xsl:template>
+  
+  <xsl:template name="pb-handler">
+    <xsl:param name="n"/>
+    <xsl:param name="facs"/>
+    <xsl:param name="id"/>
+    
+    <span class="-teibp-pageNum">
+      <!-- <xsl:call-template name="atts"/> -->
+      <span class="-teibp-pbNote"><xsl:value-of select="$pbNote"/></span>
+      <xsl:value-of select="@n"/>
+      <xsl:text> </xsl:text>
+    </span>
+    <span class="-teibp-pbFacs">
+      <a class="gallery-facs" rel="prettyPhoto[gallery1]">
+        <xsl:attribute name="onclick">
+          <xsl:value-of select="concat('showFacs(',$apos,$n,$apos,',',$apos,$facs,$apos,',',$apos,$id,$apos,')')"/>
+        </xsl:attribute>
+        <img  alt="{$altTextPbFacs}" class="-teibp-thumbnail">
+          <xsl:attribute name="src">
+            <xsl:value-of select="@facs"/>
+          </xsl:attribute>
+        </img>
+      </a>
+    </span>
+    
+    <span class="petrarchive-visindex-thumbnail">
+      <a href="{concat('../images/visindex/',$id,'.svg')}">
+        <img src="{concat('../images/visindex/',$id,'.svg')}" 
+          height="64" border="1"/>
+        
+      </a>
+    </span>
+    
+  </xsl:template>
         
     
 </xsl:stylesheet>

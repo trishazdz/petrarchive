@@ -9,20 +9,6 @@ function addPageBreaks(){
 
 }
 
-function init(){
-    if (document.getElementById('pbToggle')) {
-       	document.getElementById('pbToggle').onclick = function(){
-       		if(document.getElementById('pbToggle').checked){
-       			clearPageBreaks();
-       		}else{
-       			addPageBreaks();
-       		}
-       	};
-	
-	addPageBreaks();
-	document.getElementById('pbToggle').checked = false;
-	}
-}
 
 //If W3C event model used, prefer that. Window events are fallbacks
 if(document.addEventListener){
@@ -58,7 +44,7 @@ function showFacs(num, url, id) {
 	facsWindow.document.write("$('.facsImage').scrollTo($('#" + id + "'))")
 	facsWindow.document.write("})")
 	facsWindow.document.write("</script>")
-	facsWindow.document.write("<script>	$(function() {$( '#resizable' ).resizable();});</script>")
+	facsWindow.document.write("<script type='text/javascript'>$(function() {$( '#resizable' ).resizable();});</script>")
 	facsWindow.document.write("</head>")
 	facsWindow.document.write("<body>")
 	facsWindow.document.write($("teiHeader")[0].outerHTML)

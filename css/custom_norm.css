@@ -11,6 +11,81 @@ choice > orig { display: none; }
 /* choice > expan */
 del { display: none; }
 
-#rvf360v {display:block;}
 #rvf360 {display:none;}
+#rvf360v {display:block;
+          font-size:80%;
+          margin-top:4em;}
+
+
+#rvf360v  l[n = '7'],
+#rvf360v  l[n = '10'],
+#rvf360v  l[n = '11'],
+#rvf360v  l[n = '16'],
+#rvf360v  l[n = '17'],
+#rvf360v  l[n = '25'],
+#rvf360v  l[n = '26'],
+#rvf360v  l[n = '27']
+{
+  position:static !important;
+  
+}
+
+#rvf360v  l[n = '20'],
+#rvf360v  l[n = '21'],
+#rvf360v  l[n = '35'],
+#rvf360v  l[n = '36'],
+#rvf360v  l[n = '50'],
+#rvf360v  l[n = '51'],
+#rvf360v  l[n = '65'],
+#rvf360v  l[n = '66'],
+#rvf360v  l[n = '80'],
+#rvf360v  l[n = '81'],
+#rvf360v  l[n = '95'],
+#rvf360v  l[n = '96'],
+#rvf360v  l[n = '110'],
+#rvf360v  l[n = '111'],
+#rvf360v  l[n = '125'],
+#rvf360v  l[n = '126'],
+#rvf360v  l[n = '140'],
+#rvf360v  l[n = '141'],
+#rvf360v  l[n = '155'],
+#rvf360v  l[n = '156']
+{
+  position:relative !important;
+  left:-50px;
+}
+
+#rvf360v  lg[type = 'dblhemi']:first-of-type,
+#rvf360v l[n = '15'],
+#rvf360v  l[n = '30'],
+#rvf360v  l[n = '45'],
+#rvf360v  l[n = '60'],
+#rvf360v  l[n = '75'],
+#rvf360v  l[n = '90'],
+#rvf360v  l[n = '105'],
+#rvf360v  l[n = '120'],
+#rvf360v  l[n = '135'],
+#rvf360v  l[n = '150']
+{
+  position:relative !important;
+  left:-.8em;
+}
+
+
+
+#rvf360v l[n = '9'] + span.lno,
+#rvf360v l[n = '24'] + span.lno,
+#rvf360v l[n = '39'] + span.lno,
+#rvf360v l[n = '54'] + span.lno,
+#rvf360v l[n = '69'] + span.lno,
+#rvf360v l[n = '84'] + span.lno,
+#rvf360v l[n = '99'] + span.lno,
+#rvf360v l[n = '114'] + span.lno,
+#rvf360v l[n = '129'] + span.lno,
+#rvf360v l[n = '144'] + span.lno
+{
+    display:none;
+}
+
+
 

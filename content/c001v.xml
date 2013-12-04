@@ -62,6 +62,7 @@
       <body>
          <pb n="charta 1 verso" facs="https://info.slis.indiana.edu/~jawalsh/petrarchive/images/vat-lat3195-f/vat-lat3195-f-001v.jpg" />
          <lg type="sonnet" n="5">
+           <lg type="octave">
             <lg type="dblhemi" corresp="#msline">
                <l n="1"><hi rendition="#red #fs24pt"
                   >Q</hi><hi rendition="#small-caps">u</hi>ando io mouo i sospiri a chiamar uoi</l>
@@ -79,6 +80,8 @@
                <l n="7">Ma taci grida il fin che farle honore</l>
                <l n="8">E daltri homeri soma / che da tuoi.</l>
             </lg>
+           </lg>
+           <lg type="sestet">
             <lg type="dblhemi" corresp="#msline">
                <l n="9">Cosi laudare &amp7; reuerire insegna</l>
                <l n="10">La uoce stessa pur chaltri ui chiami</l>
@@ -87,11 +90,11 @@
                <l n="11">O dogni reuerença et donor degna.</l>
                <l n="12">Se non che forse apollo si disdegna.</l>
             </lg>
-            <!-- Don't know what's going on here? -->
             <lg type="dblhemi" corresp="#msline">
                <l n="13">Cha parlar de suoi &sempre; uerdi rami</l>
                <l n="14">Lingua mortal presumptuosa uegna.</l>
             </lg>
+           </lg>
          </lg>
          <space corresp="#msline"/>
          <lg type="sonnet" n="6">

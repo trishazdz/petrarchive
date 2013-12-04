@@ -65,6 +65,12 @@
                 <valItem ident="stanza">
                   <gloss>stanza</gloss>
                 </valItem>
+                <valItem ident="sestet">
+                  <gloss>stanza</gloss>
+                </valItem>
+                <valItem ident="octave">
+                  <gloss>stanza</gloss>
+                </valItem>
               </valList>
             </attDef>
           </attList>

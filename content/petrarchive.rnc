@@ -10,7 +10,7 @@ namespace svg = "http://www.w3.org/2000/svg"
 namespace xi = "http://www.w3.org/2001/XInclude"
 namespace xlink = "http://www.w3.org/1999/xlink"
 
-# Schema generated from ODD source 2013-11-10T20:27:34Z. 
+# Schema generated from ODD source 2013-11-22T07:19:00Z. 
 # Edition: 2.5.0. Last updated on
 #	26th July 2013.
 # Edition Location: http://www.tei-c.org/Vault/P5/2.5.0/
@@ -2912,6 +2912,12 @@ lg =
       | 
         ## (stanza) 
         "stanza"
+      | 
+        ## (stanza) 
+        "sestet"
+      | 
+        ## (stanza) 
+        "octave"
     },
     empty
   }

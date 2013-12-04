@@ -70,13 +70,17 @@
    <text>
       <body>
          <lg type="sonnet" n="7">
+           <lg type="octet">
             <lg type="dblhemi"><l n="1"><hi rendition="#red #fs24pt">M</hi>Ille fiate o dolce mia guerrera</l>	<l n="2">Per auer co be gliocchi uostri pace</l></lg>
             <lg type="dblhemi"><l n="3">Vaggio proferto il cor. ma uoi &non; piace</l>	<l n="4">Mirar si basso collamente altera.</l></lg>
             <lg type="dblhemi"><l n="5">Et se di lui forsaltra donna spera</l> <l n="6">Viue in sperança debile et fallace.</l></lg>
             <lg type="dblhemi"><l n="7">Mio ꝑche sdegno cio cha uoi dispiace</l>	<l n="8">Esser &non; puo giamai cosi comera.</l></lg>
+           </lg>
+           <lg type="sestet">
             <lg type="dblhemi"><l n="9">Or sio lo scaccio. et <choice><abbr>enō</abbr><expan>enon</expan></choice> troua in uoi</l> <l n="10">Nel exilio infelice alcun soccorso.</l></lg>
             <lg type="dblhemi"><l n="11">Ne sa star sol. ne gire oualtri il chiama.</l> <l n="12">Poria smarrire il suo <choice><abbr>natǎl</abbr><expan>natural</expan></choice> corso.</l></lg>
             <lg type="dblhemi"><l n="13">Che graue colpa fia dambeduo noi.</l> <l n="14">Et tanto piú de uoi &quanto; piu uama.</l></lg>
+           </lg>
          </lg>
          
          <lg type="sestina" n="39">

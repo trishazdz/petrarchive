@@ -29,12 +29,14 @@
 <!ENTITY u-vert-tilde "u&#x033E;">
 <!ENTITY p-vert-line "p&#x030D;">
 <!ENTITY encodingDesc SYSTEM "encodingDesc.xml">
+<!ENTITY pilcrow2section "<choice><orig>¶</orig><reg>§</reg></choice>">
+
 ]>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Petrarch's <title rendition="#i">Rerum vulgarium fragmenta</title>: Carta 69 verso</title>
+            <title>Petrarch's <title rendition="#i">Rerum vulgarium fragmenta</title>: Cartae 69 verso &amp; 70 recto</title>
             <editor xml:id="hws">H. Wayne Storey</editor>
             <respStmt>
                <resp><!-- role/title --></resp>
@@ -69,6 +71,9 @@
             <rendition xml:id="small-caps" n="tiebp:small-caps" scheme="css">
                font-variant:small-caps;
             </rendition>
+           <rendition xml:id="i" scheme="css">
+              font-style: italic;
+           </rendition>
          </tagsDecl>
          <charDecl>
             <char xml:id="qbardes">
@@ -99,68 +104,69 @@
    </teiHeader>
    <text>
       <body>
-         <pb n="charta 69 verso" facs="https://info.slis.indiana.edu/~jawalsh/petrarchive/images/vat-lat3195-f/vat-lat3195-f-069v.jpg" />
- 
          <ab type="diplomatic">
+           
          <lg type="canzone" xml:id="rvf360" n="356 [360]">
-            <lg type="trplhemi"><l xml:id="rvf360.1" n="1">¶Quel <choice><abbr>ātiquo</abbr><expan>antiquo</expan></choice> mio dolce¦empio signore</l>	<l xml:id="rvf360.2" n="2">Fatto citar <choice><abbr>dināçi</abbr><expan>dināçi</expan></choice> ala reina</l>  <l xml:id="rvf360.3" n="3">Che laparte diuina</l> <fw>.25.</fw></lg>
+           <pb n="charta 69 verso" facs="https://info.slis.indiana.edu/~jawalsh/petrarchive/images/vat-lat3195-f/vat-lat3195-f-069v.jpg" />
+            <lg type="trplhemi"><l xml:id="rvf360.1" n="1">&pilcrow2section;Quel <choice><abbr>ātiquo</abbr><expan>antiquo</expan></choice> mio dolce¦empio signore</l>	<l xml:id="rvf360.2" n="2">Fatto citar <choice><abbr>dināçi</abbr><expan>dināçi</expan></choice> ala reina</l>  <l xml:id="rvf360.3" n="3">Che laparte diuina</l> <fw>.25.</fw></lg>
 			   <lg type="trplhemi"><l xml:id="rvf360.4" n="4">Tien di nostra natura</l>	<l xml:id="rvf360.5" n="5">encima sede. Iui comoro che nel foco affina</l>	<l xml:id="rvf360.6" n="6"><choice><abbr>Mirap&p-macron;sēto</abbr><expan>Mirappresento</expan></choice> carco didolore.</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.7" n="7">Di paura &amp7; dorrore.</l>  <l xml:id="rvf360.8" n="8">Quasi huom che teme morte / &amp7; raigon chiede.</l> <l xml:id="rvf360.9" n="9">Encomincio / <choice><abbr>madōna</abbr><expan>madonna</expan></choice> <choice><abbr>ilmāco</abbr><expan>ilmanco</expan></choice> piede</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.10" n="10">Giouenetto posio nelcostui regno.</l>  <l xml:id="rvf360.11" n="11">Odaltro chira &amp7; sdegno /</l> <l xml:id="rvf360.12" n="12">&Non; ebbi mai. &amp7; <choice><abbr>tāti</abbr><expan>tanti</expan></choice> &amp7; si diuersi / </l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.13" n="13"><choice><abbr>Tormēti</abbr><expan>Tormenti</expan></choice> iui soffersi /</l> <l xml:id="rvf360.14" n="14">Chalfine <choice><abbr>vīta</abbr><expan>vinta</expan></choice> fu <choice><abbr>quellīfinita</abbr><expan>quellinfinita</expan></choice> / </l>  <l xml:id="rvf360.15" n="15">Mia <choice><abbr>patiētia</abbr><expan>patientia</expan></choice>. enodio ebbi lauita.</l></lg>
-            <lg type="trplhemi"><l xml:id="rvf360.16" n="16">¶Cosilmio <choice><abbr>tēpo</abbr><expan>tempo</expan></choice> <choice><abbr>īfin</abbr><expan>infin</expan></choice> qui trapassato</l><l xml:id="rvf360.17" n="17">E <choice><abbr>īfiāma</abbr><expan>infiamma</expan></choice> enpene. &amp7; quante utili honeste /</l><l xml:id="rvf360.18" n="18">Vie spreççai / <choice><abbr>quāte</abbr><expan>quante</expan></choice> feste</l></lg>
+            <lg type="trplhemi"><l xml:id="rvf360.16" n="16">&pilcrow2section;Cosilmio <choice><abbr>tēpo</abbr><expan>tempo</expan></choice> <choice><abbr>īfin</abbr><expan>infin</expan></choice> qui trapassato</l><l xml:id="rvf360.17" n="17">E <choice><abbr>īfiāma</abbr><expan>infiamma</expan></choice> enpene. &amp7; quante utili honeste /</l><l xml:id="rvf360.18" n="18">Vie spreççai / <choice><abbr>quāte</abbr><expan>quante</expan></choice> feste</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.19" n="19">&Per; seruir <choice><abbr>&q-macron;sto</abbr><expan>questo</expan></choice> <choice><abbr>lusīghier</abbr><expan>lusinghier</expan></choice> crudele.</l> <l xml:id="rvf360.20" n="20">&Amp7; qual <choice><abbr>īgegno</abbr><expan>ingegno</expan></choice> asiparole <choice><abbr>&p-macron;ste</abbr><expan>preste</expan></choice> /</l> <l xml:id="rvf360.21" n="21">Che <choice><abbr>strīger</abbr><expan>stringer</expan></choice> possalmio <choice><abbr>īfelice</abbr><expan>infelice</expan></choice> stato.</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.22" n="22">&Amp7; le mie dest <choice><abbr>īgrato</abbr><expan>ingrato</expan></choice></l>   <l xml:id="rvf360.23" n="23"><choice><abbr>Tāte</abbr><expan>Tante</expan></choice> / &amp7; si graui / &amp7; si giuste querele.</l>   <l xml:id="rvf360.24" n="24">O poco mel / molto aloe con fele</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.25" n="25">In &quanto; amaro / a lamia uita aueçça.</l> <l xml:id="rvf360.26" n="26">&Con; sua falsa dolceçça /</l>  <l xml:id="rvf360.27" n="27">Laqual matrasse alamorosa schiera</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.28" n="28">Che si &non; <choice><abbr>mīgāno</abbr><expan>minganno</expan></choice> / era /</l>   <l xml:id="rvf360.29" n="29">Disposto a solleuarmi alto daterra.</l>  <l xml:id="rvf360.30" n="30">E mi tolse dispace &amp7; pose &in; guerra.</l></lg>
-            <lg type="trplhemi"><l xml:id="rvf360.31" n="31">¶Questi ma fatto men amare Dio</l>  <l xml:id="rvf360.32" n="32">Chi &non; deueua. &amp7; men curar me stesso.</l> <l xml:id="rvf360.33" n="33">&Per; una <choice><abbr>dōna</abbr><expan>donna</expan></choice> o messo</l></lg>
+            <lg type="trplhemi"><l xml:id="rvf360.31" n="31">&pilcrow2section;Questi ma fatto men amare Dio</l>  <l xml:id="rvf360.32" n="32">Chi &non; deueua. &amp7; men curar me stesso.</l> <l xml:id="rvf360.33" n="33">&Per; una <choice><abbr>dōna</abbr><expan>donna</expan></choice> o messo</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.34" n="34"><choice><abbr>Egualmēte</abbr><expan>Egualmente</expan></choice> &in; &non; cale ogni <choice><abbr>pēsero</abbr><expan>pensero</expan></choice>.</l> <l xml:id="rvf360.35" n="35">Dicio mestato <choice><abbr>cōsiglier</abbr><expan>consiglier</expan></choice>¦solesso.</l> <l xml:id="rvf360.36" n="36"><choice><abbr>Sēpraguççādo</abbr><expan>Sempraguççando</expan></choice> ilgiouenil desio /</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.37" n="37"><choice><abbr>Alēpia</abbr><expan>Alempia</expan></choice> cote / ondio /</l> <l xml:id="rvf360.38" n="38">Sperai riposo alsuo giogo aspro &amp7; fero.</l> <l xml:id="rvf360.39" n="39">Misero ache quelchiaro <choice><abbr>īgegno></abbr><expan>ingegno</expan></choice> altero.</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.40" n="40">Et lal <subst><del type="erasure">r</del><add>t</add></subst>re doti ame date dalcielo/</l> <l xml:id="rvf360.41" n="41">Che uo <choice><abbr>cāgiādol</abbr><expan>cangiandol</expan></choice> pelo.</l>   <l xml:id="rvf360.42" n="42">Ne <choice><abbr>cāgiar</abbr><expan>cangiar</expan></choice> posso lostinata uoglia.</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.43" n="43">Cosi &in; tutto mi spoglia /</l> <l xml:id="rvf360.44" n="44">Di <choice><abbr>li&b-combtild;ta</abbr><expan>liberta</expan></choice> <choice><abbr>&q-macron;sto</abbr><expan>questo</expan></choice> crudel chi accuso.</l>  <l xml:id="rvf360.45" n="45">Chamaro uiuer mauolto &in; dolce uso.</l></lg>
-            <lg type="trplhemi"><l xml:id="rvf360.46" n="46">¶Cercar mafatto deserti paesi.</l>  <l xml:id="rvf360.47" n="47">Fiere / &amp7; ladri rapaci. hispidi dumi.</l> <l xml:id="rvf360.48" n="48">Dure genti. &amp7; costumi.</l></lg>
+            <lg type="trplhemi"><l xml:id="rvf360.46" n="46">&pilcrow2section;Cercar mafatto deserti paesi.</l>  <l xml:id="rvf360.47" n="47">Fiere / &amp7; ladri rapaci. hispidi dumi.</l> <l xml:id="rvf360.48" n="48">Dure genti. &amp7; costumi.</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.49" n="49">&Amp7; ogni error che pellegrini <choice><abbr>ītrica</abbr><expan>intrica</expan></choice>.</l>   <l xml:id="rvf360.50" n="50"><choice><abbr>Mōti</abbr><expan>Monti</expan></choice> / ualli / paludi / &amp7; mari / &amp7; fumi.</l>   <l xml:id="rvf360.51" n="51">Mille lacciuoli &in; ogni <choice><abbr>pāte</abbr><expan>parte</expan></choice> tesi.</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.52" n="52">Eluerno &in; strani mesi.</l> <l xml:id="rvf360.53" n="53">Con <choice><abbr>ꝑicol</abbr><expan>pericol</expan></choice> <choice><abbr>presēte</abbr><expan>presente</expan></choice> / &amp7; &con; fatica.</l>   <l xml:id="rvf360.54" n="54">Ne costui ne quellaltra mica nemica</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.55" n="55">Chi fuggia milasciauan sol un <choice><abbr>pūto</abbr><expan>punto</expan></choice>.</l> <l xml:id="rvf360.56" n="56">Onde si &non; <add>son</add> <choice><abbr>giūto</abbr><expan>giunto</expan></choice> /</l> <l xml:id="rvf360.57" n="57">Ançi <choice><abbr>tēpo</abbr><expan>tempo</expan></choice> damorte acerba / &amp7; dura</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.58" n="58">Pieta celeste a¦cura /</l> <l xml:id="rvf360.59" n="59">Dimia salute / &non; <choice><abbr>&q-macron;sto</abbr><expan>questo</expan></choice> <choice><abbr>tirāno</abbr><expan>tiranno</expan></choice>.</l>   <l xml:id="rvf360.60" n="60">Che delmio duol si pasce. &amp7; delmio <choice><abbr>dāno</abbr><expan>danno</expan></choice>,</l></lg>
-            <lg type="trplhemi"><l xml:id="rvf360.61" n="61">¶Poi chesuo fui &non; ebbi hora <choice><abbr>trā<g ref="#qbardes"/>lla</abbr><expan>tranquilla</expan></choice>.</l>  <l xml:id="rvf360.62" n="62">Ne spero auer. &amp7; lemie notti <choice><abbr>ilsōno</abbr><expan>ilsonno</expan></choice></l>  <l xml:id="rvf360.63" n="63"><choice><abbr>Sbādiro</abbr><expan>Sbandiro</expan></choice>. &amp7; piu &non; <choice><abbr>pōno</abbr><expan>ponno</expan></choice></l></lg>
+            <lg type="trplhemi"><l xml:id="rvf360.61" n="61">&pilcrow2section;Poi chesuo fui &non; ebbi hora <choice><abbr>trā<g ref="#qbardes"/>lla</abbr><expan>tranquilla</expan></choice>.</l>  <l xml:id="rvf360.62" n="62">Ne spero auer. &amp7; lemie notti <choice><abbr>ilsōno</abbr><expan>ilsonno</expan></choice></l>  <l xml:id="rvf360.63" n="63"><choice><abbr>Sbādiro</abbr><expan>Sbandiro</expan></choice>. &amp7; piu &non; <choice><abbr>pōno</abbr><expan>ponno</expan></choice></l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.64" n="64">&Per; herbe o &per; <choice><abbr>īcāti</abbr><expan>incanti</expan></choice> ase ritrarlo.</l> <l xml:id="rvf360.65" n="65">&Per; <choice><abbr>īgāni</abbr><expan>inganni</expan></choice> &amp7; &per; força e fatto <choice><abbr>dōno</abbr><expan>donno</expan></choice> /</l> <l xml:id="rvf360.66" n="66">Soura miei spirti. &amp7; &non; sono poi squilla</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.67" n="67">Ouio sia &in; qualche uilla /</l>   <l xml:id="rvf360.68" n="68">Chi &non; ludisse. ei sa cheluero parlo.</l>   <l xml:id="rvf360.69" n="69">Chelegno uecchio mai &non; rose tarlo</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.70" n="70">Come <choice><abbr>&q-macron;stilmio</abbr><expan>questilmio</expan></choice> core / &in; che <choice><abbr>sānida</abbr><expan>sannida</expan></choice>.</l>  <l xml:id="rvf360.71" n="71">Et dimorte lo sfida.</l>  <l xml:id="rvf360.72" n="72"><choice><abbr>Quīci</abbr><expan>Quinci</expan></choice> nascon le lagrime ei martiri.</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.73" n="73">Le parole ei sospiri.</l>  <l xml:id="rvf360.74" n="74">Di chio mi uo stancando / &amp7; forse altrui.</l> <l xml:id="rvf360.75" n="75">Giudica tu che me conosci / &amp7; lui.</l></lg>
-            <lg type="trplhemi"><l xml:id="rvf360.76" n="76">¶Ilmio aduersario &con; agre <choice><abbr>rāpogne</abbr><expan>rampogne</expan></choice> /</l> <l xml:id="rvf360.77" n="77"><choice><abbr>Comīcia</abbr><expan>Comincia</expan></choice> / o <choice><abbr>dōna</abbr><expan>donna</expan></choice> <choice><abbr>ītendi</abbr><expan>intendi</expan></choice> laltra parte.</l> <l xml:id="rvf360.78" n="78">Cheluero <choice><abbr>ōde</abbr><expan>onde</expan></choice> si parte</l></lg>
+            <lg type="trplhemi"><l xml:id="rvf360.76" n="76">&pilcrow2section;Ilmio aduersario &con; agre <choice><abbr>rāpogne</abbr><expan>rampogne</expan></choice> /</l> <l xml:id="rvf360.77" n="77"><choice><abbr>Comīcia</abbr><expan>Comincia</expan></choice> / o <choice><abbr>dōna</abbr><expan>donna</expan></choice> <choice><abbr>ītendi</abbr><expan>intendi</expan></choice> laltra parte.</l> <l xml:id="rvf360.78" n="78">Cheluero <choice><abbr>ōde</abbr><expan>onde</expan></choice> si parte</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.79" n="79"><choice><abbr>Questīgrato</abbr><expan>Questingrato</expan></choice> / dira <choice><abbr>sēça</abbr><expan>sença</expan></choice> defecto.</l> <l xml:id="rvf360.80" n="80">Questi &in; sua <choice><abbr>&p-dot;ma</abbr><expan>prima</expan></choice> eta fu dato alarte.</l>  <l xml:id="rvf360.81" n="81"><choice><abbr>Dauēder</abbr><expan>Dauender</expan></choice> <choice><abbr>ꝑolette</abbr><expan>parolette</expan></choice> <choice><abbr>āçi</abbr><expan>ançi</expan></choice> <choice><abbr>mēçogne</abbr><expan>mençogne</expan></choice>.</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.82" n="82">Ne parche si uer <add>go</add>gne /</l>   <l xml:id="rvf360.83" n="83">Tolto da <choice><abbr>&q-macron;lla</abbr><expan>quella</expan></choice> noia almio delecto /</l>   <l xml:id="rvf360.84" n="84"><choice><abbr>Lamētarsi</abbr><expan>Lamentarsi</expan></choice> di me / che puro &amp7; netto /</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.85" n="85"><choice><abbr>Cōtral</abbr><expan>Contral</expan></choice> desio che spesso il suo mal uole /</l>  <l xml:id="rvf360.86" n="86">Lui <choice><abbr>tēni</abbr><expan>tenni</expan></choice> ondor si dole.</l>   <l xml:id="rvf360.87" n="87">In dolce uita chei miseria chiama.</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.88" n="88">Salito <choice><abbr>īqual</abbr><expan>inqual</expan></choice> che fama.</l> <l xml:id="rvf360.89" n="89">Solo &per; me chelsuo <choice><abbr>ītellecto</abbr><expan>intellecto</expan></choice> alçai.</l> <l xml:id="rvf360.90" n="90">Oualçato &per; se &non; fora mai.</l></lg>
-            <lg type="trplhemi"><l xml:id="rvf360.91" n="91">¶Ei sa chel <choice><abbr>grāde</abbr><expan>grande</expan></choice> atride &amp7; lalto achille.</l> <l xml:id="rvf360.92" n="92">Et anibal alterren uostro amaro.</l>  <l xml:id="rvf360.93" n="93">Et ditutti ilpiuchiaro</l></lg>
+            <lg type="trplhemi"><l xml:id="rvf360.91" n="91">&pilcrow2section;Ei sa chel <choice><abbr>grāde</abbr><expan>grande</expan></choice> atride &amp7; lalto achille.</l> <l xml:id="rvf360.92" n="92">Et anibal alterren uostro amaro.</l>  <l xml:id="rvf360.93" n="93">Et ditutti ilpiuchiaro</l></lg>
             <pb n="charta 70 recto" facs="https://info.slis.indiana.edu/~jawalsh/petrarchive/images/vat-lat3195-f/vat-lat3195-f-070r.jpg" />
             <lg type="trplhemi"><l xml:id="rvf360.94" n="94">Vnaltro &amp7; di uertute &amp7; difortuna.</l>   <l xml:id="rvf360.95" n="95">Comasciasc<unclear reason="faded">un</unclear> le sue stelle ordinaro /</l>   <l xml:id="rvf360.96" n="96">Lasciai cader &in; uilamor <choice><abbr>dācille</abbr><expan>dancille</expan></choice>.</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.97" n="97">Et acostui di mille /</l> <l xml:id="rvf360.98" n="98"><choice><abbr>Dōne</abbr><expan>Donne</expan></choice> electe <choice><abbr>excellēti</abbr><expan>excellenti</expan></choice> nelessi una.</l>   <l xml:id="rvf360.99" n="99">Qual &non; siuedra mai sotto laluna.</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.100" n="100">Beche lucretia ritornasse aroma.</l> <l xml:id="rvf360.101" n="101">Et si dolce ydioma /</l> <l xml:id="rvf360.102" n="102">Le dedi / &amp7; un <choice><abbr>cātar</abbr><expan>cantar</expan></choice> <choice><abbr>tāto</abbr><expan>tanto</expan></choice> soaue /</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.103" n="103">Che penser basso ograue /</l>    <l xml:id="rvf360.104" n="104">&Non; pote mai durar <choice><abbr>dināçi</abbr><expan>dinançi</expan></choice> alei.</l>    <l xml:id="rvf360.105" n="105">Questi fur &con; costui <choice><abbr>līgāni</abbr><expan>linganni</expan></choice> mei.</l></lg>
-            <lg type="trplhemi"><l xml:id="rvf360.106" n="106">¶Questo fu ifel. <choice><abbr>&q-macron;sti</abbr><expan>questi</expan></choice> lisdegni &amp7; lire.</l>  <l xml:id="rvf360.107" n="107">Piu dolci assai / che di nullaltra iltutto.</l>  <l xml:id="rvf360.108" n="108">Dibon seme mal frutto</l></lg>
+            <lg type="trplhemi"><l xml:id="rvf360.106" n="106">&pilcrow2section;Questo fu ifel. <choice><abbr>&q-macron;sti</abbr><expan>questi</expan></choice> lisdegni &amp7; lire.</l>  <l xml:id="rvf360.107" n="107">Piu dolci assai / che di nullaltra iltutto.</l>  <l xml:id="rvf360.108" n="108">Dibon seme mal frutto</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.109" n="109">Mieto. &amp7; tal merito <choice><abbr>a¦chīgrato</abbr><expan>a¦chingrato</expan></choice> serue.</l>   <l xml:id="rvf360.110" n="110">Silauea sotto lali <choice><abbr>miecōdutto</abbr><expan>miecondutto</expan></choice> /</l>  <l xml:id="rvf360.111" n="111"><choice><abbr>Chadōne</abbr><expan>Chadonne</expan></choice> &amp7; caualier piacea ilsuo dire.</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.112" n="112">Et si alto salire /</l>  <l xml:id="rvf360.113" n="113">Ilfeci / che tra caldi <choice><abbr>īgegni</abbr><expan>ingegni</expan></choice> ferue /</l>    <l xml:id="rvf360.114" n="114">Il suo no<unclear reason="faded">me &amp7;</unclear>desuoi detti <choice><abbr>cōserue</abbr><expan>conserue</expan></choice></l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.115" n="115">Si <choice><abbr>fāno</abbr><expan>fanno</expan></choice> <choice><abbr>cōdiletto</abbr><expan>condiletto</expan></choice> &in; alcun loco.</l>  <l xml:id="rvf360.116" n="116">Chor saria forse un roco /</l>   <l xml:id="rvf360.117" n="117">Mormorador di corto. un huom deluulgo.</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.118" n="118">Ilexalto &amp7; diuulgo</l>  <l xml:id="rvf360.119" n="119">&Per; quel chellimparo nela mia scola.</l>   <l xml:id="rvf360.120" n="120">Et dacolei che fu nelmondo sola</l></lg>
-            <lg type="trplhemi"><l xml:id="rvf360.121" n="121">¶Et &per; dir alextremo il gran seruigio.</l>    <l xml:id="rvf360.122" n="122">Damille actiinhonesti lo ritratto.</l>   <l xml:id="rvf360.123" n="123">Che mai &per; alcun pacto</l></lg>
+            <lg type="trplhemi"><l xml:id="rvf360.121" n="121">&pilcrow2section;Et &per; dir alextremo il gran seruigio.</l>    <l xml:id="rvf360.122" n="122">Damille actiinhonesti lo ritratto.</l>   <l xml:id="rvf360.123" n="123">Che mai &per; alcun pacto</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.124" n="124">Alui piacer &non; poteo cosa uile.</l>   <l xml:id="rvf360.125" n="125">Giouene schiuo &amp7; <choice><abbr>&u-vert-tilde;<unclear reason="faded">gog</unclear>noso</abbr><expan>uer<unclear reason="faded">gog</unclear>noso</expan></choice> &in; acto.</l>    <l xml:id="rvf360.126" n="126">&Amp7; &in; <choice><abbr>pēser</abbr><expan>penser</expan></choice> / poi che fatto era huom ligio</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.127" n="127">Dilei chalto uestigio /</l>  <l xml:id="rvf360.128" n="128"><choice><abbr>Līpresse</abbr><expan>Limpresse</expan></choice> alcore. &amp7; fecel suo simile.</l>  <l xml:id="rvf360.129" n="129">&Quanto; a delpellegrino &amp7; delgentile /</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.130" n="130">Dalei tene / &amp7; dame. dicui sibiasma.</l>    <l xml:id="rvf360.131" n="131">Mainocturno <choice><abbr>fātasma</abbr><expan>fantasma</expan></choice> /</l>   <l xml:id="rvf360.132" n="132">Derror &non; fu sipien comei uer noi.</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.133" n="133">Che &in; gratia dapoi /</l>  <l xml:id="rvf360.134" n="134">Cheneconobbe / a dio &amp7; ala gente.</l>   <l xml:id="rvf360.135" n="135">Dicio il <choice><abbr>suꝑbo</abbr><expan>superbo</expan></choice> silamenta / &amp7; pente.</l></lg>
-            <lg type="trplhemi"><l xml:id="rvf360.136" n="136">¶Anchor / &amp7; <choice><abbr>&q-macron;sto</abbr><expan>questo</expan></choice> e quel che tutto <choice><abbr>auāça</abbr><expan>auança</expan></choice>.</l> <l xml:id="rvf360.137" n="137">Da uolar sopralciel liauea datali</l>    <l xml:id="rvf360.138" n="138">&Per; lecose m<unclear reason="smudged">ortali</unclear>.</l></lg>
+            <lg type="trplhemi"><l xml:id="rvf360.136" n="136">&pilcrow2section;Anchor / &amp7; <choice><abbr>&q-macron;sto</abbr><expan>questo</expan></choice> e quel che tutto <choice><abbr>auāça</abbr><expan>auança</expan></choice>.</l> <l xml:id="rvf360.137" n="137">Da uolar sopralciel liauea datali</l>    <l xml:id="rvf360.138" n="138">&Per; lecose m<unclear reason="smudged">ortali</unclear>.</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.139" n="139">Che &son; scala al fattor. chibenlestima.</l>    <l xml:id="rvf360.140" n="140"><choice><abbr>Chemirādo</abbr><expan>Chemirando</expan></choice> eibenfiso <choice><abbr>quāte</abbr><expan>quante</expan></choice> &amp7; quali</l> <l xml:id="rvf360.141" n="141">Era <choice><abbr>&u-vert-tilde;tuti</abbr><expan>uertuti</expan></choice> &in; <choice><abbr>&q-macron;lla</abbr><expan>quella</expan></choice> <choice><abbr>suasꝑāça</abbr><expan>suasperança</expan></choice></l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.142" n="142">Duna &in; altra <choice><abbr>sēbiāça</abbr><expan>sembiança</expan></choice></l>    <l xml:id="rvf360.143" n="143">Potealeuarsi alalta cagion <choice><abbr>&p-vert-line;ma</abbr><expan>prima</expan></choice>.</l>    <l xml:id="rvf360.144" n="144">Et eiladetto alcuna uolta &in; rima.</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.145" n="145">Or ma posto &in; oblio &con; <choice><abbr>&q-macron;lla</abbr><expan>quella</expan></choice> <choice><abbr>dōna</abbr><expan>donna</expan></choice> /</l>   <l xml:id="rvf360.146" n="146">Chilidie &per; <choice><abbr>colōna</abbr><expan>colonna</expan></choice> <g ref="#virgsusp"/></l>  <l xml:id="rvf360.147" n="147">De lasua frale uita. <choice><abbr>A&q-macron;sto</abbr><expan>Aquesto</expan></choice> un strido</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.148" n="148">Lagrimoso alço &amp7; grido.</l> <l xml:id="rvf360.149" n="149">Ben mela die. ma tosto laritolse.</l>    <l xml:id="rvf360.150" n="150"><choice><abbr>Respōde</abbr><expan>Responde</expan></choice> / Io no / machi &per; se lauolse.</l></lg>
-            <lg type="trplhemi"><l xml:id="rvf360.151" n="151">¶<choice><abbr>Alfinābo</abbr><expan>Alfinambo</expan></choice> <choice><abbr>cō&u-vert-tilde;si</abbr><expan>conuersi</expan></choice> al giústo seggio /</l>   <l xml:id="rvf360.152" n="152">I &con; <choice><abbr>tremāti</abbr><expan>tremanti</expan></choice> / ei <choice><abbr>cōuoci</abbr><expan>conuoci</expan></choice> alte &amp7; crude /</l> <l xml:id="rvf360.153" n="153">Ciascun &per; se <choice><abbr>cōchiude</abbr><expan>conchiude</expan></choice></l></lg>
+            <lg type="trplhemi"><l xml:id="rvf360.151" n="151">&pilcrow2section;<choice><abbr>Alfinābo</abbr><expan>Alfinambo</expan></choice> <choice><abbr>cō&u-vert-tilde;si</abbr><expan>conuersi</expan></choice> al giústo seggio /</l>   <l xml:id="rvf360.152" n="152">I &con; <choice><abbr>tremāti</abbr><expan>tremanti</expan></choice> / ei <choice><abbr>cōuoci</abbr><expan>conuoci</expan></choice> alte &amp7; crude /</l> <l xml:id="rvf360.153" n="153">Ciascun &per; se <choice><abbr>cōchiude</abbr><expan>conchiude</expan></choice></l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.154" n="154">Nobile <choice><abbr>dōna</abbr><expan>donna</expan></choice> / tua <choice><abbr>sētentia</abbr><expan>sententia</expan></choice> <choice><abbr>attēdo</abbr><expan>attendo</expan></choice>.</l>   <l xml:id="rvf360.155" n="155">Ella allor <choice><abbr>sorridēdo</abbr><expan>sorridendo</expan></choice>.</l> <l xml:id="rvf360.156" n="156">Piacemi auer uostre <choice><abbr>&q-macron;stioni</abbr><expan>questioni</expan></choice> udite /</l></lg>
             <lg type="trplhemi"><l xml:id="rvf360.157" n="157">Ma piu tempo bisogna <choice><abbr>atāta</abbr><expan>atanta</expan></choice> lite.</l></lg>
          </lg>
          </ab>
                  <ab type="edition">
            <lg type="canzone" xml:id="rvf360v" n="356 [360]">
+             <lg type="stanza">
             <lg type="dblhemi">
                <l sameAs="#rvf360.1"/>
                <l sameAs="#rvf360.2"/>
@@ -192,6 +198,8 @@
             <lg type="single">
                <l sameAs="#rvf360.15"/>
             </lg>
+             </lg>
+             <lg type="stanza">
             <lg type="dblhemi">
                <l sameAs="#rvf360.16"/>
                <l sameAs="#rvf360.17"/>
@@ -223,6 +231,8 @@
             <lg type="single">
                <l sameAs="#rvf360.30"/>
             </lg>
+             </lg>
+             <lg type="stanza">
             <lg type="dblhemi">
                <l sameAs="#rvf360.31"/>
                <l sameAs="#rvf360.32"/>
@@ -254,6 +264,8 @@
             <lg type="single">
                <l sameAs="#rvf360.45"/>
             </lg>
+             </lg>
+             <lg type="stanza">
             <lg type="dblhemi">
                <l sameAs="#rvf360.46"/>
                <l sameAs="#rvf360.47"/>
@@ -282,10 +294,11 @@
                <l sameAs="#rvf360.58"/>
                <l sameAs="#rvf360.59"/>
             </lg>
-            <pb />
             <lg type="single">
                <l sameAs="#rvf360.60"/>
             </lg>
+             </lg>
+             <lg type="stanza">
             <lg type="dblhemi">
                <l sameAs="#rvf360.61"/>
                <l sameAs="#rvf360.62"/>
@@ -317,6 +330,8 @@
             <lg type="single">
                <l sameAs="#rvf360.75"/>
             </lg>
+             </lg>
+             <lg type="stanza">
             <lg type="dblhemi">
                <l sameAs="#rvf360.76"/>
                <l sameAs="#rvf360.77"/>
@@ -348,6 +363,8 @@
             <lg type="single">
                <l sameAs="#rvf360.90"/>
             </lg>
+             </lg>
+             <lg type="stanza">
             <lg type="dblhemi">
                <l sameAs="#rvf360.91"/>
                <l sameAs="#rvf360.92"/>
@@ -379,6 +396,8 @@
             <lg type="single">
                <l sameAs="#rvf360.105"/>
             </lg>
+             </lg>
+             <lg type="stanza">
             <lg type="dblhemi">
                <l sameAs="#rvf360.106"/>
                <l sameAs="#rvf360.107"/>
@@ -403,7 +422,6 @@
                <l sameAs="#rvf360.116"/>
                <l sameAs="#rvf360.117"/>
             </lg>
-            <pb/>
             <lg type="dblhemi">
                <l sameAs="#rvf360.118"/>
                <l sameAs="#rvf360.119"/>
@@ -411,6 +429,8 @@
             <lg type="single">
                <l sameAs="#rvf360.120"/>
             </lg>
+             </lg>
+             <lg type="stanza">
             <lg type="dblhemi">
                <l sameAs="#rvf360.121"/>
                <l sameAs="#rvf360.122"/>
@@ -442,6 +462,8 @@
             <lg type="single">
                <l sameAs="#rvf360.135"/>
             </lg>
+             </lg>
+             <lg type="stanza">
             <lg type="dblhemi">
                <l sameAs="#rvf360.136"/>
                <l sameAs="#rvf360.137"/>
@@ -463,7 +485,7 @@
                <l sameAs="#rvf360.145"/>
             </lg>
             <lg type="dblhemi">
-               <l sameAs="#rvf360.145"/>
+               <l sameAs="#rvf360.146"/>
                <l sameAs="#rvf360.147"/>
             </lg>
             <lg type="dblhemi">
@@ -473,6 +495,8 @@
             <lg type="single">
                <l sameAs="#rvf360.150"/>
             </lg>
+             </lg>
+             <lg type="stanza">
             <lg type="dblhemi">
                <l sameAs="#rvf360.151"/>
                <l sameAs="#rvf360.152"/>
@@ -488,6 +512,7 @@
             <lg type="single">
                <l sameAs="#rvf360.157"/>
             </lg>
+             </lg>
            </lg>
          </ab>
       </body>

@@ -140,7 +140,7 @@
         </img>
       </a>
     </span>
-    
+    <!--
     <span class="petrarchive-visindex-thumbnail">
       <a href="{concat('../images/visindex/',$id,'.svg')}">
         <img src="{concat('../images/visindex/',$id,'.svg')}" 
@@ -148,7 +148,7 @@
         
       </a>
     </span>
-    
+    -->
   </xsl:template>
         
     

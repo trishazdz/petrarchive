@@ -1,0 +1,94 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+body {
+margin-top:4em;
+font-size:14pt;
+font-family:Georgia, Palatino, serif;
+} 
+
+#banner {
+font-family: "helvetica neue", helvetica, verdana, arial, sans-serif;
+font-weight:100;
+font-size:48px;
+}
+
+#bannersubtitle {
+font-size:36px;
+}
+
+#banner .archive {
+font-weight:300;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+font-family: "helvetica neue", helvetica, verdana, arial, sans-serif;
+font-weight:bold;
+margin-top:.5em;
+}
+
+h1 {
+border-bottom:1px solid gray;
+padding-bottom:.25em;
+margin-top:1.5em;
+font-size: 18pt;
+}
+
+h2 {
+margin-top:1em;
+}
+
+p, ul, ol, dl {
+line-height:135%;
+margin-top:.5em;
+margin-bottom:.5em;
+}
+
+.subsetfacs {
+max-height:180px;
+float:right;
+border:1px solid gray;
+margin:4px 4px 4px 20px;
+}
+
+.subsetvis {
+max-height:180px;
+float:right;
+border: 1px solid #d9e7ff;
+margin:4px;
+}
+
+
+.subset, section {
+clear:both;
+}
+em,cite,i{font-style:italic;}
+
+img {max-width:600px;}
+
+figure {
+margin-top:.5em;
+margin-bottom:.5em;
+}
+
+figure img, figure figcaption {margin-right:auto;
+margin-left:auto;
+display:block;
+}
+
+figcaption {
+margin-top:.5em;
+margin-bottom:.5em;
+text-align:center;
+font-weight:medium;
+font-style:italic;
+font-size:18px;
+margin-right:auto;
+margin-left:auto;
+}
+

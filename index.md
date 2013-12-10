@@ -1,18 +1,19 @@
 <div id="banner">
 <div id="bannertitle">Petr<span class="archive">archive</span></div>
 <div id="bannersubtitle">An edition of Petrarch’s songbook</div>
+<div id="credits">H. Wayne Storey &amp; John A. Walsh</div>
 </div>
 <div>
 <section>
 #Introduction
-Awarded a New Frontiers Start-up Grant ($42,000) from Indiana University for 2013, the PetrArchive Project has advanced significantly in its goals for offering a “rich text,” interactive edition of one of the icons of western literature, Petrarch’s _Rerum vulgarium fragmenta_ (_Rvf_). Wayne Storey has collaborated with John Walsh, Assoc. Prof. of Information and Library Science in Indiana’s School of Informatics and Computing, to produce six sets of distinctive textual prototypes based on Storey’s new edition of the work’s 366 texts that comprise the author’s poetry book. With these prototypes now in place, the editors propose to complete work on all 366 poems in their digital edition of Petrarch’s work, using Storey’s edition and commentary and following the [Text Encoding Initiative Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/index.html). This textual-visual digital scholarly project, the PetrArchive, will supply a state-of-the-art scholarly tool for students, teachers, and scholars of Petrarch’s formative icon for book culture and Western poetry, and provide the first online interactive and open-access edition for specialized and general audiences. 
+Awarded a New Frontiers Start-up Grant ($42,000) from Indiana University for 2013, the Petr*archive* Project has advanced significantly in its goals for offering a “rich text,” interactive edition of one of the icons of western literature, Petrarch’s _Rerum vulgarium fragmenta_ (_Rvf_). Wayne Storey has collaborated with John Walsh, Assoc. Prof. of Information and Library Science in Indiana’s School of Informatics and Computing, to produce six sets of distinctive textual prototypes based on Storey’s new edition of the work’s 366 texts that comprise the author’s poetry book. With these prototypes now in place, the editors propose to complete work on all 366 poems in their digital edition of Petrarch’s work, using Storey’s edition and commentary and following the [Text Encoding Initiative Guidelines](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/index.html). This textual-visual digital scholarly project, the Petr*archive*, will supply a state-of-the-art scholarly tool for students, teachers, and scholars of Petrarch’s formative icon for book culture and Western poetry, and provide the first online interactive and open-access edition for specialized and general audiences. 
 </section>
 <section>
 #Prototypes
 In this last year we have worked through six subsets of texts that demonstrate diverse kinds of editorial and encoding issues that we felt it necessary to establish as guides for future work. All the subsets also demonstrate the emblematic nexus between Petrarch’s visual poetics and the editing of texts from a problematic holograph first designed as a fair copy, and that then degenerates into an experimental work site. 
 
 <div class="subset">
-##Subset 1A: Vat Lat 3195, c. 1v
+##[Subset 1A: Vat Lat 3195, c. 1v](content/c001v.xml)
 <img class="subsetvis" src="images/rvf_001v_four_sonnets.jpg" alt="vat lat 3195 c. 1v"/><img class="subsetfacs" src="images/VAT-LAT3195-F-001v-small.jpg" alt="vat lat 3195 c. 1v"/><p>Subset 1A focuses on the first organizational principle of Petrarch’s _Fragmenta_: the four-sonnet construction of the manuscript leaf based on a 31-line transcriptional field.</p>
 </div>
 

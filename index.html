@@ -83,30 +83,45 @@ body {
 }
 
 /* line 14, ../sass/screen.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 15, ../sass/screen.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 17, ../sass/screen.scss */
 #banner {
   font-family: "helvetica neue", helvetica, verdana, arial, sans-serif;
   font-weight: 100;
   font-size: 48px;
 }
 
-/* line 20, ../sass/screen.scss */
+/* line 23, ../sass/screen.scss */
 #bannersubtitle {
   font-size: 36px;
 }
 
-/* line 24, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
+#credits {
+  font-size: 16px;
+}
+
+/* line 31, ../sass/screen.scss */
 #banner .archive {
   font-weight: 300;
 }
 
-/* line 29, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "helvetica neue", helvetica, verdana, arial, sans-serif;
   font-weight: bold;
   margin-top: .5em;
 }
 
-/* line 35, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 h1 {
   border-bottom: 1px solid gray;
   padding-bottom: .25em;
@@ -114,19 +129,19 @@ h1 {
   font-size: 18pt;
 }
 
-/* line 42, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 h2 {
   margin-top: 1em;
 }
 
-/* line 46, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 p, ul, ol, dl {
   line-height: 135%;
   margin-top: .5em;
   margin-bottom: .5em;
 }
 
-/* line 52, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 .subsetfacs {
   max-height: 180px;
   float: right;
@@ -134,7 +149,7 @@ p, ul, ol, dl {
   margin: 4px 4px 4px 20px;
 }
 
-/* line 59, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 .subsetvis {
   max-height: 180px;
   float: right;
@@ -142,35 +157,35 @@ p, ul, ol, dl {
   margin: 4px;
 }
 
-/* line 67, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 .subset, section {
   clear: both;
 }
 
-/* line 70, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 em, cite, i {
   font-style: italic;
 }
 
-/* line 72, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 img {
   max-width: 600px;
 }
 
-/* line 74, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 figure {
   margin-top: .5em;
   margin-bottom: .5em;
 }
 
-/* line 79, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 figure img, figure figcaption {
   margin-right: auto;
   margin-left: auto;
   display: block;
 }
 
-/* line 84, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 figcaption {
   margin-top: .5em;
   margin-bottom: .5em;
@@ -190,13 +205,14 @@ figcaption {
       <div id="banner">
 <div id="bannertitle">Petr<span class="archive">archive</span></div>
 <div id="bannersubtitle">An edition of Petrarch’s songbook</div>
+<div id="credits">H. Wayne Storey &amp; John A. Walsh</div>
 </div>
 <div>
 <section> 
 
 <h1 id="introduction">Introduction</h1>
 
-<p>Awarded a New Frontiers Start-up Grant ($42,000) from Indiana University for 2013, the PetrArchive Project has advanced significantly in its goals for offering a “rich text,” interactive edition of one of the icons of western literature, Petrarch’s <em>Rerum vulgarium fragmenta</em> (<em>Rvf</em>). Wayne Storey has collaborated with John Walsh, Assoc. Prof. of Information and Library Science in Indiana’s School of Informatics and Computing, to produce six sets of distinctive textual prototypes based on Storey’s new edition of the work’s 366 texts that comprise the author’s poetry book. With these prototypes now in place, the editors propose to complete work on all 366 poems in their digital edition of Petrarch’s work, using Storey’s edition and commentary and following the <a href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/index.html">Text Encoding Initiative Guidelines</a>. This textual-visual digital scholarly project, the PetrArchive, will supply a state-of-the-art scholarly tool for students, teachers, and scholars of Petrarch’s formative icon for book culture and Western poetry, and provide the first online interactive and open-access edition for specialized and general audiences.
+<p>Awarded a New Frontiers Start-up Grant ($42,000) from Indiana University for 2013, the Petr<em>archive</em> Project has advanced significantly in its goals for offering a “rich text,” interactive edition of one of the icons of western literature, Petrarch’s <em>Rerum vulgarium fragmenta</em> (<em>Rvf</em>). Wayne Storey has collaborated with John Walsh, Assoc. Prof. of Information and Library Science in Indiana’s School of Informatics and Computing, to produce six sets of distinctive textual prototypes based on Storey’s new edition of the work’s 366 texts that comprise the author’s poetry book. With these prototypes now in place, the editors propose to complete work on all 366 poems in their digital edition of Petrarch’s work, using Storey’s edition and commentary and following the <a href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/index.html">Text Encoding Initiative Guidelines</a>. This textual-visual digital scholarly project, the Petr<em>archive</em>, will supply a state-of-the-art scholarly tool for students, teachers, and scholars of Petrarch’s formative icon for book culture and Western poetry, and provide the first online interactive and open-access edition for specialized and general audiences.
 </section>
 <section> </p>
 
@@ -205,7 +221,7 @@ figcaption {
 <p>In this last year we have worked through six subsets of texts that demonstrate diverse kinds of editorial and encoding issues that we felt it necessary to establish as guides for future work. All the subsets also demonstrate the emblematic nexus between Petrarch’s visual poetics and the editing of texts from a problematic holograph first designed as a fair copy, and that then degenerates into an experimental work site. </p>
 <div class="subset"> 
 
-<h2 id="subset1a:vatlat3195c.1v">Subset 1A: Vat Lat 3195, c. 1v</h2>
+<h2 id="subset1a:vatlat3195c.1v"><a href="content/c001v.xml">Subset 1A: Vat Lat 3195, c. 1v</a></h2>
 <img class="subsetvis" src="images/rvf_001v_four_sonnets.jpg" alt="vat lat 3195 c. 1v"/><img class="subsetfacs" src="images/VAT-LAT3195-F-001v-small.jpg" alt="vat lat 3195 c. 1v"/><p>Subset 1A focuses on the first organizational principle of Petrarch’s <em>Fragmenta</em>: the four-sonnet construction of the manuscript leaf based on a 31-line transcriptional field.</p>
 </div>
 <div class="subset"> 

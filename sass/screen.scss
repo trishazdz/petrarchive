@@ -11,6 +11,9 @@ font-size:14pt;
 font-family:Georgia, Palatino, serif;
 } 
 
+a {text-decoration:none;}
+a:hover {text-decoration:underline;}
+
 #banner {
 font-family: "helvetica neue", helvetica, verdana, arial, sans-serif;
 font-weight:100;
@@ -19,6 +22,10 @@ font-size:48px;
 
 #bannersubtitle {
 font-size:36px;
+}
+
+#credits {
+font-size:16px;
 }
 
 #banner .archive {

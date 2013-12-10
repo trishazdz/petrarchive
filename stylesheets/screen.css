@@ -75,30 +75,45 @@ body {
 }
 
 /* line 14, ../sass/screen.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 15, ../sass/screen.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 17, ../sass/screen.scss */
 #banner {
   font-family: "helvetica neue", helvetica, verdana, arial, sans-serif;
   font-weight: 100;
   font-size: 48px;
 }
 
-/* line 20, ../sass/screen.scss */
+/* line 23, ../sass/screen.scss */
 #bannersubtitle {
   font-size: 36px;
 }
 
-/* line 24, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
+#credits {
+  font-size: 16px;
+}
+
+/* line 31, ../sass/screen.scss */
 #banner .archive {
   font-weight: 300;
 }
 
-/* line 29, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "helvetica neue", helvetica, verdana, arial, sans-serif;
   font-weight: bold;
   margin-top: .5em;
 }
 
-/* line 35, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 h1 {
   border-bottom: 1px solid gray;
   padding-bottom: .25em;
@@ -106,19 +121,19 @@ h1 {
   font-size: 18pt;
 }
 
-/* line 42, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 h2 {
   margin-top: 1em;
 }
 
-/* line 46, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 p, ul, ol, dl {
   line-height: 135%;
   margin-top: .5em;
   margin-bottom: .5em;
 }
 
-/* line 52, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 .subsetfacs {
   max-height: 180px;
   float: right;
@@ -126,7 +141,7 @@ p, ul, ol, dl {
   margin: 4px 4px 4px 20px;
 }
 
-/* line 59, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 .subsetvis {
   max-height: 180px;
   float: right;
@@ -134,35 +149,35 @@ p, ul, ol, dl {
   margin: 4px;
 }
 
-/* line 67, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 .subset, section {
   clear: both;
 }
 
-/* line 70, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 em, cite, i {
   font-style: italic;
 }
 
-/* line 72, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 img {
   max-width: 600px;
 }
 
-/* line 74, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 figure {
   margin-top: .5em;
   margin-bottom: .5em;
 }
 
-/* line 79, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 figure img, figure figcaption {
   margin-right: auto;
   margin-left: auto;
   display: block;
 }
 
-/* line 84, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 figcaption {
   margin-top: .5em;
   margin-bottom: .5em;

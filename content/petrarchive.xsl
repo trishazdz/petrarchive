@@ -99,8 +99,8 @@
     </xsl:template>
     
     <xsl:variable name="htmlFooter">
-        <footer> © 2013. This document is part of the <cite>Petr<span style="font-style:normal;">archive</span></cite>.<br />
-            By H. Wayne Storey, John A. Walsh, Isabella Magni, and Allison M. McCormack. <br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" /></a>&#x00a0;<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Petrarchive</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>. <br />Powered by <a href="{$teibpHome}">TEI Boilerplate</a>. 
+      <footer> © 2013 H. Wayne Storey &amp; John A. Walsh. This document is part of the <span style="font-style:normal;">Petr</span>archive</cite>.<br />
+        By H. Wayne Storey, John A. Walsh, Isabella Magni, Allison M. McCormack, and Laura Pence. <br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" /></a>&#x00a0;<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><span style="font-style:normal;">Petr</span>archive</cite></span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>. <br />Powered by <a href="{$teibpHome}">TEI Boilerplate</a>. 
         </footer>
     </xsl:variable>
     

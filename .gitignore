@@ -19,3 +19,8 @@ Thumbs.db
 # Images #
 ##########
 doc/
+
+# Caches #
+##########
+
+.sass-cache

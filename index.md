@@ -69,9 +69,12 @@ The textual and graphological representations of the text are supplemented by ot
 
 [visindex]: images/Petrarchive__Visual_Index_to_Vat__lat__3195.jpg
 
-![Petrarchive Visual Index][visindex]
-
+<figure>
+<img src="images/Petrarchive__Visual_Index_to_Vat__lat__3195.jpg" alt="Petrarchive Visual Index" id="visindex" />
+<figcaption><a href="visindex_2up.html">Petrarchive Visual Index<a/></figcaption></figure>
 </section>
 </div>
 
+<footer> © 2013 H. Wayne Storey &amp; John A. Walsh. This document is part of the <cite><span style="font-style:normal;">Petr</span>archive</cite>.<br />By H. Wayne Storey, John A. Walsh, Isabella Magni, Allison M. McCormack, and Laura Pence. <br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" /></a>&#x00a0;The <span style="font-style:normal;">Petr</span>archive</cite> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>. <br />Powered by <a href="{$teibpHome}">TEI Boilerplate</a>. 
+</footer>
 

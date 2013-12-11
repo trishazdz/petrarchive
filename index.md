@@ -1,7 +1,6 @@
 <div id="banner">
 <div id="bannertitle">Petr<span class="archive">archive</span></div>
 <div id="bannersubtitle">An edition of Petrarch’s songbook</div>
-<div id="credits">H. Wayne Storey &amp; John A. Walsh</div>
 </div>
 <div>
 <section>

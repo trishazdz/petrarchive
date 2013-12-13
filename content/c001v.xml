@@ -101,7 +101,7 @@
                <l n="4">Il suon de<reg>’</reg> primi dolci accenti suoi.</l>
             </lg>
             <lg type="dblhemi" corresp="#canvasline">
-               <l n="5"><!--jawalsh: check line -->Vostro stato real<!-- jawalsh: no comma in my version of Word document.--><reg>,</reg> che<reg> ’</reg>ncontro poi<choice><orig> /</orig><reg>,</reg></choice></l>
+               <l n="5"><reg>,</reg> che<reg> ’</reg>ncontro poi<choice><orig> /</orig><reg>,</reg></choice></l>
                <l n="6">Raddoppia <choice><orig>alalta</orig><reg>a l’alta</reg></choice> impresa il mio <choice><orig>ualore</orig><reg>valore</reg></choice>.</l>
             </lg>
             <lg type="dblhemi" corresp="#canvasline">
@@ -116,10 +116,10 @@
                <l n="11">O d<reg>’</reg>ogni <choice><orig>reuerença</orig><reg>reverenza</reg></choice> et d<reg>’</reg>onor degna<choice><orig>.</orig><reg>;</reg></choice></l>
                <l n="12">Se non che forse <choice><orig>apollo</orig><reg>Apollo</reg></choice> si disdegna<choice><orig>.</orig><reg>,</reg></choice></l>
             </lg>
-            <!-- Don't know what's going on here? -->
+
             <lg type="dblhemi" corresp="#canvasline">
                <l n="13">C<reg>’</reg>ha parlar de<reg>’</reg> suoi &sempre; <choice><orig>uerdi</orig><reg>verdi</reg></choice> rami</l>
-               <l n="14">Lingua mortal presumptuosa <choice><orig>uenga</orig><reg>venga<!-- jawalsh: my Word doc has "vegna"--></reg></choice>.</l>
+               <l n="14">Lingua mortal presumptuosa <choice><orig>uegna</orig><reg>vegna</reg></choice>.</l>
             </lg>
          </lg>
          <space corresp="#canvasline"/>

@@ -33,6 +33,7 @@ function showFacs(num, url, id) {
 	facsWindow.document.write($('#maincss')[0].outerHTML)
 	facsWindow.document.write($('#customcss')[0].outerHTML)
 	facsWindow.document.write("<link rel='stylesheet' href='../js/jquery-ui/themes/base/jquery.ui.all.css'>")
+	facsWindow.document.write($("style")[0].outerHTML)
 //  in PetrArchive, getting 'undefined' from code below
 //	facsWindow.document.write($('style')[0].outerHTML)}
 	facsWindow.document.write("<script type='text/javascript' src='../js/jquery/jquery.min.js'></script>")

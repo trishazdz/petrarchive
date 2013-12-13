@@ -77,6 +77,7 @@ body {
 /* line 14, ../sass/screen.scss */
 a {
   text-decoration: none;
+  color: #9b181e;
 }
 
 /* line 15, ../sass/screen.scss */
@@ -92,33 +93,49 @@ a:hover {
 }
 
 /* line 23, ../sass/screen.scss */
+#banner a {
+  color: black;
+}
+
+/* line 27, ../sass/screen.scss */
+#banner a:hover {
+  text-decoration: none;
+}
+
+/* line 31, ../sass/screen.scss */
 #bannersubtitle {
   font-size: 36px;
 }
 
-/* line 27, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 #credits {
   font-size: 16px;
 }
 
-/* line 31, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 #banner .archive {
   font-weight: 300;
 }
 
-/* line 36, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 #content {
   width: 750px;
 }
 
-/* line 40, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
+ul {
+  list-style-type: disc;
+  margin-left: 4em;
+}
+
+/* line 53, ../sass/screen.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "helvetica neue", helvetica, verdana, arial, sans-serif;
   font-weight: bold;
   margin-top: .5em;
 }
 
-/* line 46, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 h1 {
   border-bottom: 1px solid gray;
   padding-bottom: .25em;
@@ -126,19 +143,19 @@ h1 {
   font-size: 18pt;
 }
 
-/* line 53, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 h2 {
   margin-top: 1em;
 }
 
-/* line 57, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 p, ul, ol, dl {
-  line-height: 135%;
+  line-height: 150%;
   margin-top: .5em;
   margin-bottom: .5em;
 }
 
-/* line 63, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 .subsetfacs {
   max-height: 160px;
   float: right;
@@ -146,7 +163,7 @@ p, ul, ol, dl {
   margin: 4px 4px 4px 20px;
 }
 
-/* line 70, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 .subsetvis {
   max-height: 160px;
   float: right;
@@ -154,35 +171,35 @@ p, ul, ol, dl {
   margin: 4px 4px 4px 4px;
 }
 
-/* line 77, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 .subset, section {
   clear: both;
 }
 
-/* line 80, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 em, cite, i {
   font-style: italic;
 }
 
-/* line 82, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 img {
   max-width: 600px;
 }
 
-/* line 84, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 figure {
   margin-top: .5em;
   margin-bottom: .5em;
 }
 
-/* line 89, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 figure img, figure figcaption {
   margin-right: auto;
   margin-left: auto;
   display: block;
 }
 
-/* line 94, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 figcaption {
   margin-top: .5em;
   margin-bottom: .5em;
@@ -194,7 +211,7 @@ figcaption {
   margin-left: auto;
 }
 
-/* line 105, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 footer {
   border-top: 1px solid black;
   margin-top: 2.5em;

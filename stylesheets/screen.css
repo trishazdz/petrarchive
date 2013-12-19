@@ -166,40 +166,41 @@ p, ul, ol, dl {
 /* line 83, ../sass/screen.scss */
 .subsetvis {
   max-height: 160px;
+  max-width: 116px;
   float: right;
   border: 1px solid #d9e7ff;
   margin: 4px 4px 4px 4px;
 }
 
-/* line 90, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 .subset, section {
   clear: both;
 }
 
-/* line 93, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 em, cite, i {
   font-style: italic;
 }
 
-/* line 95, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 img {
   max-width: 600px;
 }
 
-/* line 97, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 figure {
   margin-top: .5em;
   margin-bottom: .5em;
 }
 
-/* line 102, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 figure img, figure figcaption {
   margin-right: auto;
   margin-left: auto;
   display: block;
 }
 
-/* line 107, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 figcaption {
   margin-top: .5em;
   margin-bottom: .5em;
@@ -211,7 +212,7 @@ figcaption {
   margin-left: auto;
 }
 
-/* line 118, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 footer {
   border-top: 1px solid black;
   margin-top: 2.5em;

@@ -654,7 +654,9 @@ the line wraps. -->
                     <l n="48">Pur la sua propria colpa&p2c; &amp; &non; quel giorno</l>
                     <l n="49"><choice><orig>Chi</orig><reg>Ch’i’</reg></choice> <choice><orig>uolsi</orig><reg>volsi</reg></choice> <choice><orig>inuer</orig><reg>inver</reg></choice><reg>’</reg> <choice><orig>langelica</orig><reg>l’angelica</reg></choice> beltade&p2c;</l>
                   </lg>
+                  <lg type="single" corresp="#canvasline">
                   <l n="50">Nel dolce tempo de la prima etade.</l>
+                  </lg>
                 </lg>
               
               

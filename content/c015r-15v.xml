@@ -46,6 +46,7 @@
 <!ENTITY Si "<choice><orig>Si</orig><reg>Sì</reg></choice>">
 <!ENTITY pilcrow2section "<choice><orig>¶</orig><reg>§</reg></choice>">
 <!ENTITY encodingDesc SYSTEM "encodingDesc.xml"> 
+<!ENTITY v2q "<choice><orig> /</orig><reg>?</reg></choice>">
 ]>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
@@ -615,43 +616,43 @@ the line wraps. -->
               <pb n="charta 15 verso" facs="https://info.slis.indiana.edu/~jawalsh/petrarchive/images/vat-lat3195-f/vat-lat3195-f-015v.jpg" />
                 <lg type="stanza">
                   <lg type="dblhemi">
-                    <l n="31"><hi rendition="#red #fs24pt">¶</hi>Che parlo &virg; o doue sono &virg; et chi 
-                      <choice><abbr>mingāna</abbr><expan>minganna</expan></choice><g ref="#punctinter"/></l>
-                    <l n="32">Altri chio stesso el desiar souerchio.</l>
+                    <l n="31"><hi rendition="#red #fs24pt">&pilcrow2section;</hi>Che parlo<choice><orig> /</orig><reg>?</reg></choice>  o doue sono&pilcrow2section; et chi 
+                      <choice><orig><choice><abbr>mingāna</abbr><expan>minganna</expan></choice></orig><reg>m’iganna,</reg></choice><g ref="#punctinter"/></l>
+                    <l n="32">Altri <choice><orig>chio</orig><reg>ch’io</reg></choice> stesso <choice><orig>el</orig><reg>e’l</reg></choice> desiar <choice><orig>souerchio</orig><reg>soverchio</reg></choice><choice><orig>.</orig><reg>?</reg></choice></l>
                   </lg>
                   <lg type="dblhemi">
-                    <l n="33">Gia si trascorro il ciel di cerchio &in; cerchio &virg;</l>
+                    <l n="33"><choice><orig>Gia</orig><reg>Già</reg></choice> <choice><orig>si</orig><reg>s’i’</reg></choice> trascorro il ciel di cerchio &in; cerchio&v2c;</l>
                     <l n="34">Nessun pianeta a pianger mi 
-                      <choice><abbr>condāna</abbr><expan>condanna</expan></choice></l>
+                      <choice><abbr>condāna</abbr><expan>condanna</expan></choice><reg>.</reg></l>
                   </lg>
                   <lg type="trplhemi">
-                    <l n="35">Se mortal uelo il mio ueder appanna</l>
-                    <l n="36">Che colpa e de le stelle &virg;</l>
-                    <l n="37">O de le cose belle<g ref="#punctinter"/></l>
+                    <l n="35">Se mortal <choice><orig>uelo</orig><reg>velo</reg></choice> il mio <choice><orig>ueder</orig><reg>veder</reg></choice> appanna<reg>,</reg></l>
+                    <l n="36">Che colpa <choice><orig>e</orig><reg>è</reg></choice> de le stelle&v2q;</l>
+                    <l n="37">O de le cose belle<choice><orig><g ref="#punctinter"/></orig><reg>?</reg></choice></l>
                   </lg>
                   <lg type="dblhemi">
-                    <l n="38">Meco si sta chi di et notte maffanna.</l>
-                    <l n="39">Poi che del suo piacer mi fe gir graue</l>
+                    <l n="38">Meco si sta chi <choice><orig>di</orig><reg>dì</reg></choice> et notte <choice><orig>maffanna</orig><reg>m’affanna</reg></choice>&p2c;</l>
+                    <l n="39">Poi che del suo piacer mi fe<reg>’</reg> gir <choice><orig>graue</orig><reg>grave</reg></choice></l>
                   </lg>
-                  <l n="40">La dolce uista &virg; el bel guardo soaue.</l>
+                  <lg type="single" corresp="#canvasline"><l n="40">La dolce <choice><orig>uista</orig><reg>vista</reg></choice> <choice><orig>/</orig><reg/></choice> <choice><orig>el</orig><reg>e’l</reg></choice> bel guardo <choice><orig>soaue</orig><reg>soave</reg></choice>.</l></lg>
                 </lg>
                 <lg type="stanza">
                   <lg type="dblhemi">
-                    <l n="41"><hi rendition="#blue #fs24pt">¶</hi>Tutte le cose di chel mondo e adorno &virg;</l>
-                    <l n="42">Vscir buone de man del mastro eterno.</l>
+                    <l n="41"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi>Tutte le cose di <choice><orig>chel</orig><reg>che ’l </reg></choice> mondo &egrave_reg; adorno<choice><orig> /</orig><reg/></choice></l>
+                    <l n="42"><choice><orig>Vscir</orig><reg>Uscîr</reg></choice> buone de man del mastro eterno&p2colon;</l>
                   </lg>
                   <lg type="dblhemi">
-                    <l n="43">Ma me che cosi adentro non discerno</l>
-                    <l n= "44">Abbaglia il bel che mi si mostra intorno.</l>
+                    <l n="43">Ma me<reg>,</reg> che <choice><orig>cosi</orig><reg>così</reg></choice> <choice><orig>adentro</orig><reg>a dentro</reg></choice> non discerno<reg>,</reg></l>
+                    <l n= "44">Abbaglia il bel che mi si mostra intorno<choice><orig>.</orig><reg>;</reg></choice></l>
                   </lg>
                   <lg type="trplhemi">
-                    <l n="45">Et sal<g ref="#brvbar"/>uero splendor giamai ritorno &virg;</l>
-                    <l n="46">Locchio &non; po star fermo.</l>
-                    <l n="47">Cosi la fatto infermo</l>
+                    <l n="45">Et <choice><orig>sal<g ref="#brvbar"/>uero</orig><reg>s’al vero</reg></choice> splendor giamai ritorno&v2c;</l>
+                    <l n="46"><choice><orig>Locchio</orig><reg>L’occhio</reg></choice> &non; <choice><orig>po</orig><reg>pò</reg></choice> star fermo<choice><orig>.</orig><reg>;</reg></choice></l>
+                    <l n="47"><choice><orig>Cosi</orig><reg>Così</reg></choice> <choice><orig>la</orig><reg>l’à</reg></choice> fatto infermo</l>
                   </lg>
                   <lg type="dblhemi">
-                    <l n="48">Pur la sua propria colpa. &amp; &non; quel giorno</l>
-                    <l n="49">Chi uolsi inuer langelica beltade.</l>
+                    <l n="48">Pur la sua propria colpa&p2c; &amp; &non; quel giorno</l>
+                    <l n="49"><choice><orig>Chi</orig><reg>Ch’i’</reg></choice> <choice><orig>uolsi</orig><reg>volsi</reg></choice> <choice><orig>inuer</orig><reg>inver</reg></choice><reg>’</reg> <choice><orig>langelica</orig><reg>l’angelica</reg></choice> beltade&p2c;</l>
                   </lg>
                   <l n="50">Nel dolce tempo de la prima etade.</l>
                 </lg>

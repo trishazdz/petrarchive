@@ -105,8 +105,9 @@ By H. Wayne Storey, John A. Walsh, Isabella Magni, Allison M. McCormack, and Lau
 Powered by <a href="{$teibpHome}">TEI Boilerplate</a>.
 </footer>
     </xsl:variable>
-    
-    <xsl:template match="tei:lg[@type = 'sonnet']//tei:l[@n = '5']|tei:lg[@type = 'sonnet']//tei:l[@n = '9']|tei:lg[@type = 'canzone']//tei:l[@n mod 5 = 0]">
+  
+<xd:doc><xd:desc>These lines get line numbers. Canzone is not regular.</xd:desc></xd:doc>
+  <xsl:template match="tei:lg[@type = 'sonnet']//tei:l[@n = '5']|tei:lg[@type = 'sonnet']//tei:l[@n = '9']|tei:lg[@xml:id = 'rvf070']//tei:l[@n mod 5 = 0]|tei:lg[@xml:id = 'rvf071']//tei:l[@n = 5]|tei:lg[@xml:id = 'rvf071']//tei:l[@n = 15]|tei:lg[@xml:id = 'rvf071']//tei:l[@n = 20]|tei:lg[@xml:id = 'rvf071']//tei:l[@n = 30]|tei:lg[@xml:id = 'rvf071']//tei:l[@n = 35]">
         <span class="lno"><xsl:value-of select="@n"/></span>
             <xsl:element name="{local-name()}">
                 <xsl:call-template name="addID"/>

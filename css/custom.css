@@ -316,11 +316,8 @@ lg[type = 'sestina'] l[n = '19'],
 lg[type = 'sestina'] l[n = '25'],
 lg[type = 'sestina'] l[n = '31'],
 lg[type = 'sestina'] l[n = '37'],
-lg[type = 'canzone'] l[n = '1'],
-lg[type = 'canzone'] l[n = '11'],
-lg[type = 'canzone'] l[n = '21'],
-lg[type = 'canzone'] l[n = '31'],
-lg[type = 'canzone'] l[n = '41'] {
+lg[type = 'canzone'] lg[type = 'stanza'] lg[type = 'dblhemi']:first-of-type
+{
 position:relative;
 left:-.8em;
 margin-top:0;
@@ -334,15 +331,20 @@ lg[type = 'canzone']  l[n = '5'],
 lg[type = 'canzone'] l[n = '6'],
 lg[type = 'canzone'] lg[type = 'trplhemi'] l[n = '7'],
 /* lg[type = 'canzone'] l[n = '10'], */
-lg[type = 'canzone'] l[n = '15'],
-lg[type = 'canzone'] l[n = '16'],
+lg[type = 'canzone'] lg[type = 'trplhemi'] l[n = '15'],
+lg[type = 'canzone'] lg[type = 'trplhemi'] l[n = '16'],
 lg[type = 'canzone'] l[n = '17'],
-/* lg[type = 'canzone'] l[n = '20'], */
-lg[type = 'canzone'] l[n = '25'],
-lg[type = 'canzone'] l[n = '26'],
-lg[type = 'canzone'] l[n = '27'],
+lg[type = 'canzone'] lg[type = 'dblhemi'] l[n = '20'], 
+lg[type = 'canzone'] lg[type = 'dblhemi'] l[n = '21']:last-of-type, 
+lg[type = 'canzone'] lg[type = 'trplhemi'] l[n = '25'],
+lg[type = 'canzone'] lg[type = 'trplhemi'] l[n = '26'],
+lg[type = 'canzone'] lg[type = 'trplhemi'] l[n = '27'],
 lg[type = 'canzone'] l[n = '35'],
-lg[type = 'canzone'] l[n = '45']
+lg[type = 'canzone'] l[n = '36'],
+lg[type = 'canzone'] lg[type = 'trplhemi'] l[n = '37'],
+lg[type = 'canzone'] lg[type = 'trplhemi'] l[n = '45'],
+lg[type = 'canzone'] lg[type = 'trplhemi'] l[n = '46'],
+lg[type = 'canzone'] lg[type = 'trplhemi'] l[n = '47']
 /* lg[type = 'canzone'] l[n = '30'] */
 {
     position:relative;

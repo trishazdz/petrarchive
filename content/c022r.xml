@@ -3,13 +3,50 @@
 <?xml-stylesheet type="text/xsl" href="petrarchive.xsl"?>
 <!DOCTYPE TEI [
 <!ENTITY amp7 "<choice><abbr>&amp;</abbr><expan>et</expan></choice>">
+<!ENTITY Amp7 "<choice><abbr>&amp;></abbr><expan>Et</expan></choice>">
 <!ENTITY per "<choice><abbr>ꝑ</abbr><expan>per</expan></choice>">
 <!ENTITY Per "<choice><abbr>ꝑ</abbr><expan>Per</expan></choice>">
-
 <!ENTITY virg "/">
 <!ENTITY sempre "<choice><abbr>sēpre</abbr><expan>sempre</expan></choice>">
+<!ENTITY Sempre "<choice><abbr>sēpre</abbr><expan>Sempre</expan></choice>">
 <!ENTITY quanto "<choice><abbr>quāto</abbr><expan>quanto</expan></choice>">
+<!ENTITY Quanto "<choice><abbr>quāto</abbr><expan>Quanto</expan></choice>">
+<!ENTITY quando "<choice><abbr>quādo</abbr><expan>quando</expan></choice>">
+<!ENTITY Quando "<choice><abbr>quādo</abbr><expan>Quando</expan></choice>">
+<!ENTITY giorno "<choice><abbr>giõno</abbr><expan>giorno</expan></choice>">
+<!ENTITY non "<choice><abbr>nō</abbr><expan>non</expan></choice>">
+<!ENTITY Non "<choice><abbr>nō</abbr><expan>Non</expan></choice>">
+<!ENTITY in "<choice><abbr>ī</abbr><expan>in</expan></choice>">
+<!ENTITY pre "<choice><abbr>&p-macron;</abbr><expan>pre</expan></choice">
+<!ENTITY con "<choice><abbr>cō</abbr><expan>con</expan></choice>">
+<!ENTITY Con "<choice><abbr>cō</abbr><expan>Con</expan></choice>">
+<!ENTITY son "<choice><abbr>sō</abbr><expan>son</expan></choice>">
+<!ENTITY Son "<choice><abbr>sō</abbr><expan>Son</expan></choice>">
+<!ENTITY q-tilde "q&#x0303;">
 <!ENTITY q-macron "q&#x0304;">
+<!ENTITY p-macron "p&#x0304;">
+<!ENTITY b-combtild "b&#xFE23;">
+<!ENTITY p-dot "p&#x0307;">
+<!ENTITY u-vert-tilde "u&#x033E;">
+<!ENTITY p-vert-line "p&#x030D;">
+<!ENTITY uia "<choice><orig>uia</orig><reg>via</reg></choice>">
+<!ENTITY uai "<choice><orig>uai</orig><reg>vai</reg></choice>">
+
+<!-- period "p" to "2" comma "c" -->
+<!ENTITY p2c "<choice><orig>.</orig><reg>,</reg></choice>">
+<!ENTITY p2colon "<choice><orig>.</orig><reg>:</reg></choice>">
+<!ENTITY p2e "<choice><orig>.</orig><reg>!</reg></choice>">
+<!ENTITY c2p "<choice><orig>,</orig><reg>.</reg></choice>">
+<!ENTITY v2c "<choice><orig> /</orig><reg>,</reg></choice>">
+<!ENTITY regapos "<reg>’</reg>">
+<!ENTITY uolta "<choice><orig>uolta</orig><reg>volta</reg></choice>">
+<!ENTITY uolte "<choice><orig>uolte</orig><reg>volte</reg></choice>">
+<!ENTITY egrave_reg "<choice><orig>e</orig><reg>è</reg></choice>">
+<!ENTITY si "<choice><orig>si</orig><reg>sì</reg></choice>">
+<!ENTITY Si "<choice><orig>Si</orig><reg>Sì</reg></choice>">
+<!ENTITY pilcrow2section "<choice><orig>¶</orig><reg>§</reg></choice>">
+<!ENTITY encodingDesc SYSTEM "encodingDesc.xml"> 
+<!ENTITY punctelevhiback "&#xF1FA;">
 <!ENTITY quello "<choice><abbr>&q-macron;llo</abbr><expan>quello</expan></choice>">
 ]>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
@@ -40,6 +77,16 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <p n="ms lines">In Petrarch's personal copy of the RVF, he consistently uses a ruled 31-line “canvas” for 
+            the layout of the poems. There is one exception, Rvf XXX, where an extra line is added to the 
+            underlying canvas. Elements that occupy a ruled manuscript line are tagged with the 
+            attribute <code>@corresp="#msline"</code>, where <code>#msline</code> references a category in a 
+            taxonomy of "graphic features" in the <gi>teiHeader</gi></p>
+         <classDecl>
+            <taxonomy n="graphic features">
+               <category xml:id="msline"><catDesc>A single ruled line in a manuscript</catDesc></category>
+            </taxonomy>
+         </classDecl>
          <tagsDecl>
             <!-- Basic text formatting: bold, italic, underline, "normal," etc. -->
             <rendition xml:id="b" n="tiebp:bold" scheme="css">
@@ -278,124 +325,112 @@ the line wraps. -->
          </tagsDecl>
       </encodingDesc>
    </teiHeader>
-   <!-- replaced PUA u+f1f7 w/ the proper character for virgule u+002f. -->
-   <!-- MS Word label [5; s] becomes <lg type="sonnet" n="5"> -->
-   <!--
-       The standard solution below does not allow us to italicize only the "m" in "sempre."
-       
-       <choice><abbr>sēpre</abbr><expan>sempre</expan></choice>
-  -->
-   <!-- What character is the Italian ampersand/7? -->
-
-   <!-- For p with stroke through descender, I am using ꝑ (u+A751). -->
-
-   <!-- Can erasures be read? -->
 
    <text>
       <body>
          <pb n="Charta 22 recto" facs="https://info.slis.indiana.edu/~jawalsh/petrarchive/images/vat-lat3195-f/vat-lat3195-f-022r.jpg" />
          <lg type="sonnet" n="102">
-            <lg type="dblhemi">
+            <lg type="dblhemi" corresp="#msline">
                <l n="1"><hi rendition="#red #fs24pt"
-                  >C</hi><hi rendition="#small-caps">e</hi>sare poi chel traditor degitto</l>
-               <l n="2">Li fece il don de lonorata testa</l>
+                  >C</hi><hi rendition="#small-caps">e</hi>sare<reg>,</reg> poi che<reg> ’</reg>l traditor <choice><orig>degitto</orig><reg>d’Egitto</reg></choice></l>
+               <l n="2">Li fece il don de l<reg>’</reg>onorata testa<reg>,</reg></l>
             </lg>
-            <lg type="dblhemi">
-               <l n="3">Celando lallegreçça manifesta</l>
-               <l n="4">Pianse per gliocchi fuor si come e scritto.</l>
+            <lg type="dblhemi" corresp="#msline">
+               <l n="3">Celando <choice><orig>lallegreçça</orig><reg>l’allegrezza</reg></choice> manifesta<reg>,</reg></l>
+               <l n="4">Pianse per <choice><orig>gliocchi</orig><reg>gli occhi</reg></choice> fuor <choice><orig>si</orig><reg>sì</reg></choice> come <choice><orig>e</orig><reg>è</reg></choice> scritto.</l>
             </lg>
-            <lg type="dblhemi">
-               <l n="5">Et hanibal / quando a limperio afflitto</l>
-               <l n="6">Vide farsi fortuna si molesta /</l>
+            <lg type="dblhemi" corresp="#msline">
+               <l n="5">Et <choice><orig>hanibal</orig><reg>Hanibal</reg></choice><choice><orig> /</orig><reg>,</reg></choice> quando a l<reg>’</reg>imperio afflitto</l>
+               <l n="6">Vide farsi fortuna <choice><orig>si</orig><reg>sì</reg></choice> molesta<choice><orig> /</orig><reg>,</reg></choice></l>
             </lg>
-            <lg type="dblhemi">
+            <lg type="dblhemi" corresp="#msline">
                <l n="7">Rise fra gente lagrimosa &amp7; mesta</l>
                <l n="8">Per isfogare il suo acerbo despitto.</l>
             </lg>
-            <lg type="dblhemi">
-               <l n="9">Et cosi auen che lanimo ciascuna</l>
-               <l n="10">Sua passion sottol contrario manto</l>
+            <lg type="dblhemi" corresp="#msline">
+               <l n="9">Et <choice><orig>cosi</orig><reg>così</reg></choice> <choice><orig>auen</orig><reg>aven</reg></choice> che l<reg>’</reg>animo ciascuna</l>
+               <l n="10">Sua passion sotto<reg> ’</reg>l contrario manto</l>
             </lg>
-            <lg type="dblhemi">
-               <l n="11">Ricopre co la uista or chiara / or bruna.</l>
-               <l n="12"><choice><abbr>ꝑo</abbr><expan>Pero</expan></choice> salcuna uolta io rido / o canto</l>
+            <lg type="dblhemi" corresp="#msline">
+               <l n="11">Ricopre co la <choice><orig>uista</orig><reg>vista</reg></choice> or chiara <choice><orig>/</orig><reg></reg></choice> or bruna.</l>
+               <l n="12"><choice><abbr>ꝑo</abbr><expan><choice><orig>Pero</orig><reg>Però</reg></choice></expan></choice> s<reg>’</reg>alcuna <choice><orig>uolta</orig><reg>volta</reg></choice> io rido <choice><orig>/</orig><reg></reg></choice> o canto<reg>,</reg></l>
             </lg>
-            <lg type="dblhemi">
-               <l n="13">Facciol / perchi non o se non questuna</l>
+            <lg type="dblhemi" corresp="#msline">
+               <l n="13">Facciol <choice><orig>/</orig><reg></reg></choice> perch<reg>’</reg>i<reg>’</reg> non <choice><orig>o</orig><reg>ò</reg></choice> se non quest<reg>’</reg>una</l>
                <l n="14">Via da celare il mio angoscioso <choice><abbr>piāto</abbr><expan>pianto</expan></choice>.</l>
             </lg>
-            
-            <!-- Pero abbreviated ꝑo -->
-            
+            <space corresp="#msline"/>
          </lg>
          <lg type="sonnet" n="103">
-            <lg type="dblhemi">
+            <lg type="dblhemi" corresp="#msline">
                <l n="1"><hi rendition="#blue #fs24pt"
-                  >U</hi><hi rendition="#small-caps">i</hi>nse hanibal. et non seppe usar poi</l>
-               <l n="2">Ben la uittoriosa sua uentura.</l>
+                  ></hi><choice><orig>U</orig><reg>V</reg></choice><hi rendition="#small-caps">i</hi>nse <choice><orig>hanibal</orig><reg>Hanibal</reg></choice><choice><orig>.</orig><reg>,</reg></choice> et non seppe usar poi</l>
+               <l n="2">Ben la <choice><orig>uittoriosa</orig><reg>vittoriosa</reg></choice> sua <choice><orig>uentura</orig><reg>ventura</reg></choice><choice><orig>.</orig><reg>;</reg></choice></l>
             </lg>
-            <lg type="dblhemi">
-               <l n="3">Pero signor mio caro aggiate cura.</l>
-               <l n="4">Che similmente non auegna a uoi.</l>
+            <lg type="dblhemi" corresp="#msline">
+               <l n="3"><choice><orig>Pero</orig><reg>Però</reg></choice><reg>,</reg> signor mio caro<reg>,</reg> aggiate cura<choice><orig>.</orig><reg></reg></choice></l>
+               <l n="4">Che similmente non <choice><orig>auegna</orig><reg>avegna</reg></choice> a <choice><orig>uoi</orig><reg>voi</reg></choice>.</l>
             </lg>
-            <lg type="dblhemi">
-               <l n="5">Lorsa rabbiosa per gli orsacchi suoi / </l>
-               <l n="6">Che trouaron di maggio aspra pastura.</l>
+            <lg type="dblhemi" corresp="#msline">
+               <l n="5">L<reg>’</reg>orsa<reg>,</reg> rabbiosa per gli orsacchi suoi<choice><orig> /</orig><reg>,</reg></choice></l>
+               <l n="6">Che <choice><orig>trouaron</orig><reg>travaron</reg></choice> di maggio aspra pastura<choice><orig>.</orig><reg>,</reg></choice></l>
             </lg>
-            <lg type="dblhemi">
-               <l n="7">Rode se dentro. ei <choice><abbr>dēti</abbr><expan>denti</expan></choice> &amp7; 
-                  lunghie endura</l>
-               <l n="8">&per; uendicar suoi danni sopra noi.</l> 
+            <lg type="dblhemi" corresp="#msline">
+               <l n="7">Rode <choice><orig>se</orig><reg>sé</reg></choice> dentro<choice><orig>.</orig><reg>,</reg></choice> <choice><orig>ei</orig><reg>e i</reg></choice> <choice><abbr>dēti</abbr><expan>denti</expan></choice> &amp7; 
+                  l<reg>’</reg>unghie endura</l>
+               <l n="8">&per; <choice><orig>uendicar</orig><reg>vendicar</reg></choice> suoi danni sopra noi.</l> 
             </lg>
-            <lg type="dblhemi">
-               <l n="9">Mentrel nouo dolor dunque laccora</l>
-               <l n="10">Non riponete lonorata spada.</l>
+            <lg type="dblhemi" corresp="#msline">
+               <l n="9">Mentre<reg> ’</reg>l <choice><orig>nouo</orig><reg>novo</reg></choice> dolor dunque l<reg>’</reg>accora<reg>,</reg></l>
+               <l n="10">Non riponete l<reg>’</reg>onorata spada<choice><orig>.</orig><reg>,</reg></choice></l>
             </lg>
-            <lg type="dblhemi">
-               <l n="11">Ançi seguite la doue ui chiama</l>
+            <lg type="dblhemi" corresp="#msline">
+               <l n="11"><choice><orig>Ançi</orig><reg>Anzi</reg></choice> seguite <choice><orig>la</orig><reg>là</reg></choice> <choice><orig>doue</orig><reg>dove</reg></choice> <choice><orig>ui</orig><reg>vi</reg></choice> chiama</l>
                <l n="12">Vostra fortuna dritto per la strada</l>
             </lg>
-            <lg type="dblhemi">
-               <l n="13">Che ui puo dar dopo la morte <choice><abbr>āchora</abbr><expan>anchora</expan></choice></l>
-               <l n="14">Mille &amp7; mille <choice><abbr>āni</abbr><expan>anni</expan></choice> al 
+            <lg type="dblhemi" corresp="#msline">
+               <l n="13">Che <choice><orig>ui</orig><reg>vi</reg></choice> <choice><orig>puo</orig><reg>può</reg></choice> dar<reg>,</reg> dopo la morte <choice><abbr>āchora</abbr><expan>anchora</expan></choice></l>
+               <l n="14">Mille &amp7; mille <choice><abbr>āni</abbr><expan>anni</expan></choice><reg>,</reg> al 
                   <choice><abbr>mōdo</abbr><expan>mondo</expan></choice> honor &amp7; fama.</l>
             </lg>
          </lg> 
+         <space corresp="#msline"/>
          <lg type="sonnet" n="104">
-            <lg type="dblhemi">
+            <lg type="dblhemi" corresp="#msline">
                <l n="1"><hi rendition="#red #fs24pt"
-                  >L</hi><hi rendition="#small-caps">a</hi>spectata uertu chen uoi fioriua</l>
-               <l n="2">Quando amor comincio darui bataglia</l>
+                  >L</hi><reg>’</reg><hi rendition="#small-caps">a</hi>spectata <choice><orig>uertu</orig><reg>vertù</reg></choice><reg>,</reg> che<reg> ’</reg>n <choice><orig>uoi</orig><reg>voi</reg></choice> <choice><orig>fioriua</orig><reg>fioriva</reg></choice></l>
+               <l n="2">Quando <choice><orig>amor</orig><reg>Amor</reg></choice> comincio <choice><orig>darui</orig><reg>darvi</reg></choice> bataglia<reg>,</reg></l>
             </lg>
-            <lg type="dblhemi">
-               <l n="3">Produce or frutto che quel fiore aguaglia /</l>
-               <l n="4">Et che mia speme fa uenire a riua.</l>
+            <lg type="dblhemi" corresp="#msline">
+               <l n="3">Produce or frutto che quel fiore aguaglia<choice><orig> /</orig><reg>,</reg></choice></l>
+               <l n="4">Et che mia speme fa <choice><orig>uenire</orig><reg>venire</reg></choice> a <choice><orig>riua</orig><reg>riva</reg></choice>.</l>
             </lg>
-            <lg type="dblhemi">
-               <l n="5"><choice><abbr>ꝑo</abbr><expan>Pero</expan></choice> mi dice il core chio in carte scriua</l>
-               <l n="6">Cosa ondel uostro nome <choice><abbr>ī</abbr><expan>in</expan></choice> pregio saglia</l>
+            <lg type="dblhemi" corresp="#msline">
+               <l n="5"><choice><abbr>ꝑo</abbr><expan><choice><orig>Pero</orig><reg>Però</reg></choice></expan></choice> mi dice il <choice><orig>core</orig><reg>cor</reg></choice> ch<reg>’</reg>io in carte <choice><orig>scriua</orig><reg>scriva</reg></choice></l>
+               <l n="6">Cosa onde<reg> ’</reg>l <choice><orig>uostro</orig><reg>vostro</reg></choice> nome <choice><abbr>ī</abbr><expan>in</expan></choice> pregio saglia<reg>,</reg></l>
             </lg>
-            <lg type="dblhemi">
-               <l n="7">Chen nulla parte si saldo sintaglia</l>
-               <l n="8">Per far di marmo una persona uiua.</l>
+            <lg type="dblhemi" corresp="#msline">
+               <l n="7">Che<reg> ’</reg>n nulla parte <choice><orig>si</orig><reg>sì</reg></choice> saldo s<reg>’</reg>intaglia</l>
+               <l n="8">Per far di marmo una persona <choice><orig>uiua</orig><reg>viva</reg></choice>.</l>
             </lg>
-            <lg type="dblhemi">
-               <l n="9">Credete uoi che Cesare / o Marcello</l>
-               <l n="10">O paolo / odaffricanọ fossin cotali</l>
+            <lg type="dblhemi" corresp="#msline">
+               <l n="9">Credete <choice><orig>uoi</orig><reg>voi</reg></choice> che Cesare <choice><orig>/</orig><reg></reg></choice> o Marcello</l>
+               <l n="10">O <choice><orig>paolo</orig><reg>Paolo</reg></choice> <choice><orig>/</orig><reg></reg></choice> <choice><orig>odaffricanọ</orig><reg>od Affrican</reg></choice> fossin cotali</l>
             </lg>
-            <lg type="dblhemi">
-               <l n="11">&per; incude giamai / ne per martello.</l>
-               <l n="12">Pandolfo mio questopere son frali</l>
+            <lg type="dblhemi" corresp="#msline">
+               <l n="11">&per; incude giamai<choice><orig> /</orig><reg>,</reg></choice> <choice><orig>ne</orig><reg>né</reg></choice> per martello<choice><orig>.</orig><reg>?</reg></choice></l>
+               <l n="12">Pandolfo mio<reg>,</reg> quest<reg>’</reg>opere son frali</l>
             </lg>
-            <lg type="dblhemi">
-               <l n="13">Al <choice><abbr>lūgo</abbr><expan>lungo</expan></choice> andar. mal nostro studio e &quello;</l>
-               <l n="14">Che fa &per; fama gliuomini <choice><abbr>īmortali</abbr><expan>immortali</expan></choice>.</l>
+            <lg type="dblhemi" corresp="#msline">
+               <l n="13"><choice><orig>Al <choice><abbr>lūgo</abbr><expan>lungo</expan></choice></orig><reg>A llungo</reg></choice> andar<choice><orig>.</orig><reg>,</reg></choice> ma<reg> ’</reg>l nostro studio <choice><orig>e</orig><reg>è</reg></choice> &quello;</l>
+               <l n="14">Che fa &per; fama <choice><orig>gliuomini</orig><reg>gli uomini</reg></choice> <choice><abbr>īmortali</abbr><expan>immortali</expan></choice>.</l>
             </lg>
          </lg>
+         <space corresp="#msline"/>
          
          <space unit="lines" extent="7" ana="#space-stop" />
          
-         <!-- o with espunzione of odaffricano (line 10)? i of imortali? -->
+         <!-- Rvf 103 line 3 _ Rvf 104 line 5, check "Però" -->
          
       </body>
    </text>

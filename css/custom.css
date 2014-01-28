@@ -305,6 +305,8 @@ span.lno {
     
 }
 
+
+/* For rubrication? */
 lg[type = 'octave'] > lg[type = 'dblhemi']:first-of-type, 
 lg[type = 'trplhemi']:first-of-type,
 lg[type = 'sestina'] l[n = '1'], 
@@ -314,8 +316,11 @@ lg[type = 'sestina'] l[n = '19'],
 lg[type = 'sestina'] l[n = '25'],
 lg[type = 'sestina'] l[n = '31'],
 lg[type = 'sestina'] l[n = '37'],
+lg[type = 'canzone'] l[n = '1'],
 lg[type = 'canzone'] l[n = '11'],
-lg[type = 'canzone'] l[n = '21'] {
+lg[type = 'canzone'] l[n = '21'],
+lg[type = 'canzone'] l[n = '31'],
+lg[type = 'canzone'] l[n = '41'] {
 position:relative;
 left:-.8em;
 margin-top:0;
@@ -325,9 +330,9 @@ lg[type = 'sonnet'] l[n = '5'],
 lg[type = 'sonnet'] l[n = '6'], 
 lg[type = 'sonnet'] l[n = '9'],  
 lg[type = 'sonnet'] l[n = '10'],
-lg[type = 'canzone'] l[n = '5'],
+lg[type = 'canzone']  l[n = '5'],
 lg[type = 'canzone'] l[n = '6'],
-lg[type = 'canzone'] l[n = '7'],
+lg[type = 'canzone'] lg[type = 'trplhemi'] l[n = '7'],
 /* lg[type = 'canzone'] l[n = '10'], */
 lg[type = 'canzone'] l[n = '15'],
 lg[type = 'canzone'] l[n = '16'],
@@ -335,7 +340,9 @@ lg[type = 'canzone'] l[n = '17'],
 /* lg[type = 'canzone'] l[n = '20'], */
 lg[type = 'canzone'] l[n = '25'],
 lg[type = 'canzone'] l[n = '26'],
-lg[type = 'canzone'] l[n = '27']
+lg[type = 'canzone'] l[n = '27'],
+lg[type = 'canzone'] l[n = '35'],
+lg[type = 'canzone'] l[n = '45']
 /* lg[type = 'canzone'] l[n = '30'] */
 {
     position:relative;

@@ -2,15 +2,30 @@
 <?xml-model href="petrarchive.rnc" type="application/relax-ng-compact-syntax"?>
 <?xml-stylesheet type="text/xsl" href="teibp.xsl"?>
 <!DOCTYPE TEI [
-<!ENTITY amp7 "<choice><abbr>&amp;</abbr><expan>et</expan></choice>">
-<!ENTITY per "<choice><abbr>ꝑ</abbr><expan>per</expan></choice>">
+<!ENTITY amp7 "<choice><orig>&amp;</orig><reg>et</reg></choice>">
+<!ENTITY per "<choice><orig>ꝑ</orig><reg>per</reg></choice>">
 <!ENTITY virg "/">
-<!ENTITY sempre "<choice><abbr>sēpre</abbr><expan>sempre</expan></choice>">
-<!ENTITY quanto "<choice><abbr>quāto</abbr><expan>quanto</expan></choice>">
-<!ENTITY quando "<choice><abbr>quādo</abbr><expan>quando</expan></choice>">
-<!ENTITY giorno "<choice><abbr>giõno</abbr><expan>giorno</expan></choice>">
-<!ENTITY non "<choice><abbr>nō</abbr><expan>non</expan></choice>">
-<!ENTITY in "<choice><abbr>ī</abbr><expan>in</expan></choice>">
+<!ENTITY sempre "<choice><orig>sēpre</orig><reg>sempre</reg></choice>">
+<!ENTITY quanto "<choice><orig>quāto</orig><reg>quanto</reg></choice>">
+<!ENTITY quando "<choice><orig>quādo</orig><reg>quando</reg></choice>">
+<!ENTITY giorno "<choice><orig>giõno</orig><reg>giorno</reg></choice>">
+<!ENTITY non "<choice><orig>nō</orig><reg>non</reg></choice>">
+<!ENTITY in "<choice><orig>ī</orig><reg>in</reg></choice>">
+
+<!-- period "p" to "2" comma "c" -->
+<!ENTITY p2c "<choice><orig>.</orig><reg>,</reg></choice>">
+<!ENTITY p2colon "<choice><orig>.</orig><reg>:</reg></choice>">
+<!ENTITY p2e "<choice><orig>.</orig><reg>!</reg></choice>">
+<!ENTITY c2p "<choice><orig>,</orig><reg>.</reg></choice>">
+<!ENTITY v2c "<choice><orig> /</orig><reg>,</reg></choice>">
+<!ENTITY regapos "<reg>’</reg>">
+<!ENTITY uolta "<choice><orig>uolta</orig><reg>volta</reg></choice>">
+<!ENTITY uolte "<choice><orig>uolte</orig><reg>volte</reg></choice>">
+<!ENTITY egrave_reg "<choice><orig>e</orig><reg>è</reg></choice>">
+<!ENTITY si "<choice><orig>si</orig><reg>sì</reg></choice>">
+<!ENTITY Si "<choice><orig>Si</orig><reg>Sì</reg></choice>">
+<!ENTITY pilcrow2section "<choice><orig>&pilcrow2section;</orig><reg>§</reg></choice>">
+<!ENTITY encodingDesc SYSTEM "encodingDesc.xml">
 ]>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
@@ -59,7 +74,7 @@
    <!--
        The standard solution below does not allow us to italicize only the "m" in "sempre."
        
-       <choice><abbr>sēpre</abbr><expan>sempre</expan></choice>
+       <choice><orig>sēpre</orig><reg>sempre</reg></choice>
   -->
    <!-- What character is the Italian ampersand/7? -->
 
@@ -70,63 +85,59 @@
    <text>
       <body>
          <lg type="sonnet" n="7">
-           <lg type="octet">
-            <lg type="dblhemi"><l n="1"><hi rendition="#red #fs24pt">M</hi>Ille fiate o dolce mia guerrera</l>	<l n="2">Per auer co be gliocchi uostri pace</l></lg>
-            <lg type="dblhemi"><l n="3">Vaggio proferto il cor. ma uoi &non; piace</l>	<l n="4">Mirar si basso collamente altera.</l></lg>
-            <lg type="dblhemi"><l n="5">Et se di lui forsaltra donna spera</l> <l n="6">Viue in sperança debile et fallace.</l></lg>
-            <lg type="dblhemi"><l n="7">Mio ꝑche sdegno cio cha uoi dispiace</l>	<l n="8">Esser &non; puo giamai cosi comera.</l></lg>
-           </lg>
-           <lg type="sestet">
-            <lg type="dblhemi"><l n="9">Or sio lo scaccio. et <choice><abbr>enō</abbr><expan>enon</expan></choice> troua in uoi</l> <l n="10">Nel exilio infelice alcun soccorso.</l></lg>
-            <lg type="dblhemi"><l n="11">Ne sa star sol. ne gire oualtri il chiama.</l> <l n="12">Poria smarrire il suo <choice><abbr>natǎl</abbr><expan>natural</expan></choice> corso.</l></lg>
-            <lg type="dblhemi"><l n="13">Che graue colpa fia dambeduo noi.</l> <l n="14">Et tanto piú de uoi &quanto; piu uama.</l></lg>
-           </lg>
+            <lg type="dblhemi"><l n="1"><hi rendition="#red #fs24pt">M</hi>Ille fiate<reg>,</reg> o dolce mia guerrera<reg>,</reg></l>	<l n="2">Per <choice><orig>auer</orig><reg>aver</reg></choice> co<reg>'</reg> <choice><orig>be gliocchi</orig><reg>begli occhi</reg></choice> <choice><orig>uostri</orig><reg>vostri</reg></choice> pace</l></lg>
+            <lg type="dblhemi"><l n="3"><choice><orig>Vaggio</orig><reg>V' aggio</reg></choice> proferto il cor<choice><orig>.</orig><reg>;</reg></choice> <choice><orig>ma uoi</orig><reg>m' a voi</reg></choice> &non; piace</l>	<l n="4">Mirar <choice><orig>si</orig><reg>sì</reg></choice> basso <choice><orig>collamente</orig><reg>colla mente</reg></choice> altera.</l></lg>
+            <lg type="dblhemi"><l n="5">Et se di lui <choice><orig>forsaltra</orig><reg>fors' altra</reg></choice> donna spera</l> <l n="6"><choice><orig>Viue</orig><reg>Vive</reg></choice> in <choice><orig>sperança</orig><reg>speranza</reg></choice> debile et fallace<choice><orig>.</orig><reg>:</reg></choice></l></lg>
+            <lg type="dblhemi"><l n="7">Mio<reg>,</reg> <choice><orig>ꝑche</orig><reg>perché</reg></choice> sdegno <choice><orig>cio</orig><reg>ciò</reg></choice> <choice><orig>cha</orig><reg>ch' a</reg></choice> <choice><orig>uoi</orig><reg>voi</reg></choice> dispiace<reg>,</reg></choice></l>	<l n="8">Esser &non; <choice><orig>puo</orig><reg>può</reg></choice> giamai <choice><orig>cosi</orig><reg>così</reg></choice> <choice><orig>chcomera</orig><reg>com' era</reg>.</l></lg>
+            <lg type="dblhemi"><l n="9">Or <choice><orig>sio</orig><reg>s'io</reg> lo scaccio<choice><orig>.</orig><reg>,</reg> et <choice><orig><choice><orig>enō</orig><reg>enon</reg></choice></orig><reg>e' non</reg></choice> <choice><orig>troua</orig><reg>trova</reg></choice> in <choice><orig>uoi</orig><reg>voi</reg></choice></l> <l n="10"><choice><orig>Nel exilio</orig><reg>Ne l'exilio</reg></choice> infelice alcun soccorso<choice><orig>.</orig><reg>,</reg></l></lg>
+            <lg type="dblhemi"><l n="11"><choice><orig>Ne</orig><reg>Né</reg></choice> sa star sol<choice><orig>.</orig><reg>,</reg></choice> <choice><orig>ne</orig><reg>né</reg></choice> gire <choice><orig>oualtri</orig><reg>ov' altri</reg></choice> il chiama<choice><orig>.</orig><reg>,</reg></choice></l> <l n="12">Poria smarrire il suo <choice><orig>natǎl</orig><reg>natural</reg></choice> corso<choice><orig>.</orig><reg>:</reg></choice></l></lg>
+            <lg type="dblhemi"><l n="13">Che graue colpa fia <choice><orig>dambeduo</orig><reg>d'ambeduo</reg></choice> noi<choice><orig>.</orig><reg>,</reg></choice></l> <l n="14">Et tanto <choice><orig>piú</orig><reg>più</reg></choice> de <choice><orig>uoi</orig><reg>voi,</reg> &quanto; <choice><orig>piu</orig><reg>più</reg> <choice><orig>uama</orig><reg>v'ama</reg></choice>.</l></lg>
          </lg>
          
          <lg type="sestina" n="39">
             <lg type="column">
-               <l n="1"><hi rendition="#blue #fs24pt">A</hi>Qual<choice><abbr>ū</abbr>abbr><expan>un</expan></choice>que animale alberga &in; terra</l>
-               <l n="2">Se &non; se <choice><abbr>alquāti</abbr><expan>alquanti</expan></choice> <choice><abbr>chāno</abbr><expan>channo</expan></choice> &in; odio il sole</l>
-               <l n="3"><choice><abbr>Tēpo</abbr>Tempo</choice> da trauagliare e <choice><abbr>qñto</abbr><expan>quanto</expan></choice> el &giorno;.</l>
-               <l n="4">Ma poi chel ciel accende le sue stelle</l>
-               <l n="5">Qual torna a casa. &amp7; <choice><abbr>q<hi rend="superscript">~</hi>l</abbr><expan>qual</expan></choice></l> sanida &in; selua</l>
+               <l n="1" corresp="msline"><hi rendition="#blue #fs24pt">A</hi>Qual<choice><orig>ū</orig>abbr><reg>un</reg></choice>que animale alberga &in; terra<reg>,</reg></l>
+               <l n="2" corresp="msline">Se &non; se <choice><orig>alquāti</orig><reg>alquanti</reg></choice> <choice><orig><choice><orig>chāno</orig><reg>channo</reg></choice></orig><reg>ch'ànno</reg></choice> &in; odio il sole<reg>,</reg></l>
+               <l n="3" corresp="msline"><choice><orig>Tēpo</orig>Tempo</choice> da <choice><orig>trauagliare</orig><reg>travagliare</reg></choice> <choice><orig>e</orig><reg>è</reg></choice> <choice><orig>qñto</orig><reg>quanto</reg></choice> <choice><orig>el</orig><reg>è 'l</reg></choice> &giorno;.</l>
+               <l n="4" corresp="msline">Ma poi <choice><orig>chel</orig><reg>che 'l</reg></choice> ciel accende le sue stelle<reg>,</reg></l>
+               <l n="5" corresp="msline">Qual torna a casa<orig>.</orig> &amp7; <choice><orig>q<hi rend="superscript">~</hi>l</orig><reg>qual</reg></choice></l> <choice><orig>sanida</orig><reg>s'anida</reg></choice> &in; <choice><orig>selua</orig><reg>selva,</reg></choice></l>
          <!-- Couldn't find a character: q with tilde over it/over two letters -->
-               <l n="6">&Per; auer posa al meno in fin a lalba.</l>
-               <l n="7"><hi rendition="#red #fs24pt">¶</hi>Et io da che comincia la bella alba</l>
-               <l n="8">A scuoter lombra intorno dela terra</l>
-               <l n="9"><choice><abbr>Sugeliādo</abbr><expan>Sugeliando</expan></choice> gli animali &in; ogni selua</l>
-               <l n="10">&non; o mai triegua di sospir col sole.</l>
-               <l n="11">Poi <choice><abbr>quādio</abbr><expan>quandio</expan></choice> ueggio <choice><abbr>fiāmeggiar</abbr><expan>fiammeggiar</expan></choice> le stelle</l>
-               <l n="12">Vo <choice><abbr>lagrimādo</abbr><expan>lagrimando</expan></choice>. &amp7; disiando il giorno.</l>
-               <l n="13"><hi rendition="#blue #fs24pt">¶</hi>&Quando; la sera scaccia il chiaro &giorno;</l>
-               <l n="14">Et le tenebre nostre altriu <choice><abbr>fāno</abbr><expan>fanno</expan></choice> alba</l>
-               <l n="15">Miro pensoso le crudeli stelle</l>
-               <l n="16">Che <choice><abbr>māno</abbr><expan>manno</expan></choice> facto di sensibil terra.</l>
-               <l n="17">Et maledico il di chi uidil sole</l>
-               <l n="18">Che mi fa &in; uista un huom nuditro <choice><abbr>īselua</abbr><expan>inselua</expan></choice>.</l>
-               <l n="19"><hi rendition="#red #fs24pt">¶</hi>&Non; credo che pascesse mai &per; selua</l>
-               <l n="20">Si aspra fera o di nocte o di giorno</l>
-               <l n="21">Come costei chi <choice><abbr>piāgo</abbr><expan>piango</expan></choice> <choice><abbr>alōbra</abbr><expan>alombra</expan></choice> e al sole.</l>
-               <l n="22">Et &non; mi stanchi <choice><abbr>ṗmo</abbr><expan>primo</expan></choice> <choice><abbr>sōno</abbr><expan>sonno</expan></choice> odalba.</l>
-               <l n="23">Che ben chi sia mortal corpo di terra</l>
+               <l n="6" corresp="msline">&Per; <choice><orig>auer</orig><reg>aver</reg></choice> posa al meno in fin a <choice><orig>lalba</orig><reg>l'alba</reg></choice>.</l>
+               <l n="7" corresp="msline"><hi rendition="#red #fs24pt">&pilcrow2section;</hi>Et io<reg>,</reg> da che comincia la bella alba</l>
+               <l n="8" corresp="msline">A scuoter <choice><orig>lombra</orig><reg>l'ombra</reg></choice> intorno <choice><orig>dela</orig><reg>de la</reg> terra</l>
+               <l n="9" corresp="msline"><choice><orig><choice><orig>Sugeliādo</orig><reg>Sugeliando</reg></choice></orig><reg>Svegliando</reg></choice> gli animali &in; ogni <choice><orig>selua</orig><reg>selva</reg></choice></l>
+               <l n="10" corresp="msline">&non; <choice><orig>o</orig><reg>ò</reg></choice> mai triegua di sospir<reg>'</reg> col sole.</l>
+               <l n="11" corresp="msline">Poi <choice><orig><choice><orig>quādio</orig><reg>quandio</reg></choice></orig><reg>quand'io</reg></choice> <choice><orig>ueggio</orig><reg>veggio</reg></choice> <choice><orig>fiāmeggiar</orig><reg>fiammeggiar</reg></choice> le stelle</l>
+               <l n="12" corresp="msline">Vo <choice><orig>lagrimādo</orig><reg>lagrimando</reg></choice>. &amp7; disiando il giorno.</l>
+               <l n="13" corresp="msline"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi>&Quando; la sera scaccia il chiaro &giorno;</l>
+               <l n="14" corresp="msline">Et le tenebre nostre <choice><orig>altriu</orig><reg>altrui</reg></choice> <choice><orig>fāno</orig><reg>fanno</reg></choice> alba<reg>,</reg></l>
+               <l n="15" corresp="msline">Miro pensoso le crudeli stelle</l>
+               <l n="16" corresp="msline">Che <choice><orig><choice><orig>māno</orig><reg>manno</reg></choice></orig><reg>m’ànno</reg></choice> facto di sensibil terra.</l>
+               <l n="17" corresp="msline">Et maledico il <choice><orig>di</orig><reg>dì</reg></choice> <choice><orig>chi</orig><reg>ch’i’</reg></choice> <choice><orig>uidil sole</orig><reg>vidi 'l sole,</reg></l>
+               <l n="18" corresp="msline">Che mi fa &in; <choice><orig>uista</orig><reg>vista</reg></choice> un huom nuditro <choice><orig><choice><orig>īselua</orig><reg>inselua</reg></choice></orig><reg>in selva</reg></choice>.</l>
+               <l n="19" corresp="msline"><hi rendition="#red #fs24pt">&pilcrow2section;</hi>&Non; credo che pascesse mai &per; <choice><orig>selua</orig><reg>selva</reg></choice></l>
+               <l n="20" corresp="msline"><choice><orig>Si</orig><reg>Sì</reg></choice> aspra fera<reg>,</reg> o di nocte o di giorno<reg>,</reg></l>
+               <l n="21" corresp="msline">Come costei <choice><orig>chi</orig><reg>ch’i’</reg></choice> <choice><orig>piāgo</orig><reg>piango</reg></choice> <choice><orig><choice><orig>alōbra</orig><reg>alombra</reg></choice></orig><reg>l'ombra</reg></choice> e al sole.</l>
+               <l n="22" corresp="msline">Et &non; mi <choice><orig>stanchi</orig><reg>stancha</reg></choice> <choice><orig>ṗmo</orig><reg>primo</reg></choice> <choice><orig>sōno</orig><reg>sonno</reg></choice> <choice><orig>odalba.</orig><reg>od alba,</reg></choice></l>
+               <l n="23" corresp="msline"><choice><orig>Che</orig><reg>Ché,</reg></choice> ben <choice><orig>chi</orig><reg>ch’i’</reg></choice> sia mortal corpo di terra<reg>,</reg></l>
          </lg>
          <lg type="column">
-            <l n="24">Lo mio fermo desir uien a le stelle.</l>
-            <l n="25"><hi rendition="#blue #fs24pt">¶</hi>Prima chi torno a uoi <choice><abbr>lucēti</abbr><expan>lucenti</expan></choice> stelle</l>
-            <l n="26">O tomo giu nelamorosa selua</l>
-            <l n="27">Lassando il corpo che fia trita terra.</l>
-            <l n="28">Vedessio &in; le pieta <choice><abbr>chēn</abbr><expan>chen</expan></choice> un sol giorno</l>
-            <l n="29">Puo ristorar <choice><abbr>moltāni</abbr><expan>moltanni</expan></choice>. <choice><abbr>enāçi</abbr><expan>enançi</expan></choice> lalba</l>
-            <l n="30"><choice><abbr>Puōmi</abbr><expan>Puommi</expan></choice> a richir dal <choice><abbr>tramōtar</abbr><expan>tramontar</expan></choice> del sole.</l>
-            <l n="31"><hi rendition="#red #fs24pt">¶</hi>Con lei fossio da che si parte il sole.</l>
-            <l n="32">Et &non; ci uedessaltri che le stelle.</l>
-            <l n="33">Sol una nocte. &amp7; mai &non; fosse lalba.</l>
-            <l n="34">Et &non; se transformasse &in; uerde selua</l>
+            <l n="24">Lo mio fermo desir <choice><orig>uien</orig><reg>vien</reg> <reg>d</reg>a le stelle.</l>
+            <l n="25"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi>Prima <choice><orig>chi</orig><reg>ch’i’</reg></choice> <choice><orig>torno</orig><reg>torni</reg></choice> a <choice><orig>uoi</orig><reg>voi,</reg></choice> <choice><orig>lucēti</orig><reg>lucenti</reg></choice> stelle<reg>,</reg></l>
+            <l n="26">O tomo <choice><orig>giu</orig><reg>giù</reg></choice> <choice><orig>nelamorosa</orig><reg>ne l'amorosa</reg></choice> <choice><orig>selua</orig><reg>selva,</reg></choice></l>
+            <l n="27">Lassando il corpo che fia trita terra<choice><orig>.</orig><reg>,</reg></choice></l>
+            <l n="28"><choice><orig>Vedessio</orig><reg>Vedess'io</reg></choice> &in; le <choice><orig>pieta</orig><reg>pietà</reg></choice> <choice><orig><choice><orig>chēn</orig><reg>chen</reg></choice></orig><reg>che 'n</reg></choice> un sol giorno</l>
+            <l n="29"><choice><orig>Puo</orig><reg>Può</reg></choice> ristorar <choice><orig><choice><orig>moltāni</orig><reg>moltanni</reg></choice></orig><reg>molt'anni</reg> &p2c; <choice><orig><choice><orig>enāçi</orig><reg>enançi</reg></choice></orig><reg>e 'nanzi</reg></choice> <choice><orig>lalba</orig><reg>l'alba</reg></choice></l>
+            <l n="30"><choice><orig>Puōmi</orig><reg>Puommi</reg></choice> <choice><orig>a richir</orig><reg>arichir</reg></choice> dal <choice><orig>tramōtar</orig><reg>tramontar</reg></choice> del sole.</l>
+            <l n="31"><hi rendition="#red #fs24pt">&pilcrow2section;</hi>Con lei <choice><orig>fossio</orig><reg>foss'io</reg></choice> da che si parte il sole&p2c;</l>
+            <l n="32">Et &non; ci <choice><orig>uedessaltri</orig><reg>vedess'altri</reg></choice> che le stelle&p2c;</l>
+            <l n="33">Sol una nocte&p2c; &amp7; mai &non; fosse <choice><orig>lalba</orig><reg>l'alba</reg></choice>&p2c;</l>
+            <l n="34">Et &non; se transformasse &in; <choice><orig>uerde</orig><reg>verde</reg></choice> <choice><orig>selua</orig><reg>selva</reg></choice></l>
             <l n="35">&Per; uscirmi di braccia come il giorno</l>
-            <l n="36">Chapollo la seguia qua giu &per; terra.</l>
-            <l n="37"><hi rendition="#blue #fs24pt">¶</hi>Ma io sa<damage>ro</damage> sotterra &in; secca selua.</l>
-            <l n="38">El giorno andra pien di minute stelle</l>
-            <l n="39">Prima cha si dolce alba arriui ilsole.</l>     
+            <l n="36"><choice><orig>Chapollo</orig><reg>Ch'Apollo</reg></choice> la seguia qua <choice><orig>giu</orig><reg>giù</reg></choice> &per; terra.</l>
+            <l n="37"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi>Ma io <choice><orig>sa<damage>ro</damage></orig><reg>sarò</reg></choice> sotterra &in; secca <choice><orig>selua</orig><reg>selva</reg></choice>&p2c;</l>
+            <l n="38"><choice><orig>El</orig><reg>E 'l</reg></choice> giorno <choice><orig>andra</orig><reg>andrà</reg></choice> pien di minute stelle</l>
+            <l n="39">Prima <choice><orig>cha</orig><reg>ch'a</reg></choice> <choice><orig>si</orig><reg>sì</reg></choice> dolce alba <choice><orig>arriui</orig><reg>arrivi</reg></choice> <choice><orig>ilsole</orig><reg>il sole</reg></choice>.</l>     
          </lg>
       </lg>
       <space type="stop-space" extent="7" />

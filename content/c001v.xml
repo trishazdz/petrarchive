@@ -90,6 +90,18 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
+      <charDecl>
+         <char xml:id="virgsusp">
+            <charName>VIRGULA SUSPENSIVA</charName>
+            <charProp>
+               <localName>entity</localName>
+               <value>virgsusp</value>
+            </charProp>
+            <mapping type="visual">/&#x20d9;</mapping>
+            <mapping type="MUFI">U+F1F4</mapping>
+            <mapping type="PUA">U+F1F4</mapping>
+         </char>
+      </charDecl>
       &encodingDesc;
    </teiHeader>
    
@@ -101,7 +113,7 @@
             <lg type="dblhemi" corresp="#canvasline">
                <l n="1"><hi rendition="#red #fs24pt"
                   >Q</hi><hi rendition="#small-caps">u</hi>ando io <choice><orig>mouo</orig><reg>muovo</reg></choice> i sospiri a chiamar <choice><orig>uoi</orig><reg>voi</reg></choice><reg>,</reg></l>
-               <l n="2">E<reg> ’</reg>l nome che nel cor mi scrisse <choice><orig>amore</orig><reg>Amore</reg></choice><choice><orig> /</orig><reg>,</reg></choice></l>
+               <l n="2">E<reg> ’</reg>l nome che nel cor mi scrisse <choice><orig>amore</orig><reg>Amore</reg></choice><choice><orig> <g ref="#virgsusp"/></orig><reg>,</reg></choice></l>
             </lg>
             <lg type="dblhemi" corresp="#canvasline">
                <l n="3">Laudando s<reg>’</reg>incomincia udir di fore</l>
@@ -125,7 +137,7 @@
             </lg>
             <lg type="dblhemi" corresp="#canvasline">
                <l n="13">Ch<reg>’</reg>a parlar de<reg>’</reg> suoi &sempre; <choice><orig>uerdi</orig><reg>verdi</reg></choice> rami</l>
-               <l n="14">Lingua mortal presumptuosa <choice><orig>uegna</orig><reg>vegna</reg></choice>.</l>
+               <l n="14">Lingua mortal <choice><abbr>presūptuosa</abbr><expan>presumptuosa</expan></choice> <choice><orig>uegna</orig><reg>vegna</reg></choice>.</l>
             </lg>
          </lg>
          <space corresp="#canvasline"/>
@@ -156,7 +168,7 @@
             </lg>
             <lg type="dblhemi" corresp="#canvasline">
                <l n="13">Acerbo frutto<choice><orig>.</orig><reg>,</reg></choice> che le piaghe altrui<reg>,</reg></l>
-               <l n="14">Gustando afflige <choice><orig>piu</orig><reg>più</reg></choice> che non conforta.</l>
+               <l n="14">Gustando afflige <choice><orig>piu</orig><reg>più</reg></choice> che &non; conforta.</l>
             </lg>
          </lg>
          <space corresp="#canvasline"/>
@@ -166,8 +178,7 @@
                <l n="2"><choice><orig>Anno</orig><reg>Ànno</reg></choice> del mondo ogni <choice><orig>uertu</orig><reg>vertù</reg></choice> 
                   <choice>
                      <abbr>sbādita</abbr>
-                     <expan>sbandita</expan>
-                  </choice><choice><orig>.</orig><reg>,</reg></choice></l>
+                     <expan>sbandita</expan></choice><choice><orig>.</orig><reg>,</reg></choice></l>
             </lg>
             <lg type="dblhemi" corresp="#canvasline">
                <l n="3"><choice><orig>Onde</orig><reg>Ond’è</reg></choice> dal corso suo quasi smarrita</l>
@@ -182,7 +193,7 @@
                <l n="8">Chi <choice><orig>uol</orig><reg>vol</reg></choice> far <choice><orig>delicona</orig><reg>d’Elicona</reg></choice> nascer fiume.</l>
             </lg>
             <lg type="dblhemi" corresp="#canvasline">
-               <l n="9">Qual <choice><orig>uagheçça</orig><reg>vaghezza</reg></choice> di lauro <choice><orig> /</orig><reg>,</reg></choice> qual di mirto<reg>?</reg></l>
+               <l n="9">Qual <choice><orig>uagheçça</orig><reg>vaghezza</reg></choice> di lauro<choice><orig> /</orig><reg>,</reg></choice> qual di mirto<reg>?</reg></l>
                <l n="10"><choice><orig>Pouera</orig><reg>Povera</reg></choice> et nuda <choice><orig>uai</orig><reg>vai</reg></choice><reg>,</reg> <choice><orig>philosophia</orig><reg>Philosophia</reg></choice><reg>,</reg></l>
             </lg>
             <lg type="dblhemi" corresp="#canvasline">
@@ -206,7 +217,7 @@
                      <orig>
                         <hi rendition="#small-caps">p</hi>i<subst><del type="erasure"><gap reason="illegible"/></del><add>e</add></subst><reg>’</reg>
                      </orig>
-                     <reg><hi rendition="#small-caps">p</hi>ie</reg>  <!-- check ?? -->
+                     <reg><hi rendition="#small-caps">p</hi>ie</reg>  <!-- check - why is the apostrophie not showing in the edited? (see petrarchive.org) -->
                   </choice> de<reg>’</reg> 
                   <choice>
                      <orig>
@@ -217,7 +228,7 @@
                <l n="2">Prese de le terrene membra pria</l>
             </lg>
             <lg type="dblhemi" corresp="#canvasline">
-               <l n="3">La donna che colui ch<reg>’ </reg>a te <choice><orig>nenuia</orig><reg>ne ’nvia</reg></choice></l>
+               <l n="3">La <choice><abbr>dōna</abbr><expan>donna</expan></choice> che colui ch<reg>’ </reg>a te <choice><orig>nenuia</orig><reg>ne ’nvia</reg></choice></l>
                <l n="4">Spesso dal somno lagrimando
                   desta<reg>,</reg></l>
             </lg>
@@ -229,7 +240,7 @@
                      <orig>
                         <subst><del type="erasure"><gap reason="illegible"/></del><add>ch</add></subst>ogni
                      </orig>
-                     <reg>ch<reg>’ </reg>ogni</reg> <!-- check ?? -->
+                     <reg>ch<reg>’ </reg>ogni</reg> <!-- check - why is the aportrophie not showing in the edited? -->
                   </choice> animal desia<choice><orig>.</orig><reg>,</reg></choice></l>
             </lg>
             <lg type="dblhemi" corresp="#canvasline">
@@ -242,12 +253,12 @@
             </lg>
             <lg type="dblhemi" corresp="#canvasline">
                <l n="11"><choice><orig>Vn</orig><reg>Un</reg></choice> sol conforto et de la morte <choice><orig>auemo</orig><reg>avemo</reg></choice><reg>:</reg></l>
-               <l n="12">Che <choice><orig>uendetta</orig><reg>vendetta</reg></choice> <choice><orig>e</orig><reg>è</reg></choice> di lui ch<reg>’ </reg>a <choice><orig>cio</orig><reg>ciò</reg></choice> <choice><orig>nemena</orig><reg>ne mena</reg></choice><reg>,</reg></l>
+               <l n="12">Che <choice><orig><choice><abbr>uēdetta</abbr><expan>uendetta</expan></choice></orig><reg>vendetta</reg></choice> <choice><orig>e</orig><reg>è</reg></choice> di lui ch<reg>’ </reg>a <choice><orig>cio</orig><reg>ciò</reg></choice> <choice><orig>nemena</orig><reg>ne mena</reg></choice><reg>,</reg></l>
             </lg>
             <lg type="dblhemi" corresp="#canvasline">
                <l n="13">Lo qual <choice><orig>inforça</orig><reg>in forza</reg></choice> altrui presso
                   <choice><orig><choice><orig>alext<supplied resp="#hws">r</supplied><add place="above" >e</add>mo</orig><reg>alextremo</reg></choice></orig><reg>a l’extremo</reg></choice></l>
-               <l n="14">Riman legato con maggior catena.</l>
+               <l n="14">Riman legato &con; maggior catena.</l>
             </lg>
          </lg>
       </body>

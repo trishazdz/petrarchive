@@ -378,7 +378,7 @@ the line wraps. -->
             <lg type="dblhemi" corresp="#msline">
                <l n="7">Rode <choice><orig>se</orig><reg>sé</reg></choice> dentro<choice><orig>.</orig><reg>,</reg></choice> <choice><orig>ei</orig><reg>e i</reg></choice> <choice><abbr>dēti</abbr><expan>denti</expan></choice> &amp7; 
                   l<reg>’</reg>unghie endura</l>
-               <l n="8">&per; <choice><orig>uendicar</orig><reg>vendicar</reg></choice> suoi danni sopra noi.</l> 
+               <l n="8">&Per; <choice><orig>uendicar</orig><reg>vendicar</reg></choice> suoi danni sopra noi.</l> 
             </lg>
             <lg type="dblhemi" corresp="#msline">
                <l n="9">Mentre<reg> ’</reg>l <choice><orig>nouo</orig><reg>novo</reg></choice> dolor dunque l<reg>’</reg>accora<reg>,</reg></l>
@@ -399,7 +399,7 @@ the line wraps. -->
             <lg type="dblhemi" corresp="#msline">
                <l n="1"><hi rendition="#red #fs24pt"
                   >L</hi><reg>’</reg><hi rendition="#small-caps">a</hi>spectata <choice><orig>uertu</orig><reg>vertù</reg></choice><reg>,</reg> che<reg> ’</reg>n <choice><orig>uoi</orig><reg>voi</reg></choice> <choice><orig>fioriua</orig><reg>fioriva</reg></choice></l>
-               <l n="2">Quando <choice><orig>amor</orig><reg>Amor</reg></choice> comincio <choice><orig>darui</orig><reg>darvi</reg></choice> bataglia<reg>,</reg></l>
+               <l n="2">Quando <choice><orig>amor</orig><reg>Amor</reg></choice> <choice><orig>comincio</orig><reg>cominciò</reg></choice> <choice><orig>darui</orig><reg>darvi</reg></choice> <choice><orig>bataglia</orig><reg>bat[t]aglia</reg></choice><reg>,</reg></l>
             </lg>
             <lg type="dblhemi" corresp="#msline">
                <l n="3">Produce or frutto che quel fiore aguaglia<choice><orig> /</orig><reg>,</reg></choice></l>
@@ -418,7 +418,7 @@ the line wraps. -->
                <l n="10">O <choice><orig>paolo</orig><reg>Paolo</reg></choice> <choice><orig>/</orig><reg></reg></choice> <choice><orig>odaffricanọ</orig><reg>od Affrican</reg></choice> fossin cotali</l>
             </lg>
             <lg type="dblhemi" corresp="#msline">
-               <l n="11">&per; incude giamai<choice><orig> /</orig><reg>,</reg></choice> <choice><orig>ne</orig><reg>né</reg></choice> per martello<choice><orig>.</orig><reg>?</reg></choice></l>
+               <l n="11">&Per; incude giamai<choice><orig> /</orig><reg>,</reg></choice> <choice><orig>ne</orig><reg>né</reg></choice> per martello<choice><orig>.</orig><reg>?</reg></choice></l>
                <l n="12">Pandolfo mio<reg>,</reg> quest<reg>’</reg>opere son frali</l>
             </lg>
             <lg type="dblhemi" corresp="#msline">
@@ -429,9 +429,7 @@ the line wraps. -->
          <space corresp="#msline"/>
          
          <space unit="lines" extent="7" ana="#space-stop" />
-         
-         <!-- Rvf 103 line 3 _ Rvf 104 line 5, check "Però" -->
-         
+
       </body>
    </text>
 </TEI>

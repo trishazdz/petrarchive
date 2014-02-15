@@ -70,6 +70,14 @@
          <publicationStmt>
             <p>Publication Information</p>
          </publicationStmt>
+        <seriesStmt>
+          <title>The Petrarchive: An Edition of Petrarch’s Songbook</title>
+          <respStmt>
+            <resp> Edited by </resp>
+            <name> Wayne Storey </name>
+            <name> John Walsh</name>
+          </respStmt>
+        </seriesStmt>
          <sourceDesc>
             <msDesc xml:id="vat.lat.3195">
                <msIdentifier>

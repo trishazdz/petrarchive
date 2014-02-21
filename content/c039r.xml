@@ -97,7 +97,7 @@
 
    <text>
       <body>
-         <pb n="charta 39 recto" facs="https://info.slis.indiana.edu/~jawalsh/petrarchive/images/vat-lat3195-f/vat-lat3195-f-039r.jpg"/>
+         <pb n="charta 39 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-039r.jpg"/>
          <ab type="blockSubst">
             <!-- jawalsh: Do we know the sonnet underneath?" -->
          <!-- <note resp="#jaw">Sonnet 194 has been written over an erased version of ???.</note>-->

@@ -99,7 +99,7 @@
 
    <text>
       <body>
-         <pb n="charta 15 verso" facs="https://info.slis.indiana.edu/~jawalsh/petrarchive/images/vat-lat3195-f/vat-lat3195-f-015v.jpg" />
+         <pb n="charta 15 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-015v.jpg" />
          <lg type="canzone" n="70">
          <lg type="stanza">
             <lg type="dblhemi">

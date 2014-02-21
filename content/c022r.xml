@@ -328,7 +328,7 @@ the line wraps. -->
 
    <text>
       <body>
-         <pb n="Charta 22 recto" facs="https://info.slis.indiana.edu/~jawalsh/petrarchive/images/vat-lat3195-f/vat-lat3195-f-022r.jpg" />
+         <pb n="Charta 22 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-022r.jpg" />
          <lg type="sonnet" n="102">
             <lg type="dblhemi" corresp="#msline">
                <l n="1"><hi rendition="#red #fs24pt"

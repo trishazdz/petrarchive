@@ -134,7 +134,7 @@
 
    <text>
       <body>
-         <pb n="charta 22 verso" facs="https://info.slis.indiana.edu/~jawalsh/petrarchive/images/vat-lat3195-f/vat-lat3195-f-022v.jpg"/>
+         <pb n="charta 22 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-022v.jpg"/>
          <lg type="canzone" n="105">
          <lg type="stanza">
             <lg type="dblhemi" corresp="#canvasline">
@@ -266,7 +266,7 @@
                <l n="58">Et dolendo adolcisse il mio dolore<choice><orig>.</orig><reg>,</reg></choice></l>
                <l n="59">Ond<reg>’</reg>io ringratio <choice><orig>amore</orig><reg>Amore</reg></choice></l>
             </lg>
-            <pb n="charta 23 recto" facs="https://info.slis.indiana.edu/~jawalsh/petrarchive/images/vat-lat3195-f/vat-lat3195-f-023r.jpg"/>
+            <pb n="charta 23 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-023r.jpg"/>
             <!-- line 29 and 45, erasure? -->
             <lg type="single" corresp="#canvasline">   
                <l n="60">Che <choice><orig>piu</orig><reg>più</reg></choice> nol sento<choice><orig>.</orig><reg>,</reg></choice> &amp; <choice><orig>e</orig><reg>è</reg></choice> non men che suole.</l>

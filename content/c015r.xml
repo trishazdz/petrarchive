@@ -439,7 +439,7 @@ the line wraps. -->
             -->
         <body>
             <pb xml:id="c015r" n="charta 15 recto"
- facs="https://info.slis.indiana.edu/~jawalsh/petrarchive/images/vat-lat3195-f/vat-lat3195-f-015r.jpg"/>
+ facs="../images/vat-lat3195-f/vat-lat3195-f-015r.jpg"/>
             <lg type="sonnet" n="68">
               <lg type="octave">
                 <lg type="dblhemi" corresp="#canvasline">
@@ -612,7 +612,7 @@ the line wraps. -->
                     <l n="30"><choice><orig>Cosi</orig><reg>Così</reg></choice> nel mio parlar <choice><orig>uoglio</orig><reg>voglio</reg></choice> esser aspro.</l>
                 </lg>
               </lg>
-              <pb n="charta 15 verso" facs="https://info.slis.indiana.edu/~jawalsh/petrarchive/images/vat-lat3195-f/vat-lat3195-f-015v.jpg" />
+              <pb n="charta 15 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-015v.jpg" />
                 <lg type="stanza">
                   <lg type="dblhemi">
                     <l n="31"><hi rendition="#red #fs24pt">¶</hi>Che parlo &virg; o doue sono &virg; et chi 

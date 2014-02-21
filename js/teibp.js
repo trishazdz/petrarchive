@@ -9,6 +9,17 @@ function addPageBreaks(){
 
 }
 
+function init(){
+	document.getElementById('pbToggle').onclick = function(){
+		if(document.getElementById('pbToggle').checked){
+			clearPageBreaks();
+		}else{
+			addPageBreaks();
+		}
+	};
+	addPageBreaks();
+	document.getElementById('pbToggle').checked = false;
+}
 
 //If W3C event model used, prefer that. Window events are fallbacks
 if(document.addEventListener){
@@ -33,9 +44,12 @@ function showFacs(num, url, id) {
 	facsWindow.document.write($('#maincss')[0].outerHTML)
 	facsWindow.document.write($('#customcss')[0].outerHTML)
 	facsWindow.document.write("<link rel='stylesheet' href='../js/jquery-ui/themes/base/jquery.ui.all.css'>")
-	facsWindow.document.write($("style")[0].outerHTML)
-//  in PetrArchive, getting 'undefined' from code below
-//	facsWindow.document.write($('style')[0].outerHTML)}
+	if ($('#teibp-tagusage-css').length) {
+	  facsWindow.document.write($('#teibp-tagusage-css')[0].outerHTML)
+	}
+	if ($('#teibp-rendition-css').length) {
+	  facsWindow.document.write($('#teibp-rendition-css')[0].outerHTML)
+	}
 	facsWindow.document.write("<script type='text/javascript' src='../js/jquery/jquery.min.js'></script>")
 	facsWindow.document.write("<script type='text/javascript' src='../js/jquery-ui/ui/jquery-ui.js'></script>")
 	facsWindow.document.write("<script type='text/javascript' src='../js/jquery/plugins/jquery.scrollTo-1.4.3.1-min.js'></script>")
@@ -45,7 +59,7 @@ function showFacs(num, url, id) {
 	facsWindow.document.write("$('.facsImage').scrollTo($('#" + id + "'))")
 	facsWindow.document.write("})")
 	facsWindow.document.write("</script>")
-	facsWindow.document.write("<script type='text/javascript'>$(function() {$( '#resizable' ).resizable();});</script>")
+	facsWindow.document.write("<script type='text/javascript'>	$(function() {$( '#resizable' ).resizable();});</script>")
 	facsWindow.document.write("</head>")
 	facsWindow.document.write("<body>")
 	facsWindow.document.write($("teiHeader")[0].outerHTML)

@@ -73,7 +73,7 @@ var
 		},
 		main: {
 			options: {
-				keepSpecialComments: '*'
+				keepSpecialComments: "*"
 			},
 			src: "dist/jquery-ui.css",
 			dest: "dist/jquery-ui.min.css"
@@ -318,58 +318,37 @@ grunt.initConfig({
 		files: expandFiles( "tests/unit/**/*.html" ).filter(function( file ) {
 			// disabling everything that doesn't (quite) work with PhantomJS for now
 			// TODO except for all|index|test, try to include more as we go
-			return !( /(all|index|test|dialog|dialog_deprecated|tabs|tooltip)\.html$/ ).test( file );
+			return !( /(all|index|test|dialog|dialog_deprecated|tooltip)\.html$/ ).test( file );
 		})
 	},
 	jshint: {
-		ui: {
-			options: {
-				jshintrc: "ui/.jshintrc"
-			},
-			files: {
-				src: "ui/*.js"
-			}
+		options: {
+			jshintrc: true
 		},
-		grunt: {
-			options: {
-				jshintrc: ".jshintrc"
-			},
-			files: {
-				src: [ "Gruntfile.js", "build/**/*.js" ]
-			}
-		},
-		tests: {
-			options: {
-				jshintrc: "tests/.jshintrc"
-			},
-			files: {
-				src: "tests/unit/**/*.js"
-			}
-		}
+		all: [
+			"ui/*.js",
+			"Gruntfile.js",
+			"build/**/*.js",
+			"tests/unit/**/*.js"
+		]
 	},
 	csslint: {
-		// TODO figure out what to check for, then fix and enable
 		base_theme: {
-			src: expandFiles( "themes/base/*.css" ).filter(function( file ) {
-				// TODO remove items from this list once rewritten
-				return !( /(button|datepicker|core|dialog|theme)\.css$/ ).test( file );
-			}),
-			// TODO consider reenabling some of these rules
+			src: "themes/base/*.css",
 			options: {
-				"adjoining-classes": false,
-				"import": false,
-				"outline-none": false,
-				// especially this one
-				"overqualified-elements": false,
-				"compatible-vendor-prefixes": false
+				csslintrc: ".csslintrc"
 			}
 		}
 	}
 });
 
-grunt.registerTask( "default", [ "jshint", "csslint", "htmllint", "qunit" ] );
+grunt.registerTask( "default", [ "lint", "test" ] );
+grunt.registerTask( "lint", [ "asciilint", "jshint", "csslint", "htmllint" ] );
+grunt.registerTask( "test", [ "qunit" ] );
 grunt.registerTask( "sizer", [ "concat:ui", "uglify:main", "compare_size:all" ] );
 grunt.registerTask( "sizer_all", [ "concat:ui", "uglify", "compare_size" ] );
+
+// "copy:dist_units_images" is used by unit tests
 grunt.registerTask( "build", [ "concat", "uglify", "cssmin", "copy:dist_units_images" ] );
 grunt.registerTask( "release", "clean build copy:dist copy:dist_min copy:dist_min_images copy:dist_css_min md5:dist zip:dist".split( " " ) );
 grunt.registerTask( "release_themes", "release generate_themes copy:themes md5:themes zip:themes".split( " " ) );

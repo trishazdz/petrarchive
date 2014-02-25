@@ -213,12 +213,13 @@
          <lg type="sonnet" n="8">
             <lg type="dblhemi" corresp="#canvasline">
                <l n="1"><hi rendition="#fs24pt #blue">A</hi>
-                  <choice>
+                 <hi rendition="#small-caps">p</hi>i<subst><del type="erasure"><gap reason="illegible"/></del><add>e</add></subst><reg>’</reg>
+                 <!-- <choice>
                      <orig>
-                        <hi rendition="#small-caps">p</hi>i<subst><del type="erasure"><gap reason="illegible"/></del><add>e</add></subst><reg>’</reg>
+                        <hi rendition="#small-caps">p</hi>i<subst><del type="erasure"><gap reason="illegible"/></del><add>e</add></subst>
                      </orig>
-                     <reg><hi rendition="#small-caps">p</hi>ie</reg>  <!-- check - why is the apostrophie not showing in the edited? (see petrarchive.org) -->
-                  </choice> de<reg>’</reg> 
+                     <reg><hi rendition="#small-caps">p</hi>ie</reg><reg>’</reg>  
+                  </choice>--> de<reg>’</reg> 
                   <choice>
                      <orig>
                         c<subst><del type="erasure"><gap reason="illegible"/></del><add>o</add></subst>lli
@@ -240,7 +241,7 @@
                      <orig>
                         <subst><del type="erasure"><gap reason="illegible"/></del><add>ch</add></subst>ogni
                      </orig>
-                     <reg>ch<reg>’ </reg>ogni</reg> <!-- check - why is the aportrophie not showing in the edited? -->
+                     <reg>ch’ ogni</reg> <!-- check - why is the aportrophie not showing in the edited? -->
                   </choice> animal desia<choice><orig>.</orig><reg>,</reg></choice></l>
             </lg>
             <lg type="dblhemi" corresp="#canvasline">

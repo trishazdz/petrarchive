@@ -12,6 +12,8 @@
 <!ENTITY non "<choice><orig>nō</orig><reg>non</reg></choice>">
 <!ENTITY in "<choice><orig>ī</orig><reg>in</reg></choice>">
 <!ENTITY Per "<choice><abbr>ꝑ</abbr><expan>Per</expan></choice>">
+<!ENTITY Non "<choice><abbr>nō</abbr><expan>Non</expan></choice>">
+
 
 <!-- period "p" to "2" comma "c" -->
 <!ENTITY p2c "<choice><orig>.</orig><reg>,</reg></choice>">
@@ -25,8 +27,9 @@
 <!ENTITY egrave_reg "<choice><orig>e</orig><reg>è</reg></choice>">
 <!ENTITY si "<choice><orig>si</orig><reg>sì</reg></choice>">
 <!ENTITY Si "<choice><orig>Si</orig><reg>Sì</reg></choice>">
-<!ENTITY pilcrow2section "<choice><orig>&pilcrow2section;</orig><reg>§</reg></choice>">
 <!ENTITY pilcrow2section "<choice><orig>¶</orig><reg>§</reg></choice>">
+<!ENTITY Quando "<choice><abbr>quādo</abbr><expan>Quando</expan></choice>">
+
 <!ENTITY encodingDesc SYSTEM "encodingDesc.xml">
 ]>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
@@ -113,7 +116,7 @@
                <l n="14" corresp="#canvasline">Et le tenebre nostre <choice><orig>altriu</orig><reg>altrui</reg></choice> <choice><orig>fāno</orig><reg>fanno</reg></choice> alba<reg>,</reg></l>
                <l n="15" corresp="#canvasline">Miro pensoso le crudeli stelle</l>
                <l n="16" corresp="#canvasline">Che <choice><orig><choice><orig>māno</orig><reg>manno</reg></choice></orig><reg>m’ànno</reg></choice> facto di sensibil terra.</l>
-               <l n="17" corresp="#canvasline">Et maledico il <choice><orig>di</orig><reg>dì</reg></choice> <choice><orig>chi</orig><reg>ch’i’</reg></choice> <choice><orig>uidil sole</orig><reg>vidi 'l sole,</reg></l>
+               <l n="17" corresp="#canvasline">Et maledico il <choice><orig>di</orig><reg>dì</reg></choice> <choice><orig>chi</orig><reg>ch’i’</reg></choice> <choice><orig>uidil sole</orig><reg>vidi 'l sole,</reg></choice></l>
                <l n="18" corresp="#canvasline">Che mi fa &in; <choice><orig>uista</orig><reg>vista</reg></choice> un huom nuditro <choice><orig><choice><orig>īselua</orig><reg>inselua</reg></choice></orig><reg>in selva</reg></choice>.</l>
                <l n="19" corresp="#canvasline"><hi rendition="#red #fs24pt">&pilcrow2section;</hi>&Non; credo che pascesse mai &per; <choice><orig>selua</orig><reg>selva</reg></choice></l>
                <l n="20" corresp="#canvasline"><choice><orig>Si</orig><reg>Sì</reg></choice> aspra fera<reg>,</reg> o di nocte o di giorno<reg>,</reg></l>

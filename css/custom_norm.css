@@ -87,5 +87,8 @@ del { display: none; }
     display:none;
 }
 
+subst add {color:black;
+vertical-align:baseline;}
+
 
 

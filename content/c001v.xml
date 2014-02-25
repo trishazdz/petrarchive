@@ -38,6 +38,7 @@
 
 <!-- period "p" to "2" comma "c" -->
 <!ENTITY p2c "<choice><orig>.</orig><reg>,</reg></choice>">
+<!ENTITY p2s "<choice><orig>.</orig><reg>;</reg></choice>">
 <!ENTITY p2colon "<choice><orig>.</orig><reg>:</reg></choice>">
 <!ENTITY p2e "<choice><orig>.</orig><reg>!</reg></choice>">
 <!ENTITY c2p "<choice><orig>,</orig><reg>.</reg></choice>">
@@ -90,18 +91,6 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
-      <charDecl>
-         <char xml:id="virgsusp">
-            <charName>VIRGULA SUSPENSIVA</charName>
-            <charProp>
-               <localName>entity</localName>
-               <value>virgsusp</value>
-            </charProp>
-            <mapping type="visual">/&#x20d9;</mapping>
-            <mapping type="MUFI">U+F1F4</mapping>
-            <mapping type="PUA">U+F1F4</mapping>
-         </char>
-      </charDecl>
       &encodingDesc;
    </teiHeader>
    

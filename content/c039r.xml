@@ -31,7 +31,7 @@
 <!ENTITY Si "<choice><orig>Si</orig><reg>Sì</reg></choice>">
 <!ENTITY ne "<choice><orig>ne</orig><reg>né</reg></choice>">
 <!ENTITY Ne "<choice><orig>Ne</orig><reg>Né</reg></choice>">
-<!ENTITY pilcrow2section "<choice><orig>&pilcrow2section;</orig><reg>§</reg></choice>">
+<!ENTITY pilcrow2section "<choice><orig>¶</orig><reg>§</reg></choice>">
 <!ENTITY encodingDesc SYSTEM "encodingDesc.xml">
 ]>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
@@ -62,24 +62,7 @@
                <p/>
          </sourceDesc>
       </fileDesc>
-      <encodingDesc>
-         <tagsDecl>
-            <rendition xml:id="red" scheme="css"
-               >color:#9f1706;</rendition>
-            <rendition xml:id="blue" scheme="css"
-               >color:#12398c;</rendition>
-            <rendition xml:id="fs18pt" scheme="css"
-               >font-size:18pt;</rendition>
-            <rendition xml:id="fs24pt" scheme="css"
-               >font-size:24pt;</rendition>
-            <rendition xml:id="small-caps" n="tiebp:small-caps" scheme="css">
-               font-variant:small-caps;
-            </rendition>
-            <rendition xml:id="i" n="tiebp:italic" scheme="css">
-               font-style:italic;
-            </rendition>
-         </tagsDecl>
-      </encodingDesc>
+      &encodingDesc; 
    </teiHeader>
    
    <!-- replaced PUA u+f1f7 w/ the proper character for virgule u+002f. -->

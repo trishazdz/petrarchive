@@ -3,17 +3,53 @@
 <?xml-stylesheet type="text/xsl" href="petrarchive.xsl"?>
 <!DOCTYPE TEI [
 <!ENTITY amp7 "<choice><abbr>&amp;</abbr><expan>et</expan></choice>">
+<!ENTITY Amp7 "<choice><abbr>&amp;></abbr><expan>Et</expan></choice>">
 <!ENTITY per "<choice><abbr>ꝑ</abbr><expan>per</expan></choice>">
 <!ENTITY Per "<choice><abbr>ꝑ</abbr><expan>Per</expan></choice>">
-<!ENTITY pero "<choice><abbr>ꝑo</abbr><expan>pero</expan></choice>">
 <!ENTITY virg "/">
-<!ENTITY sempre "<choice><abbr>sēpre</abbr><expan>sempre</expan></choice>">
-<!ENTITY quanto "<choice><abbr>quāto</abbr><expan>quanto</expan></choice>">
-<!ENTITY in "<choice><abbr>ī</abbr><expan>in</expan></choice>">
-<!ENTITY non "<choice><abbr>nō</abbr><expan>non</expan></choice>">
 <!ENTITY Non "<choice><abbr>Nō</abbr><expan>Non</expan></choice>">
+<!ENTITY Non "<choice><abbr>nō</abbr><expan>non</expan></choice>">
+<!ENTITY impresa "<choice><abbr>īpresa</abbr><expan>impresa</expan></choice>">
+<!ENTITY Impresa "<choice><abbr>Īpresa</abbr><expan>Impresa</expan></choice>">
+<!ENTITY sempre "<choice><abbr>sēpre</abbr><expan>sempre</expan></choice>">
+<!ENTITY Sempre "<choice><abbr>sēpre</abbr><expan>Sempre</expan></choice>">
+<!ENTITY quanto "<choice><abbr>quāto</abbr><expan>quanto</expan></choice>">
+<!ENTITY Quanto "<choice><abbr>quāto</abbr><expan>Quanto</expan></choice>">
 <!ENTITY quando "<choice><abbr>quādo</abbr><expan>quando</expan></choice>">
+<!ENTITY Quando "<choice><abbr>quādo</abbr><expan>Quando</expan></choice>">
+<!ENTITY giorno "<choice><abbr>giõno</abbr><expan>giorno</expan></choice>">
+<!ENTITY non "<choice><abbr>nō</abbr><expan>non</expan></choice>">
+<!ENTITY Non "<choice><abbr>nō</abbr><expan>Non</expan></choice>">
+<!ENTITY in "<choice><abbr>ī</abbr><expan>in</expan></choice>">
+<!ENTITY pre "<choice><abbr>&p-macron;</abbr><expan>pre</expan></choice">
 <!ENTITY con "<choice><abbr>cō</abbr><expan>con</expan></choice>">
+<!ENTITY Con "<choice><abbr>cō</abbr><expan>Con</expan></choice>">
+<!ENTITY son "<choice><abbr>sō</abbr><expan>son</expan></choice>">
+<!ENTITY Son "<choice><abbr>sō</abbr><expan>Son</expan></choice>">
+<!ENTITY q-tilde "q&#x0303;">
+<!ENTITY q-macron "q&#x0304;">
+<!ENTITY p-macron "p&#x0304;">
+<!ENTITY b-combtild "b&#xFE23;">
+<!ENTITY p-dot "p&#x0307;">
+<!ENTITY u-vert-tilde "u&#x033E;">
+<!ENTITY p-vert-line "p&#x030D;">
+<!ENTITY uia "<choice><orig>uia</orig><reg>via</reg></choice>">
+<!ENTITY uai "<choice><orig>uai</orig><reg>vai</reg></choice>">
+
+<!-- period "p" to "2" comma "c" -->
+<!ENTITY p2c "<choice><orig>.</orig><reg>,</reg></choice>">
+<!ENTITY p2colon "<choice><orig>.</orig><reg>:</reg></choice>">
+<!ENTITY p2e "<choice><orig>.</orig><reg>!</reg></choice>">
+<!ENTITY c2p "<choice><orig>,</orig><reg>.</reg></choice>">
+<!ENTITY v2c "<choice><orig> /</orig><reg>,</reg></choice>">
+<!ENTITY regapos "<reg>’</reg>">
+<!ENTITY uolta "<choice><orig>uolta</orig><reg>volta</reg></choice>">
+<!ENTITY uolte "<choice><orig>uolte</orig><reg>volte</reg></choice>">
+<!ENTITY egrave_reg "<choice><orig>e</orig><reg>è</reg></choice>">
+<!ENTITY si "<choice><orig>si</orig><reg>sì</reg></choice>">
+<!ENTITY Si "<choice><orig>Si</orig><reg>Sì</reg></choice>">
+<!ENTITY pilcrow2section "<choice><orig>¶</orig><reg>§</reg></choice>">
+<!ENTITY encodingDesc SYSTEM "encodingDesc.xml">
 ]>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
@@ -42,48 +78,7 @@
                <p/>
          </sourceDesc>
       </fileDesc>
-      <encodingDesc>
-         <tagsDecl>
-            <rendition xml:id="red" scheme="css"
-               >color:#9f1706;</rendition>
-            <rendition xml:id="blue" scheme="css"
-               >color:#12398c;</rendition>
-            <rendition xml:id="fs18pt" scheme="css"
-               >font-size:18pt;</rendition>
-            <rendition xml:id="fs24pt" scheme="css"
-               >font-size:24pt;</rendition>
-            <rendition xml:id="small-caps" n="tiebp:small-caps" scheme="css">
-               font-variant:small-caps;
-            </rendition>
-         </tagsDecl>
-         <charDecl>
-            <char xml:id="brvbar">
-               <charName>BROKEN BAR</charName>
-               <charProp>
-                  <localName>entity</localName>
-                  <value>brvbar</value>
-               </charProp>
-               <mapping type="visual">&#166;</mapping>
-               <mapping type="MUFI">U+00A6</mapping>
-               <mapping type="PUA">U+00A6</mapping>
-            </char>
-         </charDecl>
-         <charDecl>
-            <char xml:id="punctinter">
-               <charName>PUNCTUS INTERROGATIVUS</charName>
-               <charProp>
-                  <localName>entity</localName>
-                  <value>punctinter</value>
-               </charProp>
-               <mapping type="visual">?</mapping>
-               <mapping type="MUFI">U+F160</mapping>
-               <mapping type="PUA">U+F160</mapping>
-            </char>
-         </charDecl>
-         
-         <!-- check "broken bar" and "punctus interrogativus -->
-         
-      </encodingDesc>
+      &encodingDesc;
    </teiHeader>
    <text>
       <body>

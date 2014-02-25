@@ -310,7 +310,7 @@
                   <l n="77"><choice><orig><choice><abbr>ꝑche</abbr><expan>Perche</expan></choice></orig><reg>Perché</reg></choice> molto mi fido<choice><orig><g ref="#punctelevhiback"/></orig><reg></reg></choice> in quel ch<reg>’</reg>i<reg>’</reg> odo.</l>
                </lg>
                <lg type="dblhemi" corresp="#canvasline">
-                  <l n="78">Del presente mi godo<choice><orig><g ref="#punctelevhiback"/></orig><reg>,</reg></choice> et meglio aspetto<choice><orig>.</orig><reg>,</reg></choice></l>
+                  <l n="78">Del presente mi godo<choice><orig><g ref="#punctelevhiback"/></orig><reg>,</reg></choice> &amp; meglio aspetto<choice><orig>.</orig><reg>,</reg></choice></l>
                   <l n="79">Et <choice><orig>uo</orig><reg>vo</reg></choice> <choice><abbr>contāto</abbr><expan>contando</expan></choice> gli anni<choice><orig><g ref="#punctelevhiback"/></orig><reg>,</reg></choice> &amp7; taccio &amp7; grido.</l>
                </lg>
                <lg type="dblhemi" corresp="#canvasline">
@@ -351,7 +351,7 @@
                </lg>
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="5">Mi <choice><orig>uide</orig><reg>vide</reg></choice><choice><orig> &virg;</orig><reg>,</reg></choice> un laccio che di seta <choice><orig>ordiua</orig><reg>ordiva</reg></choice></l>
-                  <l n="6">Tese fra l<reg>'</reg>erba<choice><orig> &virg;</orig><reg>,</reg></choice> <choice><orig>onde</orig><reg>ond’è</reg></choice> <choice><orig>uerde</orig><reg>verde</reg></choice> il camino.</l>
+                  <l n="6">Tese fra l<reg>’</reg>erba<choice><orig> &virg;</orig><reg>,</reg></choice> <choice><orig>onde</orig><reg>ond’è</reg></choice> <choice><orig>uerde</orig><reg>verde</reg></choice> il camino.</l>
                </lg>
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="7">Allor fui preso<choice><orig>.</orig><reg>;</reg></choice> &amp7; <choice><abbr>nō</abbr><expan>non</expan></choice> mi spiacque poi<choice><orig>.</orig><reg>,</reg></choice></l>
@@ -363,7 +363,7 @@
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="1"><hi rendition="#blue #fs24pt"
                      >N</hi><hi rendition="#small-caps">o</hi>n <choice><orig>ueggio</orig><reg>veggio</reg></choice> <choice><orig>oue</orig><reg>ove</reg></choice> scampar mi possa omai<choice><orig>.</orig><reg>:</reg></choice></l>
-                  <l n="2"><choice><orig>Si</orig><reg>Sì</reg></choice> <choice><abbr>lūga</abbr><expan>lunga</expan></choice> guerra i <choice><orig>begliocchi</orig><reg>begli occhi</reg></choice> mi fanno<choice><orig>.</orig><reg>,</reg></choice></l>
+                  <l n="2"><choice><orig>Si</orig><reg>Sì</reg></choice> <choice><abbr>lūga</abbr><expan>lunga</expan></choice> guerra <subst><del type="erasure"><gap reason="illegible"/></del><add>i</add></subst> <choice><orig>begliocchi</orig><reg>begli occhi</reg></choice> mi fanno<choice><orig>.</orig><reg>,</reg></choice></l>
                </lg>
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="3">Ch<reg>’</reg>i<reg>’</reg> temo<reg>,</reg> lasso<reg>,</reg> no<reg> ’</reg>l <choice><orig>souerchio</orig><reg>soverchio</reg></choice> affanno</l>

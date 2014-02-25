@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="petrarchive.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-stylesheet type="text/xsl" href="teibp.xsl"?>
+<?xml-stylesheet type="text/xsl" href="petrarchive.xsl"?>
 <!DOCTYPE TEI [
 <!ENTITY amp7 "<choice><orig>&amp;</orig><reg>et</reg></choice>">
 <!ENTITY per "<choice><orig>ꝑ</orig><reg>per</reg></choice>">
@@ -58,26 +58,7 @@
                <p/>
          </sourceDesc>
       </fileDesc>
-      <encodingDesc>
-         <p n="ms lines">In Petrarch's personal copy of the RVF, he consistently uses a ruled 31-line “canvas” for 
-            the layout of the poems. There is one exception, Rvf XXX, where an extra line is added to the 
-            underlying canvas. Elements that occupy a ruled manuscript line are tagged with the 
-            attribute <code>@corresp="#msline"</code>, where <code>#msline</code> references a category in a 
-            taxonomy of "graphic features" in the <gi>teiHeader</gi></p>
-         <tagsDecl>
-            <rendition xml:id="red" scheme="css"
-               >color:#9f1706;</rendition>
-            <rendition xml:id="blue" scheme="css"
-               >color:#12398c;</rendition>
-            <rendition xml:id="fs18pt" scheme="css"
-               >font-size:18pt;</rendition>
-            <rendition xml:id="fs24pt" scheme="css"
-               >font-size:24pt;</rendition>
-            <rendition xml:id="small-caps" n="tiebp:small-caps" scheme="css">
-               font-variant:small-caps;
-            </rendition>
-         </tagsDecl>
-      </encodingDesc>
+     &encodingDesc;
    </teiHeader>
 
 
@@ -97,8 +78,8 @@
             <lg type="dblhemi"><l n="13">Che graue colpa fia <choice><orig>dambeduo</orig><reg>d'ambeduo</reg></choice> noi<choice><orig>.</orig><reg>,</reg></choice></l> <l n="14">Et tanto <choice><orig>piú</orig><reg>più</reg></choice> de <choice><orig>uoi</orig><reg>voi,</reg></choice> &quanto; <choice><orig>piu</orig><reg>più</reg></choice> <choice><orig>uama</orig><reg>v'ama</reg></choice>.</l></lg>
          </lg>
          
-         <lg type="sestina" n="39">
-            <lg type="column">
+        <lg type="sestina" n="39"  rendition="#columns_2">
+            <cb n="1-of-2"/>
                <l n="1" corresp="#canvasline"><hi rendition="#blue #fs24pt">A</hi>Qual<choice><abbr>ū</abbr><expan>un</expan></choice>que animale alberga &in; terra<reg>,</reg></l>
                <l n="2" corresp="#canvasline">Se &non; se <choice><orig>alquāti</orig><reg>alquanti</reg></choice> <choice><orig><choice><orig>chāno</orig><reg>channo</reg></choice></orig><reg>ch'ànno</reg></choice> &in; odio il sole<reg>,</reg></l>
                <l n="3" corresp="#canvasline"><choice><abbr>Tēpo</abbr><expan>Tempo</expan></choice> da <choice><orig>trauagliare</orig><reg>travagliare</reg></choice> <choice><orig>e</orig><reg>è</reg></choice> <choice><orig>qñto</orig><reg>quanto</reg></choice> <choice><orig>el</orig><reg>è 'l</reg></choice> &giorno;.</l>
@@ -123,8 +104,8 @@
                <l n="21" corresp="#canvasline">Come costei <choice><orig>chi</orig><reg>ch’i’</reg></choice> <choice><orig>piāgo</orig><reg>piango</reg></choice> <choice><orig><choice><orig>alōbra</orig><reg>alombra</reg></choice></orig><reg>l'ombra</reg></choice> e al sole.</l>
                <l n="22" corresp="#canvasline">Et &non; mi <choice><orig>stanchi</orig><reg>stancha</reg></choice> <choice><orig>ṗmo</orig><reg>primo</reg></choice> <choice><orig>sōno</orig><reg>sonno</reg></choice> <choice><orig>odalba.</orig><reg>od alba,</reg></choice></l>
                <l n="23" corresp="#canvasline"><choice><orig>Che</orig><reg>Ché,</reg></choice> ben <choice><orig>chi</orig><reg>ch’i’</reg></choice> sia mortal corpo di terra<reg>,</reg></l>
-         </lg>
-         <lg type="column">
+         
+         <cb n="2-of-2"/>
             <l n="24">Lo mio fermo desir <choice><orig>uien</orig><reg>vien</reg></choice> <reg>d</reg>a le stelle.</l>
             <l n="25"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi>Prima <choice><orig>chi</orig><reg>ch’i’</reg></choice> <choice><orig>torno</orig><reg>torni</reg></choice> a <choice><orig>uoi</orig><reg>voi,</reg></choice> <choice><orig>lucēti</orig><reg>lucenti</reg></choice> stelle<reg>,</reg></l>
             <l n="26">O tomo <choice><orig>giu</orig><reg>giù</reg></choice> <choice><orig>nelamorosa</orig><reg>ne l'amorosa</reg></choice> <choice><orig>selua</orig><reg>selva,</reg></choice></l>
@@ -141,9 +122,9 @@
             <l n="37"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi>Ma io <choice><orig>sa<damage>ro</damage></orig><reg>sarò</reg></choice> sotterra &in; secca <choice><orig>selua</orig><reg>selva</reg></choice>&p2c;</l>
             <l n="38"><choice><orig>El</orig><reg>E 'l</reg></choice> giorno <choice><orig>andra</orig><reg>andrà</reg></choice> pien di minute stelle</l>
             <l n="39">Prima <choice><orig>cha</orig><reg>ch'a</reg></choice> <choice><orig>si</orig><reg>sì</reg></choice> dolce alba <choice><orig>arriui</orig><reg>arrivi</reg></choice> <choice><orig>ilsole</orig><reg>il sole</reg></choice>.</l>     
-         </lg>
+         
       </lg>
-      <space type="stop-space" extent="7" />
+      <space ana="#space.stop" extent="7" />
          
       </body>
    </text>

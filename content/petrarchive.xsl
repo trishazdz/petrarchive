@@ -107,7 +107,7 @@ Powered by <a href="{$teibpHome}">TEI Boilerplate</a>.
     </xsl:variable>
   
 <xd:doc><xd:desc>These lines get line numbers. Canzone is not regular.</xd:desc></xd:doc>
-  <xsl:template match="tei:lg[@type = 'sonnet']//tei:l[@n = '5']|tei:lg[@type = 'sonnet']//tei:l[@n = '9']|tei:lg[@xml:id = 'rvf070']//tei:l[@n mod 5 = 0]|tei:lg[@xml:id = 'rvf071']//tei:l[@n = 5]|tei:lg[@xml:id = 'rvf071']//tei:l[@n = 15]|tei:lg[@xml:id = 'rvf071']//tei:l[@n = 20]|tei:lg[@xml:id = 'rvf071']//tei:l[@n = 30]|tei:lg[@xml:id = 'rvf071']//tei:l[@n = 35]">
+  <xsl:template match="tei:lg[@type = 'sonnet']//tei:l[@n = '5']|tei:lg[@type = 'sonnet']//tei:l[@n = '9']|tei:lg[@type = 'rvf070']//tei:l[@n mod 5 = 0]|tei:lg[@xml:id = 'rvf071']//tei:l[@n = 5]|tei:lg[@xml:id = 'rvf071']//tei:l[@n = 15]|tei:lg[@xml:id = 'rvf071']//tei:l[@n = 20]|tei:lg[@xml:id = 'rvf071']//tei:l[@n = 30]|tei:lg[@xml:id = 'rvf071']//tei:l[@n = 35]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 5]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 15]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 20]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 30]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 35]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 45]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 50]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 60]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 65]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 75]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 80]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 90]">
         <span class="lno"><xsl:value-of select="@n"/></span>
             <xsl:element name="{local-name()}">
                 <xsl:call-template name="addID"/>

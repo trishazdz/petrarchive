@@ -97,6 +97,8 @@
             <rendition xml:id="small-caps" n="tiebp:small-caps" scheme="css">
                font-variant:small-caps;
             </rendition>
+           <rendition xml:id="super" scheme="css">
+             vertical-align:top; position:relative; top:-0.5em; font-size:70%;           </rendition>
          </tagsDecl>
          <charDecl>
             <char xml:id="punctelevhiback">
@@ -135,7 +137,7 @@
    <text>
       <body>
          <pb n="charta 22 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-022v.jpg"/>
-         <lg type="canzone" n="105">
+         <lg type="canzone" xml:id="rvf105" n="105">
          <lg type="stanza">
             <lg type="dblhemi" corresp="#canvasline">
                <l n="1"><hi rendition="#red #fs24pt"

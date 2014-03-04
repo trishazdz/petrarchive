@@ -64,8 +64,9 @@
 
    <text>
       <body>
-         <lg type="sonnet" n="7">
-            <lg type="dblhemi"><l n="1"><hi rendition="#red #fs24pt">M</hi>Ille fiate<reg>,</reg> o dolce mia guerrera<reg>,</reg></l>	
+        <pb n="charta 3 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-003v.jpg" />
+         <lg xml:id="rvf007" type="sonnet" n="7">
+            <lg type="dblhemi"><l n="1"><hi rendition="#red #fs24pt">M</hi><hi rendition="#small-caps">i</hi>lle fiate<reg>,</reg> o dolce mia guerrera<reg>,</reg></l>	
                <l n="2">Per <choice><orig>auer</orig><reg>aver</reg></choice> co<reg>'</reg> <choice><orig>be gliocchi</orig><reg>begli occhi</reg></choice> <choice><orig>uostri</orig><reg>vostri</reg></choice> pace</l></lg>
             <lg type="dblhemi"><l n="3"><choice><orig>Vaggio</orig><reg>V' aggio</reg></choice> proferto il cor<choice><orig>.</orig><reg>;</reg></choice> <choice><orig>ma uoi</orig><reg>m' a voi</reg></choice> &non; piace</l>	
                <l n="4">Mirar <choice><orig>si</orig><reg>sì</reg></choice> basso <choice><orig>collamente</orig><reg>colla mente</reg></choice> altera.</l></lg>
@@ -78,9 +79,9 @@
             <lg type="dblhemi"><l n="13">Che graue colpa fia <choice><orig>dambeduo</orig><reg>d'ambeduo</reg></choice> noi<choice><orig>.</orig><reg>,</reg></choice></l> <l n="14">Et tanto <choice><orig>piú</orig><reg>più</reg></choice> de <choice><orig>uoi</orig><reg>voi,</reg></choice> &quanto; <choice><orig>piu</orig><reg>più</reg></choice> <choice><orig>uama</orig><reg>v'ama</reg></choice>.</l></lg>
          </lg>
          
-        <lg type="sestina" n="39"  rendition="#columns_2">
+        <lg xml:id="rvf039" type="sestina" n="39"  rendition="#columns_2">
             <cb n="1-of-2"/>
-               <l n="1" corresp="#canvasline"><hi rendition="#blue #fs24pt">A</hi>Qual<choice><abbr>ū</abbr><expan>un</expan></choice>que animale alberga &in; terra<reg>,</reg></l>
+               <l n="1" corresp="#canvasline"><hi rendition="#blue #fs24pt">A</hi><hi rendition="#small-caps">q</hi>ual<choice><abbr>ū</abbr><expan>un</expan></choice>que animale alberga &in; terra<reg>,</reg></l>
                <l n="2" corresp="#canvasline">Se &non; se <choice><orig>alquāti</orig><reg>alquanti</reg></choice> <choice><orig><choice><orig>chāno</orig><reg>channo</reg></choice></orig><reg>ch'ànno</reg></choice> &in; odio il sole<reg>,</reg></l>
                <l n="3" corresp="#canvasline"><choice><abbr>Tēpo</abbr><expan>Tempo</expan></choice> da <choice><orig>trauagliare</orig><reg>travagliare</reg></choice> <choice><orig>e</orig><reg>è</reg></choice> <choice><orig>qñto</orig><reg>quanto</reg></choice> <choice><orig>el</orig><reg>è 'l</reg></choice> &giorno;.</l>
                <l n="4" corresp="#canvasline">Ma poi <choice><orig>chel</orig><reg>che 'l</reg></choice> ciel accende le sue stelle<reg>,</reg></l>

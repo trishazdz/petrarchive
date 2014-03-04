@@ -7,6 +7,7 @@
 <!ENTITY per "<choice><abbr>ꝑ</abbr><expan>per</expan></choice>">
 <!ENTITY Per "<choice><abbr>ꝑ</abbr><expan>Per</expan></choice>">
 <!ENTITY virg "/">
+<!ENTITY virg-underdot "/&#x0323;">
 <!ENTITY sempre "<choice><abbr>sēpre</abbr><expan>sempre</expan></choice>">
 <!ENTITY Sempre "<choice><abbr>sēpre</abbr><expan>Sempre</expan></choice>">
 <!ENTITY quanto "<choice><abbr>quāto</abbr><expan>quanto</expan></choice>">
@@ -527,7 +528,7 @@ the line wraps. -->
                     <l n="11"><choice><orig>Mandaua</orig><reg>M’andava</reg></choice> sconosciuto<del type="editorial" resp="#hws"> /</del> <choice><orig>&amp7;</orig><reg>et</reg></choice>
                         pellegrino.</l>
                     <l n="12">&Quando; ecco <corr>i</corr><!-- jawalsh: should be underlined in dipl but not in edition.-->
-                        tuoi ministri<choice><orig> /<!-- preceding virgule should be virgule with an under-dot.--></orig><reg>,</reg></choice> <choice><orig><choice>
+                        tuoi ministri<choice><orig> &virg-underdot;</orig><reg>,</reg></choice> <choice><orig><choice>
                             <abbr>inō</abbr>
                             <expan>inon</expan></choice></orig><reg>i’ non</reg></choice> so donde<reg>,</reg></l>
                 </lg>
@@ -646,7 +647,7 @@ the line wraps. -->
               </lg>
               <lg type="stanza">
                 <lg type="dblhemi" corresp="#canvasline">
-                  <l n="41"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi>Tutte le cose di che<reg> ’</reg>l mondo <choice><orig>e</orig><reg>è</reg></choice> adorno <choice><orig> /</orig><reg></reg></choice></l>
+                  <l n="41"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi>Tutte le cose di che<reg> ’</reg>l mondo <choice><orig>e</orig><reg>è</reg></choice> adorno <choice><orig> &virg-underdot;</orig><reg></reg></choice></l>
                   <l n="42"><choice><orig>Vscir</orig><reg>Uscîr</reg></choice> buone de man del mastro eterno<choice><orig>.</orig><reg>:</reg></choice></l>
                 </lg>
                 <lg type="dblhemi" corresp="#canvasline">
@@ -709,7 +710,7 @@ the line wraps. -->
                         a <choice><orig>uoi</orig><reg>voi</reg></choice><choice><orig>.</orig><reg>;</reg></choice></l>
                   </lg>
                   <lg type="dblhemi" corresp="#canvasline">
-                    <l n="18">Ma contrastar non posso al gran desio<choice><orig> <g ref="#punctelevhiback"/></orig><reg>,</reg></choice></l>
+                    <l n="18">Ma contrastar non posso al gran desio<choice><orig> &virg-underdot;</orig><reg>,</reg></choice></l>
                     <l n="19">Lo quale <choice><orig><subst><del type="erasure"><gap reason="illegible"/></del><add>e</add></subst>n</orig><reg>è ’n</reg></choice> 
                       me da poi</l>
                   </lg>

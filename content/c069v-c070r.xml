@@ -192,9 +192,9 @@
             <space corresp="#msline"/>
             <lg type="sonnet" n="357 {361}">
                <lg type="dblhemi" corresp="#msline">
-                  <l n="1"><hi rendition="#black #fs24pt">D</hi>icemi spesso il mio fidato speglio<choice><orig>.</orig><reg>,</reg></choice> <fw>.26.</fw></l>    
+                  <l n="1"><hi rendition="#black #fs24pt">D</hi>icemi spesso il mio fidato speglio<choice><orig>.</orig><reg>,</reg></choice></l>    
                   <l n="2">L<reg>’</reg>animo <choice><abbr>stāco</abbr><expan>stanco</expan></choice><choice><orig> <g ref="#virgsusp"/></orig><reg>,</reg></choice> &amp7; 
-                     <choice><orig><choice><abbr>lacāgiata</abbr><expan>lacangiata</expan></choice></orig><reg>la cangiata</reg></choice> <choice><orig>scorça</orig><reg>scorza</reg></choice></l>
+                     <choice><orig><choice><abbr>lacāgiata</abbr><expan>lacangiata</expan></choice></orig><reg>la cangiata</reg></choice> <choice><orig>scorça</orig><reg>scorza</reg></choice> <fw>.26.</fw></l>
                </lg>
                <lg type="dblhemi" corresp="#msline">
                   <l n="3">Et la scemata mia <choice><orig>destreçça</orig><reg>destrezza</reg></choice> &amp7; <choice><orig>força</orig><reg>forza</reg></choice><choice><orig> /</orig><reg>:</reg></choice></l>  

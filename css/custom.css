@@ -467,6 +467,9 @@ lg[id = 'rvf360'] l[n = '45']
 
 /* rfv360 end */
 
+/* deletions are indicated with an underdot. We don't want the strikethrough. */
+del {text-decoration:none;}
+
 
 
 

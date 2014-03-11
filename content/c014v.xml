@@ -334,7 +334,7 @@ the line wraps. -->
             
             <cb n="2-of-2" />
             
-            <l n="23">Dentro&c2p; &amp; di for <choice><orig>sença</orig><reg>senza</reg></choice> <choice><orig>lusata</orig><reg>l’usata</reg></choice> nebbia<reg>,</reg></l>
+            <l n="23">Dentro&p2c; &amp; di for <choice><orig>sença</orig><reg>senza</reg></choice> <choice><orig>lusata</orig><reg>l’usata</reg></choice> nebbia<reg>,</reg></l>
             <l n="24"><choice><orig>Chi</orig><reg>Ch’i’</reg></choice> <choice><orig>uedro</orig><reg>vedrò</reg></choice> secco il mare<choice><orig> /</orig><reg>,</reg></choice> <choice><orig>e</orig><reg>e’</reg></choice> laghi<choice><orig> /</orig><reg>,</reg></choice> e i fiumi.</l>
             <l n="25"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi>Mentre <choice><orig>chal</orig><reg>ch’al</reg></choice> mar descenderanno i fiumi</l>
             <l n="26">Et le fiere ameranno ombrose <choice><orig>ualli</orig><reg>valli</reg></choice><reg>,</reg></l>
@@ -352,7 +352,7 @@ the line wraps. -->
             <l n="35"><choice><orig>Llombra</orig><reg>L'ombra</reg></choice>&v2c; <choice><orig>ouio</orig><reg>ov’io</reg></choice> fui&p2c; che <choice><orig>ne</orig><reg>né</reg></choice> calor&v2c; <choice><orig>ne</orig><reg>né</reg></choice> pioggia&v2c;</l>
                <l n="36"><choice><orig>Ne</orig><reg>Né</reg></choice> suon <choice><orig>curaua</orig><reg>curava</reg></choice> di <choice><orig>speççata</orig><reg>spezzata</reg></choice> nebbia.</l>
                <l n="37"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi>Ma non <choice><orig>fuggio</orig><reg>fuggìo</reg></choice> giamai nebbia &per; 
-               <choice><orig>uēti</orig><reg>uenti</reg></choice>&p2c;</l>
+                  <choice><orig><choice><orig>uēti</orig><reg>uenti</reg></choice></orig><reg>venti</reg></choice>&p2c;</l>
             <l n="38">Come quel di. ne mai fiumi &per; pioggia&p2c;</l>
             <l n="39"><choice><orig>Ne</orig><reg>Né</reg></choice> ghiaccio&v2c; <choice><orig><abbr>quādol</abbr><expan>quandol</expan></orig><reg>quando l’</reg></choice> 
                  sole <choice><orig>apr<subst><del type="erasure"><gap reason="illegible"/></del><add>e</add></subst></orig><reg>apre</reg></choice> le <choice><orig>ualli</orig><reg>valli</reg></choice>.</l> 

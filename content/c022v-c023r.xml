@@ -176,7 +176,7 @@
          <lg type="stanza">
             <lg type="dblhemi" corresp="#canvasline">
                <l n="16"><hi rendition="#blue #fs24pt">¶</hi>I<reg>’</reg> die<reg>’</reg> in guarda a san Pietro<choice><orig><g ref="#punctelevhiback"/></orig><reg>;</reg></choice> or <choice><abbr>nō</abbr><expan>non</expan></choice> <choice><orig>piú</orig><reg>più</reg></choice><reg>,</reg> no.</l>
-               <l n="17">Intendami ch<reg>’</reg>i<reg>’</reg> <choice><orig>po</orig><reg>pò</reg></choice><choice><orig>.</orig><reg>,</reg></choice> ch<reg>’</reg>i<reg>’ </reg>m<reg>’</reg>intend<reg>’</reg>io.</l>
+               <l n="17">Intendami chi <choice><orig>po</orig><reg>pò</reg></choice><choice><orig>.</orig><reg>,</reg></choice> ch<reg>’</reg>i<reg>’ </reg>m<reg>’</reg>intend<reg>’</reg>io.</l>
             </lg>
             <lg type="dblhemi" corresp="#canvasline">
                <l n="18"><choice><orig>Graue</orig><reg>Grave</reg></choice> soma <choice><orig>e</orig><reg>è</reg></choice> un mal fio<choice><orig>.</orig><reg></reg></choice> a mantenerlo<choice><orig>.</orig><reg>:</reg></choice></l>
@@ -199,7 +199,7 @@
                <l n="27">Alcun <choice><orig>e</orig><reg>è</reg></choice> che risponde <choice><orig>‘</orig><reg></reg></choice> a chi nol chiama<choice><orig>.</orig><reg>;</reg></choice></l>
             </lg>
             <lg type="dblhemi" corresp="#canvasline">
-               <l n="28">Altri chi<reg> ’</reg>l prega<reg>,</reg> si delegua et fugge<choice><orig>.</orig><reg>;</reg></choice></l>
+               <l n="28">Altri<reg>,</reg> chi<reg> ’</reg>l prega<reg>,</reg> si delegua et fugge<choice><orig>.</orig><reg>;</reg></choice></l>
                <l n="29"><choice><orig>A<add rendition="#super" place="above"><!-- caret? -->l</add> <subst><del type="erasure"><gap reason="illegible"/></del><add>tri al ghiaccio si stru</add></subst>gge</orig><reg>Altri al ghiaccio si strugge</reg></choice><choice><orig>.</orig><reg>;</reg></choice></l>
             </lg>
             <lg type="single" corresp="#canvasline">
@@ -209,7 +209,7 @@
             <lg type="stanza">
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="31"><hi rendition="#red #fs24pt">¶</hi><choice><orig>Prouerbio</orig><reg>Proverbio</reg></choice><reg>:</reg> ama chi t<reg>’</reg>ama<choice><orig><g ref="#punctelevhiback"/></orig><reg>,</reg></choice> <choice><orig>e</orig><reg>è</reg></choice> fatto antico.</l>
-                  <l n="32">I<reg>’</reg> so ben quel ch<reg>’</reg>io dico<choice><orig><g ref="#punctelevhiback"/></orig><reg></reg></choice> or lass<reg>’</reg>andare.</l>
+                  <l n="32">I<reg>’</reg> so ben quel ch<reg>’</reg>io dico<choice><orig><g ref="#punctelevhiback"/></orig><reg></reg></choice> or lass<reg>’</reg>andare&p2c;</l>
             </lg>
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="33"><choice><orig>Che</orig><reg>Ché</reg></choice> <choice><orig>conuen</orig><reg>conven</reg></choice> ch<reg>’</reg>altri impare<choice><orig><g ref="#punctelevhiback"/></orig><reg></reg></choice> <choice><orig>ale</orig><reg>a le</reg></choice> sue spese<choice><orig>.</orig><reg></reg></choice></l>

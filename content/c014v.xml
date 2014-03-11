@@ -333,13 +333,7 @@ the line wraps. -->
                <choice><orig><orig>sēçal</orig><reg>sençal</reg></orig><reg>senza</reg></choice> <reg>’l</reg> ghiaccio</l>
             
             <cb n="2-of-2" />
-            
-<<<<<<< HEAD
-
-            <l n="23">Dentro&p2c; &amp; di for <choice><orig>sença</orig><reg>senza</reg></choice> <choice><orig>lusata</orig><reg>l’usata</reg></choice> nebbia<reg>,</reg></l>
-=======
->>>>>>> FETCH_HEAD
-            <l n="23">Dentro&c2p; &amp7; di for <choice><orig>sença</orig><reg>senza</reg></choice> <choice><orig>lusata</orig><reg>l’usata</reg></choice> nebbia<reg>,</reg></l>
+           <l n="23">Dentro&p2c; &amp7; di for <choice><orig>sença</orig><reg>senza</reg></choice> <choice><orig>lusata</orig><reg>l’usata</reg></choice> nebbia<reg>,</reg></l>
             <l n="24"><choice><orig>Chi</orig><reg>Ch’i’</reg></choice> <choice><orig>uedro</orig><reg>vedrò</reg></choice> secco il mare<choice><orig> /</orig><reg>,</reg></choice> <choice><orig>e</orig><reg>e’</reg></choice> laghi<choice><orig> /</orig><reg>,</reg></choice> e i fiumi.</l>
             <l n="25"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi>Mentre <choice><orig>chal</orig><reg>ch’al</reg></choice> mar descenderanno i fiumi</l>
             <l n="26">Et le fiere ameranno ombrose <choice><orig>ualli</orig><reg>valli</reg></choice><reg>,</reg></l>

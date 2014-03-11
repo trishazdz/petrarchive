@@ -64,11 +64,14 @@
 
    <text>
       <body>
+<<<<<<< HEAD
 
          <lg type="sonnet" n="7">
             <lg type="dblhemi"><l n="1"><hi rendition="#red #fs24pt">M</hi>Ille fiate<reg>,</reg> o dolce mia guerrera<reg>,</reg></l>	
                <l n="2">Per <choice><orig>auer</orig><reg>aver</reg></choice> co<reg>’</reg> <choice><orig>be gliocchi</orig><reg>begli occhi</reg></choice> <choice><orig>uostri</orig><reg>vostri</reg></choice> pace</l></lg>
             <lg type="dblhemi"><l n="3"><choice><orig>Vaggio</orig><reg>V’ aggio</reg></choice> proferto il cor<choice><orig>.</orig><reg>;</reg></choice> <choice><orig>ma uoi</orig><reg>m’ a voi</reg></choice> &non; piace</l>	
+=======
+>>>>>>> FETCH_HEAD
         <pb n="charta 3 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-003v.jpg" />
          <lg xml:id="rvf007" type="sonnet" n="7">
             <lg type="dblhemi"><l n="1"><hi rendition="#red #fs24pt">M</hi><hi rendition="#small-caps">i</hi>lle fiate<reg>,</reg> o dolce mia guerrera<reg>,</reg></l>	
@@ -86,11 +89,14 @@
          
         <lg xml:id="rvf039" type="sestina" n="39"  rendition="#columns_2">
             <cb n="1-of-2"/>
+<<<<<<< HEAD
                <l n="1" corresp="#canvasline"><hi rendition="#blue #fs24pt">A</hi>Qual<choice><abbr>ū</abbr><expan>un</expan></choice>que animale alberga &in; terra<reg>,</reg></l>
            <l n="2" corresp="#canvasline">Se &non; se <choice><orig>alquāti</orig><reg>alquanti</reg></choice> <choice><orig><choice><orig>chāno</orig><reg>channo</reg></choice></orig><reg>ch’ànno</reg></choice> &in; odio il sole<reg>,</reg></l>
            <l n="3" corresp="#canvasline"><choice><abbr>Tēpo</abbr><expan>Tempo</expan></choice> da <choice><orig>trauagliare</orig><reg>travagliare</reg></choice> <choice><orig>e</orig><reg>è</reg></choice> <choice><orig>qñto</orig><reg>quanto</reg></choice> <choice><orig>el</orig><reg>è ’l</reg></choice> &giorno;.</l>
            <l n="4" corresp="#canvasline">Ma poi <choice><orig>chel</orig><reg>che 'l</reg></choice> ciel <choice><orig>accēde</orig><reg>accende</reg></choice> le sue stelle<reg>,</reg></l>
            <l n="5" corresp="#canvasline">Qual torna a casa<orig>.</orig> &amp7; <choice><orig>q<hi rend="superscript">~</hi>l</orig><reg>qual</reg></choice> <choice><orig>sanida</orig><reg>s’anida</reg></choice> &in; <choice><orig>selua</orig><reg>selva,</reg></choice></l>
+=======
+>>>>>>> FETCH_HEAD
                <l n="1" corresp="#canvasline"><hi rendition="#blue #fs24pt">A</hi><hi rendition="#small-caps">q</hi>ual<choice><abbr>ū</abbr><expan>un</expan></choice>que animale alberga &in; terra<reg>,</reg></l>
                <l n="2" corresp="#canvasline">Se &non; se <choice><orig>alquāti</orig><reg>alquanti</reg></choice> <choice><orig><choice><orig>chāno</orig><reg>channo</reg></choice></orig><reg>ch'ànno</reg></choice> &in; odio il sole<reg>,</reg></l>
                <l n="3" corresp="#canvasline"><choice><abbr>Tēpo</abbr><expan>Tempo</expan></choice> da <choice><orig>trauagliare</orig><reg>travagliare</reg></choice> <choice><orig>e</orig><reg>è</reg></choice> <choice><orig>qñto</orig><reg>quanto</reg></choice> <choice><orig>el</orig><reg>è 'l</reg></choice> &giorno;.</l>

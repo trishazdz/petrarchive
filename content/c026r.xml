@@ -122,6 +122,17 @@
    <text>
       <body>
          <pb n="charta 26 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-026r.jpg"/>
+        <ab type="blockSubst">
+          <!-- jawalsh: Do we know the sonnet underneath?" -->
+          <!-- <note resp="#jaw">Sonnet 194 has been written over an erased version of ???.</note>-->
+          <subst>
+            <del type="erasure">
+              <!-- jawalsh: Do we know the poem and/or any of the text underneath?" -->
+              <!-- jawalsh: what to do for extent? -->
+              <!-- jawalsh: check consistency of @reason vocabulary. -->
+              <gap reason="canceled"/>
+            </del>
+            <add>
          <lg type="madrigal" n="121">
          <lg type="stanza">
             <lg type="dblhemi">
@@ -150,6 +161,9 @@
             + the whole madrigal written over erasure 
             + different handwriting 
          How to encode all this?-->
+            </add>
+          </subst>
+        </ab>
          
             <lg type="sonnet" n="122">
                <lg type="dblhemi">

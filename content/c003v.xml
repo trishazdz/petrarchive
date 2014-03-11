@@ -11,8 +11,8 @@
 <!ENTITY giorno "<choice><orig>giõno</orig><reg>giorno</reg></choice>">
 <!ENTITY non "<choice><orig>nō</orig><reg>non</reg></choice>">
 <!ENTITY in "<choice><orig>ī</orig><reg>in</reg></choice>">
-<!ENTITY Per "<choice><abbr>ꝑ</abbr><expan>Per</expan></choice>">
-<!ENTITY Non "<choice><abbr>nō</abbr><expan>Non</expan></choice>">
+<!ENTITY Per "<choice><abbr>Ꝑ</abbr><expan>Per</expan></choice>">
+<!ENTITY Non "<choice><abbr>Nō</abbr><expan>Non</expan></choice>">
 
 
 <!-- period "p" to "2" comma "c" -->
@@ -28,7 +28,7 @@
 <!ENTITY si "<choice><orig>si</orig><reg>sì</reg></choice>">
 <!ENTITY Si "<choice><orig>Si</orig><reg>Sì</reg></choice>">
 <!ENTITY pilcrow2section "<choice><orig>¶</orig><reg>§</reg></choice>">
-<!ENTITY Quando "<choice><abbr>quādo</abbr><expan>Quando</expan></choice>">
+<!ENTITY Quando "<choice><abbr>Quādo</abbr><expan>Quando</expan></choice>">
 
 <!ENTITY encodingDesc SYSTEM "encodingDesc.xml">
 ]>
@@ -103,7 +103,7 @@
                <l n="18" corresp="#canvasline">Che mi fa &in; <choice><orig>uista</orig><reg>vista</reg></choice> un huom nuditro <choice><orig><choice><orig>īselua</orig><reg>inselua</reg></choice></orig><reg>in selva</reg></choice>.</l>
                <l n="19" corresp="#canvasline"><hi rendition="#red #fs24pt">&pilcrow2section;</hi>&Non; credo che pascesse mai &per; <choice><orig>selua</orig><reg>selva</reg></choice></l>
                <l n="20" corresp="#canvasline"><choice><orig>Si</orig><reg>Sì</reg></choice> aspra fera&v2c; o di nocte<choice><orig> /</orig><reg></reg></choice> o di giorno&v2c;</l>
-           <l n="21" corresp="#canvasline">Come costei <choice><orig>chi</orig><reg>ch’i’</reg></choice> <choice><orig>piāgo</orig><reg>piango</reg></choice> <choice><orig><choice><orig>alōbra</orig><reg>alombra</reg></choice></orig><reg>a l’ombra</reg></choice><choice><orig><g ref="verbar"/></orig><reg></reg></choice> e al sole.</l>
+          <l n="21" corresp="#canvasline">Come costei <choice><orig>chi</orig><reg>ch’i’</reg></choice> <choice><orig>piāgo</orig><reg>piango</reg></choice> <choice><orig><choice><orig>alōbra</orig><reg>alombra</reg></choice></orig><reg>a l’ombra</reg></choice><choice><orig>|</orig><reg/></choice> e al sole.</l>
                <l n="22" corresp="#canvasline">Et &non; mi stancha <choice><orig>ṗmo</orig><reg>primo</reg></choice> <choice><orig>sōno</orig><reg>sonno</reg></choice> <choice><orig>odalba.</orig><reg>od alba,</reg></choice></l>
                <l n="23" corresp="#canvasline"><choice><orig>Che</orig><reg>Ché,</reg></choice> ben <choice><orig>chi</orig><reg>ch’i’</reg></choice> sia mortal corpo di terra&v2c;</l>
          

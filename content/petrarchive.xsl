@@ -39,7 +39,7 @@
     
     <xsl:template match="tei:cb[@n='2-of-2']">
         <xsl:variable name="mycb" select="."/>
-        <div style="float:left; margin-right:2em;">
+        <div style="float:left; width:500px; margin-right:2em; margin-left:2em;">
             <xsl:apply-templates select="ancestor::tei:lg[@type = 'sestina']//tei:l[preceding::tei:cb[@n = '2-of-2'] = $mycb]" mode="process"/>
         </div>
     </xsl:template>
@@ -50,10 +50,14 @@
     </xsl:template>
     
     <xsl:template match="tei:lg[@type = 'sestina']//tei:l[preceding::tei:cb]" mode="process">
-            <xsl:element name="{local-name()}">
-                <xsl:call-template name="addID"/>
-                <xsl:apply-templates select="@*|node()"/>
-            </xsl:element>
+      <xsl:if test="@n mod 5 = 0">
+      <!-- sestina line numbers -->
+      <span class="lno"><xsl:value-of select="@n"/></span>
+      </xsl:if>
+      <xsl:element name="{local-name()}">
+        <xsl:call-template name="addID"/>
+        <xsl:apply-templates select="@*|node()"/>
+      </xsl:element>
     </xsl:template>
     
     <xsl:param name="htmlTitle">
@@ -107,7 +111,7 @@ Powered by <a href="{$teibpHome}">TEI Boilerplate</a>.
     </xsl:variable>
   
 <xd:doc><xd:desc>These lines get line numbers. Canzone is not regular.</xd:desc></xd:doc>
-  <xsl:template match="tei:lg[@type = 'sonnet']//tei:l[@n = '5']|tei:lg[@type = 'sonnet']//tei:l[@n = '9']|tei:lg[@type = 'rvf070']//tei:l[@n mod 5 = 0]|tei:lg[@xml:id = 'rvf071']//tei:l[@n = 5]|tei:lg[@xml:id = 'rvf071']//tei:l[@n = 15]|tei:lg[@xml:id = 'rvf071']//tei:l[@n = 20]|tei:lg[@xml:id = 'rvf071']//tei:l[@n = 30]|tei:lg[@xml:id = 'rvf071']//tei:l[@n = 35]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 5]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 15]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 20]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 30]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 35]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 45]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 50]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 60]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 65]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 75]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 80]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 90 ]">
+  <xsl:template match="tei:lg[@type = 'sonnet']//tei:l[@n = '5']|tei:lg[@type = 'sonnet']//tei:l[@n = '9']|tei:lg[@type = 'rvf070']//tei:l[@n mod 5 = 0]|tei:lg[@xml:id = 'rvf071']//tei:l[@n = 5]|tei:lg[@xml:id = 'rvf071']//tei:l[@n = 15]|tei:lg[@xml:id = 'rvf071']//tei:l[@n = 20]|tei:lg[@xml:id = 'rvf071']//tei:l[@n = 30]|tei:lg[@xml:id = 'rvf071']//tei:l[@n = 35]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 5]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 15]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 20]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 30]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 35]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 45]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 50]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 60]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 65]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 75]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 80]|tei:lg[@xml:id = 'rvf105']//tei:l[@n = 90]">
         <span class="lno"><xsl:value-of select="@n"/></span>
             <xsl:element name="{local-name()}">
                 <xsl:call-template name="addID"/>

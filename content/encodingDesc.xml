@@ -72,8 +72,7 @@
     </charDecl>
     <charDecl>
         <char xml:id="punctinter">
-            <charName>PUNCTUS
-                INTERROGATIVUS</charName>
+            <charName>PUNCTUS INTERROGATIVUS</charName>
             <charProp>
                 <localName>entity</localName>
                 <value>punctinter</value>
@@ -90,7 +89,7 @@
                 <localName>entity</localName>
                 <value>brvbar</value>
             </charProp>
-            <mapping type="visual">&#166;</mapping>
+            <mapping type="visual">&#x00A6;</mapping>
             <mapping type="MUFI">U+00A6</mapping>
             <mapping type="PUA">U+00A6</mapping>
         </char>

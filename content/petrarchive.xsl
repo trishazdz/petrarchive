@@ -13,6 +13,7 @@
     <xsl:import href="teibp.xsl"/>
     
     <xsl:param name="includeToolbox" select="true()"/>
+    <xsl:param name="includeNav" select="true()"/>
     <xsl:param name="pbNote" select="''"/>
     
     <xsl:param name="customCSS.norm" select="concat($filePrefix,'/css/custom_norm.css')"/>
@@ -156,6 +157,10 @@ Powered by <a href="{$teibpHome}">TEI Boilerplate</a>.
       </a>
     </span>
     -->
+  </xsl:template>
+  
+  <xsl:template name="siteNavigation">
+    <nav><a href="../index.html">Petr<i>archive</i> home</a></nav>
   </xsl:template>
         
     

@@ -25,6 +25,7 @@
 	
 	<xsl:param name="teibpHome" select="'http://dcl.slis.indiana.edu/teibp/'"/>
 	<xsl:param name="inlineCSS" select="true()"/>
+  <xsl:param name="includeNav" select="false()"/>
 	<xsl:param name="includeToolbox" select="true()"/>
 	<xsl:param name="includeAnalytics" select="true()"/>
 	<xsl:param name="displayPageBreaks" select="true()"/>
@@ -69,6 +70,9 @@
 		<html>
 			<xsl:call-template name="htmlHead"/>
 			<body>
+			  <xsl:if test="$includeNav = true()">
+			    <xsl:call-template name="siteNavigation"/>
+			  </xsl:if>
 				<xsl:if test="$includeToolbox = true()">
 					<xsl:call-template name="teibpToolbox"/>
 				</xsl:if>
@@ -464,6 +468,8 @@
 	<xsl:template match="eg:egXML//comment()">
 		<xsl:comment><xsl:value-of select="."/></xsl:comment>
 	</xsl:template>
+  
+  <xsl:template name="siteNavigation"/>
 
 	
 </xsl:stylesheet>

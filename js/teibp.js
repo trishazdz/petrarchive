@@ -62,6 +62,7 @@ function showFacs(num, url, id) {
 	facsWindow.document.write("<script type='text/javascript'>	$(function() {$( '#resizable' ).resizable();});</script>")
 	facsWindow.document.write("</head>")
 	facsWindow.document.write("<body>")
+	facsWindow.document.write("<nav><a href='../index.html'>Petr<i>archive</i> home</a></nav>")
 	facsWindow.document.write($("teiHeader")[0].outerHTML)
 	//facsWindow.document.write("<teiHeader>" + $("teiHeader")[0].html() + "</teiHeader>")
 	//facsWindow.document.write($('<teiHeader>').append($('teiHeader').clone()).html();)

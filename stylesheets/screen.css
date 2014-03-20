@@ -149,13 +149,19 @@ h2 {
 }
 
 /* line 70, ../sass/screen.scss */
+h3 {
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* line 76, ../sass/screen.scss */
 p, ul, ol, dl {
   line-height: 150%;
   margin-top: .5em;
   margin-bottom: .5em;
 }
 
-/* line 76, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 .subsetfacs {
   max-height: 160px;
   float: right;
@@ -163,7 +169,7 @@ p, ul, ol, dl {
   margin: 4px 4px 4px 20px;
 }
 
-/* line 83, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 .subsetvis {
   max-height: 160px;
   max-width: 116px;
@@ -172,35 +178,35 @@ p, ul, ol, dl {
   margin: 4px 4px 4px 4px;
 }
 
-/* line 91, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 .subset, section {
   clear: both;
 }
 
-/* line 94, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 em, cite, i {
   font-style: italic;
 }
 
-/* line 96, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 img {
   max-width: 600px;
 }
 
-/* line 98, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 figure {
   margin-top: .5em;
   margin-bottom: .5em;
 }
 
-/* line 103, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 figure img, figure figcaption {
   margin-right: auto;
   margin-left: auto;
   display: block;
 }
 
-/* line 108, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 figcaption {
   margin-top: .5em;
   margin-bottom: .5em;
@@ -212,7 +218,7 @@ figcaption {
   margin-left: auto;
 }
 
-/* line 119, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 footer {
   border-top: 1px solid black;
   margin-top: 2.5em;

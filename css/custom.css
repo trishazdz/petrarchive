@@ -329,20 +329,30 @@ lg[type = 'sonnet'] l[n = '6'],
 lg[type = 'sonnet'] l[n = '9'],  
 lg[type = 'sonnet'] l[n = '10'],
 /* lg[type = 'canzone'] l[n = '10'], */
-lg[type = 'canzone'] lg[type = 'dblhemi'] l[n = '20'], 
-lg[type = 'canzone'] lg[type = 'dblhemi'] l[n = '21']:last-of-type, 
-lg[type = 'canzone'] lg[type = 'dblhemi'] l[n = '35'],
-lg[type = 'canzone'] lg[type = 'dblhemi'] l[n = '36'],
-lg[type = 'canzone'] lg[type = 'dblhemi'] l[n = '50'],
-lg[type = 'canzone'] lg[type = 'dblhemi'] l[n = '51'],
-lg[type = 'canzone'] lg[type = 'dblhemi'] l[n = '65'],
-lg[type = 'canzone'] lg[type = 'dblhemi'] l[n = '66'],
-lg[type = 'canzone'] lg[type = 'dblhemi'] l[n = '80'],
-lg[type = 'canzone'] lg[type = 'dblhemi'] l[n = '81'],
+
+
+
 lg[id = 'rvf071'] l[n = '5'],
 lg[id = 'rvf071'] l[n = '6'],
+lg[id = 'rvf071'] l[n = '20'], 
+lg[id = 'rvf071'] l[n = '21'],
+lg[id = 'rvf071'] l[n = '35'], 
+lg[id = 'rvf071'] l[n = '36'],
+lg[id = 'rvf071'] l[n = '65'],
+lg[id = 'rvf071'] l[n = '66'],
 lg[id = 'rvf105'] l[n = '5'],
-lg[id = 'rvf105'] l[n = '6']
+lg[id = 'rvf105'] l[n = '6'],
+lg[id = 'rvf105'] l[n = '20'],
+lg[id = 'rvf105'] l[n = '21'],
+lg[id = 'rvf105'] l[n = '35'], 
+lg[id = 'rvf105'] l[n = '36'],
+lg[id = 'rvf105'] l[n = '50'],
+lg[id = 'rvf105'] l[n = '51'],
+lg[id = 'rvf105'] l[n = '65'],
+lg[id = 'rvf105'] l[n = '66'],
+lg[id = 'rvf105'] l[n = '80'],
+lg[id = 'rvf105'] l[n = '81']
+
 /* lg[type = 'canzone'] l[n = '30'] */
 {
     position:relative;

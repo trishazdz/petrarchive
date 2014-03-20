@@ -40,7 +40,7 @@ font-weight:200 !important;
 margin-top:1em;
 }
 
-nav a, nav a:visited {color:rgb(0,122,255);}
+nav a, nav a:visited {color:rgb(0,122,255)!important;}
 
 lg {line-height: 175%;}
 

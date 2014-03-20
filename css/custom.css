@@ -328,32 +328,21 @@ lg[type = 'sonnet'] l[n = '5'],
 lg[type = 'sonnet'] l[n = '6'], 
 lg[type = 'sonnet'] l[n = '9'],  
 lg[type = 'sonnet'] l[n = '10'],
-lg[type = 'canzone']  l[n = '5'], 
-lg[type = 'canzone']  l[n = '6'],
-lg[type = 'canzone']  l[n = '5'], 
-lg[type = 'canzone']  l[n = '6'],
-lg[type = 'canzone'] lg[type = 'trplhemi'] l[n = '7'],
 /* lg[type = 'canzone'] l[n = '10'], */
-lg[type = 'canzone'] lg[type = 'trplhemi'] l[n = '15'],
-lg[type = 'canzone'] lg[type = 'trplhemi'] l[n = '16'],
-lg[type = 'canzone'] l[n = '17'],
 lg[type = 'canzone'] lg[type = 'dblhemi'] l[n = '20'], 
 lg[type = 'canzone'] lg[type = 'dblhemi'] l[n = '21']:last-of-type, 
-lg[type = 'canzone'] lg[type = 'trplhemi'] l[n = '25'],
-lg[type = 'canzone'] lg[type = 'trplhemi'] l[n = '26'],
-lg[type = 'canzone'] lg[type = 'trplhemi'] l[n = '27'],
 lg[type = 'canzone'] lg[type = 'dblhemi'] l[n = '35'],
 lg[type = 'canzone'] lg[type = 'dblhemi'] l[n = '36'],
-lg[type = 'canzone'] lg[type = 'trplhemi'] l[n = '37'],
-lg[type = 'canzone'] lg[type = 'trplhemi'] l[n = '45'],
-lg[type = 'canzone'] lg[type = 'trplhemi'] l[n = '46'],
-lg[type = 'canzone'] lg[type = 'trplhemi'] l[n = '47'],
 lg[type = 'canzone'] lg[type = 'dblhemi'] l[n = '50'],
 lg[type = 'canzone'] lg[type = 'dblhemi'] l[n = '51'],
 lg[type = 'canzone'] lg[type = 'dblhemi'] l[n = '65'],
 lg[type = 'canzone'] lg[type = 'dblhemi'] l[n = '66'],
 lg[type = 'canzone'] lg[type = 'dblhemi'] l[n = '80'],
-lg[type = 'canzone'] lg[type = 'dblhemi'] l[n = '81']
+lg[type = 'canzone'] lg[type = 'dblhemi'] l[n = '81'],
+lg[id = 'rvf071'] l[n = '5'],
+lg[id = 'rvf071'] l[n = '6'],
+lg[id = 'rvf105'] l[n = '5'],
+lg[id = 'rvf105'] l[n = '6']
 /* lg[type = 'canzone'] l[n = '30'] */
 {
     position:relative;
@@ -382,42 +371,25 @@ lg[id = 'rvf360'] l[n = '77'],
 lg[id = 'rvf360'] l[n = '78'],
 lg[id = 'rvf360'] l[n = '91'],
 lg[id = 'rvf360'] l[n = '92'],
-lg[id = 'rvf360'] l[n = '93'] {
+lg[id = 'rvf360'] l[n = '93'],
+lg[id = 'rvf360'] l[n = '106'],
+lg[id = 'rvf360'] l[n = '107'],
+lg[id = 'rvf360'] l[n = '108'],
+lg[id = 'rvf360'] l[n = '121'],
+lg[id = 'rvf360'] l[n = '122'],
+lg[id = 'rvf360'] l[n = '123'],
+lg[id = 'rvf360'] l[n = '136'],
+lg[id = 'rvf360'] l[n = '137'],
+lg[id = 'rvf360'] l[n = '138'],
+lg[id = 'rvf360'] l[n = '151'],
+lg[id = 'rvf360'] l[n = '152'],
+lg[id = 'rvf360'] l[n = '153']{
     position:relative !important;
     left:-.8em !important;
     margin-top:0 !important;
 }
 
-lg[id = 'rvf360'] l[n = '10'],
-lg[id = 'rvf360'] l[n = '11'],
-lg[id = 'rvf360'] l[n = '12'],
-lg[id = 'rvf360'] l[n = '40'],
-lg[id = 'rvf360'] l[n = '41'],
-lg[id = 'rvf360'] l[n = '42'],
-lg[id = 'rvf360'] l[n = '55'],
-lg[id = 'rvf360'] l[n = '56'],
-lg[id = 'rvf360'] l[n = '57'],
-lg[id = 'rvf360'] l[n = '70'],
-lg[id = 'rvf360'] l[n = '71'],
-lg[id = 'rvf360'] l[n = '72'],
-lg[id = 'rvf360'] l[n = '85'],
-lg[id = 'rvf360'] l[n = '86'],
-lg[id = 'rvf360'] l[n = '87'],
-lg[id = 'rvf360'] l[n = '100'],
-lg[id = 'rvf360'] l[n = '101'],
-lg[id = 'rvf360'] l[n = '102'],
-lg[id = 'rvf360'] l[n = '115'],
-lg[id = 'rvf360'] l[n = '116'],
-lg[id = 'rvf360'] l[n = '117'],
-lg[id = 'rvf360'] l[n = '130'],
-lg[id = 'rvf360'] l[n = '131'],
-lg[id = 'rvf360'] l[n = '132'],
-lg[id = 'rvf360'] l[n = '145'],
-lg[id = 'rvf360'] l[n = '146'],
-lg[id = 'rvf360'] l[n = '147'] {
-    position:relative;
-    left:-50px;   
-}
+
 
 lg[id = 'rvf360'] {
     font-size:80%;
@@ -462,6 +434,8 @@ lg[id = 'rvf360'] l[n = '45']
     /* fixes line alignment for rvf360 dipl */
     position:static !important;
 }
+
+
 
 
 

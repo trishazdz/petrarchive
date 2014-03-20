@@ -202,7 +202,7 @@
          </lg>
             <space corresp="#msline"/>
             <space corresp="#msline"/>
-            <lg type="sonnet" n="357 {361}">
+            <lg xml:id="rvf361" type="sonnet" n="357 [361]">
                <lg type="dblhemi" corresp="#msline">
                   <l n="1"><hi rendition="#black #fs24pt">D</hi>icemi spesso il mio fidato speglio<choice><orig>.</orig><reg>,</reg></choice></l>    
                   <l n="2">L<reg>’</reg>animo <choice><abbr>stāco</abbr><expan>stanco</expan></choice><choice><orig> <g ref="#virgsusp"/></orig><reg>,</reg></choice> &amp7; 

@@ -364,7 +364,7 @@ the line wraps. -->
          <lg type="sonnet" n="103">
             <lg type="dblhemi" corresp="#msline">
                <l n="1"><hi rendition="#blue #fs24pt"
-                  ></hi><choice><orig>U</orig><reg>V</reg></choice><hi rendition="#small-caps">i</hi>nse <choice><orig>hanibal</orig><reg>Hanibal</reg></choice><choice><orig>.</orig><reg>,</reg></choice> et non seppe usar poi</l>
+                  ><choice><orig>U</orig><reg>V</reg></choice></hi><hi rendition="#small-caps">i</hi>nse <choice><orig>hanibal</orig><reg>Hanibal</reg></choice><choice><orig>.</orig><reg>,</reg></choice> et non seppe usar poi</l>
                <l n="2">Ben la <choice><orig>uittoriosa</orig><reg>vittoriosa</reg></choice> sua <choice><orig>uentura</orig><reg>ventura</reg></choice><choice><orig>.</orig><reg>;</reg></choice></l>
             </lg>
             <lg type="dblhemi" corresp="#msline">

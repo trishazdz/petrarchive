@@ -166,6 +166,7 @@
         </ab>
          
             <lg type="sonnet" n="122">
+              <lg type="octave">
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="1"><hi rendition="#blue #fs24pt"
                      >D</hi><hi rendition="#small-caps">i</hi>cesette anni <choice><orig>a</orig><reg>à</reg></choice> <choice><orig>gia</orig><reg>già</reg></choice> <choice><orig>riuolto</orig><reg>rivolto</reg></choice> il cielo</l>
@@ -188,6 +189,8 @@
                      <choice><abbr>intēsi</abbr><expan>intensi</expan></choice><choice><orig>.</orig><reg>;</reg></choice></l>
                   <l n="8"><choice><orig>Cio</orig><reg>Ciò</reg></choice> ne fa l<reg>’</reg>ombra ria del <choice><orig>graue</orig><reg>grave</reg></choice> <choice><orig>uelo</orig><reg>velo</reg></choice>.</l>
                </lg>
+              </lg>
+              <lg type="sestet">
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="9"><choice><orig>Oi me</orig><reg>Oimè</reg></choice> lasso<choice><orig> &virg;</orig><reg>!</reg></choice> e &quando; fia quel giorno</l>
                   <l n="10">Che mirando il fuggir <choice><orig>de <choice><abbr>gliāni</abbr><expan>glianni</expan></choice></orig><reg>degli anni</reg></choice> miei</l>
@@ -200,11 +203,13 @@
                   <l n="13">Quel<reg>’</reg> aria dolce del bel <choice><orig>uiso</orig><reg>viso</reg></choice> adorno</l>
                   <l n="14">Piaccia a quest<reg>’</reg>occhi&p2c; &amp7; quanto si <choice><orig><choice><abbr>cōuene</abbr><expan>conuene</expan></choice></orig><reg>convene</reg></choice><g ref="#punctinter"/></l>
                </lg>
+              </lg>
             </lg>
          
          <!-- Sonnet 122: End of line 14: punctus elevatus? -->
          
             <lg type="sonnet" n="123">
+              <lg type="octave">
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="1"><hi rendition="#red #fs24pt"
                      >Q</hi><hi rendition="#small-caps"><choice><orig>v</orig><reg>u</reg></choice></hi>el <choice><orig>uago</orig><reg>vago</reg></choice> impallidir che<reg> ’</reg>l dolce riso</l>
@@ -222,6 +227,8 @@
                   <l n="7">Quel pietoso penser ch<reg>’</reg>altri &non; scerse<choice><orig>.</orig><reg>;</reg></choice></l>
                   <l n="8">Ma <choice><orig>uidilio</orig><reg>vidil’io</reg></choice>&v2c; <choice><orig>chaltroue</orig><reg>ch’altrove</reg></choice> &non; m<reg>’</reg>affiso<reg>.</reg></l>
                </lg>
+              </lg>
+              <lg type="sestet">
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="9">Ogni angelica <choice><orig>uista</orig><reg>vista</reg></choice>&p2c; <choice><orig>ogniatto</orig><reg>ogni atto</reg></choice> humile</l>
                   <l n="10">Che giamai &in; <choice><abbr>dōna</abbr><expan>donna</expan></choice>
@@ -235,8 +242,10 @@
                   <l n="13">Et tacendo dicea&v2c; come a me <choice><orig>parue</orig><reg>parve</reg></choice><choice><orig> &v2c;</orig><reg>:</reg></choice></l>
                   <l n="14">Chi m<reg>’</reg>allontana il mio fedele amico<choice><orig>.</orig><reg>?</reg></choice></l>
                </lg>
+              </lg>
             </lg>
          <lg type="sonnet" n="124">
+           <lg type="octave">
             <lg type="dblhemi" corresp="#canvasline">
                <l n="1"><hi rendition="#blue #fs24pt"
                   >A</hi><hi rendition="#small-caps">m</hi>or<reg>,</reg> fortuna&v2c; 
@@ -256,6 +265,8 @@
                <l n="8">Sempre <choice><orig>conuen</orig><reg>conven</reg></choice> che 
                   <choice><abbr>cōbattendo</abbr><expan>combattendo</expan></choice> <choice><orig>uiua</orig><reg>viva</reg></choice>.</l>
             </lg>
+           </lg>
+           <lg type="sestet">
             <lg type="dblhemi" corresp="#canvasline">
                <l n="9"><choice><orig>Ne</orig><reg>Né</reg></choice> spero i dolci <choice><orig>di</orig><reg>dì</reg></choice> tornino <choice><orig>in dietro</orig><reg>indietro</reg></choice><reg>,</reg></l>
                <l n="10">Ma pur di male &in; peggio quel <choice><orig>cheuança</orig><reg>ch’avanza</reg></choice><reg>;</reg></l>
@@ -268,7 +279,7 @@
                <l n="13">Veggio di man cadermi ogni <choice><orig>sperança</orig><reg>speranza</reg></choice>&p2c;</l>
                <l n="14">Et tutti miei pensier<reg>’</reg> romper nel <choice><orig>meçço</orig><reg>mezzo</reg></choice>.</l>
             </lg>
-            
+           </lg>
             <!-- Sonnet 124: period end of line 6 -->
             <!-- 26r has 30 transcriptional lines!!! Encoding? -->
             

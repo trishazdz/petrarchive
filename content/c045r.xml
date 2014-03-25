@@ -85,6 +85,7 @@
       <body>
          <pb n="charta 45 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-045r.jpg" />
          <lg type="sonnet" n="232">
+           <lg type="octave">
             <lg type="dblhemi" corresp="#canvasline">
                <l n="1"><hi rendition="#fs24pt">V</hi>incitore Alexandro <choice><orig>lira</orig><reg>l’ira</reg></choice> <choice><orig>uinse</orig><reg>vinse</reg></choice>&p2c;</l>
                <l n="2">&Amp7; <choice><orig>fel minore</orig><reg>fe’ ’lminore</reg></choice> &in; parte che Philippo&p2colon;</l>
@@ -103,6 +104,8 @@
                   <choice><orig>deltutto</orig><reg>del tutto</reg></choice>&v2c; &non; pur lippo<reg>,</reg></l>
                <l n="8">Fatto <choice><orig>auea</orig><reg>avea</reg></choice> <choice><orig>silla</orig><reg>Silla</reg></choice>&p2semicolon; <choice><orig>Alultimo lextinse</orig><reg>a l’ultimo l’extinse</reg></choice>.</l>
             </lg>
+           </lg>
+           <lg type="sestet">
             <lg type="dblhemi" corresp="#canvasline">
                <l n="9"><choice><orig>Sal</orig><reg>Sa ’l</reg></choice> <choice><orig>valentinian</orig><reg>Valentinian</reg></choice>&v2c; <choice><orig>cha</orig><reg>ch’a</reg></choice> simil pena<choice><orig> &virg;</orig><reg/></choice></l>
                <l n="10">Ira conduce&p2colon; &amp7; <choice><orig>sal</orig><reg>sa ’l</reg></choice> quei che <choice><orig>nemore</orig><reg>ne more</reg></choice>&v2c;</l>
@@ -115,11 +118,13 @@
                <l n="13"><choice><orig>E</orig><reg>È</reg></choice> furor <choice><orig>lūgo</orig><reg>lungo</reg></choice>&p2c; <choice><orig>chel</orig><reg>che ’l</reg></choice> suo possessore</l>
                <l n="14">Spesso <choice><orig>auergogna</orig><reg>a vergogna</reg></choice>&p2c; &amp7; talor <choice><orig>menaamorte</orig><reg>mena a morte</reg></choice>.</l>
             </lg>
+           </lg>
          </lg>
          
          <!-- check encoding of erasures: vv. 3 and 7 -->
          
             <lg type="sonnet" n="233">
+              <lg type="octave">
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="1"><hi rendition="#fs24pt"
                      >Q</hi><hi rendition="#small-caps"><choice><orig>v</orig><reg>U</reg></choice></hi>al 
@@ -142,6 +147,8 @@
                   <l n="8">Se tutte altre mie gratie <choice><orig>īseme</orig><reg>inseme</reg></choice> 
                      aduno.</l>
                </lg>
+              </lg>
+              <lg type="sestet">
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="9"><choice><orig>Che</orig><reg>Ché</reg></choice> dal <choice><orig>dextrocchio</orig><reg>dextr’occhio</reg></choice><choice><orig> <g ref="#virgsusp"/></orig><reg>,</reg></choice> <choice><orig><abbr>āçi</abbr><expan>ançi</expan></orig><reg>anzi</reg></choice> 
                      <choice><orig>daldextro</orig><reg>dal dextro</reg></choice> sole</l>
@@ -159,6 +166,7 @@
                   <l n="14"><choice><orig><subst><del type="erasure"><gap reason="illegible"/></del><add>&amp7; natura 
                      &amp7; pietate ilcorso tenne.</add></subst></orig><reg>Et natura et pietate il corso tenne.</reg></choice></l>
                </lg>
+              </lg>
             </lg>
          
          <!-- v. 9 = virgula suspensiva? mapping type="visual"?? vd p. 149 MUFI pdf-->
@@ -166,6 +174,7 @@
          
          
             <lg type="sonnet" n="234">
+              <lg type="octave">
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="1"><hi rendition="#fs24pt"
                      >O</hi> <hi rendition="#small-caps">C</hi>ameretta<reg>,</reg> che <choice><orig>gia</orig><reg>già</reg></choice> fosti un porto<choice><orig>.</orig><reg></reg></choice></l>
@@ -188,6 +197,8 @@
                      <!--variant note: var. gran torto? (Laur. 41.10; Bembo 1501; 1514)-->
                   </l>
                </lg>
+              </lg>
+              <lg type="sestet">
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="9"><choice><orig>Ne</orig><reg>Né</reg></choice> pur il mio secreto <choice><orig>&virg;</orig><reg/></choice> <choice><orig>el</orig><reg>e ’l</reg></choice> mio riposo <choice><orig>&virg;</orig><reg/></choice></l>
                   <l n="10">Fuggo&p2c; ma 
@@ -202,8 +213,10 @@
                   <l n="13"><choice><orig>Chilpenso</orig><reg>Chi ’l pensò</reg></choice> mai<choice><orig> &virg;</orig><reg>?,</reg></choice> &per; mio refugio chero&p2colon;</l>
                   <l n="14"><choice><orig>Talpaura</orig><reg>Tal paura</reg></choice> <choice><orig>o</orig><reg>ò</reg></choice> <choice><orig>&virg;</orig><reg/></choice> di <choice><orig>ritrouarmi</orig><reg>ritrovarmi</reg></choice> solo. </l>
                </lg>
+              </lg>
             </lg>
          <lg type="sonnet" n="235">
+           <lg type="octave">
             <lg type="dblhemi" corresp="#canvasline">
                <l n="1"><hi rendition="#fs24pt"
                   >L</hi><hi rendition="#small-caps">a</hi>sso<choice><orig> &virg;</orig><reg>!</reg></choice> Amor mi trasporta <choice><orig>&virg;</orig><reg/></choice> 
@@ -225,6 +238,8 @@
                <l n="7"><choice><orig><abbr>Quātio</abbr><expan>Quantio</expan></orig><reg>Quant’io</reg></choice> sempre <choice><orig>ladebile</orig><reg>la debile</reg></choice> mia barcha</l>
                <l n="8"><choice><orig>Dale</orig><reg>Da le</reg></choice> <choice><orig>ꝑcosse</orig><reg>percosse</reg></choice> del suo duro orgoglio.</l>
             </lg>
+           </lg>
+           <lg type="sestet">
             <lg type="dblhemi" corresp="#canvasline">
                <l n="9">Ma lagrimosa pioggia <choice><orig>&virg;</orig><reg/></choice> &amp7; fieri <choice><orig>uenti</orig><reg>venti</reg></choice><choice><orig>.</orig><reg/></choice></l>
                <l n="10"><choice><orig>Dinfiniti</orig><reg>D’infiniti</reg></choice> sospiri <choice><orig>&virg;</orig><reg/></choice> or <choice><orig>lanno</orig><reg>l’ànno</reg></choice> spinta&v2c;</l>
@@ -238,6 +253,7 @@
                <l n="13">porta &v2c; &amp7; &non; altro&p2c; <choice><orig>gia</orig><reg>già</reg></choice> <choice><orig>dalonde</orig><reg>da l’onde</reg></choice> <choice><orig>uinta</orig><reg>vinta</reg></choice>&p2c;</l>
                <l n="14">Disarmata di <choice><orig>uele</orig><reg>vele</reg></choice> <choice><orig>&virg;</orig><reg/></choice> &amp7; di <choice><orig>gouerno</orig><reg>governo</reg></choice>.</l>
             </lg>
+           </lg>
             
             <!--notes to charta:
                r. 4.2: riporto la <<A>> di <<A 'lultimo>> in minusculo.

@@ -66,10 +66,13 @@
                   <gloss>stanza</gloss>
                 </valItem>
                 <valItem ident="sestet">
-                  <gloss>stanza</gloss>
+                  <gloss>sestet</gloss>
                 </valItem>
                 <valItem ident="octave">
-                  <gloss>stanza</gloss>
+                  <gloss>octave</gloss>
+                </valItem>
+                <valItem ident="ballata">
+                  <gloss>ballata</gloss>
                 </valItem>
               </valList>
             </attDef>

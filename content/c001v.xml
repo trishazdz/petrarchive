@@ -101,6 +101,7 @@
       <body>
          <pb n="charta 1 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-001v.jpg" />
          <lg type="sonnet" n="5">
+           <lg type="octave">
             <lg type="dblhemi" corresp="#canvasline">
                <l n="1"><hi rendition="#red #fs24pt"
                   >Q</hi><hi rendition="#small-caps">u</hi>ando io <choice><orig>mouo</orig><reg>muovo</reg></choice> i sospiri a chiamar <choice><orig>uoi</orig><reg>voi</reg></choice><reg>,</reg></l>
@@ -118,6 +119,8 @@
                <l n="7">Ma taci<reg>!</reg> grida il fin<reg>,</reg> <choice><orig>che</orig><reg>ché</reg></choice> farle honore</l>
                <l n="8"><choice><orig>E</orig><reg>È</reg></choice> d<reg>’</reg>altri homeri soma<choice><orig> /</orig><reg></reg></choice> che da<reg>’</reg> tuoi.</l>
             </lg>
+           </lg>
+           <lg type="sestet">
             <lg type="dblhemi" corresp="#canvasline">
                <l n="9"><choice><orig>Cosi</orig><reg>Così</reg></choice> laudare &amp7; <choice><orig>reuerire</orig><reg>reverire</reg></choice> insegna</l>
                <l n="10">La <choice><orig>uoce</orig><reg>voce</reg></choice> stessa<reg>,</reg> pur ch<reg>’</reg>altri <choice><orig>ui</orig><reg>vi</reg></choice> chiami<reg>,</reg></l>
@@ -130,9 +133,11 @@
                <l n="13">Ch<reg>’ </reg>a parlar de<reg>’</reg> suoi &sempre; <choice><orig>uerdi</orig><reg>verdi</reg></choice> rami</l>
                <l n="14">Lingua mortal <choice><abbr>presūptuosa</abbr><expan>presumptuosa</expan></choice> <choice><orig>uegna</orig><reg>vegna</reg></choice>.</l>
             </lg>
+           </lg>
          </lg>
          <space corresp="#canvasline"/>
          <lg type="sonnet" n="6">
+           <lg type="octave">
             <lg type="dblhemi" corresp="#canvasline">
                <l n="1"><hi rendition="#blue #fs24pt">S</hi><hi rendition="#small-caps"><choice><orig>i</orig><reg>ì</reg></choice></hi> <choice><orig>trauiato</orig><reg>traviato</reg></choice> <choice><orig>el</orig><reg>è ’l</reg></choice> folle mi<reg>’</reg> desio</l>
                <l n="2">A seguitar costei che<reg> ’</reg>n fuga <choice><orig>e</orig><reg>è</reg></choice> <choice><orig>uolta</orig><reg>volta</reg></choice><choice><orig>.</orig><reg>,</reg></choice></l>
@@ -149,6 +154,8 @@
                <l n="7"><choice><orig>Ne</orig><reg>Né</reg></choice> mi <choice><orig>uale</orig><reg>vale</reg></choice> spronarlo o dargli <choice><orig>uolta</orig><reg>volta</reg></choice><choice><orig>.</orig><reg>,</reg></choice></l>
                <l n="8">Ch<reg>’</reg>amor &per; sua natura il fa restio.</l>
             </lg>
+           </lg>
+           <lg type="sestet">
             <lg type="dblhemi" corresp="#canvasline">
                <l n="9">Et poi che<reg> ’</reg>l fren &per; <choice><orig>força</orig><reg>forza</reg></choice> a <choice><orig>se</orig><reg>sé</reg></choice> raccoglie<choice><orig> /</orig><reg>,</reg></choice></l>
                <l n="10">I<reg>’ </reg>mi rimango in signoria di lui<choice><orig> /</orig><reg>,</reg></choice></l>
@@ -161,9 +168,11 @@
                <l n="13">Acerbo frutto<choice><orig>.</orig><reg>,</reg></choice> che le piaghe altrui<reg>,</reg></l>
                <l n="14">Gustando afflige <choice><orig>piu</orig><reg>più</reg></choice> che &non; conforta.</l>
             </lg>
+           </lg>
          </lg>
          <space corresp="#canvasline"/>
          <lg type="sonnet" n="7">
+           <lg type="octave">
             <lg type="dblhemi" corresp="#canvasline">
                <l n="1"><hi rendition="#red #fs24pt">L</hi><hi rendition="#small-caps">a</hi> gola e<reg> ’</reg>l somno et l<reg>’</reg>otiose piume</l>
                <l n="2"><choice><orig>Anno</orig><reg>Ànno</reg></choice> del mondo ogni <choice><orig>uertu</orig><reg>vertù</reg></choice> 
@@ -181,6 +190,8 @@
                <l n="7">Che per cosa mirabile s<reg>’</reg>addita</l>
                <l n="8">Chi <choice><orig>uol</orig><reg>vol</reg></choice> far <choice><orig>delicona</orig><reg>d’Elicona</reg></choice> nascer fiume.</l>
             </lg>
+           </lg>
+           <lg type="sestet">
             <lg type="dblhemi" corresp="#canvasline">
                <l n="9">Qual <choice><orig>uagheçça</orig><reg>vaghezza</reg></choice> di lauro<choice><orig> /</orig><reg>,</reg></choice> qual di mirto<reg>?</reg></l>
                <l n="10"><choice><orig>Pouera</orig><reg>Povera</reg></choice> et nuda <choice><orig>uai</orig><reg>vai</reg></choice><reg>,</reg> <choice><orig>philosophia</orig><reg>Philosophia</reg></choice><reg>,</reg></l>
@@ -197,9 +208,11 @@
                <l n="13">Tanto ti prego <choice><orig>piu</orig><reg>più</reg></choice><reg>,</reg> gentile spirto<reg>:</reg></l>
                <l n="14"><choice><abbr>Nō</abbr><expan>Non</expan></choice> lassar la magnanima tua <choice><abbr>īpresa</abbr><expan>impresa</expan></choice>.</l>
             </lg>
+           </lg>
          </lg>
          <space corresp="#canvasline"/>
          <lg type="sonnet" n="8">
+           <lg type="octave">
             <lg type="dblhemi" corresp="#canvasline">
                <l n="1"><hi rendition="#fs24pt #blue">A</hi>
                  <hi rendition="#small-caps">p</hi>i<subst><del type="erasure"><gap reason="illegible"/></del><add>e</add></subst><reg>’</reg>
@@ -237,6 +250,8 @@
                <l n="7"><choice><orig>Sença</orig><reg>Senza</reg></choice> sospetto di <choice><orig>trouar</orig><reg>trovar</reg></choice> fra <choice><orig>uia</orig><reg>via</reg></choice></l>
                <l n="8">Cosa <choice><orig>chalnostrandar</orig><reg>ch’ al nostr’ andar</reg></choice> fosse molesta.</l>
             </lg>
+           </lg>
+           <lg type="sestet">
             <lg type="dblhemi" corresp="#canvasline">
                <l n="9">Ma del misero stato <choice><orig>oue</orig><reg>ove</reg></choice> noi semo</l>
                <l n="10">Condotte da la <choice><orig>uita</orig><reg>vita</reg></choice> altra serena</l>
@@ -250,6 +265,7 @@
                   <choice><orig><choice><orig>alext<supplied resp="#hws">r</supplied><add place="above" >e</add>mo</orig><reg>alextremo</reg></choice></orig><reg>a l’extremo</reg></choice></l>
                <l n="14">Riman legato &con; maggior catena.</l>
             </lg>
+           </lg>
          </lg>
       </body>
    </text>

@@ -362,6 +362,7 @@ the line wraps. -->
          <!-- check encoding erasure line 39 + space column 2 -->
          
             <lg type="sonnet" n="67">
+              <lg type="octave">
                <lg type="dblhemi">
                   <l n="1"><hi rendition="#red #fs24pt">D</hi><hi rendition="#small-caps">e</hi>l mar 
                      <choice><orig>tirreno</orig><reg>Tirreno</reg></choice> a la sinistra <choice><orig>riua</orig><reg>riva</reg></choice>&v2c;</l>
@@ -379,6 +380,8 @@ the line wraps. -->
                   <l n="7">Mi spinse&p2c; onde &in; un rio che <choice><orig>lerba</orig><reg>l’erba</reg></choice> asconde</l>
                   <l n="8">Caddi &v2c; &non; <choice><orig>gia</orig><reg>già</reg></choice> come persona <choice><orig>uiua</orig><reg>viva</reg></choice>.</l>
                </lg>
+              </lg>
+              <lg type="sestet">
                <lg type="dblhemi">
                   <l n="9">Solo <choice><orig>ouio</orig><reg>ov’io</reg></choice> era tra boschetti et colli</l>
                   <l n="10">Vergogna ebbi di me&p2c; <choice><orig>chal</orig><reg>ch’al</reg></choice> cor gentile</l>
@@ -392,6 +395,7 @@ the line wraps. -->
                   <l n="13"><choice><orig>Da gliocchi</orig><reg>Dagli occhi</reg></choice> <choice><orig>a</orig><reg>a’</reg></choice> <choice><orig>pie</orig><reg>pie’</reg></choice>&v2c; se del lor esser molli</l>
                   <l n="14"><choice><orig>Glialtri</orig><reg>Gli altri</reg></choice> asciugasse un <choice><orig>piu</orig><reg>più</reg></choice> cortese aprile.</l>
                </lg>
+              </lg>
                <!--notes at bottom:
                   c. 14v contiene solo 30 righe di trascrizione.
 66.1 [r. 1.1]: quella che sembra una virgola fra «gravato» e «et» è, invece, un segno di divisione fra le due parole. 

@@ -328,7 +328,8 @@ lg[type = 'sestina'] l[n = '19'],
 lg[type = 'sestina'] l[n = '25'],
 lg[type = 'sestina'] l[n = '31'],
 lg[type = 'sestina'] l[n = '37'],
-lg[type = 'canzone'] lg[type = 'stanza'] lg[type = 'dblhemi']:first-of-type
+lg[type = 'canzone'] lg[type = 'stanza'] lg[type = 'dblhemi']:first-of-type,
+lg[type = 'madrigal'] lg[type = 'dblhemi']:first-of-type
 {
 position:relative;
 left:-.8em;

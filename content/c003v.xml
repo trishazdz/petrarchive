@@ -66,6 +66,7 @@
       <body>
         <pb n="charta 3 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-003v.jpg" />
               <lg xml:id="rvf007" type="sonnet" n="7">
+                <lg type="octave">
                 <lg type="dblhemi"><l n="1"><hi rendition="#red #fs24pt">M</hi><hi rendition="#small-caps">i</hi>lle fiate<reg>,</reg> o dolce mia guerrera<reg>,</reg></l>	
                   <l n="2">Per <choice><orig>auer</orig><reg>aver</reg></choice> co<reg>’</reg> <choice><orig>be gliocchi</orig><reg>begli occhi</reg></choice> <choice><orig>uostri</orig><reg>vostri</reg></choice> pace</l></lg>
                 <lg type="dblhemi"><l n="3"><choice><orig>Vaggio</orig><reg>V’ aggio</reg></choice> proferto il cor<choice><orig>.</orig><reg>;</reg></choice> <choice><orig>ma uoi</orig><reg>m’ a voi</reg></choice> &non; piace</l>		
@@ -74,9 +75,12 @@
                <l n="6"><choice><orig>Viue</orig><reg>Vive</reg></choice> in <choice><orig>sperança</orig><reg>speranza</reg></choice> debile et fallace<choice><orig>.</orig><reg>:</reg></choice></l></lg>
             <lg type="dblhemi"><l n="7">Mio<reg>,</reg> <choice><orig>ꝑche</orig><reg>perché</reg></choice> sdegno <choice><orig>cio</orig><reg>ciò</reg></choice> <choice><orig>cha</orig><reg>ch’ a</reg></choice> <choice><orig>uoi</orig><reg>voi</reg></choice> dispiace<reg>,</reg></l>	 
                <l n="8">Esser &non; <choice><orig>puo</orig><reg>può</reg></choice> giamai <choice><orig>cosi</orig><reg>così</reg></choice> <choice><orig>comera</orig><reg>com’ era</reg></choice>.</l></lg>
+                </lg>
+                <lg type="sestet">
             <lg type="dblhemi"><l n="9">Or <choice><orig>sio</orig><reg>s’io</reg></choice> lo scaccio<choice><orig>.</orig><reg>,</reg></choice> et <choice><orig><choice><abbr>enō</abbr><expan>enon</expan></choice></orig><reg>e’ non</reg></choice> <choice><orig>troua</orig><reg>trova</reg></choice> in <choice><orig>uoi</orig><reg>voi</reg></choice></l> <l n="10"><choice><orig>Nel exilio</orig><reg>Ne l’exilio</reg></choice> infelice alcun soccorso<choice><orig>.</orig><reg>,</reg></choice></l></lg>
             <lg type="dblhemi"><l n="11"><choice><orig>Ne</orig><reg>Né</reg></choice> sa star sol<choice><orig>.</orig><reg>,</reg></choice> <choice><orig>ne</orig><reg>né</reg></choice> gire <choice><orig>oualtri</orig><reg>ov’ altri</reg></choice> il chiama<choice><orig>.</orig><reg>,</reg></choice></l> <l n="12">Poria smarrire il suo <choice><orig>natǎl</orig><reg>natural</reg></choice> corso<choice><orig>.</orig><reg>:</reg></choice></l></lg>
             <lg type="dblhemi"><l n="13">Che <choice><orig>graue</orig><reg>grave</reg></choice> colpa fia <choice><orig>dambeduo</orig><reg>d’ambeduo</reg></choice> noi<choice><orig>.</orig><reg>,</reg></choice></l> <l n="14">Et tanto <choice><orig>piú</orig><reg>più</reg></choice> de <choice><orig>uoi</orig><reg>voi</reg></choice>&v2c; &quanto; <choice><orig>piu</orig><reg>più</reg></choice> <choice><orig>uama</orig><reg>v’ama</reg></choice>.</l></lg>
+                </lg>
          </lg>
          
         <lg xml:id="rvf039" type="sestina" n="39"  rendition="#columns_2">

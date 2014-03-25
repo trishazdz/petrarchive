@@ -61,6 +61,7 @@
                     </del>
                     <add>
                         <lg type="sonnet" n="194">
+                          <lg type="octave">
                             <lg type="dblhemi">
                                 <l n="1"><hi rendition="#red #fs24pt">L</hi><hi rendition="#small-caps"><reg>&regapos;</reg>a</hi>ura 
                                     gentil <choice><orig>/</orig><reg>,</reg></choice> che rasserena <choice><orig>i</orig><reg>et</reg></choice> poggi</l>
@@ -80,6 +81,8 @@
                                     torbido <orig>/</orig> &amp7; fosco</l>
                                 <l n="8"><choice><orig>Cercol</orig><reg>Cerco &regapos;l</reg></choice> mio sole &amp7; spero <choice><orig>uederlo</orig><reg>vederlo</reg></choice> oggi<reg>.</reg></l>
                             </lg>
+                          </lg>
+                          <lg type="sestet">
                             <lg type="dblhemi">
                                 <l n="9">Nel qual <choice><orig>prouo</orig><reg>provo</reg></choice> <choice><orig>dolceççe</orig><reg>dolcezze</reg></choice> <choice><orig>tāte</orig><reg>tante</reg></choice> 
                                     &amp7; tali</l>
@@ -94,6 +97,7 @@
                                 <l n="13"><choice><orig>Maperir</orig><reg>Ma perir</reg></choice> mi <choice><orig>dalciel</orig><reg>dà &regapos;l ciel</reg></choice> per questa luce&p2c;</l>
                                 <l n="14"><choice><orig>Che</orig><reg>Chè</reg></choice> <choice><orig><abbr>dalūge</abbr><expan>dalunge</expan></orig><reg>da lunge</reg></choice> <choice><orig>mistruggo</orig><reg>mi struggo</reg></choice>&p2c; <choice><orig>etda</orig><reg>et da</reg></choice> <choice><orig>presso¦ardo</orig><reg>presso ardo</reg></choice><reg>.</reg></l>
                             </lg>
+                          </lg>
                         </lg>
                     </add>
                 </subst>
@@ -102,7 +106,8 @@
             <!-- check "broken bar" + the whole sonnet is over erasure-->
             
             <lg type="sonnet" n="195">
-                <lg type="dblhemi">
+                <lg type="octave">
+                  <lg type="dblhemi">
                     <l n="1"><hi rendition="#blue #fs24pt"
                         >D</hi><hi rendition="#small-caps">i</hi> <choice><orig>di</orig><reg>dì</reg></choice> in <choice><orig>di</orig><reg>dì</reg></choice> <choice><orig>uo</orig><reg>vo</reg></choice> 
                         <choice><orig>cāgiando</orig><reg>cangiando</reg></choice> <choice><orig>iluiso</orig><reg>il viso</reg></choice> <choice><orig>elpelo</orig><reg>e &regapos;l pelo</reg></choice>&p2c;</l>
@@ -124,6 +129,8 @@
                     <l n="7"><choice><orig>Lasua</orig><reg>La sua</reg></choice> <choice><orig>bellombra</orig><reg>bell&regapos;ombra</reg></choice>&p2c; &amp7; <choice><orig>chi</orig><reg>ch&regapos;i&regapos;</reg></choice> &non; odi <orig>/</orig> &amp7; ami<orig>.</orig></l>
                     <l n="8"><choice><orig>Lalta</orig><reg>L&regapos;alta</reg></choice> piaga amorosa<choice><orig> /</orig><reg>,</reg></choice> che mal celo.</l>
                 </lg>
+                </lg>
+              <lg type="sestet">
                 <lg type="dblhemi">
                     <l n="9">&Non; spero <choice><orig>delmio</orig><reg>del mio</reg></choice> <choice><orig>affāno</orig><reg>affanno</reg></choice> 
                         <choice><orig>auer</orig><reg>aver</reg></choice> mai posa&p2c;</l>
@@ -141,8 +148,10 @@
                     <l n="14"><choice><orig>Chamor</orig><reg>Ch&regapos;Amor</reg></choice> <choice><orig>cosuoi</orig><reg>co&regapos; suoi</reg></choice> belli occhi <choice><orig>alcor</orig><reg>al cor</reg></choice> 
                         <choice><orig><abbr>mīpresse</abbr><expan>mimpresse</expan></orig><reg>m&regapos;impresse</reg></choice>.</l>
                 </lg>
+              </lg>
             </lg>
             <lg type="sonnet" n="196">
+              <lg type="octave">
                 <lg type="dblhemi">
                     <l n="1"><hi rendition="#red #fs24pt"
                         >L</hi><hi rendition="#small-caps"><choice><orig>a</orig><reg>&regapos;a</reg></choice></hi>ura serena che fra <choice><orig>uerdi</orig><reg>verdi</reg></choice> fronde</l>
@@ -167,6 +176,8 @@
                         <choice><orig><abbr>engēme</abbr><expan>engemme</expan></orig><reg>e &regapos;n gemme</reg></choice>&p2c;</l>
                     <l n="8">Allora sciolte<orig>.</orig> &amp7; <choice><orig>soura</orig><reg>sovra</reg></choice> or terso bionde&p2c;</l>
                 </lg>
+              </lg>
+              <lg type="sestet">
                 <lg type="dblhemi">
                     <l n="9"><choice><orig>Lequali</orig><reg>Le quali</reg></choice> ella spargea<choice><orig> /</orig><reg>,</reg></choice> &si; dolcemente&p2c;</l>
                     <l n="10">&Amp7; raccoglea <choice><orig><abbr>cōsi</abbr><expan>consi</expan></orig><reg>con sì</reg></choice> 
@@ -184,8 +195,10 @@
                         cor <choice><orig>dun</orig><reg>d&regapos;un</reg></choice> laccio &si; possente&p2c;</l>
                     <l n="14">Che morte sola fia <choice><orig>chindi</orig><reg>ch&regapos;indi</reg></choice> lo snodi.</l>
                 </lg>
+              </lg>
             </lg>
             <lg type="sonnet" n="197">
+              <lg type="octave">
                 <lg type="dblhemi">
                     <l n="1"><hi rendition="#blue #fs24pt"
                         >L</hi><hi rendition="#small-caps"><reg>&regapos;</reg>a</hi>ura celeste <choice><orig>chen</orig><reg>che &regapos;n</reg></choice> quel <choice><orig>uerde</orig><reg>verde</reg></choice> lauro<orig>.</orig></l>
@@ -208,6 +221,8 @@
                     <l n="8"><choice><orig>Laue</orig><reg>Là &regapos;ve</reg></choice> il sol perde&p2c; &non; pur 
                         <choice><orig>lambra</orig><reg>l&regapos;ambra</reg></choice><orig> /</orig> <choice><orig>olauro</orig><reg>o l&regapos;auro</reg></choice>.</l>
                 </lg>
+              </lg>
+              <lg type="sestet">
                 <lg type="dblhemi">
                     <l n="9">Dico <choice><orig>lechiome</orig><reg>le chiome</reg></choice> <choice><orig>biōde</orig><reg>bionde</reg></choice>
                         <orig> /</orig> <choice><orig>el</orig><reg>e &regapos;l</reg></choice> crespo laccio&p2c;</l>
@@ -227,6 +242,7 @@
                         <choice><orig><abbr>āno</abbr><expan>anno</expan></orig><reg>ànno</reg></choice> 
                         <choice><orig>uertu</orig><reg>vertù</reg></choice> di farne un marmo.</l>
                 </lg>
+              </lg>
                 
                 <!-- Sonnet 197: erasures, different?-->
                 <!-- Sonnet 197: line 10, hoe to encode blank space? -->

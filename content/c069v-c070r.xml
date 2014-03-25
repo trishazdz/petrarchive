@@ -203,6 +203,7 @@
             <space corresp="#msline"/>
             <space corresp="#msline"/>
             <lg xml:id="rvf361" type="sonnet" n="357 [361]">
+              <lg type="octave">
                <lg type="dblhemi" corresp="#msline">
                   <l n="1"><hi rendition="#black #fs24pt">D</hi>icemi spesso il mio fidato speglio<choice><orig>.</orig><reg>,</reg></choice></l>    
                   <l n="2">L<reg>’</reg>animo <choice><abbr>stāco</abbr><expan>stanco</expan></choice><choice><orig> <g ref="#virgsusp"/></orig><reg>,</reg></choice> &amp7; 
@@ -224,6 +225,8 @@
                   <l n="8"><choice><orig><choice><abbr>Dunlūgo</abbr><expan>Dunlungo</expan></choice></orig><reg>D’un lungo</reg></choice> &amp7; 
                      <choice><orig>graue</orig><reg>grave</reg></choice> <choice><abbr>sōno</abbr><expan>sonno</expan></choice> mi <choice><orig>risueglio</orig><reg>risveglio</reg></choice><reg>,</reg></l>
                </lg>
+              </lg>
+              <lg type="sestet">
                <lg type="dblhemi" corresp="#msline">
                   <l n="9">Et <choice><orig>ueggio</orig><reg>veggio</reg></choice> ben <choice><orig>chelnostro</orig><reg>che ’l nostro</reg></choice> <choice><orig>uiuer</orig><reg>viver</reg></choice> <choice><orig>uola</orig><reg>vola</reg></choice></l> 
                   <l n="10">Et <choice><orig>chessernon</orig><reg>ch’esser non</reg></choice> si <choice><orig>po</orig><reg>pò</reg></choice> <choice><orig>piu</orig><reg>più</reg></choice> d<reg>’</reg>una <choice><orig>uolta</orig><reg>volta</reg></choice>.</l>
@@ -237,6 +240,7 @@
                      fu <choice><orig>si</orig><reg>sì</reg></choice> sola<choice><orig><g ref="#virgsusp"/></orig><reg>,</reg></choice></add></subst></l>    
                   <l n="14"><choice><orig>Chatutte</orig><reg>Ch’a tutte</reg></choice>&v2c; s<reg>’</reg>i<reg>’</reg> &non; erro<choice><orig> /</orig><reg>,</reg></choice> fama <choice><orig>a</orig><reg>à</reg></choice> tolta.</l>
                </lg>
+              </lg>
             </lg>
          </ab>
                  <ab type="edition">

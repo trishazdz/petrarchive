@@ -340,6 +340,7 @@
                </lg>
             </lg>
          </lg>
+         </lg>
             <space corresp="#canvasline"/>
             <lg type="madrigal" n="106">
                <lg type="dblhemi" corresp="#canvasline">
@@ -362,6 +363,7 @@
             </lg>
             <space corresp="#canvasline"/>
             <lg type="sonnet" n="107">
+              <lg type="octave">
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="1"><hi rendition="#blue #fs24pt"
                      >N</hi><hi rendition="#small-caps">o</hi>n <choice><orig>ueggio</orig><reg>veggio</reg></choice> <choice><orig>oue</orig><reg>ove</reg></choice> scampar mi possa omai<choice><orig>.</orig><reg>:</reg></choice></l>
@@ -379,6 +381,8 @@
                   <l n="7">Risplendon <choice><orig>si</orig><reg>sì</reg></choice> ch<reg>’</reg>al quintodecimo <choice><abbr>āno</abbr><expan>anno</expan></choice></l>
                   <l n="8">M<reg>’</reg>abbaglian <choice><orig>piu</orig><reg>più</reg></choice> che<reg> ’</reg>l primo giorno assai<choice><orig>.</orig><reg>;</reg></choice></l>
                </lg>
+              </lg>
+              <lg type="sestet">
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="9">Et l<reg>’</reg>imagine lor son <choice><orig>si</orig><reg>sì</reg></choice> cosparte</l>
                   <l n="10">Che <choice><orig>uoluer</orig><reg>volver</reg></choice> non mi posso<choice><orig> &virg;</orig><reg>,</reg></choice> <choice><orig>ouio</orig><reg>ov’io</reg></choice> non <choice><orig>ueggia</orig><reg>veggia</reg></choice><choice><orig>.</orig><reg></reg></choice></l>
@@ -391,8 +395,8 @@
                   <l n="13">Che<reg> ’</reg>l mio <choice><orig>aduersario</orig><reg>adversario</reg></choice> <choice><abbr>cō</abbr><expan>con</expan></choice> mirabil arte</l>
                   <l n="14">Vago fra i rami <choice><orig>ouunque</orig><reg>ovunque</reg></choice> <choice><orig>uuol</orig><reg>vuol</reg></choice> m<reg>’</reg>adduce.</l>
                </lg>
+              </lg>
             </lg>
-         </lg>
       </body>
    </text>
 </TEI>

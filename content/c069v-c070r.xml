@@ -107,7 +107,7 @@
                   <localName>entity</localName>
                   <value>qbardes</value>
                </charProp>
-               <mapping type="visual"><!-- how to mark? --></mapping>
+               <mapping type="visual">&#xa757;</mapping>
                <mapping type="MUFI">U+A757</mapping>
                <mapping type="PUA">U+A757</mapping>
             </char>

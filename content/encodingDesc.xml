@@ -43,7 +43,18 @@
         </category>
       </taxonomy>
     </classDecl>
-  
+  <charDecl>
+    <char xml:id="qbardes">
+      <charName>LATIN SMALL LETTER Q WITH STROKE THROUGH DESCENDER</charName>
+      <charProp>
+        <localName>entity</localName>
+        <value>qbardes</value>
+      </charProp>
+      <mapping type="visual">&#xa757;</mapping>
+      <mapping type="MUFI">U+A757</mapping>
+      <mapping type="PUA">U+A757</mapping>
+    </char>
+  </charDecl>
     <charDecl>
         <char xml:id="punctelevhiback">
             <charName>PUNCTUS ELEVATUS WITH HIGH

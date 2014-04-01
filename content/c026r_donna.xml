@@ -122,6 +122,18 @@
                <mapping type="PUA">U+007C</mapping>
             </char>
          </charDecl>
+         <charDecl>
+            <char xml:id="lcurlbrup">
+               <charName>LEFT CURLY BRACKET UPPER HOOK</charName>
+               <charProp>
+                  <localName>entity</localName>
+                  <value>lcurlbrup</value>
+               </charProp>
+               <mapping type="visual">&#x23A7;</mapping>
+               <mapping type="MUFI">U+23A7</mapping>
+               <mapping type="PUA">U+23A7</mapping>
+            </char>
+         </charDecl>
          
          
          <!-- needs encoding of LEFT CURLY BRACKET UPPER HOOK (v.4 and 6). This actually is NOT in MUFI. 
@@ -137,20 +149,20 @@
          <lg type="ballata">
             <lg type="dblhemi">
                <l n="1"><hi rendition="#fs24pt">D</hi><choice><abbr>ōna</abbr><expan>onna</expan></choice> 
-                  mi uene spesso ne la mente<choice><orig> )</orig><reg>;</reg></choice></l>
-               <l n="2">Altra <choice><abbr>dōna</abbr><expan>donna</expan></choice> <choice><orig>ue</orig><reg>u'è</reg></choice> sempre<choice><orig>;</orig><reg>,</reg></choice></l>
+                  mi <choice><orig>uene</orig><reg>vene</reg></choice> spesso ne la mente<choice><orig> )</orig><reg>;</reg></choice></l>
+               <l n="2">Altra <choice><abbr>dōna</abbr><expan>donna</expan></choice> <choice><orig>ue</orig><reg>v’è</reg></choice> sempre<choice><orig>;</orig><reg>,</reg></choice></l>
             </lg>
-            <l n="3">Ond<reg>’</reg>io temo si stempre <choice><orig>&virg;</orig><reg></reg></choice> il cor ardente<choice><orig> .</orig><reg>.</reg></choice></l>
+            <l n="3">Ond<reg>’ </reg>io temo si stempre <choice><orig>&virg;</orig><reg></reg></choice> il cor ardente<choice><orig> .</orig><reg>.</reg></choice></l>
             <lg type="dblhemi">
-               <l n="4">Quella il notrica in amorosa &fiamma;<choice><orig><g ref="#punctelevhiback"/></orig><reg></reg></choice></l>
+               <l n="4"><choice><orig><g ref="lcurlbrup"/></orig><reg></reg></choice> Quella il notrica in amorosa &fiamma;<choice><orig> <g ref="#verbar"/></orig><reg></reg></choice></l>
                <l n="5">Con un dolce martir pien di desire<choice><orig> .</orig><reg>;</reg></choice></l>
             </lg>
             <lg type="dblhemi">
-               <l n="6">Questa lo strugge oltra mesura <choice><orig>en</orig><reg>'n</reg></choice> &fiamma;<choice><orig><g ref="#punctelevhiback"/></orig><reg>,</reg></choice></l>
-               <l n="7">Tanto <choice><orig>chadoppio</orig><reg>ch' a doppio</reg></choice> <choice><orig>e</orig><reg>è</reg></choice> <choice><orig>força</orig><reg>forza</reg></choice> che sospire<choice><orig> .</orig><reg>.</reg></choice></l>
+               <l n="6">Questa lo strugge oltra mesura <choice><orig>en</orig><reg>e ’n</reg></choice> &fiamma;<choice><orig> <g ref="#verbar"/></orig><reg></reg></choice></l>
+               <l n="7">Tanto <choice><orig>chadoppio</orig><reg>ch’ a doppio</reg></choice> <choice><orig>e</orig><reg>è</reg></choice> <choice><orig>força</orig><reg>forza</reg></choice> che sospire<choice><orig> .</orig><reg>.</reg></choice></l>
             </lg>
             <lg type="dblhemi">
-               <l n="8"><choice><orig>Ne</orig><reg>Né</reg></choice> <choice><orig>ual</orig><reg>val</reg></choice> perch<reg>’</reg>io m<reg>’</reg>adire<choice><orig> &virg;</orig><reg></reg></choice> &amp; arme il core<choice><orig><g ref="#punctelevhiback"/></orig><reg>,</reg></choice></l>
+               <l n="8"><choice><orig><g ref="lcurlbrup"/></orig><reg></reg></choice> <choice><orig>Ne</orig><reg>Né</reg></choice> <choice><orig>ual</orig><reg>val</reg></choice> perch<reg>’</reg>io m<reg>’</reg>adire<choice><orig> &virg;</orig><reg></reg></choice> &amp7; arme il core<choice><orig><g ref="#punctelevhiback"/></orig><reg>,</reg></choice></l>
                <l n="9">Ch<reg>’</reg>i<reg>’</reg> non so come <choice><orig>amore</orig><reg>Amore</reg></choice><choice><orig><g ref="#punctelevhiback"/></orig><reg>,</reg></choice></l>
             </lg>
             <l n="10">Di che forte mi sdegno<reg>,</reg> lel consente<choice><orig>.,</orig><reg>.</reg></choice></l>    

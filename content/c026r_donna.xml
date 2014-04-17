@@ -105,7 +105,8 @@
                   <localName>entity</localName>
                   <value>punctelevhiback</value>
                </charProp>
-               <mapping type="visual">.&#x0312;</mapping>
+               <!--<mapping type="visual">.&#x0312;</mapping>-->
+               <mapping type="visual">&#xF1FA;</mapping>
                <mapping type="MUFI">U+F1FA</mapping>
                <mapping type="PUA">U+F1FA</mapping>
             </char>

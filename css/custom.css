@@ -1,7 +1,19 @@
 /* Place project-specific CSS here */
 
+@font-face {
+    font-family: 'andron_scriptor_webregular';
+    src: url('fonts/andron_scriptor_web-webfont.eot');
+    src: url('fonts/andron_scriptor_web-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/andron_scriptor_web-webfont.woff') format('woff'),
+         url('fonts/andron_scriptor_web-webfont.ttf') format('truetype'),
+         url('fonts/andron_scriptor_web-webfont.svg#andron_scriptor_webregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 html {
-font-family: cochin, serif;
+font-family: 'Andron Scriptor Web' !important;
 font-size:24px;
 background-color:white;
 width:1100px;
@@ -466,6 +478,29 @@ lg[id = 'rvf360'] l[n = '45']
 /* deletions are indicated with an underdot. We don't want the strikethrough. */
 del {text-decoration:none;}
 
+/* Stuff for palimpsests:start */
+
+ab[type = 'blockSubst'] subst del[type = 'erasure'] lg[type = 'ballata'] {
+  display:none;
+  position:relative;
+  top:40px;
+  margin-bottom:72px;
+}
+
+.manicule-palimpsest-trigger {
+  font-size:24pt;
+  width:50px;
+  height: 40px;
+  padding: 0 5px 5px 5px;
+  position:relative;
+  top:110px;
+  left:850px;
+  z-index:100;
+}
+
+
+
+/* Stuff for palimpsests:end */
 
 
 

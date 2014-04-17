@@ -9,6 +9,7 @@ function addPageBreaks(){
 
 }
 
+/*
 function init(){
 	document.getElementById('pbToggle').onclick = function(){
 		if(document.getElementById('pbToggle').checked){
@@ -20,7 +21,7 @@ function init(){
 	addPageBreaks();
 	document.getElementById('pbToggle').checked = false;
 }
-
+*/
 //If W3C event model used, prefer that. Window events are fallbacks
 if(document.addEventListener){
 	//W3C event model used

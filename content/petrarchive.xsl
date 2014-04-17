@@ -26,7 +26,7 @@
                 <xsl:value-of select="normalize-space(id(substring-after(@ref,'#'))/tei:mapping[@type = 'visual'])"/>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:value-of select="concat('[',normalize-space(id(substring-after(@ref,'#'))/tei:charName),']')"/>
+               <xsl:value-of select="concat('[',normalize-space(id(substring-after(@ref,'#'))/tei:charName),']')"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -77,11 +77,13 @@
           <script type="text/javascript" src="{$jqueryJS}"></script>
           <!-- <script type="text/javascript" src="{$jqueryBlockUIJS}"></script>-->
           <script type="text/javascript" src="{$teibpJS}"></script>
+          <script type="text/javascript" src="../js/petrarchive.js"></script>
             <script type="text/javascript">
                 function switchCustomCSS(theme) {
                 document.getElementById('customcss').href=theme.options[theme.selectedIndex].value;
                 }
             </script>
+          
             <xsl:call-template name="rendition2style"/>
             <title><xsl:value-of select="$htmlTitle"/><!-- don't leave empty. --></title>
             <xsl:if test="$includeAnalytics = true()">
@@ -161,6 +163,28 @@ Powered by <a href="{$teibpHome}">TEI Boilerplate</a>.
   
   <xsl:template name="siteNavigation">
     <nav><a href="../index.html">Petr<i>archive</i> home</a></nav>
+  </xsl:template>
+  
+  <xsl:template match="tei:ab[@type = 'blockSubst']">
+    <xsl:variable name="maniculeId" select="concat(@xml:id,'Trigger')"/>
+    <button id="{$maniculeId}" class="manicule-palimpsest-trigger">
+      <xsl:attribute name="onclick">
+        <!-- <xsl:value-of select="concat('showHide(&quot;',$maniculeId,'&quot;,&quot;',tei:subst/tei:del/tei:lg/@xml:id, '&quot;,&quot;',tei:subst/tei:add/tei:lg/@xml:id,'&quot;)'"/> -->
+        <xsl:value-of select="'JavaScript:showHide('"/>
+        <xsl:value-of select="$apos"/>
+        <xsl:value-of select="$maniculeId"/>
+        <xsl:value-of select="concat($apos,',',$apos)"/>
+        <xsl:value-of select="normalize-space(tei:subst/tei:del/tei:lg/@xml:id)"/>
+        <xsl:value-of select="concat($apos,',',$apos)"/>
+        <xsl:value-of select="normalize-space(tei:subst/tei:add/tei:lg/@xml:id)"/>
+        <xsl:value-of select="concat($apos,')')"/>
+      </xsl:attribute>  
+      <xsl:value-of select="'&#x261C;'"/>
+    </button>
+      <xsl:element name="{local-name()}">
+        <xsl:call-template name="addID"/>
+        <xsl:apply-templates select="@*|node()"/>
+      </xsl:element>
   </xsl:template>
         
     

@@ -11,6 +11,10 @@ choice > orig { display: none; }
 /* choice > expan */
 del { display: none; }
 
+subst del[type = 'erasure'] {
+ display:block !important;
+}
+
 /* rvf360 virtual stuff */
 #rvf361 {
   position:relative;

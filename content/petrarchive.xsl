@@ -20,13 +20,13 @@
     <xsl:param name="customCSS" select="concat($filePrefix,'/css/custom.css')"/>
     
     <xsl:template match="tei:g" priority="99">
-        
+      <xsl:variable name="charId" select="substring-after(@ref,'#')"/>
         <xsl:choose>
-            <xsl:when test="id(substring-after(@ref,'#'))/tei:mapping[@type = 'visual']">
-                <xsl:value-of select="normalize-space(id(substring-after(@ref,'#'))/tei:mapping[@type = 'visual'])"/>
+            <xsl:when test="//tei:char[@xml:id = $charId]/tei:mapping[@type = 'visual']">
+              <xsl:value-of select="normalize-space(//tei:char[@xml:id = $charId]/tei:mapping[@type = 'visual'])"/>
             </xsl:when>
             <xsl:otherwise>
-               <xsl:value-of select="concat('[',normalize-space(id(substring-after(@ref,'#'))/tei:charName),']')"/>
+              <xsl:value-of select="concat('[',normalize-space(//tei:char[@xml:id = $charId]/tei:charName),']')"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>

@@ -74,7 +74,8 @@
             <meta charset="UTF-8"/>
             <link id="maincss" rel="stylesheet" type="text/css" href="{$teibpCSS}"/>
             <link id="customcss" rel="stylesheet" type="text/css" href="{$customCSS}"/>
-          <script type="text/javascript" src="{$jqueryJS}"></script>
+            <script type="text/javascript" src="{$jqueryJS}"></script>
+
           <!-- <script type="text/javascript" src="{$jqueryBlockUIJS}"></script>-->
           <script type="text/javascript" src="{$teibpJS}"></script>
           <script type="text/javascript" src="../js/petrarchive.js"></script>
@@ -167,7 +168,7 @@ Powered by <a href="{$teibpHome}">TEI Boilerplate</a>.
   
   <xsl:template match="tei:ab[@type = 'blockSubst']">
     <xsl:variable name="maniculeId" select="concat(@xml:id,'Trigger')"/>
-    <button id="{$maniculeId}" class="manicule-palimpsest-trigger">
+    <div id="{$maniculeId}" class="manicule-palimpsest-trigger">
       <xsl:attribute name="onclick">
         <!-- <xsl:value-of select="concat('showHide(&quot;',$maniculeId,'&quot;,&quot;',tei:subst/tei:del/tei:lg/@xml:id, '&quot;,&quot;',tei:subst/tei:add/tei:lg/@xml:id,'&quot;)'"/> -->
         <xsl:value-of select="'JavaScript:showHide('"/>
@@ -180,7 +181,7 @@ Powered by <a href="{$teibpHome}">TEI Boilerplate</a>.
         <xsl:value-of select="concat($apos,')')"/>
       </xsl:attribute>  
       <xsl:value-of select="'&#x261C;'"/>
-    </button>
+    </div>
       <xsl:element name="{local-name()}">
         <xsl:call-template name="addID"/>
         <xsl:apply-templates select="@*|node()"/>

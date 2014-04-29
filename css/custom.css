@@ -249,6 +249,7 @@ choice corr + sic:before,
 choice orig + reg:before,
 choice reg + orig:before {
   content: "";
+  display:inline !important;
 }
 choice abbr + expan:after,
 choice expan + abbr:after,
@@ -257,6 +258,7 @@ choice corr + sic:after,
 choice orig + reg:after,
 choice reg + orig:after {
   content: "";
+  display:inline !important;
 } 
 
 span[aria-hidden = 'true'] {
@@ -488,7 +490,8 @@ ab[type = 'blockSubst'] subst del[type = 'erasure'] lg[type = 'ballata'] {
 }
 
 .manicule-palimpsest-trigger {
-  font-size:24pt;
+  font-family: 'Apple Symbols','arial unicode ms',serif !important;
+  font-size:36pt;
   width:50px;
   height: 40px;
   padding: 0 5px 5px 5px;
@@ -496,6 +499,7 @@ ab[type = 'blockSubst'] subst del[type = 'erasure'] lg[type = 'ballata'] {
   top:110px;
   left:850px;
   z-index:100;
+  cursor:pointer;
 }
 
 

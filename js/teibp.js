@@ -22,6 +22,7 @@ function init(){
 	document.getElementById('pbToggle').checked = false;
 }
 */
+/*
 //If W3C event model used, prefer that. Window events are fallbacks
 if(document.addEventListener){
 	//W3C event model used
@@ -32,6 +33,7 @@ if(document.addEventListener){
 	document.attachEvent( "onreadystatechange", init);
 	window.attachEvent( "onload", init);
 }
+*/
 
 function switchThemes(theme) {
 	document.getElementById('maincss').href=theme.options[theme.selectedIndex].value;
@@ -65,10 +67,6 @@ function showFacs(num, url, id) {
 	facsWindow.document.write("<body>")
 	facsWindow.document.write("<nav><a href='../index.html'>Petr<i>archive</i> home</a></nav>")
 	facsWindow.document.write($("teiHeader")[0].outerHTML)
-	//facsWindow.document.write("<teiHeader>" + $("teiHeader")[0].html() + "</teiHeader>")
-	//facsWindow.document.write($('<teiHeader>').append($('teiHeader').clone()).html();)
-	
-	//facsWindow.document.write($("teiHeader")[0].outerHTML)
 	facsWindow.document.write("<div id='resizable'>")
 	facsWindow.document.write("<div class='facsImage'>")
 	$(".-teibp-thumbnail").each(function() {

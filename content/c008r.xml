@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="petrarchive.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="petrarchive.xsl"?>
+<!DOCTYPE TEI [
+<!-- Firefox does not play nice with parameter entities. So I had to embed the stuff in here. We can go back to the "better" way with parameter entities, but need to pre-process the documents to remove all entity references before moving to petarchive.org. 
+<!ENTITY % petrarchive_entities SYSTEM "petrarchive.ent">
+%petrarchive_entities;
+-->
+<!ENTITY amp7 "<choice><abbr>&amp;</abbr><expan>et</expan></choice>">
+<!ENTITY Amp7 "<choice><abbr>&amp;></abbr><expan>Et</expan></choice>">
+<!ENTITY per "<choice><abbr>ꝑ</abbr><expan>per</expan></choice>">
+<!ENTITY Per "<choice><abbr>Ꝑ</abbr><expan>Per</expan></choice>">
+<!ENTITY virg "/">
+<!ENTITY virg-underdot "/&#x0323;">
+<!ENTITY Non "<choice><abbr>Nō</abbr><expan>Non</expan></choice>">
+<!ENTITY impresa "<choice><abbr>īpresa</abbr><expan>impresa</expan></choice>">
+<!ENTITY Impresa "<choice><abbr>Īpresa</abbr><expan>Impresa</expan></choice>">
+<!ENTITY sempre "<choice><abbr>sēpre</abbr><expan>sempre</expan></choice>">
+<!ENTITY Sempre "<choice><abbr>Sēpre</abbr><expan>Sempre</expan></choice>">
+<!ENTITY quanto "<choice><abbr>quāto</abbr><expan>quanto</expan></choice>">
+<!ENTITY Quanto "<choice><abbr>Quāto</abbr><expan>Quanto</expan></choice>">
+<!ENTITY quando "<choice><abbr>quādo</abbr><expan>quando</expan></choice>">
+<!ENTITY Quando "<choice><abbr>Quādo</abbr><expan>Quando</expan></choice>">
+<!ENTITY giorno "<choice><abbr>giõno</abbr><expan>giorno</expan></choice>">
+<!ENTITY non "<choice><abbr>nō</abbr><expan>non</expan></choice>">
+<!ENTITY in "<choice><abbr>ī</abbr><expan>in</expan></choice>">
+<!ENTITY pre "<choice><abbr>&p-macron;</abbr><expan>pre</expan></choice">
+<!ENTITY con "<choice><abbr>cō</abbr><expan>con</expan></choice>">
+<!ENTITY Con "<choice><abbr>cō</abbr><expan>Con</expan></choice>">
+<!ENTITY son "<choice><abbr>sō</abbr><expan>son</expan></choice>">
+<!ENTITY Son "<choice><abbr>sō</abbr><expan>Son</expan></choice>">
+<!ENTITY q-tilde "q&#x0303;">
+<!ENTITY q-macron "q&#x0304;">
+<!ENTITY p-macron "p&#x0304;">
+<!ENTITY b-combtild "b&#xFE23;">
+<!ENTITY p-dot "p&#x0307;">
+<!ENTITY u-vert-tilde "u&#x033E;">
+<!ENTITY p-vert-line "p&#x030D;">
+<!ENTITY uia "<choice><orig>uia</orig><reg>via</reg></choice>">
+<!ENTITY uai "<choice><orig>uai</orig><reg>vai</reg></choice>">
+
+<!-- period "p" to "2" comma "c" -->
+<!ENTITY p2c "<choice><orig>.</orig><reg>,</reg></choice>">
+<!ENTITY p2colon "<choice><orig>.</orig><reg>:</reg></choice>">
+<!ENTITY p2semicolon "<choice><orig>.</orig><reg>;</reg></choice>">
+<!ENTITY p2e "<choice><orig>.</orig><reg>!</reg></choice>">
+<!ENTITY c2p "<choice><orig>,</orig><reg>.</reg></choice>">
+<!ENTITY v2c "<choice><orig> /</orig><reg>,</reg></choice>">
+<!ENTITY regapos "<reg>’</reg>">
+<!ENTITY uolta "<choice><orig>uolta</orig><reg>volta</reg></choice>">
+<!ENTITY uolte "<choice><orig>uolte</orig><reg>volte</reg></choice>">
+<!ENTITY egrave_reg "<choice><orig>e</orig><reg>è</reg></choice>">
+<!ENTITY si "<choice><orig>si</orig><reg>sì</reg></choice>">
+<!ENTITY Si "<choice><orig>Si</orig><reg>Sì</reg></choice>">
+<!ENTITY pilcrow2section "<choice><orig>¶</orig><reg>§</reg></choice>">
+<!ENTITY encodingDesc SYSTEM "encodingDesc.xml"> 
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Petrarch’s <title rendition="#i">Rerum vulgarium fragmenta</title>: Charta 1 verso</title>
+            <editor xml:id="hws">H. Wayne Storey</editor>
+            <editor xml:id="jaw">John A. Walsh</editor>
+            <respStmt>
+               <resp>Encoder</resp>
+               <name xml:id="amm">Allison M. McCormack</name>
+            </respStmt>
+            <respStmt>
+               <resp>Encoder</resp>
+               <name xml:id="im">Isabella Magni</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <seriesStmt>
+            <title>The Petrarchive: An Edition of Petrarch’s Songbook</title>
+            <respStmt>
+               <resp> Edited by </resp>
+               <name> Wayne Storey </name>
+               <name> John Walsh</name>
+            </respStmt>
+         </seriesStmt>
+         <sourceDesc>
+            <msDesc xml:id="vat.lat.3195">
+               <msIdentifier>
+                  <country>Vatican City</country>
+                  <repository>Vatican Library</repository>
+                  <collection>Vat. lat.</collection>
+                  <idno>3195</idno>
+                  <msName>Vat. lat. 3195</msName>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      &encodingDesc;
+   </teiHeader>
+   
+   
+   <text>
+      <body>
+         <pb n="charta 1 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-008r.jpg" />
+         <lg type="sonnet" n="32">
+            <lg type="octave">
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="1"><hi rendition="#red #fs24pt"
+                     >Q</hi><hi rendition="#small-caps">v</hi>anto piu mauicino al giorno extremo</l>
+                  <l n="2">Che lumana miseria suol far breue &virg;</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="3">Piu ueggio il <choice><abbr>tēpo</abbr><expan>tempo</expan></choice> andar ueloce et leue.</l>
+                  <l n="4">El mio di lui sperar fallace &amp7; scemo.</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="5">I dico a miei pensieri &non; molto andremo</l>
+                  <l n="6">Damor <choice><abbr>parlādo</abbr><expan>parlando</expan></choice> omai chel duro &amp7; greue</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="7">Terreno incarco come frescha neue</l>
+                  <l n="8">Si ua struggēdo. onde noi pace auremo.</l>
+               </lg>
+            </lg>
+            <lg type="sestet">
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="9">Perche col lui cadra quella sperança</l>
+                  <l n="10">Che ne fe uaneggiar si lungamente.</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="11">El riso el pianto. &amp7; la paura et lira.</l>
+                  <l n="12">Si uedrem chiaro poi come souente</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="13">Per le cose dubbiose altri sauança.</l>
+                  <l n="14">Et co[m]e spesso indarno si sospira.</l>
+               </lg>
+            </lg>
+         </lg>
+         <space corresp="#canvasline"/>
+         <lg type="sonnet" n="33">
+            <lg type="octave">
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="1"><hi rendition="#blue #fs24pt">G</hi><hi rendition="#small-caps">i</hi>a <choice><abbr>fiāmeggiaua</abbr><expan>fiammeggiaua</expan></choice> lamorosa stella </l>
+                  <l n="2">Per loriente &virg; et laltra che giunone</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="3">Suol far gelosa nel septentrione</l>
+                  <l n="4">Rotaua i raggi suoi lucente et bella.</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="5">Leuata era a filar la uecchiarella</l>
+                  <l n="6">Discinta &amp7; scalça. &amp7; desto aueal carbone.</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="7">Et gliamanti pungea quella stagione.</l>
+                  <l n="8">Che &per; usança a lagrimar gliappella.</l>
+               </lg>
+            </lg>
+            <lg type="sestet">
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="9">Quando mia speme gia <choice><abbr>cōdutta</abbr><expan>condutta</expan></choice> la uerde</l>
+                  <l n="10">Giunse nel cor &virg; &non; per lusata uia.</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="11">Chel sonno tenea chiusa. el dolor molle.</l>
+                  <l n="12">Quanto cangiata oime da quel di pria.</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="13">Et parea dir &per;che tuo ualor perde <g ref="#punctinter"/></l>
+                  <l n="14">Veder questocchi anchor non ti si tolle.</l>
+               </lg>
+            </lg>
+         </lg>
+         <space corresp="#canvasline"/>
+         <lg type="sonnet" n="34">
+            <lg type="octave">
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="1"><hi rendition="#red #fs24pt">A</hi><hi rendition="#small-caps">p</hi>ollo, sanchor uiue il bel desio &virg;</l>
+                  <l n="2">Che tin fiammaua a le thesaliche onde &virg-underdot;</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="3">Et se &non; ai lamate chiome bionde &virg;</l>
+                  <l n="4">Volgendo gli anni gia poste in oblio</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="5">Dal pigro gielo &virg; &amp7; dal <choice><abbr>tēpo</abbr><expan>tempo</expan></choice> aspro &amp7; rio &virg;</l>
+                  <l n="6">Che dura quantol tuo uiso sasconde &virg;</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="7">Difendi or lonorata &amp7; sacra fronde.</l>
+                  <l n="8">Oue tu prima, et poi fu inuescato io.</l>
+               </lg>
+            </lg>
+            <lg type="sestet">
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="9">Et per uertu de lamorosa speme &virg;</l>
+                  <l n="10">Che ti sostenne ne la uita acerba</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="11">Di queste impressioni laere <choice><abbr>disgōbra</abbr><expan>disgombra</expan></choice>.</l>
+                  <l n="12">Si uedrem poi &per; merauiglia &in;seme</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="13">Seder la donna nostra sopra lerba.</l>
+                  <l n="14">Et far de le sue braccia a se stessa ombra.</l>
+               </lg>
+            </lg>
+         </lg>
+         <space corresp="#canvasline"/>
+         <lg type="sonnet" n="35">
+            <lg type="octave">
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="1"><hi rendition="#fs24pt #blue">S</hi><hi rendition="#small-caps">o</hi>lo &amp7; pensoso i piu deserti campi</l>
+                  <l n="2">Vo mesurando a passi tardi et lenti.</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="3">Et gli occhi porto &per; fuggire intenti.</l>
+                  <l n="4">Oue uestigio human larena stampi.</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="5">Altro schermo &non; trouo che mi <choice><abbr>scāpi</abbr><expan>scampi</expan></choice></l>
+                  <l n="6">Dal manifesto accorger de le genti.</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="7">Perche negliatti dallegreçça spenti</l>
+                  <l n="8">Di fuor si legge comio dentro auampi.</l>
+               </lg>
+            </lg>
+            <lg type="sestet">
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="9">Si chio mi credo omai che <choice><abbr>mõti</abbr><expan>monti</expan></choice> &amp7; piagge</l>
+                  <l n="10">Et fiumi &virg; &amp7; selue sappian di che <choice><abbr>tēpre</abbr><expan>tempre</expan></choice></l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="11">Sia la mia uita &virg; che celata altrui.</l>
+                  <l n="12">Ma pur si aspre uie &virg; ne si seluagge</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="13">Cercar &non; so chamor non <choice><abbr>uēga</abbr><expan>uenga</expan></choice> &sempre;</l>
+                  <l n="14">Ragionando &con; meco. et io col lui.</l>
+               </lg>
+            </lg>
+         </lg>
+      </body>
+   </text>
+</TEI>

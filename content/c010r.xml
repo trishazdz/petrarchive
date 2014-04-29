@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="petrarchive.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="petrarchive.xsl"?>
+<!DOCTYPE TEI [
+<!-- Firefox does not play nice with parameter entities. So I had to embed the stuff in here. We can go back to the "better" way with parameter entities, but need to pre-process the documents to remove all entity references before moving to petarchive.org. 
+<!ENTITY % petrarchive_entities SYSTEM "petrarchive.ent">
+%petrarchive_entities;
+-->
+<!ENTITY amp7 "<choice><abbr>&amp;</abbr><expan>et</expan></choice>">
+<!ENTITY Amp7 "<choice><abbr>&amp;></abbr><expan>Et</expan></choice>">
+<!ENTITY per "<choice><abbr>ꝑ</abbr><expan>per</expan></choice>">
+<!ENTITY Per "<choice><abbr>Ꝑ</abbr><expan>Per</expan></choice>">
+<!ENTITY virg "/">
+<!ENTITY virg-underdot "/&#x0323;">
+<!ENTITY Non "<choice><abbr>Nō</abbr><expan>Non</expan></choice>">
+<!ENTITY impresa "<choice><abbr>īpresa</abbr><expan>impresa</expan></choice>">
+<!ENTITY Impresa "<choice><abbr>Īpresa</abbr><expan>Impresa</expan></choice>">
+<!ENTITY sempre "<choice><abbr>sēpre</abbr><expan>sempre</expan></choice>">
+<!ENTITY Sempre "<choice><abbr>Sēpre</abbr><expan>Sempre</expan></choice>">
+<!ENTITY quanto "<choice><abbr>quāto</abbr><expan>quanto</expan></choice>">
+<!ENTITY Quanto "<choice><abbr>Quāto</abbr><expan>Quanto</expan></choice>">
+<!ENTITY quando "<choice><abbr>quādo</abbr><expan>quando</expan></choice>">
+<!ENTITY Quando "<choice><abbr>Quādo</abbr><expan>Quando</expan></choice>">
+<!ENTITY giorno "<choice><abbr>giõno</abbr><expan>giorno</expan></choice>">
+<!ENTITY non "<choice><abbr>nō</abbr><expan>non</expan></choice>">
+<!ENTITY in "<choice><abbr>ī</abbr><expan>in</expan></choice>">
+<!ENTITY pre "<choice><abbr>&p-macron;</abbr><expan>pre</expan></choice">
+<!ENTITY con "<choice><abbr>cō</abbr><expan>con</expan></choice>">
+<!ENTITY Con "<choice><abbr>cō</abbr><expan>Con</expan></choice>">
+<!ENTITY son "<choice><abbr>sō</abbr><expan>son</expan></choice>">
+<!ENTITY Son "<choice><abbr>sō</abbr><expan>Son</expan></choice>">
+<!ENTITY q-tilde "q&#x0303;">
+<!ENTITY q-macron "q&#x0304;">
+<!ENTITY p-macron "p&#x0304;">
+<!ENTITY b-combtild "b&#xFE23;">
+<!ENTITY p-dot "p&#x0307;">
+<!ENTITY u-vert-tilde "u&#x033E;">
+<!ENTITY p-vert-line "p&#x030D;">
+<!ENTITY uia "<choice><orig>uia</orig><reg>via</reg></choice>">
+<!ENTITY uai "<choice><orig>uai</orig><reg>vai</reg></choice>">
+
+<!-- period "p" to "2" comma "c" -->
+<!ENTITY p2c "<choice><orig>.</orig><reg>,</reg></choice>">
+<!ENTITY p2colon "<choice><orig>.</orig><reg>:</reg></choice>">
+<!ENTITY p2semicolon "<choice><orig>.</orig><reg>;</reg></choice>">
+<!ENTITY p2e "<choice><orig>.</orig><reg>!</reg></choice>">
+<!ENTITY c2p "<choice><orig>,</orig><reg>.</reg></choice>">
+<!ENTITY v2c "<choice><orig> /</orig><reg>,</reg></choice>">
+<!ENTITY regapos "<reg>’</reg>">
+<!ENTITY uolta "<choice><orig>uolta</orig><reg>volta</reg></choice>">
+<!ENTITY uolte "<choice><orig>uolte</orig><reg>volte</reg></choice>">
+<!ENTITY egrave_reg "<choice><orig>e</orig><reg>è</reg></choice>">
+<!ENTITY si "<choice><orig>si</orig><reg>sì</reg></choice>">
+<!ENTITY Si "<choice><orig>Si</orig><reg>Sì</reg></choice>">
+<!ENTITY pilcrow2section "<choice><orig>¶</orig><reg>§</reg></choice>">
+<!ENTITY encodingDesc SYSTEM "encodingDesc.xml"> 
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Petrarch’s <title rendition="#i">Rerum vulgarium fragmenta</title>: Charta 1 verso</title>
+            <editor xml:id="hws">H. Wayne Storey</editor>
+            <editor xml:id="jaw">John A. Walsh</editor>
+            <respStmt>
+               <resp>Encoder</resp>
+               <name xml:id="amm">Allison M. McCormack</name>
+            </respStmt>
+            <respStmt>
+               <resp>Encoder</resp>
+               <name xml:id="im">Isabella Magni</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <seriesStmt>
+            <title>The Petrarchive: An Edition of Petrarch’s Songbook</title>
+            <respStmt>
+               <resp> Edited by </resp>
+               <name> Wayne Storey </name>
+               <name> John Walsh</name>
+            </respStmt>
+         </seriesStmt>
+         <sourceDesc>
+            <msDesc xml:id="vat.lat.3195">
+               <msIdentifier>
+                  <country>Vatican City</country>
+                  <repository>Vatican Library</repository>
+                  <collection>Vat. lat.</collection>
+                  <idno>3195</idno>
+                  <msName>Vat. lat. 3195</msName>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      &encodingDesc;
+   </teiHeader>
+   
+   
+   <text>
+      <body>
+         <pb n="charta 1 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-0010r.jpg" />
+         <lg type="sonnet" n="41">
+            <lg type="octave">
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="1"><hi rendition="#red #fs24pt"
+                     >Q</hi><hi rendition="#small-caps">v</hi>ando dal prioprio sito si rimoue</l>
+                  <l n="2">Larbor chamo gia phebo in corpo humano &virg-underdot;</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="3">Sospira et suda a lopera uulcano &virg;</l>
+                  <l n="4">Per rinfrescar laspre saette a gioue.</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="5">Il qual or tona or neuicha &amp7; or pioue &virg;</l>
+                  <l n="6">Sença honorar piu cesare che giano.</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="7">La terra piange. el sol ci sta lontano.</l>
+                  <l n="8">Che la sua cara amica uedaltroue.</l>
+               </lg>
+            </lg>
+            <lg type="sestet">
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="9">Allor riprende ardir Saturno &amp7; marte.</l>
+                  <l n="10">Crudeli stelle. &amp7; orione armato</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="11">Speçça a tristi nocchier gouerni &amp7; sarte.</l>
+                  <l n="12">Eolo a neptuno &amp7; a giunon turbato</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="13">Fa sentire &virg; et a noi come si parte</l>
+                  <l n="14">Il bel uiso dagliangeli aspectato.</l>
+               </lg>
+            </lg>
+         </lg>
+         <space corresp="#canvasline"/>
+         <lg type="sonnet" n="42">
+            <lg type="octave">
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="1"><hi rendition="#blue #fs24pt">M</hi><hi rendition="#small-caps">a</hi>poi chel dolce riso humile &amp7; piano </l>
+                  <l n="2">Piu non asconde sue belleççe noue.</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="3">Le braccia a la fucina indarno moue</l>
+                  <l n="4">Lantiquissimo fabbro ciciliano</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="5">Cha gioue tolte son larme di mano</l>
+                  <l n="6">Temprate &in; mongibello a tutte proue.</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="7">Et sua sorella par che si rinoue</l>
+                  <l n="8">Nel bel guardo dapollo a mano a mano.</l>
+               </lg>
+            </lg>
+            <lg type="sestet">
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="9">Del lito occidental si moue un fiato &virg;</l>
+                  <l n="10">Che fa securo il nauigar sença arte.</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="11">Et desta i fior tra lerba &in; ciascun prato</l>
+                  <l n="12">Stelle noiose fuggon dogni parte &virg;</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="13">Disperse dal bel uiso inamorato.</l>
+                  <l n="14">Per cui lagrime molte son gia sparte.</l>
+               </lg>
+            </lg>
+         </lg>
+         <space corresp="#canvasline"/>
+         <lg type="sonnet" n="43">
+            <lg type="octave">
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="1"><hi rendition="#red #fs24pt">I</hi><hi rendition="#small-caps">l</hi> figliuol di latona auea gia noue </l>
+                  <l n="2">Volte guardato dal balcon sourano &virg;</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="3">&Per; quella chalcun <choice><abbr>tēpo</abbr><expan>tempo</expan></choice> mosse &in;uano</l>
+                  <l n="4">I suoi sospiri. et or gli altrui <choice><abbr>cōmoue</abbr><expan>commoue</expan></choice>.</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="5">Poi che cercando stanco &non; seppe oue</l>
+                  <l n="6">Salbergasse da presso &virg; o di lontano.</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="7">Mostrossi a noi qual huom &per; doglia insano.</l>
+                  <l n="8">Che molto amata cosa &non; ritroue.</l>
+               </lg>
+            </lg>
+            <lg type="sestet">
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="9">Et cosi tristo standosi in disparte &virg;</l>
+                  <l n="10">Tornar non uide il uiso che laudato</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="11">Sara sio uiuo. &in; piu di mille carte.</l>
+                  <l n="12">Et pieta lui medesmo auea cangiato.</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="13">Si che be gliocchi lagrimauan parte.</l>
+                  <l n="14">&Per;o laere ritenne il primo stato.</l>
+               </lg>
+            </lg>
+         </lg>
+         <space corresp="#canvasline"/>
+         <lg type="sonnet" n="44">
+            <lg type="octave">
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="1"><hi rendition="#fs24pt #blue">Q</hi><hi rendition="#small-caps">v</hi>e chentesaglia ebbe le man si pronte</l>
+                  <l n="2">A farla del ciuil sangue uermiglia</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="3">Pianse morto il marito di sua figlia &virg;</l>
+                  <l n="4">Raffigurato a le fateççe conte.</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="5">El pastor cha golia ruppe la fronte &virg;</l>
+                  <l n="6">Pianse la ribellante sua famiglia.</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="7">Et sopral buon saul cangio le ciglia.</l>
+                  <l n="8">Ondassai puo dolersi il fiero monte.</l>
+               </lg>
+            </lg>
+            <lg type="sestet">
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="9">Ma uoi che mai pieta non discolora.</l>
+                  <l n="10">Et chauete gli schermi sempre accorti</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="11"><choice><abbr>Cōtro</abbr><expan>Contro</expan></choice> larco damor chendarno tira.</l>
+                  <l n="12">Mi uedete straçiare a mille morti.</l>
+               </lg>
+               <lg type="dblhemi" corresp="#canvasline">
+                  <l n="13">Ne lagrima pero discese anchora</l>
+                  <l n="14">Da be uostrocchi. ma disdegno et ira.</l>
+               </lg>
+            </lg>
+         </lg>
+      </body>
+   </text>
+</TEI>

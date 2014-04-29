@@ -502,6 +502,8 @@ ab[type = 'blockSubst'] subst del[type = 'erasure'] lg[type = 'ballata'] {
   cursor:pointer;
 }
 
+body > head {font-size:100%; font-family:'andron_scriptor_webregular',serif !important;}
+
 
 
 /* Stuff for palimpsests:end */

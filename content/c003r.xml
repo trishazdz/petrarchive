@@ -117,7 +117,7 @@ way with parameter entities, but need to pre-process the documents to remove all
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
                         <l n="7">Et mi sottragge al foco de martiri </l>
-                        <l n="8">Mentrio son a mirarui intento et fiso.</l>
+                        <l n="8">Mentrio son a mirarui intento &amp7; fiso.</l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
                         <l n="9">Ma gli spiriti miei saghiaccian poi</l>
@@ -128,7 +128,7 @@ way with parameter entities, but need to pre-process the documents to remove all
                         <l n="12">Largata al fin colamorose chiaui</l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="13">Lanima esce del cor per seguir uoi.</l>
+                        <l n="13">Lanima esce del cor &per; seguir uoi.</l>
                         <l n="14">Et con molto pensiero indi sisuelle.</l>
                     </lg>
                 </lg>
@@ -136,12 +136,12 @@ way with parameter entities, but need to pre-process the documents to remove all
                 <lg type="sonnet" n="18">
                     <lg type="octave">
                         <lg type="dblhemi" corresp="#canvasline">
-                            <l n="1"><hi rent="#blue #fs24pt">Q</hi><hi rend="#small-caps">v</hi>andio son tutto uolto in quella parte</l>
+                            <l n="1"><hi rent="#blue #fs24pt">Q</hi><hi rend="#small-caps">v</hi>andio son tutto uolto &in; quella parte</l>
                             <l n="2">Ouel bel uiso di madonna luce</l>
                         </lg>
                         <lg type="dblhemi" corresp="#canvasline">
                             <l n="3">Et me rimasa nel pensier la luce </l>
-                            <l n="4">Che marde et strugge dentro a parte a parte</l>
+                            <l n="4">Che marde &amp7; strugge dentro a parte a parte</l>
                         </lg>
                         <lg type="dblhemi" corresp="#canvasline">
                             <l n="5">I che temo del cor che mi si parte ̣</l>
@@ -149,7 +149,7 @@ way with parameter entities, but need to pre-process the documents to remove all
                         </lg>
                         <lg type="dblhemi" corresp="#canvasline">
                             <l n="7">Vommene in guisa dorbo  sença luce </l>
-                            <l n="8">Che non sa oue si uada et pur si parte.</l>
+                            <l n="8">Che non sa oue si uada &amp7; pur si parte.</l>
                         </lg>
                         <lg type="dblhemi" corresp="#canvasline">
                             <l n="9">Cosi dauanti ai colpi de la morte</l>
@@ -160,7 +160,7 @@ way with parameter entities, but need to pre-process the documents to remove all
                             <l n="12">Tacito uo  che le parole morte</l>
                         </lg>
                         <lg type="dblhemi" corresp="#canvasline">
-                            <l n="13">Farian pianger la gente. et i desio</l>
+                            <l n="13">Farian pianger la gente. &amp7; i desio</l>
                             <l n="14">Che le lagrime mie si spargan sole.</l>
                         </lg>
                     </lg>
@@ -185,7 +185,7 @@ way with parameter entities, but need to pre-process the documents to remove all
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
                         <l n="9">Chi non son forte ad aspectar la luce</l>
-                        <l n="10">Di questa donna. et non so fare schermi</l>
+                        <l n="10">Di questa donna. &amp7; non so fare schermi</l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
                         <l n="11">Di luoghi tenebrosi  o dore tarde.</l>
@@ -201,7 +201,7 @@ way with parameter entities, but need to pre-process the documents to remove all
                 <lg type="octave">
                     <lg type="dblhemi" corresp="#canvasline">
                         <l n="1"><hi rendition="#blue #fs24pt">U</hi><hi rendition="#small-caps">e</hi>rgognando talor chancor si taccia</l>
-                        <l n="2">Donna per me uostra belleçça in rima </l>
+                        <l n="2">Donna &per; me uostra belleçça in rima </l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
                         <l n="3">Ricorro al tempo chi ui uidi prima</l>
@@ -216,21 +216,20 @@ way with parameter entities, but need to pre-process the documents to remove all
                         <l n="8">Nel operation tutto sa‹g›ghiaccia.</l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="9">Piu uolte gia per dir le labbra apersi.</l>
-                        <l n="10">Poi rimase la uoce in meççol pecto.</l>
+                        <l n="9">Piu uolte gia &per; dir le labbra apersi.</l>
+                        <l n="10">Poi rimase la uoce &in; meççol pecto.</l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
                         <l n="11">Ma qual son poria mai salir tantalto</l>
                         <l n="12">Piú uolte incominciai di scriuer uers[i].</l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="13">Ma la penna  et la mano et lintellecto</l>
+                        <l n="13">Ma la penna  &amp7; la mano &amp7; lintellecto</l>
                         <l n="14">Rimaser uinti nel primier assalto.</l>
                     </lg>
                 </lg>
             </lg>
-            <!--     
-                        17.6 [r. 3.2]: punto di espunzione sotto la «g» di «gli ardenti»; [we miss a character to represent it].
+            <!--        17.6 [r. 3.2]: punto di espunzione sotto la «g» di «gli ardenti»; [we miss a character to represent it].
                         17.9 [r. 5.1]: si notano le tracce della rasura di una «g» nellinterlinea superiore fra «a» e «g» di 
                         «saghiaccian», per cui si rimanda alla nota storica di Belloni in questo volume.
                         18.10 [r. 13.2]: la virgola dopo «ratto» fa parte dellinterpunzione metrica, segnalando la cesura a maiore.

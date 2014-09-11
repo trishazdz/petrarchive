@@ -59,7 +59,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Petrarch’s <title rendition="#i">Rerum vulgarium fragmenta</title>: Charta 1 verso</title>
+            <title>Petrarch’s <title rendition="#i">Rerum vulgarium fragmenta</title>: Charta 10 recto</title>
             <editor xml:id="hws">H. Wayne Storey</editor>
             <editor xml:id="jaw">John A. Walsh</editor>
             <respStmt>
@@ -100,7 +100,7 @@
    
    <text>
       <body>
-         <pb n="charta 1 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-0010r.jpg" />
+         <pb n="charta 10 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-010r.jpg" />
          <lg type="sonnet" n="41">
             <lg type="octave">
                <lg type="dblhemi" corresp="#canvasline">

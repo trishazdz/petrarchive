@@ -174,7 +174,7 @@
                   <l n="12">Quanto cangiata oime da quel di pria.</l>
                </lg>
                <lg type="dblhemi" corresp="#canvasline">
-                  <l n="13">Et parea dir &per;che tuo ualor perde <g ref="#punctinter"/></l>
+                  <l n="13">Et parea dir &per;che tuo ualor perde<g ref="#punctinter"/></l>
                   <l n="14">Veder questocchi anchor non ti si tolle.</l>
                </lg>
             </lg>
@@ -183,7 +183,7 @@
          <lg type="sonnet" n="34">
             <lg type="octave">
                <lg type="dblhemi" corresp="#canvasline">
-                  <l n="1"><hi rendition="#red #fs24pt">A</hi><hi rendition="#small-caps">p</hi>ollo, sanchor uiue il bel desio &virg;</l>
+                  <l n="1"><hi rendition="#red #fs24pt">A</hi><hi rendition="#small-caps">p</hi>ollo sanchor uiue il bel desio &virg;</l>
                   <l n="2">Che tin fiammaua a le thesaliche onde &virg-underdot;</l>
                </lg>
                <lg type="dblhemi" corresp="#canvasline">
@@ -196,7 +196,7 @@
                </lg>
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="7">Difendi or lonorata &amp7; sacra fronde.</l>
-                  <l n="8">Oue tu prima, et poi fu inuescato io.</l>
+                  <l n="8">Oue tu prima, &amp7; poi fu inuescato io.</l>
                </lg>
             </lg>
             <lg type="sestet">
@@ -226,7 +226,7 @@
                   <l n="4">Oue uestigio human larena stampi.</l>
                </lg>
                <lg type="dblhemi" corresp="#canvasline">
-                  <l n="5">Altro schermo &non; trouo che mi <choice><abbr>scāpi</abbr><expan>scampi</expan></choice></l>
+                  <l n="5">Altro schermo &non; trouo che m<subst><del type="erasure"><gap reason="illegible"/></del><add>i</add></subst> <choice><abbr>scāpi</abbr><expan>scampi</expan></choice></l>
                   <l n="6">Dal manifesto accorger de le genti.</l>
                </lg>
                <lg type="dblhemi" corresp="#canvasline">

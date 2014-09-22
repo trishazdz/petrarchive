@@ -140,7 +140,7 @@
          <lg type="sonnet" n="42">
             <lg type="octave">
                <lg type="dblhemi" corresp="#canvasline">
-                  <l n="1"><hi rendition="#blue #fs24pt">M</hi><hi rendition="#small-caps">a</hi>poi chel dolce riso humile &amp7; piano </l>
+                  <l n="1"><hi rendition="#blue #fs24pt">M</hi><hi rendition="#small-caps">a</hi> poi chel dolce riso humile &amp7; piano </l>
                   <l n="2">Piu non asconde sue belleççe noue.</l>
                </lg>
                <lg type="dblhemi" corresp="#canvasline">
@@ -180,7 +180,7 @@
                </lg>
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="3">&Per; quella chalcun <choice><abbr>tēpo</abbr><expan>tempo</expan></choice> mosse &in;uano</l>
-                  <l n="4">I suoi sospiri. et or gli altrui <choice><abbr>cōmoue</abbr><expan>commoue</expan></choice>.</l>
+                  <l n="4">I suoi s<subst><del type="erasure"><gap reason="illegible"/></del><add>o</add></subst>spiri. et or gli altrui <choice><abbr>cōmoue</abbr><expan>commoue</expan></choice>.</l>
                </lg>
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="5">Poi che cercando stanco &non; seppe oue</l>

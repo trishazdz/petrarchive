@@ -105,6 +105,7 @@
       &encodingDesc;
    </teiHeader>
    
+   <!-- check encoding of #bold ~ Rvf2 lines 6, 8 and 10 -->
    
    <text>
       <body>
@@ -159,17 +160,17 @@
                </lg>
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="5">Era la mia <choice><orig>uirtute</orig><reg>virtute</reg></choice> al cor ristretta</l>
-                  <l n="6">Per far <choice><orig>[iui &amp7;]</orig><reg>ivi &amp7;</reg></choice> <choice><orig>ne gliocchi</orig><reg>negli occhi</reg></choice> sue difese<reg>,</reg></l>
+                  <l n="6">Per fa<hi rendition="#bold">r</hi> <choice><orig>[iui &amp7;]</orig><reg>ivi &amp7;</reg></choice> <choice><orig>ne gliocchi</orig><reg>negli occhi</reg></choice> sue difese<reg>,</reg></l>
                </lg>
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="7">Quando<reg> ’</reg>l colpo mortal <choice><orig>la</orig><reg>là</reg></choice> <choice><orig>giu</orig><reg>giù</reg></choice> discese</l>
-                  <l n="8"><choice><orig>Oue</orig><reg>Ove</reg></choice> solea spuntarsi ogni saetta<reg>.</reg></l>
+                  <l n="8"><choice><orig>Oue</orig><reg>Ove</reg></choice> <hi rendition="#bold">s</hi>olea <hi rendition="#bold">s</hi>puntarsi ogni saetta<reg>.</reg></l>
                </lg>
             </lg>
             <lg type="sestet">
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="9"><choice><orig>Pero</orig><reg>Però</reg></choice><reg>,</reg> turbata nel primiero assalto<reg>,</reg></l>
-                  <l n="10">Non ebbe tanto <choice><orig>ne</orig><reg>né</reg></choice> <choice><orig>uigor</orig><reg>vigor</reg></choice> <choice><orig>ne</orig><reg>né</reg></choice> spatio</l>
+                  <l n="10">Non <hi rendition="#bold">ebbe</hi> <hi rendition="#bold">t</hi>anto <choice><orig>ne</orig><reg>né</reg></choice> <choice><orig>uigor</orig><reg>vigor</reg></choice> <choice><orig>ne</orig><reg>né</reg></choice> spatio</l>
                </lg>
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="11">Che potesse al bisogno <choice><abbr>prēder</abbr><expan>prender</expan></choice> l<reg>’</reg>arme<reg>,</reg></l>

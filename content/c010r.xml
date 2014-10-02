@@ -59,7 +59,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Petrarch’s <title rendition="#i">Rerum vulgarium fragmenta</title>: Charta 1 verso</title>
+            <title>Petrarch’s <title rendition="#i">Rerum vulgarium fragmenta</title>: Charta 10 recto</title>
             <editor xml:id="hws">H. Wayne Storey</editor>
             <editor xml:id="jaw">John A. Walsh</editor>
             <respStmt>
@@ -100,7 +100,7 @@
    
    <text>
       <body>
-         <pb n="charta 1 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-0010r.jpg" />
+         <pb n="charta 10 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-010r.jpg" />
          <lg type="sonnet" n="41">
             <lg type="octave">
                <lg type="dblhemi" corresp="#canvasline">
@@ -140,7 +140,7 @@
          <lg type="sonnet" n="42">
             <lg type="octave">
                <lg type="dblhemi" corresp="#canvasline">
-                  <l n="1"><hi rendition="#blue #fs24pt">M</hi><hi rendition="#small-caps">a</hi>poi chel dolce riso humile &amp7; piano </l>
+                  <l n="1"><hi rendition="#blue #fs24pt">M</hi><hi rendition="#small-caps">a</hi> poi chel dolce riso humile &amp7; piano </l>
                   <l n="2">Piu non asconde sue belleççe noue.</l>
                </lg>
                <lg type="dblhemi" corresp="#canvasline">
@@ -180,7 +180,7 @@
                </lg>
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="3">&Per; quella chalcun <choice><abbr>tēpo</abbr><expan>tempo</expan></choice> mosse &in;uano</l>
-                  <l n="4">I suoi sospiri. et or gli altrui <choice><abbr>cōmoue</abbr><expan>commoue</expan></choice>.</l>
+                  <l n="4">I suoi s<subst><del type="erasure"><gap reason="illegible"/></del><add>o</add></subst>spiri. et or gli altrui <choice><abbr>cōmoue</abbr><expan>commoue</expan></choice>.</l>
                </lg>
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="5">Poi che cercando stanco &non; seppe oue</l>

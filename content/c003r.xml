@@ -118,7 +118,7 @@ way with parameter entities, but need to pre-process the documents to remove all
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
                         <l n="3">Quando in <choice><orig>uoi</orig><reg>voi</reg></choice> <choice><orig>adiuen</orig><reg>adiven</reg></choice> che gli occhi giri<reg>,</reg></l>
-                        <l n="4">Per cui sola dal mondo i son <choice><orig>diuiso</orig><reg>diviso</reg></choice><reg>.</reg></l>
+                        <l n="4">Per cui sola dal mondo i<reg>’</reg> son <choice><orig>diuiso</orig><reg>diviso</reg></choice><reg>.</reg></l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
                         <l n="5">Vero &e; che <reg>’</reg>l dolce mansueto riso</l>
@@ -157,16 +157,16 @@ way with parameter entities, but need to pre-process the documents to remove all
                             <l n="6">Et <choice><orig>ueggio</orig><reg>veggio</reg></choice> presso il fin de la mia luce<reg>,</reg></l>
                         </lg>
                         <lg type="dblhemi" corresp="#canvasline">
-                            <l n="7"><choice><abbr>Vōmene</abbr><expan>Vommene</expan></choice> in guisa d<reg>’</reg>orbo&v2c; sença luce&v2c;</l>
-                            <l n="8">Che non sa oue si <choice><orig>uad<subst><del type="erasure"><gap reason="illegible"/></del><add>a</add></subst></orig><reg>vada</reg></choice> &amp7; pur si parte.</l>
+                            <l n="7"><choice><abbr>Vōmene</abbr><expan>Vommene</expan></choice> in guisa d<reg>’</reg>orbo&v2c; <choice><orig>sença</orig><reg>senza</reg></choice> luce&v2c;</l>
+                            <l n="8">Che non sa <choice><orig>oue</orig><reg>ove</reg></choice> si <choice><orig>uad<subst><del type="erasure"><gap reason="illegible"/></del><add>a</add></subst></orig><reg>vada</reg></choice><reg>,</reg> &amp7; pur si parte.</l>
                         </lg>
                         <lg type="dblhemi" corresp="#canvasline">
                             <l n="9"><choice><orig>Cosi</orig><reg>Cosí</reg></choice> <choice><orig>dauanti</orig><reg>davanti</reg></choice> ai colpi de la morte</l>
                             <l n="10">Fuggo&p2c; ma non &si; ratto<choice><orig> /</orig><reg></reg></choice> che<reg> ’</reg>l desio</l>
                         </lg>
                         <lg type="dblhemi" corresp="#canvasline">
-                            <l n="11"> Meco non uenga come uenir sole</l>
-                            <l n="12">Tacito <choice><orig>uo</orig><reg>vo</reg></choice>&v2c; che le parole morte</l>
+                            <l n="11"> Meco non <choice><orig>uenga</orig><reg>venga</reg></choice> come <choice><orig>uenir</orig><reg>venir</reg></choice> sole<reg>.</reg></l>
+                            <l n="12">Tacito <choice><orig>uo</orig><reg>vo</reg></choice>&v2c; <choice><orig>che</orig><reg>ché</reg></choice> le parole morte</l>
                         </lg>
                         <lg type="dblhemi" corresp="#canvasline">
                             <l n="13">Farian pianger la gente&p2semicolon; &amp7; i<reg>’</reg> desio</l>
@@ -181,7 +181,7 @@ way with parameter entities, but need to pre-process the documents to remove all
                         <l n="2">Vista che<reg> ’</reg>ncontra<reg> ’</reg>l sol pur si difende.</l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="3">Altri<reg>,</reg> <choice><orig>pero</orig><reg>però</reg></choice> che<reg> ’</reg>l gran lume <choice><abbr>glioffēde</abbr><expan>gli<reg> </reg>offende</expan></choice></l>
+                        <l n="3">Altri<reg>,</reg> <choice><orig>pero</orig><reg>però</reg></choice> che<reg> ’</reg>l gran lume <choice><orig><choice><abbr>glioffēde</abbr><expan>glioffende</expan></choice></orig><reg>gli offende</reg></choice></l>
                         <l n="4">Non escon fuor se<reg> </reg>non <choice><orig>uerso</orig><reg>verso</reg></choice> la sera<reg>.</reg></l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
@@ -189,7 +189,7 @@ way with parameter entities, but need to pre-process the documents to remove all
                         <l n="6">Gioir forse nel foco<choice><orig> /</orig><reg></reg></choice> &perche; splende<reg>,</reg></l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="7"><choice><orig>Prouan</orig><reg>Provan</reg></choice> l<reg>’</reg>altra <choice><orig>uertu</orig><reg>vertù</reg></choice><reg>,</reg> quella <choice><abbr>chencēde</abbr><expan>che<reg> ’</reg>ncende</expan></choice><reg>,</reg></l>
+                        <l n="7"><choice><orig>Prouan</orig><reg>Provan</reg></choice> l<reg>’</reg>altra <choice><orig>uertu</orig><reg>vertù</reg></choice><reg>,</reg> quella <choice><orig><choice><abbr>chencēde</abbr><expan>chencende</expan></choice></orig><reg>che ’ncende</reg></choice><reg>,</reg></l>
                         <l n="8">Lasso<choice><orig> /</orig><reg>;</reg></choice> e<reg> ’</reg>l mio loco<choice><orig>.</orig><reg></reg></choice> <choice><orig>en</orig><reg>è ’n</reg></choice> &q-macron;sta ultima schera.</l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
@@ -209,7 +209,7 @@ way with parameter entities, but need to pre-process the documents to remove all
             <lg type="sonnet" n="20">
                 <lg type="octave">
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="1"><hi rendition="#blue #fs24pt">U</hi><hi rendition="#small-caps">e</hi>rgognando talor ch<reg>’</reg>ancor si taccia<reg>,</reg></l>
+                        <l n="1"><hi rendition="#blue #fs24pt"><choice><orig>U</orig></choice><reg>V</reg></hi><hi rendition="#small-caps">e</hi>rgognando talor ch<reg>’</reg>ancor si taccia<reg>,</reg></l>
                         <l n="2">Donna<reg>,</reg> &per; me <choice><orig>uostra</orig><reg>vostra</reg></choice> <choice><orig>belleçça</orig><reg>bellezza</reg></choice> in rima&v2c;</l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
@@ -222,7 +222,7 @@ way with parameter entities, but need to pre-process the documents to remove all
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
                         <l n="7"><choice><orig>Pero</orig><reg>Però</reg></choice> l<reg>’</reg>ingegno che sua <choice><orig>força</orig><reg>forza</reg></choice> extima</l>
-                        <l n="8"><choice><orig>Nel operation</orig><reg>l’operation</reg></choice> tutto <choice><orig>sa<add>g</add>ghiaccia</orig><reg>s’agghiaccia</reg></choice>.</l>
+                        <l n="8"><choice><orig>Nel operation</orig><reg>Ne l’operation</reg></choice> tutto <choice><orig>sa<add>g</add>ghiaccia</orig><reg>s’agghiaccia</reg></choice>.</l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
                         <l n="9">&Piu; &uolte; <choice><orig>gia</orig><reg>già</reg></choice> &per; dir le labbra apersi&p2c;</l>

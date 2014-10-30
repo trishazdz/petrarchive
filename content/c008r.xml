@@ -170,13 +170,8 @@
             </lg>
             <lg type="sestet">
                <lg type="dblhemi" corresp="#canvasline">
-<<<<<<< HEAD
                   <l n="9">Quando mia speme <choice><orig>gia</orig><reg>già</reg></choice> <choice><abbr>cōdutta</abbr><expan>condutta</expan></choice> <choice><orig>la</orig><reg>al</reg></choice> <choice><orig>uerde</orig><reg>verde</reg></choice></l>
                   <l n="10">Giunse nel cor&v2c; &non; per l<reg>'</reg>usata <choice><orig>uia</orig><reg>via</reg></choice>&p2c;</l>
-=======
-                  <l n="9">Quando mia speme gia <choice><abbr>cōdutta</abbr><expan>condutta</expan></choice> al uerde</l>
-                  <l n="10">Giunse nel cor &virg; &non; per lusata uia.</l>
->>>>>>> FETCH_HEAD
                </lg>
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="11">Che<reg> '</reg>l sonno tenea chiusa&p2c; e<reg> '</reg>l dolor molle&p2semicolon;</l>
@@ -239,13 +234,8 @@
                   <l n="6">Dal manifesto accorger de le genti&p2c;</l>
                </lg>
                <lg type="dblhemi" corresp="#canvasline">
-<<<<<<< HEAD
                   <l n="7"><choice><orig>Perche</orig><reg>Perché</reg></choice> ne<reg> </reg>gli<reg> </reg>atti d<reg>'</reg><choice><orig>allegreçça</orig><reg>alegrezza</reg></choice> spenti</l>
                   <l n="8">Di fuor si legge com<reg>'</reg>io dentro <choice><orig>auampi</orig><reg>avampi</reg></choice>&p2colon;</l>
-=======
-                  <l n="7">Perche negliatti dalegreçça spenti</l>
-                  <l n="8">Di fuor si legge comio dentro auampi.</l>
->>>>>>> FETCH_HEAD
                </lg>
             </lg>
             <lg type="sestet">

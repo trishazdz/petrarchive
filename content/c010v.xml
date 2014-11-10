@@ -127,11 +127,11 @@
                         <l n="10">Non <choice><orig>deuea</orig><reg>devea</reg></choice> specchio <choice><orig>farui</orig><reg>farvi</reg></choice> &per; mio <choice><abbr>dāno</abbr><expan>danno</expan></choice>&p2c;</l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="11">A <choice><orig>uoi</orig><reg>voi</reg></choice> stessa piacendo aspra &amp7; superba.</l>
+                        <l n="11">A <choice><orig>uoi</orig><reg>voi</reg></choice> stessa piacendo<supplied>,</supplied> aspra &amp7; superba.</l>
                         <l n="12">Certo<supplied>,</supplied> se <choice><orig>ui</orig><reg>vi</reg></choice> rimembra di <choice><orig>narcisso</orig><reg>Narcisso</reg></choice>&v2c;</l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="13">Questo &amp7; quel corso ad un termino <choice><orig><choice><abbr>uāno</abbr><expan>uanno</expan></choice></orig><reg>vanno</reg></choice>&p2c;</l>
+                        <l n="13">Questo &amp7; quel corso ad un termino <choice><orig><abbr>uāno</abbr><expan>uanno</expan></orig><reg>vanno</reg></choice>&p2c;</l>
                         <l n="14"><choice><orig>Ben che</orig><reg>Benché</reg></choice> di &si; bel fior sia indegna <choice><orig>lerba</orig><reg>l’erba</reg></choice>.</l>
                     </lg>
                 </lg>
@@ -140,7 +140,7 @@
             <lg type="sonnet" n="46">
                 <lg type="octave">
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="1"><hi rendition="#blue #fs24pt">L</hi><hi rendition="#small-caps"><supplied>’</supplied>o</hi>ro &amp7; le perle&v2c; <choice><orig>ei</orig><reg>e i</reg></choice> fior <choice><orig>uermigli</orig><reg>vermigli</reg></choice> <choice><orig>&virg;</orig><reg></reg></choice> <choice><orig>ei</orig><reg>e i</reg></choice> bianchi&v2c;</l>
+                        <l n="1"><hi rendition="#blue #fs24pt">L</hi><hi rendition="#small-caps"><supplied>’</supplied>o</hi>ro &amp7; le perle&v2c; <choice><orig>ei</orig><reg>e i</reg></choice> fior<supplied>’</supplied> <choice><orig>uermigli</orig><reg>vermigli</reg></choice> <choice><orig>&virg;</orig><reg></reg></choice> <choice><orig>ei</orig><reg>e i</reg></choice> <choice><abbr>biāchi</abbr><expan>bianchi</expan></choice>&v2c;</l>
                         <l n="2"><choice><orig>Chel</orig><reg>Che ’l</reg></choice> <choice><orig>uerno</orig><reg>verno</reg></choice> <choice><orig>deuria</orig><reg>deriva</reg></choice> far languidi &amp7; secchi&p2c;</l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
@@ -175,69 +175,69 @@
             <lg type="sonnet" n="47">
                 <lg type="octave">
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="1"><hi rendition="#red #fs24pt">I</hi><hi rendition="#small-caps">o</hi> sentia dentral cor gia uenir meno</l>
-                        <l n="2">Gli spiriti che da uoi riceuon uita.</l>
+                        <l n="1"><hi rendition="#red #fs24pt">I</hi><hi rendition="#small-caps">o</hi> sentia <choice><orig>dentral</orig><reg>dentr’al</reg></choice> cor <choice><orig>gia</orig><reg>già</reg></choice> <choice><orig>uenir</orig><reg>venir</reg></choice> meno</l>
+                        <l n="2">Gli spiriti che da <choice><orig>uoi</orig><reg>voi</reg></choice> <choice><orig>riceuon</orig><reg>ricevon</reg></choice> <choice><orig>uita</orig><reg>vita</reg></choice>&p2semicolon;</l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="3">Et perche naturalmente saita</l>
-                        <l n="4">Contra la morte ogni animal terreno.</l>
+                        <l n="3">Et <choice><orig>perche</orig><reg>perché</reg></choice> naturalmente <choice><orig>saita</orig><reg>s’aita</reg></choice></l>
+                        <l n="4">Contra la morte ogni animal terreno&p2c;</l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="5">Largail desio chi tengor molto a freno.</l>
-                        <l n="6">Et misil per la uia quasi smarrita.</l>
+                        <l n="5"><choice><orig>Largail</orig><reg>Largai ’l</reg></choice> desio<supplied>,</supplied> <choice><orig>chi</orig><reg>ch’i’</reg></choice> <choice><orig>tengor</orig><reg>teng’or</reg></choice> molto a freno&p2c;</l>
+                        <l n="6">Et misil per la <choice><orig>uia</orig><reg>via</reg></choice> quasi smarrita&p2semicolon;</l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="7">Pero che di et notte indi minuita.</l>
-                        <l n="8">Et io contra sua uoglia altrondel meno.</l>
+                        <l n="7"><choice><orig>Pero</orig><reg>Però</reg></choice> che <choice><orig>di</orig><reg>dì</reg></choice> et notte indi <choice><orig>minuita</orig><reg>m’invita</reg></choice>&p2c;</l>
+                        <l n="8">Et io contra sua <choice><orig>uoglia</orig><reg>voglia</reg></choice> <choice><orig>altrondel</orig><reg>altronde ’l</reg></choice> meno.</l>
                     </lg>
                 </lg>
                 <lg type="sestet">
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="9">Et mi condusse uergognoso et tardo</l>
-                        <l n="10">A riueder gliocchi leggiadri &virg-underdot; ondio</l>
+                        <l n="9">Et mi condusse <choice><orig>uergognoso</orig><reg>vergognoso</reg></choice> et tardo</l>
+                        <l n="10">A <choice><orig>riueder</orig><reg>riveder</reg></choice> <choice><orig>gliocchi</orig><reg>gli occhi</reg></choice> leggiadri<choice><orig> &virg-underdot;</orig><reg>,</reg></choice> <choice><orig>ondio</orig><reg>ond’io</reg></choice></l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="11">Per &non; esser lor graue assai mi guardo.</l>
-                        <l n="12"><choice><abbr>Viurõmi</abbr><expan>Viurommi</expan></choice> un tempo o mai chal uiuer mio</l>
+                        <l n="11">Per &non; esser lor <choice><orig>graue</orig><reg>grave</reg></choice> assai mi guardo.</l>
+                        <l n="12"><choice><orig><abbr>Viurōmi</abbr><expan>Viurommi</expan></orig><reg>Vivrommi</reg></choice> un tempo <choice><orig>o mai</orig><reg>omai</reg></choice> <choice><orig>chal</orig><reg>ch’al</reg></choice> <choice><orig>uiuer</orig><reg>viver</reg></choice> mio</l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="13">Tanta uirtute a sol un uostro sguardo.</l>
-                        <l n="14">Et poi morro. sio <add>&non;</add> credo al desio.</l>
+                        <l n="13">Tanta <choice><orig>uirtute</orig><reg>virtute</reg></choice> a sol un <choice><orig>uostro</orig><reg>vostro</reg></choice> sguardo&p2c;</l>
+                        <l n="14">Et poi <choice><orig>morro</orig><reg>morrò</reg></choice>&p2c; <choice><orig>sio</orig><reg>s’io</reg></choice> <choice><orig><add>&non;</add></orig><reg>non</reg></choice> credo al desio.</l>
                     </lg>
                 </lg>
             </lg>
             <space corresp="#canvasline"/>
-            <lg type="sonnet" n="44">
+            <lg type="sonnet" n="48">
                 <lg type="octave">
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="1"><hi rendition="#fs24pt #blue">S</hi><hi rendition="#small-caps">e</hi> mai foco per foco non si spense &virg-underdot;</l>
-                        <l n="2">Ne fiume fu giamai secco per pioggia</l>
+                        <l n="1"><hi rendition="#fs24pt #blue">S</hi><hi rendition="#small-caps">e</hi> mai foco per foco non si spense<choice><orig> &virg-underdot;</orig><reg>,</reg></choice> </l>
+                        <l n="2"><choice><orig>Ne</orig><reg>Né</reg></choice> fiume fu giamai secco per pioggia<supplied>,</supplied></l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="3">Ma &sempre; lun per laltro simil poggia</l>
-                        <l n="4">Et spesso lun contrario laltro accense.</l>
+                        <l n="3">Ma &sempre; <choice><orig>lun</orig><reg>l’un</reg></choice> per <choice><orig>laltro</orig><reg>l’altro</reg></choice> simil poggia</l>
+                        <l n="4">Et spesso <choice><orig>lun</orig><reg>l’un</reg></choice> contrario <choice><orig>laltro</orig><reg>l’altro</reg></choice> accense.</l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="5">Amor tu che  pensier nostri dispense &virg;</l>
-                        <l n="6">Al qual unalma in duo corpi sappoggia &virg;</l>
+                        <l n="5">Amor<supplied>,</supplied> tu che <supplied>’</supplied> pensier<supplied>’</supplied> nostri dispense&v2c;</l>
+                        <l n="6">Al qual <choice><orig>unalma</orig><reg>un‘alma</reg></choice> in duo corpi <choice><orig>sappoggia</orig><reg>s’appoggia</reg></choice>&v2c;</l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="7">Perche fai in lei con disusata foggia</l>
-                        <l n="8">Men per molto uoler le uoglie intense.</l>
+                        <l n="7"><choice><orig>Perche</orig><reg>Perché</reg></choice> fai in lei con disusata foggia</l>
+                        <l n="8">Men per molto <choice><orig>uoler</orig><reg>voler</reg></choice> le <choice><orig>uoglie</orig><reg>voglie</reg></choice> intense<choice><orig>.</orig><reg>?</reg></choice></l>
                     </lg>
                 </lg>
                 <lg type="sestet">
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="9">Forse si comel nil dalto caggendo</l>
-                        <l n="10">Col gran suono iuicini dintorno assorda.</l>
+                        <l n="9">Forse &si; <choice><orig>comel</orig><reg>come ’l</reg></choice> <choice><orig>nil</orig><reg>Nil</reg></choice> <choice><orig>dalto</orig><reg>d’alto</reg></choice> caggendo</l>
+                        <l n="10">Col gran suono <choice><orig>iuicini</orig><reg>i vicini</reg></choice> <choice><orig>dintorno</orig><reg>d’intorno</reg></choice> assorda&p2c;</l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="11">El sole abbaglia chi ben fisol guarda.</l>
-                        <l n="12">Cosil desio che seco non saccorda &virg;</l>
+                        <l n="11"><choice><orig>El</orig><reg>E’l</reg></choice> sole abbaglia chi ben <choice><orig>fisol</orig><reg>fiso’l</reg></choice> guarda.</l>
+                        <l n="12"><choice><orig>Cosil</orig><reg>Cosí’l</reg></choice> desio che seco non <choice><orig>saccorda</orig><reg>s’accorda</reg></choice>&v2c;</l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="13">Ne lo sfrenato obiecto uien perdendo.</l>
-                        <l n="14">Et per troppo spronar la fuga e tarda.</l>
+                        <l n="13">Ne lo sfrenato obiecto <choice><orig>uien</orig><reg>vien</reg></choice> perdendo&p2c;</l>
+                        <l n="14">Et per troppo spronar la fuga &egrave_reg; tarda.</l>
                     </lg>
                 </lg>
             </lg>

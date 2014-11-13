@@ -117,27 +117,27 @@ way with parameter entities, but need to pre-process the documents to remove all
                         <l n="2">Con un <choice><orig>uento</orig><reg>vento</reg></choice> angoscioso di sospiri</l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="3">Quando in <choice><orig>uoi</orig><reg>voi</reg></choice> <choice><orig>adiuen</orig><reg>adiven</reg></choice> che gli occhi giri<reg>,</reg></l>
-                        <l n="4">Per cui sola dal mondo i<reg>’</reg> son <choice><orig>diuiso</orig><reg>diviso</reg></choice><reg>.</reg></l>
+                        <l n="3">Quando in <choice><orig>uoi</orig><reg>voi</reg></choice> <choice><orig>adiuen</orig><reg>adiven</reg></choice> che gli occhi giri<supplied>,</supplied></l>
+                        <l n="4">Per cui sola dal mondo i<supplied>’</supplied> son <choice><orig>diuiso</orig><reg>diviso</reg></choice><supplied>.</supplied></l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="5">Vero &e; che <reg>’</reg>l dolce mansueto riso</l>
-                        <l n="6">Pur acqueta <choice><orig>gliardenti</orig><reg>li ardenti</reg></choice> miei<choice><orig>.</orig><reg></reg></choice> desiri<choice><orig> •</orig><reg>,</reg></choice></l>
+                        <l n="5">Vero &e; che <supplied>’</supplied>l dolce mansueto riso</l>
+                        <l n="6">Pur acqueta <choice><orig>gliardenti</orig><reg>li ardenti</reg></choice> miei<choice><orig>.</orig><reg/></choice> desiri<choice><orig> •</orig><reg>,</reg></choice></l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="7">Et mi sottragge al foco de<reg>’</reg> martiri<choice><orig> /</orig><reg></reg></choice></l>
-                        <l n="8">Mentr<reg>’</reg>io son a <choice><orig>mirarui</orig><reg>mirarvi</reg></choice> intento &amp7; fiso.</l>
+                        <l n="7">Et mi sottragge al foco de<supplied>’</supplied> martiri<choice><orig> /</orig><reg/></choice></l>
+                        <l n="8"><choice><orig>Mentrio</orig><reg>Mentr’io</reg></choice> son a <choice><orig>mirarui</orig><reg>mirarvi</reg></choice> intento &amp7; fiso.</l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="9">Ma gli spiriti miei s<reg>’</reg>aghiaccian poi</l>
-                        <l n="10">Ch<subst><del type="erasure"><gap reason="illegible"/></del><add><reg>’</reg>i</add></subst><reg>’</reg> <choice><orig>ueggio</orig><reg>veggio</reg></choice> al departir gli<reg> </reg>atti <choice><orig>soaui</orig><reg>soavi</reg></choice></l>
+                        <l n="9">Ma gli spiriti miei <choice><orig>saghiaccian</orig><reg>s’aghiaccian</reg></choice> poi</l>
+                        <l n="10">Ch<subst><del type="erasure"><gap reason="illegible"/></del><add><reg>’</reg>i</add></subst><supplied>’</supplied> <choice><orig>ueggio</orig><reg>veggio</reg></choice> al departir <choice><orig>gliatti</orig><reg>gli atti</reg></choice> <choice><orig>soaui</orig><reg>soavi</reg></choice></l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
                         <l n="11">Torcer da me le mie fatali stelle.</l>
-                        <l n="12">Largata al fin co<reg> </reg>l<reg>’</reg>amorose <choice><orig>chiaui</orig><reg>chiavi</reg></choice><reg>,</reg></l>
+                        <l n="12">Largata al fin <choice><orig>colamorose</orig><reg>co l’amorose</reg></choice> <choice><orig>chiaui</orig><reg>chiavi</reg></choice><supplied>,</supplied></l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="13">L<reg>’</reg>anima esce del cor &per; seguir <choice><orig>uoi</orig><reg>voi</reg></choice>&p2c;</l>
+                        <l n="13"><choice><orig>Lanima</orig><reg>L’anima</reg></choice> esce del cor &per; seguir <choice><orig>uoi</orig><reg>voi</reg></choice>&p2c;</l>
                         <l n="14">Et con molto pensiero indi <choice><orig>sisuelle</orig><reg>si svelle</reg></choice>.</l>
                     </lg>
                 </lg>
@@ -145,31 +145,31 @@ way with parameter entities, but need to pre-process the documents to remove all
                 <lg type="sonnet" n="18">
                     <lg type="octave">
                         <lg type="dblhemi" corresp="#canvasline">
-                            <l n="1"><hi rendition="#blue #fs24pt">Q</hi><hi rend="#small-caps"><choice><orig>v</orig><reg>u</reg></choice></hi>and<reg>’</reg>io son tutto <choice><orig>uolto</orig><reg>volto</reg></choice> &in; quella parte</l>
+                            <l n="1"><hi rendition="#blue #fs24pt">Q</hi><hi rend="#small-caps"><choice><orig>v</orig><reg>u</reg></choice></hi>and<supplied>’</supplied>io son tutto <choice><orig>uolto</orig><reg>volto</reg></choice> &in; quella parte</l>
                             <l n="2"><choice><orig>Ouel</orig><reg>Ove ’l</reg></choice> bel <choice><orig>uiso</orig><reg>viso</reg></choice> di madonna luce</l>
                         </lg>
                         <lg type="dblhemi" corresp="#canvasline">
-                            <l n="3">Et m<reg>’</reg>&e; rimasa nel pensier la luce&v2c;</l>
-                            <l n="4">Che m<reg>’</reg>arde &amp7; strugge dentro a parte a parte<reg>,</reg></l>
+                            <l n="3">Et <choice><orig>me</orig><reg>m’è</reg></choice> rimasa nel pensier la luce&v2c;</l>
+                            <l n="4">Che <choice><orig>marde</orig><reg>m’arde</reg></choice> &amp7; strugge dentro a parte a parte<supplied>,</supplied></l>
                         </lg>
                         <lg type="dblhemi" corresp="#canvasline">
-                            <l n="5">I<reg>’</reg> che temo del cor che mi si parte<choice><orig> &virg-underdot;</orig><reg>,</reg></choice></l>
-                            <l n="6">Et <choice><orig>ueggio</orig><reg>veggio</reg></choice> presso il fin de la mia luce<reg>,</reg></l>
+                            <l n="5">I<supplied>’</supplied> che temo del cor che mi si parte<choice><orig> &virg-underdot;</orig><reg>,</reg></choice></l>
+                            <l n="6">Et <choice><orig>ueggio</orig><reg>veggio</reg></choice> presso il fin de la mia luce<supplied>,</supplied></l>
                         </lg>
                         <lg type="dblhemi" corresp="#canvasline">
-                            <l n="7"><choice><abbr>Vōmene</abbr><expan>Vommene</expan></choice> in guisa d<reg>’</reg>orbo&v2c; <choice><orig>sença</orig><reg>senza</reg></choice> luce&v2c;</l>
-                            <l n="8">Che non sa <choice><orig>oue</orig><reg>ove</reg></choice> si <choice><orig>uad<subst><del type="erasure"><gap reason="illegible"/></del><add>a</add></subst></orig><reg>vada</reg></choice><reg>,</reg> &amp7; pur si parte.</l>
+                            <l n="7"><choice><abbr>Vōmene</abbr><expan>Vommene</expan></choice> in guisa <choice><orig>dorbo</orig><reg>d’orbo</reg></choice>&v2c; <choice><orig>sença</orig><reg>senza</reg></choice> luce&v2c;</l>
+                            <l n="8">Che non sa <choice><orig>oue</orig><reg>ove</reg></choice> si <choice><orig>uad<subst><del type="erasure"><gap reason="illegible"/></del><add>a</add></subst></orig><reg>vada</reg></choice><supplied>,</supplied> &amp7; pur si parte.</l>
                         </lg>
                         <lg type="dblhemi" corresp="#canvasline">
                             <l n="9"><choice><orig>Cosi</orig><reg>Cosí</reg></choice> <choice><orig>dauanti</orig><reg>davanti</reg></choice> ai colpi de la morte</l>
-                            <l n="10">Fuggo&p2c; ma non &si; ratto<choice><orig> /</orig><reg></reg></choice> che<reg> ’</reg>l desio</l>
+                            <l n="10">Fuggo&p2c; ma non &si; ratto<choice><orig> /</orig><reg/></choice> <choice><orig>chel</orig><reg>che ’l</reg></choice> desio</l>
                         </lg>
                         <lg type="dblhemi" corresp="#canvasline">
-                            <l n="11"> Meco non <choice><orig>uenga</orig><reg>venga</reg></choice> come <choice><orig>uenir</orig><reg>venir</reg></choice> sole<reg>.</reg></l>
+                            <l n="11"> Meco non <choice><orig>uenga</orig><reg>venga</reg></choice> come <choice><orig>uenir</orig><reg>venir</reg></choice> sole<supplied>.</supplied></l>
                             <l n="12">Tacito <choice><orig>uo</orig><reg>vo</reg></choice>&v2c; <choice><orig>che</orig><reg>ché</reg></choice> le parole morte</l>
                         </lg>
                         <lg type="dblhemi" corresp="#canvasline">
-                            <l n="13">Farian pianger la gente&p2semicolon; &amp7; i<reg>’</reg> desio</l>
+                            <l n="13">Farian pianger la gente&p2semicolon; &amp7; i<supplied>’</supplied> desio</l>
                             <l n="14">Che le lagrime mie si spargan sole.</l>
                         </lg>
                     </lg>
@@ -178,50 +178,50 @@ way with parameter entities, but need to pre-process the documents to remove all
                 <lg type="octave">
                     <lg type="dblhemi" corresp="#canvasline">
                         <l n="1"><hi rendition="#red #fs24pt">S</hi><hi rendition="#small-caps">o</hi>n animali al mondo de &si; altera</l>
-                        <l n="2">Vista che<reg> ’</reg>ncontra<reg> ’</reg>l sol pur si difende.</l>
+                        <l n="2">Vista <choice><orig>chencontra</orig><reg>che ’ncontra</reg></choice><supplied> ’</supplied>l sol pur si difende.</l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="3">Altri<reg>,</reg> <choice><orig>pero</orig><reg>però</reg></choice> che<reg> ’</reg>l gran lume <choice><orig><choice><abbr>glioffēde</abbr><expan>glioffende</expan></choice></orig><reg>gli offende</reg></choice></l>
-                        <l n="4">Non escon fuor se<reg> </reg>non <choice><orig>uerso</orig><reg>verso</reg></choice> la sera<reg>.</reg></l>
+                        <l n="3">Altri<supplied>,</supplied> <choice><orig>pero</orig><reg>però</reg></choice> <choice><orig>chel</orig><reg>che ’l</reg></choice> gran lume <choice><orig><abbr>glioffēde</abbr><expan>glioffende</expan></orig><reg>gli offende</reg></choice></l>
+                        <l n="4">Non escon fuor <choice><orig>senon</orig><reg>se non</reg></choice> <choice><orig>uerso</orig><reg>verso</reg></choice> la sera<supplied>.</supplied></l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="5">Et altri<reg>,</reg> col desio folle che spera</l>
-                        <l n="6">Gioir forse nel foco<choice><orig> /</orig><reg></reg></choice> &perche; splende<reg>,</reg></l>
+                        <l n="5">Et altri<supplied>,</supplied> col desio folle che spera</l>
+                        <l n="6">Gioir forse nel foco<choice><orig> /</orig><reg/></choice> &perche; splende<supplied>,</supplied></l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="7"><choice><orig>Prouan</orig><reg>Provan</reg></choice> l<reg>’</reg>altra <choice><orig>uertu</orig><reg>vertù</reg></choice><reg>,</reg> quella <choice><orig><choice><abbr>chencēde</abbr><expan>chencende</expan></choice></orig><reg>che ’ncende</reg></choice><reg>,</reg></l>
-                        <l n="8">Lasso<choice><orig> /</orig><reg>;</reg></choice> e<reg> ’</reg>l mio loco<choice><orig>.</orig><reg></reg></choice> <choice><orig>en</orig><reg>è ’n</reg></choice> &q-macron;sta ultima schera.</l>
+                        <l n="7"><choice><orig>Prouan</orig><reg>Provan</reg></choice> <choice><orig>laltra</orig><reg>l’altra</reg></choice> <choice><orig>uertu</orig><reg>vertù</reg></choice><supplied>,</supplied> quella <choice><orig><abbr>chencēde</abbr><expan>chencende</expan></orig><reg>che ’ncende</reg></choice><supplied>,</supplied></l>
+                        <l n="8">Lasso<choice><orig> /</orig><reg>;</reg></choice> <choice><orig></orig><reg>e ’l</reg></choice> mio loco<choice><orig>.</orig><reg/></choice> <choice><orig>en</orig><reg>è ’n</reg></choice> &q-macron;sta ultima schera.</l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="9">Ch<reg>’</reg>i<reg>’</reg> non son forte ad aspectar la luce</l>
+                        <l n="9"><choice><orig>Chi</orig><reg>Ch’i</reg></choice><supplied>’</supplied> non son forte ad aspectar la luce</l>
                         <l n="10">Di questa <choice><abbr>dōna</abbr><expan>donna</expan></choice>&p2c; &amp7; non so fare schermi</l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="11">Di luoghi tenebrosi<choice><orig> /</orig><reg></reg></choice> o d<reg>’</reg>ore tarde.</l>
-                        <l n="12"><choice><orig>Pero</orig><reg>Però</reg></choice> con gli<reg> </reg>occhi lagrimosi e<reg> ’</reg>nfermi</l>
+                        <l n="11">Di luoghi tenebrosi<choice><orig> /</orig><reg/></choice> o <choice><orig>dore</orig><reg>d’ore</reg></choice> tarde.</l>
+                        <l n="12"><choice><orig>Pero</orig><reg>Però</reg></choice> con <choice><orig>gliocchi</orig><reg>gli occhi</reg></choice> lagrimosi <choice><orig>enfermi</orig><reg>e ’nfermi</reg></choice></l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
                         <l n="13">Mio destino a <choice><orig>uederla</orig><reg>vederla</reg></choice> mi conduce&p2c;</l>
-                        <l n="14">Et so ben ch<reg>’</reg>i<reg>’</reg> <choice><orig>uo</orig><reg>vo</reg></choice> dietro a quel che m<reg>’</reg>arde.</l>
+                        <l n="14">Et so ben <choice><orig>chi</orig><reg>ch’i</reg></choice><supplied>’</supplied> <choice><orig>uo</orig><reg>vo</reg></choice> dietro a quel che <choice><orig>marde</orig><reg>m’arde</reg></choice>.</l>
                     </lg>
                 </lg>
             </lg>
             <lg type="sonnet" n="20">
                 <lg type="octave">
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="1"><hi rendition="#blue #fs24pt"><choice><orig>U</orig></choice><reg>V</reg></hi><hi rendition="#small-caps">e</hi>rgognando talor ch<reg>’</reg>ancor si taccia<reg>,</reg></l>
-                        <l n="2">Donna<reg>,</reg> &per; me <choice><orig>uostra</orig><reg>vostra</reg></choice> <choice><orig>belleçça</orig><reg>bellezza</reg></choice> in rima&v2c;</l>
+                        <l n="1"><hi rendition="#blue #fs24pt"><choice><orig>U</orig></choice><reg>V</reg></hi><hi rendition="#small-caps">e</hi>rgognando talor <choice><orig>chancor</orig><reg>ch’ancor</reg></choice> si taccia<supplied>,</supplied></l>
+                        <l n="2">Donna<supplied>,</supplied> &per; me <choice><orig>uostra</orig><reg>vostra</reg></choice> <choice><orig>belleçça</orig><reg>bellezza</reg></choice> in rima&v2c;</l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="3">Ricorro al tempo ch<reg>’</reg>i<reg>’</reg> <choice><orig>ui</orig><reg>vi</reg></choice> <choice><orig>uidi</orig><reg>vidi</reg></choice> prima<reg>,</reg></l>
-                        <l n="4">Tal che null<reg>’</reg>altra fia mai che mi piaccia.</l>
+                        <l n="3">Ricorro al tempo <choice><orig>chi</orig><reg>ch’i</reg></choice><supplied>’</supplied> <choice><orig>ui</orig><reg>vi</reg></choice> <choice><orig>uidi</orig><reg>vidi</reg></choice> prima<supplied>,</supplied></l>
+                        <l n="4">Tal che <choice><orig>nullaltra</orig><reg>null’altra</reg></choice> fia mai che mi piaccia.</l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
                         <l n="5">Ma <choice><orig>trouo</orig><reg>trovo</reg></choice> peso non da le mie braccia&p2c;</l>
                         <l n="6"><choice><orig>Ne</orig><reg>Né</reg></choice> <choice><orig>oura</orig><reg>ovra</reg></choice> da polir colla mia lima&p2c;</l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="7"><choice><orig>Pero</orig><reg>Però</reg></choice> l<reg>’</reg>ingegno che sua <choice><orig>força</orig><reg>forza</reg></choice> extima</l>
+                        <l n="7"><choice><orig>Pero</orig><reg>Però</reg></choice> <choice><orig>lingegno</orig><reg>l’ingegno</reg></choice> che sua <choice><orig>força</orig><reg>forza</reg></choice> extima</l>
                         <l n="8"><choice><orig>Nel operation</orig><reg>Ne l’operation</reg></choice> tutto <choice><orig>sa<add>g</add>ghiaccia</orig><reg>s’agghiaccia</reg></choice>.</l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
@@ -229,11 +229,11 @@ way with parameter entities, but need to pre-process the documents to remove all
                         <l n="10">Poi rimase la <choice><orig>uoce</orig><reg>voce</reg></choice> &in; <choice><orig>meççol</orig><reg>mezzo ’l</reg></choice> pecto.</l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="11">Ma qual son poria mai salir tant<reg>’</reg>alto<choice><orig><g ref="#punctinter"/></orig><reg>?</reg></choice></l>
+                        <l n="11">Ma qual son poria mai salir <choice><orig>tantaltro</orig><reg>tant’alto</reg></choice><choice><orig><g ref="#punctinter"/></orig><reg>?</reg></choice></l>
                         <l n="12">&Piu; &uolte; incominciai di <choice><orig>scriuer</orig><reg>scriver</reg></choice> <choice><orig>uers[i]</orig><reg>versi</reg></choice>&p2c;</l>
                     </lg>
                     <lg type="dblhemi" corresp="#canvasline">
-                        <l n="13">Ma la <choice><abbr>pēna</abbr><expan>penna</expan></choice><choice><orig> /</orig><reg></reg></choice> &amp7; la mano &amp7; l<reg>’</reg>intellecto</l>
+                        <l n="13">Ma la <choice><abbr>pēna</abbr><expan>penna</expan></choice><choice><orig> /</orig><reg/></choice> &amp7; la mano &amp7; <choice><orig>lintellecto</orig><reg>l’intellecto</reg></choice></l>
                         <l n="14">Rimaser <choice><orig>uinti</orig><reg>vinti</reg></choice> nel primier assalto.</l>
                     </lg>
                 </lg>

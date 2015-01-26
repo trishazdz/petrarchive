@@ -129,7 +129,7 @@ ul {
 }
 
 /* line 53, ../sass/screen.scss */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, dt {
   font-family: "helvetica neue", helvetica, verdana, arial, sans-serif;
   font-weight: bold;
   margin-top: .5em;
@@ -228,4 +228,16 @@ footer {
   font-weight: 200;
   font-size: 8pt;
   line-height: 1.5;
+}
+
+/* definition lists; dt up with h1,h2,… */
+dl {
+margin-left:3em;
+}
+dt {
+font-weight:300;
+font-size:90%;
+}
+dd {
+margin-left:3em;
 }

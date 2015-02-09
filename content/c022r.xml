@@ -343,16 +343,16 @@ the line wraps. -->
            <lg type="octave">
             <lg type="dblhemi" corresp="#canvasline">
                <l n="1"><hi rendition="#red #fs24pt"
-                  >C</hi><hi rendition="#small-caps">e</hi>sare<reg>,</reg> poi che<reg> ’</reg>l traditor <choice><orig>degitto</orig><reg>d’Egitto</reg></choice></l>
-               <l n="2">Li fece il don de l<reg>’</reg>onorata testa<reg>,</reg></l>
+                  >C</hi><hi rendition="#small-caps">e</hi>sare<supplied>,</supplied> poi <choice><orig>chel</orig><reg>che ’l</reg></choice> traditor <choice><orig>degitto</orig><reg>d’Egitto</reg></choice></l>
+               <l n="2">Li fece il don de <choice><orig>lonorata</orig><reg>l’onorata</reg></choice> testa<supplied>,</supplied></l>
             </lg>
             <lg type="dblhemi" corresp="#canvasline">
-               <l n="3">Celando <choice><orig>lallegreçça</orig><reg>l’allegrezza</reg></choice> manifesta<reg>,</reg></l>
-               <l n="4">Pianse per <choice><orig>gliocchi</orig><reg>gli occhi</reg></choice> fuor <choice><orig>si</orig><reg>sì</reg></choice> come <choice><orig>e</orig><reg>è</reg></choice> scritto.</l>
+               <l n="3">Celando <choice><orig>lallegreçça</orig><reg>l’allegrezza</reg></choice> manifesta<supplied>,</supplied></l>
+               <l n="4">Pianse per <choice><orig>gliocchi</orig><reg>gli occhi</reg></choice> fuor &si; come &e; scritto.</l>
             </lg>
             <lg type="dblhemi" corresp="#canvasline">
-               <l n="5">Et <choice><orig>hanibal</orig><reg>Hanibal</reg></choice><choice><orig> /</orig><reg>,</reg></choice> quando a l<reg>’</reg>imperio afflitto</l>
-               <l n="6">Vide farsi fortuna <choice><orig>si</orig><reg>sì</reg></choice> molesta<choice><orig> /</orig><reg>,</reg></choice></l>
+               <l n="5">Et <choice><orig>hanibal</orig><reg>Hanibal</reg></choice>&v2c; quando a <choice><orig>limperio</orig><reg>l’imperio</reg></choice> afflitto</l>
+               <l n="6">Vide farsi fortuna &si; molesta&v2c;</l>
             </lg>
             <lg type="dblhemi" corresp="#canvasline">
                <l n="7">Rise fra gente lagrimosa &amp7; mesta</l>
@@ -361,15 +361,15 @@ the line wraps. -->
            </lg>
            <lg type="sestet">
             <lg type="dblhemi" corresp="#canvasline">
-               <l n="9">Et <choice><orig>cosi</orig><reg>così</reg></choice> <choice><orig>auen</orig><reg>aven</reg></choice> che l<reg>’</reg>animo ciascuna</l>
-               <l n="10">Sua passion sotto<reg> ’</reg>l contrario manto</l>
+               <l n="9">Et <choice><orig>cosi</orig><reg>così</reg></choice> <choice><orig>auen</orig><reg>aven</reg></choice> che <choice><orig>lanimo</orig><reg>l’animo</reg></choice> ciascuna</l>
+               <l n="10">Sua passion <choice><orig>sottol</orig><reg>sotto ’l</reg></choice> contrario manto</l>
             </lg>
             <lg type="dblhemi" corresp="#canvasline">
-               <l n="11">Ricopre co la <choice><orig>uista</orig><reg>vista</reg></choice> or chiara <choice><orig>/</orig><reg></reg></choice> or bruna.</l>
-               <l n="12"><choice><abbr>ꝑo</abbr><expan><choice><orig>Pero</orig><reg>Però</reg></choice></expan></choice> s<reg>’</reg>alcuna <choice><orig>uolta</orig><reg>volta</reg></choice> io rido <choice><orig>/</orig><reg></reg></choice> o canto<reg>,</reg></l>
+               <l n="11">Ricopre co la <choice><orig>uista</orig><reg>vista</reg></choice> or chiara<choice><orig> /</orig><reg/></choice> or bruna.</l>
+               <l n="12"><choice><abbr>ꝑo</abbr><expan><choice><orig>Pero</orig><reg>Però</reg></choice></expan></choice> <choice><orig>salcuna</orig><reg>s’alcuna</reg></choice> <choice><orig>uolta</orig><reg>volta</reg></choice> io rido<choice><orig> /</orig><reg/></choice> o canto<supplied>,</supplied></l>
             </lg>
             <lg type="dblhemi" corresp="#canvasline">
-               <l n="13">Facciol <choice><orig>/</orig><reg></reg></choice> perch<reg>’</reg>i<reg>’</reg> non <choice><orig>o</orig><reg>ò</reg></choice> se non quest<reg>’</reg>una</l>
+               <l n="13">Facciol<choice><orig> /</orig><reg/></choice> <choice><orig>perchi</orig><reg>perch’i</reg></choice><supplied>’</supplied> non <choice><orig>o</orig><reg>ò</reg></choice> se non <choice><orig>questuna</orig><reg>quest’una</reg></choice></l>
                <l n="14">Via da celare il mio angoscioso <choice><abbr>piāto</abbr><expan>pianto</expan></choice>.</l>
             </lg>
            </lg>
@@ -379,35 +379,35 @@ the line wraps. -->
            <lg type="octave">
             <lg type="dblhemi" corresp="#canvasline">
                <l n="1"><hi rendition="#blue #fs24pt"
-                  ><choice><orig>U</orig><reg>V</reg></choice></hi><hi rendition="#small-caps">i</hi>nse <choice><orig>hanibal</orig><reg>Hanibal</reg></choice><choice><orig>.</orig><reg>,</reg></choice> et non seppe usar poi</l>
-               <l n="2">Ben la <choice><orig>uittoriosa</orig><reg>vittoriosa</reg></choice> sua <choice><orig>uentura</orig><reg>ventura</reg></choice><choice><orig>.</orig><reg>;</reg></choice></l>
+                  ><choice><orig>U</orig><reg>V</reg></choice></hi><hi rendition="#small-caps">i</hi>nse <choice><orig>hanibal</orig><reg>Hanibal</reg></choice>&p2c; et non seppe usar poi</l>
+               <l n="2">Ben la <choice><orig>uittoriosa</orig><reg>vittoriosa</reg></choice> sua <choice><orig>uentura</orig><reg>ventura</reg></choice>&p2semicolon;</l>
             </lg>
             <lg type="dblhemi" corresp="#canvasline">
-               <l n="3"><choice><orig>Pero</orig><reg>Però</reg></choice><reg>,</reg> signor mio caro<reg>,</reg> aggiate cura<choice><orig>.</orig><reg></reg></choice></l>
+               <l n="3"><choice><orig>Pero</orig><reg>Però</reg></choice><reg>,</reg> signor mio caro<supplied>,</supplied> aggiate cura<choice><orig>.</orig><reg/></choice></l>
                <l n="4">Che similmente non <choice><orig>auegna</orig><reg>avegna</reg></choice> a <choice><orig>uoi</orig><reg>voi</reg></choice>.</l>
             </lg>
             <lg type="dblhemi" corresp="#canvasline">
-               <l n="5">L<reg>’</reg>orsa<reg>,</reg> rabbiosa per gli orsacchi suoi<choice><orig> /</orig><reg>,</reg></choice></l>
-               <l n="6">Che <choice><orig>trouaron</orig><reg>travaron</reg></choice> di maggio aspra pastura<choice><orig>.</orig><reg>,</reg></choice></l>
+               <l n="5"><choice><orig>Lorsa</orig><reg>L’orsa</reg></choice><supplied>,</supplied> rabbiosa per gli orsacchi suoi&v2c;</l>
+               <l n="6">Che <choice><orig>trouaron</orig><reg>travaron</reg></choice> di maggio aspra pastura&p2c;</l>
             </lg>
             <lg type="dblhemi" corresp="#canvasline">
-               <l n="7">Rode <choice><orig>se</orig><reg>sé</reg></choice> dentro<choice><orig>.</orig><reg>,</reg></choice> <choice><orig>ei</orig><reg>e i</reg></choice> <choice><abbr>dēti</abbr><expan>denti</expan></choice> &amp7; 
-                  l<reg>’</reg>unghie endura</l>
+               <l n="7">Rode <choice><orig>se</orig><reg>sé</reg></choice> dentro&p2c; <choice><orig>ei</orig><reg>e i</reg></choice> <choice><abbr>dēti</abbr><expan>denti</expan></choice> &amp7; 
+                  <choice><orig>lunghie</orig><reg>l’unghie</reg></choice> endura</l>
                <l n="8">&Per; <choice><orig>uendicar</orig><reg>vendicar</reg></choice> suoi danni sopra noi.</l> 
             </lg>
            </lg>
            <lg type="sestet">
             <lg type="dblhemi" corresp="#canvasline">
-               <l n="9">Mentre<reg> ’</reg>l <choice><orig>nouo</orig><reg>novo</reg></choice> dolor dunque l<reg>’</reg>accora<reg>,</reg></l>
-               <l n="10">Non riponete l<reg>’</reg>onorata spada<choice><orig>.</orig><reg>,</reg></choice></l>
+               <l n="9">Mentre<reg> ’</reg>l <choice><orig>nouo</orig><reg>novo</reg></choice> dolor dunque <choice><orig>laccora</orig><reg>l’accora</reg></choice><supplied>,</supplied></l>
+               <l n="10">Non riponete <choice><orig>lonorata</orig><reg>l’onorata</reg></choice> spada&p2c;</l>
             </lg>
             <lg type="dblhemi" corresp="#canvasline">
                <l n="11"><choice><orig>Ançi</orig><reg>Anzi</reg></choice> seguite <choice><orig>la</orig><reg>là</reg></choice> <choice><orig>doue</orig><reg>dove</reg></choice> <choice><orig>ui</orig><reg>vi</reg></choice> chiama</l>
                <l n="12">Vostra fortuna dritto per la strada</l>
             </lg>
             <lg type="dblhemi" corresp="#canvasline">
-               <l n="13">Che <choice><orig>ui</orig><reg>vi</reg></choice> <choice><orig>puo</orig><reg>può</reg></choice> dar<reg>,</reg> dopo la morte <choice><abbr>āchora</abbr><expan>anchora</expan></choice></l>
-               <l n="14">Mille &amp7; mille <choice><abbr>āni</abbr><expan>anni</expan></choice><reg>,</reg> al 
+               <l n="13">Che <choice><orig>ui</orig><reg>vi</reg></choice> <choice><orig>puo</orig><reg>può</reg></choice> dar<supplied>,</supplied> dopo la morte <choice><abbr>āchora</abbr><expan>anchora</expan></choice></l>
+               <l n="14">Mille &amp7; mille <choice><abbr>āni</abbr><expan>anni</expan></choice><supplied>,</supplied> al 
                   <choice><abbr>mōdo</abbr><expan>mondo</expan></choice> honor &amp7; fama.</l>
             </lg>
            </lg>
@@ -417,33 +417,33 @@ the line wraps. -->
            <lg type="octave">
             <lg type="dblhemi" corresp="#canvasline">
                <l n="1"><hi rendition="#red #fs24pt"
-                  >L</hi><reg>’</reg><hi rendition="#small-caps">a</hi>spectata <choice><orig>uertu</orig><reg>vertù</reg></choice><reg>,</reg> che<reg> ’</reg>n <choice><orig>uoi</orig><reg>voi</reg></choice> <choice><orig>fioriua</orig><reg>fioriva</reg></choice></l>
-               <l n="2">Quando <choice><orig>amor</orig><reg>Amor</reg></choice> <choice><orig>comincio</orig><reg>cominciò</reg></choice> <choice><orig>darui</orig><reg>darvi</reg></choice> <choice><orig>bataglia</orig><reg>bat[t]aglia</reg></choice><reg>,</reg></l>
+                  >L</hi><reg>’</reg><hi rendition="#small-caps">a</hi>spectata <choice><orig>uertu</orig><reg>vertù</reg></choice><supplied>,</supplied> <choice><orig>chen</orig><reg>che ’n</reg></choice> <choice><orig>uoi</orig><reg>voi</reg></choice> <choice><orig>fioriua</orig><reg>fioriva</reg></choice></l>
+               <l n="2">Quando <choice><orig>amor</orig><reg>Amor</reg></choice> <choice><orig>comincio</orig><reg>cominciò</reg></choice> <choice><orig>darui</orig><reg>darvi</reg></choice> <choice><orig>bataglia</orig><reg>bat[t]aglia</reg></choice><supplied>,</supplied></l>
             </lg>
             <lg type="dblhemi" corresp="#canvasline">
-               <l n="3">Produce or frutto che quel fiore aguaglia<choice><orig> /</orig><reg>,</reg></choice></l>
+               <l n="3">Produce or frutto che quel fiore aguaglia&v2c;</l>
                <l n="4">Et che mia speme fa <choice><orig>uenire</orig><reg>venire</reg></choice> a <choice><orig>riua</orig><reg>riva</reg></choice>.</l>
             </lg>
             <lg type="dblhemi" corresp="#canvasline">
                <l n="5"><choice><abbr>ꝑo</abbr><expan><choice><orig>Pero</orig><reg>Però</reg></choice></expan></choice> mi dice il <choice><orig>core</orig><reg>cor</reg></choice> ch<reg>’</reg>io in carte <choice><orig>scriua</orig><reg>scriva</reg></choice></l>
-               <l n="6">Cosa onde<reg> ’</reg>l <choice><orig>uostro</orig><reg>vostro</reg></choice> nome <choice><abbr>ī</abbr><expan>in</expan></choice> pregio saglia<reg>,</reg></l>
+               <l n="6">Cosa <choice><orig>ondel</orig><reg>onde ’l</reg></choice> <choice><orig>uostro</orig><reg>vostro</reg></choice> nome &in; pregio saglia<supplied>,</supplied></l>
             </lg>
             <lg type="dblhemi" corresp="#canvasline">
-               <l n="7">Che<reg> ’</reg>n nulla parte <choice><orig>si</orig><reg>sì</reg></choice> saldo s<reg>’</reg>intaglia</l>
+               <l n="7"><choice><orig>Chen</orig><reg>Che ’n</reg></choice> nulla parte &si; saldo <choice><orig>sintaglia</orig><reg>s’intaglia</reg></choice></l>
                <l n="8">Per far di marmo una persona <choice><orig>uiua</orig><reg>viva</reg></choice>.</l>
             </lg>
            </lg>
            <lg type="sestet">
             <lg type="dblhemi" corresp="#canvasline">
-               <l n="9">Credete <choice><orig>uoi</orig><reg>voi</reg></choice> che Cesare <choice><orig>/</orig><reg></reg></choice> o Marcello</l>
-               <l n="10">O <choice><orig>paolo</orig><reg>Paolo</reg></choice> <choice><orig>/</orig><reg></reg></choice> <choice><orig>odaffricanọ</orig><reg>od Affrican</reg></choice> fossin cotali</l>
+               <l n="9">Credete <choice><orig>uoi</orig><reg>voi</reg></choice> che Cesare<choice><orig> /</orig><reg/></choice> o Marcello</l>
+               <l n="10">O <choice><orig>paolo</orig><reg>Paolo</reg></choice><choice><orig> /</orig><reg/></choice> <choice><orig>odaffricanọ</orig><reg>od Affrican</reg></choice> fossin cotali</l>
             </lg>
             <lg type="dblhemi" corresp="#canvasline">
-               <l n="11">&Per; incude giamai<choice><orig> /</orig><reg>,</reg></choice> <choice><orig>ne</orig><reg>né</reg></choice> per martello<choice><orig>.</orig><reg>?</reg></choice></l>
-               <l n="12">Pandolfo mio<reg>,</reg> quest<reg>’</reg>opere son frali</l>
+               <l n="11">&Per; incude giamai&v2c; <choice><orig>ne</orig><reg>né</reg></choice> per martello<choice><orig>.</orig><reg>?</reg></choice></l>
+               <l n="12">Pandolfo mio<supplied>,</supplied> <choice><orig>questopere</orig><reg>quest’opere</reg></choice> son frali</l>
             </lg>
             <lg type="dblhemi" corresp="#canvasline">
-               <l n="13"><choice><orig>Al <choice><abbr>lūgo</abbr><expan>lungo</expan></choice></orig><reg>A llungo</reg></choice> andar<choice><orig>.</orig><reg>,</reg></choice> ma<reg> ’</reg>l nostro studio <choice><orig>e</orig><reg>è</reg></choice> &quello;</l>
+               <l n="13"><choice><orig>Al <choice><abbr>lūgo</abbr><expan>lungo</expan></choice></orig><reg>A llungo</reg></choice> andar&p2c; <choice><orig>mal</orig><reg>ma ’l</reg></choice> nostro studio &e; &quello;</l>
                <l n="14">Che fa &per; fama <choice><orig>gliuomini</orig><reg>gli uomini</reg></choice> <choice><abbr>īmortali</abbr><expan>immortali</expan></choice>.</l>
             </lg>
            </lg>

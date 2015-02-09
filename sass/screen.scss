@@ -50,7 +50,7 @@ list-style-type:disc;
 margin-left:4em;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,dt {
 font-family: "helvetica neue", helvetica, verdana, arial, sans-serif;
 font-weight:bold;
 margin-top:.5em;
@@ -131,5 +131,17 @@ font-family:'Helvetica Neue','Gill Sans',Helvetica,Arial,sans-serif;
 font-weight:200;
 font-size:8pt;
 line-height:1.5;
+}
+
+/* definition lists; dt up with h1,h2,… */
+dl {
+margin-left:3em;
+}
+dt {
+font-weight:300;
+font-size:90%;
+}
+dd {
+margin-left:3em;
 }
 

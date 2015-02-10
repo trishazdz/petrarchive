@@ -446,4 +446,8 @@ body > head {
   font-size: 100%;
   font-family: 'andron_scriptor_webregular', serif !important;
 }
+
+supplied {
+  display:none;
+}
 /* Stuff for palimpsests:end */

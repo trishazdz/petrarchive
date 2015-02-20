@@ -109,7 +109,7 @@
    <text>
       <body>
          <pb n="charta 1 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-001v.jpg" />
-         <lg type="sonnet" n="5">
+         <lg xml:id="rvf005" type="sonnet" n="5">
            <lg type="octave">
             <lg type="dblhemi" corresp="#canvasline">
                <l n="1"><hi rendition="#red #fs24pt"
@@ -145,7 +145,7 @@
            </lg>
          </lg>
          <space corresp="#canvasline"/>
-         <lg type="sonnet" n="6">
+         <lg xml:id="rvf006" type="sonnet" n="6">
            <lg type="octave">
             <lg type="dblhemi" corresp="#canvasline">
                <l n="1"><hi rendition="#blue #fs24pt">S</hi><hi rendition="#small-caps"><choice><orig>i</orig><reg>ì</reg></choice></hi> <choice><orig>trauiato</orig><reg>traviato</reg></choice> <choice><orig>el</orig><reg>è ’l</reg></choice> folle mi<supplied>’</supplied> desio</l>
@@ -180,7 +180,7 @@
            </lg>
          </lg>
          <space corresp="#canvasline"/>
-         <lg type="sonnet" n="7">
+         <lg xml:id="rvf007" type="sonnet" n="7">
            <lg type="octave">
             <lg type="dblhemi" corresp="#canvasline">
                <l n="1"><hi rendition="#red #fs24pt">L</hi><hi rendition="#small-caps">a</hi> gola <choice><orig>el</orig><reg>e ’l</reg></choice> somno et <choice><orig>lotiose</orig><reg>l’otiose</reg></choice> piume</l>
@@ -220,7 +220,7 @@
            </lg>
          </lg>
          <space corresp="#canvasline"/>
-         <lg type="sonnet" n="8">
+         <lg xml:id="rvf008" type="sonnet" n="8">
            <lg type="octave">
             <lg type="dblhemi" corresp="#canvasline">
                <l n="1"><hi rendition="#fs24pt #blue">A</hi>

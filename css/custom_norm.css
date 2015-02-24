@@ -76,5 +76,7 @@ ab[type = 'blockSubst'] > subst > del[type = 'erasure'] {
 subst add {color:black;
 vertical-align:baseline;}
 
+supplied {display:inline;}
+
 
 

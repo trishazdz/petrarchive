@@ -85,11 +85,11 @@
         <head>Petrarchive Glossary</head>
         <entry xml:id="binion">
           <form><orth>binion</orth></form>
-          <def>A gathering, or quire, of two sheets (i.e., four leaves, eight sides).</def>
+          <def>A gathering, or quire, of two sheets folded to produce four chartae, eight sides.</def>
         </entry>
         <entry xml:id="quaternion">
           <form><orth>quaternion</orth></form>
-          <def>A gathering, or quire, of four sheets (i.e., eight leaves, sixteen sides).</def>
+          <def>A gathering, or quire, of four sheets folded to produce eight chartae, sixteen sides.</def>
         </entry>
       </body>
   </text>

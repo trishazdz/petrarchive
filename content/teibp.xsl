@@ -329,10 +329,11 @@
 	<xsl:template name="rendition2style">
 		<style type="text/css">
             <xsl:apply-templates select="//tei:rendition" mode="rendition2style"/>
-        </style>
+		        <xsl:apply-templates select="//tei:tagUsage[@render]" mode="tagUsage2style"/>
+     </style>
 	</xsl:template>
-	
-	<xsl:template match="tei:rendition[@xml:id and @scheme = 'css']" mode="rendition2style">
+  
+  <xsl:template match="tei:rendition[@xml:id and @scheme = 'css']" mode="rendition2style">
 		<xsl:value-of select="concat('[rendition~=&quot;#',@xml:id,'&quot;]')"/>
 		<xsl:if test="@scope">
 			<xsl:value-of select="concat(':',@scope)"/>
@@ -347,6 +348,46 @@
 		</xsl:if>
 		<xsl:value-of select="concat('{ ',normalize-space(.),'}&#x000A;')"/>
 	</xsl:template>
+  
+  <xsl:template match="tei:tagUsage" mode="tagUsage2style">
+    <xsl:value-of select="'&#x000A;'"/>
+    <xsl:value-of select="concat(@gi,' {')"/>
+    <xsl:call-template name="tokenizeRenderValues">
+      <xsl:with-param name="list" select="@render"/>
+    </xsl:call-template>
+    <xsl:value-of select="'}'"/>
+  </xsl:template>
+  
+  <!--############################################################-->
+  <!--## Template to tokenize strings                           ##-->
+  <!--############################################################-->
+  <xsl:template name="tokenizeRenderValues">
+    <!--passed template parameter -->
+    <xsl:param name="list"/>
+    <xsl:param name="delimiter" select="' '"/>
+    <xsl:choose>
+      <xsl:when test="contains($list, $delimiter)">                
+        <!-- get everything in front of the first delimiter -->
+        <xsl:value-of select="//*[@xml:id = substring-after((normalize-space(substring-before($list,$delimiter))), '#')]"/>
+        <xsl:call-template name="tokenizeRenderValues">
+          <!-- store anything left in another variable -->
+          <xsl:with-param name="list" select="normalize-space(substring-after($list,$delimiter))"/>
+          <xsl:with-param name="delimiter" select="$delimiter"/>
+        </xsl:call-template>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:choose>
+          <xsl:when test="$list = ''"/>
+          <xsl:otherwise>
+            <xsl:value-of select="//*[@xml:id = substring-after($list,'#')]"/>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>	
+  
+  
+  
 	<xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
 		<xd:desc>
 			<xd:p>Template for adding footer to html document.</xd:p>

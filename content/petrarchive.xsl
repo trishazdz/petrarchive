@@ -12,8 +12,7 @@
     exclude-result-prefixes="xsl tei xd eg fn #default">
     <xsl:import href="teibp.xsl"/>
     
-    <xsl:param name="includeToolbox" select="true()"/>
-    <xsl:param name="includeNav" select="true()"/>
+        
     <xsl:param name="pbNote" select="''"/>
     
     <xsl:param name="customCSS.norm" select="concat($filePrefix,'/css/custom_norm.css')"/>
@@ -95,6 +94,7 @@
     
     <!-- Petrarchive Toolbox -->
     <xsl:template name="teibpToolbox">
+      <xsl:if test="not(/tei:TEI/@xml:id = 'glossary')">
         <div id="teibpToolbox">
             <div>
                 <h1 style="display:inline;">text view </h1>
@@ -104,6 +104,7 @@
                 </select>			
             </div>
         </div>
+      </xsl:if>
     </xsl:template>
     
     <xsl:variable name="htmlFooter">
@@ -189,6 +190,7 @@
         <xsl:apply-templates select="@*|node()"/>
       </xsl:element>
   </xsl:template>
+  
         
     
 </xsl:stylesheet>

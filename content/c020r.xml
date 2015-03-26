@@ -131,12 +131,12 @@
             </lg>
             <lg type="sestet">
                <lg type="dblhemi" corresp="#canvasline">
-                  <l n="9">Misera che <choice><orig>deurebbe</orig><reg>devrebbe</reg></choice></chocie> esser accorta</l>
+                  <l n="9">Misera che <choice><orig>deurebbe</orig><reg>devrebbe</reg></choice> esser accorta</l>
                   <l n="10">Per lunga experientia&p2c; omai <choice><orig>chel</orig><reg>che ’l</reg></choice> <choice><abbr>tēpo</abbr><expan>tempo</expan></choice></l>
                </lg>
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="11">Non &e; <choice><orig>chindietro</orig><reg>chi ’ndietro</reg></choice> <choice><orig>uolga</orig><reg>volga</reg></choice><choice><orig> &virg;</orig><reg/></choice> o chi <choice><orig>laffreni</orig><reg>l’affreni</reg></choice>.</l>
-                  <l n="12">&Piu; &uolte; <choice><orig>lo</orig><reg>l’ò</reg></choice> con <choice><orig>ta</orig><eg>ta’</eg></choice> parole scorta&p2colon;</l>
+                  <l n="12">&Piu; &uolte; <choice><orig>lo</orig><reg>l’ò</reg></choice> con <choice><orig>ta</orig><reg>ta’</reg></choice> parole scorta&p2colon;</l>
                </lg>
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="13">Vattene trista&p2c; <choice><orig>che</orig><reg>ché</reg></choice> non <choice><orig>ua</orig><reg>va</reg></choice> &per; tempo</l>
@@ -215,11 +215,12 @@
             </lg>
          </lg>
          <space corresp="#canvasline"/>
-         <lg xml:id="rvf089" type="sonnet" n="8">
+         <lg xml:id="rvf089" type="sonnet" n="89">
             <lg type="octave">
                <lg type="dblhemi" corresp="#canvasline">
-                  <l n="1"><hi rendition="#fs24pt #blue">F</hi>
-                     <hi rendition="#small-caps">v</hi>ggendo la pregione <choice><orig>oue</orig><reg>ove</reg></choice> <choice><orig>amor</orig><reg>Amor</reg></choice> <choice><orig>mebbe</orig><reg>m’ebbe</reg></choice></l>
+                  <l n="1"><choice><orig><hi rendition="#fs24pt #blue">F</hi>
+                     <hi rendition="#small-caps">v</hi>ggendo</orig><reg><hi rendition="#fs24pt #blue">F</hi>
+                        <hi rendition="#small-caps">u</hi>ggendo</reg></choice> la pregione <choice><orig>oue</orig><reg>ove</reg></choice> <choice><orig>amor</orig><reg>Amor</reg></choice> <choice><orig>mebbe</orig><reg>m’ebbe</reg></choice></l>
                   <l n="2"><choice><orig><abbr>Moltāni</abbr><expan>Moltanni</expan></orig><reg>Molt’anni</reg></choice> a far di me quel <choice><orig>cha</orig><reg>ch’a</reg></choice> lui <choice><orig>parue</orig><reg>parve</reg></choice>&v2c;</l>
                </lg>
                <lg type="dblhemi" corresp="#canvasline">

@@ -17,7 +17,7 @@
     <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<!--#include file="nav.html" -->
+<?php include("nav.html"); ?>
 <!-- number index, first line index, visual index, genre index -->
 
 <div id="content">
@@ -108,6 +108,6 @@ The Petrarchive texts contain some uncommon characters that may not be available
 <figcaption><a href="visindex_2up.html">Petrarchive Visual Index</a></figcaption></figure>
 </section>
 </div>
-<!--#include file="footer.html" -->
+<?php include("footer.html"); ?>
 </body>
 </html>

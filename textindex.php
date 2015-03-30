@@ -20,7 +20,7 @@
     <link type="text/css" rel="subresource" href="js/sortable/example.css" />
 </head>
 <body>
-<!--#include file="nav.html" -->
+<?php include("nav.html"); ?>
 <!-- number index, first line index, visual index, genre index -->
 
 <div id="content">
@@ -1878,6 +1878,6 @@
       </tbody>
     </table>
 </div>
-<!--#include file="footer.html" -->
+<?php include("footer.html"); ?>
 </body>
 </html>

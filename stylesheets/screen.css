@@ -441,3 +441,10 @@ tr td:first-child {
 tr:last-child td {
   border-bottom: none;
 }
+
+/* line 307, ../sass/screen.scss */
+.help {
+  font-size: 12pt;
+  font-family: "helvetica neue", helvetica, verdana, arial, sans-serif;
+  font-style: italic;
+}

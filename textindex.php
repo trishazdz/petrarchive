@@ -25,7 +25,7 @@
 
 <div id="content">
 <h1>Number, first line, and genre index</h1>
-<p>Select the column headings to sort by number, first line, or genre.</p>
+<p class="help">Select the column headings to sort by number, first line, or genre.</p>
 <!-- number, first line index. -->
     <table id="index" class="sortable">
       <thead>

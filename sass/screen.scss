@@ -303,3 +303,9 @@ min-width:150px;
 }
 
 tr:last-child td {border-bottom: none;}
+
+.help {
+font-size:$body-font-size-small;
+font-family:$heading-font-stack;
+font-style:italic;
+}

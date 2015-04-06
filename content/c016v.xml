@@ -113,6 +113,14 @@
                font-variant:small-caps; </rendition>
             <rendition xml:id="super" scheme="css"> vertical-align:top; position:relative;
                top:-0.5em; font-size:70%; </rendition>
+            <rendition xml:id="center" n="tiebp:center" scheme="css">
+               display:block;
+               text-align:center;
+               margin-left:auto;
+               margin-right:auto;
+            </rendition>
+            <!-- check this rendition 
+               http://dcl.slis.indiana.edu/teibp/content/teibpstyles.xml -->
          </tagsDecl>
          <charDecl>
             <char xml:id="punctelevhiback">
@@ -140,21 +148,15 @@
          </charDecl>
       </encodingDesc>
    </teiHeader>
-   <!-- replaced PUA u+f1f7 w/ the proper character for virgule (the common slash, or solidus): u+002f. -->
-   <!-- MS Word label [5; s] becomes <lg type="sonnet" n="5"> -->
-   <!--
-       The standard solution below does not allow us to italicize only the "m" in "sempre."
-       
-       <choice><abbr>sēpre</abbr><expan>sempre</expan></choice>
-  -->
-
    <text>
       <body>
          <pb n="charta 16 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-016v.jpg"/>
          <lg type="canzone" xml:id="rvf71" n="71">
             <lg type="stanza">
                <lg type="dblhemi" corresp="#canvasline">
-                  <l n="97">Fugge al <choice><orig>uostro</orig><reg>vostro</reg></choice> apparire angoscia &amp7; <subst><del type="erasure"><gap reason="illegible"/></del><add>noia</add></subst><choice><orig>&#x2e31;/</orig><reg>,</reg></choice></l>
+                  <l n="97">Fugge al <choice><orig>uostro</orig><reg>vostro</reg></choice> apparire angoscia &amp7; <subst><del type="erasure"><gap reason="illegible"/></del><add>noia</add></subst><choice><orig>&#12539;&#8260;</orig><reg>,</reg></choice></l>
+                  <!-- check dot+slash: looks moe like a punctus elevatus with diagonal stroke? 
+                     http://abdn.ac.uk/skaldic/db.php?table=mufi_char&if=mufi&range=PUA-8 -->
                   <l n="98">Et nel <choice><orig>uostro</orig><reg>vostro</reg></choice> partir tornano insieme.</l>
                </lg>
                <lg type="dblhemi" corresp="#canvasline">
@@ -181,7 +183,7 @@
                   <l n="106"><hi rendition="#red #fs24pt">¶</hi><choice><orig>Cançon</orig><reg>Canzon</reg></choice><supplied>,</supplied> tu non <choice><orig>macqueti</orig><reg>m’acqueti</reg></choice>&p2c; <choice><orig>ançi</orig><reg>anzi</reg></choice> <choice><orig><choice>
                         <abbr>minfiāmi</abbr>
                         <expan>minfiammi</expan>
-                  </choice></orig><reg>m’infiammi</reg></choice></l>
+                  </choice></orig><reg>m’infiammi</reg></choice><choice><orig><g ref="#virgsusp"/></orig><reg/></choice></l>
                   <l n="107">A dir di quel <choice><orig>cha</orig><reg>ch’a</reg></choice> me stesso <choice><orig>minuola</orig><reg>m’invola</reg></choice>&p2semicolon;</l>
                </lg>
                <lg type="single" corresp="#canvasline">
@@ -191,7 +193,7 @@
          </lg>
          <lg type="canzone" xml:id="rvf72" n="72">
             <lg type="dblhemi" corresp="#canvasline">
-               <l n="1"><hi rendition="#red #fs24pt"
+               <l n="1"><hi rendition="#blue #fs24pt"
                   >G</hi><hi rendition="#small-caps">e</hi>ntil mia donna<supplied>,</supplied> i<supplied>’</supplied> <choice><orig>ueggio</orig><reg>veggio</reg></choice></l>
                <l n="2">Nel <choice><orig>mouer</orig><reg>mover</reg></choice> de<supplied>’</supplied> <choice><orig>uostrocchi</orig><reg>vostr’occhi</reg></choice> un dolce lume</l>
             </lg>
@@ -288,8 +290,10 @@
                <l n="43">Quando tanta <choice><orig>dolceçça</orig><reg>dolcezza</reg></choice> in lui discende&p2c;</l>
                <l n="44"><choice><orig>Ognialtra</orig><reg>Ogni altra</reg></choice> cosa<supplied>,</supplied> ogni penser <choice><orig>ua</orig><reg>va</reg></choice> fore&p2c;</l>
             </lg>
-            <!-- "Et solo" at the end of this charta -->
          </lg>
+         <!-- check encoding of the catchword 
+               http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-fw.html -->
+         <fw type="catch" rendition="#center">Et solo</fw>
       </body>
    </text>
 </TEI>

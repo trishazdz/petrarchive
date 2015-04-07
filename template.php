@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>Petrarchive: Title</title>
+	<title>Petrarchive: Acknowledgements</title>
 	    <script type="text/javascript">
 <!--
     function toggle_visibility(id) {

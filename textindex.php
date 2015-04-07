@@ -30,7 +30,8 @@
     <table id="index" class="sortable">
       <thead>
         <tr>
-          <th>Poem No.</th>
+          <th>Poem No.<br />
+          <span style="font-size:10pt;">Vatican Latino 3195</span></th>
           <th>First line</th>
           <th>Genre</th>
         </tr>

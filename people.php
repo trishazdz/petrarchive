@@ -31,7 +31,7 @@ Twitter: <a href="https://twitter.com/jawalsh">@jawalsh</a><br />-->
 </dd>
 </dl>
 <dl>
-<dt>Isabella Magni, Graduate Assistant <!-- 2013-present --></dt><dd />
+<dt>Isabella Magni, Graduate Assistant and Lead Encoder<!-- 2013-present --></dt><dd />
 </dl>
 <dl>
 <dt>Sara Dallavalle, Encoder <!-- 2014-present --></dt><dd />

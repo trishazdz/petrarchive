@@ -82,7 +82,6 @@
   </teiHeader>
   <text>
       <body>
-        <head>Petrarchive Glossary</head>
         <entry xml:id="binion">
           <form><orth>binion</orth></form>
           <def>A gathering, or quire, of two sheets folded to produce four chartae, eight sides.</def>

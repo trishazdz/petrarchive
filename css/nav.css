@@ -1,0 +1,61 @@
+/* nav */
+/* line 258, ../sass/screen.scss */
+#menu {
+  background-color: #e7e8ea;
+  padding: .75em 1.25em .75em .75em;
+  border: 1px solid #a5a3a1;
+  z-index: 99;
+  position: relative;
+  left: -1em;
+  top: .5em;
+  display:block;
+}
+
+/* line 267, ../sass/screen.scss */
+nav {
+  display: block;
+  font-size: 90%;
+}
+
+/* line 268, ../sass/screen.scss */
+nav ul {
+  font-family: "helvetica neue", helvetica, verdana, arial, sans-serif;
+  font-weight: 100;
+  margin-top: 0;
+  padding-top: 0;
+  margin-left: .75em;
+}
+
+/* line 269, ../sass/screen.scss */
+ul {
+  list-style: none;
+}
+
+/* line 270, ../sass/screen.scss */
+ul > li:before {
+  color: #a5a3a1;
+  font-size: 90%;
+  content: "–\00A0\00A0";
+}
+
+/* line 276, ../sass/screen.scss */
+nav img {
+  position: relative;
+  left: -2em;
+  top: -4px;
+}
+
+/* line 278, ../sass/screen.scss */
+nav #smallbanner {
+  width: 1000px;
+  position: absolute;
+  left: -1em;
+  display: inline;
+  left: 0px;
+  top: 0px;
+  /* border-bottom:$header-border; */
+}
+
+#banner a, #smallbanner a {
+  color: black;
+}

@@ -516,6 +516,9 @@ supplied {
 }
 /* Stuff for palimpsests:end */
 
+/* glossary stuff */
+entry {display:block; margin-bottom:.5em;}
+
 /* nav code: begin */
 /* line 258, ../sass/screen.scss */
 #menu {

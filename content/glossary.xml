@@ -65,7 +65,7 @@
 <!ENTITY punctelevhiback "&#xF1FA;">
 <!ENTITY encodingDesc SYSTEM "encodingDesc.xml"> 
 ]>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="glossary">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="glossary" style="margin-top:41pt;">
   <teiHeader>
       <fileDesc>
          <titleStmt>

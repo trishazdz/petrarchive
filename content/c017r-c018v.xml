@@ -438,7 +438,7 @@
                       </lg>
                   </lg>
                   <space corresp="#canvasline"/>
-                  <lg type="sonnet" n="74">
+                  <lg xml:id="rvf074" type="sonnet" n="74">
                       <lg type="octave">
                           <lg type="dblhemi" corresp="#canvasline">
                               <l n="1"><hi rendition="#blue #fs24pt">I</hi><hi rendition="#small-caps">o</hi> son <choice><orig>gia</orig><reg>già</reg></choice> stanco di pensar &si; come</l>
@@ -473,7 +473,7 @@
                       </lg>
                   </lg>
                   <space corresp="#canvasline"/>
-                  <lg type="sonnet" n="75">
+                  <lg xml:id="rvf075" type="sonnet" n="75">
                       <lg type="octave">
                           <lg type="dblhemi" corresp="#canvasline">
                               <l n="1"><hi rendition="#red #fs24pt">I</hi> <choice><orig><hi rendition="#small-caps">b</hi>e gliocchi</orig><reg><hi rendition="#small-caps">b</hi>egli occhi</reg></choice> <choice><orig>ondi</orig><reg>ond’i</reg></choice><supplied>’</supplied> fui percosso in guisa</l>
@@ -508,7 +508,7 @@
                       </lg>
                   </lg>
                   <space corresp="#canvasline"/>
-                  <lg type="sonnet" n="76">
+                  <lg xml:id="rvf076" type="sonnet" n="76">
                       <lg type="octave">
                           <lg type="dblhemi" corresp="#canvasline">
                               <l n="1"><hi rendition="#fs24pt #blue">A</hi><hi rendition="#small-caps">m</hi>or con sue promesse lusingando</l>
@@ -546,7 +546,7 @@
                   
                   <!-- lines 13 and 14: diplomatic has to be displayed on c.018v and edited at the end of c.18r -->
                   
-                  <lg type="sonnet" n="77">
+                  <lg xml:id="rvf077" type="sonnet" n="77">
                       <lg type="octave">
                           <lg type="dblhemi" corresp="#canvasline">
                               <l n="1"><hi rendition="#red #fs24pt">P</hi><hi rendition="#small-caps">e</hi>r  mirar <choice><orig>policleto</orig><reg>Policleto</reg></choice> a <choice><orig>proua</orig><reg>prova</reg></choice> fiso</l>
@@ -581,7 +581,7 @@
                       </lg>
                   </lg>
                   <space corresp="#canvasline"/>
-                  <lg type="sonnet" n="78">
+                  <lg xml:id="rvf078" type="sonnet" n="78">
                       <lg type="octave">
                           <lg type="dblhemi" corresp="#canvasline">
                               <l n="1"><hi rendition="#blue #fs24pt">Q</hi><hi rendition="#small-caps">u</hi>ando giunse a Simon <choice><orig>lalto</orig><reg>l’alto</reg></choice> <choice><abbr>cōcetto</abbr><expan>concetto</expan></choice></l>
@@ -616,7 +616,7 @@
                       </lg>
                   </lg> 
                   <space corresp="#canvasline"/>
-                  <lg type="sonnet" n="79">
+                  <lg xml:id="rvf079" type="sonnet" n="79">
                       <lg type="octave">
                           <lg type="dblhemi" corresp="#canvasline">
                               <l n="1"><choice><orig><hi rendition="#red #fs24pt">S</hi><hi rendition="#small-caps">a</hi>l</orig><reg><hi rendition="#red #fs24pt">S</hi><hi rendition="#small-caps">’a</hi>l</reg></choice> principio risponde il fine <choice><orig>el</orig><reg>e ’l</reg></choice> <choice><orig>meçço</orig><reg>mezzo</reg></choice></l>

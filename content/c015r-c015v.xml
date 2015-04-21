@@ -457,7 +457,7 @@ the line wraps. -->
         <body>
             <pb xml:id="c015r" n="charta 15 recto"
  facs="../images/vat-lat3195-f/vat-lat3195-f-015r.jpg"/>
-            <lg type="sonnet" n="68">
+            <lg xml:id="rvf068" type="sonnet" n="68">
               <lg type="octave">
                 <lg type="dblhemi" corresp="#canvasline">
                   <l n="1"><choice><orig><hi rendition="#red #fs24pt">L</hi><hi rendition="#small-caps">a</hi>spetto</orig><reg><hi rendition="#red #fs24pt">L</hi>’<hi rendition="#small-caps">a</hi>spetto</reg></choice> sacro de la terra <choice><orig>uostra</orig><reg>vostra</reg></choice></l>
@@ -495,7 +495,7 @@ the line wraps. -->
               </lg>
             </lg>
             <space corresp="#canvasline"/>
-            <lg type="sonnet" n="69">
+            <lg xml:id="rvf069" type="sonnet" n="69">
               <lg type="octave">
                 <lg type="dblhemi" corresp="#canvasline">
                     <l n="1"><hi rendition="#blue #fs24pt">B</hi><hi rendition="#small-caps">e</hi>n

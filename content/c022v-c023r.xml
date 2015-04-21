@@ -354,7 +354,7 @@
          </lg>
          </lg>
             <space corresp="#canvasline"/>
-            <lg type="madrigal" n="106">
+         <lg xml:id="rvf107" type="madrigal" n="106">
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="1"><hi rendition="#red #fs24pt"
                      >N</hi><hi rendition="#small-caps">o</hi><choice><orig>ua</orig><reg>va</reg></choice> angeletta <choice><orig>soura</orig><reg>sovra</reg></choice> <choice><orig>lale</orig><reg>l'ale</reg></choice> accorta</l>
@@ -374,7 +374,7 @@
                </lg>
             </lg>
             <space corresp="#canvasline"/>
-            <lg type="sonnet" n="107">
+         <lg xml:id="rvf107" type="sonnet" n="107">
               <lg type="octave">
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="1"><hi rendition="#blue #fs24pt"

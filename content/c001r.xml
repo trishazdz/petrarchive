@@ -494,7 +494,7 @@ the line wraps. -->
          <pb n="charta 1 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-001r.jpg" />
          <head corresp="#canvasline"><hi rendition="#red #fs24pt">F</hi><hi rendition="#small-caps #red">r</hi><hi rendition="#red">ancisci petrarche laureati poete. Rerum vulgarium fragmenta.</hi></head>
          <!-- this is the title of the work: above the transcriptional lines -->
-         <lg type="sonnet" n="1">
+          <lg xml:id="rvf001" type="sonnet" n="1">
             <lg type="octave">
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="1"><hi rendition="#blue #fs24pt"
@@ -530,7 +530,7 @@ the line wraps. -->
             </lg>
          </lg>
          <space corresp="#canvasline"/>
-         <lg type="sonnet" n="2">
+          <lg xml:id="rvf002" type="sonnet" n="2">
             <lg type="octave">
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="1"><hi rendition="#red #fs24pt">P</hi><hi rendition="#small-caps">e</hi>r fare una leggiadra sua <choice><orig>uendetta</orig><reg>vendetta</reg></choice></l>
@@ -565,7 +565,7 @@ the line wraps. -->
             </lg>
          </lg>
          <space corresp="#canvasline"/>
-         <lg type="sonnet" n="3">
+          <lg xml:id="rvf003" type="sonnet" n="3">
             <lg type="octave">
                <lg type="dblhemi" corresp="#canvasline">
                    <l n="1"><hi rendition="#blue #fs24pt">E</hi><hi rendition="#small-caps">r</hi>a il giorno <choice><orig>chal</orig><reg>ch’al</reg></choice> sol si scoloraro</l>
@@ -600,7 +600,7 @@ the line wraps. -->
             </lg>
          </lg>
          <space corresp="#canvasline"/>
-         <lg type="sonnet" n="4">
+          <lg xml:id="rvf004" type="sonnet" n="4">
             <lg type="octave">
                <lg type="dblhemi" corresp="#canvasline">
                    <l n="1"><hi rendition="#fs24pt #red">Q</hi><hi rendition="#small-caps"><choice><orig>v</orig><reg>u</reg></choice></hi>e<choice><orig>ḷ</orig><reg>’</reg></choice> <choice><orig>chinfinita</orig><reg>ch’infinita</reg></choice> <choice><orig>prouidentia</orig><reg>providentia</reg></choice> et arte</l>

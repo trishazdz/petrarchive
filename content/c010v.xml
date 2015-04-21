@@ -101,7 +101,7 @@
     <text>
         <body>
             <pb n="charta 10 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-010v.jpg" />
-            <lg type="sonnet" n="45">
+            <lg xml:id="rvf045" type="sonnet" n="45">
                 <lg type="octave">
                     <lg type="dblhemi" corresp="#canvasline">
                         <l n="1"><hi rendition="#red #fs24pt"
@@ -137,7 +137,7 @@
                 </lg>
             </lg>
             <space corresp="#canvasline"/>
-            <lg type="sonnet" n="46">
+            <lg xml:id="rvf046" type="sonnet" n="46">
                 <lg type="octave">
                     <lg type="dblhemi" corresp="#canvasline">
                         <l n="1"><hi rendition="#blue #fs24pt">L</hi><hi rendition="#small-caps"><supplied>’</supplied>o</hi>ro &amp7; le perle&v2c; <choice><orig>ei</orig><reg>e i</reg></choice> fior<supplied>’</supplied> <choice><orig>uermigli</orig><reg>vermigli</reg></choice> <choice><orig>&virg;</orig><reg></reg></choice> <choice><orig>ei</orig><reg>e i</reg></choice> <choice><abbr>biāchi</abbr><expan>bianchi</expan></choice>&v2c;</l>
@@ -172,7 +172,7 @@
                 </lg>
             </lg>
             <space corresp="#canvasline"/>
-            <lg type="sonnet" n="47">
+            <lg xml:id="rvf047" type="sonnet" n="47">
                 <lg type="octave">
                     <lg type="dblhemi" corresp="#canvasline">
                         <l n="1"><hi rendition="#red #fs24pt">I</hi><hi rendition="#small-caps">o</hi> sentia <choice><orig>dentral</orig><reg>dentr’al</reg></choice> cor <choice><orig>gia</orig><reg>già</reg></choice> <choice><orig>uenir</orig><reg>venir</reg></choice> meno</l>
@@ -207,7 +207,7 @@
                 </lg>
             </lg>
             <space corresp="#canvasline"/>
-            <lg type="sonnet" n="48">
+            <lg xml:id="rvf048" type="sonnet" n="48">
                 <lg type="octave">
                     <lg type="dblhemi" corresp="#canvasline">
                         <l n="1"><hi rendition="#fs24pt #blue">S</hi><hi rendition="#small-caps">e</hi> mai foco per foco non si spense<choice><orig> &virg-underdot;</orig><reg>,</reg></choice> </l>

@@ -110,7 +110,7 @@ way with parameter entities, but need to pre-process the documents to remove all
     <text>
         <body>
             <pb n="charta 3 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-003r.jpg" />
-            <lg type="sonnet" n="17">
+            <lg xml:id="rvf017" type="sonnet" n="17">
                 <lg type="octave">
                     <lg type="dblhemi" corresp="#canvasline">
                         <l n="1"><hi rendition="#red #fs24pt">P</hi><hi rendition="#small-caps">i</hi><choice><orig>ouonmi</orig><reg>ovonmi</reg></choice> amare lagrime dal <choice><orig>uiso</orig><reg>viso</reg></choice></l>
@@ -142,7 +142,7 @@ way with parameter entities, but need to pre-process the documents to remove all
                     </lg>
                 </lg>
             </lg>
-                <lg type="sonnet" n="18">
+            <lg xml:id="rvf018" type="sonnet" n="18">
                     <lg type="octave">
                         <lg type="dblhemi" corresp="#canvasline">
                             <l n="1"><hi rendition="#blue #fs24pt">Q</hi><hi rend="#small-caps"><choice><orig>v</orig><reg>u</reg></choice></hi>and<supplied>’</supplied>io son tutto <choice><orig>uolto</orig><reg>volto</reg></choice> &in; quella parte</l>
@@ -174,7 +174,7 @@ way with parameter entities, but need to pre-process the documents to remove all
                         </lg>
                     </lg>
                 </lg>
-            <lg type="sonnet" n="19">
+            <lg xml:id="rvf019" type="sonnet" n="19">
                 <lg type="octave">
                     <lg type="dblhemi" corresp="#canvasline">
                         <l n="1"><hi rendition="#red #fs24pt">S</hi><hi rendition="#small-caps">o</hi>n animali al mondo de &si; altera</l>
@@ -206,7 +206,7 @@ way with parameter entities, but need to pre-process the documents to remove all
                     </lg>
                 </lg>
             </lg>
-            <lg type="sonnet" n="20">
+            <lg xml:id="rvf020" type="sonnet" n="20">
                 <lg type="octave">
                     <lg type="dblhemi" corresp="#canvasline">
                         <l n="1"><hi rendition="#blue #fs24pt"><choice><orig>U</orig></choice><reg>V</reg></hi><hi rendition="#small-caps">e</hi>rgognando talor <choice><orig>chancor</orig><reg>ch’ancor</reg></choice> si taccia<supplied>,</supplied></l>

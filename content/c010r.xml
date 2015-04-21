@@ -101,7 +101,7 @@
    <text>
       <body>
          <pb n="charta 10 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-010r.jpg" />
-         <lg type="sonnet" n="41">
+         <lg xml:id="rvf041" type="sonnet" n="41">
             <lg type="octave">
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="1"><hi rendition="#red #fs24pt"
@@ -137,7 +137,7 @@
             </lg>
          </lg>
          <space corresp="#canvasline"/>
-         <lg type="sonnet" n="42">
+         <lg xml:id="rvf042" type="sonnet" n="42">
             <lg type="octave">
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="1"><hi rendition="#blue #fs24pt">M</hi><hi rendition="#small-caps">a</hi> poi <choice><orig>chel</orig><reg>che ’l</reg></choice> dolce riso humile &amp7; piano</l>
@@ -172,7 +172,7 @@
             </lg>
          </lg>
          <space corresp="#canvasline"/>
-         <lg type="sonnet" n="43">
+         <lg xml:id="rvf043" type="sonnet" n="43">
             <lg type="octave">
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="1"><hi rendition="#red #fs24pt">I</hi><hi rendition="#small-caps">l</hi> figliuol di <choice><orig>latona</orig><reg>Latona</reg></choice> <choice><orig>auea</orig><reg>aveva</reg></choice> <choice><orig>gia</orig><reg>già</reg></choice> <choice><orig>noue</orig><reg>nove</reg></choice></l>
@@ -207,7 +207,7 @@
             </lg>
          </lg>
          <space corresp="#canvasline"/>
-         <lg type="sonnet" n="44">
+         <lg xml:id="rvf044" type="sonnet" n="44">
             <lg type="octave">
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="1"><hi rendition="#fs24pt #blue">Q</hi><hi rendition="#small-caps"><choice><orig>v</orig><reg>u</reg></choice></hi>e<supplied>’</supplied> <choice><orig>chentesaglia</orig><reg>che ’n Tesaglia</reg></choice> ebbe le man<supplied>’</supplied> &si; pronte</l>

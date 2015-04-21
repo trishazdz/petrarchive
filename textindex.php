@@ -82,7 +82,7 @@
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>8</td>
+          <td><a href="content/c001v.xml#rvf008">8</a></td>
           <td>1v</td>
           <td><a href="content/c001v.xml#rvf008">A pie’ de’ colli ove la bella vesta</a></td>
           <td>Sonnet</td>

@@ -91,7 +91,7 @@
    <text>
       <body>
          <pb n="charta 45 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-045r.jpg" />
-         <lg type="sonnet" n="232">
+         <lg xml:id="rvf232" type="sonnet" n="232">
            <lg type="octave">
             <lg type="dblhemi" corresp="#canvasline">
                <l n="1"><hi rendition="#fs24pt">V</hi>incitore Alexandro <choice><orig>lira</orig><reg>l’ira</reg></choice> <choice><orig>uinse</orig><reg>vinse</reg></choice>&p2c;</l>
@@ -130,7 +130,7 @@
          
          <!-- check encoding of erasures: vv. 3 and 7 -->
          
-            <lg type="sonnet" n="233">
+         <lg xml:id="rvf233" type="sonnet" n="233">
               <lg type="octave">
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="1"><hi rendition="#fs24pt"
@@ -180,7 +180,7 @@
          <!-- check encoding of erasures: vv. 13 and 14 -->
          
          
-            <lg type="sonnet" n="234">
+         <lg xml:id="rvf234" type="sonnet" n="234">
               <lg type="octave">
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="1"><hi rendition="#fs24pt"
@@ -219,7 +219,7 @@
                </lg>
               </lg>
             </lg>
-         <lg type="sonnet" n="235">
+         <lg xml:id="rvf235" type="sonnet" n="235">
            <lg type="octave">
             <lg type="dblhemi" corresp="#canvasline">
                <l n="1"><hi rendition="#fs24pt"

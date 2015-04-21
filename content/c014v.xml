@@ -329,7 +329,7 @@ the line wraps. -->
    <text>
       <body>
          <pb n="charta 14 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-014v.jpg" />
-         <lg type="sestina" n="66" rendition="#columns_2">
+         <lg xml:id="rvf066" type="sestina" n="66" rendition="#columns_2">
             <cb n="1-of-2"/>
             <l n="1"><hi rendition="#red #fs24pt">L</hi><reg>’</reg><hi rendition="#small-caps">a</hi>ere 
                <choice><orig>grauato</orig><reg>gravato</reg></choice> et <choice><orig>limportuna</orig><reg>l’importuna</reg></choice> nebba</l>
@@ -387,7 +387,7 @@ the line wraps. -->
          
          <!-- check encoding erasure line 39 + space column 2 -->
          
-            <lg type="sonnet" n="67">
+         <lg xml:id="rvf067" type="sonnet" n="67">
               <lg type="octave">
                <lg type="dblhemi">
                   <l n="1"><hi rendition="#red #fs24pt">D</hi><hi rendition="#small-caps">e</hi>l mar 

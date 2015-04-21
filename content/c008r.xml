@@ -113,7 +113,7 @@
    <text>
       <body>
          <pb n="charta 8 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-008r.jpg" />
-         <lg type="sonnet" n="32">
+         <lg xml:id="rvf032" type="sonnet" n="32">
             <lg type="octave">
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="1"><hi rendition="#red #fs24pt"
@@ -149,7 +149,7 @@
             </lg>
          </lg>
          <space corresp="#canvasline"/>
-         <lg type="sonnet" n="33">
+         <lg xml:id="rvf033" type="sonnet" n="33">
             <lg type="octave">
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="1"><hi rendition="#blue #fs24pt">G</hi><hi rendition="#small-caps">i</hi><choice><orig>a</orig><reg>à</reg></choice> <choice><orig><choice><abbr>fiāmeggiaua</abbr><expan>fiammeggiaua</expan></choice></orig><reg>fiammeggiava</reg></choice> <choice><orig>lamorosa</orig><reg>l’amorosa</reg></choice> stella</l>
@@ -184,7 +184,7 @@
             </lg>
          </lg>
          <space corresp="#canvasline"/>
-         <lg type="sonnet" n="34">
+         <lg xml:id="rvf034" type="sonnet" n="34">
             <lg type="octave">
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="1"><hi rendition="#red #fs24pt">A</hi><hi rendition="#small-caps">p</hi>ollo<supplied>,</supplied> <choice><orig>sanchor</orig><reg>s’anchor</reg></choice> <choice><orig>uiue</orig><reg>vive</reg></choice> il bel desio&v2c;</l>
@@ -219,7 +219,7 @@
             </lg>
          </lg>
          <space corresp="#canvasline"/>
-         <lg type="sonnet" n="35">
+         <lg xml:id="rvf035" type="sonnet" n="35">
             <lg type="octave">
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="1"><hi rendition="#fs24pt #blue">S</hi><hi rendition="#small-caps">o</hi>lo &amp7; pensoso i &piu; deserti campi</l>

@@ -339,7 +339,7 @@ the line wraps. -->
    <text>
       <body>
          <pb n="Charta 22 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-022r.jpg" />
-         <lg type="sonnet" n="102">
+         <lg xml:id="rvf102" type="sonnet" n="102">
            <lg type="octave">
             <lg type="dblhemi" corresp="#canvasline">
                <l n="1"><hi rendition="#red #fs24pt"
@@ -375,7 +375,7 @@ the line wraps. -->
            </lg>
          </lg>
         <space corresp="#canvasline"/>
-         <lg type="sonnet" n="103">
+         <lg xml:id="rvf103" type="sonnet" n="103">
            <lg type="octave">
             <lg type="dblhemi" corresp="#canvasline">
                <l n="1"><hi rendition="#blue #fs24pt"
@@ -413,7 +413,7 @@ the line wraps. -->
            </lg>
          </lg> 
          <space corresp="#canvasline"/>
-         <lg type="sonnet" n="104">
+         <lg xml:id="rvf104" type="sonnet" n="104">
            <lg type="octave">
             <lg type="dblhemi" corresp="#canvasline">
                <l n="1"><hi rendition="#red #fs24pt"

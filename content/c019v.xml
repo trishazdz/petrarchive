@@ -105,7 +105,7 @@
     <text>
         <body>
             <pb n="charta 19 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-019v.jpg" />
-            <lg type="sonnet" n="82">
+            <lg xml:id="rvf082" type="sonnet" n="82">
                 <lg type="octave">
                     <lg type="dblhemi" corresp="#canvasline">
                         <l n="1"><hi rendition="#red #fs24pt"
@@ -141,7 +141,7 @@
                 </lg>
             </lg>
             <space corresp="#canvasline"/>
-            <lg type="sonnet" n="83">
+            <lg xml:id="rvf083" type="sonnet" n="83">
                 <lg type="octave">
                     <lg type="dblhemi" corresp="#canvasline">
                         <l n="1"><hi rendition="#blue #fs24pt">S</hi><hi rendition="#small-caps">e</hi> bianche non son prima ambe le <choice><abbr>tēpie</abbr><expan>tempie</expan></choice></l>
@@ -176,7 +176,7 @@
                 </lg>
             </lg>
             <space corresp="#canvasline"/>
-            <lg type="sonnet" n="84">
+            <lg xml:id="rvf084" type="sonnet" n="84">
                 <lg type="octave">
                     <lg type="dblhemi" corresp="#canvasline">
                         <l n="1"><hi rendition="#red #fs24pt">O</hi><hi rendition="#small-caps">c</hi>chi piangete&p2colon; accompagnate il core</l>
@@ -211,7 +211,7 @@
                 </lg>
             </lg>
             <space corresp="#canvasline"/>
-            <lg type="sonnet" n="85">
+            <lg xml:id="rvf085" type="sonnet" n="85">
                 <lg type="octave">
                     <lg type="dblhemi" corresp="#canvasline">
                         <l n="1"><hi rendition="#fs24pt #blue">I</hi><hi rendition="#small-caps">o</hi> amai &sempre;&p2c; et amo forte anchora&p2c;</l>

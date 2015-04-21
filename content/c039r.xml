@@ -114,7 +114,7 @@
                         <gap reason="canceled" extent="lg-sonnet"/>
                     </del>
                     <add>
-                        <lg type="sonnet" n="194">
+                        <lg xml:id="rvf194" type="sonnet" n="194">
                           <lg type="octave">
                             <lg type="dblhemi">
                                 <l n="1"><hi rendition="#red #fs24pt">L</hi><hi rendition="#small-caps"><reg>&regapos;</reg>a</hi>ura 
@@ -159,7 +159,7 @@
             
             <!-- check "broken bar" + the whole sonnet is over erasure-->
             
-            <lg type="sonnet" n="195">
+            <lg xml:id="rvf195" type="sonnet" n="195">
                 <lg type="octave">
                   <lg type="dblhemi">
                     <l n="1"><hi rendition="#blue #fs24pt"
@@ -204,7 +204,7 @@
                 </lg>
               </lg>
             </lg>
-            <lg type="sonnet" n="196">
+            <lg xml:id="rvf196" type="sonnet" n="196">
               <lg type="octave">
                 <lg type="dblhemi">
                     <l n="1"><hi rendition="#red #fs24pt"
@@ -251,7 +251,7 @@
                 </lg>
               </lg>
             </lg>
-            <lg type="sonnet" n="197">
+            <lg xml:id="rvf197" type="sonnet" n="197">
               <lg type="octave">
                 <lg type="dblhemi">
                     <l n="1"><hi rendition="#blue #fs24pt"

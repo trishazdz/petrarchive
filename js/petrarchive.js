@@ -1,14 +1,3 @@
-function clearPageBreaks(){
-	$("pb").css("display","none");
-	$(".-teibp-pb").css("display","none");
-}
-
-function addPageBreaks(){
-	$("pb").css("display","block");	
-	$(".-teibp-pb").css("display","block");
-
-}
-
 function showHide (maniculeId, idToShow, idToHide) {
   hide = "#" + idToHide;
   show = "#" + idToShow;
@@ -25,5 +14,9 @@ function toggle_visibility(id) {
           e.style.display = 'none';
        else
           e.style.display = 'block';
-    }
+}
+
+function switchCustomCSS(theme) {
+	document.getElementById('customcss').href=theme.options[theme.selectedIndex].value;
+}
 

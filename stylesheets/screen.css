@@ -98,7 +98,7 @@ body {
   margin-left: auto;
   margin-top: 4em;
   font-size: 14pt;
-  font-family: Georgia, Palatino, serif;
+  font-family: "andron_scriptor_webregular", Georgia, Palatino, serif;
 }
 
 /* line 49, ../sass/screen.scss */
@@ -362,7 +362,7 @@ em, cite, i {
 /* line 267, ../sass/screen.scss */
 nav {
   display: block;
-  font-size: 90%;
+  font-size: 12pt;
 }
 
 /* line 268, ../sass/screen.scss */
@@ -382,7 +382,7 @@ ul {
 /* line 270, ../sass/screen.scss */
 ul > li:before {
   color: #a5a3a1;
-  font-size: 90%;
+  font-size: 12pt;
   content: "–\00A0\00A0";
 }
 

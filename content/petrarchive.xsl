@@ -11,12 +11,20 @@
     xmlns="http://www.w3.org/1999/xhtml" 
     exclude-result-prefixes="xsl tei xd eg fn #default">
     <xsl:import href="teibp.xsl"/>
-    
+    <xsl:output method="xml" doctype-system="about:legacy-compat" encoding="UTF-8" />
         
     <xsl:param name="pbNote" select="''"/>
     
     <xsl:param name="customCSS.norm" select="concat($filePrefix,'/css/custom_norm.css')"/>
     <xsl:param name="customCSS" select="concat($filePrefix,'/css/custom.css')"/>
+  
+ 
+    <xsl:template name="siteNavigation">
+      <xsl:variable name="nav">
+        <xsl:copy-of select="document('../nav_content.html')"/>
+      </xsl:variable>
+      <xsl:copy-of select="$nav"/>
+    </xsl:template>
     
     <xsl:template match="tei:g" priority="99">
       <xsl:variable name="charId" select="substring-after(@ref,'#')"/>
@@ -76,14 +84,9 @@
             <script type="text/javascript" src="{$jqueryJS}"></script>
 
           <!-- <script type="text/javascript" src="{$jqueryBlockUIJS}"></script>-->
-          <script type="text/javascript" src="{$teibpJS}"></script>
-          <script type="text/javascript" src="../js/petrarchive.js"></script>
-            <script type="text/javascript">
-                function switchCustomCSS(theme) {
-                document.getElementById('customcss').href=theme.options[theme.selectedIndex].value;
-                }
-            </script>
-          
+          <script type="text/javascript" src="{$teibpJS}"><xsl:comment> </xsl:comment></script>
+          <script type="text/javascript" src="../js/petrarchive.js"><xsl:comment> </xsl:comment></script>
+
             <xsl:call-template name="rendition2style"/>
             <title><xsl:value-of select="$htmlTitle"/><!-- don't leave empty. --></title>
             <xsl:if test="$includeAnalytics = true()">
@@ -165,9 +168,7 @@
     -->
   </xsl:template>
   
-  <xsl:template name="siteNavigation">
-    <nav><a href="../index.html">Petr<i>archive</i> home</a></nav>
-  </xsl:template>
+  
   
   <xsl:template match="tei:ab[@type = 'blockSubst']">
     <xsl:variable name="maniculeId" select="concat(@xml:id,'Trigger')"/>

@@ -1,4 +1,59 @@
 /* Place project-specific CSS here */
+
+/* Meyer reset */
+// http://meyerweb.com/eric/tools/css/reset/
+// v2.0 | 20110126
+// License: none (public domain)
+/* line 6, ../sass/_meyer-reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 16, ../sass/_meyer-reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 19, ../sass/_meyer-reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../sass/_meyer-reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 25, ../sass/_meyer-reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 29, ../sass/_meyer-reset.scss */
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 35, ../sass/_meyer-reset.scss */
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* line 40, ../sass/_meyer-reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* end meyer-reset */
+
 @font-face {
   font-family: 'andron_scriptor_webregular';
   src: url('fonts/andron_scriptor_web-webfont.eot');
@@ -16,6 +71,10 @@ html {
 }
 html > body {
   margin-top: 0;
+}
+
+#tei_wrapper {
+margin-top:24pt;
 }
 titleStmt > tei-title {
   font-family: "Helvetica Neue", "Gill Sans", "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
@@ -38,6 +97,8 @@ teiHeader {
 TEI teiHeader {
   margin-top: 0;
 }
+
+/*
 nav {
   font-family: "Helvetica Neue", "Gill Sans", "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
   font-size: 16px;
@@ -48,6 +109,9 @@ nav a,
 nav a:visited {
   color: #007aff !important;
 }
+
+*/
+
 lg {
   line-height: 175%;
 }
@@ -263,15 +327,15 @@ choice expan {
   position: relative;
   font-size: 70%;
   margin-right: 1em;
-  padding: 1em;
-  border-radius: 15px;
-  border: 1px solid #aaaaaa;
-  background: #fafafa;
+  padding:0;
+  border-radius:0;
+  border:none;
+  background:inherit;
   font-family: Arvo, Verdana, sans-serif;
   text-align: left;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow:none;
+  -moz-box-shadow:none;
+  box-shadow:none;
   width: 15em;
 }
 #teibpToolbox h1 {
@@ -451,3 +515,115 @@ supplied {
   display:none;
 }
 /* Stuff for palimpsests:end */
+
+/* nav code: begin */
+/* line 258, ../sass/screen.scss */
+#menu {
+  background-color: #e7e8ea;
+  padding: .75em 1.25em .75em .75em;
+  border: 1px solid #a5a3a1;
+  z-index: 99;
+  position: relative;
+  left: -1em;
+  top: .5em;
+  display:none;
+}
+
+/* line 267, ../sass/screen.scss */
+nav {
+  display: block;
+  font-size: 12pt;
+}
+
+/* line 268, ../sass/screen.scss */
+nav ul {
+  font-family: "helvetica neue", helvetica, verdana, arial, sans-serif;
+  font-weight: 100;
+  margin-top: 0;
+  padding-top: 0;
+  margin-left: .75em;
+}
+
+/* line 269, ../sass/screen.scss */
+ul {
+  list-style: none;
+}
+
+/* line 270, ../sass/screen.scss */
+ul > li:before {
+  color: #a5a3a1;
+  font-size: 12pt;
+  content: "–\00A0\00A0";
+}
+
+/* line 276, ../sass/screen.scss */
+nav img {
+  position: relative;
+  left: -2em;
+  top: -4px;
+  border:none;
+}
+
+/* line 278, ../sass/screen.scss */
+nav #smallbanner {
+  width: 1000px;
+  position: absolute;
+  top:-8px;
+  display: inline;
+  /* border-bottom:$header-border; */
+}
+
+#smallbanner {
+  font-family: "helvetica neue", helvetica, verdana, arial, sans-serif;
+  font-size: 14pt;
+  text-decoration: none;
+  font-weight: 100;
+  line-height: 12pt;
+  padding-bottom: .2em;
+  display: inline;
+}
+
+/* line 161, ../sass/screen.scss */
+#smallbanner #bannerresp {
+  font-size: 10pt;
+}
+
+/* line 165, ../sass/screen.scss */
+#smallbanner #bannertitle:after {
+  content: ": ";
+}
+
+/* line 169, ../sass/screen.scss */
+#smallbanner #bannersubtitle:after {
+  content: ", ";
+}
+
+/* line 173, ../sass/screen.scss */
+#smallbanner #bannerrvf {
+  font-style: italic;
+}
+
+/* line 177, ../sass/screen.scss */
+#smallbanner #bannerrvf:after {
+  content: ". ";
+}
+
+/* line 181, ../sass/screen.scss */
+#smallbanner div {
+  display: inline;
+}
+
+#smallbanner a {
+color:black;
+}
+
+nav strong {
+font-weight:500;
+}
+
+li {
+line-height:18pt;
+display:list-item;
+}
+/* nav code: end */
+

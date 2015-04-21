@@ -1,14 +1,3 @@
-function clearPageBreaks(){
-	$("pb").css("display","none");
-	$(".-teibp-pb").css("display","none");
-}
-
-function addPageBreaks(){
-	$("pb").css("display","block");	
-	$(".-teibp-pb").css("display","block");
-
-}
-
 /*
 function init(){
 	document.getElementById('pbToggle').onclick = function(){

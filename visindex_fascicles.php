@@ -3,7 +3,8 @@
 <head>
 	<meta charset="utf-8" />
 	<title> Petrarchive: Visual Index to Vat. lat. 3195 </title>
-	<link type="text/css" rel="stylesheet" href="stylesheets/screen.css" />
+	<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
 
 <!-- 	body {background-color:#251d03; margin:0;} 
 
@@ -14,7 +15,11 @@
 	
 	body {
 	/* width:900px; */
-	margin:4em;
+	width:100%;
+	}
+	
+	#content {
+	max-width:100%;
 	}
 
 	
@@ -71,23 +76,26 @@
 	
 	
 	</style>
+		    <script type="text/javascript">
+<!--
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+//-->
+</script>
 </head>
 <body>
-<!--<div id="banner">
-			<img src="images/site/banner.png" />
-		</div>-->
-<div id="banner">
-	<div id="bannertitle">
-		Petr<span class="archive">archive</span>
-	</div>
-	<div id="bannersubtitle">
-		An edition of Petrarch’s songbook
-	</div>
-</div>
-<div id="visindex">
-	<h1 style="'helvetica neue', helvetica, verdana, arial, sans-serif; font-weight:100; font-size:16pt; margin-bottom:2em;">
+<?php include("nav.html"); ?>
+<div id="content">
+
+	<h1>
 		A visual index to Petrarch's <cite>Rerum vulgarium fragmenta</cite>, Vat. Lat. 3195
 	</h1>
+	<div id="visindex">
 	<div class="fascicle clearfix" style="margin-bottom:5px;">
 		<h1 style="margin-bottom:.5em; border:none;">
 			Fascicle I: quaternion
@@ -158,11 +166,7 @@
 		</div>
 		<!--<div class="page-spacer" style="margin-left:.3em; min-width:291px; min-height:400px" /> -->
 	</div>
-<footer style="clear:both;">
-	© 2012-2015 H. Wayne Storey &amp; John A. Walsh. This document is part of the Petr<em>archive</em>.<br />
-	By H. Wayne Storey, John A. Walsh, Isabella Magni, Sara Allison M. McCormack, and Laura Pence.<br />
-	<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" class="hastei" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png" /></a> <a xmlns:cc="http://creativecommons.org/ns#" href="http://petrarchive.org" property="cc:attributionName" rel="cc:attributionURL"><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Petr<i>archive</i></span></a> by <a href="http://www.indiana.edu/~frithome/faculty/italian/storey.shtml">H. Wayne Storey</a> and <a href="http://johnwalsh.name/">John A. Walsh</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />
-	Powered by <a href="http://teiboilerplate.org/">TEI Boilerplate</a>. 
-</footer>
+	</div>
+<?php include("footer.html"); ?>
 </body>
 </html>

@@ -227,6 +227,7 @@ font-family:'Helvetica Neue','Gill Sans',Helvetica,Arial,sans-serif;
 font-weight:200;
 font-size:8pt;
 line-height:1.5;
+clear:both;
 }
 
 //For number/first-line 
@@ -261,8 +262,7 @@ padding:.75em 1.25em .75em .75em;
 border: 1px solid #a5a3a1;
 z-index:99;
 position:relative;
-left:-1em;
-top:.5em;
+left:-5em;
 }
 nav {display:block;font-size:12pt;}
 nav ul {font-family: $heading-font-stack; font-weight:100; margin-top:0; padding-top:0; margin-left:.75em;}

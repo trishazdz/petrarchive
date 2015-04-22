@@ -311,9 +311,10 @@ footer {
   font-weight: 200;
   font-size: 8pt;
   line-height: 1.5;
+  clear: both;
 }
 
-/* line 233, ../sass/screen.scss */
+/* line 234, ../sass/screen.scss */
 ul.leaders {
   max-width: 30em;
   padding: 0;
@@ -321,7 +322,7 @@ ul.leaders {
   list-style: none;
 }
 
-/* line 238, ../sass/screen.scss */
+/* line 239, ../sass/screen.scss */
 ul.leaders li:before {
   float: left;
   width: 0;
@@ -329,34 +330,33 @@ ul.leaders li:before {
   content: ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . ";
 }
 
-/* line 247, ../sass/screen.scss */
+/* line 248, ../sass/screen.scss */
 ul.leaders span:first-child {
   padding-right: 0.33em;
   background: white;
 }
 
-/* line 250, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 ul.leaders span + span {
   float: right;
   padding-left: 0.33em;
   background: white;
 }
 
-/* line 255, ../sass/screen.scss */
+/* line 256, ../sass/screen.scss */
 em, cite, i {
   font-style: italic;
 }
 
 /* nav */
-/* line 258, ../sass/screen.scss */
+/* line 259, ../sass/screen.scss */
 #menu {
   background-color: #e7e8ea;
   padding: .75em 1.25em .75em .75em;
   border: 1px solid #a5a3a1;
   z-index: 99;
   position: relative;
-  left: -1em;
-  top: .5em;
+  left: -5em;
 }
 
 /* line 267, ../sass/screen.scss */

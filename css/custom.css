@@ -527,8 +527,7 @@ entry {display:block; margin-bottom:.5em;}
   border: 1px solid #a5a3a1;
   z-index: 99;
   position: relative;
-  left: -1em;
-  top: .5em;
+  left: -5em;
   display:none;
 }
 

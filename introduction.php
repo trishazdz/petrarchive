@@ -100,12 +100,6 @@ The Petrarchive texts contain some uncommon characters that may not be available
 
 <img class="subsetvis" src="images/visindex/c039r.svg" alt="vat lat 3195 c. 39r"/><img class="subsetvis" src="images/vat-lat3195-f/vat-lat3195-f-039r.jpg" alt="vat lat 3195 c. 39r"/><p>Subset 6 establishes editorial and encoding strategies for multiple strata of erasure as part of Petrarch’s visual poetics and compilational techniques that range from the elimination of an entire sonnet (the first composition on the page [“L’aura gentil” [<cite>Rvf</cite> 194]) to multiple layers of expulsions in individual poems (sonnets 3 and 4 = <cite>Rvf</cite> 196 and 197 [“L’aura serena” and “L’aura celeste”]).</p></div></section><section> 
 
-<h1 id="visualindex">Visual Index</h1>
-
-<p>The textual and graphological representations of the text are supplemented by other resources developed for the digital edition. These resources include a <a href="visindex_2up.html">visual index</a>, or map, of Petrarch’s graphological enterprise. This map provides diagrammatic “wireframe” representations of Petrach’s layouts, categorizes those layouts, and will link from diagrams to individual texts. </p>
-<figure>
-<img src="images/Petrarchive__Visual_Index_to_Vat__lat__3195.jpg" alt="Petrarchive Visual Index" id="visindex" />
-<figcaption><a href="visindex_2up.html">Petrarchive Visual Index</a></figcaption></figure>
 </section>
 </div>
 <?php include("footer.html"); ?>

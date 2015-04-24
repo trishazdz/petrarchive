@@ -524,6 +524,12 @@ the line wraps. -->
                             <item><date when="1358" cert="low"></date>Event 1</item>
                             <item><date when="1358" cert="medium"></date>Event 2</item>
                             <item><date when="1358" cert="high"></date>Event 3</item>
+                            <!-- cert="high" is implied if not @cert is present -->
+                            <!-- @cert values:
+                                low = conjecture
+                                medium = datable
+                                high = dated
+                             -->
                             
                             <!-- Isabella: exmples of "certainty" attribute. Is it correct? -->
                             
@@ -532,11 +538,11 @@ the line wraps. -->
                 </row>
                 <row role="data">
                     <cell rendition="#chronoTableDate">
-                        <date when="1362"/>
+                      <date when="1373"/> 
                     </cell>
                     <cell>
                         <list>
-                            <item><!-- add item --></item>
+                          <item><label rendition="#suppress"><title level="m">Invectiva contra eum qui maledixit Italiae</title></label><date from="1873-01" to="1873-03" rendition="#suppress"/>Writes the <title level="m">Invectiva contra eum qui maledixit Italiae</title> in reply to Jean de Hesdin.<!-- add item --></item>
                             <item><!-- add item --></item>
                             <item><!-- add item --></item>
                         </list>

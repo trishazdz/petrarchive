@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data date-time-format="iso8601">
+  <event start="1304-07-20" title="Petrarch born">Francesco Petrarca (Petrarch)
+    is born in Arezzo to the notary ser Petracco di Parenzo and lady Eletta
+    Canigiani.</event>
+  <event start="1358" title="Event 1"/>
+  <event start="1358" title="Event 2"/>
+  <event start="1358" title="Event 3"/>
+  <event start="1373-01" isDuration="true" end="1373-03" title="Test">Writes the
+    &lt;i&gt;Invectiva contra eum qui maledixit Italiae&lt;/i&gt; in reply to
+    Jean de Hesdin.</event>
+  
+</data>

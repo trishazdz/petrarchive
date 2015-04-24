@@ -18,6 +18,8 @@
     <xsl:param name="customCSS.norm" select="concat($filePrefix,'/css/custom_norm.css')"/>
     <xsl:param name="customCSS" select="concat($filePrefix,'/css/custom.css')"/>
   
+    
+  
  
     <xsl:template name="siteNavigation">
       <xsl:variable name="nav">
@@ -97,7 +99,7 @@
     
     <!-- Petrarchive Toolbox -->
     <xsl:template name="teibpToolbox">
-      <xsl:if test="not(/tei:TEI/@xml:id = 'glossary')">
+      <xsl:if test="not(/tei:TEI/@xml:id = 'glossary') and not(/tei:TEI/@xml:id = 'chronology_petrarch')">
         <div id="teibpToolbox">
             <div>
                 <h1 style="display:inline;">text view </h1>

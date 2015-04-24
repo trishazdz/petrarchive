@@ -82,9 +82,8 @@
                     <name xml:id="im">Isabella Magni</name>
                 </respStmt>
             </titleStmt>
-            <publicationStmt
-                xml:base="includes/publicationStmt.xml">
-                <p/>
+            <publicationStmt>
+              <p/>           
             </publicationStmt>
             <sourceDesc>
                 <p/>

@@ -39,7 +39,6 @@ blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
-
 /* line 35, ../sass/_meyer-reset.scss */
 q:before, q:after {
   content: "";
@@ -96,6 +95,10 @@ teiHeader {
 /* TEI teiHeader selector is for transcriptions; facsimile viewer teiHeader is not a child of TEI. Let's us have different behavoriors for different interfaces. */
 TEI teiHeader {
   margin-top: 0;
+}
+
+cell {
+width:inherit;
 }
 
 /*
@@ -628,4 +631,5 @@ line-height:18pt;
 display:list-item;
 }
 /* nav code: end */
+
 

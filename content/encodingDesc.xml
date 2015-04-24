@@ -383,6 +383,9 @@ the line wraps. -->
           color: #5f0000;
           font-weight:bold;
         </rendition>
+      <rendition xml:id="suppress" scheme="css">
+        display:none;
+      </rendition>
       <namespace name="http://www.tei-c.org/ns/1.0">
         <tagUsage gi="form" render="#form"/>
       </namespace>

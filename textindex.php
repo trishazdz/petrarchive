@@ -442,15 +442,15 @@
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>68</td>
+          <td><a href="content/c015r-c015v.xml#rvf068">68</a></td>
           <td>15r</td>
-          <td>L’aspetto sacro de la terra vostra</td>
+          <td><a href="content/c015r-c015v.xml#rvf068">L’aspetto sacro de la terra vostra</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>69</td>
+          <td><a href="content/c015r-c015v.xml#rvf069">69</a></td>
           <td>15r</td>
-          <td>Ben sapeva io che natural consiglio</td>
+          <td><a href="content/c015r-c015v.xml#rvf069">Ben sapeva io che natural consiglio</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
@@ -460,58 +460,58 @@
           <td>Canzone</td>
         </tr>
         <tr>
-          <td><a href="content/c016v.xml#rvf071">71</a></td>
-          <td>15r-16v</td>
-          <td><a href="content/c016v.xml#rvf071">Perché la vita è breve</a></td>
+          <td><a href="content/c016v-c018v.xml#rvf071">71</a></td>
+          <td>15v-16v</td>
+          <td><a href="content/c016v-c018v.xml#rvf071">Perché la vita è breve</a></td>
           <td>Canzone</td>
         </tr>
         <tr>
-          <td><a href="content/c016v.xml#rvf072">72</a></td>
+          <td><a href="content/c016v-c018v.xml#rvf072">72</a></td>
           <td>16v-17r</td>
-          <td><a href="content/c016v.xml#rvf071">Gentil mia donna, i’ veggio</a></td>
+          <td><a href="content/c016v-c018v.xml#rvf072">Gentil mia donna, i’ veggio</a></td>
           <td>Canzone</td>
         </tr>
         <tr>
         <!-- TODO: insert links - inconsistencies with github files -->
-          <td>73</td>
+          <td><a href="content/c016v-c018v.xml#rvf073">73</a></td>
           <td>17r-18r</td>
-          <td>Poi che per mio destino</td>
+          <td><a href="content/c016v-c018v.xml#rvf073">Poi che per mio destino</a></td>
           <td>Canzone</td>
         </tr>
         <tr>
-          <td>74</td>
+          <td><a href="content/c016v-c018v.xml#rvf074">74</a></td>
           <td>18r</td>
-          <td>Io son già stanco di pensar sì come</td>
+          <td><a href="content/c016v-c018v.xml#rvf074">Io son già stanco di pensar sì come</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>75</td>
+          <td><a href="content/c016v-c018v.xml#rvf075">75</a></td>
           <td>18r</td>
-          <td>I Begli occhi ond’i’ fui percosso in guisa</td>
+          <td><a href="content/c016v-c018v.xml#rvf075">I Begli occhi ond’i’ fui percosso in guisa</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>76</td>
+          <td><a href="content/c016v-c018v.xml#rvf076">76</a></td>
           <td>18r</td>
-          <td>Amor con sue promesse lusingando</td>
+          <td><a href="content/c016v-c018v.xml#rvf076">Amor con sue promesse lusingando</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>77</td>
+          <td><a href="content/c016v-c018v.xml#rvf077">77</a></td>
           <td>18v</td>
-          <td>Per mirar Policleto a prova fiso</td>
+          <td><a href="content/c016v-c018v.xml#rvf077">Per mirar Policleto a prova fiso</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>78</td>
+          <td><a href="content/c016v-c018v.xml#rvf078">78</a></td>
           <td>18v</td>
-          <td>Quando giunse a Simon l’alto concetto</td>
+          <td><a href="content/c016v-c018v.xml#rvf078">Quando giunse a Simon l’alto concetto</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>79</td>
+          <td><a href="content/c016v-c018v.xml#rvf079">79</a></td>
           <td>18v</td>
-          <td>S’al principio risponde il fine e ’l mezzo</td>
+          <td><a href="content/c016v-c018v.xml#rvf079">S’al principio risponde il fine e ’l mezzo</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
@@ -671,15 +671,15 @@
           <td>Canzone</td>
         </tr>
         <tr>
-          <td>106</td>
+          <td><a href="content/c022v-c023r.xml#rvf106">106</a></td>
           <td>23r</td>
-          <td>Nova angeletta sovra l’ale accorta</td>
+          <td><a href="content/c022v-c023r.xml#rvf106">Nova angeletta sovra l’ale accorta</a></td>
           <td>Madrigal</td>
         </tr>
         <tr>
-          <td>107</td>
+          <td><a href="content/c022v-c023r.xml#rvf107">107</a></td>
           <td>23r</td>
-          <td>Non veggio ove scampar mi possa omai</td>
+          <td><a href="content/c022v-c023r.xml#rvf107">Non veggio ove scampar mi possa omai</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
@@ -707,51 +707,51 @@
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>112</td>
+          <td><a href="content/c024r.xml#rvf112">112</a></td>
           <td>24r</td>
-          <td>Sennuccio, i’ vo’ che sapi in qual manera</td>
+          <td><a href="content/c024r.xml#rvf112">Sennuccio, i’ vo’ che sapi in qual manera</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>113</td>
+          <td><a href="content/c024r.xml#rvf113">113</a></td>
           <td>24r</td>
-          <td>Qui dove mezzo son, Sennuccio mio</td>
+          <td><a href="content/c024r.xml#rvf113">Qui dove mezzo son, Sennuccio mio</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>114</td>
+          <td><a href="content/c024r.xml#rvf114">114</a></td>
           <td>24r</td>
-          <td>De l’empia Babilonia, ond’è fuggita</td>
+          <td><a href="content/c024r.xml#rvf114">De l’empia Babilonia, ond’è fuggita</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>115</td>
+          <td><a href="content/c024r.xml#rvf115">115</a></td>
           <td>24r</td>
-          <td>In mezzo di duo amanti honesta altera</td>
+          <td><a href="content/c024r.xml#rvf115">In mezzo di duo amanti honesta altera</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>116</td>
+          <td><a href="content/c024v.xml#rvf116">116</a></td>
           <td>24v</td>
-          <td>Pien di quella ineffabile dolcezza</td>
+          <td><a href="content/c024v.xml#rvf116">Pien di quella ineffabile dolcezza</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>117</td>
+          <td><a href="content/c024v.xml#rvf117">117</a></td>
           <td>24v</td>
-          <td>Se ’l sasso, ond’è più chiusa ques[ta] v[a]ll<u>e</u></td>
+          <td><a href="content/c024v.xml#rvf117">Se ’l sasso, ond’è più chiusa ques[ta] v[a]ll<u>e</u></a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>118</td>
+          <td><a href="content/c024v.xml#rvf118">118</a></td>
           <td>24v</td>
-          <td>Rimansi a dietro il sestodecimo anno</td>
+          <td><a href="content/c024v.xml#rvf118">Rimansi a dietro il sestodecimo anno</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>119</td>
+          <td><a href="content/c024v.xml#rvf119">119</a></td>
           <td>24v-25v</td>
-          <td>Una donna più bella assai che ’l sole</td>
+          <td><a href="content/c024v.xml#rvf119">Una donna più bella assai che ’l sole</a></td>
           <td>Canzone</td>
         </tr>
         <tr>
@@ -2186,9 +2186,9 @@
           <td>Canzone</td>
         </tr>
         <tr>
-          <td>357</td>
+          <td><a href="content/c069v-c070r.xml#rvf357">357</a></td>
           <td>70r</td>
-          <td>Dicemi spesso il mio fidato speglio</td>
+          <td><a href="content/c069v-c070r.xml#rvf357">Dicemi spesso il mio fidato speglio</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>

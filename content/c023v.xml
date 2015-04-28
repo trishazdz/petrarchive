@@ -64,8 +64,7 @@
         <fileDesc>
             <titleStmt>
                 <title>Petrarch's <title rendition="#i">Rerum vulgarium
-                        fragmenta</title>: Charta 15
-                    recto and verso</title>
+                        fragmenta</title>: Charta 23 verso</title>
                 <editor xml:id="hws">H. Wayne
                     Storey</editor>
                 <respStmt>
@@ -458,7 +457,7 @@ the line wraps. -->
                </lg>
                <lg type="dblhemi" corresp="#canvasline">
                   <l n="7">Che <choice><orig>latto</orig><reg>l’atto</reg></choice> dolce non mi stia <choice><orig>dauante</orig><reg>davante</reg></choice></l>
-                  <l n="8">Del qual <choice><orig>o</orig><reg>ò</reg></choice> la memoria<choice><orig> &virg;</orig></choice><reg/></choice> <choice><orig>el</orig><reg>e ’l</reg></choice> cor &si; pieno.</l>
+                  <l n="8">Del qual <choice><orig>o</orig><reg>ò</reg></choice> la memoria<choice><orig> &virg;</orig><reg/></choice> <choice><orig>el</orig><reg>e ’l</reg></choice> cor &si; pieno.</l>
                </lg>
             </lg>
             <lg type="sestet">

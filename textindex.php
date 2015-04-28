@@ -683,27 +683,27 @@
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>108</td>
+          <td><a href="content/c023v.xml#rvf108">108</a></td>
           <td>23v</td>
-          <td>Aventuroso più d’altro terreno</td>
+          <td><a href="content/c023v.xml#rvf108">Aventuroso più d’altro terreno</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>109</td>
+          <td><a href="content/c023v.xml#rvf109">109</a></td>
           <td>23v</td>
-          <td>Lasso, quante fiate Amor m’assale</td>
+          <td><a href="content/c023v.xml#rvf109">Lasso, quante fiate Amor m’assale</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>110</td>
+          <td><a href="content/c023v.xml#rvf110">110</a></td>
           <td>23v</td>
-          <td>Persequendomi Amor al luogo usato</td>
+          <td><a href="content/c023v.xml#rvf110">Persequendomi Amor al luogo usato</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>111</td>
+          <td><a href="content/c023v.xml#rvf111">111</a></td>
           <td>23v</td>
-          <td>La donna che ’l mio cor nel viso porta</td>
+          <td><a href="content/c023v.xml#rvf111">La donna che ’l mio cor nel viso porta</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>

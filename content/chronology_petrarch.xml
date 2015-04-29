@@ -498,7 +498,7 @@ the line wraps. -->
             -->
             <!-- Isabella: update the link above! -->
             
-            
+          <p style="font-size:85%;">This chronology is also available as an <ref target="../chronology/">interactive timeline</ref>.</p>
             <table xml:id="chronoTable">
                 <row role="label">
                     <cell role="label">date</cell>

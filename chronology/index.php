@@ -57,7 +57,7 @@ function onLoad() {
             ];
 
 
-  var d = "Jan 1 1373 00:00:00 GMT"; 
+  var d = "Jan 1 1362 00:00:00 GMT"; 
   var bandInfos = [
     Timeline.createBandInfo({
    	    eventSource:    eventSourceSwinburne,
@@ -187,8 +187,18 @@ function clientSideInclude(id, url) {
                 
                 <style type="text/css">
            
+#my-timeline, .simileAjax-bubble-container {
+			line-height:1;
+            margin:0;
+            padding:0;
+            font-family: Corbel, Verdana, Helvetica !important;
+            font-size: small;
+}
 
-div#my-timeline {margin:1em; font-family: "Helvetica Neue", sans-serif; font-size:10pt;}
+.timeline-event-label {
+font-weight:bold;
+}
+div#my-timeline {margin:1em;}
 div {padding:0;margin:0;}
 h1 {padding:0;margin:0; font-size: 110%;}
 
@@ -225,6 +235,8 @@ text-align:center;
 
 
 
+
+
             </style> 
 </head>
 <body onload="onLoad();" onresize="onResize();">
@@ -232,10 +244,10 @@ text-align:center;
 <?php include("../nav_chronology.html"); ?>
 <!--<div id="banner" onclick="window.location='/swinburne/'">
 </div>-->
-<div>
+<div id="chrono_container">
 <div id="chrono_intro">
 	<h1>A Petrarch Chronology: 1304-1374</h1> 
-<!--	<p style="font-size:85%;">The <cite>Chronology</cite> is also available in <a href="http://www.purl.org/swinburnearchive/xml/acs0000500-01/">tabular form</a>.-->
+<p style="font-size:85%;">This <cite>Chronology</cite> is also available in <a href="../content/chronology_petrarch.xml">tabular form</a>.
 	<!--<p>
 		The scrolling timeline below displays a chronology of Swinburne's life, along with parallel timelines for the literary context and the historical and cultural context of Swinburne's life.
 	</p> -->

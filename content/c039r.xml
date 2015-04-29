@@ -105,7 +105,8 @@
     <text>
         <body>
             <pb n="charta 39 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-039r.jpg"/>
-            <ab type="blockSubst">
+            <!-- new type= value to distinguish from block substitutions with known erasures. -->
+            <ab type="blockSubstUnknownErasure">
                 <!-- jawalsh: Do we know the sonnet underneath?" -->
                 <!-- <note resp="#jaw">Sonnet 194 has been written over an erased version of ???.</note>-->
                 <subst>

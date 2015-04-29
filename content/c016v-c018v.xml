@@ -145,7 +145,7 @@
    <text>
       <body>
           <pb n="charta 16 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-016v.jpg"/>
-          <lg type="canzone" xml:id="rvf71" n="71">
+          <lg type="canzone" xml:id="rvf071" n="71">
               <lg type="stanza">
                   <lg type="dblhemi" corresp="#canvasline">
                       <l n="97">Fugge al <choice><orig>uostro</orig><reg>vostro</reg></choice> apparire angoscia &amp7; <subst><del type="erasure"><gap reason="illegible"/></del><add>noia</add></subst><choice><orig>&#12539;&#8260;</orig><reg>,</reg></choice></l>
@@ -185,7 +185,7 @@
                   </lg>
               </lg>
           </lg>
-          <lg type="canzone" xml:id="rvf72" n="72">
+          <lg type="canzone" xml:id="rvf072" n="72">
               <lg type="dblhemi" corresp="#canvasline">
                   <l n="1"><hi rendition="#blue #fs24pt"
                       >G</hi><hi rendition="#small-caps">e</hi>ntil mia donna<supplied>,</supplied> i<supplied>’</supplied> <choice><orig>ueggio</orig><reg>veggio</reg></choice></l>
@@ -370,7 +370,7 @@
             </lg>
          </lg>
          
-          <lg type="canzone" xml:id="rvf73" n="73">
+          <lg type="canzone" xml:id="rvf073" n="73">
               <lg type="stanza">
                   <lg type="dblhemi" corresp="#canvasline">
                       <l n="1"><hi rendition="#red #fs24pt"

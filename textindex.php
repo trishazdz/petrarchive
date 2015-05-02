@@ -599,27 +599,27 @@
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>94</td>
+          <td><a href="content/c021r.xml#rvf094">94</td>
           <td>21r</td>
-          <td>QUando giugne per gli occhi al cor profondo<!-- n italicized --></td>
+          <td><a href="content/c021r.xml#rvf094">QUando giugne per gli occhi al cor profondo<!-- n italicized --></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>95</td>
+          <td><a href="content/c021r.xml#rvf095">95</td>
           <td>21r</td>
-          <td>Così potess’io ben chiudere in versi</td>
+          <td><a href="content/c021r.xml#rvf095">Così potess’io ben chiudere in versi</td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>96</td>
+          <td><a href="content/c021r.xml#rvf096">96</td>
           <td>21r</td>
-          <td>Io son de l’aspectar omai sì vinto</td>
+          <td><a href="content/c021r.xml#rvf096">Io son de l’aspectar omai sì vinto</td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>97</td>
+          <td><a href="content/c021r.xml#rvf097">97</td>
           <td>21r</td>
-          <td>Ai! bella libertà, come tu m’ài</td>
+          <td><a href="content/c021r.xml#rvf097">Ai! bella libertà, come tu m’ài</td>
           <td>Sonnet</td>
         </tr>
         <tr>

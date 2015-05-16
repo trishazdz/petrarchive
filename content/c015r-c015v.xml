@@ -619,7 +619,7 @@ the line wraps. -->
                     <l n="30"><choice><orig>Cosi</orig><reg>Così</reg></choice> nel mio parlar <choice><orig>uoglio</orig><reg>voglio</reg></choice> esser aspro.</l>
                 </lg>
               </lg>
-              <pb n="charta 15 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-015v.jpg" />
+              <pb  xml:id="c015v" n="charta 15 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-015v.jpg" />
               <lg type="stanza">
                 <lg type="dblhemi" corresp="#canvasline">
                   <l n="31"><hi rendition="#red #fs24pt">&pilcrow2section;</hi>Che parlo<choice><orig> /</orig><reg>?</reg></choice> o <choice><orig>doue</orig><reg>dove</reg></choice> sono<choice><orig> /</orig><reg>?</reg></choice> et chi 

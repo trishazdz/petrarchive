@@ -30,7 +30,7 @@
 	<li>TEI-encoded documents from which we can render both diplomatic transcriptions and edited views of the text;</li>
 	<li>Web-based presentations providing both diplomatic and edited views of the text, implemented with the <a href="http://teiboilerplate.org/">TEI Boilerplate</a> system;</li>
 	<li>Facsimile page images for Lat. Vat. 3195;</li>
-	<li>A <a href="visindex_2up.html">visual index</a>, or map, to the <em>Rvf</em>
+	<li>A <a href="visindex_2up.php">visual index</a>, or map, to the <em>Rvf</em>
  as constituted in Lat. Vat. 3195.</li>
 	</ul>
 

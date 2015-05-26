@@ -389,35 +389,35 @@ the line wraps. -->
          
          <lg xml:id="rvf067" type="sonnet" n="67">
               <lg type="octave">
-               <lg type="dblhemi">
+               <lg type="dblvrs">
                   <l n="1"><hi rendition="#red #fs24pt">D</hi><hi rendition="#small-caps">e</hi>l mar 
                      <choice><orig>tirreno</orig><reg>Tirreno</reg></choice> a la sinistra <choice><orig>riua</orig><reg>riva</reg></choice>&v2c;</l>
                   <l n="2"><choice><orig>Doue</orig><reg>Dove</reg></choice> rotte dal <choice><orig>uento</orig><reg>vento</reg></choice> piangon <choice><orig>londe</orig><reg>l’onde</reg></choice>&v2c;</l>
                </lg>
-               <lg type="dblhemi">
+               <lg type="dblvrs">
                   <l n="3">Subito <choice><orig>uidi</orig><reg>vidi</reg></choice> quella altera <choice><orig>frōde</orig><reg>fronde</reg></choice></l>
                   <l n="4">Di cui <choice><orig>conuen</orig><reg>conven</reg></choice> <choice><orig>chen</orig><reg>che ’n</reg></choice> tante carte <choice><orig>scriua</orig><reg>scriva</reg></choice>.</l>
                </lg>
-               <lg type="dblhemi">
+               <lg type="dblvrs">
                   <l n="5">Amor<supplied>,</supplied> che dentro a <choice><orig>lanima</orig><reg>l’anima</reg></choice> <choice><orig>bolliua</orig><reg>bolliva</reg></choice><supplied>,</supplied></l>
                   <l n="6">Per <choice><orig>rimembrança</orig><reg>rimembranza</reg></choice> de le treccie bionde</l>
                </lg>
-               <lg type="dblhemi">
+               <lg type="dblvrs">
                   <l n="7">Mi spinse&p2c; onde &in; un rio che <choice><orig>lerba</orig><reg>l’erba</reg></choice> asconde</l>
                   <l n="8">Caddi &v2c; &non; <choice><orig>gia</orig><reg>già</reg></choice> come persona <choice><orig>uiua</orig><reg>viva</reg></choice>.</l>
                </lg>
               </lg>
               <lg type="sestet">
-               <lg type="dblhemi">
+               <lg type="dblvrs">
                   <l n="9">Solo <choice><orig>ouio</orig><reg>ov’io</reg></choice> era tra boschetti et colli</l>
                   <l n="10">Vergogna ebbi di me&p2c; <choice><orig>chal</orig><reg>ch’al</reg></choice> cor gentile</l>
                </lg>
-               <lg type="dblhemi">
+               <lg type="dblvrs">
                   <l n="11">Basta ben <choice><orig>tāto</orig><reg>tanto</reg></choice>&p2c; &amp7; altro 
                      spron &non; <choice><orig>uolli</orig><reg>volli</reg></choice>.</l>
                   <l n="12">Piacemi almen <choice><orig>dauer</orig><reg>d’aver</reg></choice> cangiato stile</l>
                </lg>
-               <lg type="dblhemi">
+               <lg type="dblvrs">
                   <l n="13"><choice><orig>Da gliocchi</orig><reg>Dagli occhi</reg></choice> <choice><orig>a</orig><reg>a’</reg></choice> <choice><orig>pie</orig><reg>pie’</reg></choice>&v2c; se del lor esser molli</l>
                   <l n="14"><choice><orig>Glialtri</orig><reg>Gli altri</reg></choice> asciugasse un <choice><orig>piu</orig><reg>più</reg></choice> cortese aprile.</l>
                </lg>

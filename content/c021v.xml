@@ -146,33 +146,33 @@
             <pb n="charta 21 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-021v.jpg" />
             <lg xml:id="rvf098" type="sonnet" n="98">
                 <lg type="octave">
-                    <lg type="dblhemi" corresp="#canvasline">
+                    <lg type="dblvrs" corresp="#canvasline">
                         <l n="1"><hi rendition="#red #fs24pt">O</hi><hi rendition="#small-caps">r</hi>so<supplied>,</supplied> al <choice><orig>uostro</orig><reg>vostro</reg></choice> destier si <choice><orig>po</orig><reg>pò</reg></choice> ben porre</l>
                         <l n="2"><choice><orig>Vn</orig><reg>Un</reg></choice> fren&v2c; che di suo corso in dietro il <choice><orig>uolga</orig><reg>volga</reg></choice>&p2semicolon;</l>
                     </lg>
-                    <lg type="dblhemi" corresp="#canvasline">
+                    <lg type="dblvrs" corresp="#canvasline">
                         <l n="3"><choice><orig>Mal</orig><reg>Ma ’l</reg></choice> cor chi <choice><orig>leghera</orig><reg>legherà</reg></choice>&v2c; che &non; si sciolga&v2c; </l>
                         <l n="4">Se brama honore&p2c; e <supplied>’</supplied>l suo contrario abhorre<choice><orig>.</orig><reg>?</reg></choice></l>
                     </lg>
-                    <lg type="dblhemi" corresp="#canvasline">
+                    <lg type="dblvrs" corresp="#canvasline">
                         <l n="5">Non sospirate<choice><orig> /</orig><reg>;</reg></choice> a lui non si <choice><orig>po</orig><reg>pò</reg></choice> torre</l>
                         <l n="6">Suo pregio&v2c; <choice><orig>&per;cha</orig><reg>perch’a</reg></choice> <choice><orig>uoi</orig><reg>voi</reg></choice> <choice><orig>landar</orig><reg>l’andar</reg></choice> si tolga&p2semicolon;</l>
                     </lg>
-                    <lg type="dblhemi" corresp="#canvasline">
+                    <lg type="dblvrs" corresp="#canvasline">
                         <l n="7"><choice><orig>Che</orig><reg>Ché</reg></choice> come fama publica <choice><orig>diuolga</orig><reg>divolga</reg></choice></l>
                         <l n="8">Egli &e; <choice><orig>gia</orig><reg>già</reg></choice> <choice><orig>la</orig><reg>là</reg></choice>&p2c; <choice><orig>che</orig><reg>ché</reg></choice> <choice><orig>nullaltro</orig><reg>null’altro</reg></choice> il precorre.</l>
                     </lg>
                 </lg>
                 <lg type="sestet">
-                    <lg type="dblhemi" corresp="#canvasline">
+                    <lg type="dblvrs" corresp="#canvasline">
                         <l n="9">Basti che si <choice><orig>ritroue</orig><reg>ritrove</reg></choice> in <choice><orig>meççol</orig><reg>mezzo ’l</reg></choice> <choice><abbr>cāpo</abbr><expan>campo</expan></choice></l>
                         <l n="10">Al destinato <choice><orig>di</orig><reg>dì</reg></choice>&v2c; sotto <choice><orig>quellarme</orig><reg>quell’arme</reg></choice></l>
                     </lg>
-                    <lg type="dblhemi" corresp="#canvasline">
+                    <lg type="dblvrs" corresp="#canvasline">
                         <l n="11"> Che gli <choice><orig>da</orig><reg>dà</reg></choice> il <choice><abbr>tēpo</abbr><expan>tempo</expan></choice>&v2c; amor&v2c; <choice><orig>uertute</orig><reg>vertute</reg></choice> <choice><orig>&virg;</orig><reg/></choice> <choice><orig>el</orig><reg>e ’l</reg></choice> <choice><abbr>sāgue</abbr><expan>sangue</expan></choice>&p2c;</l>
                         <l n="12">Gridando<supplied>:</supplied> <choice><orig>dun</orig><reg>D’un</reg></choice> gentil desire <choice><orig>auampo</orig><reg>avampo</reg></choice><choice><orig>.</orig><reg/></choice></l>
                     </lg>
-                    <lg type="dblhemi" corresp="#canvasline">
+                    <lg type="dblvrs" corresp="#canvasline">
                         <l n="13">Col signor mio<supplied>,</supplied> che &non; <choice><orig>po</orig><reg>pò</reg></choice> seguitarme&p2c;</l>
                         <l n="14">Et del &non; esser qui si strugge &amp7; langue.</l>
                     </lg>
@@ -181,33 +181,33 @@
             <space corresp="#canvasline"/>
             <lg xml:id="rvf099" type="sonnet" n="99">
                 <lg type="octave">
-                    <lg type="dblhemi" corresp="#canvasline">
+                    <lg type="dblvrs" corresp="#canvasline">
                         <l n="1"><hi rendition="#blue #fs24pt">P</hi><hi rendition="#small-caps">o</hi>i che <choice><orig>uoi</orig><reg>voi</reg></choice>  &amp7; io &piu; <choice><orig>uolte</orig><reg>volte</reg></choice>  <choice><abbr>abbiā</abbr><expan>abbiam</expan></choice> <choice><orig>&per;uato</orig><reg>provato</reg></choice></l>
                         <l n="2"><choice><orig>Comel</orig><reg>Come ’l</reg></choice> nostro sperar torna fallace<supplied>,</supplied></l>
                     </lg>
-                    <lg type="dblhemi" corresp="#canvasline">
+                    <lg type="dblvrs" corresp="#canvasline">
                         <l n="3">Dietro a quel <choice><abbr>sōmo</abbr><expan>sommo</expan></choice> ben che mai &non; spiace <choice><orig>&virg;</orig><reg/></choice></l>
                         <l n="4"><choice><orig>Leuate</orig><reg>Levate</reg></choice> il core a &piu; felice stato<supplied>.</supplied></l>
                     </lg>
-                    <lg type="dblhemi" corresp="#canvasline">
+                    <lg type="dblvrs" corresp="#canvasline">
                         <l n="5">Questa &vita; terrena &e; quasi un prato&v2c;</l>
                         <l n="6"><choice><orig>Chel</orig><reg>Che ’l</reg></choice> serpente tra <supplied>’</supplied> fiori &amp7; <choice><orig>lerba</orig><reg>l’erba</reg></choice> giace&p2semicolon;</l>
                     </lg>
-                    <lg type="dblhemi" corresp="#canvasline">
+                    <lg type="dblvrs" corresp="#canvasline">
                         <l n="7">Et <choice><orig>salcuna</orig><reg> s’alcuna</reg></choice> sua <choice><orig>uista</orig><reg>vista</reg></choice> <choice><orig>a gliocchi</orig><reg>agli occhi</reg></choice> piace&v2c;</l>
                         <l n="8"><choice><orig>E</orig><reg>È</reg></choice> per lassar &piu; <choice><orig>lanimo</orig><reg>l’animo</reg></choice> <choice><orig>inuescato</orig><reg>invescato</reg></choice>.</l>
                     </lg>
                 </lg>
                 <lg type="sestet">
-                    <lg type="dblhemi" corresp="#canvasline">
+                    <lg type="dblvrs" corresp="#canvasline">
                         <l n="9">Voi <choice><abbr>dūque</abbr><expan>dunque</expan></choice><supplied>,</supplied> se cercate <choice><orig>auer</orig><reg>aver</reg></choice> la mente<choice><orig>.</orig><reg/></choice></l>
                         <l n="10"><choice><orig>Ançi</orig><reg>Anzi</reg></choice> <choice><orig>lextremo</orig><reg>l’extremo</reg></choice> <choice><orig>di</orig><reg>dì</reg></choice> <choice><orig>&virg;</orig><reg/></choice> queta giamai&p2c;</l>
                     </lg>
-                    <lg type="dblhemi" corresp="#canvasline">
+                    <lg type="dblvrs" corresp="#canvasline">
                         <l n="11"><choice><orig>Seguitr</orig><reg>Seguite</reg></choice> i pochi<choice><orig> <g ref="#virgsusp"/></orig><reg>,</reg></choice>  &amp7; non la <choice><orig>uolgar</orig><reg>volgar</reg></choice> <choice><abbr>gēte</abbr><expan>gente</expan></choice>.</l>
                         <l n="12">Ben si <choice><orig>puo</orig><reg>può</reg></choice> dire a me&p2colon; <choice><orig>frate</orig><reg>Frate</reg></choice><supplied>,</supplied> tu <choice><orig>uai</orig><reg>vai</reg></choice></l>
                     </lg>
-                    <lg type="dblhemi" corresp="#canvasline">
+                    <lg type="dblvrs" corresp="#canvasline">
                         <l n="13">Mostrando altrui la <choice><orig>uia</orig><reg>via</reg></choice><choice><orig> &virg-underdot;</orig><reg>,</reg></choice> <choice><orig>doue</orig><reg>dove</reg></choice> <choice><orig><abbr>souēte</abbr><expan>souente</expan></orig><reg>sovente</reg></choice></l>
                         <l n="14">fosti smarrito&p2c; et or <choice><orig>se</orig><reg>sè</reg></choice> &piu; che mai.</l>
                     </lg>
@@ -216,33 +216,33 @@
             <space corresp="#canvasline"/>
             <lg xml:id="rvf100" type="sonnet" n="100">
                 <lg type="octave">
-                    <lg type="dblhemi" corresp="#canvasline">
+                    <lg type="dblvrs" corresp="#canvasline">
                         <l n="1"><hi rendition="#red #fs24pt">Q</hi><hi rendition="#small-caps"><choice><orig>v</orig><reg>u</reg></choice></hi>ella fenestra <choice><orig>oue</orig><reg>ove</reg></choice> <choice><orig>lun</orig><reg>l’un</reg></choice> sol si <choice><orig>uede</orig><reg>vede</reg></choice></l>
                         <l n="2">Quando a lui piace&p2c; &amp7; <choice><orig>laltro</orig><reg>l’altro</reg></choice> in su la nona&p2c;</l>
                     </lg>
-                    <lg type="dblhemi" corresp="#canvasline">
+                    <lg type="dblvrs" corresp="#canvasline">
                         <l n="3">Et quella <choice><orig>doue</orig><reg>dove</reg></choice> <choice><orig>laere</orig><reg>l’aere</reg></choice> freddo suona</l>
                         <l n="4">Ne<choice><orig></orig><reg>’</reg></choice> <choice><orig>breui</orig><reg>brevi</reg></choice> giorni&v2c; quando <choice><orig>borreal</orig><reg>borrea ’l</reg></choice>  fiede<choice><orig>.</orig><reg>;</reg></choice></l>
                     </lg>
-                    <lg type="dblhemi" corresp="#canvasline">
+                    <lg type="dblvrs" corresp="#canvasline">
                         <l n="5"><choice><orig>El</orig><reg>E ’l</reg></choice>  sasso&v2c; <choice><orig>oue</orig><reg>ove</reg></choice> a<choice><orig></orig><reg>’</reg></choice> gran <choice><orig>di</orig><reg>dì</reg></choice> pensosa siede</l>
                         <l n="6">Madonna&p2c; et sola seco si ragiona&p2c;</l>
                     </lg>
-                    <lg type="dblhemi" corresp="#canvasline">
+                    <lg type="dblvrs" corresp="#canvasline">
                         <l n="7">Con <choice><abbr>quāti</abbr><expan>quanti</expan></choice> luoghi sua bella &per;sona  </l>
                         <l n="8"><choice><orig>Copri</orig><reg>Coprì</reg></choice> mai <choice><orig>dombra</orig><reg>d’ombra</reg></choice> <choice><orig>&virg;</orig><reg/></choice> o <choice><orig>disegno</orig><reg>disegnò</reg></choice> col piede&p2semicolon;</l>
                     </lg>
                 </lg>
                 <lg type="sestet">
-                    <lg type="dblhemi" corresp="#canvasline">
+                    <lg type="dblvrs" corresp="#canvasline">
                         <l n="9"><choice><orig>El</orig><reg>E ’l</reg></choice> fiero passo <choice><orig>oue</orig><reg>ove</reg></choice> <choice><orig>magiunse</orig><reg>m’agiunse</reg></choice> <choice><orig>amore</orig><reg>Amore</reg></choice><supplied>;</supplied></l>
                         <l n="10"><choice><orig>Ella</orig><reg>E•lla</reg></choice> <choice><orig>noua</orig><reg>nova</reg></choice> stagion che <choice><orig>danno</orig><reg>d’anno</reg></choice> in anno</l>
                     </lg>
-                    <lg type="dblhemi" corresp="#canvasline">
+                    <lg type="dblvrs" corresp="#canvasline">
                         <l n="11">Mi rinfresca &in; quel <choice><orig>di</orig><reg>dì</reg></choice> <choice><orig>lantiche</orig><reg>l’antiche</reg></choice> piaghe&p2semicolon;</l>
                         <l n="12"><choice><orig>El</orig><reg>E ’l</reg></choice> <choice><orig>uolto</orig><reg>volto</reg></choice> &amp7; le parole che mi stanno</l>
                     </lg>
-                    <lg type="dblhemi" corresp="#canvasline">
+                    <lg type="dblvrs" corresp="#canvasline">
                         <l n="13">Altamente confitte in <choice><orig>meççol</orig><reg>mezzo ’l</reg></choice> core</l>
                         <l n="14">Fanno le luci mie di pianger <choice><orig>uaghe</orig><reg>vaghe</reg></choice>.</l>
                     </lg>
@@ -251,34 +251,34 @@
             <space corresp="#canvasline"/>
             <lg xml:id="rvf101" type="sonnet" n="101">
                 <lg type="octave">
-                    <lg type="dblhemi" corresp="#canvasline">
+                    <lg type="dblvrs" corresp="#canvasline">
                         <l n="1"><hi rendition="#fs24pt #blue">L</hi>
                             <hi rendition="#small-caps">a</hi>sso<supplied>,</supplied> ben so che dolorose prede</l>
                         <l n="2">Di noi fa quella <choice><orig>cha</orig><reg>ch’a</reg></choice> nullo huom perdona&p2c;</l>
                     </lg>
-                    <lg type="dblhemi" corresp="#canvasline">
+                    <lg type="dblvrs" corresp="#canvasline">
                         <l n="3">Et che  <choice><abbr>rapidamēte</abbr><expan>rapidamente</expan></choice> <choice><orig>nabandona</orig><reg>n’abandona</reg></choice></l>
                         <l n="4">Il mondo&p2c; et picciol tempo ne tien fede&p2semicolon;</l>
                     </lg>
-                    <lg type="dblhemi" corresp="#canvasline">
+                    <lg type="dblvrs" corresp="#canvasline">
                         <l n="5">Veggio a molto languir poca mercede&p2c;</l>
                         <l n="6">Et <choice><orig>gia</orig><reg>già</reg></choice> <choice><orig>lultimo</orig><reg>l’ultimo</reg></choice> <choice><orig>di</orig><reg>dì</reg></choice> nel cor mi tuona.</l>
                     </lg>
-                    <lg type="dblhemi" corresp="#canvasline">
+                    <lg type="dblvrs" corresp="#canvasline">
                         <l n="7">&Per; tutto questo <choice><orig>amor</orig><reg>Amor</reg></choice> &non; mi spregiona&p2c;</l>
                         <l n="8"><choice><orig>Che</orig><reg>Ché</reg></choice> <choice><orig>lusato</orig><reg>l’usato</reg></choice> tributo <choice><orig>a gliocchi</orig><reg>agli occhi</reg></choice> chiede.</l>
                     </lg>
                 </lg>
                 <lg type="sestet">
-                    <lg type="dblhemi" corresp="#canvasline">
+                    <lg type="dblvrs" corresp="#canvasline">
                         <l n="9">So come i <choice><orig>di</orig><reg>dì</reg></choice>&v2c; come i momenti <choice><orig>&virg;</orig><reg/></choice> &amp7; <choice><orig>lore</orig><reg>l’ore</reg></choice></l>
                         <l n="10">Ne portan <choice><orig><abbr>gliāni</abbr><expan>glianni</expan></orig><reg>gli anni</reg></choice>&p2c; &amp7; non <choice><orig>riceuo</orig><reg>ricevo</reg></choice> <choice><abbr>ingāno</abbr><expan>inganno</expan></choice>&p2c;</l>
                     </lg>
-                    <lg type="dblhemi" corresp="#canvasline">
+                    <lg type="dblvrs" corresp="#canvasline">
                         <l n="11">Ma <choice><orig>força</orig><reg>forza</reg></choice> assai maggior che <choice><orig>darti</orig><reg>d’arti</reg></choice> maghe.</l>
                         <l n="12">La <choice><orig>uoglia</orig><reg>voglia</reg></choice> &amp7; la ragion <choice><abbr>cōbattuto</abbr><expan>combattuto</expan></choice> <choice><orig><abbr>āno</abbr><expan>anno</expan></orig><reg>ànno</reg></choice></l>
                     </lg>
-                    <lg type="dblhemi" corresp="#canvasline">
+                    <lg type="dblvrs" corresp="#canvasline">
                         <l n="13">Sette &amp7; sette <choice><abbr>āni</abbr><expan>anni</expan></choice>&p2semicolon; &amp7; <choice><orig>uincera</orig><reg>vincerà</reg></choice> il migliore<choice><orig></orig><reg>,</reg></choice></l>
                         <l n="14"><choice><orig>Sanime</orig><reg>S’anime </reg></choice> son qua <choice><orig>giu</orig><reg>giù</reg></choice> del ben presaghe.</l>
                     </lg>

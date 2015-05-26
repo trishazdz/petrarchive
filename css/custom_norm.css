@@ -51,7 +51,7 @@ ab[type = 'blockSubst'] > subst > del[type = 'erasure'] {
 }
 */
 
-#rvf360v  lg[type = 'dblhemi']:first-of-type
+#rvf360v  lg[type = 'dblvrs']:first-of-type
 {
   position:relative !important;
   left:-.7em;

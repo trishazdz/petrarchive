@@ -156,7 +156,7 @@
                 facs="../images/vat-lat3195-f/vat-lat3195-f-015r.jpg"/>
             <lg type="sonnet" n="68">
                 <!-- How to encode different hand/darkened text in line 11? Currently I have it as a "correction" -->
-                <lg type="dblhemi">
+                <lg type="dblvrs">
                     <l n="1"><hi rendition="#red #fs24pt"
                             >L</hi><reg>’</reg><hi
                             rendition="#small-caps"
@@ -165,33 +165,33 @@
                     <l n="2">Mi fa del mal passato tragger
                         guai<choice><orig>.</orig><reg>,</reg></choice></l>
                 </lg>
-                <lg type="dblhemi">
+                <lg type="dblvrs">
                     <l n="3">Gridando<choice><orig> /</orig><reg>:</reg></choice> <choice><orig>sta</orig><reg>Sta</reg></choice><reg>’</reg> su misero<choice><orig>.</orig><reg>,</reg></choice> che fai<choice><!-- Is this choice necessary, since we are already displaying a modern question mark (?)?--><orig><g ref="#punctinter"/></orig><reg>?</reg></choice></l>
                     <l n="4">Et la &uia; de salir al ciel mi
                         mostra.</l>
                 </lg>
-                <lg type="dblhemi">
+                <lg type="dblvrs">
                     <l n="5">Ma con questo pensier un altro
                         giostra<choice><orig>.</orig><reg>,</reg></choice></l>
                     <l n="6">Et dice a me<reg>:</reg> <choice><orig>perche</orig><reg>Perché</reg></choice> fuggendo
                         &uia;<choice><orig><g ref="#punctinter"/></orig><reg>?</reg></choice></l>
                 </lg>
-                <lg type="dblhemi">
+                <lg type="dblvrs">
                     <l n="7">Se ti rimembra<choice><orig> /</orig><reg>,</reg></choice> il <choice>
                             <abbr>tēpo</abbr>
                             <expan>tempo</expan>
                         </choice> passa omai</l>
                     <l n="8">Di tornar a <choice><orig>ueder</orig><reg>veder</reg></choice> la donna nostra.</l>
                 </lg>
-                <lg type="dblhemi">
+                <lg type="dblvrs">
                     <l n="9">I<reg>’</reg> che<reg>’</reg>l suo ragionar intendo allora</l>
                     <l n="10">M<reg>’</reg>agghiaccio dentro<choice><orig> /</orig><reg/></choice> &in; guisa d<reg>’</reg>uom ch&regapos;ascolta</l>
                 </lg>
-                <lg type="dblhemi">
+                <lg type="dblvrs">
                     <l n="11"><choice><orig>Nouella</orig><reg>Novella</reg></choice> che di subito l&regapos;accora.</l>
                     <l n="12">Poi torna il primo. &amp7; questo <choice><orig>da</orig><reg>dà</reg></choice> la &uolta;.</l>
                 </lg>
-                <lg type="dblhemi">
+                <lg type="dblvrs">
                     <l n="13">Qual <choice><orig>uincera</orig><reg>vincerà</reg></choice><reg>,</reg> non so<choice><orig>.</orig><reg>;</reg></choice> ma<reg> ’</reg>nfino <choice><orig>a<corr>dor</corr>a</orig><reg>ad ora</reg></choice></l>
                     <l n="14">Combattuto <choice><orig>anno</orig><reg>ànno</reg></choice>&p2c; et &non; pur
                         una &uolta;.</l>

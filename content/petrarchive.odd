@@ -47,10 +47,10 @@
                 <valItem ident="single">
                   <gloss>A line “group” that contains a single line</gloss>
                 </valItem>
-                <valItem ident="dblhemi">
+                <valItem ident="dblvrs">
                   <gloss>double hemistich</gloss>
                 </valItem>
-                <valItem ident="trplhemi">
+                <valItem ident="trplvrs">
                 	<gloss>triple hemistich</gloss>
                 </valItem>
                 <valItem ident="sestina">

@@ -94,25 +94,25 @@
         <pb n="charta 3 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-003v.jpg" />
               <lg xml:id="rvf021" type="sonnet" n="21">
                 <lg type="octave">
-                <lg type="dblhemi"><l n="1"><hi rendition="#red #fs24pt">M</hi><hi rendition="#small-caps">i</hi>lle fiate<supplied>,</supplied> o dolce mia guerrera<supplied>,</supplied></l>	
+                <lg type="dblvrs"><l n="1"><hi rendition="#red #fs24pt">M</hi><hi rendition="#small-caps">i</hi>lle fiate<supplied>,</supplied> o dolce mia guerrera<supplied>,</supplied></l>	
                   <l n="2">Per <choice><orig>auer</orig><reg>aver</reg></choice> co<supplied>’</supplied> <choice><orig>be gliocchi</orig><reg>begli occhi</reg></choice> <choice><orig>uostri</orig><reg>vostri</reg></choice> pace</l></lg>
-                <lg type="dblhemi"><l n="3"><choice><orig>Vaggio</orig><reg>V’ aggio</reg></choice> proferto il cor&p2semicolon; <choice><orig>ma uoi</orig><reg>m’ a voi</reg></choice> &non; piace</l>		
+                <lg type="dblvrs"><l n="3"><choice><orig>Vaggio</orig><reg>V’ aggio</reg></choice> proferto il cor&p2semicolon; <choice><orig>ma uoi</orig><reg>m’ a voi</reg></choice> &non; piace</l>		
                <l n="4">Mirar &si; basso <choice><orig>collamente</orig><reg>colla mente</reg></choice> altera.</l></lg>
-            <lg type="dblhemi"><l n="5">Et se di lui <choice><orig>forsaltra</orig><reg>fors’ altra</reg></choice> donna spera&v2c;</l> 
+            <lg type="dblvrs"><l n="5">Et se di lui <choice><orig>forsaltra</orig><reg>fors’ altra</reg></choice> donna spera&v2c;</l> 
                <l n="6"><choice><orig>Viue</orig><reg>Vive</reg></choice> in <choice><orig>sperança</orig><reg>speranza</reg></choice> debile et fallace&p2colon;</l>
             </lg>
-            <lg type="dblhemi"><l n="7">Mio<supplied>,</supplied> <choice><orig>ꝑche</orig><reg>perché</reg></choice> sdegno <choice><orig>cio</orig><reg>ciò</reg></choice> <choice><orig>cha</orig><reg>ch’ a</reg></choice> <choice><orig>uoi</orig><reg>voi</reg></choice> dispiace<supplied>,</supplied></l>	 
+            <lg type="dblvrs"><l n="7">Mio<supplied>,</supplied> <choice><orig>ꝑche</orig><reg>perché</reg></choice> sdegno <choice><orig>cio</orig><reg>ciò</reg></choice> <choice><orig>cha</orig><reg>ch’ a</reg></choice> <choice><orig>uoi</orig><reg>voi</reg></choice> dispiace<supplied>,</supplied></l>	 
                <l n="8">Esser &non; <choice><orig>puo</orig><reg>può</reg></choice> giamai <choice><orig>cosi</orig><reg>così</reg></choice> <choice><orig>comera</orig><reg>com’ era</reg></choice>.</l>
             </lg>
                 </lg>
                 <lg type="sestet">
-            <lg type="dblhemi"><l n="9">Or <choice><orig>sio</orig><reg>s’io</reg></choice> lo scaccio&p2c; et <choice><orig><abbr>enō</abbr><expan>enon</expan></orig><reg>e’ non</reg></choice> <choice><orig>troua</orig><reg>trova</reg></choice> in <choice><orig>uoi</orig><reg>voi</reg></choice></l> 
+            <lg type="dblvrs"><l n="9">Or <choice><orig>sio</orig><reg>s’io</reg></choice> lo scaccio&p2c; et <choice><orig><abbr>enō</abbr><expan>enon</expan></orig><reg>e’ non</reg></choice> <choice><orig>troua</orig><reg>trova</reg></choice> in <choice><orig>uoi</orig><reg>voi</reg></choice></l> 
                <l n="10"><choice><orig>Nel exilio</orig><reg>Ne l’exilio</reg></choice> infelice alcun soccorso&p2c;</l>
             </lg>
-            <lg type="dblhemi"><l n="11"><choice><orig>Ne</orig><reg>Né</reg></choice> sa star sol&p2c; <choice><orig>ne</orig><reg>né</reg></choice> gire <choice><orig>oualtri</orig><reg>ov’ altri</reg></choice> il chiama&p2c;</l> 
+            <lg type="dblvrs"><l n="11"><choice><orig>Ne</orig><reg>Né</reg></choice> sa star sol&p2c; <choice><orig>ne</orig><reg>né</reg></choice> gire <choice><orig>oualtri</orig><reg>ov’ altri</reg></choice> il chiama&p2c;</l> 
                <l n="12">Poria smarrire il suo <choice><orig>natǎl</orig><reg>natural</reg></choice> corso&p2colon;</l>
             </lg>
-            <lg type="dblhemi"><l n="13">Che <choice><orig>graue</orig><reg>grave</reg></choice> colpa fia <choice><orig>dambeduo</orig><reg>d’ambeduo</reg></choice> noi&p2c;</l> 
+            <lg type="dblvrs"><l n="13">Che <choice><orig>graue</orig><reg>grave</reg></choice> colpa fia <choice><orig>dambeduo</orig><reg>d’ambeduo</reg></choice> noi&p2c;</l> 
                <l n="14">Et tanto &piu; de <choice><orig>uoi</orig><reg>voi</reg></choice>&v2c; &quanto; &piu; <choice><orig>uama</orig><reg>v’ama</reg></choice>.</l></lg>
                 </lg>
          </lg>

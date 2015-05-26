@@ -76,7 +76,7 @@
                 </xsl:if>
                 <!-- lg @corresp = '#canvasline' -->
                 <xsl:if test="name(.) = 'lg'">
-                    <xsl:if test="@type = 'dblhemi'">
+                    <xsl:if test="@type = 'dblvrs'">
                         <xsl:text>&#xa;</xsl:text>
                         <xsl:text>      </xsl:text>
                         <rect>

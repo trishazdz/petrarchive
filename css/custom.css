@@ -136,8 +136,8 @@ lg[type='sestina']:before {
 text body lg:first-of-type {
   margin-top: 0;
 }
-lg[type='dblhemi'],
-lg[type='trplhemi'],
+lg[type='dblvrs'],
+lg[type='trplvrs'],
 lg[type='single'] {
   height: 24pt;
   display: block;
@@ -145,21 +145,21 @@ lg[type='single'] {
   margin-top: .25em;
   margin-bottom: .25em;
 }
-lg[type='dblhemi']:first-of-type l:last-of-type {
+lg[type='dblvrs']:first-of-type l:last-of-type {
   /* padding-top:.7em; */
 
 }
-lg[type='dblhemi'] l:first-of-type,
-lg[type='trplhemi'] l:first-of-type {
+lg[type='dblvrs'] l:first-of-type,
+lg[type='trplvrs'] l:first-of-type {
   float: left;
   margin-right: 1.5em;
 }
-lg[type='dblhemi'] l:last-of-type,
-lg[type='trplhemi'] l {
+lg[type='dblvrs'] l:last-of-type,
+lg[type='trplvrs'] l {
   float: left;
   margin-right: 1.5em;
 }
-lg[type='dblhemi'] + l {
+lg[type='dblvrs'] + l {
   clear: both;
 }
 choice reg {
@@ -365,8 +365,8 @@ span.lno {
   font-size: 12px;
 }
 /* For rubrication? */
-lg[type='octave'] > lg[type='dblhemi']:first-of-type,
-lg[type='trplhemi']:first-of-type,
+lg[type='octave'] > lg[type='dblvrs']:first-of-type,
+lg[type='trplvrs']:first-of-type,
 lg[type='sestina'] l[n='1'],
 lg[type='sestina'] l[n='7'],
 lg[type='sestina'] l[n='13'],
@@ -374,8 +374,8 @@ lg[type='sestina'] l[n='19'],
 lg[type='sestina'] l[n='25'],
 lg[type='sestina'] l[n='31'],
 lg[type='sestina'] l[n='37'],
-lg[type='canzone'] lg[type='stanza'] lg[type='dblhemi']:first-of-type,
-lg[type='madrigal'] lg[type='dblhemi']:first-of-type {
+lg[type='canzone'] lg[type='stanza'] lg[type='dblvrs']:first-of-type,
+lg[type='madrigal'] lg[type='dblvrs']:first-of-type {
   position: relative;
   left: -0.8em;
   margin-top: 0;

@@ -2868,10 +2868,10 @@ lg =
         "single"
       | 
         ## (double hemistich) 
-        "dblhemi"
+        "dblvrs"
       | 
         ## (triple hemistich) 
-        "trplhemi"
+        "trplvrs"
       | 
         ## (sestina) 
         "sestina"

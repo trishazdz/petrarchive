@@ -375,33 +375,33 @@ the line wraps. -->
          
          <lg xml:id="rvf081" type="sonnet" n="81">
               <lg type="octave">
-               <lg type="dblhemi">
+               <lg type="dblvrs">
                   <l n="1"><hi rendition="#red #fs24pt">I</hi><hi rendition="#small-caps">o</hi> son &si; stanco <choice><orig>sottol</orig><reg>sotto ’l</reg></choice> fascio antico</l>
                   <l n="2">De le mie colpe et de <choice><orig>lusança</orig><reg>l’usanza</reg></choice> <choice><orig>[ ]ia</orig><reg>ria</reg></choice><supplied>,</supplied></l>
                </lg>
-               <lg type="dblhemi">
+               <lg type="dblvrs">
                   <l n="3"><choice><orig>Chi</orig><reg>Ch’i</reg></choice><supplied>’</supplied> temo forte di mancar tra <choice><orig>uia</orig><reg>via</reg></choice>&p2c;</l>
                   <l n="4">Et di cader in man del <choice><orig>[ ]io</orig><reg>mio</reg></choice> nemico.</l>
                </lg>
-               <lg type="dblhemi">
+               <lg type="dblvrs">
                   <l n="5">Ben <choice><orig><choice><abbr>uēne</abbr><expan>uenne</expan></choice></orig><reg>venne</reg></choice> a <choice><orig>diliurarmi</orig><reg>dilivrarmi</reg></choice> un <choice><abbr>grāde</abbr><expan>grande</expan></choice> amico</l>
                   <l n="6">Per somma et ineffabil <choice><orig>cor[ ]es[ ]a</orig><reg>cortesia</reg></choice>&p2semicolon;</l>
                </lg>
-               <lg type="dblhemi">
+               <lg type="dblvrs">
                   <l n="7">Poi <choice><orig>uolo</orig><reg>volò</reg></choice> fuor de la <choice><orig>ueduta</orig><reg>veduta</reg></choice> mia&p2c;</l>
                   <l n="8">&Si; <choice><orig>ch[ ]mirar[ ]o</orig><reg>ch’a mirarlo</reg></choice> indarno <choice><orig>ma[ ]ati[ ]o</orig><reg>m’affatico</reg></choice>.</l>
                </lg>
               </lg>
               <lg type="sestet">
-               <lg type="dblhemi">
+               <lg type="dblvrs">
                   <l n="9">Ma la sua <choice><orig>uoce</orig><reg>voce</reg></choice> anchor qua <choice><orig>giu</orig><reg>giù</reg></choice> <choice><abbr>rībomba</abbr><expan>rimbomba</expan></choice><supplied>:</supplied></l>
                   <l n="10">O <choice><orig>uoi</orig><reg>voi</reg></choice> che <choice><orig>trauagli[  ]e</orig><reg>travagliate</reg></choice><choice><orig> </orig><reg>,</reg></choice> <choice><orig>ecco[ ]</orig><reg>ecco ’l</reg></choice> <choice><orig>[     ]o</orig><reg>camino</reg></choice><supplied>;</supplied></l>
                </lg>
-               <lg type="dblhemi">
+               <lg type="dblvrs">
                   <l n="11">Venite a me <choice><orig>sel</orig><reg>se ’l</reg></choice> passo altri non serra.</l>
                   <l n="12">Qual <choice><orig>gra[  ]a</orig><reg>gratia</reg></choice>&v2c; qual amore&v2c; o qual <choice><orig>de[   ]no</orig><reg>destino</reg></choice></l>
                </lg>
-               <lg type="dblhemi">
+               <lg type="dblvrs">
                   <l n="13">Mi <choice><orig>dara</orig><reg>darà</reg></choice> penne in guisa di colomba&v2c;</l>
                   <l n="14"><choice><orig>Chi</orig><reg>Ch’i</reg></choice><supplied>’</supplied> mi riposi&p2c; et <choice><orig>leuimi</orig><reg>levimi</reg></choice> da terra<choice><orig>.</orig><reg>?</reg></choice></l>
                </lg>

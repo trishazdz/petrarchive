@@ -667,6 +667,7 @@ the line wraps. -->
                 </lg>
               </lg>
             </lg>
+              <space corresp="#canvasline"/>
               <lg xml:id="rvf071" type="canzone" n="71">
                 <lg type="stanza">
                   <lg type="dblvrs" corresp="#canvasline">

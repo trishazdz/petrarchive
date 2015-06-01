@@ -374,7 +374,7 @@ the line wraps. -->
             </lg>
            </lg>
          </lg>
-        <space corresp="#canvasline"/>
+         <space corresp="#canvasline"/>
          <lg xml:id="rvf103" type="sonnet" n="103">
            <lg type="octave">
             <lg type="dblvrs" corresp="#canvasline">
@@ -449,9 +449,7 @@ the line wraps. -->
            </lg>
          </lg>
          <space corresp="#canvasline"/>
-         
          <space unit="lines" extent="7" ana="#space-stop" />
-
       </body>
    </text>
 </TEI>

@@ -144,7 +144,7 @@
 
    <text>
       <body>
-          <pb n="charta 16 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-016v.jpg"/>
+          <pb xml:id="c016v" n="charta 16 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-016v.jpg"/>
           <lg type="canzone" xml:id="rvf071" n="71">
               <lg type="stanza">
                   <lg type="dblvrs" corresp="#canvasline">
@@ -288,7 +288,7 @@
           <!-- check encoding of the catchword 
                http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-fw.html -->
           <fw type="catch" rendition="#center">Et solo</fw>
-         <pb n="charta 17 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-017r.jpg"/>
+          <pb xml:id="c017r" n="charta 17 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-017r.jpg"/>
          <lg type="stanza">
                <lg type="single" corresp="#canvasline">
                    <l n="45">Et solo <choice><orig>iui</orig><reg>ivi</reg></choice> con <choice><orig>uoi</orig><reg>voi</reg></choice> rimanse <choice><orig>amore</orig><reg>Amore</reg></choice>.</l>
@@ -418,7 +418,7 @@
                       <l n="20">Mi porse a ragionar quel <choice><orig>chi</orig><reg>ch’i</reg></choice><supplied>’</supplied> sentia.</l>
                       <l n="21">Or <choice><orig>mabbandona</orig><reg>m’abbandona</reg></choice> al tempo&p2c; et si dilegua.</l>
                   </lg>
-                  <pb n="charta 17 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-017v.jpg"/>
+                  <pb xml:id="c017v" n="charta 17 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-017v.jpg"/>
                   <lg type="dblvrs" corresp="#canvasline">
                       <l n="22">Ma pur <choice><orig>conuen</orig><reg>conven</reg></choice> che <choice><orig>lalta</orig><reg>l’alta</reg></choice> impresa segua</l>
                       <l n="23">Continuando <choice><orig>lamorose</orig><reg>l’amorose</reg></choice> note</l>
@@ -547,7 +547,7 @@
                           <l n="79">Solamente quel nodo</l>
                       </lg>
                   </lg>
-                  <pb n="charta 18 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-018r.jpg"/>
+                  <pb xml:id="c018r" n="charta 18 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-018r.jpg"/>
                   <lg type="dblvrs" corresp="#canvasline">
                       <l n="80"><choice><orig>Chamor</orig><reg>Ch’Amor</reg></choice> cerconda a la mia lingua &quando;</l>
                       <l n="81"><choice><orig>Lumana</orig><reg>L’umana</reg></choice> <choice><orig>uista</orig><reg>vista</reg></choice> il troppo lume <choice><orig>auança</orig><reg>avanza</reg></choice>&v2c;</l>
@@ -681,7 +681,7 @@
                           </lg>
                       </lg>
                   </lg>
-                  <pb n="Charta 18 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-018v.jpg" />
+                  <pb xml:id="c018v" n="Charta 18 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-018v.jpg" />
                   <lg type="dblvrs" corresp="#canvasline">
                       <l n="13">Dirai: <choice><orig>Si</orig><reg>S’i’</reg></choice> guard<subst><del type="erasure"><gap reason="illegible"/></del><add>o</add></subst> &amp7; giudico ben dritto&v2c;</l>
                       <l n="14">Questi <choice><orig>auea</orig><reg>avea</reg></choice> poco andare ad esser morto.</l>

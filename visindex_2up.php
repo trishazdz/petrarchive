@@ -107,13 +107,13 @@
 			<a href="content/c015r-c015v.xml#c015v"><img alt="vat. lat. 3195, c. 15v" class="visindex-verso" src="images/visindex/c015v.svg" /></a>  <img alt="vat. lat. 3195, c. 16r" class="visindex-recto" src="images/visindex/c016r.svg" />  
 		</div>
 		<div>
-			<a href="content/c016v-c018v.xml"><img alt="vat. lat. 3195, c. 16v" class="visindex-verso" src="images/visindex/c016v.svg" /></a>  <a href="content/c016v-c018v.xml"><img alt="vat. lat. 3195, c. 17r" class="visindex-recto" src="images/visindex/c017r.svg" /></a>  
+			<a href="content/c016v-c018v.xml"><img alt="vat. lat. 3195, c. 16v" class="visindex-verso" src="images/visindex/c016v.svg" /></a>  <a href="content/c016v-c018v.xml#c017r"><img alt="vat. lat. 3195, c. 17r" class="visindex-recto" src="images/visindex/c017r.svg" /></a>  
 		</div>
 		<div>
-			<a href="content/c016v-c018v.xml"><img alt="vat. lat. 3195, c. 17v" class="visindex-verso" src="images/visindex/c017v.svg" /></a>  <a href="content/c016v-c018v.xml"><img alt="vat. lat. 3195, c. 18r" class="visindex-recto" src="images/visindex/c018r.svg" /></a>  
+			<a href="content/c016v-c018v.xml#c017v"><img alt="vat. lat. 3195, c. 17v" class="visindex-verso" src="images/visindex/c017v.svg" /></a>  <a href="content/c016v-c018v.xml#c018r"><img alt="vat. lat. 3195, c. 18r" class="visindex-recto" src="images/visindex/c018r.svg" /></a>  
 		</div>
 		<div>
-			<a href="content/c016v-c018v.xml"><img alt="vat. lat. 3195, c. 18v" class="visindex-verso" src="images/visindex/c018v.svg" /></a>  <a href="content/c019r.xml"><img alt="vat. lat. 3195, c. 19r" class="visindex-recto" src="images/visindex/c019r.svg" /></a>  
+			<a href="content/c016v-c018v.xml#c018v"><img alt="vat. lat. 3195, c. 18v" class="visindex-verso" src="images/visindex/c018v.svg" /></a>  <a href="content/c019r.xml"><img alt="vat. lat. 3195, c. 19r" class="visindex-recto" src="images/visindex/c019r.svg" /></a>  
 		</div>
 		<div>
 			<a href="content/c019v.xml"><img alt="vat. lat. 3195, c. 19v" class="visindex-verso" src="images/visindex/c019v.svg" /></a>  <a href="content/c020r.xml"><img alt="vat. lat. 3195, c. 20r" class="visindex-recto" src="images/visindex/c020r.svg" /></a>  
@@ -125,7 +125,7 @@
 			<a href="content/c021v.xml"><img alt="vat. lat. 3195, c. 21v" class="visindex-verso" src="images/visindex/c021v.svg" /></a>  <a href="content/c022r.xml"><img alt="vat. lat. 3195, c. 22r" class="visindex-recto" src="images/visindex/c022r.svg" /></a>
 		</div>
 		<div>
-			<a href="content/c022v-c023r.xml"><img alt="vat. lat. 3195, c. 22v" class="visindex-verso" src="images/visindex/c022v.svg" /></a>  <a href="content/c022v-c023r.xml"><img alt="vat. lat. 3195, c. 23r" class="visindex-recto" src="images/visindex/c023r.svg" /></a> 
+			<a href="content/c022v-c023r.xml"><img alt="vat. lat. 3195, c. 22v" class="visindex-verso" src="images/visindex/c022v.svg" /></a>  <a href="content/c022v-c023r.xml#c023r"><img alt="vat. lat. 3195, c. 23r" class="visindex-recto" src="images/visindex/c023r.svg" /></a> 
 		</div>
 		<div>
 			<a href="content/c023v.xml"><img alt="vat. lat. 3195, c. 23v" class="visindex-verso" src="images/visindex/c023v.svg" />  <a href="content/c024r.xml"><img alt="vat. lat. 3195, c. 24r" class="visindex-recto" src="images/visindex/c024r.svg" /></a>  
@@ -266,7 +266,7 @@
 			<img alt="vat. lat. 3195, c. 68v" class="visindex-verso" src="images/visindex/c068v.svg" />  <img alt="vat. lat. 3195, c. 69r" class="visindex-recto" src="images/visindex/c069r.svg" />  
 		</div>
 		<div>
-			<a href="content/c069v-c070r.xml"><img alt="vat. lat. 3195, c. 69v" class="visindex-verso" src="images/visindex/c069v.svg" /></a>  <a href="content/c069v-c070r.xml"><img alt="vat. lat. 3195, c. 70r" class="visindex-recto" src="images/visindex/c070r.svg" /></a>  
+			<a href="content/c069v-c070r.xml"><img alt="vat. lat. 3195, c. 69v" class="visindex-verso" src="images/visindex/c069v.svg" /></a>  <a href="content/c069v-c070r.xml#c070r"><img alt="vat. lat. 3195, c. 70r" class="visindex-recto" src="images/visindex/c070r.svg" /></a>  
 		</div>
 		<div>
 			<img alt="vat. lat. 3195, c. 70v" class="visindex-verso" src="images/visindex/c070v.svg" />  <img alt="vat. lat. 3195, c. 71r" class="visindex-recto" src="images/visindex/c071r.svg" />  

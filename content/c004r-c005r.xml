@@ -146,7 +146,7 @@
             <lg type="dblvrs" corresp="#canvasline">
                <l n="1"><hi rendition="#red #fs24pt"
                   >N</hi><hi rendition="#small-caps">e</hi>l dolce tempo de la prima etade&v2c;</l>
-               <l n="2">Che nascer <choice><orig>uide</orig><reg>vide</reg></choice> &virg; e<subst><del type="erasure"><gap reason="illegible"/></del><add>t</add></subst> anchor quasi in herba</l>
+               <l n="2">Che nascer <choice><orig>uide</orig><reg>vide</reg></choice><choice><orig> &virg;</orig><reg/></choice> e<subst><del type="erasure"><gap reason="illegible"/></del><add>t</add></subst> anchor quasi in herba</l>
             </lg>
             <lg type="dblvrs" corresp="#canvasline">
                <l n="3">la fera <choice><orig>uoglia</orig><reg>voglia</reg></choice> che &per; mio mal crebbe<choice><orig>.&virg;</orig><reg>,</reg></choice></l>

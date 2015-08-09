@@ -62,16 +62,16 @@
 			<a href="content/c001r.xml"><img alt="vat. lat. 3195, c. 1r" style="float:right;" class="visindex-recto" src="images/visindex/c001r.svg" /></a> 
 		</div>
 		<div>
-			<a href="content/c001v.xml"><img alt="vat. lat. 3195, c. 1v" class="visindex-verso" src="images/visindex/c001v.svg" /></a> <img alt="vat. lat. 3195, c. 2r" class="visindex-recto" src="images/visindex/c002r.svg" />  
+			<a href="content/c001v.xml"><img alt="vat. lat. 3195, c. 1v" class="visindex-verso" src="images/visindex/c001v.svg" /></a> <a href="content/c002r.xml"><img alt="vat. lat. 3195, c. 2r" class="visindex-recto" src="images/visindex/c002r.svg" /></a>  
 		</div>
 		<div>
-			<img alt="vat. lat. 3195, c. 2v" class="visindex-verso" src="images/visindex/c002v.svg" />  <a href="content/c003r.xml"><img alt="vat. lat. 3195, c. 3r" class="visindex-recto" src="images/visindex/c003r.svg" /></a>  
+			<a href="content/c002v.xml"><img alt="vat. lat. 3195, c. 2v" class="visindex-verso" src="images/visindex/c002v.svg" /></a>  <a href="content/c003r.xml"><img alt="vat. lat. 3195, c. 3r" class="visindex-recto" src="images/visindex/c003r.svg" /></a>  
 		</div>
 		<div>
-			<a href="content/c003v.xml"><img alt="vat. lat. 3195, c. 3v" class="visindex-verso" src="images/visindex/c003v.svg" /></a>  <img alt="vat. lat. 3195, c. 4r" class="visindex-recto" src="images/visindex/c004r.svg" />  
+			<a href="content/c003v.xml"><img alt="vat. lat. 3195, c. 3v" class="visindex-verso" src="images/visindex/c003v.svg" /></a>  <a href="content/c004r-c005r.xml#c004r"><img alt="vat. lat. 3195, c. 4r" class="visindex-recto" src="images/visindex/c004r.svg" /></a>  
 		</div>
 		<div>
-			<img alt="vat. lat. 3195, c. 4v" class="visindex-verso" src="images/visindex/c004v.svg" />  <img alt="vat. lat. 3195, c. 5r" class="visindex-recto" src="images/visindex/c005r.svg" />  
+			<a href="content/c004r-c005r.xml#c004v"><img alt="vat. lat. 3195, c. 4v" class="visindex-verso" src="images/visindex/c004v.svg" /></a>  <a href="content/c004r-c005r.xml#c005r"><img alt="vat. lat. 3195, c. 5r" class="visindex-recto" src="images/visindex/c005r.svg" /></a>  
 		</div>
 		<div>
 			<img alt="vat. lat. 3195, c. 5v" class="visindex-verso" src="images/visindex/c005v.svg" />  <img alt="vat. lat. 3195, c. 6r" class="visindex-recto" src="images/visindex/c006r.svg" />  

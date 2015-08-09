@@ -88,51 +88,51 @@
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>9</td>
+          <td><a href="content/c002r.xml#rvf009">9</a></td>
           <td>2r</td>
-          <td>Quando ’l pianeta che distingue l’ore</td>
+          <td><a href="content/c002r.xml#rvf009">Quando ’l pianeta che distingue l’ore</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>10</td>
+          <td><a href="content/c002r.xml#rvf010">10</a></td>
           <td>2r</td>
-          <td>Gloriosa columna in cui s’appoggia</td>
+          <td><a href="content/c002r.xml#rvf010">Gloriosa columna in cui s’appoggia</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>11</td>
+          <td><a href="content/c002r.xml#rvf011">11</a></td>
           <td>2r</td>
-          <td>Lassare il velo o per sole o per ombra,</td>
+          <td><a href="content/c002r.xml#rvf011">Lassare il velo o per sole o per ombra,</a></td>
           <td>Ballata grande</td>
         </tr>
         <tr>
-          <td>12</td>
+          <td><a href="content/c002r.xml#rvf012">12</a></td>
           <td>2r</td>
-          <td>Se la mia vita da l’aspro tormento</td>
+          <td><a href="content/c001v.xml#rvf012">Se la mia vita da l’aspro tormento</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>13</td>
+          <td><a href="content/c002v.xml#rvf013">13</a></td>
           <td>2v</td>
-          <td>Quando fra l’altre donne ad ora ad ora</td>
+          <td><a href="content/c002v.xml#rvf013">Quando fra l’altre donne ad ora ad ora</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>14</td>
+          <td><a href="content/c002v.xml#rvf014">14</a></td>
           <td>2v</td>
-          <td>Occhi miei lassi, mentre ch’io vi giro</td>
+          <td><a href="content/c002v.xml#rvf014">Occhi miei lassi, mentre ch’io vi giro</a></td>
           <td>Ballata grande</td>
         </tr>
         <tr>
-          <td>15</td>
+          <td><a href="content/c002v.xml#rvf015">15</a></td>
           <td>2v</td>
           <td>Io mi rivolgo indietro a ciascun passo</td>
-          <td>Sonnet</td>
+          <td><a href="content/c002v.xml#rvf015">Sonnet</a></td>
         </tr>
         <tr>
-          <td>16</td>
+          <td><a href="content/c002v.xml#rvf016">16</a></td>
           <td>2v</td>
-          <td>Movesi il vecchierel canuto et biancho</td>
+          <td><a href="content/c002v.xml#rvf016">Movesi il vecchierel canuto et biancho</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
@@ -172,15 +172,15 @@
           <td>Sestina</td>
         </tr>
         <tr>
-          <td>23</td>
+          <td><a href="content/c004r-c005r.xml#rvf023">23</a></td>
           <td>4r-5r</td>
-          <td>Nel dolce tempo de la prima etade</td>
+          <td><a href="content/c004r-c005r.xml#rvf023">Nel dolce tempo de la prima etade</a></td>
           <td>Canzone</td>
         </tr>
         <tr>
-          <td>24</td>
+          <td><a href="content/c004r-c005r.xml#rvf024">24</a></td>
           <td>5r</td>
-          <td>Se l’onorata fronde che prescrive</td>
+          <td><a href="content/c004r-c005r.xml#rvf024">Se l’onorata fronde che prescrive</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>

@@ -144,7 +144,8 @@
            </lg>
          </lg>
          <space corresp="#canvasline"/>
-         <lg xml:id="rvf026" type="ballata" n="26">
+         <lg xml:id="rvf026" type="sonnet" n="26">
+            <lg type="octave">
             <lg type="dblvrs" corresp="#canvasline">
                <l n="1"><choice><orig><hi rendition="#blue #fs24pt">P</hi><hi rendition="#small-caps">i</hi>u</orig><reg><hi rendition="#blue #fs24pt">P</hi><hi rendition="#small-caps">i</hi>ù</reg></choice> di me lieta non si <choice><orig>uede</orig><reg>vede</reg></choice> a terra</l>
                <l n="2"><choice><orig>Naue</orig><reg>Nave</reg></choice> da <choice><orig>londe</orig><reg>l’onde</reg></choice> combattuta et <choice><orig>uinta</orig><reg>vinta</reg></choice>&p2c;</l>
@@ -161,6 +162,8 @@
                <l n="7">Di me&v2c; <choice><orig><abbr>ueggēdo</abbr><expan>ueggendo</expan></orig><reg>veggendo</reg></choice> quella spada scinta</l>
                <l n="8">Che fece al segnor mio &si; <choice><abbr>lūga</abbr><expan>lunga</expan></choice> guerra.</l>
             </lg>
+            </lg>
+            <lg type="sestet">
             <lg type="dblvrs" corresp="#canvasline">
                <l n="9">Et tutti <choice><orig>uoi</orig><reg>voi</reg></choice> <choice><orig>chamor</orig><reg>ch’Amor</reg></choice> laudate &in; rima<supplied>,</supplied></l>
                <l n="10">Al buon testor <choice><orig>de gliamorosi</orig><reg>degli amorosi</reg></choice> detti</l>
@@ -172,7 +175,8 @@
             <lg type="dblvrs" corresp="#canvasline">
                <l n="13"><choice><orig>Dun</orig><reg>D’un</reg></choice> spirito <choice><orig><abbr>cōuerso</abbr><expan>conuerso</expan></orig><reg>converso</reg></choice>&p2c; &amp7; &piu; <choice><orig>sestima</orig><reg>s’estima</reg></choice><choice><orig> &#11805;</orig><reg>,</reg></choice></l>
                <l n="14">Che di <choice><orig>nouanta noue</orig><reg>novantanove</reg></choice> altri perfecti.</l>
-            </lg>       
+            </lg>  
+            </lg>
          </lg>
          <space corresp="#canvasline"/>
          <lg xml:id="rvf027" type="sonnet" n="27">
@@ -182,7 +186,7 @@
                <l n="2">Co la corona del suo antiquo adorna<supplied>,</supplied></l>
             </lg>
             <lg type="dblvrs" corresp="#canvasline">
-               <l n="3">Prese <choice><orig>a</orig><reg>à</reg></choice> <choice><orig>gia</orig><reg>già</reg></choice> <choice><orig>larme</orig><reg>l’arme</reg></choice> per fiacchar le corna</l>
+               <l n="3">Prese <choice><orig>a</orig><reg>à</reg></choice> <choice><orig>gia</orig><reg>già</reg></choice> <choice><orig>larme</orig><reg>l’arme</reg></choice> &per; fiacchar le corna</l>
                <l n="4">A <choice><orig>babilonia</orig><reg>Babilonia</reg></choice>&v2c; et chi da lei si noma.</l>
             </lg>
             <lg type="dblvrs" corresp="#canvasline">
@@ -213,12 +217,12 @@
          <lg xml:id="rvf028" type="canzone" n="28">
            <lg type="stanza">
             <lg type="dblvrs" corresp="#canvasline">
-               <l n="1"><hi rendition="#fs24pt #blue">O</hi><hi rendition="#small-caps">a</hi>spectata in ciel<supplied>,</supplied> beata et bella</l>
+               <l n="1"><choice><orig><hi rendition="#fs24pt #blue">O</hi><hi rendition="#small-caps">a</hi>spectata</orig><reg><hi rendition="#fs24pt #blue">O</hi> <hi rendition="#small-caps">a</hi>spectata</reg></choice> in ciel<supplied>,</supplied> beata et bella</l>
                <l n="2">Anima che di nostra humanitade</l>
             </lg>
             <lg type="dblvrs" corresp="#canvasline">
                <l n="3">Vestita &uai;&v2c; non come <choice><orig>laltre</orig><reg>l’altre</reg></choice> carca&p2semicolon;</l>
-               <l n="4"><choice><orig>&Per;che</orig><reg>Perché</reg></choice> ti sian men dure omai le strade,</l> <!-- isabella: check the comma in the diplomatic? -->
+               <l n="4"><choice><orig>&Per;che</orig><reg>Perché</reg></choice> ti sian men dure omai le strade<supplied>,</supplied></l> <!-- isabella: check the comma in the diplomatic? -->
             </lg>
             <lg type="dblvrs" corresp="#canvasline">
                <l n="5">A <choice><orig>dio</orig><reg>Dio</reg></choice> dilecta&v2c; obediente ancella&p2c;</l>

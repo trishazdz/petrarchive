@@ -125,6 +125,19 @@
             </char>
          </charDecl>
          <charDecl>
+            <char xml:id="punctinter">
+               <charName>PUNCTUS
+                  INTERROGATIVUS</charName>
+               <charProp>
+                  <localName>entity</localName>
+                  <value>punctinter</value>
+               </charProp>
+               <mapping type="visual">?</mapping>
+               <mapping type="MUFI">U+F160</mapping>
+               <mapping type="PUA">U+F160</mapping>
+            </char>
+         </charDecl>
+         <charDecl>
            <char xml:id="virgsusp">
              <charName>VIRGULA SUSPENSIVA</charName>
              <charProp>
@@ -187,8 +200,8 @@
          </lg>
          <lg type="stanza">
             <lg type="dblvrs" corresp="#canvasline">
-               <l n="21"><hi rendition="#blue #fs24pt">¶</hi><supplied>’</supplied> dico che dal <choice><orig>di</orig><reg>dì</reg></choice> <choice><orig>chel</orig><reg>che ’l</reg></choice> primo assalto</l>
-               <l n="22">Mi diede <choice><orig>amor</orig><reg>Amor</reg></choice> <choice><orig><abbr>moltāni</abbr>moltanni<expan></expan></orig><reg>molt’anni</reg></choice> eran passati&v2c;</l>
+               <l n="21"><hi rendition="#blue #fs24pt">¶</hi>I<supplied>’</supplied> dico che dal <choice><orig>di</orig><reg>dì</reg></choice> <choice><orig>chel</orig><reg>che ’l</reg></choice> primo assalto</l>
+               <l n="22">Mi diede <choice><orig>amor</orig><reg>Amor</reg></choice> <choice><orig><abbr>moltāni</abbr><expan>moltanni</expan></orig><reg>molt’anni</reg></choice> eran passati&v2c;</l>
             </lg>
             <lg type="dblvrs" corresp="#canvasline">
                <l n="23">&Si; <choice><orig>chio</orig><reg>ch’io</reg></choice> <choice><orig>cangiaua</orig><reg>cangiava</reg></choice> il <choice><orig>giouenil</orig><reg>giovenil</reg></choice> aspetto&p2semicolon;</l>
@@ -200,7 +213,7 @@
             </lg>
             <lg type="dblvrs" corresp="#canvasline">
                <l n="27">Lagrima anchor &non; mi <choice><orig>bagnaua</orig><reg>bagnava</reg></choice> il petto</l>
-               <l n="28"><choice><orig>Ne</orig><reg>Né</reg></choice> <choice><abbr>rōpea</abbr><expan>rompea</expan></choice> il <choice><abbr>sōno</abbr><expan>sonno</expan></choice>&p2c; et quel che &in; me &non; era&v2c;</l>
+               <l n="28"><choice><orig>Ne</orig><reg>Né</reg></choice> <choice><abbr>rōpea</abbr><expan>rompea</expan></choice> il <choice><abbr>sōno</abbr><expan>sonno</expan></choice>&p2c; &amp7; quel che &in; me &non; era&v2c;</l>
             </lg>
             <lg type="dblvrs" corresp="#canvasline">
                <l n="29">Mi <choice><orig>pareua</orig><reg>pareva</reg></choice> un miracolo in altrui.</l>
@@ -321,7 +334,7 @@
                </lg>
                <lg type="dblvrs" corresp="#canvasline">
                   <l n="83">Udendo<choice><orig> &virg;</orig><reg>:</reg></choice> I<supplied>’</supplied> &non; son forse chi tu credi.</l>
-                  <l n="84">E dicea meco<choice><orig> &virg;</orig><reg>:</reg></choice> Se costei mi spetra<supplied>,</supplied></l> <!-- etr in bold! -->
+                  <l n="84">E dicea meco<choice><orig> &virg;</orig><reg>:</reg></choice> Se costei mi sp<hi rendition="#b">etr</hi>a<supplied>,</supplied></l> <!-- etr in bold! -->
                </lg>
                <lg type="dblvrs" corresp="#canvasline">
                   <l n="85">Nulla <choice><orig>uita</orig><reg>vita</reg></choice> mi fia noiosa o trista&p2semicolon;</l>
@@ -349,11 +362,11 @@
                </lg>
                <lg type="dblvrs" corresp="#canvasline">
                   <l n="97">O dar soccorso a le <choice><orig>uertuti</orig><reg>vertuti</reg></choice> afflitte.</l>
-                  <l n="98">Le <choice><orig>uiue</orig><reg>vive</reg></choice> <choice><orig>uoci</orig><reg>voci</reg></choice> <choice><orig>merano</orig><reg>m’erano</reg></choice> interditte<choice><orig>,</orig><reg>;</reg></choice></l>
+                  <l n="98">Le <choice><orig>uiue</orig><reg>vive</reg></choice> <choice><orig>uoci</orig><reg>voci</reg></choice> <choice><orig>merano</orig><reg>m’erano</reg></choice> interditte<choice><orig> .</orig><reg>;</reg></choice></l>
                </lg>
                <lg type="dblvrs" corresp="#canvasline">
                   <l n="99"><choice><orig>Ondio</orig><reg>Ond’io</reg></choice> gridai con carta &amp7; con incostro&p2colon;</l>
-                  <l n="100">&Non; son mio<supplied>,</supplied> no&p2semicolon; <choice><orig>Sio</orig><reg>S’io</reg></choice> moro &v2c; il <choice><abbr>dāno</abbr><expan>danno</expan></choice> <choice><orig>&#823;e&#823;</orig><reg>è</reg></choice> <choice><orig>uost<add>o</add></orig><reg>vostro</reg></choice>.</l> <!-- check "uostro" encoding!!! -->
+                  <l n="100">&Non; son mio<supplied>,</supplied> no&p2semicolon; <choice><orig>Sio</orig><reg>S’io</reg></choice> moro&v2c; il <choice><abbr>dāno</abbr><expan>danno</expan></choice> <choice><orig>&#11805;e&#11805;</orig><reg>è</reg></choice> <choice><orig>uost<add>o</add></orig><reg>vostro</reg></choice>.</l> <!-- check "uostro" encoding!!! -->
                </lg>
             </lg>
             <lg type="stanza">
@@ -391,7 +404,7 @@
                </lg>
                <lg type="dblvrs" corresp="#canvasline">
                   <l n="117">Et farmi una fontana a pie<supplied>’</supplied> <choice><orig>dun</orig><reg>d’un</reg></choice> faggio.</l>
-                  <l n="118"><choice><abbr>Grā</abbr><expan>Gran</expan></choice> <choice><abbr>tēpo</abbr><expan>tempo</expan></choice> humido <choice><abbr>tēni</abbr><expan>tenni</expan></choice> &q-macron;l <choice><orig>uiaggio</orig><reg>viaggio</reg></choice>.</l>
+                  <l n="118"><choice><abbr>Grā</abbr><expan>Gran</expan></choice> <choice><abbr>tēpo</abbr><expan>tempo</expan></choice> humido <choice><abbr>tēni</abbr><expan>tenni</expan></choice> <choice><orig>&q-macron;l</orig><reg>quel</reg></choice> <choice><orig>uiaggio</orig><reg>viaggio</reg></choice>.</l>
                </lg>
                <lg type="dblvrs" corresp="#canvasline">
                   <l n="119">Chi <choice><orig>udi</orig><reg>udì</reg></choice> mai <choice><orig>duom</orig><reg>d’uom</reg></choice> <choice><orig>uero</orig><reg>vero</reg></choice> nascer fonte<choice><orig><g ref="#punctinter"/></orig><reg>?</reg></choice></l>
@@ -444,7 +457,7 @@
             </lg>
             <lg type="stanza">
                <lg type="dblvrs" corresp="#canvasline">
-                  <l n="141"><hi rendition="#red #fs24pt">¶</hi>Spirto doglioso errante<supplied>,</supplied> mi <choice><abbr>rimēbra</abbr><abbr>rimembra</abbr></choice><supplied>,</supplied></l>
+                  <l n="141"><hi rendition="#red #fs24pt">¶</hi>Spirto doglioso errante<supplied>,</supplied> mi <choice><abbr>rimēbra</abbr><expan>rimembra</expan></choice><supplied>,</supplied></l>
                   <l n="142">Per spelunche deserte et pellegrine<supplied>,</supplied></l>
                </lg>
                <lg type="dblvrs" corresp="#canvasline">
@@ -534,7 +547,7 @@
                   <l n="10"><choice><orig>Sottol</orig><reg>Sotto ’l</reg></choice> &piu; ardente sol&v2c; <choice><orig>comio</orig><reg>com’io</reg></choice> <choice><orig>sfauillo</orig><reg>sfavillo</reg></choice>&p2c;</l>
                </lg>
                <lg type="dblvrs" corresp="#canvasline">
-                  <l n="11">Perdendo tanto amata cosa propria.</l> <!-- NEED TO FIND ENCORING FOR ABBREVIATION "pro": MUFI p. 78? -->
+                  <l n="11">Perdendo tanto amata cosa <choice><abbr>&#42835;pria</abbr><expan>propria</expan></choice>.</l> <!-- isabella: check encoding of "propria": "&#42835;" or MUFI p. 78? -->
                   <l n="12">Cercate dunque fonte &piu; <choice><abbr>trāquillo</abbr><expan>tranquillo</expan></choice>&p2c;</l>
             </lg>
                <lg type="dblvrs" corresp="#canvasline">

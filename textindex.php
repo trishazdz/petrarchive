@@ -184,27 +184,27 @@
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>25</td>
+          <td><a href="content/c005v.xml#rvf025">25</a></td>
           <td>5v</td>
-          <td>Amor piangeva, et io con lui tal volta</td>
+          <td><a href="content/c005v.xml#rvf025">Amor piangeva, et io con lui tal volta</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>26</td>
+          <td><a href="content/c005v.xml#rvf026">26</a></td>
           <td>5v</td>
-          <td>Più di me lieta non si vede a terra</td>
+          <td><a href="content/c005v.xml#rvf026">Più di me lieta non si vede a terra</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>27</td>
+          <td><a href="content/c005v.xml#rvf027">27</a></td>
           <td>5v</td>
-          <td>Il successor di Karlo, che la chioma</td>
+          <td><a href="content/c005v.xml#rvf027">Il successor di Karlo, che la chioma</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>28</td>
+          <td><a href="content/c005v.xml#rvf028">28</a></td>
           <td>5v-6v</td>
-          <td>Oaspectata in ciel, beata et bella</td>
+          <td><a href="content/c005v.xml#rvf028">Oaspectata in ciel, beata et bella</a></td>
           <td>Canzone</td>
         </tr>
         <tr>

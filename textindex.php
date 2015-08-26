@@ -108,7 +108,7 @@
         <tr>
           <td><a href="content/c002r.xml#rvf012">12</a></td>
           <td>2r</td>
-          <td><a href="content/c001v.xml#rvf012">Se la mia vita da l’aspro tormento</a></td>
+          <td><a href="content/c002r.xml#rvf012">Se la mia vita da l’aspro tormento</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
@@ -126,8 +126,8 @@
         <tr>
           <td><a href="content/c002v.xml#rvf015">15</a></td>
           <td>2v</td>
-          <td>Io mi rivolgo indietro a ciascun passo</td>
-          <td><a href="content/c002v.xml#rvf015">Sonnet</a></td>
+          <td><a href="content/c002v.xml#rvf015">Io mi rivolgo indietro a ciascun passo</a></td>
+          <td>Sonnet</td>
         </tr>
         <tr>
           <td><a href="content/c002v.xml#rvf016">16</a></td>

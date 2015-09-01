@@ -340,7 +340,7 @@ the line wraps. -->
                <l n="4">Et <choice><orig>gia</orig><reg>già</reg></choice> son quasi di cristallo i fiumi&p2c;</l>
             <l n="5"><choice><orig>En</orig><reg>E ’n</reg></choice> <choice><orig>uece</orig><reg>vece</reg></choice> de <choice><orig>lerbetta</orig><reg>l’erbetta</reg></choice> per le <choice><orig>ualli</orig><reg>valli</reg></choice></l>
             <l n="6">&Non; se <choice><orig>uedaltro</orig><reg>ved’altro</reg></choice> che pruine &amp7; ghiaccio<choice><orig>.</orig><reg></reg></choice></l>
-               <l n="7"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi>Et io nel cor <choice><orig>uia</orig><reg>via</reg></choice> <choice><orig>piu</orig><reg>più</reg></choice> freddo che ghiaccio</l>
+               <l n="7"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi>Et io nel cor <choice><orig>uia</orig><reg>via</reg></choice> <choice><orig>piu</orig><reg>più</reg></choice> freddo che ghiaccio<supplied>.</supplied></l>
             <l n="8"><choice><orig>O</orig><reg>Ò</reg></choice> di <choice><orig>graui</orig><reg>gravi</reg></choice> pensier<supplied>’</supplied> tal una nebbia&v2c;</l>
             <l n="9">Qual si <choice><orig>leua</orig><reg>leva</reg></choice> talor di queste <choice><orig>ualli</orig><reg>valli</reg></choice>&v2c;</l>
             <l n="10">Serrate incontra <choice><orig>agliamorosi</orig><reg>agli amorosi</reg></choice> <choice><orig>uenti</orig><reg>venti</reg></choice><choice><orig> /</orig><reg></reg></choice></l>
@@ -378,8 +378,8 @@ the line wraps. -->
                <l n="36"><choice><orig>Ne</orig><reg>Né</reg></choice> suon <choice><orig>curaua</orig><reg>curava</reg></choice> di <choice><orig>speççata</orig><reg>spezzata</reg></choice> nebbia.</l>
                <l n="37"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi>Ma non <choice><orig>fuggio</orig><reg>fuggìo</reg></choice> giamai nebbia &per; 
                   <choice><orig><abbr>uēti</abbr><expan>uenti</expan></orig><reg>venti</reg></choice>&p2c;</l>
-            <l n="38">Come quel di. ne mai fiumi &per; pioggia&p2c;</l>
-            <l n="39"><choice><orig>Ne</orig><reg>Né</reg></choice> ghiaccio&v2c; <choice><orig><abbr>quādol</abbr><expan>quandol</expan></orig><reg>quando l’</reg></choice> 
+            <l n="38">Come quel <choice><orig>di</orig><reg>dì</reg></choice>. <choice><orig>ne</orig><reg>né</reg></choice> mai fiumi &per; pioggia&p2c;</l>
+            <l n="39"><choice><orig>Ne</orig><reg>Né</reg></choice> ghiaccio&v2c; <choice><orig><abbr>quādol</abbr><expan>quandol</expan></orig><reg>quando ’l</reg></choice> 
                  sole <choice><orig>apr<subst><del type="erasure"><gap reason="illegible"/></del><add>e</add></subst></orig><reg>apre</reg></choice> le <choice><orig>ualli</orig><reg>valli</reg></choice>.</l> 
                      </lg>
          <space corresp="#msline"/>
@@ -404,7 +404,7 @@ the line wraps. -->
                </lg>
                <lg type="dblvrs">
                   <l n="7">Mi spinse&p2c; onde &in; un rio che <choice><orig>lerba</orig><reg>l’erba</reg></choice> asconde</l>
-                  <l n="8">Caddi &v2c; &non; <choice><orig>gia</orig><reg>già</reg></choice> come persona <choice><orig>uiua</orig><reg>viva</reg></choice>.</l>
+                  <l n="8">Caddi&v2c; &non; <choice><orig>gia</orig><reg>già</reg></choice> come persona <choice><orig>uiua</orig><reg>viva</reg></choice>.</l>
                </lg>
               </lg>
               <lg type="sestet">

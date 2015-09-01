@@ -492,7 +492,7 @@ the line wraps. -->
    <text>
       <body>
          <pb n="charta 1 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-001r.jpg" />
-         <head corresp="#canvasline"><hi rendition="#red #fs24pt">F</hi><hi rendition="#small-caps #red">r</hi><hi rendition="#red">ancisci petrarche laureati poete. Rerum vulgarium fragmenta.</hi></head>
+         <head corresp="#canvasline"><hi rendition="#blue #fs24pt">F</hi><hi rendition="#small-caps #red">r</hi><hi rendition="#red">ancisci petrarche laureati poete. Rerum vulgarium fragmenta.</hi></head>
          <!-- this is the title of the work: above the transcriptional lines -->
           <lg xml:id="rvf001" type="sonnet" n="1">
             <lg type="octave">
@@ -560,7 +560,7 @@ the line wraps. -->
                </lg>
                <lg type="dblvrs" corresp="#canvasline">
                   <l n="13">Ritrarmi accortamente da lo <choice><orig>straçio</orig><reg>strazio</reg></choice></l>
-                  <l n="14">Del quale oggi <choice><orig><abbr>uōrebbe</abbr><expan>uorrebbe</expan></orig><reg>vorrebbe</reg></choice><reg>,</reg> &amp7; &non; <choice><orig>po</orig><reg>pò</reg></choice> aitarme<supplied>.</supplied></l>
+                  <l n="14">Del quale oggi <choice><orig><abbr>uõrebbe</abbr><expan>uorrebbe</expan></orig><reg>vorrebbe</reg></choice><reg>,</reg> &amp7; &non; <choice><orig>po</orig><reg>pò</reg></choice> aitarme<supplied>.</supplied></l>
                </lg>
             </lg>
          </lg>

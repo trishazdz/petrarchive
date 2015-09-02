@@ -488,7 +488,7 @@ the line wraps. -->
                     <l n="12">Poi torna il primo&p2c; &amp7; questo <choice><orig>da</orig><reg>dà</reg></choice> la &uolta;.</l>
                 </lg>
                 <lg type="dblvrs" corresp="#canvasline">
-                  <l n="13">Qual <choice><orig>uincera</orig><reg>vincerà</reg></choice><supplied>,</supplied> non so&p2semicolon; <choice><orig>manfino</orig><reg>ma ’nfino</reg></choice> <choice><orig>a<corr>dor</corr>a</orig><reg>ad ora</reg></choice></l>
+                    <l n="13">Qual <choice><orig>uincera</orig><reg>vincerà</reg></choice><supplied>,</supplied> non so&p2semicolon; <choice><orig>manfino</orig><reg>ma ’nfino</reg></choice> <choice><orig>a<hi rendition="#b">dor</hi>a</orig><reg>ad ora</reg></choice></l>
                     <l n="14">Combattuto <choice><orig>anno</orig><reg>ànno</reg></choice>&p2c; et &non; pur una &uolta;.</l>
                 </lg>
               </lg>
@@ -627,7 +627,7 @@ the line wraps. -->
                     <l n="32">Altri <choice><orig>chio</orig><reg>ch’io</reg></choice> stesso <choice><orig>el</orig><reg>e ’l</reg></choice> desiar <choice><orig>souerchio</orig><reg>soverchio</reg></choice><choice><orig>.</orig><reg>?</reg></choice></l>
                 </lg>
                 <lg type="dblvrs" corresp="#canvasline">
-                    <l n="33"><choice><orig>Gia</orig><reg>Già</reg></choice> <choice><orig>si</orig><reg>s’i</reg></choice> trascorro il ciel di cerchio &in; cerchio&v2c;</l>
+                    <l n="33"><choice><orig>Gia</orig><reg>Già</reg></choice> <choice><orig>si</orig><reg>s’i</reg></choice><supplied>’</supplied> trascorro il ciel di cerchio &in; cerchio&v2c;</l>
                   <l n="34">Nessun pianeta a pianger mi 
                     <choice><abbr>condāna</abbr><expan>condanna</expan></choice><supplied>.</supplied></l>
                 </lg>
@@ -660,7 +660,7 @@ the line wraps. -->
                 </lg>
                 <lg type="dblvrs" corresp="#canvasline">
                   <l n="48">Pur la sua propria colpa&p2c; &amp7; &non; quel giorno</l>
-                    <l n="49"><choice><orig>Chi</orig><reg>Ch’i</reg></choice><supplied>’</supplied> uolsi inuer<supplied>’</supplied> <choice><orig>langelica</orig><reg>l’angelica</reg></choice> beltade&p2c;</l>
+                    <l n="49"><choice><orig>Chi</orig><reg>Ch’i</reg></choice><supplied>’</supplied> <choice><orig>uolsi</orig><reg>volsi</reg></choice> inuer<supplied>’</supplied> <choice><orig>langelica</orig><reg>l’angelica</reg></choice> beltade&p2c;</l>
                 </lg>
                 <lg type="single" corresp="#canvasline"> 
                   <l n="50">Nel dolce tempo de la prima etade.</l>
@@ -672,7 +672,7 @@ the line wraps. -->
                 <lg type="stanza">
                   <lg type="dblvrs" corresp="#canvasline">
                     <l n="1"><hi rendition="#red #fs24pt">P</hi><hi rendition="#small-caps">e</hi>rch<choice><orig>e</orig><reg>é</reg></choice> 
-                      la uita &e; <choice><orig>breue</orig><reg>breve</reg></choice>&p2c;</l>
+                      la <choice><orig>uita</orig><reg>vita</reg></choice> &e; <choice><orig>breue</orig><reg>breve</reg></choice>&p2c;</l>
                       <l n="2">Et <choice><orig>lingegno</orig><reg>l’ingegno</reg></choice> <choice><orig>pauenta</orig><reg>paventa</reg></choice> a <choice><orig>lalta</orig><reg>l’alta</reg></choice> impresa&p2c;</l>
                   </lg>
                   <lg type="dblvrs" corresp="#canvasline">

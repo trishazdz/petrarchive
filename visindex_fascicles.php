@@ -145,25 +145,20 @@
 			</h1>
 			<img alt="vat. lat. 3195, c. 53r" src="images/visindex/c053r.svg" /> <img alt="vat. lat. 3195, c. 53v" src="images/visindex/c053v.svg" /> <img alt="vat. lat. 3195, c. 54r" src="images/visindex/c054r.svg" /> <img alt="vat. lat. 3195, c. 54v" src="images/visindex/c054v.svg" /> <img alt="vat. lat. 3195, c. 55r" src="images/visindex/c055r.svg" /> <img alt="vat. lat. 3195, c. 55v" src="images/visindex/c055v.svg" /> <img alt="vat. lat. 3195, c. 56r" src="images/visindex/c056r.svg" /> <img alt="vat. lat. 3195, c. 56v" src="images/visindex/c056v.svg" /> <img alt="vat. lat. 3195, c. 57r" src="images/visindex/c057r.svg" /> <img alt="vat. lat. 3195, c. 57v" src="images/visindex/c057v.svg" /> <img alt="vat. lat. 3195, c. 58r" src="images/visindex/c058r.svg" /> <img alt="vat. lat. 3195, c. 58v" src="images/visindex/c058v.svg" /> <img alt="vat. lat. 3195, c. 59r" src="images/visindex/c059r.svg" /> <img alt="vat. lat. 3195, c. 59v" src="images/visindex/c059v.svg" /> <img alt="vat. lat. 3195, c. 60r" src="images/visindex/c060r.svg" /> <img alt="vat. lat. 3195, c. 60v" src="images/visindex/c060v.svg" /> 
 		</div>
-		<div class="fascicle clearfix">
-			
-			<h1 style="margin-bottom:.5em;">
-				Fascicles IX: binion
-			</h1>
-			<img alt="vat. lat. 3195, c. 61r" src="images/visindex/c061r.svg" /> 
-			<img alt="vat. lat. 3195, c. 61v" src="images/visindex/c061v.svg" /> <img alt="vat. lat. 3195, c. 62r" src="images/visindex/c062r.svg" /> <img alt="vat. lat. 3195, c. 62v" src="images/visindex/c062v.svg" /> <img alt="vat. lat. 3195, c. 63r" src="images/visindex/c063r.svg" /> <img alt="vat. lat. 3195, c. 63v" src="images/visindex/c063v.svg" /> <img alt="vat. lat. 3195, c. 64r" src="images/visindex/c064r.svg" /> <img alt="vat. lat. 3195, c. 64v" src="images/visindex/c064v.svg" /> 
-		</div>
-		<div class="fascicle clearfix" style="clear:none;">
-			<h1 style="margin-bottom:.5em;">
-				Fascicles X and XI: binion within binion
-			</h1>
-			<img alt="vat. lat. 3195, c. 65r" src="images/visindex/c065r.svg" /> <img alt="vat. lat. 3195, c. 65v" src="images/visindex/c065v.svg" /> <img alt="vat. lat. 3195, c. 66r" src="images/visindex/c066r.svg" /> <img alt="vat. lat. 3195, c. 66v" src="images/visindex/c066v.svg" /> 
-			<div class="fascicle" style="display:inline;clear:none;">
-				<img style="padding-right: .5em; padding-bottom: .5em; padding-left:.5em; border-left:1px dashed black;" alt="vat. lat. 3195, c. 67r" src="images/visindex/c067r.svg" /> <img alt="vat. lat. 3195, c. 67v" src="images/visindex/c067v.svg" /> <img alt="vat. lat. 3195, c. 68r" src="images/visindex/c068r.svg" /> <img alt="vat. lat. 3195, c. 68v" src="images/visindex/c068v.svg" /> <img alt="vat. lat. 3195, c. 69r" src="images/visindex/c069r.svg" /> <a href="content/c069v-c070r.xml"><img alt="vat. lat. 3195, c. 69v" src="images/visindex/c069v.svg" /></a> <a href="content/c069v-c070r.xml#c070r"><img alt="vat. lat. 3195, c. 70r" src="images/visindex/c070r.svg" /></a> <img style="padding-right:.5em; padding-bottom:.5em; padding-left:.5em; border-right:1px dashed black;" alt="vat. lat. 3195, c. 70v" src="images/visindex/c070v.svg" /> 
-			</div>
-			<img alt="vat. lat. 3195, c. 71r" src="images/visindex/c071r.svg" /> <img alt="vat. lat. 3195, c. 71v" src="images/visindex/c071v.svg" /> <img alt="vat. lat. 3195, c. 72r" src="images/visindex/c072r.svg" /> <img alt="vat. lat. 3195, c. 72v" src="images/visindex/c072v.svg" /> 
-<!--<img alt="vat. lat. 3195, c. 72v" style="opacity:0;" src="images/visindex/c072v.svg" />-->
-		</div>
+<div class="fascicle clearfix" style="clear:none;">
+    <h1 style="margin-bottom:.5em;">
+        Fascicles IX, X and XI: two binions within a binion 
+    </h1>
+        <img alt="vat. lat. 3195, c. 61r" src="images/visindex/c061r.svg" /> <img alt="vat. lat. 3195, c. 61v" src="images/visindex/c061v.svg" /> <img alt="vat. lat. 3195, c. 62r" src="images/visindex/c062r.svg" /> <img alt="vat. lat. 3195, c. 62v" src="images/visindex/c062v.svg" />
+    <div class="fascicle" style="display:inline;clear:none;">
+        <img style="padding-right: .5em; padding-bottom: .5em; padding-left:.5em; border-left:1px dashed black;" alt="vat. lat. 3195, c. 63r" src="images/visindex/c063r.svg" /> <img alt="vat. lat. 3195, c. 63v" src="images/visindex/c063v.svg" /> <img alt="vat. lat. 3195, c. 64r" src="images/visindex/c064r.svg" /> <img alt="vat. lat. 3195, c. 64v" src="images/visindex/c064v.svg" /> <img alt="vat. lat. 3195, c. 65r" src="images/visindex/c065r.svg" /> <img alt="vat. lat. 3195, c. 65v" src="images/visindex/c065v.svg" /> <img alt="vat. lat. 3195, c. 66r" src="images/visindex/c066r.svg" /> <img alt="vat. lat. 3195, c. 66v" src="images/visindex/c066v.svg" /> 
+    </div>
+    <div class="fascicle" style="display:inline;clear:none;">
+        <img style="padding-right: .5em; padding-bottom: .5em; padding-left:.5em; border-left:1px dashed black;" alt="vat. lat. 3195, c. 67r" src="images/visindex/c067r.svg" /> <img alt="vat. lat. 3195, c. 67v" src="images/visindex/c067v.svg" /> <img alt="vat. lat. 3195, c. 68r" src="images/visindex/c068r.svg" /> <img alt="vat. lat. 3195, c. 68v" src="images/visindex/c068v.svg" /> <img alt="vat. lat. 3195, c. 69r" src="images/visindex/c069r.svg" /> <a href="content/c069v-c070r.xml"><img alt="vat. lat. 3195, c. 69v" src="images/visindex/c069v.svg" /></a> <a href="content/c069v-c070r.xml#c070r"><img alt="vat. lat. 3195, c. 70r" src="images/visindex/c070r.svg" /></a> <img style="padding-right:.5em; padding-bottom:.5em; padding-left:.5em; border-right:1px dashed black;" alt="vat. lat. 3195, c. 70v" src="images/visindex/c070v.svg" /> 
+    </div>
+    <img alt="vat. lat. 3195, c. 71r" src="images/visindex/c071r.svg" /> <img alt="vat. lat. 3195, c. 71v" src="images/visindex/c071v.svg" /> <img alt="vat. lat. 3195, c. 72r" src="images/visindex/c072r.svg" /> <img alt="vat. lat. 3195, c. 72v" src="images/visindex/c072v.svg" /> 
+    <!--<img alt="vat. lat. 3195, c. 72v" style="opacity:0;" src="images/visindex/c072v.svg" />-->
+</div>
 		<!--<div class="page-spacer" style="margin-left:.3em; min-width:291px; min-height:400px" /> -->
 	</div>
 	</div>

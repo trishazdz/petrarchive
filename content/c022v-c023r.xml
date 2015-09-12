@@ -162,7 +162,7 @@
                <l n="4">Il sempre sospirar<choice><orig><g ref="#punctelevhiback"/></orig><reg></reg></choice> nulla <choice><orig>releua</orig><reg>releva</reg></choice>&p2semicolon;</l>
             </lg>
             <lg type="dblvrs" corresp="#canvasline">
-               <l n="5"><choice><orig>Gia</orig><reg>Già</reg></choice> su per <choice><orig>lalpi</orig><reg>l’Alpi</reg></choice> <choice><orig>neua</orig><reg>neva</reg></choice><choice><orig><g ref="#punctelevhiback"/></orig><reg></reg></choice> <choice><orig>dognintorno</orig><reg>d’ogni’ntorno</reg></choice><supplied>;</supplied></l>
+               <l n="5"><choice><orig>Gia</orig><reg>Già</reg></choice> su per <choice><orig>lalpi</orig><reg>l’Alpi</reg></choice> <choice><orig>neua</orig><reg>neva</reg></choice><choice><orig><g ref="#punctelevhiback"/></orig><reg></reg></choice> <choice><orig>dognintorno</orig><reg>d’ogni ’ntorno</reg></choice><supplied>;</supplied></l>
                <l n="6">Et &e; <choice><orig>gia</orig><reg>già</reg></choice> presso al giorno<choice><orig><g ref="#punctelevhiback"/></orig><reg>,</reg></choice> <choice><orig>ondio</orig><reg>ond’io</reg></choice> son desto.</l>
             </lg>
             <lg type="dblvrs" corresp="#canvasline">
@@ -283,7 +283,7 @@
             <pb xml:id="c023r" n="charta 23 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-023r.jpg"/>
             <!-- line 29 and 45, erasure? -->
             <lg type="single" corresp="#canvasline">   
-               <l n="60">Che <choice><orig>piu</orig><reg>più</reg></choice> nol sento&p2c; &amp; &e; non men che suole.</l>
+               <l n="60">Che <choice><orig>piu</orig><reg>più</reg></choice> nol sento&p2c; &amp7; &e; non men che suole.</l>
             </lg>
             <lg type="stanza">
                <lg type="dblvrs" corresp="#canvasline">
@@ -321,14 +321,14 @@
             <lg type="stanza">
                <lg type="dblvrs" corresp="#canvasline">
                   <l n="76"><hi rendition="#blue #fs24pt">¶</hi>De<supplied>’</supplied> passati miei danni <choice><orig>‘</orig><reg/></choice> piango et rido</l>
-                  <l n="77"><choice><orig><abbr>ꝑche</abbr><expan>Perche</expan></orig><reg>Perché</reg></choice> molto mi fido<choice><orig><g ref="#punctelevhiback"/></orig><reg></reg></choice> in quel <choice><orig>chi</orig><reg>ch’i</reg></choice><supplied>’</supplied> odo.</l>
+                  <l n="77"><choice><orig>&Per;che</orig><reg>Perché</reg></choice> molto mi fido<choice><orig><g ref="#punctelevhiback"/></orig><reg></reg></choice> in quel <choice><orig>chi</orig><reg>ch’i</reg></choice><supplied>’</supplied> odo.</l>
                </lg>
                <lg type="dblvrs" corresp="#canvasline">
-                  <l n="78">Del presente mi godo<choice><orig><g ref="#punctelevhiback"/></orig><reg>,</reg></choice> &amp; meglio aspetto&p2c;</l>
+                  <l n="78">Del presente mi godo<choice><orig><g ref="#punctelevhiback"/></orig><reg>,</reg></choice> &amp7; meglio aspetto&p2c;</l>
                   <l n="79">Et <choice><orig>uo</orig><reg>vo</reg></choice> <choice><abbr>contāto</abbr><expan>contando</expan></choice> gli anni<choice><orig><g ref="#punctelevhiback"/></orig><reg>,</reg></choice> &amp7; taccio &amp7; grido.</l>
                </lg>
                <lg type="dblvrs" corresp="#canvasline">
-                  <l n="80"><choice><orig>En</orig><reg>E ’n</reg></choice> bel ramo <choice><orig><abbr>mānido</abbr><expan>mannido</expan></orig><reg>m’annido</reg></choice><choice><orig><g ref="#punctelevhiback"/></orig><reg>,</reg></choice> &amp; in tal modo<choice><orig> &virg;</orig><reg/></choice></l>
+                  <l n="80"><choice><orig>En</orig><reg>E ’n</reg></choice> bel ramo <choice><orig><abbr>mānido</abbr><expan>mannido</expan></orig><reg>m’annido</reg></choice><choice><orig><g ref="#punctelevhiback"/></orig><reg>,</reg></choice> &amp7; in tal modo<choice><orig> &virg;</orig><reg/></choice></l>
                   <l n="81"><choice><orig>Chi</orig><reg>Ch’i</reg></choice><supplied>’</supplied> ne ringratio<choice><orig> &virg;</orig><reg/></choice> &amp7; lodo <choice><orig>‘</orig><reg/></choice> il gran disdetto</l>
                </lg>
                <lg type="dblvrs" corresp="#canvasline">
@@ -336,7 +336,7 @@
                   <l n="83">Et ne <choice><orig>lalma</orig><reg>l’alma</reg></choice> depinto<choice><orig> ‘</orig><reg>:</reg></choice> <choice><orig>i</orig><reg>I’</reg></choice> sare<supplied>’</supplied> udito<choice><orig>.</orig><reg/></choice></l>
                </lg>
                <lg type="dblvrs" corresp="#canvasline">
-                  <l n="84">Et mostratone a dito<choice><orig><g ref="#punctelevhiback"/></orig><reg>,</reg></choice> &amp; <choice><orig><abbr>āne</abbr><expan>anne</expan></orig><reg>ànne</reg></choice> extinto&p2c;</l>
+                  <l n="84">Et mostratone a dito<choice><orig><g ref="#punctelevhiback"/></orig><reg>,</reg></choice> &amp7; <choice><orig><abbr>āne</abbr><expan>anne</expan></orig><reg>ànne</reg></choice> extinto&p2c;</l>
                   <l n="85">Tanto <choice><orig>inançi</orig><reg>inanzi</reg></choice> son pinto&p2c;</l>
                </lg>
                <lg type="dblvrs" corresp="#canvasline">
@@ -354,7 +354,7 @@
          </lg>
          </lg>
             <space corresp="#canvasline"/>
-         <lg xml:id="rvf107" type="madrigal" n="106">
+         <lg xml:id="rvf106" type="madrigal" n="106">
                <lg type="dblvrs" corresp="#canvasline">
                   <l n="1"><hi rendition="#red #fs24pt"
                      >N</hi><hi rendition="#small-caps">o</hi><choice><orig>ua</orig><reg>va</reg></choice> angeletta <choice><orig>soura</orig><reg>sovra</reg></choice> <choice><orig>lale</orig><reg>l'ale</reg></choice> accorta</l>

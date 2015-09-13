@@ -175,7 +175,7 @@
             <del type="erasure">
               <lg xml:id="rvf121p" type="ballata">
                 <lg type="dblvrs">
-                  <l n="1"><hi rendition="#fs24pt">D</hi><choice><abbr>ōna</abbr><expan>onna</expan></choice> 
+                   <l n="1"><hi rendition="#red #fs24pt">D</hi><choice><abbr>ōna</abbr><expan>onna</expan></choice> 
                     mi <choice><orig>uene</orig><reg>vene</reg></choice> spesso ne la mente<choice><orig> )</orig><reg>;</reg></choice></l>
                   <l n="2">Altra <choice><abbr>dōna</abbr><expan>donna</expan></choice> <choice><orig>ue</orig><reg>v’è</reg></choice> sempre<choice><orig>;</orig><reg>,</reg></choice></l>
                 </lg>
@@ -332,7 +332,7 @@
            <lg type="sestet">
             <lg type="dblvrs" corresp="#canvasline">
                <l n="9"><choice><orig>Ne</orig><reg>Né</reg></choice> spero i dolci <choice><orig>di</orig><reg>dì</reg></choice> tornino <choice><orig>in dietro</orig><reg>indietro</reg></choice><supplied>,</supplied></l>
-               <l n="10">Ma pur di male &in; peggio quel <choice><orig>cheuança</orig><reg>ch’avanza</reg></choice><supplied>;</supplied></l>
+               <l n="10">Ma pur di male &in; peggio quel <choice><orig>chauança</orig><reg>ch’avanza</reg></choice><supplied>;</supplied></l>
             </lg>
             <lg type="dblvrs" corresp="#canvasline">
                <l n="11">Et di mio corso <choice><orig>o</orig><reg>ò</reg></choice> <choice><orig>gia</orig><reg>già</reg></choice> <choice><orig>passatol</orig><reg>passato ’l</reg></choice> <choice><orig>meçço</orig><reg>mezzo</reg></choice>.</l>

@@ -515,7 +515,7 @@ the line wraps. -->
             <lg type="octave">
                <lg type="dblvrs" corresp="#canvasline">
                   <l n="1"><hi rendition="#red #fs24pt">P</hi><hi rendition="#small-caps">e</hi>rsequendomi <choice><orig>amor</orig><reg>Amor</reg></choice> al luogo usato<supplied>,</supplied></l>
-                  <l n="2">Ristretto in guisa <choice><orig>duom</orig><reg>d’uom</reg></choice> <choice><orig>chaspetta</orig><reg>ch’aspetta</reg></choice> <choice><abbr>guēra</abbr><expan>guerra</expan></choice><supplied>,</supplied></l>
+                   <l n="2">Ristretto in guisa <choice><orig>duom</orig><reg>d’uom</reg></choice> <choice><orig>chaspetta</orig><reg>ch’aspetta</reg></choice> <choice><abbr>gue&#771;ra</abbr><expan>guerra</expan></choice><supplied>,</supplied></l>
                </lg>
                <lg type="dblvrs" corresp="#canvasline">
                   <l n="3">Che si <choice><orig><abbr>ꝑuede</abbr><expan>prouede</expan></orig><reg>provede</reg></choice>&p2c; <choice><orig>ei</orig><reg>e i</reg></choice> passi intorno serra&p2c;</l>
@@ -532,7 +532,7 @@ the line wraps. -->
             </lg>
             <lg type="sestet">
                <lg type="dblvrs" corresp="#canvasline">
-                  <l n="9">I<supplied>’</supplied> dicea fra mio cor<choice><orig> &virg;</orig><reg>:</reg></choice> <choice><orig>perche</orig><reg>Perché</reg></choice> pauenti<choice><orig><g ref="#punctinter"/></orig><reg>?</reg></choice></l>
+                  <l n="9">I<supplied>’</supplied> dicea fra mio cor<choice><orig> &virg;</orig><reg>:</reg></choice> <choice><orig>perche</orig><reg>Perché</reg></choice> <choice><orig>pauenti</orig><reg>paventi</reg></choice><choice><orig><g ref="#punctinter"/></orig><reg>?</reg></choice></l>
                   <l n="10">Ma &non; fu prima dentro il penser giunto</l>
                </lg>
                <lg type="dblvrs" corresp="#canvasline">

@@ -131,7 +131,7 @@
             </lg>
             <lg type="sestet">
                <lg type="dblvrs" corresp="#canvasline">
-                  <l n="9">In una <choice><orig>ualle</orig><reg>valle</reg></choice> chiusa <choice><orig>dognintorno</orig><reg>d’ogni ’ntorno</reg></choice></l>
+                  <l n="9">In una <choice><orig>ualle</orig><reg>valle</reg></choice> chiusa <choice><orig>dognintorno</orig><reg>d’ogni ’ntorno</reg></choice><supplied>,</supplied></l>
                   <l n="10"><choice><orig>Che</orig><reg>Ch’è</reg></choice> r<subst><del type="erasure"><gap reason="illegible"/></del><add>e</add></subst>fr<subst><del type="erasure"><gap reason="illegible"/></del><add>i</add></subst>gerio de<supplied>’</supplied> sospir<supplied>’</supplied> miei lassi<supplied>,</supplied></l>
                </lg>
                <lg type="dblvrs" corresp="#canvasline">
@@ -187,7 +187,7 @@
                   <l n="2">De<supplied>’</supplied> miei sospiri&p2c; et io trapasso <choice><orig>inançi</orig><reg>inanzi</reg></choice></l>
                </lg>
                <lg type="dblvrs" corresp="#canvasline">
-                  <l n="3">Verso <choice><orig>lextremo</orig><reg>l’extremo</reg></choice>&p2semicolon; &amp7; parmi <subst><del type="erasure"><gap reason="illegible"/></del><add>che pur</add></subst> <choice><orig><abbr>diāzi</abbr><expan>diançi</expan></orig><reg>dinanzi</reg></choice></l>
+                  <l n="3">Verso <choice><orig>lextremo</orig><reg>l’extremo</reg></choice>&p2semicolon; &amp7; parmi <subst><del type="erasure"><gap reason="illegible"/></del><add>che pur</add></subst> <choice><orig><abbr>diāçi</abbr><expan>diançi</expan></orig><reg>dinanzi</reg></choice></l>
                   <l n="4"><choice><orig>fossel</orig><reg>fosse ’l</reg></choice> principio di cotanto affanno.</l>
                </lg>
                <lg type="dblvrs" corresp="#canvasline">
@@ -201,7 +201,7 @@
             </lg>
             <lg type="sestet">
                <lg type="dblvrs" corresp="#canvasline">
-                  <l n="9">Or qui son<supplied>,</supplied> lasso<supplied>,</supplied>. &amp7; <choice><orig>uoglio</orig><reg>voglio</reg></choice> esser <choice><orig>altroue</orig><reg>altrove</reg></choice>&p2semicolon;</l>
+                  <l n="9">Or qui son<supplied>,</supplied> lasso&p2c; &amp7; <choice><orig>uoglio</orig><reg>voglio</reg></choice> esser <choice><orig>altroue</orig><reg>altrove</reg></choice>&p2semicolon;</l>
                   <l n="10">Et <choice><orig>uorrei</orig><reg>vorrei</reg></choice> &piu; <choice><orig>uolere</orig><reg>volere</reg></choice>&p2c; &amp7; &piu; &non; <choice><orig>uoglio</orig><reg>voglio</reg></choice>&p2semicolon;</l>
                </lg>
                <lg type="dblvrs" corresp="#canvasline">

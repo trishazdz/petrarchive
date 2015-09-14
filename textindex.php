@@ -162,13 +162,13 @@
         <tr>
           <td><a href="content/c003v.xml#rvf021">21</a></td>
           <td>3v</td>
-          <td><a href="content/c003v.xml#rvf021">Mille fiate, o dolce mia guerrera,</a></td>
+          <td><a href="content/c003v.xml#rvf021">Mille fiate, o dolce mia guerrera</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
           <td><a href="content/c003v.xml#rvf022">22</a></td>
           <td>3v</td>
-          <td><a href="content/c003v.xml#rvf022">Aqualunque animale alberga in terra,</a></td>
+          <td><a href="content/c003v.xml#rvf022">A qualunque animale alberga in terra</a></td>
           <td>Sestina</td>
         </tr>
         <tr>
@@ -487,7 +487,7 @@
         <tr>
           <td><a href="content/c016v-c018v.xml#rvf075">75</a></td>
           <td>18r</td>
-          <td><a href="content/c016v-c018v.xml#rvf075">I Begli occhi ond’i’ fui percosso in guisa</a></td>
+          <td><a href="content/c016v-c018v.xml#rvf075">I begli occhi ond’i’ fui percosso in guisa</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
@@ -601,7 +601,7 @@
         <tr>
           <td><a href="content/c021r.xml#rvf094">94</td>
           <td>21r</td>
-          <td><a href="content/c021r.xml#rvf094">QUando giugne per gli occhi al cor profondo<!-- n italicized --></td>
+          <td><a href="content/c021r.xml#rvf094">Quando giugne per gli occhi al cor profondo</td>
           <td>Sonnet</td>
         </tr>
         <tr>
@@ -756,7 +756,7 @@
         </tr>
         <tr>
           <td>120</td>
-          <td>25v-</td><!-- ends with dash in index_number.doc -->
+          <td>25v</td>
           <td>Quelle pietose rime in ch’io m’accorsi</td>
           <td>Sonnet</td>
         </tr>
@@ -2241,7 +2241,7 @@
         </tr>
         <tr>
           <td>366</td>
-          <td>71r-72v</td>
+          <td>71v-72v</td>
           <td>Vergine bella, che di sol vestita</td>
           <td>Canzone</td>
         </tr>

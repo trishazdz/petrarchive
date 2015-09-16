@@ -25,6 +25,7 @@
 	
 	#visindex {
 	/* width:600px; */
+	min-width:2800px;
 	
 	}
 	#visindex div {

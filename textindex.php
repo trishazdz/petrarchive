@@ -767,9 +767,9 @@
           <td>Madrigal</td>
         </tr>
         <tr>
-          <td><a href="content/c026r_donna.xml#rvf121">121</a></td>
+          <td><a href="content/c026r.xml#rvf121">[121]</a></td>
           <td>26r</td>
-          <td><a href="content/c026r_donna.xml#rvf121">Donna mi vene spesso ne la mente</a></td>
+          <td><a href="content/c026r.xml#rvf121">Donna mi vene spesso ne la mente</a></td>
           <td>Ballata mezzana</td>
         </tr>
         <tr>

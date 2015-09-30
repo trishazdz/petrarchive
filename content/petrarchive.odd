@@ -71,8 +71,11 @@
                 <valItem ident="octave">
                   <gloss>octave</gloss>
                 </valItem>
-                <valItem ident="ballata">
-                  <gloss>ballata</gloss>
+                <valItem ident="ballata_grande">
+                  <gloss>ballata grande</gloss>
+                </valItem>
+                <valItem ident="ballata_mezzana">
+                  <gloss>ballata mezzana</gloss>
                 </valItem>
               </valList>
             </attDef>

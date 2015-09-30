@@ -525,7 +525,7 @@ the line wraps. -->
            </lg>
          </lg>
          <space corresp="#canvasline"/>
-         <lg xml:id="rvf014" type="ballata" n="14">
+         <lg xml:id="rvf014" type="ballata_grande" n="14">
             <lg type="dblvrs" corresp="#canvasline">
                <l n="1"><hi rendition="#blue #fs24pt">O</hi><hi rendition="#small-caps">c</hi>chi miei lassi<supplied>,</supplied> mentre <choice><orig>chio</orig><reg>ch’io</reg></choice> <choice><orig>ui</orig><reg>vi</reg></choice> giro</l>
                <l n="2">Nel bel <choice><orig>uiso</orig><reg>viso</reg></choice> di quella che <choice><orig>uamorti</orig><reg>v’ à morti</reg></choice>&v2c;</l>

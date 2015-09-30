@@ -121,7 +121,9 @@ lg {
 lg[type='sonnet']:before,
 lg[type='madrigal']:before,
 lg[type='canzone']:before,
-lg[type='sestina']:before {
+lg[type='sestina']:before,
+lg[type='ballata_grande']:before,
+lg[type='ballata_mezzana']:before {
   display: block;
   clear: both;
   font-family: "Helvetica Neue", "Gill Sans", "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
@@ -150,7 +152,8 @@ lg[type='dblvrs']:first-of-type l:last-of-type {
 
 }
 lg[type='dblvrs'] l:first-of-type,
-lg[type='trplvrs'] l:first-of-type {
+lg[type='trplvrs'] l:first-of-type,
+lg[type='single'] l:first-of-type {
   float: left;
   margin-right: 1.5em;
 }
@@ -380,10 +383,22 @@ lg[type='madrigal'] lg[type='dblvrs']:first-of-type {
   left: -0.8em;
   margin-top: 0;
 }
+
+lg[type='madrigal'] l[n='4'],
+lg[type='madrigal'] l[n='5'],
+lg[type='madrigal'] l[n='7'],
+lg[type='madrigal'] l[n='8'],
 lg[type='sonnet'] l[n='5'],
 lg[type='sonnet'] l[n='6'],
 lg[type='sonnet'] l[n='9'],
 lg[type='sonnet'] l[n='10'],
+lg[type='ballata_grande'] l[n='5'],
+lg[type='ballata_grande'] l[n='6'],
+lg[type='ballata_grande'] l[n='9'],
+lg[type='ballata_grande'] l[n='10'],
+lg[type='ballata_mezzana'] l[n='3'],
+lg[type='ballata_mezzana'] l[n='8'],
+lg[type='ballata_mezzana'] l[n='9'],
 lg[id='rvf071'] l[n='5'],
 lg[id='rvf071'] l[n='6'],
 lg[id='rvf071'] l[n='20'],
@@ -491,7 +506,7 @@ del {
   text-decoration: none;
 }
 /* Stuff for palimpsests:start */
-ab[type='blockSubst'] subst del[type='erasure'] lg[type='ballata'] {
+ab[type='blockSubst'] subst del[type='erasure'] lg[type='ballata_mezzana'] {
   display: none;
   position: relative;
   top: 40px;

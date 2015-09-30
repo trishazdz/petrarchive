@@ -173,13 +173,13 @@
           <!-- <note resp="#jaw">Sonnet 194 has been written over an erased version of ???.</note>-->
           <subst>
             <del type="erasure">
-              <lg xml:id="rvf121p" type="ballata">
+              <lg xml:id="rvf121p" type="ballata_mezzana">
                 <lg type="dblvrs">
                    <l n="1"><hi rendition="#red #fs24pt">D</hi><choice><abbr>ōna</abbr><expan>onna</expan></choice> 
                     mi <choice><orig>uene</orig><reg>vene</reg></choice> spesso ne la mente<choice><orig> )</orig><reg>;</reg></choice></l>
                    <l n="2">Altra <choice><abbr>dōna</abbr><expan>donna</expan></choice> <choice><orig>ue</orig><reg>v’è</reg></choice> sempre<choice><orig>&#729;/</orig><reg>,</reg></choice></l>
                 </lg>
-                <l n="3">Ond<supplied>’ </supplied>io temo si stempre <choice><orig>&virg;</orig><reg/></choice> il cor ardente<choice><orig> .</orig><reg>.</reg></choice></l>
+                <lg type="single"><l n="3">Ond<supplied>’ </supplied>io temo si stempre <choice><orig>&virg;</orig><reg/></choice> il cor ardente<choice><orig> .</orig><reg>.</reg></choice></l></lg>
                 <lg type="dblvrs">
                   <l n="4"><choice><orig><g ref="#parag"/></orig><reg></reg></choice> Quella il notrica in amorosa &fiamma;<choice><orig> <g ref="#verbar"/></orig><reg/></choice></l>
                   <l n="5">Con un dolce martir pien di desire<choice><orig> .</orig><reg>;</reg></choice></l>

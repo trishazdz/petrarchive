@@ -885,9 +885,117 @@ the line wraps. -->
                   <l n="12">Subita <choice><orig>uista</orig><reg>vista</reg></choice>&p2c; <choice><orig>che</orig><reg>ché</reg></choice> <choice><orig>d<subst><del type="erasure"><gap reason="illegible"/></del><add>e</add></subst>l</orig><reg>del</reg></choice> cor mi rade</l>
                   <l n="13"><choice><orig>O<subst><del type="erasure"><gap reason="illegible"/></del><add>g</add></subst>ni</orig><reg>Ogni</reg></choice> <choice><orig>de lira</orig><reg>delira</reg></choice>     impresa&p2c; &amp7; ogni sdegno<choice><orig>.</orig><reg></reg></choice></l>
                </lg>
+                <pb xml:id="c007v" n="charta 7 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-007v.jpg"/>
+                <lg type="single" corresp="#canvasline">
+                    <l n="14"><choice><orig>Fal</orig><reg>Fa ’l</reg></choice> <choice><orig>u[<subst><del type="erasure"><gap reason="illegible"/></del><add>e</add></subst>]der</orig><reg>veder</reg></choice> lei <choice><orig>soaue</orig><reg>soave</reg></choice>.</l>
+                </lg>
             </lg>
-            
-            
+             <lg type="stanza">
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="15"><hi rendition="#red #fs24pt">&pilcrow2section;</hi>Di quanto per amor giamai soffersi</l>
+                     <l n="16">Et aggio a soffrir ancho<supplied>,</supplied></l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="17">Fin che mi <choice><orig>sanil</orig><reg>sani ’l</reg></choice> cor colei <choice><orig>che l</orig><reg>che ’l</reg></choice> morse&p2c;</l>
+                     <l n="18">Rubella<g ref="#punctelevhiback"/>    di <choice><orig>merce</orig><reg>mercé</reg></choice>&v2c; che pur <choice><orig>lenuoglia</orig><reg>l’envoglia</reg></choice>&p2c;</l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="19">Vendetta fia<supplied>,</supplied> sol che contra humiltade&v2c;</l>
+                     <l n="20">Orgoglio &amp7; ira<g ref="#punctelevhiback"/>    il bel passo <choice><orig>ondio</orig><reg>ond’io</reg></choice> <choice><orig>uegno</orig><reg>vegno</reg></choice></l>
+                 </lg>
+                 <lg type="single" corresp="#canvasline">
+                     <l n="21">Non chiuda&p2c; et non <choice><orig>inchiaue</orig><reg>inchiave</reg></choice>.</l>
+                 </lg>
+             </lg>
+             <lg type="stanza">
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="22"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi>Ma <choice><orig>lora</orig><reg>l’ora</reg></choice> <choice><orig>el</orig><reg>e ’l</reg></choice> giorno <choice><orig>chio</orig><reg>ch’io</reg></choice> le luci apersi</l>
+                     <l n="23">Nel bel nero<choice><orig> /</orig><reg></reg></choice> et nel biancho</l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="24">Che mi <choice><orig>scacciar</orig><reg>scacciâr</reg></choice> di <choice><orig>la</orig><reg>là</reg></choice> <choice><orig>doue</orig><reg>dove</reg></choice> <choice><orig>amor</orig><reg>Amor</reg></choice> corse<supplied>,</supplied></l>
+                     <l n="25"><choice><orig>Nouella</orig><reg>Novella</reg></choice><choice><orig><g ref="#punctelevhiback"/></orig><reg></reg></choice>    <choice><orig>desta</orig><reg>d’esta</reg></choice> <choice><orig>uita</orig><reg>vita</reg></choice> che <choice><orig>maddoglia</orig><reg>m’addoglia</reg></choice></l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="26">Furon radice&v2c; et quella in cui <choice><orig>letade</orig><reg>l’etade</reg></choice></l>
+                     <l n="27">Nostra si mira<choice><orig><g ref="#punctelevhiback"/></orig><reg>,</reg></choice>    la quale <choice><abbr>piōbo</abbr><expan>piombo</expan></choice><choice><orig> /</orig><reg></reg></choice> o legno</l>
+                 </lg>
+                 <lg type="single" corresp="#canvasline">
+                     <l n="28">Vedendo &e; chi non <choice><orig>paue</orig><reg>pave</reg></choice>.</l>
+                 </lg>
+             </lg>
+             <lg type="stanza">
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="29"><hi rendition="#red #fs24pt">&pilcrow2section;</hi>Lagrima dunque che da <choice><orig>gliocchi</orig><reg>gli occhi</reg></choice> <choice><orig>uersi</orig><reg>versi</reg></choice></l>
+                     <l n="30">Per quelle<supplied>,</supplied> che nel mancho</l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="31">Lato mi bagna chi primier <choice><orig>saccors[e]</orig><reg>s’accorse</reg></choice>&p2c;</l>
+                     <l n="32">Quadrella&p2c;    dal <choice><orig>uoler</orig><reg>voler</reg></choice> mio non mi <choice><orig>suoglia</orig><reg>svoglia</reg></choice>&p2c;</l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="33"><choice><orig>Chen</orig><reg>Ché ’n</reg></choice> giusta parte la sententia cade&p2semicolon;</l>
+                     <l n="34">&Per; lei sospira<choice><orig><g ref="#punctelevhiback"/></orig><reg></reg></choice>    <choice><orig>lalma</orig><reg>l’alma</reg></choice>&p2c; et ella &e; degno</l>
+                 </lg>
+                 <lg type="single" corresp="#canvasline">
+                     <l n="35">Che le sue piaghe <choice><orig>laue</orig><reg>lave</reg></choice>.</l>
+                 </lg>
+             </lg>
+             <lg type="stanza">
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="36"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi>Da me son fatti i miei pensier<supplied>’</supplied> <choice><orig>diuersi</orig><reg>diversi</reg></choice>&p2c;</l>
+                     <l n="37">Tal <choice><orig>gia</orig><reg>già</reg></choice><supplied>,</supplied> qual io mi stancho&p2c;</l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="38"><choice><orig>Lamata</orig><reg>L’amata</reg></choice> spada in se stessa contorse&p2semicolon;</l>
+                     <l n="39"><choice><orig>Ne</orig><reg>Né</reg></choice> quella<choice><orig><g ref="#punctelevhiback"/></orig><reg></reg></choice>    prego che però mi scioglia&p2c;</l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="40"><choice><orig>Che</orig><reg>Ché</reg></choice> men son dritte al ciel <choice><orig>tuttaltre</orig><reg>tutt’altre</reg></choice> strade&p2c;</l>
+                     <l n="41">Et non <choice><orig>saspira</orig><reg>s’aspira</reg></choice><choice><orig><g ref="#punctelevhiback"/></orig><reg></reg></choice>    al glorioso regno<choice><orig> /</orig><reg></reg></choice></l>
+                 </lg>
+                 <lg type="single" corresp="#canvasline">
+                     <l n="42">Certo in <choice><orig>piu</orig><reg>più</reg></choice> salda <choice><orig>naue</orig><reg>nave</reg></choice>.</l>
+                 </lg>
+             </lg>
+             <lg type="stanza">
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="43"><hi rendition="#red #fs24pt">&pilcrow2section;</hi>Benigne stelle che compagne fersi</l>
+                     <l n="44">Al fortunato <choice><orig>f[i]ancho</orig><reg>fiancho</reg></choice></l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="45"><choice><orig>Quandol</orig><reg>Quando ’l</reg></choice> bel parto <choice><orig>giu</orig><reg>giú</reg></choice> nel <choice><abbr>mōdo</abbr><expan>mondo</expan></choice> scorse<choice><orig>.</orig><reg>!</reg></choice></l>
+                     <l n="46"><choice><orig>Che</orig><reg>Ch’è</reg></choice> stella<g ref="#punctelevhiback"/>    in terra&p2c; &amp7; come &in; lauro foglia<choice><orig> /</orig><reg></reg></choice></l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="47"><choice><orig>Conserua</orig><reg>Conserva</reg></choice> <choice><orig>uerde</orig><reg>verde</reg></choice> il pregio <choice><orig>donestade</orig><reg>d’onestade</reg></choice>&p2c;</l>
+                     <l n="48"><choice><orig>Oue</orig><reg>Ove</reg></choice> non spira<choice><orig><g ref="#punctelevhiback"/></orig><reg></reg></choice>    folgore&p2c; <choice><orig>ne</orig><reg>né</reg></choice> indegno</l>
+                 </lg>
+                 <lg type="single" corresp="#canvasline">
+                     <l n="49">Vento mai che <choice><orig>laggraue</orig><reg>l’aggrave</reg></choice>.</l>
+                 </lg>
+             </lg>
+         <lg type="stanza">
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="50"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi>So io ben <choice><orig>cha</orig><reg>ch’a</reg></choice> <choice><orig>uoler</orig><reg>voler</reg></choice> chiuder in <choice><orig>uersi</orig><reg>versi</reg></choice></l>
+                     <l n="51">Suo laudi&v2c; <choice><orig>fora</orig><reg>fôra</reg></choice> stancho</l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="52">Chi <choice><orig>piu</orig><reg>più</reg></choice> degna la mano a <choice><orig>scriuer</orig><reg>scriver</reg></choice> porse.</l>
+                     <l n="53">Qual cella<choice><orig><g ref="#punctelevhiback"/></orig><reg></reg></choice>    &e; di memoria &in; cui <choice><orig>saccoglia</orig><reg>s’accoglia</reg></choice></l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="54">Quanta <choice><orig>uede</orig><reg>vede</reg></choice> <choice><orig>uertu</orig><reg>vertù</reg></choice>&v2c; <choice><abbr>quāta</abbr><expan>quanta</expan></choice> beltade&v2c;</l>
+                     <l n="55">Chi gli occhi mira<choice><orig><g ref="#punctelevhiback"/></orig><reg></reg></choice>    <choice><orig>dogni</orig><reg>d’ogni</reg></choice> <choice><orig>ualor</orig><reg>valor</reg></choice> segno&p2c;</l>
+                 </lg>
+                 <lg type="single" corresp="#canvasline">
+                     <l n="56">Dolce del mio cor <choice><orig>chiaue</orig><reg>chiave</reg></choice><choice><orig>.</orig><reg>?</reg></choice></l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="57"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi>Quanto il sol gira<choice><orig><g ref="#punctelevhiback"/></orig><reg>,</reg></choice> Amor <choice><orig>piu</orig><reg>piú</reg></choice> caro pegno&v2c;</l>
+                     <l n="58">Donna&v2c; di <choice><orig>uoi</orig><reg>voi</reg></choice> non <choice><orig>aue</orig><reg>ave</reg></choice>.</l>
+                 </lg>
+             </lg>
          </lg>
       </body>
    </text>

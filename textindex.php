@@ -250,15 +250,15 @@
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>36</td>
+          <td><a href="content/c008v.xml#rvf036">36</a></td>
           <td>8v</td>
-          <td>S’io credesse per morte essere scarco</td>
+          <td><a href="content/c008v.xml#rvf036">S’io credesse per morte essere scarco</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>37</td>
+          <td><a href="content/c008v.xml#rvf037">37</a></td>
           <td>8v-9v</td>
-          <td>Sì è debile il filo a cui s’attene</td>
+          <td><a href="content/c008v.xml#rvf037">Sì è debile il filo a cui s’attene</a></td>
           <td>Canzone</td>
         </tr>
         <tr>

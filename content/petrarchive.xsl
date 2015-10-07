@@ -99,7 +99,7 @@
     
     <!-- Petrarchive Toolbox -->
     <xsl:template name="teibpToolbox">
-      <xsl:if test="not(/tei:TEI/@xml:id = 'glossary') and not(/tei:TEI/@xml:id = 'chronology_petrarch')">
+      <xsl:if test="not(/tei:TEI/@xml:id = 'glossary') and not(/tei:TEI/@xml:id = 'chronology_petrarch') and not(/tei:TEI/@xml:id='papers_and_presentations')">
         <div id="teibpToolbox">
             <div>
                 <h1 style="display:inline;">text view </h1>

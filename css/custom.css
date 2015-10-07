@@ -532,6 +532,11 @@ body > head {
 supplied {
   display:none;
 }
+
+bibl[rendition~="#hang"]{
+margin-top:1em;
+line-height:1.2;
+}
 /* Stuff for palimpsests:end */
 
 /* glossary stuff */

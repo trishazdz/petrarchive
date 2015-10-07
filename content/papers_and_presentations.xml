@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="petrarchive.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-stylesheet type="text/xsl" href="teibp.xsl"?>
+<?xml-stylesheet type="text/xsl" href="petrarchive.xsl"?>
 <!DOCTYPE TEI [
 <!ENTITY amp7 "<choice><abbr>&amp;</abbr><expan>et</expan></choice>">
 <!ENTITY per "<choice><abbr>ꝑ</abbr><expan>per</expan></choice>">
@@ -8,7 +8,7 @@
 <!ENTITY sempre "<choice><abbr>sēpre</abbr><expan>sempre</expan></choice>">
 <!ENTITY quanto "<choice><abbr>quāto</abbr><expan>quanto</expan></choice>">
 ]>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="papers_and_presentations">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -285,9 +285,39 @@ the line wraps. -->
 
    <text>
       <body>
-         <head>Papers and Presentations</head>
-        <listBibl>
-          <bibl/>
+        <listBibl style="max-width:800px !important; display:block;">
+          <bibl rendition="#hang">Isabella Magni. 4 August 2015. <title level="a">Petrarchive. An edition of Petrarch's songbook <title level="m">Rerum vulgarium fragmenta</title></title>, project presentation in The European Summer University in Digital Humanities 2015, Universität Leipzig, Germany.</bibl>
+            
+          <bibl rendition="#hang">John A. Walsh and H. Wayne Storey. 1 June 2015. <title level="a">Indexicality, Visual Poetics, and the PetrArchive: A Scholarly Digital Edition of Petrarch’s Songbook</title>. Paper for the 2015 Joint Canadian Society of Digital Humanities/Société canadienne des humanités numériques &amp; Association for Computers and the Humanities Digital Humanities Conference, University of Ottawa.</bibl>
+          <bibl rendition="#hang">Isabella Magni. 2 May 2015. <title level="a">The Fragmenta’s Timeline: Models for Reconstructing and Interpreting the Text</title>, in <title level="m">Authority and Materiality in the Italian Songbook: From the Medieval Lyric to the Early Modern Madrigal</title>, Binghamton, NY.</bibl>
+          
+          <bibl rendition="#hang">H. Wayne Storey. 2 May 2015. <title level="a">The Evolving <title level="m">Fragmenta</title>: Editing An Imperfect Holograph</title>, in <title level="m">Authority and Materiality in the Italian Songbook: From the Medieval Lyric to the Early Modern Madrigal</title>, Binghamton, NY.</bibl>
+          <bibl rendition="#hang">———. 30 April 2015. <title level="a">Digitally Born Petrarch: Making the <title level="m">Fragmenta</title></title>, in the session Digital Humanities for Medieval Italy, NeMLA, Toronto, CA.</bibl>
+          <bibl rendition="#hang">Isabella Magni. 5 April 2014. <title level="a">Petrarchive: a new digital frontier in the study of <title level="m">Rerum Vulgarium Fragmenta</title></title>, in <title rendition="#i">The Communities of Italy:  New and Traditional Approaches</title>, the Delaware Valley Medieval Association.</bibl>
+          
+            
+            <bibl rendition="#hang">H. Wayne Storey and John A. Walsh. 20 March 2014. <title level="a">Digital Tools of the Petrarchive and Editorial Applications</title> featured workshop for the 2014 Society for Textual Scholarship, University of Washington.</bibl>
+            
+            <bibl rendition="#hang">H. Wayne Storey. 5 April 2014. <title level="a">A Rich-Text Petrarch and the Expansion of Communities</title>, keynote address for the conference <title rendition="#i">The Communities of Italy:  New and Traditional Approaches</title>, the Delaware Valley Medieval Association.</bibl>
+            
+            <bibl rendition="#hang">———. 23 May 2014. <title level="a">Fra edizione e archivio: la critica testuale e il digitale</title>, <title level="m">Giornata di studio per dieci anni della rivista <title level="a" rendition="#n">Ecdotica</title></title>, Bologna, Università di Bologna.</bibl>
+            
+            <bibl rendition="#hang">———. 6 April 2013. <title level="a">Digital and Local Materiality: anthologies, booklets and chartae</title>. Paper for the 2013 Conference of the Society for Textual Scholarship, Loyola University–Chicago, Chicago.</bibl> 
+            
+            <bibl rendition="#hang">———. 4 April 2013. <title level="a">The Rich-Text Edition of the <title level="m">Rerum vulgarium fragmenta</title></title>. Presented at the international conference “Petrarch and His Legacies”, University of Wisconsin–Madison.</bibl>
+            
+            <bibl rendition="#hang">———. 1 October 2012. <title level="a">The Material Evolution of Petrarch’s <title level="m">Rerum vulgarium fragmenta</title></title>. Notre Dame University, <title rendition="#i">The Petrarch Seminar</title>.</bibl>
+            
+            <bibl rendition="#hang">———. 31 August 2012. <title level="a">Philology and the Perception of Stability in Digital Contexts</title>. <title rendition="#i">Scholarly Editions and the Digital Age: Text and Music</title>, Center for the History of Music Theory and Literature, Indiana University, Bloomington.</bibl>
+            
+            <bibl rendition="#hang">———. 31 May 2012. <title level="a">Definitions and Matrices of Scholarly Editing: Petrarch</title>. Paper for the 2012 Conference of the Society for Textual Scholarship, University of Texas, Austin.</bibl>
+            
+            <bibl rendition="#hang">———. 10 April 2012. <title level="a">Multiple Forms of E-Text Representation of Petrarch’s canzone <title rendition="#i">Quel’ antiquo mio dolce empio signore</title></title>. Invited paper for conference <title rendition="#i">Innovation and the Ancient: Texts and Editions</title>, University of Mississippi, Oxford.</bibl>
+            
+            
+            
+            
+            
         </listBibl>
       </body>
    </text>

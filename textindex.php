@@ -432,7 +432,7 @@
         <tr>
           <td><a href="content/c014v.xml#rvf066">66</a></td>
           <td>14v</td>
-          <td><a href="content/c014v.xml#rvf066">Laere gravato et l’importuna nebba</a></td>
+          <td><a href="content/c014v.xml#rvf066">L�aere gravato et l’importuna nebbia</a></td>
           <td>Sestina</td>
         </tr>
         <tr>

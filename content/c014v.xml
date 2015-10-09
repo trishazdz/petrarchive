@@ -332,7 +332,7 @@ the line wraps. -->
          <lg xml:id="rvf066" type="sestina" n="66" rendition="#columns_2">
             <cb n="1-of-2"/>
             <l n="1"><hi rendition="#red #fs24pt">L</hi><reg>’</reg><hi rendition="#small-caps">a</hi>ere 
-               <choice><orig>grauato</orig><reg>gravato</reg></choice> et <choice><orig>limportuna</orig><reg>l’importuna</reg></choice> nebba</l>
+               <choice><orig>grauato</orig><reg>gravato</reg></choice> et <choice><orig>limportuna</orig><reg>l’importuna</reg></choice> nebbia</l>
             <l n="2"><choice><abbr>Cōpressa</abbr><expan>Compressa</expan></choice> 
                intorno da rabbiosi <choice><orig>uenti</orig><reg>venti</reg></choice></l>
             <l n="3">Tosto <choice><orig><abbr>cōuen</abbr><expan>conuen</expan></orig><reg>conven</reg></choice> che si 

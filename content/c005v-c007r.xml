@@ -734,6 +734,7 @@ the line wraps. -->
                   <l n="60">Ma <choice><orig>tutti</orig><reg>tutt’ i</reg></choice> <choice><orig><choice><abbr>colpi<hi rendition="#b">suo</hi>icōmette</abbr><expan>colpi<hi rendition="#b">suo</hi>icommette</expan></choice></orig><reg>colpi suoi commentte</reg></choice> al <choice><orig>uento</orig><reg>vento</reg></choice>.</l>
                </lg>
             </lg>
+            
                <lg type="stanza">
                   <lg type="dblvrs" corresp="#canvasline">
                      <l n="61"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi>Dunque ora <choice><orig>el</orig><reg>è ’l</reg></choice> tempo da ritrare il collo</l>
@@ -855,7 +856,8 @@ the line wraps. -->
                      <l n="114">Alberga amor&v2c; per cui si ride et piagne.</l>
                   </lg>
                </lg>
-            </lg>
+          
+         </lg>
          <lg type="canzone" xml:id="rvf29" n="29">
             <lg type="stanza">
                <lg type="dblvrs" corresp="#canvasline">

@@ -286,17 +286,17 @@ the line wraps. -->
    <text>
       <body>
         <listBibl style="max-width:800px !important; display:block;">
-          <bibl rendition="#hang">Isabella Magni. 4 August 2015. <title level="a">Petrarchive. An edition of Petrarch's songbook <title level="m">Rerum vulgarium fragmenta</title></title>, project presentation in The European Summer University in Digital Humanities 2015, Universität Leipzig, Germany.</bibl>
+          <bibl rendition="#hang">Isabella Magni. 4 August 2015. <title level="a">Petr<hi rendition="#i">archive</hi>. An edition of Petrarch's songbook <title level="m">Rerum vulgarium fragmenta</title></title>, project presentation in The European Summer University in Digital Humanities 2015, Universität Leipzig, Germany.</bibl>
             
-          <bibl rendition="#hang">John A. Walsh and H. Wayne Storey. 1 June 2015. <title level="a">Indexicality, Visual Poetics, and the PetrArchive: A Scholarly Digital Edition of Petrarch’s Songbook</title>. Paper for the 2015 Joint Canadian Society of Digital Humanities/Société canadienne des humanités numériques &amp; Association for Computers and the Humanities Digital Humanities Conference, University of Ottawa.</bibl>
+          <bibl rendition="#hang">John A. Walsh and H. Wayne Storey. 1 June 2015. <title level="a">Indexicality, Visual Poetics, and the Petr<hi rendition="#i">archive</hi>: A Scholarly Digital Edition of Petrarch’s Songbook</title>. Paper for the 2015 Joint Canadian Society of Digital Humanities/Société canadienne des humanités numériques &amp; Association for Computers and the Humanities Digital Humanities Conference, University of Ottawa.</bibl>
           <bibl rendition="#hang">Isabella Magni. 2 May 2015. <title level="a">The Fragmenta’s Timeline: Models for Reconstructing and Interpreting the Text</title>, in <title level="m">Authority and Materiality in the Italian Songbook: From the Medieval Lyric to the Early Modern Madrigal</title>, Binghamton, NY.</bibl>
           
           <bibl rendition="#hang">H. Wayne Storey. 2 May 2015. <title level="a">The Evolving <title level="m">Fragmenta</title>: Editing An Imperfect Holograph</title>, in <title level="m">Authority and Materiality in the Italian Songbook: From the Medieval Lyric to the Early Modern Madrigal</title>, Binghamton, NY.</bibl>
           <bibl rendition="#hang">———. 30 April 2015. <title level="a">Digitally Born Petrarch: Making the <title level="m">Fragmenta</title></title>, in the session Digital Humanities for Medieval Italy, NeMLA, Toronto, CA.</bibl>
-          <bibl rendition="#hang">Isabella Magni. 5 April 2014. <title level="a">Petrarchive: a new digital frontier in the study of <title level="m">Rerum Vulgarium Fragmenta</title></title>, in <title rendition="#i">The Communities of Italy:  New and Traditional Approaches</title>, the Delaware Valley Medieval Association.</bibl>
+          <bibl rendition="#hang">Isabella Magni. 5 April 2014. <title level="a">Petr<hi rendition="#i">archive</hi>: a new digital frontier in the study of <title level="m">Rerum Vulgarium Fragmenta</title></title>, in <title rendition="#i">The Communities of Italy:  New and Traditional Approaches</title>, the Delaware Valley Medieval Association.</bibl>
           
             
-            <bibl rendition="#hang">H. Wayne Storey and John A. Walsh. 20 March 2014. <title level="a">Digital Tools of the Petrarchive and Editorial Applications</title> featured workshop for the 2014 Society for Textual Scholarship, University of Washington.</bibl>
+            <bibl rendition="#hang">H. Wayne Storey and John A. Walsh. 20 March 2014. <title level="a">Digital Tools of the Petr<hi rendition="#i">archive</hi> and Editorial Applications</title> featured workshop for the 2014 Society for Textual Scholarship, University of Washington.</bibl>
             
             <bibl rendition="#hang">H. Wayne Storey. 5 April 2014. <title level="a">A Rich-Text Petrarch and the Expansion of Communities</title>, keynote address for the conference <title rendition="#i">The Communities of Italy:  New and Traditional Approaches</title>, the Delaware Valley Medieval Association.</bibl>
             

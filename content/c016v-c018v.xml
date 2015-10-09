@@ -509,6 +509,7 @@ the line wraps. -->
               </lg>
           </lg>
           <lg type="canzone" xml:id="rvf072" n="72">
+            <lg type="stanza">
               <lg type="dblvrs" corresp="#canvasline">
                   <l n="1"><hi rendition="#blue #fs24pt"
                       >G</hi><hi rendition="#small-caps">e</hi>ntil mia donna<supplied>,</supplied> i<supplied>’</supplied> <choice><orig>ueggio</orig><reg>veggio</reg></choice></l>
@@ -546,7 +547,7 @@ the line wraps. -->
               </lg>
           </lg>
           <lg type="stanza">
-              <lg type="dblvrs" corresp="#canvasline">
+            <lg type="dblvrs" corresp="#canvasline">
                   <l n="16"><hi rendition="#red #fs24pt">¶</hi>Io penso<supplied>:</supplied> <choice><orig>se</orig><reg>Se</reg></choice> <choice><orig>la</orig><reg>là</reg></choice> suso&v2c;</l>
                   <l n="17"><choice><orig>Ondel</orig><reg>Onde ’l</reg></choice> motor eterno de le stelle</l>
               </lg>
@@ -692,6 +693,7 @@ the line wraps. -->
                </lg>
             </lg>
          </lg>
+          </lg>
          
           <lg type="canzone" xml:id="rvf073" n="73">
               <lg type="stanza">

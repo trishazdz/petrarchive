@@ -508,7 +508,7 @@ the line wraps. -->
                   </lg>
               </lg>
           </lg>
-          <lg type="canzone" xml:id="rvf072" n="72">
+          <lg type="canzone_15vv" xml:id="rvf072" n="72">
             <lg type="stanza">
               <lg type="dblvrs" corresp="#canvasline">
                   <l n="1"><hi rendition="#blue #fs24pt"
@@ -695,7 +695,7 @@ the line wraps. -->
          </lg>
           </lg>
          
-          <lg type="canzone" xml:id="rvf073" n="73">
+          <lg type="canzone_15vv" xml:id="rvf073" n="73">
               <lg type="stanza">
                   <lg type="dblvrs" corresp="#canvasline">
                       <l n="1"><hi rendition="#red #fs24pt"

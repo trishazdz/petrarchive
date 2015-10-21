@@ -215,7 +215,7 @@
             </lg>
          </lg>
          <space corresp="#canvasline"/>
-         <lg xml:id="rvf119" type="canzone" n="119">
+         <lg xml:id="rvf119" type="canzone_15vv" n="119">
             <lg type="stanza">
                <lg type="dblvrs" corresp="#canvasline">
                   <l n="1"><hi rendition="#fs24pt #blue">U</hi>
@@ -244,7 +244,7 @@
                </lg>
          </lg>
          </lg>
-            <fw type="catch" rendition="#center">&#126; Tal &#771;&#803;che &#126;</fw>
+            <fw type="catch" rendition="#center">Tal che</fw>
       </body>
    </text>
 </TEI>

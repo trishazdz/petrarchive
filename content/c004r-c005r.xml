@@ -471,7 +471,7 @@ the line wraps. -->
    <text>
       <body>
          <pb xml:id="c004r" n="charta 4 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-004r.jpg"/>
-         <lg type="canzone" xml:id="rvf023" n="23">
+         <lg type="canzone_20vv" xml:id="rvf023" n="23">
          <lg type="stanza">
             <lg type="dblvrs" corresp="#canvasline">
                <l n="1"><hi rendition="#red #fs24pt"
@@ -595,7 +595,7 @@ the line wraps. -->
                <l n="57">Ricercando dallato<choice><orig> &virg;</orig><reg/></choice> &amp7; dentro <choice><orig>alacque</orig><reg>a l’acque</reg></choice>&p2semicolon;</l>
                <l n="58">Et giamai poi la mia <choice><abbr>līgua</abbr><expan>lingua</expan></choice> &non; tacque</l>
             </lg>
-         </lg>
+         
          <lg type="dblvrs" corresp="#canvasline">
             <l n="59"><choice><abbr>Mētre</abbr><expan>Mentre</expan></choice> poteo del suo cader maligno&p2semicolon;</l>
             <l n="60"><choice><orig>Ondio</orig><reg>Ond’io</reg></choice> presi col suon color <choice><orig>dun</orig><reg>d’un</reg></choice> cigno.</l>
@@ -836,6 +836,7 @@ the line wraps. -->
                   <l n="169">Ogni men bel piacer del cor <choice><orig>misgombra</orig><reg>mi sgombra</reg></choice>.</l>
                </lg>
             </lg>
+         </lg>
          </lg>
             <space corresp="#canvasline"/>
          <lg xml:id="rvf024" type="sonnet" n="24">

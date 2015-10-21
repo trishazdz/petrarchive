@@ -668,7 +668,7 @@ the line wraps. -->
               </lg>
             </lg>
               <space corresp="#canvasline"/>
-              <lg xml:id="rvf071" type="canzone" n="71">
+              <lg xml:id="rvf071" type="canzone_15vv" n="71">
                 <lg type="stanza">
                   <lg type="dblvrs" corresp="#canvasline">
                     <l n="1"><hi rendition="#red #fs24pt">P</hi><hi rendition="#small-caps">e</hi>rch<choice><orig>e</orig><reg>é</reg></choice> 

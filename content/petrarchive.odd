@@ -62,6 +62,12 @@
                	<valItem ident="canzone">
                		<gloss>canzone</gloss>
               	</valItem>
+                <valItem ident="canzone_15vv">
+                  <gloss>cazone with stanzas of fifteen verses</gloss>
+                </valItem>
+                <valItem ident="canzone_20vv">
+                  <gloss>cazone with stanzas of twenty verses</gloss>
+                </valItem>
                 <valItem ident="stanza">
                   <gloss>stanza</gloss>
                 </valItem>

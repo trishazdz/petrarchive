@@ -598,7 +598,7 @@ the line wraps. -->
             </lg>
          </lg>
          <space corresp="#canvasline"/>
-         <lg xml:id="rvf028" type="canzone" n="28">
+         <lg xml:id="rvf028" type="canzone_15vv" n="28">
            <lg type="stanza">
             <lg type="dblvrs" corresp="#canvasline">
                <l n="1"><choice><orig><hi rendition="#fs24pt #blue">O</hi><hi rendition="#small-caps">a</hi>spectata</orig><reg><hi rendition="#fs24pt #blue">O</hi> <hi rendition="#small-caps">a</hi>spectata</reg></choice> in ciel<supplied>,</supplied> beata et bella</l>

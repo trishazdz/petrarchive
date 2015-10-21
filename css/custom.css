@@ -29,6 +29,15 @@ ol, ul {
   list-style: none;
 }
 
+fw {
+  width:10%;
+  display:block;
+  position:relative; 
+  left:-200px; 
+ /* border:dotted black 1px; */ 
+  padding:.5em;
+}
+
 /* line 25, ../sass/_meyer-reset.scss */
 blockquote, q {
   quotes: none;
@@ -121,6 +130,7 @@ lg {
 lg[type='sonnet']:before,
 lg[type='madrigal']:before,
 lg[type='canzone']:before,
+lg[type='canzone_15vv']:before,
 lg[type='sestina']:before,
 lg[type='ballata_grande']:before,
 lg[type='ballata_mezzana']:before {
@@ -399,15 +409,29 @@ lg[type='ballata_grande'] l[n='10'],
 lg[type='ballata_mezzana'] l[n='3'],
 lg[type='ballata_mezzana'] l[n='8'],
 lg[type='ballata_mezzana'] l[n='9'],
-lg[id='rvf071'] l[n='5'],
-lg[id='rvf071'] l[n='6'],
-lg[id='rvf071'] l[n='20'],
-lg[id='rvf071'] l[n='21'],
-lg[id='rvf071'] l[n='35'],
-lg[id='rvf071'] l[n='36'],
-lg[id='rvf071'] l[n='65'],
-lg[id='rvf071'] l[n='66'],
-lg[id='rvf071'] l[n='105'],
+lg[type='canzone_15vv'] l[n='5'],
+lg[type='canzone_15vv'] l[n='6'],
+lg[type='canzone_15vv'] l[n='15'],
+lg[type='canzone_15vv'] l[n='20'],
+lg[type='canzone_15vv'] l[n='21'],
+lg[type='canzone_15vv'] l[n='30'],
+lg[type='canzone_15vv'] l[n='35'],
+lg[type='canzone_15vv'] l[n='36'],
+lg[type='canzone_15vv'] l[n='45'],
+lg[type='canzone_15vv'] l[n='50'],
+lg[type='canzone_15vv'] l[n='51'],
+lg[type='canzone_15vv'] l[n='60'],
+lg[type='canzone_15vv'] l[n='65'],
+lg[type='canzone_15vv'] l[n='66'],
+lg[type='canzone_15vv'] l[n='75'],
+lg[type='canzone_15vv'] l[n='80'],
+lg[type='canzone_15vv'] l[n='81'],
+lg[type='canzone_15vv'] l[n='90'],
+lg[type='canzone_15vv'] l[n='95'],
+lg[type='canzone_15vv'] l[n='96'],
+lg[type='canzone_15vv'] l[n='105'],
+lg[type='canzone_15vv'] l[n='110'],
+lg[type='canzone_15vv'] l[n='111'],
 lg[id='rvf105'] l[n='5'],
 lg[id='rvf105'] l[n='6'],
 lg[id='rvf105'] l[n='20'],

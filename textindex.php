@@ -250,33 +250,33 @@
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td><a href="content/c008v.xml#rvf036">36</a></td>
+          <td><a href="content/c008v-c009v.xml#rvf036">36</a></td>
           <td>8v</td>
-          <td><a href="content/c008v.xml#rvf036">S’io credesse per morte essere scarco</a></td>
+          <td><a href="content/c008v-c009v.xml#rvf036">S’io credesse per morte essere scarco</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td><a href="content/c008v.xml#rvf037">37</a></td>
+          <td><a href="content/c008v-c009v.xml#rvf037">37</a></td>
           <td>8v-9v</td>
-          <td><a href="content/c008v.xml#rvf037">Sì è debile il filo a cui s’attene</a></td>
+          <td><a href="content/c008v-c009v.xml#rvf037">Sì è debile il filo a cui s’attene</a></td>
           <td>Canzone</td>
         </tr>
         <tr>
-          <td>38</td>
+          <td><a href="content/c008v-c009v.xml#rvf038">38</a></td>
           <td>9v</td>
-          <td>Orso, e’ non furon mai fiumi né stagni</td>
+          <td><a href="content/c008v-c009v.xml#rvf038">Orso, e’ non furon mai fiumi né stagni</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>39</td>
+          <td><a href="content/c008v-c009v.xml#rvf039">39</a></td>
           <td>9v</td>
-          <td>Io temo sì de’ begli occhi l’assalto</td>
+          <td><a href="content/c008v-c009v.xml#rvf039">Io temo sì de’ begli occhi l’assalto</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>40</td>
+          <td><a href="content/c008v-c009v.xml#rvf040">40</a></td>
           <td>9v</td>
-          <td>S’amore o morte non dà qualche stroppio</td>
+          <td><a href="content/c008v-c009v.xml#rvf040">S’amore o morte non dà qualche stroppio</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
@@ -328,27 +328,27 @@
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>49</td>
+          <td><a href="content/c011r-c011v.xml#rvf049">49</a></td>
           <td>11r</td>
-          <td>Perch’io t’abbia guardato di menzogna</td>
+          <td><a href="content/c011r-c011v.xml#rvf049">Perch’io t’abbia guardato di menzogna</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>50</td>
+          <td><a href="content/c011r-c011v.xml#rvf050">50</a></td>
           <td>11r-11v</td>
-          <td>Ne la stagion che ’l ciel rapido inchina</td>
+          <td><a href="content/c011r-c011v.xml#rvf050">Ne la stagion che ’l ciel rapido inchina</a></td>
           <td>Canzone</td>
         </tr>
         <tr>
-          <td>51</td>
+          <td><a href="content/c011r-c011v.xml#rvf051">51</a></td>
           <td>11v</td>
-          <td>Poco era ad appressarsi agli occhi miei</td>
+          <td><a href="content/c011r-c011v.xml#rvf051">Poco era ad appressarsi agli occhi miei</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td>52</td>
+          <td><a href="content/c011r-c011v.xml#rvf052">52</a></td>
           <td>11v</td>
-          <td>Non al suo amante più Diana piacque</td>
+          <td><a href="content/c011r-c011v.xml#rvf052">Non al suo amante più Diana piacque</a></td>
           <td>Madrigal</td>
         </tr>
         <tr>

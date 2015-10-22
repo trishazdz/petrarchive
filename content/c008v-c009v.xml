@@ -67,7 +67,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Petrarch’s <title rendition="#i">Rerum vulgarium fragmenta</title>: Charta 5 verso</title>
+            <title>Petrarch’s <title rendition="#i">Rerum vulgarium fragmenta</title>: Charta 8 verso - 9 verso</title> 
             <editor xml:id="hws">H. Wayne Storey</editor>
             <editor xml:id="jaw">John A. Walsh</editor>
             <respStmt>
@@ -78,10 +78,6 @@
                <resp>Encoder</resp>
                <name xml:id="im">Isabella Magni</name>
             </respStmt>
-             <respStmt>
-                 <resp>Encoder</resp>
-                 <name xml:id="gt">Grace Thomas</name>
-             </respStmt>
          </titleStmt>
          <publicationStmt>
             <p>Publication Information</p>
@@ -106,7 +102,8 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
-      <encodingDesc xmlns="http://www.tei-c.org/ns/1.0">
+
+<encodingDesc xmlns="http://www.tei-c.org/ns/1.0">
     <p>Where <gi>reg</gi> appears without a parent <gi>choice</gi>, the <gi>reg</gi> indicates supplied text that has been supplied for normalization or modernization purposes. <gi>supplied</gi> was not used because <gi>supplied</gi> is properly for text supplied for text missing due to damage, for instance.</p>
     <p n="ms lines">In Petrarch's personal copy of the RVF, he consistently uses a ruled 31-line “canvas” for the layout of the poems. There is one exception, Rvf XXX, where an extra line is added to the underlying canvas. Elements that occupy a ruled manuscript line are tagged with the attribute <code>@corresp="#canvasline"</code>, where <code>#msline</code> references a category in a taxonomy of "graphic features" in the <gi>teiHeader</gi></p>
     <classDecl>
@@ -245,13 +242,12 @@
                 <localName>entity</localName>
                 <value>parag</value>
             </charProp>
-            <!-- <mapping type="visual">&#x23A7;</mapping> -->
             <mapping type="visual">&#xF1E1;</mapping>
         </char>
     </charDecl>
     
     <tagsDecl>
-        <!-- Basic text formatting: bold, italic, underline, "normal," etc. -->
+
         <rendition xml:id="b" n="tiebp:bold" scheme="css">
             font-weight:bold;
         </rendition> 
@@ -299,8 +295,7 @@
         <rendition xml:id="small-caps" n="tiebp:small-caps" scheme="css">
             font-variant:small-caps;
         </rendition>
-        
-        <!-- Blocks. -->
+ 
         <rendition xml:id="block" n="tiebp:block" scheme="css">
             display:block;
         </rendition> 
@@ -318,12 +313,12 @@
         </rendition>
         
         <rendition corresp="#blockquote" n="tiebp:blockquote" scheme="css" scope="before">
-            <!-- This turns off the default generated quotes for block quotes. -->
+
             content:"" !important;
         </rendition>
         
         <rendition corresp="#blockquote" n="tiebp:blockquote" scheme="css" scope="after">
-            <!-- This turns off the default generated quotes for block quotes. -->
+
             content:"" !important;
         </rendition>
         
@@ -341,13 +336,10 @@
             white-space:pre;
         </rendition>
         
-        <!-- Inline -->
-        
         <rendition xml:id="inline" n="teibp:inline" scheme="css">
             display:inline;
         </rendition>
         
-        <!-- Alignment. -->
         <rendition xml:id="center" n="tiebp:center" scheme="css">
             display:block;
             text-align:center;
@@ -373,15 +365,12 @@
             margin-right:auto;
         </rendition>
         
-        <!-- Indentation -->
         <rendition xml:id="hang" n="teibp:hang" scheme="css">
             display:block;
             padding-left:2.5em;
             text-indent:-2.5em;
         </rendition>
         
-        <!-- Indentation for verse lines. Results in a “hanging” indent if
-the line wraps. -->
         <rendition xml:id="l-indent-01" n="tiebp:l-indent-01" scheme="css">
             display:block;
             padding-left:4em;
@@ -440,8 +429,6 @@ the line wraps. -->
             content:"\A0\A0\A0\A0\A0\A0";
         </rendition>
         
-        <!-- font sizes -->
-        
         <rendition xml:id="small" n="tiebp:small" scheme="css">
             font-size:90%;
         </rendition>
@@ -476,7 +463,6 @@ the line wraps. -->
             content:">";
         </rendition>
         
-        <!-- petrarchive -->
         <rendition xml:id="red" scheme="css"
             >color:#9f1706;</rendition>
         <rendition xml:id="blue" scheme="css"
@@ -487,53 +473,190 @@ the line wraps. -->
             >font-size:24pt;</rendition>
     </tagsDecl>
 </encodingDesc>
+
    </teiHeader>
+
    <text>
       <body>
-         <pb n="charta 9 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-009r.jpg" />
-         <space corresp="#canvasline"/>
-         <lg xml:id="rvf037" type="canzone" n="37">
-             <lg type="stanza">
-                 <lg type="dblvrs" corresp="#canvasline">
-                     <l n="47">Et quanto era mia uita allor gioiosa</l>
-                     <l n="48">Minsegni la presente aspra et noiosa.</l>
-                 </lg>
-             </lg>
-             <lg type="stanza">
-               <lg type="dblvrs" corresp="#canvasline">
-                   <l n="49"><hi rendition="#red #fs24pt">&pilcrow2section;</hi>Lasso se ragionando si rinfresca</l>
-                   <l n="50">Quel ardente desio.</l>
-               </lg>
-               <lg type="dblvrs" corresp="#canvasline">
-                   <l n="51">Che nacque il giorno chio</l>
-                   <l n="52">Lassai di me la miglior parte a dietro.</l>
-               </lg>
-               <lg type="dblvrs" corresp="#canvasline">
-                   <l n="53">Et samor se ne ua per lungo oblio</l>
-                   <l n="54">Ch<subst><del type="erasure"><gap reason="illegible"/></del><add>i</add></subst> mi conduce a lesca.</l>
-               </lg>
-               <lg type="dblvrs" corresp="#canvasline">
-                   <l n="55">Ondel mio dolor cresca<g ref="#punctelevhiback"/></l>
-                   <l n="56">Et perche pria tacendo non <choice><abbr>mīpetro</abbr><expan>mimpetro</expan></choice><g ref="#punctelevhiback"/></l>
-               </lg>
-               <lg type="dblvrs" corresp="#canvasline">
-                   <l n="57">Certo cristallo o uetro</l>
-                   <l n="58">Non mostro mai di fore</l>
-               </lg>
-               <lg type="dblvrs" corresp="#canvasline">
-                   <l n="59">Nascosto altro colore.</l>
-                   <l n="60">Che lalma sconsolata assai non mostri</l>
-               </lg>
-               <lg type="dblvrs" corresp="#canvasline">
-                   <l n="61">Piu chiari i pensier nostri.</l>
-                   <l n="62">Et la fera dolceçça che nel core</l>
-               </lg>
-                   <lg type="dblvrs" corresp="#canvasline">
-                       <l n="63">Per gli occhi che di sempre pianger uaghi</l>
-                       <l n="64">Cercan di &amp7; nocte pur chi gle nappaghi.</l>
-                   </lg>
+         <pb xml:id="c008v" n="charta 8 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-008v.jpg"/> 
+          <lg xml:id="rvf036" type="sonnet" n="36">
+              <lg type="octave">
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="1"><choice><orig><hi rendition="#red #fs24pt">S</hi><hi rendition="#small-caps">i</hi>o</orig><reg><hi rendition="#red #fs24pt">S</hi>’<hi rendition="#small-caps">i</hi>o</reg></choice> credesse per morte essere scarco</l> 
+                      <l n="2">Del pensiero amoroso che <choice><orig>matterra</orig><reg>m’atterra</reg></choice><supplied>,</supplied></l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="3">Colle mie mani <choice><orig>aurei</orig><reg>avrei</reg></choice> <choice><orig>gia</orig><reg>già</reg></choice> posto in terra</l>
+                      <l n="4">Queste membra noiose<choice><orig>.</orig><reg/></choice> &amp7; quello incarco&p2semicolon;</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="5">Ma <choice><orig>&per;chio</orig><reg>perch’io</reg></choice> temo che sarrebbe un <choice><orig>uarco</orig><reg>varco</reg></choice></l>
+                      <l n="6">Di <choice><abbr>piāto</abbr><expan>pianto</expan></choice> &in; pianto&v2c; &amp7; <choice><orig>duna</orig><reg>d’una</reg></choice> in altra guerra&p2c;</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="7">Di qua dal passo anchor che mi si serra</l>
+                      <l n="8"><choice><orig>Meçço</orig><reg>Mezzo</reg></choice> <choice><abbr>rimāgo</abbr><expan>rimango</expan></choice><supplied>,</supplied> lasso&p2c; &amp7; <choice><orig>meçço</orig><reg>mezzo</reg></choice> il <choice><orig>uarco</orig><reg>varco</reg></choice>.</l>
+                  </lg>
+              </lg>
+              <lg type="sestet">
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="9">Tempo ben <choice><orig>fora</orig><reg>fôra</reg></choice> omai <choice><orig>dauere</orig><reg>d’avere</reg></choice> spinto</l>
+                      <l n="10"><choice><orig>Lultimo</orig><reg>L’ultimo</reg></choice> <choice><orig>stralẹ</orig><reg>stral</reg></choice> la dispietata corda</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="11">Ne <choice><orig>laltrui</orig><reg>l’altrui</reg></choice> sangue <choice><orig>gia</orig><reg>già</reg></choice> bagnato &amp7; tinto.</l>
+                      <l n="12">Et io ne prego <choice><orig>amore</orig><reg>Amore</reg></choice>&v2c; et quella sorda</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="13">Che mi <choice><orig>lasso</orig><reg>lassò</reg></choice> de<supplied>’</supplied> suoi color<supplied>’</supplied> depinto&p2c;</l>
+                      <l n="14">Et di chiamarmi a <choice><orig>se</orig><reg>sé</reg></choice> non le ricorda.</l>
+                  </lg>
+              </lg>
+          </lg>
+         <lg type="canzone" xml:id="rvf037" n="37">
+         <lg type="stanza">
+            <lg type="dblvrs" corresp="#canvasline">
+                <l n="1"><choice><orig><hi rendition="#blue #fs24pt">S</hi><hi rendition="#small-caps">i</hi></orig><reg><hi rendition="#blue #fs24pt">S</hi><hi rendition="small-caps">ì</hi></reg></choice> &e; debile il filo a cui <choice><orig>sattene</orig><reg>s’attene</reg></choice></l> 
+                <l n="2">La <choice><orig>grauosa</orig><reg>gravosa</reg></choice> mia <choice><orig>uita</orig><reg>vita</reg></choice></l>
             </lg>
-               <lg type="stanza">
+            <lg type="dblvrs" corresp="#canvasline">
+                <l n="3">Che<supplied>,</supplied> <choice><orig>saltri</orig><reg>s’altri</reg></choice> non <choice><orig>laita</orig><reg>l’aita</reg></choice><supplied>,</supplied></l>
+                <l n="4">Ella fia tosto di suo corso a <choice><orig>riua</orig><reg>riva</reg></choice>&p2semicolon;</l>
+            </lg>
+            <lg type="dblvrs" corresp="#canvasline">
+                <l n="5"><choice><orig>Pero</orig><reg>però</reg></choice> che dopo <choice><orig>lempia</orig><reg>l’empia</reg></choice> dipartita</l>
+                <l n="6">Che dal dolce mio bene</l>
+            </lg>
+            <lg type="dblvrs" corresp="#canvasline">
+                <l n="7">Feci<supplied>,</supplied> sol una spene</l>
+                <l n="8"><choice><orig>E</orig><reg>È</reg></choice> stato in fin a qui cagion <choice><orig>chio</orig><reg>ch’io</reg></choice> <choice><orig>uiua</orig><reg>viva</reg></choice>&p2c;</l>
+            </lg>
+            <lg type="dblvrs" corresp="#canvasline">
+                <l n="9">Dicendo<supplied>:</supplied> <choice><orig>perche</orig><reg>Perché</reg></choice> <choice><orig>priua</orig><reg>priva</reg></choice></l>
+                <l n="10">Sia de <choice><orig>lamata</orig><reg>l’amata</reg></choice> <choice><orig>uista</orig><reg>vista</reg></choice><supplied>,</supplied></l>
+            </lg>
+            <lg type="dblvrs" corresp="#canvasline">
+                <l n="11">Mantienti<supplied>,</supplied> anima trista&p2semicolon;</l>
+                <l n="12">Che sai <choice><orig>sa</orig><reg>s’a</reg></choice> miglior tempo ancho ritorni?</l>
+            </lg>
+            <lg type="dblvrs" corresp="#canvasline">
+                <l n="13">Et a &piu; lieti giorni<choice><orig><g ref="#punctelevhiback"/></orig><reg>?</reg></choice></l>
+                <l n="14">O <choice><orig>sel</orig><reg>se ’l</reg></choice> perduto ben mai si racquista<choice><orig>.</orig><reg>?</reg></choice></l>
+            </lg>
+            <lg type="dblvrs" corresp="#canvasline">
+                <l n="15">Questa <choice><orig>sperança</orig><reg>speranza</reg></choice> mi <choice><abbr>sostēne</abbr><expan>sostenne</expan></choice> un <choice><abbr>tēpo</abbr><expan>tempo</expan></choice>&p2semicolon;</l>
+                <l n="16">Or <choice><orig>uien</orig><reg>vien</reg></choice> mancando&p2c; &amp7; troppo <choice><orig>&in;lei</orig><reg>in lei</reg></choice> <choice><orig><abbr>mattēpo</abbr><expan>mattempo</expan></orig><reg>m’attempo</reg></choice>.</l>
+         </lg>
+         </lg>
+         <lg type="stanza">
+            <lg type="dblvrs" corresp="#canvasline">
+                <l n="17"><hi rendition="#red #fs24pt">¶</hi>Il tempo passa<supplied>,</supplied> et <choice><orig>lore</orig><reg>l’ore</reg></choice> son &si; pronte</l>
+                <l n="18">A fornire il <choice><orig>uiaggio</orig><reg>viaggio</reg></choice>&p2c;</l>
+            </lg>
+            <lg type="dblvrs" corresp="#canvasline">
+                <l n="19"><choice><orig>Chassai</orig><reg>Ch’assai</reg></choice> spacio non aggio</l>
+                <l n= "20">Pur a pensar <choice><orig>comio</orig><reg>com’io</reg></choice> corro a la morte&p2colon;</l>
+            </lg>
+            <lg type="dblvrs" corresp="#canvasline">
+                <l n="21">A pena spunta in oriente un raggio</l>
+                <l n="22">Di sol&v2c; <choice><orig>cha</orig><reg>ch’a</reg></choice> <choice><orig>laltro</orig><reg>l’altro</reg></choice> monte</l>
+            </lg>
+            <lg type="dblvrs" corresp="#canvasline">
+                <l n="23"><choice><orig>Deladuerso</orig><reg>De l’adverso</reg></choice> <choice><orig>oriçonte</orig><reg>orizonte</reg></choice></l>
+                <l n="24">Giunto il <choice><orig>uedrai</orig><reg>vedrai</reg></choice> per <choice><orig>uie</orig><reg>vie</reg></choice> lunghe et distorte<supplied>.</supplied></l>
+            </lg>
+            <lg type="dblvrs" corresp="#canvasline">
+                <l n="25">Le <choice><orig>uite</orig><reg>vite</reg></choice> son &si; corte&p2c;</l>
+                <l n="26">&Si; <choice><orig>graui</orig><reg>graui</reg></choice> i corpi et frali</l>
+            </lg>
+            <lg type="dblvrs" corresp="#canvasline">
+                <l n="27"><choice><orig>De gliuomini</orig><reg>Degli uomini</reg></choice> mortali&p2c;</l>
+                <l n="28">Che quando io mi <choice><orig>ritrouo</orig><reg>ritrovo</reg></choice> dal bel <choice><orig>uiso</orig><reg>viso</reg></choice></l>
+            </lg>
+            <lg type="dblvrs" corresp="#canvasline">
+                <l n="29">Cotanto esser <choice><orig>diuiso</orig><reg>diviso</reg></choice>&v2c;</l>
+                <l n="30">Col desio non possendo <choice><orig>mouer</orig><reg>mover</reg></choice> <choice><orig>lali</orig><reg>l’ali</reg></choice>&p2c;</l>
+            </lg>
+            <lg type="dblvrs" corresp="#canvasline">
+                <l n="31">Poco <choice><orig>mauança</orig><reg>m’avanza</reg></choice> del conforto usato&p2c;</l>
+                <l n="32"><choice><orig>Ne</orig><reg>Né</reg></choice> so <choice><orig>quantio</orig><reg>quant’io</reg></choice> mi <choice><orig>uiua</orig><reg>viva</reg></choice> in questo stato.</l>
+            </lg>
+         </lg>
+            <lg type="stanza">
+               <lg type="dblvrs" corresp="#canvasline">
+                   <l n="33"><hi rendition="#blue #fs24pt">¶</hi>Ogni loco <choice><orig>matrista</orig><reg>m’atrista</reg></choice> <choice><orig>ouio</orig><reg>ov’io</reg></choice> non <choice><orig>ueggio</orig><reg>veggio</reg></choice></l>
+                   <l n="34">Quei <choice><orig>be gliocchi</orig><reg>begli occhi</reg></choice> <choice><orig>soaui</orig><reg>soavi</reg></choice></l>
+            </lg>
+               <lg type="dblvrs" corresp="#canvasline">
+                   <l n="35">Che portaron le <choice><orig>chiaui</orig><reg>chiavi</reg></choice></l>
+                   <l n="36">De<supplied>’</supplied> miei dolci pensier<supplied>’</supplied>&v2c; mentre <choice><orig>adio</orig><reg>a Dio</reg></choice> piacque.</l>
+            </lg>
+               <lg type="dblvrs" corresp="#canvasline">
+                   <l n="37">Et <choice><orig>perchel</orig><reg>perché ’l</reg></choice> duro exilio &piu; <choice><orig>maggraui</orig><reg>m’aggravi</reg></choice><supplied>,</supplied></l>
+                   <l n="38"><choice><orig>Sio</orig><reg>S’io</reg></choice> dormo<choice><orig> &virg;</orig><reg/></choice> o <choice><orig>uado</orig><reg>vado</reg></choice><choice><orig> &virg;</orig><reg/></choice> o seggio&v2c;</l>
+            </lg>
+               <lg type="dblvrs" corresp="#canvasline">
+                   <l n="39">Altro giamai non cheggio&p2c;</l>
+                   <l n="40">Et <choice><orig>cio</orig><reg>ciò</reg></choice> <choice><orig><reg>ch’i’</reg></orig></choice> <choice><orig>uidi</orig><reg>vidi</reg></choice> dopo lor mi spiacque.</l>
+            </lg>
+               <lg type="dblvrs" corresp="#canvasline">
+                   <l n="41">Quante montagne et acque</l>
+                   <l n="42">Quanto mar&v2c; quanti fiumi</l>
+            </lg>
+               <lg type="dblvrs" corresp="#canvasline">
+                   <l n="43"><choice><orig>Mascondon</orig><reg>M’ascondon</reg></choice> que<supplied>’</supplied> duo lumi<supplied>,</supplied></l>
+                   <l n="44">Che quasi un bel sereno a meççol die</l>
+            </lg>
+               <lg type="dblvrs" corresp="#canvasline">
+                   <l n="45">Fer le tenebre mie<supplied>,</supplied></l>
+                   <l n="46">A <choice><orig>cio</orig><reg>ciò</reg></choice> <choice><orig>chel</orig><reg>che ’l</reg></choice> rimembrar &piu; mi consum<subst><del type="erasure"><gap reason="illegible"/></del><add>i</add></subst>&p2c;</l>
+            </lg>
+            </lg>
+          <fw type="catch" rendition="#center">.et quanto.</fw>
+          
+          <pb n="charta 9 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-009r.jpg" />
+          <space corresp="#canvasline"/>
+              <lg type="stanza">
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="47">Et quanto era mia uita allor gioiosa</l>
+                      <l n="48">Minsegni la presente aspra et noiosa.</l>
+                  </lg>
+              </lg>
+              <lg type="stanza">
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="49"><hi rendition="#red #fs24pt">&pilcrow2section;</hi>Lasso se ragionando si rinfresca</l>
+                      <l n="50">Quel ardente desio.</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="51">Che nacque il giorno chio</l>
+                      <l n="52">Lassai di me la miglior parte a dietro.</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="53">Et samor se ne ua per lungo oblio</l>
+                      <l n="54">Ch<subst><del type="erasure"><gap reason="illegible"/></del><add>i</add></subst> mi conduce a lesca.</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="55">Ondel mio dolor cresca<g ref="#punctelevhiback"/></l>
+                      <l n="56">Et perche pria tacendo non <choice><abbr>mīpetro</abbr><expan>mimpetro</expan></choice><g ref="#punctelevhiback"/></l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="57">Certo cristallo o uetro</l>
+                      <l n="58">Non mostro mai di fore</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="59">Nascosto altro colore.</l>
+                      <l n="60">Che lalma sconsolata assai non mostri</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="61">Piu chiari i pensier nostri.</l>
+                      <l n="62">Et la fera dolceçça che nel core</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="63">Per gli occhi che di sempre pianger uaghi</l>
+                      <l n="64">Cercan di &amp7; nocte pur chi gle nappaghi.</l>
+                  </lg>
+              </lg>
+              <lg type="stanza">
                   <lg type="dblvrs" corresp="#canvasline">
                       <l n="65"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi>Nouo piacer che ne gliumani ingegni</l>
                       <l n="66">Spesse uolte si troua</l>
@@ -562,12 +685,12 @@ the line wraps. -->
                       <l n="77">Corro spesso. et rientro</l>
                       <l n="78">Cola  donde piu largo il duol trabocchi.</l>
                   </lg>
-                   <lg type="dblvrs" corresp="#canvasline">
-                       <l n="79">Et sien col cor punite ambe le luci.</l>
-                       <l n="80">Cha la strada damor mi furon duci.</l>
-                   </lg>
-               </lg>
-               <lg type="stanza">
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="79">Et sien col cor punite ambe le luci.</l>
+                      <l n="80">Cha la strada damor mi furon duci.</l>
+                  </lg>
+              </lg>
+              <lg type="stanza">
                   <lg type="dblvrs" corresp="#canvasline">
                       <l n="81"><hi rendition="#red #fs24pt">&pilcrow2section;</hi>Le treccie dor che deurien fare il sole</l>
                       <l n="82">Dinuidia molta ir pieno.</l>
@@ -596,12 +719,12 @@ the line wraps. -->
                       <l n="93">Chel mio cor a uertute</l>
                       <l n="94">Destar solea con una uoglia accesa.</l>
                   </lg>
-                   <lg type="dblvrs" corresp="#canvasline">
-                       <l n="95">Tal chio non penso udir cosa giamai</l>
-                       <l n="96">Che mi conforte adaltro cha trar guai.</l>
-                   </lg>
-               </lg>
-               <lg type="stanza">
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="95">Tal chio non penso udir cosa giamai</l>
+                      <l n="96">Che mi conforte adaltro cha trar guai.</l>
+                  </lg>
+              </lg>
+              <lg type="stanza">
                   <lg type="dblvrs" corresp="#canvasline">
                       <l n="97"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi>Et per pianger anchor &con; piu diletto /</l>
                       <l n="98">Le man bianche sottili.</l>
@@ -626,36 +749,36 @@ the line wraps. -->
                       <l n="107">Pero chadora adora</l>
                       <l n="108">Serge la speme. et poi non sa star ferma.</l>
                   </lg>
-                   <pb n="charta 9 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-009v.jpg" />
-                   <lg type="dblvrs" corresp="#canvasline">
-                       <l n="109">Ma ricadendo afferma</l>
-                       <l n="110">Di mai non ueder lei chel ciel honora.</l>
-                   </lg>
-                   <lg type="dblvrs" corresp="#canvasline">
-                       <l n="111">Oualberga honestate et cortesia.</l>
-                       <l n="112">Et douio prego chel mio albergo sia.</l>
-                   </lg>
+                  
+              <pb n="charta 9 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-009v.jpg" />
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="109">Ma ricadendo afferma</l>
+                      <l n="110">Di mai non ueder lei chel ciel honora.</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="111">Oualberga honestate et cortesia.</l>
+                      <l n="112">Et douio prego chel mio albergo sia.</l>
+                  </lg>
               </lg>
-             <lg type="stanza">
-                 <lg type="dblvrs" corresp="#canvasline">
-                     <l n="113"><hi rendition="#red #fs24pt">&pilcrow2section;</hi>Cançon sal dolce loco.</l>
-                     <l n="114">La donna nostra uedi</l>
-                 </lg>
-                 <lg type="dblvrs" corresp="#canvasline">
-                     <l n="115">Credo ben che tu credi</l>
-                     <l n="116">Chella ti porgera la bella mano.</l>
-                 </lg>
-                 <lg type="dblvrs" corresp="#canvasline">
-                     <l n="117">Ondio son si lontano.</l>
-                     <l n="118">Non la tocchar. ma reuerente ai piedi</l>
-                 </lg>
-                 <lg type="dblvrs" corresp="#canvasline">
-                     <l n="119">Le di chio saro la tosto chio possa.</l>
-                     <l n="120">O spirto ignudo. o duom di carne &amp7; dossa.</l>
-                 </lg>
-             </lg>
+              <lg type="stanza">
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="113"><hi rendition="#red #fs24pt">&pilcrow2section;</hi>Cançon sal dolce loco.</l>
+                      <l n="114">La donna nostra uedi</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="115">Credo ben che tu credi</l>
+                      <l n="116">Chella ti porgera la bella mano.</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="117">Ondio son si lontano.</l>
+                      <l n="118">Non la tocchar. ma reuerente ai piedi</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="119">Le di chio saro la tosto chio possa.</l>
+                      <l n="120">O spirto ignudo. o duom di carne &amp7; dossa.</l>
+                  </lg>
+              </lg>
          </lg>
-
           <lg xml:id="rvf038" type="sonnet" n="38">
               <lg type="octave">
                   <lg type="dblvrs" corresp="#canvasline">
@@ -761,12 +884,6 @@ the line wraps. -->
               </lg>
           </lg>
           <space corresp="#canvasline"/>
-          
-          
-          
-          
       </body>
    </text>
 </TEI>
-
-

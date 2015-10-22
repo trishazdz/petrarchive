@@ -74,25 +74,25 @@
 			<a href="content/c004r-c005r.xml#c004v"><img alt="vat. lat. 3195, c. 4v" class="visindex-verso" src="images/visindex/c004v.svg" /></a>  <a href="content/c004r-c005r.xml#c005r"><img alt="vat. lat. 3195, c. 5r" class="visindex-recto" src="images/visindex/c005r.svg" /></a>  
 		</div>
 		<div>
-			<a href="content/c005v-c007r.xml"><img alt="vat. lat. 3195, c. 5v" class="visindex-verso" src="images/visindex/c005v.svg" /></a>  <a href="content/c005v-c007r.xml"><img alt="vat. lat. 3195, c. 6r" class="visindex-recto" src="images/visindex/c006r.svg" /></a>  
+			<a href="content/c005v-c007v.xml#c005v"><img alt="vat. lat. 3195, c. 5v" class="visindex-verso" src="images/visindex/c005v.svg" /></a>  <a href="content/c005v-c007v.xml#c006r"><img alt="vat. lat. 3195, c. 6r" class="visindex-recto" src="images/visindex/c006r.svg" /></a>  
 		</div>
 		<div>
-			<a href="content/c005v-c007r.xml"><img alt="vat. lat. 3195, c. 6v" class="visindex-verso" src="images/visindex/c006v.svg" /></a>  <a href="content/c005v-c007r.xml"><img alt="vat. lat. 3195, c. 7r" class="visindex-recto" src="images/visindex/c007r.svg" /></a>  
+			<a href="content/c005v-c007v.xml#c006v"><img alt="vat. lat. 3195, c. 6v" class="visindex-verso" src="images/visindex/c006v.svg" /></a>  <a href="content/c005v-c007v.xml#c007r"><img alt="vat. lat. 3195, c. 7r" class="visindex-recto" src="images/visindex/c007r.svg" /></a>  
 		</div>
 		<div>
-			<img alt="vat. lat. 3195, c. 7v" class="visindex-verso" src="images/visindex/c007v.svg" />  <a href="content/c008r.xml"><img alt="vat. lat. 3195, c. 8r" class="visindex-recto" src="images/visindex/c008r.svg" /></a>  
+			<a href="content/c005v-c007v.xml#c007v"><img alt="vat. lat. 3195, c. 7v" class="visindex-verso" src="images/visindex/c007v.svg" /></a>  <a href="content/c008r.xml"><img alt="vat. lat. 3195, c. 8r" class="visindex-recto" src="images/visindex/c008r.svg" /></a>  
 		</div>
 		<div>
-			<a href="content/c008v.xml"><img alt="vat. lat. 3195, c. 8v" class="visindex-verso" src="images/visindex/c008v.svg" /></a>  <img alt="vat. lat. 3195, c. 9r" class="visindex-recto" src="images/visindex/c009r.svg" />  
+			<a href="content/c008v-c009v.xml#c008v"><img alt="vat. lat. 3195, c. 8v" class="visindex-verso" src="images/visindex/c008v.svg" /></a>  <a href="content/c008v-c009v.xml#c009r"><img alt="vat. lat. 3195, c. 9r" class="visindex-recto" src="images/visindex/c009r.svg" /></a>  
 		</div>
 		<div>
-			<img alt="vat. lat. 3195, c. 9v" class="visindex-verso" src="images/visindex/c009v.svg" />  <a href="content/c010r.xml"><img alt="vat. lat. 3195, c. 10r" class="visindex-recto" src="images/visindex/c010r.svg" /></a>  
+			<a href="content/c008v-c009v.xml#c009v"><img alt="vat. lat. 3195, c. 9v" class="visindex-verso" src="images/visindex/c009v.svg" /></a>  <a href="content/c010r.xml"><img alt="vat. lat. 3195, c. 10r" class="visindex-recto" src="images/visindex/c010r.svg" /></a>  
 		</div>
 		<div>
-			<a href="content/c010v.xml"><img alt="vat. lat. 3195, c. 10v" class="visindex-verso" src="images/visindex/c010v.svg" /></a>  <img alt="vat. lat. 3195, c. 11r" class="visindex-recto" src="images/visindex/c011r.svg" />  
+			<a href="content/c010v.xml"><img alt="vat. lat. 3195, c. 10v" class="visindex-verso" src="images/visindex/c010v.svg" /></a>  <a href="content/c011r-c011v.xml#c011r"><img alt="vat. lat. 3195, c. 11r" class="visindex-recto" src="images/visindex/c011r.svg" /></a>  
 		</div>
 		<div>
-			<img alt="vat. lat. 3195, c. 11v" class="visindex-verso" src="images/visindex/c011v.svg" />  <img alt="vat. lat. 3195, c. 12r" class="visindex-recto" src="images/visindex/c012r.svg" />  
+			<a href="content/c011r-c011v.xml#c011v"><img alt="vat. lat. 3195, c. 11v" class="visindex-verso" src="images/visindex/c011v.svg" /></a>  <img alt="vat. lat. 3195, c. 12r" class="visindex-recto" src="images/visindex/c012r.svg" />  
 		</div>
 		<div>
 			<img alt="vat. lat. 3195, c. 12v" class="visindex-verso" src="images/visindex/c012v.svg" />  <img alt="vat. lat. 3195, c. 13r" class="visindex-recto" src="images/visindex/c013r.svg" />  

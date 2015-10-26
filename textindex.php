@@ -390,7 +390,7 @@
         <tr>
           <td>59</td>
           <td>13v</td>
-          <td>Perchè quel che mi trasse ad amar prima</td>
+          <td>Perché quel che mi trasse ad amar prima</td>
           <td>Ballata mezzana</td>
         </tr>
         <tr>
@@ -432,7 +432,7 @@
         <tr>
           <td><a href="content/c014v.xml#rvf066">66</a></td>
           <td>14v</td>
-          <td><a href="content/c014v.xml#rvf066">L�aere gravato et l’importuna nebbia</a></td>
+          <td><a href="content/c014v.xml#rvf066">L’aere gravato et l’importuna nebbia</a></td>
           <td>Sestina</td>
         </tr>
         <tr>

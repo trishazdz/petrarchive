@@ -11,8 +11,7 @@
     xmlns="http://www.w3.org/1999/xhtml" 
     exclude-result-prefixes="xsl tei xd eg fn #default">
     <xsl:import href="teibp.xsl"/>
-    <xsl:output method="xml" doctype-system="about:legacy-compat" encoding="UTF-8" />
-        
+       <xsl:output method="xml" encoding="utf-8" version="" indent="yes" standalone="no" media-type="text/html" omit-xml-declaration="no" doctype-system="about:legacy-compat" /> 
     <xsl:param name="pbNote" select="''"/>
     
     <xsl:param name="customCSS.norm" select="concat($filePrefix,'/css/custom_norm.css')"/>

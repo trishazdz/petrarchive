@@ -21,8 +21,7 @@
 	</xd:doc>
 	<xsl:include href="xml-to-string.xsl"/>
 
-	<xsl:output encoding="UTF-8" method="xml" omit-xml-declaration="yes"/>
-	
+<xsl:output method="xml" encoding="utf-8" version="" indent="yes" standalone="no" media-type="text/html" omit-xml-declaration="no" doctype-system="about:legacy-compat" />	
 	<xsl:param name="teibpHome" select="'http://dcl.slis.indiana.edu/teibp/'"/>
 	<xsl:param name="inlineCSS" select="true()"/>
   <xsl:param name="includeNav" select="true()"/>

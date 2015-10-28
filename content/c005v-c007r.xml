@@ -67,7 +67,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Petrarch’s <title rendition="#i">Rerum vulgarium fragmenta</title>: Charta 5 verso - 7 verso</title>
+            <title>Petrarch’s <title rendition="#i">Rerum vulgarium fragmenta</title>: Charta 5 verso - 7 recto</title>
             <editor xml:id="hws">H. Wayne Storey</editor>
             <editor xml:id="jaw">John A. Walsh</editor>
             <respStmt>
@@ -887,7 +887,7 @@ the line wraps. -->
                   <l n="12">Subita <choice><orig>uista</orig><reg>vista</reg></choice>&p2c; <choice><orig>che</orig><reg>ché</reg></choice> <choice><orig>d<subst><del type="erasure"><gap reason="illegible"/></del><add>e</add></subst>l</orig><reg>del</reg></choice> cor mi rade</l>
                   <l n="13"><choice><orig>O<subst><del type="erasure"><gap reason="illegible"/></del><add>g</add></subst>ni</orig><reg>Ogni</reg></choice> <choice><orig>de lira</orig><reg>delira</reg></choice>     impresa&p2c; &amp7; ogni sdegno<choice><orig>.</orig><reg></reg></choice></l>
                </lg>
-                <pb xml:id="c007v" n="charta 7 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-007v.jpg"/>
+                <pb xml:id="c007v" n="charta 7 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-007v.jpg"/>
                 <lg type="single" corresp="#canvasline">
                     <l n="14"><choice><orig>Fal</orig><reg>Fa ’l</reg></choice> <choice><orig>u[<subst><del type="erasure"><gap reason="illegible"/></del><add>e</add></subst>]der</orig><reg>veder</reg></choice> lei <choice><orig>soaue</orig><reg>soave</reg></choice>.</l>
                 </lg>

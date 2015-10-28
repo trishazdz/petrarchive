@@ -154,7 +154,7 @@
             <lg type="dblvrs" corresp="#canvasline">
                <l n="1"><hi rendition="#red #fs24pt"
                   >M</hi><hi rendition="#small-caps">a</hi>i &non; 
-                  <choice><orig>uo</orig><reg>vo</reg></choice><supplied>’</supplied> <choice><orig>piu</orig><reg>più</reg></choice> <choice><orig>cantarẹ</orig><reg>cantar</reg></choice><choice><orig><g ref="#punctelevhiback"/></orig><reg></reg></choice> <choice><orig>comio</orig><reg>com’io</reg></choice> <choice><orig>soleua</orig><reg>soleva</reg></choice><supplied>,</supplied></l>
+                  <choice><orig>uo</orig><reg>vo</reg></choice><supplied>’</supplied> &piu; <choice><orig>cantarẹ</orig><reg>cantar</reg></choice><choice><orig><g ref="#punctelevhiback"/></orig><reg></reg></choice> <choice><orig>comio</orig><reg>com’io</reg></choice> <choice><orig>soleua</orig><reg>soleva</reg></choice><supplied>,</supplied></l>
                <l n="2"><choice><orig>Chaltri</orig><reg>Ch’altri</reg></choice> no <choice><orig>mintendeua</orig><reg>m’intendeva</reg></choice><choice><orig><g ref="#punctelevhiback"/></orig><reg>,</reg></choice> <choice><orig>ondebbi</orig><reg>ond’ebbi</reg></choice> scorno<supplied>;</supplied></l>
             </lg>
             <lg type="dblvrs" corresp="#canvasline">
@@ -187,7 +187,7 @@
          </lg>
          <lg type="stanza">
             <lg type="dblvrs" corresp="#canvasline">
-               <l n="16"><hi rendition="#blue #fs24pt">¶</hi>I<supplied>’</supplied> die<supplied>’</supplied> in guarda a san Pietro<choice><orig><g ref="#punctelevhiback"/></orig><reg>;</reg></choice> or &non; <choice><orig>piú</orig><reg>più</reg></choice><supplied>,</supplied> no.</l>
+               <l n="16"><hi rendition="#blue #fs24pt">¶</hi>I<supplied>’</supplied> die<supplied>’</supplied> in guarda a san Pietro<choice><orig><g ref="#punctelevhiback"/></orig><reg>;</reg></choice> or &non; &piu;<supplied>,</supplied> no.</l>
                <l n="17">Intendami chi <choice><orig>po</orig><reg>pò</reg></choice>&p2c; <choice><orig>chimintendio</orig><reg>ch’i’ m’intend’io</reg></choice>.</l>
             </lg>
             <lg type="dblvrs" corresp="#canvasline">
@@ -265,7 +265,7 @@
                <l n="51">Tal par gran <choice><orig>merauiglia</orig><reg>meraviglia</reg></choice><choice><orig><g ref="#punctelevhiback"/></orig><reg>,</reg></choice> &amp7; poi si <choice><orig>spreçça</orig><reg>sprezza</reg></choice>.</l>
             </lg>
             <lg type="dblvrs" corresp="#canvasline">
-               <l n="52"><choice><orig>Vna</orig><reg>Una</reg></choice> chiusa <choice><orig>belleçça</orig><reg>bellezza</reg></choice> <choice><orig>‘</orig><reg/></choice> &e; <choice><orig>piu</orig><reg>più</reg></choice> <choice><orig>soaue</orig><reg>soave</reg></choice>.</l>
+               <l n="52"><choice><orig>Vna</orig><reg>Una</reg></choice> chiusa <choice><orig>belleçça</orig><reg>bellezza</reg></choice> <choice><orig>‘</orig><reg/></choice> &e; &piu; <choice><orig>soaue</orig><reg>soave</reg></choice>.</l>
                <l n="53">Benedetta la <choice><orig>chiaue</orig><reg>chiave</reg></choice><choice><orig><g ref="#punctelevhiback"/></orig><reg>,</reg></choice> che <choice><orig>sauuolse</orig><reg>s’avvolse</reg></choice></l>
             </lg>
             <lg type="dblvrs" corresp="#canvasline">
@@ -274,7 +274,7 @@
             </lg>
             <lg type="dblvrs" corresp="#canvasline">
                <l n="56"><choice><orig>Enfiniti</orig><reg>E ’nfiniti</reg></choice> sospir<supplied>’</supplied> del mio sen tolse.</l>
-               <l n="57"><choice><orig>La</orig><reg>Là</reg></choice> <choice><orig>doue</orig><reg>dove</reg></choice> <choice><orig>piu</orig><reg>più</reg></choice> mi dolse <choice><orig>‘</orig><reg/></choice> altri si dole&p2c;</l>
+               <l n="57"><choice><orig>La</orig><reg>Là</reg></choice> <choice><orig>doue</orig><reg>dove</reg></choice> &piu; mi dolse <choice><orig>‘</orig><reg/></choice> altri si dole&p2c;</l>
             </lg>
             <lg type="dblvrs" corresp="#canvasline">
                <l n="58">Et dolendo adolcisse il mio dolore&p2c;</l>
@@ -307,7 +307,7 @@
                   <l n="70"><choice><orig>Ei</orig><reg>E i</reg></choice> segni del bel <choice><orig>uolto</orig><reg>volto</reg></choice></l>
                </lg>
                <lg type="dblvrs" corresp="#canvasline">
-                  <l n="71">Che mi conducon &per; <choice><orig>piu</orig><reg>più</reg></choice> piana <choice><orig>uia</orig><reg>via</reg></choice>&p2c;</l>
+                  <l n="71">Che mi conducon &per; &piu; piana <choice><orig>uia</orig><reg>via</reg></choice>&p2c;</l>
                   <l n="72">A la <choice><orig>sperança</orig><reg>speranza</reg></choice> mia<choice><orig> ‘</orig><reg>,</reg></choice> al fin <choice><orig>de gliaffanni</orig><reg>degli affanni</reg></choice><choice><orig> <g ref="#virgsusp"/></orig><reg>.</reg></choice></l>
                </lg>
                <lg type="dblvrs" corresp="#canvasline">
@@ -344,7 +344,7 @@
                   <l n="87">Chi <choice><orig>mal</orig><reg>m’à ’l</reg></choice> fianco ferito<choice><orig><g ref="#punctelevhiback"/></orig><reg>,</reg></choice> &amp7; <choice><orig>chil</orig><reg>chi ’l</reg></choice> risalda&p2c;</l>
                </lg>
                <lg type="dblvrs" corresp="#canvasline">
-                  <l n="88">Per cui nel cor <choice><orig>uia</orig><reg>via</reg></choice> <choice><orig>piu</orig><reg>più</reg></choice> <choice><orig>chen</orig><reg>che ’n</reg></choice> carta <choice><orig>scriuo</orig><reg>scrivo</reg></choice>&p2semicolon;</l>
+                  <l n="88">Per cui nel cor <choice><orig>uia</orig><reg>via</reg></choice> &piu; <choice><orig>chen</orig><reg>che ’n</reg></choice> carta <choice><orig>scriuo</orig><reg>scrivo</reg></choice>&p2semicolon;</l>
                   <l n="89">Chi mi fa morto et <choice><orig>uiuo</orig><reg>vivo</reg></choice>&p2c;</l>
                </lg>
                <lg type="single" corresp="#canvasline">
@@ -391,7 +391,7 @@
                </lg>
                <lg type="dblvrs" corresp="#canvasline">
                   <l n="7">Risplendon &si; <choice><orig>chal</orig><reg>ch’al</reg></choice> quintodecimo <choice><abbr>āno</abbr><expan>anno</expan></choice></l>
-                  <l n="8"><choice><orig>Mabbaglian</orig><reg>M’abbaglian</reg></choice> <choice><orig>piu</orig><reg>più</reg></choice> <choice><orig>chel</orig><reg>che ’l</reg></choice> primo giorno assai&p2semicolon;</l>
+                  <l n="8"><choice><orig>Mabbaglian</orig><reg>M’abbaglian</reg></choice> &piu; <choice><orig>chel</orig><reg>che ’l</reg></choice> primo giorno assai&p2semicolon;</l>
                </lg>
               </lg>
               <lg type="sestet">

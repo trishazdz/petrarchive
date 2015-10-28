@@ -184,33 +184,33 @@
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td><a href="content/c005v-c007r.xml#rvf025">25</a></td>
+          <td><a href="content/c005v-c007v.xml#rvf025">25</a></td>
           <td>5v</td>
-          <td><a href="content/c005v-c007r.xml#rvf025">Amor piangeva, et io con lui tal volta</a></td>
+          <td><a href="content/c005v-c007v.xml#rvf025">Amor piangeva, et io con lui tal volta</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td><a href="content/c005v-c007r.xml#rvf026">26</a></td>
+          <td><a href="content/c005v-c007v.xml#rvf026">26</a></td>
           <td>5v</td>
-          <td><a href="content/c005v-c007r.xml#rvf026">Più di me lieta non si vede a terra</a></td>
+          <td><a href="content/c005v-c007v.xml#rvf026">Più di me lieta non si vede a terra</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td><a href="content/c005v-c007r.xml#rvf027">27</a></td>
+          <td><a href="content/c005v-c007v.xml#rvf027">27</a></td>
           <td>5v</td>
-          <td><a href="content/c005v-c007r.xml#rvf027">Il successor di Karlo, che la chioma</a></td>
+          <td><a href="content/c005v-c007v.xml#rvf027">Il successor di Karlo, che la chioma</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td><a href="content/c005v-c007r.xml#rvf028">28</a></td>
+          <td><a href="content/c005v-c007v.xml#rvf028">28</a></td>
           <td>5v-6v</td>
-          <td><a href="content/c005v-c007r.xml#rvf028">O aspectata in ciel, beata et bella</a></td>
+          <td><a href="content/c005v-c007v.xml#rvf028">O aspectata in ciel, beata et bella</a></td>
           <td>Canzone</td>
         </tr>
         <tr>
-          <td><a href="content/c005v-c007r.xml#rvf029">29</a></td>
+          <td><a href="content/c005v-c007v.xml#rvf029">29</a></td>
           <td>6v-7r</td>
-          <td><a href="content/c005v-c007r.xml#rvf029">Verdi panni, sanguigni, oscuri o persi</a></td>
+          <td><a href="content/c005v-c007v.xml#rvf029">Verdi panni, sanguigni, oscuri o persi</a></td>
           <td>Canzone</td>
         </tr>
         <tr>

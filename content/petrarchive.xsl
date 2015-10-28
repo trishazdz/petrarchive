@@ -122,7 +122,141 @@
     </xsl:variable>
   
 <xd:doc><xd:desc>These lines get line numbers. Canzone is not regular.</xd:desc></xd:doc>
-  <xsl:template match="tei:lg[@type = 'madrigal']//tei:l[@n = '4']|tei:lg[@type = 'madrigal']//tei:l[@n = '7']|tei:lg[@type = 'ballata_mezzana']//tei:l[@n = '3']|tei:lg[@type = 'ballata_mezzana']//tei:l[@n = '8']|tei:lg[@type = 'ballata_grande']//tei:l[@n = '5']|tei:lg[@type = 'ballata_grande']//tei:l[@n = '9']|tei:lg[@type = 'sonnet']//tei:l[@n = '5']|tei:lg[@type = 'sonnet']//tei:l[@n = '9']|tei:lg[@type = 'rvf070']//tei:l[@n mod 5 = 0]|tei:lg[@type = 'canzone_15vv']//tei:l[@n = '5']|tei:lg[@type = 'canzone_15vv']//tei:l[@n = '15']|tei:lg[@type = 'canzone_15vv']//tei:l[@n = '20']|tei:lg[@type = 'canzone_15vv']//tei:l[@n = '30']|tei:lg[@type = 'canzone_15vv']//tei:l[@n = '35']|tei:lg[@type = 'canzone_15vv']//tei:l[@n = '45']|tei:lg[@type = 'canzone_15vv']//tei:l[@n = '50']|tei:lg[@type = 'canzone_15vv']//tei:l[@n = '60']|tei:lg[@type = 'canzone_15vv']//tei:l[@n = '65']|tei:lg[@type = 'canzone_15vv']//tei:l[@n = '75']|tei:lg[@type = 'canzone_15vv']//tei:l[@n = '80']|tei:lg[@type = 'canzone_15vv']//tei:l[@n = '90']|tei:lg[@type = 'canzone_15vv']//tei:l[@n = '95']|tei:lg[@type = 'canzone_15vv']//tei:l[@n = '105']|tei:lg[@type = 'canzone_15vv']//tei:l[@n = '110']|tei:lg[@type = 'canzone_20vv']//tei:l[@n = '5']|tei:lg[@type = 'canzone_20vv']//tei:l[@n = '9']|tei:lg[@type = 'canzone_20vv']//tei:l[@n = '15']|tei:lg[@type = 'canzone_20vv']//tei:l[@n = '21']|tei:lg[@type = 'canzone_20vv']//tei:l[@n = '25']|tei:lg[@type = 'canzone_20vv']//tei:l[@n = '31']|tei:lg[@type = 'canzone_20vv']//tei:l[@n = '35']|tei:lg[@type = 'canzone_20vv']//tei:l[@n = '41']|tei:lg[@type = 'canzone_20vv']//tei:l[@n = '45']|tei:lg[@type = 'canzone_20vv']//tei:l[@n = '51']|tei:lg[@type = 'canzone_20vv']//tei:l[@n = '55']|tei:lg[@type = 'canzone_20vv']//tei:l[@n = '61']|tei:lg[@type = 'canzone_20vv']//tei:l[@n = '65']|tei:lg[@type = 'canzone_20vv']//tei:l[@n = '71']|tei:lg[@type = 'canzone_20vv']//tei:l[@n = '75']|tei:lg[@type = 'canzone_20vv']//tei:l[@n = '81']|tei:lg[@type = 'canzone_20vv']//tei:l[@n = '85']|tei:lg[@type = 'canzone_20vv']//tei:l[@n = '91']|tei:lg[@type = 'canzone_20vv']//tei:l[@n = '95']|tei:lg[@type = 'canzone_20vv']//tei:l[@n = '101']|tei:lg[@type = 'canzone_20vv']//tei:l[@n = '105']|tei:lg[@type = 'canzone_20vv']//tei:l[@n = '111']|tei:lg[@type = 'canzone_20vv']//tei:l[@n = '115']|tei:lg[@type = 'canzone_20vv']//tei:l[@n = '121']|tei:lg[@type = 'canzone_20vv']//tei:l[@n = '125']|tei:lg[@type = 'canzone_20vv']//tei:l[@n = '131']|tei:lg[@type = 'canzone_20vv']//tei:l[@n = '135']|tei:lg[@type = 'canzone_20vv']//tei:l[@n = '141']|tei:lg[@type = 'canzone_20vv']//tei:l[@n = '145']|tei:lg[@type = 'canzone_20vv']//tei:l[@n = '151']|tei:lg[@type = 'canzone_20vv']//tei:l[@n = '155']|tei:lg[@type = 'canzone_20vv']//tei:l[@n = '161']|tei:lg[@type = 'canzone_20vv']//tei:l[@n = '165']">
+  
+  <!-- alternate for 7vv:
+        tei:lg[@type = 'canzone_7vv']//tei:l[@n = '5']|
+    tei:lg[@type = 'canzone_7vv']//tei:l[@n = '10']|
+    tei:lg[@type = 'canzone_7vv']//tei:l[@n = '15']|
+    tei:lg[@type = 'canzone_7vv']//tei:l[@n = '21']|
+    tei:lg[@type = 'canzone_7vv']//tei:l[@n = '26']|
+    tei:lg[@type = 'canzone_7vv']//tei:l[@n = '31']|
+    tei:lg[@type = 'canzone_7vv']//tei:l[@n = '35']|
+    tei:lg[@type = 'canzone_7vv']//tei:l[@n = '40']|
+    tei:lg[@type = 'canzone_7vv']//tei:l[@n = '45']|
+    tei:lg[@type = 'canzone_7vv']//tei:l[@n = '49']|
+    tei:lg[@type = 'canzone_7vv']//tei:l[@n = '56']|
+    tei:lg[@type = 'canzone_7vv']//tei:l[@n = '61']|
+    tei:lg[@type = 'canzone_7vv']//tei:l[@n = '66']|
+    tei:lg[@type = 'canzone_7vv']//tei:l[@n = '70']|
+    tei:lg[@type = 'canzone_7vv']//tei:l[@n = '74']|
+   -->
+  <!-- alternate for 14vv:
+    
+    tei:lg[@type = 'canzone_14vv']//tei:l[@n = '5']|
+    tei:lg[@type = 'canzone_14vv']//tei:l[@n = '10']|
+    tei:lg[@type = 'canzone_14vv']//tei:l[@n = '15']|
+    tei:lg[@type = 'canzone_14vv']//tei:l[@n = '21']|
+    tei:lg[@type = 'canzone_14vv']//tei:l[@n = '26']|
+    tei:lg[@type = 'canzone_14vv']//tei:l[@n = '31']|
+    tei:lg[@type = 'canzone_14vv']//tei:l[@n = '35']|
+    tei:lg[@type = 'canzone_14vv']//tei:l[@n = '40']|
+    tei:lg[@type = 'canzone_14vv']//tei:l[@n = '45']|
+    tei:lg[@type = 'canzone_14vv']//tei:l[@n = '49']|
+    tei:lg[@type = 'canzone_14vv']//tei:l[@n = '56']|
+    tei:lg[@type = 'canzone_14vv']//tei:l[@n = '61']|
+    tei:lg[@type = 'canzone_14vv']//tei:l[@n = '66']|
+    tei:lg[@type = 'canzone_14vv']//tei:l[@n = '70']|
+    tei:lg[@type = 'canzone_14vv']//tei:l[@n = '74']|
+    
+    -->
+  
+    <!-- alternate for 20vv:
+       tei:lg[@type = 'canzone_20vv']//tei:l[@n mod 5 = 0 and @n mod 10 != 0]|
+    -->
+  
+  <xsl:template match="tei:lg[@type = 'madrigal']//tei:l[@n = '4']|
+    tei:lg[@type = 'madrigal']//tei:l[@n = '7']|
+    tei:lg[@type = 'ballata_mezzana']//tei:l[@n = '3']|
+    tei:lg[@type = 'ballata_mezzana']//tei:l[@n = '8']|
+    tei:lg[@type = 'ballata_grande']//tei:l[@n = '5']|
+    tei:lg[@type = 'ballata_grande']//tei:l[@n = '9']|
+    tei:lg[@type = 'sonnet']//tei:l[@n = '5']|
+    tei:lg[@type = 'sonnet']//tei:l[@n = '9']|
+    
+    tei:lg[@type = 'canzone_7vv']//tei:l[@n mod 7 = 0]|
+    
+    tei:lg[@type = 'canzone_10vv']//tei:l[@n mod 5 = 0]|
+    
+    tei:lg[@type = 'canzone_14vv']//tei:l[@n mod 7 = 0]|
+    
+   
+    
+    
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '5']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '15']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '20']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '30']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '35']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '45']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '50']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '60']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '65']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '75']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '80']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '90']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '95']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '105']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '110']|
+    
+    
+    tei:lg[@type = 'canzone_16vv']//tei:l[@n = '5']|
+    tei:lg[@type = 'canzone_16vv']//tei:l[@n = '9']|
+    tei:lg[@type = 'canzone_16vv']//tei:l[@n = '15']|
+    tei:lg[@type = 'canzone_16vv']//tei:l[@n = '19']|
+    tei:lg[@type = 'canzone_16vv']//tei:l[@n = '25']|
+    tei:lg[@type = 'canzone_16vv']//tei:l[@n = '29']|
+    tei:lg[@type = 'canzone_16vv']//tei:l[@n = '35']|
+    tei:lg[@type = 'canzone_16vv']//tei:l[@n = '39']|
+    tei:lg[@type = 'canzone_16vv']//tei:l[@n = '45']|
+    tei:lg[@type = 'canzone_16vv']//tei:l[@n = '49']|
+    tei:lg[@type = 'canzone_16vv']//tei:l[@n = '55']|
+    tei:lg[@type = 'canzone_16vv']//tei:l[@n = '59']|
+    tei:lg[@type = 'canzone_16vv']//tei:l[@n = '65']|
+    tei:lg[@type = 'canzone_16vv']//tei:l[@n = '69']|
+    tei:lg[@type = 'canzone_16vv']//tei:l[@n = '75']|
+    tei:lg[@type = 'canzone_16vv']//tei:l[@n = '79']|
+    tei:lg[@type = 'canzone_16vv']//tei:l[@n = '85']|
+    tei:lg[@type = 'canzone_16vv']//tei:l[@n = '89']|
+    tei:lg[@type = 'canzone_16vv']//tei:l[@n = '95']|
+    tei:lg[@type = 'canzone_16vv']//tei:l[@n = '99']|
+    tei:lg[@type = 'canzone_16vv']//tei:l[@n = '105']|
+    tei:lg[@type = 'canzone_16vv']//tei:l[@n = '109']|
+    tei:lg[@type = 'canzone_16vv']//tei:l[@n = '115']|
+    tei:lg[@type = 'canzone_16vv']//tei:l[@n = '119']|
+    
+    tei:lg[@type = 'canzone_20vv']//tei:l[@n = '5']|
+    tei:lg[@type = 'canzone_20vv']//tei:l[@n = '9']|
+    tei:lg[@type = 'canzone_20vv']//tei:l[@n = '15']|
+    tei:lg[@type = 'canzone_20vv']//tei:l[@n = '21']|
+    tei:lg[@type = 'canzone_20vv']//tei:l[@n = '25']|
+    tei:lg[@type = 'canzone_20vv']//tei:l[@n = '31']|
+    tei:lg[@type = 'canzone_20vv']//tei:l[@n = '35']|
+    tei:lg[@type = 'canzone_20vv']//tei:l[@n = '41']|
+    tei:lg[@type = 'canzone_20vv']//tei:l[@n = '45']|
+    tei:lg[@type = 'canzone_20vv']//tei:l[@n = '51']|
+    tei:lg[@type = 'canzone_20vv']//tei:l[@n = '55']|
+    tei:lg[@type = 'canzone_20vv']//tei:l[@n = '61']|
+    tei:lg[@type = 'canzone_20vv']//tei:l[@n = '65']|
+    tei:lg[@type = 'canzone_20vv']//tei:l[@n = '71']|
+    tei:lg[@type = 'canzone_20vv']//tei:l[@n = '75']|
+    tei:lg[@type = 'canzone_20vv']//tei:l[@n = '81']|
+    tei:lg[@type = 'canzone_20vv']//tei:l[@n = '85']|
+    tei:lg[@type = 'canzone_20vv']//tei:l[@n = '91']|
+    tei:lg[@type = 'canzone_20vv']//tei:l[@n = '95']|
+    tei:lg[@type = 'canzone_20vv']//tei:l[@n = '101']|
+    tei:lg[@type = 'canzone_20vv']//tei:l[@n = '105']|
+    tei:lg[@type = 'canzone_20vv']//tei:l[@n = '111']|
+    tei:lg[@type = 'canzone_20vv']//tei:l[@n = '115']|
+    tei:lg[@type = 'canzone_20vv']//tei:l[@n = '121']|
+    tei:lg[@type = 'canzone_20vv']//tei:l[@n = '125']|
+    tei:lg[@type = 'canzone_20vv']//tei:l[@n = '131']|
+    tei:lg[@type = 'canzone_20vv']//tei:l[@n = '135']|
+    tei:lg[@type = 'canzone_20vv']//tei:l[@n = '141']|
+    tei:lg[@type = 'canzone_20vv']//tei:l[@n = '145']|
+    tei:lg[@type = 'canzone_20vv']//tei:l[@n = '151']|
+    tei:lg[@type = 'canzone_20vv']//tei:l[@n = '155']|
+    tei:lg[@type = 'canzone_20vv']//tei:l[@n = '161']|
+    tei:lg[@type = 'canzone_20vv']//tei:l[@n = '165']">
         <span class="lno"><xsl:value-of select="@n"/></span>
             <xsl:element name="{local-name()}">
                 <xsl:call-template name="addID"/>

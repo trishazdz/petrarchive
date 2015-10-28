@@ -62,7 +62,31 @@
                	<valItem ident="canzone">
                		<gloss>canzone</gloss>
               	</valItem>
+                <valItem ident="canzone_7vv">
+                  <gloss>cazone with stanzas of seven verses</gloss>
+                </valItem>
+                <valItem ident="canzone_9vv">
+                  <gloss>cazone with stanzas of nine verses</gloss>
+                </valItem>
+                <valItem ident="canzone_11vv">
+                  <gloss>cazone with stanzas of eleven verses</gloss>
+                </valItem>
+                <valItem ident="canzone_12vv">
+                  <gloss>cazone with stanzas of twelve verses</gloss>
+                </valItem>
+                <valItem ident="canzone_13vv">
+                  <gloss>cazone with stanzas of thirteen verses</gloss>
+                </valItem>
+                <valItem ident="canzone_14vv">
+                  <gloss>cazone with stanzas of fourteen verses</gloss>
+                </valItem>
                 <valItem ident="canzone_15vv">
+                  <gloss>cazone with stanzas of fifteen verses</gloss>
+                </valItem>
+                <valItem ident="canzone_16vv">
+                  <gloss>cazone with stanzas of sixteen verses</gloss>
+                </valItem>
+                <valItem ident="canzone_18vv">
                   <gloss>cazone with stanzas of fifteen verses</gloss>
                 </valItem>
                 <valItem ident="canzone_20vv">

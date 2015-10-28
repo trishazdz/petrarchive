@@ -538,7 +538,7 @@ the line wraps. -->
               </lg>
             </lg>
             <space corresp="#canvasline"/>
-            <lg xml:id="rvf070" type="canzone" n="70">
+            <lg xml:id="rvf070" type="canzone_10vv" n="70">
               <lg type="stanza">
                 <lg type="dblvrs" corresp="#canvasline">
                     <l n="1"><hi rendition="#red #fs24pt">L</hi><hi rendition="#small-caps">a</hi>sso me&p2e; <choice><orig>chi</orig><reg>ch’i’</reg></choice> &non; so &in; qual parte pieghi</l>

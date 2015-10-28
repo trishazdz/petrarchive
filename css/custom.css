@@ -673,6 +673,14 @@ ul > li:before {
   content: "–\00A0\00A0";
 }
 
+/* shows all line numbers, for debugging */
+/*
+l:before {
+content:attr(n);
+font-weight:bold;
+color:red;
+}
+*/
 /* line 276, ../sass/screen.scss */
 nav img {
   position: relative;

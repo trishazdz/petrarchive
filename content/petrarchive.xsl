@@ -197,6 +197,12 @@
     tei:lg[@type = 'canzone_15vv']//tei:l[@n = '95']|
     tei:lg[@type = 'canzone_15vv']//tei:l[@n = '105']|
     tei:lg[@type = 'canzone_15vv']//tei:l[@n = '110']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '120']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '125']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '135']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '140']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '150']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '155']|
     
     
     tei:lg[@type = 'canzone_16vv']//tei:l[@n = '5']|

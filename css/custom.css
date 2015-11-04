@@ -29,13 +29,14 @@ ol, ul {
   list-style: none;
 }
 
-fw {
+fw[type = "catch"] {
   width:10%;
   display:block;
   position:relative; 
   left:-200px; 
  /* border:dotted black 1px; */ 
   padding:.5em;
+  margin-top:10em;
 }
 
 /* line 25, ../sass/_meyer-reset.scss */
@@ -625,6 +626,40 @@ lg[id='rvf105'] l[n='81'] {
   position: relative;
   left: -50px;
 }
+
+ab[type= 'diplomatic'] lg[type='canzone_15vv'] l[n='5'],
+ab[type= 'diplomatic'] lg[type='canzone_15vv'] l[n='6'],
+ab[type= 'diplomatic'] lg[type='canzone_15vv'] l[n='15'],
+ab[type= 'diplomatic'] lg[type='canzone_15vv'] l[n='20'],
+ab[type= 'diplomatic'] lg[type='canzone_15vv'] l[n='21'],
+ab[type= 'diplomatic'] lg[type='canzone_15vv'] l[n='30'],
+ab[type= 'diplomatic'] lg[type='canzone_15vv'] l[n='35'],
+ab[type= 'diplomatic'] lg[type='canzone_15vv'] l[n='36'],
+ab[type= 'diplomatic'] lg[type='canzone_15vv'] l[n='45'],
+ab[type= 'diplomatic'] lg[type='canzone_15vv'] l[n='50'],
+ab[type= 'diplomatic'] lg[type='canzone_15vv'] l[n='51'],
+ab[type= 'diplomatic'] lg[type='canzone_15vv'] l[n='60'],
+ab[type= 'diplomatic'] lg[type='canzone_15vv'] l[n='65'],
+ab[type= 'diplomatic'] lg[type='canzone_15vv'] l[n='66'],
+ab[type= 'diplomatic'] lg[type='canzone_15vv'] l[n='75'],
+ab[type= 'diplomatic'] lg[type='canzone_15vv'] l[n='80'],
+ab[type= 'diplomatic'] lg[type='canzone_15vv'] l[n='81'],
+ab[type= 'diplomatic'] lg[type='canzone_15vv'] l[n='90'],
+ab[type= 'diplomatic'] lg[type='canzone_15vv'] l[n='95'],
+ab[type= 'diplomatic'] lg[type='canzone_15vv'] l[n='96'],
+ab[type= 'diplomatic'] lg[type='canzone_15vv'] l[n='105'],
+ab[type= 'diplomatic'] lg[type='canzone_15vv'] l[n='110'],
+ab[type= 'diplomatic'] lg[type='canzone_15vv'] l[n='111'] 
+{
+  position: static;
+  left: 0;
+}
+/*
+lg[id='rvf360'] ab[type='diplomatic'] l[n='81'] {
+  position: relative;
+  left: -50px;
+}
+*/
 /* rvf360 start */
 #rvf360v {
   display: none;

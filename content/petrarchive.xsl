@@ -291,6 +291,36 @@
     tei:lg[@xml:id = 'rvf360']//tei:l[@n = '55']|
     tei:lg[@xml:id = 'rvf360']//tei:l[@n = '58']|
     tei:lg[@xml:id = 'rvf360']//tei:l[@n = '61']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '64']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '67']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '70']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '73']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '76']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '79']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '82']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '85']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '88']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '91']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '94']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '97']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '100']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '103']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '106']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '109']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '112']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '115']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '118']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '121']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '124']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '127']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '130']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '133']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '136']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '139']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '142']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '145']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '148']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '151']|
     tei:lg[@xml:id = 'rvf360']//tei:l[@n = '154']|
     tei:lg[@xml:id = 'rvf360']//tei:l[@n = '157']" priority="80">
     <!-- Isabella: continue with line numbers above. -->

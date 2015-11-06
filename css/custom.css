@@ -390,7 +390,6 @@ span.lno {
 }
 /* For rubrication? */
 lg[type='octave'] > lg[type='dblvrs']:first-of-type,
-lg[type='trplvrs']:first-of-type,
 lg[type='sestina'] l[n='1'],
 lg[type='sestina'] l[n='7'],
 lg[type='sestina'] l[n='13'],
@@ -627,6 +626,11 @@ lg[id='rvf105'] l[n='81'] {
   left: -50px;
 }
 
+lg[id='rvf360'] l{
+  position: relative !important;
+  left: -50px  !important;
+}
+
 ab[type= 'diplomatic'] lg[type='canzone_15vv'] l[n='5'],
 ab[type= 'diplomatic'] lg[type='canzone_15vv'] l[n='6'],
 ab[type= 'diplomatic'] lg[type='canzone_15vv'] l[n='15'],
@@ -664,6 +668,9 @@ lg[id='rvf360'] ab[type='diplomatic'] l[n='81'] {
 #rvf360v {
   display: none;
 }
+lg[id='rvf360'] l[n='1'],
+lg[id='rvf360'] l[n='2'],
+lg[id='rvf360'] l[n='3'],
 lg[id='rvf360'] l[n='16'],
 lg[id='rvf360'] l[n='17'],
 lg[id='rvf360'] l[n='18'],
@@ -695,7 +702,7 @@ lg[id='rvf360'] l[n='151'],
 lg[id='rvf360'] l[n='152'],
 lg[id='rvf360'] l[n='153'] {
   position: relative !important;
-  left: -0.8em !important;
+  left: -3.5em !important;
   margin-top: 0 !important;
 }
 lg[id='rvf360'] {
@@ -726,7 +733,9 @@ lg[id='rvf360'] l[n='149'] + span.lno,
 lg[id='rvf360'] l[n='154'] + span.lno {
   display: none;
 }
-lg[id='rvf360'] l[n='5'],
+
+/* fixes line alignment for rvf360 dipl */
+/*lg[id='rvf360'] l[n='5'],
 lg[id='rvf360'] l[n='6'],
 lg[id='rvf360'] l[n='7'],
 lg[id='rvf360'] l[n='15'],
@@ -734,10 +743,9 @@ lg[id='rvf360'] l[n='20'],
 lg[id='rvf360'] l[n='21'],
 lg[id='rvf360'] l[n='30'],
 lg[id='rvf360'] l[n='45'] {
-  /* fixes line alignment for rvf360 dipl */
-
   position: static !important;
-}
+}*/
+
 /* rfv360 end */
 /* deletions are indicated with an underdot. We don't want the strikethrough. */
 del {

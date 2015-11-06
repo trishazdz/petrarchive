@@ -11,7 +11,7 @@
     xmlns="http://www.w3.org/1999/xhtml" 
     exclude-result-prefixes="xsl tei xd eg fn #default">
     <xsl:import href="teibp.xsl"/>
-       <xsl:output method="xml" encoding="utf-8" version="" indent="yes" standalone="no" media-type="text/html" omit-xml-declaration="no" doctype-system="about:legacy-compat" /> 
+       <xsl:output method="xml" encoding="utf-8" version="1.0" indent="yes" standalone="no" media-type="text/html" omit-xml-declaration="no" doctype-system="about:legacy-compat" /> 
     <xsl:param name="pbNote" select="''"/>
     
     <xsl:param name="customCSS.norm" select="concat($filePrefix,'/css/custom_norm.css')"/>
@@ -269,7 +269,77 @@
                 <xsl:apply-templates select="@*|node()"/>
             </xsl:element>
     </xsl:template>
-    
+  
+  <xsl:template match="tei:lg[@xml:id = 'rvf360']//tei:l[@n = '1']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '4']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '7']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '10']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '13']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '16']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '19']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '22']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '25']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '28']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '31']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '34']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '37']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '40']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '43']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '46']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '49']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '52']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '55']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '58']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '61']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '154']|
+    tei:lg[@xml:id = 'rvf360']//tei:l[@n = '157']" priority="80">
+    <span class="lno"><xsl:value-of select="@n"/></span>
+  <xsl:element name="{local-name()}">
+    <xsl:call-template name="addID"/>
+    <xsl:apply-templates select="@*|node()"/>
+  </xsl:element>
+  </xsl:template>
+  
+  <xsl:template match="tei:lg[@type = 'canzone_15vv']//tei:l[@n = '5']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '15']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '20']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '30']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '35']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '45']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '50']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '60']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '65']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '75']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '80']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '90']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '95']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '105']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '110']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '120']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '125']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '135']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '140']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '150']|
+    tei:lg[@type = 'canzone_15vv']//tei:l[@n = '155']" mode="rvf360v">
+    <span class="lno"><xsl:value-of select="@n"/></span>
+    <xsl:element name="{local-name()}">
+      <xsl:call-template name="addID"/>
+      <xsl:apply-templates select="@*|node()"/>
+    </xsl:element>
+  </xsl:template>
+  
+  <xsl:template match="*" mode="rvf360v"> 
+    <xsl:element name="{local-name()}">
+      <xsl:call-template name="addID"/>
+      <xsl:apply-templates select="@*|node()"/>
+    </xsl:element>
+  </xsl:template>
+  
+  <xsl:template match="//tei:lg[@xml:id = 'rvf360v']//tei:l[@sameAs]" priority="99">
+    <xsl:param name="sameAs" select="substring-after(@sameAs,'#')"/>
+    <xsl:apply-templates select="//*[@xml:id = $sameAs]" mode="rvf360v"/>
+  </xsl:template>
+  
     <xsl:template match="*[@sameAs]">
         <xsl:param name="sameAs" select="substring-after(@sameAs,'#')"/>
         <xsl:apply-templates select="//*[@xml:id = $sameAs]"/>

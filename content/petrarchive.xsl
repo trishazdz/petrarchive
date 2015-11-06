@@ -293,6 +293,7 @@
     tei:lg[@xml:id = 'rvf360']//tei:l[@n = '61']|
     tei:lg[@xml:id = 'rvf360']//tei:l[@n = '154']|
     tei:lg[@xml:id = 'rvf360']//tei:l[@n = '157']" priority="80">
+    <!-- Isabella: continue with line numbers above. -->
     <span class="lno"><xsl:value-of select="@n"/></span>
   <xsl:element name="{local-name()}">
     <xsl:call-template name="addID"/>

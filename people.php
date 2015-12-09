@@ -36,11 +36,15 @@ Twitter: <a href="https://twitter.com/jawalsh">@jawalsh</a><br />-->
 </dl>
 <dl>
 <dt>Sara Dallavalle, Encoder <!-- 2014-present --></dt><dd />
-<dt>Allison M. McCormack, Encoder (2013-14)</dt><dd />
+
 <dt>Grace Thomas, Encoder <!-- 2014-present --></dt><dd />
 </dl>
 <dl>
-<dt>Laura Pence, Designer <!-- 2014-present --></dt><dd />
+<dt>Laura Pence, Visual Index Designer <!-- 2014-present --></dt><dd />
+</dl>
+<h2>Past Contributors</h2>
+<dl>
+<dt>Allison M. McCormack, Encoder (2013-14)</dt><dd />
 </dl>
 </div>
 <?php include("footer.html"); ?>

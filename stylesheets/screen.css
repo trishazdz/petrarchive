@@ -425,7 +425,7 @@ a:hover {
 /* line 298, ../sass/screen.scss */
 th {
   text-align: left;
-  line-height: .8;
+  line-height: 1;
 }
 
 /* line 299, ../sass/screen.scss */
@@ -473,4 +473,14 @@ th .span {
 /* line 330, ../sass/screen.scss */
 strong {
   font-weight: 500;
+}
+
+
+table.sortable th {
+  text-decoration: none;
+  color: #9b181e;
+}
+
+table.sortable th:hover {
+  text-decoration: underline;
 }

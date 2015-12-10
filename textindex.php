@@ -14,7 +14,7 @@
     }
 //-->
 </script>
-<script type="text/javascript" src="js/sortable/sortable.js"><!-- --></script>
+<script type="text/javascript" src="js/sortable/sorttable.js"><!-- --></script>
     <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
     
     <link type="text/css" rel="subresource" href="js/sortable/example.css" />
@@ -599,27 +599,27 @@
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td><a href="content/c021r.xml#rvf094">94</td>
+          <td><a href="content/c021r.xml#rvf094">94</a></td>
           <td>21r</td>
-          <td><a href="content/c021r.xml#rvf094">Quando giugne per gli occhi al cor profondo</td>
+          <td><a href="content/c021r.xml#rvf094">Quando giugne per gli occhi al cor profondo</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td><a href="content/c021r.xml#rvf095">95</td>
+          <td><a href="content/c021r.xml#rvf095">95</a></td>
           <td>21r</td>
-          <td><a href="content/c021r.xml#rvf095">Così potess’io ben chiudere in versi</td>
+          <td><a href="content/c021r.xml#rvf095">Così potess’io ben chiudere in versi</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td><a href="content/c021r.xml#rvf096">96</td>
+          <td><a href="content/c021r.xml#rvf096">96</a></td>
           <td>21r</td>
-          <td><a href="content/c021r.xml#rvf096">Io son de l’aspectar omai sì vinto</td>
+          <td><a href="content/c021r.xml#rvf096">Io son de l’aspectar omai sì vinto</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
-          <td><a href="content/c021r.xml#rvf097">97</td>
+          <td><a href="content/c021r.xml#rvf097">97</a></td>
           <td>21r</td>
-          <td><a href="content/c021r.xml#rvf097">Ai! bella libertà, come tu m’ài</td>
+          <td><a href="content/c021r.xml#rvf097">Ai! bella libertà, come tu m’ài</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>

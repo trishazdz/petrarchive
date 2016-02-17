@@ -212,22 +212,22 @@ sorttable = {
       return node.getAttribute("sorttable_customkey");
     }
     else if (typeof node.textContent != 'undefined' && !hasInputs) {
-      return node.textContent.replace(/^\s+|\s+$/g, '');
+      return node.textContent.replace(/\W/g, '');
     }
     else if (typeof node.innerText != 'undefined' && !hasInputs) {
-      return node.innerText.replace(/^\s+|\s+$/g, '');
+      return node.innerText.replace(/\W/g, '');
     }
     else if (typeof node.text != 'undefined' && !hasInputs) {
-      return node.text.replace(/^\s+|\s+$/g, '');
+      return node.text.replace(/\W/g, '');
     }
     else {
       switch (node.nodeType) {
         case 3:
           if (node.nodeName.toLowerCase() == 'input') {
-            return node.value.replace(/^\s+|\s+$/g, '');
+            return node.value.replace(/\W/g, '');
           }
         case 4:
-          return node.nodeValue.replace(/^\s+|\s+$/g, '');
+          return node.nodeValue.replace(/\W/g, '');
           break;
         case 1:
         case 11:
@@ -235,7 +235,7 @@ sorttable = {
           for (var i = 0; i < node.childNodes.length; i++) {
             innerText += sorttable.getInnerText(node.childNodes[i]);
           }
-          return innerText.replace(/^\s+|\s+$/g, '');
+          return innerText.replace(/\W/g, '');
           break;
         default:
           return '';
@@ -333,6 +333,8 @@ sorttable = {
     } // while(swap)
   }
 }
+
+
 
 /* ******************************************************************
    Supporting functions: bundled here to avoid depending on a library

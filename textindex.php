@@ -3,7 +3,10 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Petrarchive: No., first line, and genre index</title>
-	    <script type="text/javascript">
+	    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	    <script>
+	    
 <!--
     function toggle_visibility(id) {
        var e = document.getElementById(id);
@@ -12,6 +15,17 @@
        else
           e.style.display = 'block';
     }
+
+    function scrollToAnchor(anchor){
+    
+    
+    $('html,body').animate({
+            scrollTop: $("#" + anchor).offset().top
+        }, 800);
+  return false;
+}
+
+
 //-->
 </script>
 <script type="text/javascript" src="js/sortable/sorttable.js"><!-- --></script>
@@ -25,6 +39,10 @@
 
 <div id="content">
 <h1>Poem number, charta number, first line, and genre index</h1>
+
+<p><a href="#" onclick="scrollToAnchor('A')">A</a> | <a href="#" onclick="scrollToAnchor('B')">B</a> | <a href="#" onclick="scrollToAnchor('C')">C</a> | <a href="#" onclick="scrollToAnchor('D')">D</a> | <a href="#" onclick="scrollToAnchor('E')">E</a> | <a href="#" onclick="scrollToAnchor('F')">F</a> | <a href="#" onclick="scrollToAnchor('G')">G</a> | H | <a href="#" onclick="scrollToAnchor('I')">I</a> | J | K | <a href="#" onclick="scrollToAnchor('L')">L</a> | <a href="#" onclick="scrollToAnchor('M')">M</a> | <a href="#" onclick="scrollToAnchor('N')">N</a> | <a href="#" onclick="scrollToAnchor('O')">O</a> | <a href="#" onclick="scrollToAnchor('P')">P</a> | <a href="#" onclick="scrollToAnchor('Q')">Q</a> | <a href="#" onclick="scrollToAnchor('R')">R</a> | <a href="#" onclick="scrollToAnchor('S')">S</a> | <a href="#" onclick="scrollToAnchor('T')">T</a> | <a href="#" onclick="scrollToAnchor('U')">U</a> | <a href="#" onclick="scrollToAnchor('V')">V</a> | W | X | Y | <a href="#" onclick="scrollToAnchor('Z')">Z</a></p>
+
+
 <p class="help">Select the column headings to sort by number, first line, or genre.</p>
 <!-- number, first line index. -->
     <table id="index" class="sortable">
@@ -204,7 +222,7 @@
         <tr>
           <td><a href="content/c005v-c007r.xml#rvf028">28</a></td>
           <td>5v-6v</td>
-          <td><a href="content/c005v-c007r.xml#rvf028">O aspectata in ciel, beata et bella</a></td>
+          <td id="O"><a href="content/c005v-c007r.xml#rvf028">O aspectata in ciel, beata et bella</a></td>
           <td>Canzone</td>
         </tr>
         <tr>
@@ -468,7 +486,7 @@
         <tr>
           <td><a href="content/c016v-c018v.xml#rvf072">72</a></td>
           <td>16v-17r</td>
-          <td><a href="content/c016v-c018v.xml#rvf072">Gentil mia donna, i’ veggio</a></td>
+          <td id="G"><a href="content/c016v-c018v.xml#rvf072">Gentil mia donna, i’ veggio</a></td>
           <td>Canzone</td>
         </tr>
         <tr>
@@ -487,7 +505,7 @@
         <tr>
           <td><a href="content/c016v-c018v.xml#rvf075">75</a></td>
           <td>18r</td>
-          <td><a href="content/c016v-c018v.xml#rvf075">I begli occhi ond’i’ fui percosso in guisa</a></td>
+          <td id="I"><a href="content/c016v-c018v.xml#rvf075">I begli occhi ond’i’ fui percosso in guisa</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
@@ -511,7 +529,7 @@
         <tr>
           <td><a href="content/c016v-c018v.xml#rvf079">79</a></td>
           <td>18v</td>
-          <td><a href="content/c016v-c018v.xml#rvf079">S’al principio risponde il fine e ’l mezzo</a></td>
+          <td id="S"><a href="content/c016v-c018v.xml#rvf079">S’al principio risponde il fine e ’l mezzo</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
@@ -583,7 +601,7 @@
         <tr>
           <td><a href="content/c020v.xml#rvf091">91</a></td>
           <td>20v</td>
-          <td><a href="content/c020v.xml#rvf091">La bella donna che cotanto amavi</a></td>
+          <td id="L"><a href="content/c020v.xml#rvf091">La bella donna che cotanto amavi</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
@@ -619,7 +637,7 @@
         <tr>
           <td><a href="content/c021r.xml#rvf097">97</a></td>
           <td>21r</td>
-          <td><a href="content/c021r.xml#rvf097">Ai! bella libertà, come tu m’ài</a></td>
+          <td id="A"><a href="content/c021r.xml#rvf097">Ai! bella libertà, come tu m’ài</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>
@@ -847,7 +865,7 @@
         <tr>
           <td>134</td>
           <td>30v</td>
-          <td>Pace non trovo, et non ò da far guerra.</td>
+          <td id="P">Pace non trovo, et non ò da far guerra.</td>
           <td>Sonnet</td>
         </tr>
         <tr>
@@ -907,7 +925,7 @@
         <tr>
           <td>144</td>
           <td>32v</td>
-          <td>Né così bello il sol giamai levarsi</td>
+          <td id="N">Né così bello il sol giamai levarsi</td>
           <td>Sonnet</td>
         </tr>
         <tr>
@@ -1183,7 +1201,7 @@
         <tr>
           <td>190</td>
           <td>38v</td>
-          <td>Una candida cerva sopra l’erba</td>
+          <td id="U">Una candida cerva sopra l’erba</td>
           <td>Sonnet</td>
         </tr>
         <tr>
@@ -1291,7 +1309,7 @@
         <tr>
           <td>208</td>
           <td>41v</td>
-          <td>Rapido fiume che d’alpestra vena</td>
+          <td id="R">Rapido fiume che d’alpestra vena</td>
           <td>Sonnet</td>
         </tr>
         <tr>
@@ -1315,7 +1333,7 @@
         <tr>
           <td>212</td>
           <td>42r</td>
-          <td>Beato in sogno et di languir contento</td>
+          <td id="B">Beato in sogno et di languir contento</td>
           <td>Sonnet</td>
         </tr>
         <tr>
@@ -1417,7 +1435,7 @@
         <tr>
           <td>229</td>
           <td>44v</td>
-          <td>Cantai, or piango, et non men di dolcezza</td>
+          <td id="C">Cantai, or piango, et non men di dolcezza</td>
           <td>Sonnet</td>
         </tr>
         <tr>
@@ -1579,7 +1597,7 @@
         <tr>
           <td>256</td>
           <td>48v</td>
-          <td>Far potess’io vendetta di colei</td>
+          <td id="F">Far potess’io vendetta di colei</td>
           <td>Sonnet</td>
         </tr>
         <tr>
@@ -1609,7 +1627,7 @@
         <tr>
           <td>261</td>
           <td>49r</td>
-          <td>Qual donna attende a gloriosa fama</td>
+          <td id="Q">Qual donna attende a gloriosa fama</td>
           <td>Sonnet</td>
         </tr>
         <tr>
@@ -1724,7 +1742,7 @@
         <tr>
           <td>280</td>
           <td>57r</td>
-          <td>Mai non fui in parte ove sì chiar vedessi</td>
+          <td id="M">Mai non fui in parte ove sì chiar vedessi</td>
           <td>Sonnet</td>
         </tr>
         <tr>
@@ -1904,7 +1922,7 @@
         <tr>
           <td>310</td>
           <td>61r</td>
-          <td>Zephiro torna, e ’l bel tempo rimena</td>
+          <td id="Z">Zephiro torna, e ’l bel tempo rimena</td>
           <td>Sonnet</td>
         </tr>
         <tr>
@@ -1994,7 +2012,7 @@
         <tr>
           <td>325</td>
           <td>63v-64r</td>
-          <td>Tacer non posso, et temo non adopre</td>
+          <td id="T">Tacer non posso, et temo non adopre</td>
           <td>Canzone</td>
         </tr>
         <tr>
@@ -2146,13 +2164,13 @@
         <tr>
           <td>350</td>
           <td>68r</td>
-          <td>Da’ più belli occhi, et dal più chiaro viso</td>
+          <td id="D">Da’ più belli occhi, et dal più chiaro viso</td>
           <td>Sonnet</td>
         </tr>
         <tr>
           <td>351</td>
           <td>68v</td>
-          <td>E’ mi par d’or in hora udire il messo</td>
+          <td id="E">E’ mi par d’or in hora udire il messo</td>
           <td>Sonnet</td>
         </tr>
         <tr>
@@ -2236,7 +2254,7 @@
         <tr>
           <td>365</td>
           <td>71r</td>
-          <td>Vago augelletto che cantando vai</td>
+          <td id="V">Vago augelletto che cantando vai</td>
           <td>Sonnet</td>
         </tr>
         <tr>

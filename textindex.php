@@ -17,15 +17,23 @@
     }
 
     function scrollToAnchor(anchor){
-    
-    
-    $('html,body').animate({
+        eventFire(document.getElementsByTagName('th')[2], 'click');
+    	$('html,body').animate({
             scrollTop: $("#" + anchor).offset().top
         }, 800);
-  return false;
-}
 
+  		return false;
+		}
 
+	function eventFire(el, etype){
+  		if (el.fireEvent) {
+   		 el.fireEvent('on' + etype);
+  		} else {
+    		var evObj = document.createEvent('Events');
+    		evObj.initEvent(etype, true, false);
+    		el.dispatchEvent(evObj);
+  			}
+		}
 //-->
 </script>
 <script type="text/javascript" src="js/sortable/sorttable.js"><!-- --></script>

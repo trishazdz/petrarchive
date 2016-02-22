@@ -22,9 +22,9 @@
 
 <div id="content">
 <h1>Acknowledgments</h1>
-<p><cite>Petr<span style="font-style:normal;">archive</span></cite> has received generous funding and support from the <a href="http://neh.gov/">National Endowment for the Humanities</a> and from <a href="http://www.indiana.edu/">Indiana University-Bloomington</a> through the <a href="">Indiana University New Frontiers in the Arts and Humanities</a> program, the <a href="">Department of French and Italian</a>, and the <a href="">Department of Information and Library Science</a>.</p>
+<p><cite><span style="font-style:normal;">Petr</span>archive</cite> has received generous funding and support from the <a href="http://neh.gov/">National Endowment for the Humanities</a> and from <a href="http://www.indiana.edu/">Indiana University-Bloomington</a> through the <a href="">Indiana University New Frontiers in the Arts and Humanities</a> program, the <a href="">Department of French and Italian</a>, and the <a href="">Department of Information and Library Science</a>.</p>
 <p>
-The <cite>Petr<span style="font-style:normal;">archive</span></cite> technical infrastructure is powered by <a href="http://teiboilerplate.org/">TEI Boilerplate</a>.
+The <cite><span style="font-style:normal;">Petr</span>archive</cite> technical infrastructure is powered by <a href="http://teiboilerplate.org/">TEI Boilerplate</a>.
 </p>
 </div>
 <?php include("footer.html")?>

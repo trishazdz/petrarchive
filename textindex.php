@@ -240,15 +240,15 @@
           <td>Canzone</td>
         </tr>
         <tr>
-          <td>30</td>
+          <td><a href="content/c007v.xml#rvf030">30</a></td>
           <td>7v</td>
-          <td>Giovane donna sotto un verde lauro</td>
+          <td><a href="content/c007v.xml#rvf030">Giovane donna sotto un verde lauro</a></td>
           <td>Sestina</td>
         </tr>
         <tr>
-          <td>31</td>
+          <td><a href="content/c007v.xml#rvf031">31</a></td>
           <td>7v</td>
-          <td>Questa anima gentile che si diparte,</td>
+          <td><a href="content/c007v.xml#rvf031">Questa anima gentile che si diparte,</a></td>
           <td>Sonnet</td>
         </tr>
         <tr>

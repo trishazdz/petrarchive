@@ -21,7 +21,6 @@
     	$('html,body').animate({
             scrollTop: $("#" + anchor).offset().top
         }, 800);
-
   		return false;
 		}
 

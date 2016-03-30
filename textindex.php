@@ -48,7 +48,7 @@
 <div id="content">
 <h1>Poem number, charta number, first line, and genre index</h1>
 
-<p><a href="#" onclick="scrollToAnchor('A')">A</a> | <a href="#" onclick="scrollToAnchor('B')">B</a> | <a href="#" onclick="scrollToAnchor('C')">C</a> | <a href="#" onclick="scrollToAnchor('D')">D</a> | <a href="#" onclick="scrollToAnchor('E')">E</a> | <a href="#" onclick="scrollToAnchor('F')">F</a> | <a href="#" onclick="scrollToAnchor('G')">G</a> | H | <a href="#" onclick="scrollToAnchor('I')">I</a> | J | K | <a href="#" onclick="scrollToAnchor('L')">L</a> | <a href="#" onclick="scrollToAnchor('M')">M</a> | <a href="#" onclick="scrollToAnchor('N')">N</a> | <a href="#" onclick="scrollToAnchor('O')">O</a> | <a href="#" onclick="scrollToAnchor('P')">P</a> | <a href="#" onclick="scrollToAnchor('Q')">Q</a> | <a href="#" onclick="scrollToAnchor('R')">R</a> | <a href="#" onclick="scrollToAnchor('S')">S</a> | <a href="#" onclick="scrollToAnchor('T')">T</a> | <a href="#" onclick="scrollToAnchor('U')">U</a> | <a href="#" onclick="scrollToAnchor('V')">V</a> | W | X | Y | <a href="#" onclick="scrollToAnchor('Z')">Z</a></p>
+<p style="font-family:'helvetica neue', helvetica, verdana, arial, sans-serif;font-weight:100;"><a href="#" onclick="scrollToAnchor('A')">A</a> | <a href="#" onclick="scrollToAnchor('B')">B</a> | <a href="#" onclick="scrollToAnchor('C')">C</a> | <a href="#" onclick="scrollToAnchor('D')">D</a> | <a href="#" onclick="scrollToAnchor('E')">E</a> | <a href="#" onclick="scrollToAnchor('F')">F</a> | <a href="#" onclick="scrollToAnchor('G')">G</a> | H | <a href="#" onclick="scrollToAnchor('I')">I</a> | J | K | <a href="#" onclick="scrollToAnchor('L')">L</a> | <a href="#" onclick="scrollToAnchor('M')">M</a> | <a href="#" onclick="scrollToAnchor('N')">N</a> | <a href="#" onclick="scrollToAnchor('O')">O</a> | <a href="#" onclick="scrollToAnchor('P')">P</a> | <a href="#" onclick="scrollToAnchor('Q')">Q</a> | <a href="#" onclick="scrollToAnchor('R')">R</a> | <a href="#" onclick="scrollToAnchor('S')">S</a> | <a href="#" onclick="scrollToAnchor('T')">T</a> | <a href="#" onclick="scrollToAnchor('U')">U</a> | <a href="#" onclick="scrollToAnchor('V')">V</a> | W | X | Y | <a href="#" onclick="scrollToAnchor('Z')">Z</a></p>
 
 
 <p class="help">Select the column headings to sort by number, first line, or genre.</p>
@@ -58,7 +58,7 @@
         <tr>
           <th>Poem No.<br />
           <span style="font-size:10pt;">Vatican Latino 3195</span></th>
-          <th>Charta No.</th>
+          <th class="sorttable_nosort" style="color:black;">Charta No.</th>
           <th>First line</th>
           <th>Genre</th>
         </tr>

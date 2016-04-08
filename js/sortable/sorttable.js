@@ -203,6 +203,9 @@ sorttable = {
     // for example, you can override the cell text with a customkey attribute.
     // it also gets .value for <input> fields.
 
+      
+        
+    var dict = {"à":"a", "è":"e", "È":"E","é":"e", "ì":"i", "ò":"o", "ù":"u"}
     if (!node) return "";
 
     hasInputs = (typeof node.getElementsByTagName == 'function') &&
@@ -212,22 +215,32 @@ sorttable = {
       return node.getAttribute("sorttable_customkey");
     }
     else if (typeof node.textContent != 'undefined' && !hasInputs) {
-      return node.textContent.replace(/\W/g, '');
+      return node.textContent.replace(/à|è|È|é|ì|ò|ù/gi, function(matched){
+  return dict[matched];
+}).replace(/\W/g, '');
     }
     else if (typeof node.innerText != 'undefined' && !hasInputs) {
-      return node.innerText.replace(/\W/g, '');
+      return node.innerText.replace(/à|è|È|é|ì|ò|ù/gi, function(matched){
+  return dict[matched];
+}).replace(/\W/g, '');
     }
     else if (typeof node.text != 'undefined' && !hasInputs) {
-      return node.text.replace(/\W/g, '');
+      return node.text.replace(/à|è|È|é|ì|ò|ù/gi, function(matched){
+  return dict[matched];
+}).replace(/\W/g, '');
     }
     else {
       switch (node.nodeType) {
         case 3:
           if (node.nodeName.toLowerCase() == 'input') {
-            return node.value.replace(/\W/g, '');
+            return node.value.replace(/à|è|È|é|ì|ò|ù/gi, function(matched){
+  return dict[matched];
+}).replace(/\W/g, '');
           }
         case 4:
-          return node.nodeValue.replace(/\W/g, '');
+          return node.nodeValue.replace(/à|è|È|é|ì|ò|ù/gi, function(matched){
+  return dict[matched];
+}).replace(/\W/g, '');
           break;
         case 1:
         case 11:
@@ -235,7 +248,9 @@ sorttable = {
           for (var i = 0; i < node.childNodes.length; i++) {
             innerText += sorttable.getInnerText(node.childNodes[i]);
           }
-          return innerText.replace(/\W/g, '');
+          return innerText.replace(/à|è|È|é|ì|ò|ù/gi, function(matched){
+  return dict[matched];
+}).replace(/\W/g, '');
           break;
         default:
           return '';

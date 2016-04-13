@@ -516,15 +516,15 @@
                     <td>Madrigal</td>
                 </tr>
                 <tr>
-                    <td>53</td>
+                    <td><a href="content/c012v.xml#rvf053">53</a></td>
                     <td>12r-12v</td>
-                    <td>Spirto gentil, che quelle membra reggi</td>
+                    <td><a href="content/c012v.xml#rvf053">Spirto gentil, che quelle membra reggi</a></td>
                     <td>Canzone</td>
                 </tr>
                 <tr>
-                    <td>54</td>
+                    <td><a href="content/c012v.xml#rvf054">54</a></td>
                     <td>12v</td>
-                    <td>Perch’al viso d’Amor portava insegna</td>
+                    <td><a href="content/c012v.xml#rvf054">Perch’al viso d’Amor portava insegna</a></td>
                     <td>Madrigal</td>
                 </tr>
                 <tr>

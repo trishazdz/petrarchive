@@ -516,15 +516,15 @@
                     <td>Madrigal</td>
                 </tr>
                 <tr>
-                    <td><a href="content/c012v.xml#rvf053">53</a></td>
+                    <td><a href="content/c012r-c012v.xml#rvf053">53</a></td>
                     <td>12r-12v</td>
-                    <td><a href="content/c012v.xml#rvf053">Spirto gentil, che quelle membra reggi</a></td>
+                    <td><a href="content/c012r-c012v.xml#rvf053">Spirto gentil, che quelle membra reggi</a></td>
                     <td>Canzone</td>
                 </tr>
                 <tr>
-                    <td><a href="content/c012v.xml#rvf054">54</a></td>
+                    <td><a href="content/c012r-c012v.xml#rvf054">54</a></td>
                     <td>12v</td>
-                    <td><a href="content/c012v.xml#rvf054">Perch’al viso d’Amor portava insegna</a></td>
+                    <td><a href="content/c012r-c012v.xml#rvf054">Perch’al viso d’Amor portava insegna</a></td>
                     <td>Madrigal</td>
                 </tr>
                 <tr>
@@ -546,27 +546,27 @@
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>58</td>
+                    <td><a href="content/c013v.xml#rvf058">58</a></td>
                     <td>13r-13v</td>
-                    <td>La guancia che fu già piangendo stancha</td>
+                    <td><a href="content/c013v.xml#rvf058">La guancia che fu già piangendo stancha</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>59</td>
+                    <td><a href="content/c013v.xml#rvf059">59</a></td>
                     <td>13v</td>
-                    <td>Perché quel che mi trasse ad amar prima</td>
+                    <td><a href="content/c013v.xml#rvf059">Perché quel che mi trasse ad amar prima</a></td>
                     <td>Ballata mezzana</td>
                 </tr>
                 <tr>
-                    <td>60</td>
+                    <td><a href="content/c013v.xml#rvf060">60</a></td>
                     <td>13v</td>
-                    <td>Larbor gentil che forte amai molt’ anni</td>
+                    <td><a href="content/c013v.xml#rvf060">Larbor gentil che forte amai molt’ anni</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>61</td>
+                    <td><a href="content/c013v.xml#rvf061">61</a></td>
                     <td>13v</td>
-                    <td>Benedetto sia ’l giorno, e ’l mese, et l’anno</td>
+                    <td><a href="content/c013v.xml#rvf061">Benedetto sia ’l giorno, e ’l mese, et l’anno</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>

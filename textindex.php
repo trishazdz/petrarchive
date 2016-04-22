@@ -570,27 +570,27 @@
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>62</td>
+                    <td><a href="content/c014r.xml#rvf062">62</a></td>
                     <td>14r</td>
-                    <td>Padre del ciel, dopo i perduti giorni</td>
+                    <td><a href="content/c014r.xml#rvf062">Padre del ciel, dopo i perduti giorni</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>63</td>
+                    <td><a href="content/c014r.xml#rvf063">63</a></td>
                     <td>14r</td>
-                    <td>Volgendo gli occhi al mio novo colore</td>
+                    <td><a href="content/c014r.xml#rvf063">Volgendo gli occhi al mio novo colore</a></td>
                     <td>Ballata grande</td>
                 </tr>
                 <tr>
-                    <td>64</td>
+                    <td><a href="content/c014r.xml#rvf064">64</a></td>
                     <td>14r</td>
-                    <td>Se voi poteste per turbati segni</td>
+                    <td><a href="content/c014r.xml#rvf064">Se voi poteste per turbati segni</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>65</td>
+                    <td><a href="content/c014r.xml#rvf065">65</a></td>
                     <td>14r</td>
-                    <td>Lasso, che mal accorto fui da prima</td>
+                    <td><a href="content/c014r.xml#rvf065">Lasso, che mal accorto fui da prima</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>

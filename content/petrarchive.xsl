@@ -101,7 +101,7 @@
       <xsl:if test="not(/tei:TEI/@xml:id = 'glossary') and not(/tei:TEI/@xml:id = 'chronology_petrarch') and not(/tei:TEI/@xml:id='papers_and_presentations')">
         <div id="teibpToolbox">
             <div>
-                <h1 style="display:inline;">text view </h1>
+                <!--<h1 style="display:inline;">text view </h1>-->
                 <select style="display:inline;" id="themeBox" onchange="switchCustomCSS(this);">
                     <option value="{$customCSS}" >diplomatic transcription</option>
                     <option value="{$customCSS.norm}">edited text</option>

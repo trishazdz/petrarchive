@@ -482,25 +482,25 @@
          <lg xml:id="rvf049" type="sonnet" n="49">
            <lg type="octave">
             <lg type="dblvrs" corresp="#canvasline">
-                <l n="1"><hi rendition="#red #fs24pt">P</hi><hi rendition="#small-caps">e</hi>rchio tabbia guardato di mençogna</l>
-                <l n="2">A mio podere et honorato assai</l>
+                <l n="1"><choice><orig><hi rendition="#red #fs24pt">P</hi><hi rendition="#small-caps">e</hi>rchio</orig><reg><hi rendition="#red #fs24pt">P</hi><hi rendition="#small-caps">e</hi>rch’io</reg></choice> <choice><orig>tabbia</orig><reg>t’abbia</reg></choice> guardato di <choice><orig>mençogna</orig><reg>menzogna</reg></choice></l>
+                <l n="2">A mio podere et honorato assai<supplied>,</supplied></l>
             </lg>
             <lg type="dblvrs" corresp="#canvasline">
-                <l n="3">Ingrata lingua. gia pero non mai</l>
-                <l n="4"><choice><abbr>Rēdduto</abbr><expan>Rendduto</expan></choice> honor. ma facto ira et uergogna.</l>
+                <l n="3">Ingrata lingua&p2c; <choice><orig>gia</orig><reg>già</reg></choice> <choice><orig>pero</orig><reg>però</reg></choice> non <choice><orig>mai</orig><reg>m’ài</reg></choice></l>
+                <l n="4"><choice><orig><abbr>Rēdduto</abbr><expan>Rendduto</expan></orig><reg>Renduto</reg></choice> honor&p2c; ma facto ira et <choice><orig>uergogna</orig><reg>vergogna</reg></choice>.</l>
             </lg>
             <lg type="dblvrs" corresp="#canvasline">
-                <l n="5">Che quando piul tuo aiuto mi bisogna</l>
-                <l n="6">Per dimandar mercede &virg; allor ti stai</l>
+                <l n="5"><choice><orig>Che</orig><reg>Ché</reg></choice> quando <choice><orig>piul</orig><reg>più ’l</reg></choice> tuo aiuto mi bisogna</l>
+                <l n="6">Per dimandar mercede&v2c; allor ti stai</l>
             </lg>
             <lg type="dblvrs" corresp="#canvasline">
-                <l n="7">Sempre piu fredda. et se parole fai</l>
-                <l n="8">Son imperfecte. &amp7; quasi duom che sogna.</l>
+                <l n="7">Sempre &piu; fredda&p2semicolon; et se parole fai<supplied>,</supplied></l>
+                <l n="8">Son imperfecte&p2c; &amp7; quasi <choice><orig>duom</orig><reg>d’uom</reg></choice> che sogna.</l>
             </lg>
            </lg>
            <lg type="sestet">
             <lg type="dblvrs" corresp="#canvasline">
-                <l n="9">Lagrime triste et uoi tutte le notti</l>
+                <l n="9">Lagrime triste et <choice><orig>uoi</orig><reg>voi</reg></choice> tutte le notti</l>
                 <l n="10">Maccompagnate &virg; ouio uorrei star solo.</l>
             </lg>
             <lg type="dblvrs" corresp="#canvasline">

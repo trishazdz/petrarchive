@@ -445,7 +445,7 @@ the line wraps. -->
    <text>
       <body>
          <pb n="charta 13 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-013v.jpg" />
-         <lg xml:id="rvf025" type="sonnet" n="25">
+         <lg xml:id="rvf058" type="sonnet" n="58">
            <lg type="sestet">
             <lg type="dblvrs" corresp="#canvasline">
                <l n="9">Et col <choice><orig>terço</orig><reg>terzo</reg></choice> <choice><orig>beuete</orig><reg>bevete</reg></choice> un suco <choice><orig>derba</orig><reg>d’erba</reg></choice></l>

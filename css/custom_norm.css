@@ -81,6 +81,6 @@ supplied {display:inline;}
 
 
 
-fw[type = "catch"] {
+fw,fw[type = "catch"] {
   display:none;
 }

@@ -610,99 +610,99 @@
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td><a href="content/c015r-c015v.xml#rvf068">68</a>
+                    <td><a href="content/c015r-c018v.xml#rvf068">68</a>
                     </td>
                     <td>15r</td>
-                    <td><a href="content/c015r-c015v.xml#rvf068">L’aspetto sacro de la terra vostra</a>
+                    <td><a href="content/c015r-c018v.xml#rvf068">L’aspetto sacro de la terra vostra</a>
                     </td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td><a href="content/c015r-c015v.xml#rvf069">69</a>
+                    <td><a href="content/c015r-c018v.xml#rvf069">69</a>
                     </td>
                     <td>15r</td>
-                    <td><a href="content/c015r-c015v.xml#rvf069">Ben sapeva io che natural consiglio</a>
+                    <td><a href="content/c015r-c018v.xml#rvf069">Ben sapeva io che natural consiglio</a>
                     </td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td><a href="content/c015r-c015v.xml#rvf070">70</a>
+                    <td><a href="content/c015r-c018v.xml#rvf070">70</a>
                     </td>
                     <td>15r-15v</td>
-                    <td><a href="content/c015r-c015v.xml#rvf070">Lasso me! ch’i’ non so in qual parte pieghi</a>
+                    <td><a href="content/c015r-c018v.xml#rvf070">Lasso me! ch’i’ non so in qual parte pieghi</a>
                     </td>
                     <td>Canzone</td>
                 </tr>
                 <tr>
-                    <td><a href="content/c016v-c018v.xml#rvf071">71</a>
+                    <td><a href="content/c015r-c018v.xml#rvf071">71</a>
                     </td>
                     <td>15v-16v</td>
-                    <td><a href="content/c016v-c018v.xml#rvf071">Perché la vita è breve</a>
+                    <td><a href="content/c015r-c018v.xml#rvf071">Perché la vita è breve</a>
                     </td>
                     <td>Canzone</td>
                 </tr>
                 <tr>
-                    <td><a href="content/c016v-c018v.xml#rvf072">72</a>
+                    <td><a href="content/c015r-c018v.xml#rvf072">72</a>
                     </td>
                     <td>16v-17r</td>
-                    <td id="G"><a href="content/c016v-c018v.xml#rvf072">Gentil mia donna, i’ veggio</a>
+                    <td id="G"><a href="content/c015r-c018v.xml#rvf072">Gentil mia donna, i’ veggio</a>
                     </td>
                     <td>Canzone</td>
                 </tr>
                 <tr>
                     <!-- TODO: insert links - inconsistencies with github files -->
-                    <td><a href="content/c016v-c018v.xml#rvf073">73</a>
+                    <td><a href="content/c015r-c018v.xml#rvf073">73</a>
                     </td>
                     <td>17r-18r</td>
-                    <td><a href="content/c016v-c018v.xml#rvf073">Poi che per mio destino</a>
+                    <td><a href="content/c015r-c018v.xml#rvf073">Poi che per mio destino</a>
                     </td>
                     <td>Canzone</td>
                 </tr>
                 <tr>
-                    <td><a href="content/c016v-c018v.xml#rvf074">74</a>
+                    <td><a href="content/c015r-c018v.xml#rvf074">74</a>
                     </td>
                     <td>18r</td>
-                    <td><a href="content/c016v-c018v.xml#rvf074">Io son già stanco di pensar sì come</a>
+                    <td><a href="content/c015r-c018v.xml#rvf074">Io son già stanco di pensar sì come</a>
                     </td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td><a href="content/c016v-c018v.xml#rvf075">75</a>
+                    <td><a href="content/c015r-c018v.xml#rvf075">75</a>
                     </td>
                     <td>18r</td>
-                    <td id="I"><a href="content/c016v-c018v.xml#rvf075">I begli occhi ond’i’ fui percosso in guisa</a>
+                    <td id="I"><a href="content/c015r-c018v.xml#rvf075">I begli occhi ond’i’ fui percosso in guisa</a>
                     </td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td><a href="content/c016v-c018v.xml#rvf076">76</a>
+                    <td><a href="content/c015r-c018v.xml#rvf076">76</a>
                     </td>
                     <td>18r</td>
-                    <td><a href="content/c016v-c018v.xml#rvf076">Amor con sue promesse lusingando</a>
+                    <td><a href="content/c015r-c018v.xml#rvf076">Amor con sue promesse lusingando</a>
                     </td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td><a href="content/c016v-c018v.xml#rvf077">77</a>
+                    <td><a href="content/c015r-c018v.xml#rvf077">77</a>
                     </td>
                     <td>18v</td>
-                    <td><a href="content/c016v-c018v.xml#rvf077">Per mirar Policleto a prova fiso</a>
+                    <td><a href="content/c015r-c018v.xml#rvf077">Per mirar Policleto a prova fiso</a>
                     </td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td><a href="content/c016v-c018v.xml#rvf078">78</a>
+                    <td><a href="content/c015r-c018v.xml#rvf078">78</a>
                     </td>
                     <td>18v</td>
-                    <td><a href="content/c016v-c018v.xml#rvf078">Quando giunse a Simon l’alto concetto</a>
+                    <td><a href="content/c015r-c018v.xml#rvf078">Quando giunse a Simon l’alto concetto</a>
                     </td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td><a href="content/c016v-c018v.xml#rvf079">79</a>
+                    <td><a href="content/c015r-c018v.xml#rvf079">79</a>
                     </td>
                     <td>18v</td>
-                    <td id="S"><a href="content/c016v-c018v.xml#rvf079">S’al principio risponde il fine e ’l mezzo</a>
+                    <td id="S"><a href="content/c015r-c018v.xml#rvf079">S’al principio risponde il fine e ’l mezzo</a>
                     </td>
                     <td>Sonnet</td>
                 </tr>

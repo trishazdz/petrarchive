@@ -482,34 +482,34 @@
          <lg xml:id="rvf049" type="sonnet" n="49">
            <lg type="octave">
             <lg type="dblvrs" corresp="#canvasline">
-                <l n="1"><hi rendition="#red #fs24pt">P</hi><hi rendition="#small-caps">e</hi>rchio tabbia guardato di mençogna</l>
-                <l n="2">A mio podere et honorato assai</l>
+                <l n="1"><choice><orig><hi rendition="#red #fs24pt">P</hi><hi rendition="#small-caps">e</hi>rchio</orig><reg><hi rendition="#red #fs24pt">P</hi><hi rendition="#small-caps">e</hi>rch’io</reg></choice> <choice><orig>tabbia</orig><reg>t’abbia</reg></choice> guardato di <choice><orig>mençogna</orig><reg>menzogna</reg></choice></l>
+                <l n="2">A mio podere et honorato assai<supplied>,</supplied></l>
             </lg>
             <lg type="dblvrs" corresp="#canvasline">
-                <l n="3">Ingrata lingua. gia pero non mai</l>
-                <l n="4"><choice><abbr>Rēdduto</abbr><expan>Rendduto</expan></choice> honor. ma facto ira et uergogna.</l>
+                <l n="3">Ingrata lingua&p2c; <choice><orig>gia</orig><reg>già</reg></choice> <choice><orig>pero</orig><reg>però</reg></choice> non <choice><orig>mai</orig><reg>m’ài</reg></choice></l>
+                <l n="4"><choice><orig><abbr>Rēdduto</abbr><expan>Rendduto</expan></orig><reg>Renduto</reg></choice> honor&p2c; ma facto ira et <choice><orig>uergogna</orig><reg>vergogna</reg></choice>.</l>
             </lg>
             <lg type="dblvrs" corresp="#canvasline">
-                <l n="5">Che quando piul tuo aiuto mi bisogna</l>
-                <l n="6">Per dimandar mercede &virg; allor ti stai</l>
+                <l n="5"><choice><orig>Che</orig><reg>Ché</reg></choice> quando <choice><orig>piul</orig><reg>più ’l</reg></choice> tuo aiuto mi bisogna</l>
+                <l n="6">Per dimandar mercede&v2c; allor ti stai</l>
             </lg>
             <lg type="dblvrs" corresp="#canvasline">
-                <l n="7">Sempre piu fredda. et se parole fai</l>
-                <l n="8">Son imperfecte. &amp7; quasi duom che sogna.</l>
+                <l n="7">Sempre &piu; fredda&p2semicolon; et se parole fai<supplied>,</supplied></l>
+                <l n="8">Son imperfecte&p2c; &amp7; quasi <choice><orig>duom</orig><reg>d’uom</reg></choice> che sogna.</l>
             </lg>
            </lg>
            <lg type="sestet">
             <lg type="dblvrs" corresp="#canvasline">
-                <l n="9">Lagrime triste et uoi tutte le notti</l>
-                <l n="10">Maccompagnate &virg; ouio uorrei star solo.</l>
+                <l n="9">Lagrime triste et <choice><orig>uoi</orig><reg>voi</reg></choice> tutte le notti</l>
+                <l n="10"><choice><orig>Maccompagnate</orig><reg>M’accompagnate</reg></choice>&v2c; <choice><orig>ouio</orig><reg>ov’io</reg></choice> <choice><orig>uorrei</orig><reg>vorrei</reg></choice> star solo&p2c;</l>
             </lg>
             <lg type="dblvrs" corresp="#canvasline">
-                <l n="11">Poi fuggite di nançi a la mia pace.</l>
-                <l n="12">Et uoi si <choice><abbr>prōti</abbr><expan>pronti</expan></choice> a darmi angoscia et duolo.</l>
+                <l n="11">Poi fuggite <choice><orig>di nançi</orig><reg>dinanzi</reg></choice> a la mia pace.</l>
+                <l n="12">Et <choice><orig>uoi</orig><reg>voi</reg></choice> &si; <choice><abbr>prōti</abbr><expan>pronti</expan></choice> a darmi angoscia et duolo&p2c;</l>
             </lg>
             <lg type="dblvrs" corresp="#canvasline">
                 <l n="13">Sospiri allor  traete lenti et rotti.</l>
-                <l n="14">Sola la uista mia del cor non tace.</l>
+                <l n="14">Sola la <choice><orig>uista</orig><reg>vista</reg></choice> mia del cor non tace.</l>
             </lg>
            </lg>
          </lg>
@@ -517,25 +517,25 @@
           <lg type="canzone_14vv" xml:id="rvf050" n="50"> 
               <lg type="stanza">
                   <lg type="dblvrs" corresp="#canvasline">
-                      <l n="1"><hi rendition="#blue #fs24pt">N</hi><hi rendition="#small-caps">e</hi> la stagion chel ciel rapido inchina</l> 
-                      <l n="2">Verso occidente. et chel di nostro uola</l>
+                      <l n="1"><hi rendition="#blue #fs24pt">N</hi><hi rendition="#small-caps">e</hi> la stagion <choice><orig>chel</orig><reg>che ’l</reg></choice> ciel rapido inchina</l> 
+                      <l n="2">Verso occidente&p2c; et <choice><orig>chel</orig><reg>che ’l</reg></choice> <choice><orig>di</orig><reg>dì</reg></choice> nostro <choice><orig>uola</orig><reg>vola</reg></choice></l>
                   </lg>
                   <lg type="dblvrs" corresp="#canvasline">
-                      <l n="3">A gente che di la forse laspetta</l>
-                      <l n="4">Veggendosi in lontan paese sola</l>
+                      <l n="3">A gente che di <choice><orig>la</orig><reg>là</reg></choice> forse <choice><orig>laspetta</orig><reg>l’aspetta</reg></choice></l>
+                      <l n="4">Veggendosi in lontan paese sola<supplied>,</supplied></l>
                   </lg>
                   <lg type="dblvrs" corresp="#canvasline">
-                      <l n="5">La stancha uecchiarella pellegrina</l>
-                      <l n="6">Raddoppia i passi. et piu et piu saffretta.</l>
+                      <l n="5">La stancha <choice><orig>uecchiarella</orig><reg>vecchiarella</reg></choice> pellegrina</l>
+                      <l n="6">Raddoppia i passi&p2c; et &piu; et &piu; <choice><orig>saffretta</orig><reg>s’affretta</reg></choice>&p2semicolon;</l>
                   </lg>
                   <lg type="trplvrs" corresp="#canvasline">
-                      <l n="7">Et poi cosi soletta</l>
+                      <l n="7">Et poi <choice><orig>cosi</orig><reg>così</reg></choice> soletta</l>
                       <l n="8">Al fin di sua giornata</l>
-                      <l n="9">Talora e consolata</l>
+                      <l n="9">Talora &e; consolata</l>
                   </lg>
                   <lg type="dblvrs" corresp="#canvasline">  
-                      <l n="10">Dalcun breue riposo &virg; ouella oblia</l>
-                      <l n="11">La noia &virg; el mal de la passata uia.</l>
+                      <l n="10"><choice><orig>Dalcun</orig><reg>D’alcun</reg></choice> <choice><orig>breue</orig><reg>breve</reg></choice> riposo&v2c; <choice><orig>ouella</orig><reg>ov’ella</reg></choice> oblia</l>
+                      <l n="11">La noia<choice><orig> &virg;</orig><reg/></choice> <choice><orig>el</orig><reg>e ’l</reg></choice> mal de la passata &uia;.</l>
                   </lg>
                   <lg type="dblvrs" corresp="#canvasline">
                       <l n="12">Ma lasso ogni dolor chel di madduce</l>

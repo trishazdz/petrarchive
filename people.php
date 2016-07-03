@@ -35,7 +35,6 @@ Twitter: <a href="https://twitter.com/jawalsh">@jawalsh</a><br />-->
 <dt>Isabella Magni, Graduate Assistant and Lead Encoder<!-- 2013-present --></dt><dd />
 </dl>
 <dl>
-<dt>Sara Dallavalle, Encoder <!-- 2014-present --></dt><dd />
 
 <dt>Grace Thomas, Encoder <!-- 2014-present --></dt><dd />
 </dl>
@@ -44,7 +43,12 @@ Twitter: <a href="https://twitter.com/jawalsh">@jawalsh</a><br />-->
 </dl>
 <h2>Past Contributors</h2>
 <dl>
-<dt>Allison M. McCormack, Encoder (2013-14)</dt><dd />
+<dt>Sara Dallavalle, Encoder (2014)</dt><dd />
+
+<dt>Allison M. McCormack, Encoder (2013-14)</dt>
+<dd>Allison McCormack is the Rare Books Catalog Librarian at <a href="http://www.baylor.edu">Baylor University</a> in Waco, Texas. Trained as a medievalist, her work at Baylor involves researching and cataloging rare books, archival collections, and other special collections materials in such diverse areas as historical Texana, Soviet samizdat publications, modern artists’ books, and medieval music manuscripts. She regularly collaborates with Baylor Classics professor <a href="http://www.baylor.edu/classics/index.php?id=89572">Daniel Nodes</a> on a variety of Latin-language projects, including most recently a transcription of the 1542 commentary of Alexius Vanegas of Toledo on Petrus Papeus’ Comoedia de Samaritano Evangelico, as well as the transcription and translation of a series of manuscript sermon notes known as the Collationes of Frater Petrus. <br/>
+Homepage: <a href="">http://allisonmmccormack.wordpress.com</a><br/>
+</dd>
 </dl>
 </div>
 <?php include("footer.html"); ?>

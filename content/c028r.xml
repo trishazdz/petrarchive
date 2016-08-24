@@ -67,7 +67,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Petrarch’s <title rendition="#i">Rerum vulgarium fragmenta</title>: Charta 28 recto</title> 
+            <title>Petrarch’s <title rendition="#i">Rerum vulgarium fragmenta</title>: Charta 28 recto and verso</title> 
             <editor xml:id="hws">H. Wayne Storey</editor>
             <editor xml:id="jaw">John A. Walsh</editor>
             <respStmt>
@@ -614,6 +614,140 @@
                      <l n="21"><choice><orig>Perchel</orig><reg>Perché ’l</reg></choice> <choice><orig>uerde</orig><reg>verde</reg></choice> terreno</l>
                      <l n="22">Del barbarico sangue si depinga<choice><orig>.</orig><reg>?</reg></choice></l>
                  </lg>
+                     
+                     <pb xml:id="c028v" n="charta 28 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-028v.jpg"/>
+                     <lg type="dblvrs" corresp="#canvasline">
+                         <l n="23">Vano error <choice><orig>ui</orig><reg>vi</reg></choice> lusinga.</l>
+                         <l n="24">Poco <choice><orig>uedete</orig><reg>vedete</reg></choice><choice><orig> .</orig><reg>,</reg></choice> et <choice><orig>parui</orig><reg>parvi</reg></choice> <choice><orig>ueder</orig><reg>veder</reg></choice> molto&p2c;</l>
+                     </lg>
+                     <lg type="dblvrs" corresp="#canvasline">
+                         <l n="25"><choice><orig>Chen</orig><reg>Ché ’n</reg></choice> cor <choice><orig>uenale</orig><reg>venale</reg></choice> amor cercate o fede.</l>
+                         <l n="26">Qual &piu; gente possede</l>
+                     </lg>
+                     <lg type="dblvrs" corresp="#canvasline">
+                         <l n="27">Colui &e; &piu; da suoi nemici <choice><orig>auolto</orig><reg>avolto</reg></choice>.</l>
+                         <l n="28">O <choice><orig>diluuio</orig><reg>diluvio</reg></choice> raccolto</l>
+                     </lg>
+                     <lg type="dblvrs" corresp="#canvasline">
+                         <l n="29">Di che deserti strani&p2c;</l>
+                         <l n="30">Per inondar i nostri dolci campi&p2e;</l>
+                     </lg>
+                     <lg type="dblvrs" corresp="#canvasline">
+                         <l n="31">Se da le <choice><abbr>&#42835;prie</abbr><expan>proprie</expan></choice> mani</l>
+                         <l n="32">Questo <choice><orig>nauene</orig><reg>n’avene</reg></choice>&p2c; or chi fia che ne scampi<choice><orig>.</orig><reg>?</reg></choice></l>
+                     </lg>
+                 </lg>
+             <lg type="stanza">
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="33"><hi rendition="#red #fs24pt">¶</hi>Ben <choice><orig>prouide</orig><reg>provide</reg></choice> natura al nostro stato&p2c;</l>
+                     <l n="34">Quando de <choice><orig>lalpi</orig><reg>l’Alpi</reg></choice> schermo</l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="35">Pose fra noi <subst><del type="erasure"><gap reason="illegible"/></del><add>&virg; &amp7;</add></subst> la tedesca rabbia.</l>
+                     <l n="36"><choice><orig>Mal</orig><reg> Ma ’l</reg></choice> desir cieco&v2c; <choice><orig>encontral</orig><reg>e ’ncontra ’l</reg></choice> suo ben fermo&v2c;</l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="37"><choice><orig>Se</orig><reg>S’è</reg></choice> poi tanto ingegnato&v2c;</l>
+                     <l n="38"><choice><orig>Chal</orig><reg>Ch’al</reg></choice> corpo sano <choice><orig>a</orig><reg>à</reg></choice> procurato scabbia.</l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="39">Or dentro <choice><orig>aduna</orig><reg>ad una</reg></choice> gabbia</l>
+                     <l n="40">Fiere <choice><orig>seluagge</orig><reg>selvagge</reg></choice> &amp7; mansuete gregge</l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="41"><choice><orig>Sannidan</orig><reg>S’annidan</reg></choice> <choice><orig>si¦che</orig><reg>sì che</reg></choice> sempre il miglior geme<choice><orig> .</orig><reg>.</reg></choice></l>
+                     <l n="42">Et &e; questo del seme<supplied>,</supplied></l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="43">Per &piu; dolor<supplied>,</supplied> del popol <choice><orig>sença</orig><reg>senza</reg></choice> legge&v2c;</l>
+                     <l n="44">Al qual<supplied>,</supplied> come si legge<supplied>,</supplied></l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="45">Mario aperse <choice><orig>sil</orig><reg>sì ’l</reg></choice> fianco<supplied>,</supplied></l>
+                     <l n="46">Che memoria de <choice><orig>lopra</orig><reg>l’opra</reg></choice> ancho non langue&p2c;</l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="47">Quando assetato et stanco</l>
+                     <l n="48">Non &piu; <choice><orig>beuue</orig><reg>bevve</reg></choice> del fiume acqua che sangue.</l>
+                 </lg>
+             </lg>
+             <lg type="stanza">
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="49"><hi rendition="#blue #fs24pt">¶</hi>Cesare taccio che &per; ogni piaggia</l>
+                     <l n="50">Fece <choice><orig>lerbe</orig><reg>l’erbe</reg></choice> sanguigne</l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="51">Di lor <choice><orig>uene</orig><reg>vene</reg></choice>&v2c; <choice><orig>ouel</orig><reg>ove ’l</reg></choice> nostro ferro mise.</l>
+                     <l n="52">Or par<supplied>,</supplied> non so <choice><orig><abbr>&per;che</abbr><expan>perche</expan></orig><reg>per che</reg></choice> stelle maligne<supplied>,</supplied></l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="53"><choice><orig>Chel</orig><reg>Che ’l</reg></choice> cielo in odio <choice><orig>naggia</orig><reg>n’aggia</reg></choice><choice><orig> .</orig><reg>,</reg></choice></l>
+                     <l n="54">Vostra <choice><orig>merce|cui</orig><reg>mercé, cui</reg></choice> tanto si <choice><abbr>cōmise</abbr><expan>commise</expan></choice>.</l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="55">Vostre <choice><orig>uoglie</orig><reg>voglie</reg></choice> <choice><orig>diuise</orig><reg>divise</reg></choice></l>
+                     <l n="56">Guastan del mondo la &piu; bella parte.</l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="57">Qual colpa&v2c; qual giudicio&v2c; o qual destino</l>
+                     <l n="58">Fastidire il <choice><orig>uicino</orig><reg>vicino</reg></choice></l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="59"><choice><orig>Pouero</orig><reg>Povero</reg></choice>&p2c; &amp7; le <choice><orig>for[t]une</orig><reg>fortune</reg></choice> afflicte &amp7; sparte</l>
+                     <l n="60">Perseguire&p2c; <choice><orig>en</orig><reg>e ’n</reg></choice> disparte</l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="61">Cercar gente &amp7; gradire</l>
+                     <l n="62">Che <choice><orig>spargal</orig><reg>sparga ’l</reg></choice> sangue<choice><orig> .</orig><reg>,</reg></choice> &amp7; <choice><orig>uenda</orig><reg>venda</reg></choice> <choice><orig>lalma</orig><reg>l’alma</reg></choice> a <choice><orig>preçço</orig><reg>prezzo</reg></choice><choice><orig>.</orig><reg>?</reg></choice></l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="63">Io parlo &per; <choice><orig>uer</orig><reg>ver</reg></choice> dire<supplied>,</supplied></l>
+                     <l n="64">Non &per; odio <choice><orig>daltrui</orig><reg>d’altrui</reg></choice>&v2c; <choice><orig>ne</orig><reg>né</reg></choice> &per; <choice><orig>dispreçço</orig><reg>disprezzo</reg></choice>.</l>
+                 </lg>
+             </lg>
+             <lg type="stanza">
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="65"><hi rendition="#red #fs24pt">¶</hi><choice><orig>Ne</orig><reg>Né</reg></choice> <choice><orig>[ua]ccorgete</orig><reg>v’accorgete</reg></choice> anchor per tante <choice><orig>proue</orig><reg>prove</reg></choice></l>
+                     <l n="66">Del <choice><orig>bauarico</orig><reg>bavarico</reg></choice> <choice><abbr>ingāno</abbr><expan>inganno</expan></choice></l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="67"><choice><orig>Chalçando</orig><reg>Ch’alzando</reg></choice> il dito colla morte <choice><orig>scherça</orig><reg>scherza</reg></choice><choice><orig> .</orig><reg>?</reg></choice></l>
+                     <l n="68">Peggio &e; lo <choice><orig>straçio</orig><reg>strazio</reg></choice> al mio parer&v2c; <choice><orig>chel</orig><reg>che ’l</reg></choice> <choice><abbr>dāno</abbr><expan>danno</expan></choice>.</l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="69"><choice><orig>Mal</orig><reg>Ma ’l</reg></choice> <choice><orig>uostro</orig><reg>vostro</reg></choice> sangue <choice><orig>pioue</orig><reg>piove</reg></choice></l>
+                     <l n="70">&Piu; largamente<choice><orig> .</orig><reg>,</reg></choice> <choice><orig>chaltrira</orig><reg>ch’altr’ira</reg></choice> <choice><orig>ui</orig><reg>vi</reg></choice> <choice><orig>sferça</orig><reg>sferza</reg></choice>.</l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="71">Da la matina a <choice><orig>terça</orig><reg>terza</reg></choice></l>
+                     <l n="72">Di <choice><orig>uoi</orig><reg>voi</reg></choice> pensate<choice><orig> .</orig><reg>,</reg></choice> &amp7; <choice><orig>uederete</orig><reg>vederete</reg></choice> come</l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="73">Tien caro altrui che tien <choice><orig>se</orig><reg>sé</reg></choice> <choice><orig>cosi</orig><reg>così</reg></choice> <choice><orig>uile</orig><reg>vile</reg></choice><choice><orig> .</orig><reg>.</reg></choice></l>
+                     <l n="74">Latin sangue gentile<supplied>:</supplied></l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="75">Sgombra da te queste dannose some<choice><orig> .</orig><reg>;</reg></choice></l>
+                     <l n="76">Non far idolo un nome</l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="77">Vano<supplied>,</supplied> <choice><orig>sença</orig><reg>senza</reg></choice> soggetto<choice><orig> .</orig><reg>;</reg></choice></l>
+                     <l n="78"><choice><orig>Chel</orig><reg>Ché ’l</reg></choice> furor de <choice><orig>lassu</orig><reg>lassù</reg></choice><supplied>,</supplied> gente ritrosa<supplied>,</supplied></l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="79">Vincerne <choice><orig>dintellecto</orig><reg>d’intellecto</reg></choice><supplied>,</supplied></l>
+                     <l n="80">Peccato <choice><orig>|e|</orig><reg>è</reg></choice> nostro&p2c; et non natural cosa.</l>
+                 </lg>
+             </lg>
+             <lg type="stanza">
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="81"><hi rendition="#red #fs24pt">¶</hi>Non &e; <choice><orig>questol</orig><reg>questo ’l</reg></choice> terren <choice><orig>chi</orig><reg>ch’i’</reg></choice> tocchai pria<choice><orig> .</orig><reg>?</reg></choice></l>
+                     <l n="82">Non &e; questo il mio nido</l>
+                 </lg>
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="83"><choice><orig>Oue</orig><reg>Ove</reg></choice> nudrito fui &si; <choice><abbr>dolcemēte</abbr><expan>dolcemente</expan></choice><choice><orig> .</orig><reg>?</reg></choice></l>
+                     <l n="84">Non &e; questa la patria&v2c; in <choice><orig>chio</orig><reg>ch’io</reg></choice> mi fido&p2c;</l>
+                 </lg>28
                  </lg>
             </lg>
       </body>

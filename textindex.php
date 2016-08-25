@@ -1085,15 +1085,15 @@
                     <td>Canzone</td>
                 </tr>
                 <tr>
-                    <td>127</td>
+                    <td><a href="content/c028r-c028v.xml#rvf127">127</a></td>
                     <td>27r-28r</td>
-                    <td>In quella parte dove Amor mi sprona</td>
+                    <td><a href="content/c028r-c028v.xml#rvf127">In quella parte dove Amor mi sprona</a></td>
                     <td>Canzone</td>
                 </tr>
                 <tr>
-                    <td>128</td>
+                    <td><a href="content/c028r-c028v.xml#rvf128">128</a></td>
                     <td>28r-29r</td>
-                    <td>Italia mia, benché ’l parlar sia indarno</td>
+                    <td><a href="content/c028r-c028v.xml#rvf128">Italia mia, benché ’l parlar sia indarno</a></td>
                     <td>Canzone</td>
                 </tr>
                 <tr>

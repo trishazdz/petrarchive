@@ -1085,21 +1085,21 @@
                     <td>Canzone</td>
                 </tr>
                 <tr>
-                    <td><a href="content/c028r-c028v.xml#rvf127">127</a></td>
+                    <td><a href="content/c028r-c029r.xml#rvf127">127</a></td>
                     <td>27r-28r</td>
-                    <td><a href="content/c028r-c028v.xml#rvf127">In quella parte dove Amor mi sprona</a></td>
+                    <td><a href="content/c028r-c029r.xml#rvf127">In quella parte dove Amor mi sprona</a></td>
                     <td>Canzone</td>
                 </tr>
                 <tr>
-                    <td><a href="content/c028r-c028v.xml#rvf128">128</a></td>
+                    <td><a href="content/c028r-c029r.xml#rvf128">128</a></td>
                     <td>28r-29r</td>
-                    <td><a href="content/c028r-c028v.xml#rvf128">Italia mia, benché ’l parlar sia indarno</a></td>
+                    <td><a href="content/c028r-c029r.xml#rvf128">Italia mia, benché ’l parlar sia indarno</a></td>
                     <td>Canzone</td>
                 </tr>
                 <tr>
-                    <td>129</td>
+                    <td><a href="content/c028r-c029r.xml#rvf129">129</a></td>
                     <td>29r-29v</td>
-                    <td>Di pensier in pensier, di monte in monte</td>
+                    <td><a href="content/c028r-c029r.xml#rvf129">Di pensier in pensier, di monte in monte</a></td>
                     <td>Canzone</td>
                 </tr>
                 <tr>

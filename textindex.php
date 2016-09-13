@@ -1079,9 +1079,9 @@
                     <td>Canzone</td>
                 </tr>
                 <tr>
-                    <td>126</td>
+                    <td><a href="content/c027r.xml#rvf126">126</a></td>
                     <td>27r</td>
-                    <td>Chiare, fresche et dolci acque</td>
+                    <td><a href="content/c027r.xml#rvf126">Chiare, fresche et dolci acque</a></td>
                     <td>Canzone</td>
                 </tr>
                 <tr>

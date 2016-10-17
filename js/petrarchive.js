@@ -20,3 +20,13 @@ function switchCustomCSS(theme) {
 	document.getElementById('customcss').href=theme.options[theme.selectedIndex].value;
 }
 
+function revealCommentary(mode,id) {
+    var e = document.getElementById(id);
+    if (mode.options[mode.selectedIndex].value == 'show') {
+	console.log(mode.selectedIndex);
+        e.style.display = 'block';
+    } else {
+      	console.log(mode.selectedIndex);
+        e.style.display = 'none';
+    }
+}

@@ -677,7 +677,9 @@ the line wraps. -->
               In MS Vaticano Latino 3195, c. 1r begins with the rubric <foreign xml:lang="lat" rendition="#i">Francisci petrarche laureati poete. Rerum vulgarium fragmenta</foreign>, and establishes three key principles of the physical and material construction of the <title level="m">Rvf</title> 1: the poetic ‘canvas’ of 31 transcriptional lines per side of each charta; 2: the horizontal mise en page of the sonnet, written 2 verses per transcriptional line on 7 lines, and 3: the standard presentation of four sonnets per charta each separated by a single blank line (= 7 + 1 + 7 + 1 + 7 + 1 + 7; see Appendix Glossary: <ref target="glossary.xml#sonnet">Sonnet</ref> and <ref target="glossary.xml#transcriptional_canvas">Transcriptional Canvas</ref>).  These first four sonnets on c. 1r constitute an ‘introduction’ (that includes <title level="m">Rvf</title> 5 on c. 1v) to the poet, Love’s ambush of Petrarch, Laura, Laura’s birthplace, Laura’s name and Petrarch’s inspiration. Within the arc in the role of <foreign xml:lang="ita" rendition="#i">Voi</foreign> from <title level="m">Rvf</title> 1.1 to <title level="m">Rvf</title> 5.1, we note the significant movement from <foreign xml:lang="ita" rendition="#i">Voi ch’ascoltate</foreign> … to <foreign xml:lang="ita" rendition="#i">Quando io movo i sospiri a chiamar voi.</foreign>
           </note>
           <note type="variants" resp="#hws">
-              v. 3: <foreign xml:lang="ita" rendition="#i">giovenile amore</foreign> (Vaticano Chigiano L V 176).
+            <list>
+              <item>v. 3: <foreign xml:lang="ita" rendition="#i">giovenile amore</foreign> (Vaticano Chigiano L V 176).</item>
+            </list>
           </note>
           <note type="language" resp="#hws">
               <list>

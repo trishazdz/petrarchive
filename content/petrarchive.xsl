@@ -98,21 +98,32 @@
     
     <!-- Petrarchive Toolbox -->
     <xsl:template name="teibpToolbox">
-      <xsl:if test="not(/tei:TEI/@xml:id = 'glossary') and not(/tei:TEI/@xml:id = 'chronology_petrarch') and not(/tei:TEI/@xml:id='papers_and_presentations')">
+      <xsl:if test="not(/tei:TEI/@xml:id = 'glossary') and   not(/tei:TEI/@xml:id = 'chronology_petrarch') and not(/tei:TEI/@xml:id='papers_and_presentations')">
         <div id="teibpToolbox">
             <div>
                 <!--<h1 style="display:inline;">text view </h1>-->
-                <select style="display:inline;" id="themeBox" onchange="switchCustomCSS(this);">
+                <select id="themeBox" onchange="switchCustomCSS(this);">
                     <option value="{$customCSS}" >diplomatic transcription</option>
                     <option value="{$customCSS.norm}">edited text</option>
-                </select>			
+                </select>		
+                
             </div>
+          <xsl:if test="//tei:back/tei:div[@type = 'commentary']">
+          <div>
+            <!-- <img style="border:0;" src="../images/settings-icon.png"/> -->
+           
+            <select id="commentarySelect" onchange="revealCommentary(this,'commentary')">
+              <option value="hide">hide commentary</option>
+              <option value="show">show commentary</option>             
+            </select>
+          </div>
+          </xsl:if>
         </div>
       </xsl:if>
     </xsl:template>
     
     <xsl:variable name="htmlFooter">
-      <footer>© 2013-2015 H. Wayne Storey &amp; John A. Walsh. This document is part of the Petr<em>archive</em>.<br/>
+      <footer>© 2013-2016 H. Wayne Storey &amp; John A. Walsh. This document is part of the Petr<em>archive</em>.<br/>
         Team: H. Wayne Storey, John A. Walsh, Isabella Magni, Grace Thomas, Allison M. McCormack (2013-14), and Laura Pence.<br/>
         <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png" /></a>&#160;
         <a xmlns:cc="http://creativecommons.org/ns#" href="http://petrarchive.org" property="cc:attributionName" rel="cc:attributionURL"><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Petr<i>archive</i></span></a> by <a href="http://www.indiana.edu/~frithome/faculty/italian/storey.shtml">H. Wayne Storey</a> and <a href="http://johnwalsh.name/">John A. Walsh</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br/>
@@ -433,6 +444,58 @@
         <xsl:apply-templates select="@*|node()"/>
       </xsl:element>
   </xsl:template>
+  
+  <xsl:template match="tei:div[@type = 'commentary']">
+    <div class="commentary" id="commentary" style="display:none;">
+      <xsl:variable name="rvfTarget" select="substring-after(@corresp,'#')"/>
+      <xsl:variable name="rvfNum" select="//tei:lg[@xml:id = $rvfTarget]/@n"/>
+      <h1>Commentary: <cite>Rvf</cite> <xsl:value-of select="' '"/><xsl:value-of select="$rvfNum"/>
+     </h1>
+      <hr/>
+      <xsl:apply-templates/>
+    </div>
+  </xsl:template>
+  
+  <xsl:template match="tei:div[@type= 'commentary']/tei:note|tei:div[@type= 'commentary']/tei:div[@type= 'translation']">
+    <section>
+    <h2>
+      <xsl:choose>
+        <xsl:when test="@type = 'introduction'">
+          <xsl:value-of select="'Introduction'"/>
+        </xsl:when>
+        <xsl:when test="@type = 'prosodic'">
+          <xsl:value-of select="'Prosodic features'"/>
+        </xsl:when>
+        <xsl:when test="@type = 'syntactic'">
+          <xsl:value-of select="'Syntactic features'"/>
+        </xsl:when>
+        <xsl:when test="@type = 'historical'">
+          <xsl:value-of select="'Historical genesis'"/>
+        </xsl:when>
+        <xsl:when test="@type = 'physical'">
+          <xsl:value-of select="'Physical collocation and diplomatic conditions'"/>
+        </xsl:when>
+        <xsl:when test="@type = 'variants'">
+          <xsl:value-of select="'Significant variants from the tradition'"/>
+        </xsl:when>
+        <xsl:when test="@type = 'language'">
+          <xsl:value-of select="'Language notes'"/>
+        </xsl:when>
+        <xsl:when test="@type = 'thematic'">
+          <xsl:value-of select="'Thematic notes'"/>
+        </xsl:when>
+        <xsl:when test="@type = 'translation'">
+          <xsl:value-of select="'Translation'"/>
+        </xsl:when>
+      </xsl:choose>
+    </h2>
+      <xsl:element name="{local-name()}">
+        <xsl:call-template name="addID"/>
+        <xsl:apply-templates select="@*|node()"/>
+      </xsl:element>
+    </section>
+  </xsl:template>
+        
   
         
     

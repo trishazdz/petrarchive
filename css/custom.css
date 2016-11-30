@@ -365,6 +365,7 @@ choice expan {
   -moz-box-shadow:none;
   box-shadow:none;
   width: 15em;
+  z-index:99;
 }
 #teibpToolbox h1 {
   font-weight: normal;

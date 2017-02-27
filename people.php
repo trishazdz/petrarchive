@@ -32,12 +32,21 @@ Twitter: <a href="https://twitter.com/jawalsh">@jawalsh</a><br />-->
 </dd>
 </dl>
 <dl>
-<dt>Isabella Magni, Graduate Assistant and Lead Encoder<!-- 2013-present --></dt><dd />
+<dt>Isabella Magni, Associate Editor<!-- 2013-present --></dt><dd />
 </dl>
-<dl>
 
+<dl>
+<dt>Erica Hayes, Encoder <!-- 2016-present --></dt><dd />
+</dl>
+
+<dl>
+<dt>Lino Mioni, Encoder <!-- 2016-present --></dt><dd />
+</dl>
+
+<dl>
 <dt>Grace Thomas, Encoder <!-- 2014-present --></dt><dd />
 </dl>
+
 <dl>
 <dt>Laura Pence, Visual Index Designer <!-- 2014-present --></dt><dd />
 </dl>

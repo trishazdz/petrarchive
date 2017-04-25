@@ -995,41 +995,42 @@
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td><a href="content/c024v.xml#rvf116">116</a>
+                    <td><a href="content/c024v-c025v.xml#rvf116">116</a>
                     </td>
                     <td>24v</td>
-                    <td><a href="content/c024v.xml#rvf116">Pien di quella ineffabile dolcezza</a>
+                    <td><a href="content/c024v-c025v.xml#rvf116">Pien di quella ineffabile dolcezza</a>
                     </td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td><a href="content/c024v.xml#rvf117">117</a>
+                    <td><a href="content/c024v-c025v.xml#rvf117">117</a>
                     </td>
                     <td>24v</td>
-                    <td><a href="content/c024v.xml#rvf117">Se ’l sasso, ond’è più chiusa ques[ta] v[a]ll<u>e</u></a>
+                    <td><a href="content/c024v-c025v.xml#rvf117">Se ’l sasso, ond’è più chiusa ques[ta] v[a]ll<u>e</u></a>
                     </td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td><a href="content/c024v.xml#rvf118">118</a>
+                    <td><a href="content/c024v-c025v.xml#rvf118">118</a>
                     </td>
                     <td>24v</td>
-                    <td><a href="content/c024v.xml#rvf118">Rimansi a dietro il sestodecimo anno</a>
+                    <td><a href="content/c024v-c025v.xml#rvf118">Rimansi a dietro il sestodecimo anno</a>
                     </td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td><a href="content/c024v.xml#rvf119">119</a>
+                    <td><a href="content/c024v-c025v.xml#rvf119">119</a>
                     </td>
                     <td>24v-25v</td>
-                    <td><a href="content/c024v.xml#rvf119">Una donna più bella assai che ’l sole</a>
+                    <td><a href="content/c024v-c025v.xml#rvf119">Una donna più bella assai che ’l sole</a>
                     </td>
                     <td>Canzone</td>
                 </tr>
                 <tr>
-                    <td>120</td>
+                    <td><a href="content/c024v-c025v.xml#rvf120">120</a>
+                    </td>
                     <td>25v</td>
-                    <td>Quelle pietose rime in ch’io m’accorsi</td>
+                    <td><a href="content/c024v-c025v.xml#rvf120">Quelle pietose rime in ch’io m’accorsi</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>

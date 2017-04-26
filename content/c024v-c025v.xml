@@ -601,8 +601,7 @@ the line wraps. -->
          <lg xml:id="rvf119" type="canzone_15vv" n="119">
             <lg type="stanza">
                <lg type="dblvrs" corresp="#canvasline">
-                  <l n="1"><hi rendition="#fs24pt #blue">U</hi>
-                     <hi rendition="#small-caps">n</hi>a donna &piu; bella assai <choice><orig>chel</orig><reg>che ’l</reg></choice> sole&v2c;</l>
+                  <l n="1"><hi rendition="#fs24pt #blue">U</hi><hi rendition="#small-caps">n</hi>a donna &piu; bella assai <choice><orig>chel</orig><reg>che ’l</reg></choice> sole&v2c;</l>
                   <l n="2">Et &piu; lucente&v2c; &amp7; <choice><orig>daltrettanta</orig><reg>d’altrettanta</reg></choice> etade<supplied>,</supplied></l>
                </lg>
                <lg type="dblvrs" corresp="#canvasline">
@@ -630,21 +629,21 @@ the line wraps. -->
                
                <pb xml:id="c025r" n="charta 25 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-025r.jpg"/>
                <lg type="dblvrs" corresp="#canvasline">
-                  <l n="13">Tal che si arruo al disiato porto</l>
+                   <l n="13">Tal che <choice><orig>si</orig><reg>s’i’</reg></choice> <choice><orig>arruo</orig><reg>arrivo</reg></choice> al disiato porto<supplied>,</supplied></l>
                   <l n="14">Spero per lei gran tempo</l>
                </lg>
                <lg type="single" corresp="#canvasline">
-                  <l n="15">Viuer &virg; quandaltri mi terra per morto .</l>
+                   <l n="15"><choice><orig>Viuer</orig><reg>Viver</reg></choice>&v2c; <choice><orig>quandaltri</orig><reg>quand’altri</reg></choice> mi <choice><orig>terra</orig><reg>terrà</reg></choice> per morto<choice><orig> .</orig><reg>.</reg></choice></l>
                </lg>
             </lg>
                <lg type="stanza">
                   <lg type="dblvrs" corresp="#canvasline">
-                     <l n="16"><hi rendition="#red #fs24pt">¶</hi>Questa mia <choice><abbr>dōna</abbr><expan>donna</expan></choice> mi meno <choice><abbr>moltāni</abbr><expan>moltanni</expan></choice></l>
-                     <l n="17">Pien di uagheçça giouenile ardendo .</l>
+                      <l n="16"><hi rendition="#red #fs24pt">¶</hi>Questa mia <choice><abbr>dōna</abbr><expan>donna</expan></choice> mi <choice><orig>meno</orig><reg>menò</reg></choice> <choice><orig><abbr>moltāni</abbr><expan>moltanni</expan></orig><reg>molt’anni</reg></choice></l>
+                     <l n="17">Pien di <choice><orig>uagheçça</orig><reg>vaghezza</reg></choice> <choice><orig>giouenile</orig><reg>giovenile</reg></choice> ardendo<choice><orig> .</orig><reg>,</reg></choice></l>
                   </lg>
                   <lg type="dblvrs" corresp="#canvasline">
-                     <l n="18">Si come ora io comprendo</l>
-                     <l n= "19">Sol per auer di me piu certa proua .</l>
+                     <l n="18">&Si; come ora io comprendo<supplied>,</supplied></l>
+                     <l n= "19">Sol per <choice><orig>auer</orig><reg>aver</reg></choice> di me &piu; certa <choice><orig>proua</orig><reg>prova</reg></choice> .</l>
                   </lg>
                   <lg type="dblvrs" corresp="#canvasline">
                      <l n="20">Mostrandomi pur lombra &virg; ol uelo &virg; o <choice><abbr>pāni</abbr><expan>panni</expan></choice></l>

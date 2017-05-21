@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="petrarchive.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="teibp.xsl"?>
+<!DOCTYPE TEI [
+<!ENTITY amp7 "<choice><abbr>&amp;</abbr><expan>et</expan></choice>">
+<!ENTITY per "<choice><abbr>ꝑ</abbr><expan>per</expan></choice>">
+<!ENTITY virg "/">
+<!ENTITY sempre "<choice><abbr>sēpre</abbr><expan>sempre</expan></choice>">
+<!ENTITY quanto "<choice><abbr>quāto</abbr><expan>quanto</expan></choice>">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <!-- Update Charta number and verso/recto. -->
+            <title>Petrarch's <title>Rerum vulgarium fragmenta</title>: Charta 1 verso</title>
+            <editor xml:id="hws">H. Wayne Storey</editor>
+            <respStmt>
+               <resp><!-- role/title --></resp>
+               <name xml:id="jaw">John A. Walsh</name>
+            </respStmt>
+            <respStmt>
+               <resp><!-- role/title --></resp>
+               <name xml:id="amm">Allison M. McCormack</name>
+            </respStmt>
+            <respStmt>
+               <resp><!-- role/title --></resp>
+               <name xml:id="im">Isabella Magni</name>
+            </respStmt>
+         </titleStmt>
+            <publicationStmt xml:base="includes/publicationStmt.xml">
+               <p/>
+            </publicationStmt>
+         <sourceDesc>
+               <p/>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <tagsDecl>
+            <rendition xml:id="red" scheme="css"
+               >color:#9f1706;</rendition>
+            <rendition xml:id="blue" scheme="css"
+               >color:#12398c;</rendition>
+            <rendition xml:id="fs18pt" scheme="css"
+               >font-size:18pt;</rendition>
+            <rendition xml:id="fs24pt" scheme="css"
+               >font-size:24pt;</rendition>
+            <rendition xml:id="small-caps" n="tiebp:small-caps" scheme="css">
+               font-variant:small-caps;
+            </rendition>
+         </tagsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <!-- replaced PUA u+f1f7 w/ the proper character for virgule u+002f. -->
+   <!-- MS Word label [5; s] becomes <lg type="sonnet" n="5"> -->
+   <!--
+       The standard solution below does not allow us to italicize only the "m" in "sempre."
+       
+       <choice><abbr>sēpre</abbr><expan>sempre</expan></choice>
+  -->
+   <!-- What character is the Italian ampersand/7? -->
+
+   <!-- For p with stroke through descender, I am using ꝑ (u+A751). -->
+
+   <!-- Can erasures be read? -->
+
+   <text>
+      <body>
+         <lg type="sonnet" n="[Rvf Number]">
+            <lg type="dblvrs">
+               <l n="1"><hi rendition="#red #fs24pt"
+                  >Q</hi><hi rendition="#small-caps">u</hi>ando io mouo i sospiri a chiamar uoi</l>
+               <l n="2">El nome che nel cor mi scrisse amore /</l>
+            </lg>
+            <!-- Add lines above and below. -->
+         </lg>
+      </body>
+   </text>
+</TEI>

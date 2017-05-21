@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="petrarchive.rnc"?>
+<?xml-stylesheet type="text/xsl" href="petrarchive.xsl"?>
+<!DOCTYPE TEI [
+<!ENTITY amp7 "<choice><abbr>&amp;</abbr><expan>et</expan></choice>">
+<!ENTITY Amp7 "<choice><abbr>&amp;></abbr><expan>Et</expan></choice>">
+<!ENTITY per "<choice><abbr>ꝑ</abbr><expan>per</expan></choice>">
+<!ENTITY Per "<choice><abbr>ꝑ</abbr><expan>Per</expan></choice>">
+<!ENTITY virg "/">
+<!ENTITY sempre "<choice><abbr>sēpre</abbr><expan>sempre</expan></choice>">
+<!ENTITY Sempre "<choice><abbr>sēpre</abbr><expan>Sempre</expan></choice>">
+<!ENTITY quanto "<choice><abbr>quāto</abbr><expan>quanto</expan></choice>">
+<!ENTITY Quanto "<choice><abbr>quāto</abbr><expan>Quanto</expan></choice>">
+<!ENTITY quando "<choice><abbr>quādo</abbr><expan>quando</expan></choice>">
+<!ENTITY Quando "<choice><abbr>quādo</abbr><expan>Quando</expan></choice>">
+<!ENTITY giorno "<choice><abbr>giõno</abbr><expan>giorno</expan></choice>">
+<!ENTITY non "<choice><abbr>nō</abbr><expan>non</expan></choice>">
+<!ENTITY Non "<choice><abbr>nō</abbr><expan>Non</expan></choice>">
+<!ENTITY in "<choice><abbr>ī</abbr><expan>in</expan></choice>">
+<!ENTITY pre "<choice><abbr>&p-macron;</abbr><expan>pre</expan></choice">
+<!ENTITY con "<choice><abbr>cō</abbr><expan>con</expan></choice>">
+<!ENTITY Con "<choice><abbr>cō</abbr><expan>Con</expan></choice>">
+<!ENTITY son "<choice><abbr>sō</abbr><expan>son</expan></choice>">
+<!ENTITY Son "<choice><abbr>sō</abbr><expan>Son</expan></choice>">
+<!ENTITY q-tilde "q&#x0303;">
+<!ENTITY q-macron "q&#x0304;">
+<!ENTITY p-macron "p&#x0304;">
+<!ENTITY b-combtild "b&#xFE23;">
+<!ENTITY p-dot "p&#x0307;">
+<!ENTITY u-vert-tilde "u&#x033E;">
+<!ENTITY p-vert-line "p&#x030D;">
+<!ENTITY uia "<choice><orig>uia</orig><reg>via</reg></choice>">
+<!-- period "p" to "2" comma "c" -->
+<!ENTITY p2c "<choice><orig>.</orig><reg>,</reg></choice>">
+<!ENTITY regapos "<reg>’</reg>">
+<!ENTITY uolta "<choice><orig>uolta</orig><reg>volta</reg></choice>">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Petrarch's <title>Rerum vulgarium
+                        fragmenta</title>: Carta 15
+                    recto</title>
+                <editor xml:id="hws">H. Wayne
+                    Storey</editor>
+                <respStmt>
+                    <resp><!-- role/title --></resp>
+                    <name xml:id="jaw">John A. Walsh</name>
+                </respStmt>
+                <respStmt>
+                    <resp><!-- role/title --></resp>
+                    <name xml:id="amm">Allison M.
+                        McCormack</name>
+                </respStmt>
+                <respStmt>
+                    <resp><!-- role/title --></resp>
+                    <name xml:id="im">Isabella Magni</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt
+                xml:base="includes/publicationStmt.xml">
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Where <gi>reg</gi> appears without a parent <gi>choice</gi>, the <gi>reg</gi> indicates supplied text that has been supplied for normalization or modernization purposes. <gi>supplied</gi> was not used because <gi>supplied</gi> is properly for text supplied for text missing due to damage, for instance.</p>
+            <tagsDecl>
+                <rendition xml:id="red" scheme="css"
+                    >color:#9f1706;</rendition>
+                <rendition xml:id="blue" scheme="css"
+                    >color:#12398c;</rendition>
+                <rendition xml:id="fs18pt" scheme="css"
+                    >font-size:18pt;</rendition>
+                <rendition xml:id="fs24pt" scheme="css"
+                    >font-size:24pt;</rendition>
+                <rendition xml:id="small-caps"
+                    n="tiebp:small-caps" scheme="css">
+                    font-variant:small-caps; </rendition>
+                <rendition xml:id="black" scheme="css"
+                    >color:#000000;</rendition>
+            </tagsDecl>
+            <charDecl>
+                <char xml:id="punctelevhiback">
+                    <charName>PUNCTUS ELEVATUS WITH HIGH
+                        BACK</charName>
+                    <charProp>
+                        <localName>entity</localName>
+                        <value>punctelevhiback</value>
+                    </charProp>
+                    <mapping type="visual"
+                        >.&#x0312;</mapping>
+                    <mapping type="MUFI">U+F1FA</mapping>
+                    <mapping type="PUA">U+F1FA</mapping>
+                </char>
+            </charDecl>
+            <charDecl>
+                <char xml:id="virgsusp">
+                    <charName>VIRGULA SUSPENSIVA</charName>
+                    <charProp>
+                        <localName>entity</localName>
+                        <value>virgsusp</value>
+                    </charProp>
+                    <mapping type="visual"/>
+                    <mapping type="MUFI">U+F1F4</mapping>
+                    <mapping type="PUA">U+F1F4</mapping>
+                </char>
+            </charDecl>
+            <charDecl>
+                <char xml:id="punctinter">
+                    <charName>PUNCTUS
+                        INTERROGATIVUS</charName>
+                    <charProp>
+                        <localName>entity</localName>
+                        <value>punctinter</value>
+                    </charProp>
+                    <mapping type="visual">?</mapping>
+                    <mapping type="MUFI">U+F160</mapping>
+                    <mapping type="PUA">U+F160</mapping>
+                </char>
+            </charDecl>
+            <charDecl>
+                <char xml:id="brvbar">
+                    <charName>BROKEN BAR</charName>
+                    <charProp>
+                        <localName>entity</localName>
+                        <value>brvbar</value>
+                    </charProp>
+                    <mapping type="visual">&#166;</mapping>
+                    <mapping type="MUFI">U+00A6</mapping>
+                    <mapping type="PUA">U+00A6</mapping>
+                </char>
+
+                <char xml:id="pflour">
+                    <charName>LATIN SMALL LETTER P WITH
+                        FLOURISH</charName>
+                    <charProp>
+                        <localName>entity</localName>
+                        <value>pflour</value>
+                    </charProp>
+                    <mapping type="visual"
+                        >&#xa753;</mapping>
+                    <mapping type="MUFI">U+A753</mapping>
+                    <mapping type="PUA">U+A753</mapping>
+                </char>
+
+            </charDecl>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="charta 15 recto"
+                facs="../images/vat-lat3195-f/vat-lat3195-f-015r.jpg"/>
+            <lg type="sonnet" n="68">
+                <!-- How to encode different hand/darkened text in line 11? Currently I have it as a "correction" -->
+                <lg type="dblvrs">
+                    <l n="1"><hi rendition="#red #fs24pt"
+                            >L</hi><reg>’</reg><hi
+                            rendition="#small-caps"
+                        >a</hi>spetto sacro de la terro
+                        <choice><orig>uostra</orig><reg>vostra</reg></choice></l>
+                    <l n="2">Mi fa del mal passato tragger
+                        guai<choice><orig>.</orig><reg>,</reg></choice></l>
+                </lg>
+                <lg type="dblvrs">
+                    <l n="3">Gridando<choice><orig> /</orig><reg>:</reg></choice> <choice><orig>sta</orig><reg>Sta</reg></choice><reg>’</reg> su misero<choice><orig>.</orig><reg>,</reg></choice> che fai<choice><!-- Is this choice necessary, since we are already displaying a modern question mark (?)?--><orig><g ref="#punctinter"/></orig><reg>?</reg></choice></l>
+                    <l n="4">Et la &uia; de salir al ciel mi
+                        mostra.</l>
+                </lg>
+                <lg type="dblvrs">
+                    <l n="5">Ma con questo pensier un altro
+                        giostra<choice><orig>.</orig><reg>,</reg></choice></l>
+                    <l n="6">Et dice a me<reg>:</reg> <choice><orig>perche</orig><reg>Perché</reg></choice> fuggendo
+                        &uia;<choice><orig><g ref="#punctinter"/></orig><reg>?</reg></choice></l>
+                </lg>
+                <lg type="dblvrs">
+                    <l n="7">Se ti rimembra<choice><orig> /</orig><reg>,</reg></choice> il <choice>
+                            <abbr>tēpo</abbr>
+                            <expan>tempo</expan>
+                        </choice> passa omai</l>
+                    <l n="8">Di tornar a <choice><orig>ueder</orig><reg>veder</reg></choice> la donna nostra.</l>
+                </lg>
+                <lg type="dblvrs">
+                    <l n="9">I<reg>’</reg> che<reg>’</reg>l suo ragionar intendo allora</l>
+                    <l n="10">M<reg>’</reg>agghiaccio dentro<choice><orig> /</orig><reg/></choice> &in; guisa d<reg>’</reg>uom ch&regapos;ascolta</l>
+                </lg>
+                <lg type="dblvrs">
+                    <l n="11"><choice><orig>Nouella</orig><reg>Novella</reg></choice> che di subito l&regapos;accora.</l>
+                    <l n="12">Poi torna il primo. &amp7; questo <choice><orig>da</orig><reg>dà</reg></choice> la &uolta;.</l>
+                </lg>
+                <lg type="dblvrs">
+                    <l n="13">Qual <choice><orig>uincera</orig><reg>vincerà</reg></choice><reg>,</reg> non so<choice><orig>.</orig><reg>;</reg></choice> ma<reg> ’</reg>nfino <choice><orig>a<corr>dor</corr>a</orig><reg>ad ora</reg></choice></l>
+                    <l n="14">Combattuto <choice><orig>anno</orig><reg>ànno</reg></choice>&p2c; et &non; pur
+                        una &uolta;.</l>
+                </lg>
+            </lg>
+        </body>
+    </text>
+</TEI>

@@ -83,7 +83,7 @@ html > body {
 }
 
 #tei_wrapper {
-margin-top:24pt;
+  margin-top: 3em;
 }
 titleStmt > tei-title {
   font-family: "Helvetica Neue", "Gill Sans", "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;

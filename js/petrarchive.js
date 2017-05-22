@@ -9,24 +9,16 @@ function showHide (maniculeId, idToShow, idToHide) {
 }
 
 function toggle_visibility(id) {
-       var e = document.getElementById(id);
-       if(e.style.display == 'block')
-          e.style.display = 'none';
-       else
-          e.style.display = 'block';
+  // deprecate
+  PT.toggleElement(id)
 }
 
-function switchCustomCSS(theme) {
-	document.getElementById('customcss').href=theme.options[theme.selectedIndex].value;
+var Petrarchive = function() {
+  this.toggleElement = function(node, id) {
+    $('#' + id).toggle()
+  }
 }
 
-function revealCommentary(mode,id) {
-    var e = document.getElementById(id);
-    if (mode.options[mode.selectedIndex].value == 'show') {
-	console.log(mode.selectedIndex);
-        e.style.display = 'block';
-    } else {
-      	console.log(mode.selectedIndex);
-        e.style.display = 'none';
-    }
-}
+window.PT = new Petrarchive()
+
+

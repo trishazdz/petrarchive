@@ -112,7 +112,7 @@
           <div>
             <!-- <img style="border:0;" src="../images/settings-icon.png"/> -->
            
-            <select id="commentarySelect" onchange="revealCommentary(this,'commentary')">
+            <select id="commentarySelect" onchange="PT.toggleElement(this,'commentary')">
               <option value="hide">commentary hidden</option>
               <option value="show">commentary shown</option>             
             </select>

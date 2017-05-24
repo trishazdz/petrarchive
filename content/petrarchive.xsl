@@ -482,17 +482,7 @@
   <xsl:template name="commentaryNav">
     <nav>
       <ul>
-        <!-- 
-            Why won't this select the note elements? 
-
-            select="." selects the div[@type='commentary'], which makes
-            sense since this template was called from that element.
-
-            But I can't select the <note> desscendants.
-
-            Trying to build a nav element with the div[@type = 'commentary'] as the indivudal links inside of it.
-        -->
-        <xsl:for-each select="note">
+        <xsl:for-each select=".note">
             <li>
                 <a>
                     <xsl:call-template name="getCommentaryTitle">

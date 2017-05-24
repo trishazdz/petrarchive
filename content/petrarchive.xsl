@@ -492,12 +492,12 @@
 
             Trying to build a nav element with the div[@type = 'commentary'] as the indivudal links inside of it.
         -->
-        <xsl:apply-templates select="note" mode="commentary"/>
+        <xsl:apply-templates select="tei:note" mode="commentary"/>
       </ul>
     </nav>
   </xsl:template>
 
-  <xsl:template match="note" mode="commentary">
+  <xsl:template match="tei:note" mode="commentary">
     <li>
       <a>
         <xsl:call-template name="getCommentaryTitle">

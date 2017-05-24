@@ -444,6 +444,67 @@
         <xsl:apply-templates select="@*|node()"/>
       </xsl:element>
   </xsl:template>
+
+  <xsl:template name="getCommentaryTitle">
+    <xsl:param name="type"/>
+
+    <xsl:choose>
+        <xsl:when test="$type = 'introduction'">
+          <xsl:value-of select="'Introduction'"/>
+        </xsl:when>
+        <xsl:when test="$type = 'prosodic'">
+          <xsl:value-of select="'Prosodic features'"/>
+        </xsl:when>
+        <xsl:when test="$type = 'syntactic'">
+          <xsl:value-of select="'Syntactic features'"/>
+        </xsl:when>
+        <xsl:when test="$type = 'historical'">
+          <xsl:value-of select="'Historical genesis'"/>
+        </xsl:when>
+        <xsl:when test="$type = 'physical'">
+          <xsl:value-of select="'Physical collocation and diplomatic conditions'"/>
+        </xsl:when>
+        <xsl:when test="$type = 'variants'">
+          <xsl:value-of select="'Significant variants from the tradition'"/>
+        </xsl:when>
+        <xsl:when test="$type = 'language'">
+          <xsl:value-of select="'Language notes'"/>
+        </xsl:when>
+        <xsl:when test="$type = 'thematic'">
+          <xsl:value-of select="'Thematic notes'"/>
+        </xsl:when>
+        <xsl:when test="$type = 'translation'">
+          <xsl:value-of select="'Translation'"/>
+        </xsl:when>
+    </xsl:choose>
+  </xsl:template>
+
+  <xsl:template name="commentaryNav">
+    <nav>
+      <ul>
+        <!-- 
+            Why won't this select the note elements? 
+
+            select="." selects the div[@type='commentary'], which makes
+            sense since this template was called from that element.
+
+            But I can't select the <note> desscendants.
+
+            Trying to build a nav element with the div[@type = 'commentary'] as the indivudal links inside of it.
+        -->
+        <xsl:for-each select="note">
+            <li>
+                <a>
+                    <xsl:call-template name="getCommentaryTitle">
+                        <xsl:with-param name="type" select="@type" />
+                    </xsl:call-template>
+                </a>
+            </li>
+        </xsl:for-each>
+      </ul>
+    </nav>
+  </xsl:template>
+
   
   <xsl:template match="tei:div[@type = 'commentary']">
     <div class="commentary" id="commentary" style="display:none;">
@@ -452,42 +513,20 @@
       <h1>Commentary: <cite>Rvf</cite> <xsl:value-of select="' '"/><xsl:value-of select="$rvfNum"/>
      </h1>
       <hr/>
+
+      <xsl:call-template name="commentaryNav"/>
+
       <xsl:apply-templates/>
     </div>
   </xsl:template>
+
   
   <xsl:template match="tei:div[@type= 'commentary']/tei:note|tei:div[@type= 'commentary']/tei:div[@type= 'translation']">
     <section>
     <h2>
-      <xsl:choose>
-        <xsl:when test="@type = 'introduction'">
-          <xsl:value-of select="'Introduction'"/>
-        </xsl:when>
-        <xsl:when test="@type = 'prosodic'">
-          <xsl:value-of select="'Prosodic features'"/>
-        </xsl:when>
-        <xsl:when test="@type = 'syntactic'">
-          <xsl:value-of select="'Syntactic features'"/>
-        </xsl:when>
-        <xsl:when test="@type = 'historical'">
-          <xsl:value-of select="'Historical genesis'"/>
-        </xsl:when>
-        <xsl:when test="@type = 'physical'">
-          <xsl:value-of select="'Physical collocation and diplomatic conditions'"/>
-        </xsl:when>
-        <xsl:when test="@type = 'variants'">
-          <xsl:value-of select="'Significant variants from the tradition'"/>
-        </xsl:when>
-        <xsl:when test="@type = 'language'">
-          <xsl:value-of select="'Language notes'"/>
-        </xsl:when>
-        <xsl:when test="@type = 'thematic'">
-          <xsl:value-of select="'Thematic notes'"/>
-        </xsl:when>
-        <xsl:when test="@type = 'translation'">
-          <xsl:value-of select="'Translation'"/>
-        </xsl:when>
-      </xsl:choose>
+      <xsl:call-template name="getCommentaryTitle">
+        <xsl:with-param name="type" select="@type"/>
+      </xsl:call-template>
     </h2>
       <xsl:element name="{local-name()}">
         <xsl:call-template name="addID"/>
@@ -495,8 +534,5 @@
       </xsl:element>
     </section>
   </xsl:template>
-        
-  
-        
     
 </xsl:stylesheet>

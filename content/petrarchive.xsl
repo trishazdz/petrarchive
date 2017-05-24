@@ -492,19 +492,20 @@
 
             Trying to build a nav element with the div[@type = 'commentary'] as the indivudal links inside of it.
         -->
-        <xsl:for-each select="note">
-            <li>
-                <a>
-                    <xsl:call-template name="getCommentaryTitle">
-                        <xsl:with-param name="type" select="@type" />
-                    </xsl:call-template>
-                </a>
-            </li>
-        </xsl:for-each>
+        <xsl:apply-templates select="note" mode="commentary"/>
       </ul>
     </nav>
   </xsl:template>
 
+  <xsl:template match="note" mode="commentary">
+    <li>
+      <a>
+        <xsl:call-template name="getCommentaryTitle">
+          <xsl:with-param name="type" select="@type" />
+        </xsl:call-template>
+      </a>
+    </li>
+  </xsl:template>
   
   <xsl:template match="tei:div[@type = 'commentary']">
     <div class="commentary" id="commentary" style="display:none;">

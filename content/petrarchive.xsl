@@ -482,19 +482,30 @@
   <xsl:template name="commentaryNav">
     <nav>
       <ul>
-        <xsl:for-each select=".note">
-            <li>
-                <a>
-                    <xsl:call-template name="getCommentaryTitle">
-                        <xsl:with-param name="type" select="@type" />
-                    </xsl:call-template>
-                </a>
-            </li>
-        </xsl:for-each>
+        <!-- 
+            Why won't this select the note elements? 
+
+            select="." selects the div[@type='commentary'], which makes
+            sense since this template was called from that element.
+
+            But I can't select the <note> desscendants.
+
+            Trying to build a nav element with the div[@type = 'commentary'] as the indivudal links inside of it.
+        -->
+        <xsl:apply-templates select="tei:note" mode="commentary"/>
       </ul>
     </nav>
   </xsl:template>
 
+  <xsl:template match="tei:note" mode="commentary">
+    <li>
+      <a>
+        <xsl:call-template name="getCommentaryTitle">
+          <xsl:with-param name="type" select="@type" />
+        </xsl:call-template>
+      </a>
+    </li>
+  </xsl:template>
   
   <xsl:template match="tei:div[@type = 'commentary']">
     <div class="commentary" id="commentary" style="display:none;">

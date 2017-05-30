@@ -10,15 +10,20 @@ function showHide (maniculeId, idToShow, idToHide) {
 
 function toggle_visibility(id) {
   // deprecate
-  PT.toggleElement(id)
+  PT.toggleElement(undefined, id)
 }
 
 var Petrarchive = function() {
-  this.toggleElement = function(node, id) {
-    $('#' + id).toggle()
+  this.toggleElement = function(node, id, display) {
+    // If display parameter not supplied then go with default jQuery.toggle()
+    if (!display) 
+      $('#' + id).toggle()
+    else
+      $('#' + id).toggleClass('display-' + display)
   }
 }
 
-window.PT = new Petrarchive()
-
+$(document).ready(function() {
+  window.PT = new Petrarchive()
+})
 

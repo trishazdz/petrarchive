@@ -369,6 +369,20 @@
       <xsl:apply-templates select="@*|node()"/>
     </xsl:element>
   </xsl:template>
+
+  <xsl:template match="tei:lg[@xml:id]">
+    <xsl:apply-templates select="tei:lg[@xml:id]" mode="poemNumber" />
+    
+  </xsl:template>
+ 
+  <xsl:template match="tei:lg[@xml:id]" mode="poemNumber">
+
+    pwoiefjqwpoeij
+    <xsl:element name="{local-name()}">
+      <xsl:call-template name="addID"/>
+      <xsl:apply-templates select="@*|node()"/>
+    </xsl:element>
+  </xsl:template>
   
   <xsl:template match="*" mode="rvf360v"> 
     <xsl:element name="{local-name()}">
@@ -396,7 +410,7 @@
       <!-- <xsl:call-template name="atts"/> -->
       <span class="-teibp-pbNote"><xsl:value-of select="$pbNote"/></span>
       <xsl:value-of select="@n"/>
-      <xsl:text> </xsl:text>
+      <xsl:text></xsl:text>
     </span>
     <span class="-teibp-pbFacs">
       <a class="gallery-facs" rel="prettyPhoto[gallery1]">
@@ -480,18 +494,8 @@
   </xsl:template>
 
   <xsl:template name="commentaryNav">
-    <nav>
+    <nav class="commentary">
       <ul>
-        <!-- 
-            Why won't this select the note elements? 
-
-            select="." selects the div[@type='commentary'], which makes
-            sense since this template was called from that element.
-
-            But I can't select the <note> desscendants.
-
-            Trying to build a nav element with the div[@type = 'commentary'] as the indivudal links inside of it.
-        -->
         <xsl:apply-templates select="tei:note" mode="commentary"/>
       </ul>
     </nav>

@@ -21,9 +21,17 @@ var Petrarchive = function() {
     else
       $('#' + id).toggleClass('display-' + display)
   }
+
+  this.toggleCommentary = function() {
+    this.toggleElement(undefined, 'commentary')
+  }
 }
 
 $(document).ready(function() {
   window.PT = new Petrarchive()
+
+  $('a.commentary-activate').click(function() {
+    PT.toggleCommentary()
+  })
 })
 

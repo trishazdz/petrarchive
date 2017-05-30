@@ -112,7 +112,7 @@
           <div>
             <!-- <img style="border:0;" src="../images/settings-icon.png"/> -->
            
-            <select id="commentarySelect" onchange="PT.toggleElement(this,'commentary')">
+            <select id="commentarySelect" onchange="PT.toggleCommentary()">
               <option value="hide">commentary hidden</option>
               <option value="show">commentary shown</option>             
             </select>
@@ -371,17 +371,23 @@
   </xsl:template>
 
   <xsl:template match="tei:lg[@xml:id]">
-    <xsl:apply-templates select="tei:lg[@xml:id]" mode="poemNumber" />
+    <xsl:call-template name="poemNumber" />
     
-  </xsl:template>
- 
-  <xsl:template match="tei:lg[@xml:id]" mode="poemNumber">
-
-    pwoiefjqwpoeij
     <xsl:element name="{local-name()}">
       <xsl:call-template name="addID"/>
-      <xsl:apply-templates select="@*|node()"/>
+      
+      <xsl:apply-templates select="@*|node()" />
     </xsl:element>
+  </xsl:template>
+ 
+  <xsl:template name="poemNumber">
+    <span class="poem-number">
+      <xsl:value-of select="@n"></xsl:value-of>
+      
+      <a class="commentary-activate">
+        C
+      </a>
+    </span>
   </xsl:template>
   
   <xsl:template match="*" mode="rvf360v"> 

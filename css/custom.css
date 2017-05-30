@@ -82,6 +82,10 @@ html > body {
   margin-top: 0;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 #tei_wrapper {
   margin-top: 3em;
 }
@@ -145,7 +149,7 @@ lg[type='canzone_20vv']:before,
 lg[type='sestina']:before,
 lg[type='ballata_grande']:before,
 lg[type='ballata_mezzana']:before {
-  display: block;
+ /* display: block;
   clear: both;
   font-family: "Helvetica Neue", "Gill Sans", "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
   font-weight: 100;
@@ -154,10 +158,13 @@ lg[type='ballata_mezzana']:before {
   font-size: 20px;
   top: 40px;
   left: -120px;
-  position: relative;
+  position: relative; */
 }
 text body lg:first-of-type {
   margin-top: 0;
+}
+text body > lg:first-of-type {
+    margin-top: 1em;
 }
 lg[type='dblvrs'],
 lg[type='trplvrs'],
@@ -209,6 +216,11 @@ footer {
   font-family: 'Helvetica Neue', 'Gill Sans', Helvetica, Arial, sans-serif;
   font-weight: 200;
 }
+
+.-teibp-pageNum {
+  margin-right: .5em;
+}
+
 .-teibp-thumbnail {
   max-height: 40px;
 }
@@ -966,3 +978,14 @@ nav.commentary li:before {
   display: block !important;
 }
 /* utility classes code: end */
+
+span.poem-number {
+  top: 2.5em;
+  position: relative;
+  left: -120px;
+  clear: both;
+  font-family: "Helvetica Neue", "Gill Sans", "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+  font-weight: 100;
+  color: gray;
+  font-size:20px;
+}

@@ -47,7 +47,7 @@ var commentaryNav = [
   },
   {
     name: 'Translation',
-    sections: []
+    sections: ['translation']
   }
 ]
 

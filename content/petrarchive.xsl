@@ -555,12 +555,12 @@
       </ul>
       
       <div style="display:none">
-        <xsl:apply-templates select="tei:note" mode="commentary"/>
+        <xsl:apply-templates select="tei:note|tei:div" mode="commentary"/>
       </div>
     </nav>
   </xsl:template>
 
-  <xsl:template match="tei:note" mode="commentary">
+  <xsl:template match="tei:div[@type= 'commentary']/tei:note|tei:div[@type= 'commentary']/tei:div[@type= 'translation']" mode="commentary">
       <xsl:element name="section">
         <xsl:attribute name="type">
           <xsl:value-of select="@type" />

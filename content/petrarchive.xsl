@@ -384,9 +384,11 @@
     <span class="poem-number">
       <xsl:value-of select="@n"></xsl:value-of>
       
-      <a class="commentary-activate">
-        C
-      </a>
+      <xsl:if test="//tei:back/tei:div[@type = 'commentary']">
+        <a class="commentary-activate">
+          C
+        </a>
+      </xsl:if>
     </span>
   </xsl:template>
   
@@ -501,19 +503,57 @@
 
   <xsl:template name="commentaryNav">
     <nav class="commentary">
+      <!-- 
       <ul>
         <xsl:apply-templates select="tei:note" mode="commentary"/>
+      </ul>
+      -->
+      
+      <ul>
+        <li>
+          <a>
+            Introduction &amp; prosody
+          </a>
+        </li>
+        
+        <li>
+          <a>
+            Genesis &amp; diplomatic condition
+          </a>
+        </li>
+        
+        <li>
+          <a>
+            Syntax, variants, &amp; language
+          </a>
+        </li>
+        
+        <li>
+          <a>
+            Thematics
+          </a>
+        </li>
+        
+        <li>
+          <a>
+            Translation
+          </a>
+        </li>
       </ul>
     </nav>
   </xsl:template>
 
   <xsl:template match="tei:note" mode="commentary">
     <li>
-      <a>
+      <xsl:element name="a">
+        <xsl:attribute name="data-href">
+          <xsl:value-of select="@type"/>
+        </xsl:attribute>
+        
         <xsl:call-template name="getCommentaryTitle">
           <xsl:with-param name="type" select="@type" />
         </xsl:call-template>
-      </a>
+      </xsl:element>
     </li>
   </xsl:template>
   
@@ -521,13 +561,18 @@
     <div class="commentary" id="commentary" style="display:none;">
       <xsl:variable name="rvfTarget" select="substring-after(@corresp,'#')"/>
       <xsl:variable name="rvfNum" select="//tei:lg[@xml:id = $rvfTarget]/@n"/>
-      <h1>Commentary: <cite>Rvf</cite> <xsl:value-of select="' '"/><xsl:value-of select="$rvfNum"/>
-     </h1>
-      <hr/>
+      
+      <header>
+        <h1>
+          Commentary: <cite>Rvf</cite> <xsl:value-of select="' '"/><xsl:value-of select="$rvfNum"/>
+        </h1>
 
-      <xsl:call-template name="commentaryNav"/>
-
+        <xsl:call-template name="commentaryNav"/>
+      </header>
+      
+      <main>
       <xsl:apply-templates/>
+      </main>
     </div>
   </xsl:template>
 

@@ -13,7 +13,7 @@
     exclude-result-prefixes="xsl tei xd eg fn #default">
     
     <xsl:import href="teibp.xsl"/>
-       <xsl:output method="xml" encoding="utf-8" version="1.0" indent="yes" standalone="no" media-type="text/html" omit-xml-declaration="no" doctype-system="about:legacy-compat" /> 
+    <xsl:output method="xml" encoding="utf-8" version="1.0" indent="yes" standalone="no" media-type="text/html" omit-xml-declaration="no" doctype-system="about:legacy-compat" /> 
     <xsl:param name="pbNote" select="''"/>
     
     <xsl:param name="customCSS.norm" select="concat($filePrefix,'/css/custom_norm.css')"/>
@@ -507,18 +507,24 @@
         </xsl:when>
     </xsl:choose>
   </xsl:template>
-
+  
+  
+ 
   <xsl:template name="commentaryNav">
     <nav class="commentary"> 
-      <ul>
+      <!-- <ul>
         <xsl:for-each select="pt:commentary/section">
-          <li>woiejf</li>
+          <li>
+            <a data-bind="click: commentary.aClick">
+              <xsl:value-of select="name" />
+            </a>
+          </li>
         </xsl:for-each>
-      </ul>
+      </ul> -->
       
       <ul>
         <li>
-          <a href="#introduction" data-bind="click:">
+          <a>
             Introduction &amp; prosody
           </a>
         </li>
@@ -547,21 +553,23 @@
           </a>
         </li>
       </ul>
+      
+      <div style="display:none">
+        <xsl:apply-templates select="tei:note" mode="commentary"/>
+      </div>
     </nav>
   </xsl:template>
 
   <xsl:template match="tei:note" mode="commentary">
-    <li>
-      <xsl:element name="a">
-        <xsl:attribute name="data-href">
-          <xsl:value-of select="@type"/>
+      <xsl:element name="section">
+        <xsl:attribute name="type">
+          <xsl:value-of select="@type" />
         </xsl:attribute>
-        
+         
         <xsl:call-template name="getCommentaryTitle">
           <xsl:with-param name="type" select="@type" />
         </xsl:call-template>
       </xsl:element>
-    </li>
   </xsl:template>
   
   <xsl:template match="tei:div[@type = 'commentary']">
@@ -585,7 +593,7 @@
 
   
   <xsl:template match="tei:div[@type= 'commentary']/tei:note|tei:div[@type= 'commentary']/tei:div[@type= 'translation']">
-    <section data-bind="visible: commentary.isSectionActive">
+    <section data-bind="visible: true">
       <h2>
         <xsl:call-template name="getCommentaryTitle">
           <xsl:with-param name="type" select="@type"/>

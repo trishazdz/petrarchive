@@ -13,6 +13,44 @@ function toggle_visibility(id) {
   PT.toggleElement(undefined, id)
 }
 
+// This list contains:
+// 1. Top level Headers for the commentary navigation
+// 2. Children sections which will be contained within headers               
+var commentaryNav = [
+  {
+    name: 'Introduction &amp; prosody',
+    sections: [
+      'introduction',
+      'prosodic'
+    ]
+  },
+  {
+    name: 'Genesis &amp; diplomatic condition',
+    sections: [
+      'syntactic',
+      'historical',
+      'physical'
+    ]
+  },
+  {
+    name: 'Syntax, variants, &amp; language',
+    sections: [
+      'variants',
+      'language'
+    ]
+  },
+  {
+    name: 'Thematics',
+    sections: [
+      'thematic'
+    ]
+  },
+  {
+    name: 'Translation',
+    sections: []
+  }
+]
+
 var Petrarchive = function() {
   this.toggleElement = function(node, id, display) {
     // If display parameter not supplied then go with default jQuery.toggle()
@@ -26,18 +64,14 @@ var Petrarchive = function() {
     toggled: false,
     activeIndex: ko.observable(0),
 
-    isSectionActive: ko.pureComputed(function() {
-      return this.commentary.activeIndex()
-    }, this)
+    nav: commentaryNav.map(function(el, i, arr) {
+      // check if ele
+    })
   }
 
   this.toggleCommentary = function() {
     this.toggleElement(undefined, 'commentary')
     this.commentary.toggled = !this.commentary.toggled
-  }
-
-  this.howdy = function(data, ev) {
-    console.log(data, ev)
   }
 }
 

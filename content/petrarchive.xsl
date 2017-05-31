@@ -512,51 +512,50 @@
  
   <xsl:template name="commentaryNav">
     <nav class="commentary"> 
-      <!-- <ul>
-        <xsl:for-each select="pt:commentary/section">
-          <li>
-            <a data-bind="click: commentary.aClick">
-              <xsl:value-of select="name" />
-            </a>
-          </li>
-        </xsl:for-each>
-      </ul> -->
+      <!-- 
+        John, please output each <li> programmatically
+        
+        I've only added attributes to the 1st <li>
+      -->
       
       <ul>
         <li>
-          <a>
+          <!-- 
+            having this href value will allow users - in the future - to
+            copy and paste a URL that opens up the page with a specific 
+            part of the commentary already activated
+            
+            This href will reference an ID in a <section> below
+          -->
+          <a href="#ID-for-commentary-component">
             Introduction &amp; prosody
           </a>
         </li>
         
         <li>
-          <a href="#historical">
+          <a>
             Genesis &amp; diplomatic condition
           </a>
         </li>
         
         <li>
-          <a href="#syntactic">
+          <a>
             Syntax, variants, &amp; language
           </a>
         </li>
         
         <li>
-          <a href="#thematic">
+          <a>
             Thematics
           </a>
         </li>
         
         <li>
-          <a href="#translation">
+          <a>
             Translation
           </a>
         </li>
       </ul>
-      
-      <div style="display:none">
-        <xsl:apply-templates select="tei:note|tei:div" mode="commentary"/>
-      </div>
     </nav>
   </xsl:template>
 
@@ -593,17 +592,40 @@
 
   
   <xsl:template match="tei:div[@type= 'commentary']/tei:note|tei:div[@type= 'commentary']/tei:div[@type= 'translation']">
-    <section data-bind="visible: true">
-      <h2>
-        <xsl:call-template name="getCommentaryTitle">
-          <xsl:with-param name="type" select="@type"/>
-        </xsl:call-template>
-      </h2>
+    <!-- 
+      John, the <section> IDs should match up with the href attributes 
+      from the commentary nav <a> above
       
-      <xsl:element name="{local-name()}">
-        <xsl:call-template name="addID"/>
-        <xsl:apply-templates select="@*|node()"/>
-      </xsl:element>
+      Please Programatically group the correct commentary <div>s 
+      under the correct <section>s.
+      
+      If <a href="#commentary-introduction"> exists, then 
+      <section id="commentary-introduction"> should contain:
+      tei:div[@type='commentary']/tei:note[@type='introduction' and tei:note[@type='prosodic']
+        
+      And so on...
+      
+      I feel like I am writing questions to a xslt textbook.
+      
+      The XML documents have all the commentary components in a flat 
+      structure. I thought it would be wise to use XML to model/organize
+      the flat structure in a hierarchy but couldn't figure it out. 
+      Excited to see what you do.
+    -->
+    
+    <section id="id-representing-grouped-commentary-component">
+      <div>
+        <h2>
+          <xsl:call-template name="getCommentaryTitle">
+            <xsl:with-param name="type" select="@type"/>
+          </xsl:call-template>
+        </h2>
+        
+        <xsl:element name="{local-name()}">
+          <xsl:call-template name="addID"/>
+          <xsl:apply-templates select="@*|node()"/>
+        </xsl:element>
+      </div>
     </section>
   </xsl:template>
     

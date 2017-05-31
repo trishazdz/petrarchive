@@ -22,16 +22,32 @@ var Petrarchive = function() {
       $('#' + id).toggleClass('display-' + display)
   }
 
+  this.commentary = {
+    toggled: false,
+    activeIndex: ko.observable(0),
+
+    isSectionActive: ko.pureComputed(function() {
+      return this.commentary.activeIndex()
+    }, this)
+  }
+
   this.toggleCommentary = function() {
     this.toggleElement(undefined, 'commentary')
+    this.commentary.toggled = !this.commentary.toggled
+  }
+
+  this.howdy = function(data, ev) {
+    console.log(data, ev)
   }
 }
 
 $(document).ready(function() {
   window.PT = new Petrarchive()
+  ko.applyBindings(PT)
 
   $('a.commentary-activate').click(function() {
     PT.toggleCommentary()
   })
+
 })
 

@@ -7,16 +7,20 @@
     xmlns:exsl="http://exslt.org/common"
     xmlns:msxsl="urn:schemas-microsoft-com:xslt"
     xmlns:fn="http://www.w3.org/2005/xpath-functions"
+    xmlns:pt="http://dcl.slis.indiana.edu/petrarchive/"
     extension-element-prefixes="exsl msxsl"
     xmlns="http://www.w3.org/1999/xhtml" 
     exclude-result-prefixes="xsl tei xd eg fn #default">
+    
     <xsl:import href="teibp.xsl"/>
        <xsl:output method="xml" encoding="utf-8" version="1.0" indent="yes" standalone="no" media-type="text/html" omit-xml-declaration="no" doctype-system="about:legacy-compat" /> 
     <xsl:param name="pbNote" select="''"/>
     
     <xsl:param name="customCSS.norm" select="concat($filePrefix,'/css/custom_norm.css')"/>
     <xsl:param name="customCSS" select="concat($filePrefix,'/css/custom.css')"/>
-  
+    
+    <xsl:param name="knockoutJS" select="concat($filePrefix,'/js/knockout/knockout-3.4.2.js')"/>
+
     
   
  
@@ -83,6 +87,8 @@
             <link id="maincss" rel="stylesheet" type="text/css" href="{$teibpCSS}"/>
             <link id="customcss" rel="stylesheet" type="text/css" href="{$customCSS}"/>
             <script type="text/javascript" src="{$jqueryJS}"></script>
+            <script type="text/javascript" src="{$knockoutJS}"></script>
+
 
           <!-- <script type="text/javascript" src="{$jqueryBlockUIJS}"></script>-->
           <script type="text/javascript" src="{$teibpJS}"><xsl:comment> </xsl:comment></script>
@@ -111,11 +117,12 @@
           <xsl:if test="//tei:back/tei:div[@type = 'commentary']">
           <div>
             <!-- <img style="border:0;" src="../images/settings-icon.png"/> -->
-           
+            <!--
             <select id="commentarySelect" onchange="PT.toggleCommentary()">
               <option value="hide">commentary hidden</option>
               <option value="show">commentary shown</option>             
             </select>
+            -->
           </div>
           </xsl:if>
         </div>
@@ -502,40 +509,40 @@
   </xsl:template>
 
   <xsl:template name="commentaryNav">
-    <nav class="commentary">
-      <!-- 
+    <nav class="commentary"> 
       <ul>
-        <xsl:apply-templates select="tei:note" mode="commentary"/>
+        <xsl:for-each select="pt:commentary/section">
+          <li>woiejf</li>
+        </xsl:for-each>
       </ul>
-      -->
       
       <ul>
         <li>
-          <a>
+          <a href="#introduction" data-bind="click:">
             Introduction &amp; prosody
           </a>
         </li>
         
         <li>
-          <a>
+          <a href="#historical">
             Genesis &amp; diplomatic condition
           </a>
         </li>
         
         <li>
-          <a>
+          <a href="#syntactic">
             Syntax, variants, &amp; language
           </a>
         </li>
         
         <li>
-          <a>
+          <a href="#thematic">
             Thematics
           </a>
         </li>
         
         <li>
-          <a>
+          <a href="#translation">
             Translation
           </a>
         </li>
@@ -571,19 +578,20 @@
       </header>
       
       <main>
-      <xsl:apply-templates/>
+        <xsl:apply-templates/>
       </main>
     </div>
   </xsl:template>
 
   
   <xsl:template match="tei:div[@type= 'commentary']/tei:note|tei:div[@type= 'commentary']/tei:div[@type= 'translation']">
-    <section>
-    <h2>
-      <xsl:call-template name="getCommentaryTitle">
-        <xsl:with-param name="type" select="@type"/>
-      </xsl:call-template>
-    </h2>
+    <section data-bind="visible: commentary.isSectionActive">
+      <h2>
+        <xsl:call-template name="getCommentaryTitle">
+          <xsl:with-param name="type" select="@type"/>
+        </xsl:call-template>
+      </h2>
+      
       <xsl:element name="{local-name()}">
         <xsl:call-template name="addID"/>
         <xsl:apply-templates select="@*|node()"/>

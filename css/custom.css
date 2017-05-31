@@ -948,12 +948,13 @@ font-weight: 200 !important; font-size:80%; margin:0;}
 back h1 {font-size:90%;}
 
 div.commentary {position: fixed;
-bottom:0;
-z-index:1000;
-background-color:white;
-left:0;
-height: 12em;
-border-top:1px solid #dcdddb;
+  bottom:0;
+  z-index:1000;
+  background-color:white;
+  left:0;
+  height: 12em;
+  border-top:1px solid #dcdddb;
+  width: 100%;
 }
 
 div.commentary header {
@@ -961,12 +962,6 @@ div.commentary header {
   width: 100%;
   padding: .2em 1em;
   background-color: white;
-}
-div.commentary main {
-  margin: 0 1em;
-  position: relative;
-  top: 2em;
-  overflow-y: scroll;
 }
 
 div.commentary header * {
@@ -995,6 +990,21 @@ nav.commentary li:first-child {
 
 nav.commentary li:before {
   content: initial;
+}
+
+div.commentary main {
+  position: relative;
+  top: 2em;
+  height: 10em;
+  overflow-y: scroll;
+}
+div.commentary section {
+  margin-left: 1em;
+}
+
+div.commentary section note,
+div.commentary ab {
+  padding-left: 0;
 }
 
 /* commentary code: end */

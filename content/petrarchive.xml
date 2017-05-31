@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns="http://dcl.slis.indiana.edu/petrarchive/">
+
+<commentary>
+  <section>
+    <name>Introduction &amp; prosody</name>
+  </section>
+    <section>
+        <name>Genesis &amp; diplomatic condition</name>
+    </section>
+    <section>
+        <name>Syntax, variants, &amp; language</name>
+    </section>
+    <section>
+        <name>Thematics</name>
+    </section>
+    <section>
+        <name>Translation</name>
+    </section>
+</commentary>
+    
+</root>

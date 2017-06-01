@@ -481,16 +481,16 @@
         <xsl:when test="$type = 'introduction'">
           <xsl:value-of select="'Introduction'"/>
         </xsl:when>
-        <xsl:when test="$type = 'prosodic'">
+        <xsl:when test="$type = 'prosody'">
           <xsl:value-of select="'Prosodic features'"/>
         </xsl:when>
-        <xsl:when test="$type = 'syntactic'">
+        <xsl:when test="$type = 'syntax'">
           <xsl:value-of select="'Syntactic features'"/>
         </xsl:when>
-        <xsl:when test="$type = 'historical'">
+        <xsl:when test="$type = 'genesis'">
           <xsl:value-of select="'Historical genesis'"/>
         </xsl:when>
-        <xsl:when test="$type = 'physical'">
+        <xsl:when test="$type = 'diplomatics'">
           <xsl:value-of select="'Physical collocation and diplomatic conditions'"/>
         </xsl:when>
         <xsl:when test="$type = 'variants'">
@@ -499,7 +499,7 @@
         <xsl:when test="$type = 'language'">
           <xsl:value-of select="'Language notes'"/>
         </xsl:when>
-        <xsl:when test="$type = 'thematic'">
+        <xsl:when test="$type = 'thematics'">
           <xsl:value-of select="'Thematic notes'"/>
         </xsl:when>
         <xsl:when test="$type = 'translation'">
@@ -511,6 +511,7 @@
   
  
   <xsl:template name="commentaryNav">
+    <xsl:param name="rvfTarget"/>
     <nav class="commentary"> 
       <!-- 
         John, please output each <li> programmatically
@@ -527,31 +528,32 @@
             
             This href will reference an ID in a <section> below
           -->
-          <a href="#ID-for-commentary-component">
+          <a href="{concat('#',$rvfTarget,'_introduction')}">
             Introduction &amp; prosody
           </a>
         </li>
         
         <li>
-          <a>
+          <a href="{concat('#',$rvfTarget,'_genesis')}">
             Genesis &amp; diplomatic condition
           </a>
         </li>
         
         <li>
-          <a>
+          <a href="{concat('#',$rvfTarget,'_syntax')}">
             Syntax, variants, &amp; language
           </a>
         </li>
+       
         
         <li>
-          <a>
+          <a href="{concat('#',$rvfTarget,'_thematics')}">
             Thematics
           </a>
         </li>
         
         <li>
-          <a>
+          <a href="{concat('#',$rvfTarget,'_translation')}">
             Translation
           </a>
         </li>
@@ -560,15 +562,14 @@
   </xsl:template>
 
   <xsl:template match="tei:div[@type= 'commentary']/tei:note|tei:div[@type= 'commentary']/tei:div[@type= 'translation']" mode="commentary">
-      <xsl:element name="section">
-        <xsl:attribute name="type">
-          <xsl:value-of select="@type" />
-        </xsl:attribute>
-         
+      <section type="{@type}">
+        <h1>
         <xsl:call-template name="getCommentaryTitle">
           <xsl:with-param name="type" select="@type" />
         </xsl:call-template>
-      </xsl:element>
+        </h1>
+        <xsl:apply-templates select="."/>
+      </section>
   </xsl:template>
   
   <xsl:template match="tei:div[@type = 'commentary']">
@@ -581,18 +582,13 @@
           Commentary: <cite>Rvf</cite> <xsl:value-of select="' '"/><xsl:value-of select="$rvfNum"/>
         </h1>
 
-        <xsl:call-template name="commentaryNav"/>
+        <xsl:call-template name="commentaryNav">
+          <xsl:with-param name="rvfTarget" select="$rvfTarget"/>
+        </xsl:call-template>
       </header>
       
       <main>
-        <xsl:apply-templates/>
-      </main>
-    </div>
-  </xsl:template>
-
-  
-  <xsl:template match="tei:div[@type= 'commentary']/tei:note|tei:div[@type= 'commentary']/tei:div[@type= 'translation']">
-    <!-- 
+        <!-- 
       John, the <section> IDs should match up with the href attributes 
       from the commentary nav <a> above
       
@@ -612,21 +608,36 @@
       the flat structure in a hierarchy but couldn't figure it out. 
       Excited to see what you do.
     -->
-    
-    <section id="id-representing-grouped-commentary-component">
-      <div>
-        <h2>
-          <xsl:call-template name="getCommentaryTitle">
-            <xsl:with-param name="type" select="@type"/>
-          </xsl:call-template>
-        </h2>
-        
-        <xsl:element name="{local-name()}">
-          <xsl:call-template name="addID"/>
-          <xsl:apply-templates select="@*|node()"/>
-        </xsl:element>
-      </div>
-    </section>
+        <!-- commentary body -->
+        <section id="{concat($rvfTarget,'_introduction')}">
+          <xsl:apply-templates select="tei:note[@type='introduction']" mode="commentary"/>
+          <xsl:apply-templates select="tei:note[@type='prosody']" mode="commentary"/>
+        </section>
+        <section id="{concat($rvfTarget,'_genesis')}">
+          <xsl:apply-templates select="tei:note[@type='genesis']" mode="commentary"/>
+          <xsl:apply-templates select="tei:note[@type='diplomatics']" mode="commentary"/>
+        </section>
+        <section id="{concat($rvfTarget,'_syntax')}">
+          <xsl:apply-templates select="tei:note[@type='syntax']" mode="commentary"/>
+          <xsl:apply-templates select="tei:note[@type='variants']" mode="commentary"/>
+          <xsl:apply-templates select="tei:note[@type='language']" mode="commentary"/>
+        </section>
+        <section id="{concat($rvfTarget,'_thematics')}">
+          <xsl:apply-templates select="tei:note[@type='thematics']" mode="commentary"/>
+        </section>
+        <section id="{concat($rvfTarget,'_translation')}">
+          <xsl:apply-templates select="tei:div[@type='translation']" mode="commentary"/>
+        </section>
+      </main>
+    </div>
   </xsl:template>
+
+  
+  
+      
+
+    
+   
+  
     
 </xsl:stylesheet>

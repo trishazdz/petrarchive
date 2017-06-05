@@ -7,23 +7,21 @@
     xmlns:exsl="http://exslt.org/common"
     xmlns:msxsl="urn:schemas-microsoft-com:xslt"
     xmlns:fn="http://www.w3.org/2005/xpath-functions"
-    xmlns:pt="http://dcl.slis.indiana.edu/petrarchive/"
     extension-element-prefixes="exsl msxsl"
     xmlns="http://www.w3.org/1999/xhtml" 
     exclude-result-prefixes="xsl tei xd eg fn #default">
     
     <xsl:import href="teibp.xsl"/>
-    <xsl:output method="xml" encoding="utf-8" version="1.0" indent="yes" standalone="no" media-type="text/html" omit-xml-declaration="no" doctype-system="about:legacy-compat" /> 
+    <xsl:output method="html" encoding="utf-8" version="1.0" indent="yes" standalone="no" media-type="text/html" omit-xml-declaration="no" doctype-system="about:legacy-compat" /> 
     <xsl:param name="pbNote" select="''"/>
     
     <xsl:param name="customCSS.norm" select="concat($filePrefix,'/css/custom_norm.css')"/>
     <xsl:param name="customCSS" select="concat($filePrefix,'/css/custom.css')"/>
     
-    <xsl:param name="knockoutJS" select="concat($filePrefix,'/js/knockout/knockout-3.4.2.js')"/>
+    <xsl:param name="magnificCSS" select="concat($filePrefix,'/js/magnific-popup/dist/magnific-popup.css')"/>
+    <xsl:param name="magnificJS" select="concat($filePrefix,'/js/magnific-popup/dist/jquery.magnific-popup.js')"/>
 
     
-  
- 
     <xsl:template name="siteNavigation">
       <xsl:variable name="nav">
         <xsl:copy-of select="document('../nav_content.html')"/>
@@ -85,15 +83,11 @@
             -->
             <meta charset="UTF-8"/>
             <link id="maincss" rel="stylesheet" type="text/css" href="{$teibpCSS}"/>
+
+            <link id="magnificcss" rel="stylesheet" type="text/css" href="{$magnificCSS}"/>
+
             <link id="customcss" rel="stylesheet" type="text/css" href="{$customCSS}"/>
-            <script type="text/javascript" src="{$jqueryJS}"></script>
-            <script type="text/javascript" src="{$knockoutJS}"></script>
-
-
-          <!-- <script type="text/javascript" src="{$jqueryBlockUIJS}"></script>-->
-          <script type="text/javascript" src="{$teibpJS}"><xsl:comment> </xsl:comment></script>
-          <script type="text/javascript" src="../js/petrarchive.js"><xsl:comment> </xsl:comment></script>
-
+           
             <xsl:call-template name="rendition2style"/>
             <title><xsl:value-of select="$htmlTitle"/><!-- don't leave empty. --></title>
             <xsl:if test="$includeAnalytics = true()">
@@ -114,17 +108,6 @@
                 </select>		
                 
             </div>
-          <xsl:if test="//tei:back/tei:div[@type = 'commentary']">
-          <div>
-            <!-- <img style="border:0;" src="../images/settings-icon.png"/> -->
-            <!--
-            <select id="commentarySelect" onchange="PT.toggleCommentary()">
-              <option value="hide">commentary hidden</option>
-              <option value="show">commentary shown</option>             
-            </select>
-            -->
-          </div>
-          </xsl:if>
         </div>
       </xsl:if>
     </xsl:template>
@@ -137,6 +120,12 @@
         Funding and support provided by the <a href="http://neh.gov/">National Endowment for the Humanities</a> and <a href="http://www.indiana.edu/">Indiana University-Bloomington</a>.<br/>
         Powered by <a href="{$teibpHome}">TEI Boilerplate</a>.
 </footer>
+
+            <script type="text/javascript" src="{$jqueryJS}"></script>
+            <script type="text/javascript" src="{$magnificJS}"></script>
+
+          <script type="text/javascript" src="{$teibpJS}"><xsl:comment> </xsl:comment></script>
+          <script type="text/javascript" src="../js/petrarchive.js"><xsl:comment> </xsl:comment></script>
     </xsl:variable>
   
 <xd:doc><xd:desc>These lines get line numbers. Canzone is not regular.</xd:desc></xd:doc>
@@ -429,9 +418,10 @@
     </span>
     <span class="-teibp-pbFacs">
       <a class="gallery-facs" rel="prettyPhoto[gallery1]">
-        <xsl:attribute name="onclick">
-          <xsl:value-of select="concat('showFacs(',$apos,$n,$apos,',',$apos,$facs,$apos,',',$apos,$id,$apos,')')"/>
+        <xsl:attribute name="href">
+            <xsl:value-of select="@facs"/>
         </xsl:attribute>
+
         <img  alt="{$altTextPbFacs}" class="-teibp-thumbnail">
           <xsl:attribute name="src">
             <xsl:value-of select="@facs"/>
@@ -588,26 +578,7 @@
       </header>
       
       <main>
-        <!-- 
-      John, the <section> IDs should match up with the href attributes 
-      from the commentary nav <a> above
-      
-      Please Programatically group the correct commentary <div>s 
-      under the correct <section>s.
-      
-      If <a href="#commentary-introduction"> exists, then 
-      <section id="commentary-introduction"> should contain:
-      tei:div[@type='commentary']/tei:note[@type='introduction' and tei:note[@type='prosodic']
-        
-      And so on...
-      
-      I feel like I am writing questions to a xslt textbook.
-      
-      The XML documents have all the commentary components in a flat 
-      structure. I thought it would be wise to use XML to model/organize
-      the flat structure in a hierarchy but couldn't figure it out. 
-      Excited to see what you do.
-    -->
+       
         <!-- commentary body -->
         <section id="{concat($rvfTarget,'_introduction')}">
           <xsl:apply-templates select="tei:note[@type='introduction']" mode="commentary"/>

@@ -13,44 +13,6 @@ function toggle_visibility(id) {
   PT.toggleElement(undefined, id)
 }
 
-// This list contains:
-// 1. Top level Headers for the commentary navigation
-// 2. Children sections which will be contained within headers               
-var commentaryNav = [
-  {
-    name: 'Introduction &amp; prosody',
-    sections: [
-      'introduction',
-      'prosodic'
-    ]
-  },
-  {
-    name: 'Genesis &amp; diplomatic condition',
-    sections: [
-      'syntactic',
-      'historical',
-      'physical'
-    ]
-  },
-  {
-    name: 'Syntax, variants, &amp; language',
-    sections: [
-      'variants',
-      'language'
-    ]
-  },
-  {
-    name: 'Thematics',
-    sections: [
-      'thematic'
-    ]
-  },
-  {
-    name: 'Translation',
-    sections: ['translation']
-  }
-]
-
 var Petrarchive = function() {
   this.toggleElement = function(node, id, display) {
     // If display parameter not supplied then go with default jQuery.toggle()
@@ -60,28 +22,39 @@ var Petrarchive = function() {
       $('#' + id).toggleClass('display-' + display)
   }
 
-  this.commentary = {
-    toggled: false,
-    activeIndex: ko.observable(0),
-
-    nav: commentaryNav.map(function(el, i, arr) {
-      // check if ele
-    })
-  }
-
   this.toggleCommentary = function() {
     this.toggleElement(undefined, 'commentary')
-    this.commentary.toggled = !this.commentary.toggled
   }
 }
 
 $(document).ready(function() {
   window.PT = new Petrarchive()
-  ko.applyBindings(PT)
 
+  events()
+  stylingHacks()
+})
+
+function events() {
   $('a.commentary-activate').click(function() {
     PT.toggleCommentary()
   })
 
-})
+  $('a.gallery-facs').magnificPopup({
+    type: 'image',
+    overflowY: 'scroll'
+  })
+}
 
+function stylingHacks() {
+  /***********************
+   Using javascript to style elements which aren't able 
+   to be reached with CSS due to being uner XML Elements.
+
+   Possibly consider using addClass method and moving all the 
+   styling rules to a seaparte css sheet if using jquery.css
+   proves unmaintnable. Fine for current edge case/s
+  ************************/
+
+  // First <span class="poem-number"> mysteriously got misstyled
+  // Once I switched the <DOCTYPE> declaration to HTML
+}

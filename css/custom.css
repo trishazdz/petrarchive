@@ -131,6 +131,7 @@ nav a:visited {
 
 lg {
   line-height: 175%;
+  margin-left: .3em;
 }
 lg[type='sonnet']:before,
 lg[type='madrigal']:before,
@@ -968,9 +969,13 @@ div.commentary header * {
   display: inline;
 }
 
-div.commentary h1 {
-  font-size: 12.5px;
+div.commentary header h1 {
+  font-size: 12px;
   font-weight: 700 !important;
+}
+div.commentary section h1 {
+  font-size: 20px;
+  font-weight: 200;
 }
 
 nav.commentary ul {
@@ -998,7 +1003,7 @@ div.commentary main {
   height: 10em;
   overflow-y: scroll;
 }
-div.commentary section {
+div.commentary main > section {
   margin-left: 1em;
 }
 
@@ -1015,13 +1020,41 @@ div.commentary ab {
 }
 /* utility classes code: end */
 
+/* poetry guide indicators: start */
+
 span.poem-number {
-  top: 2.5em;
+  top: 2.8em;
   position: relative;
-  left: -120px;
+  left: -110px;
   clear: both;
   font-family: "Helvetica Neue", "Gill Sans", "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
   font-weight: 100;
   color: gray;
   font-size:20px;
 }
+
+/* facs guide indicators: end */
+
+/* facs code: start */
+img.mfp-img {
+  border: initial;
+}
+
+.mfp-bg {
+  background: #ccc;
+  opacity: 0.75;
+}
+
+.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
+  color: #000;
+  /*Since any click outside of the img closes the lightbox, we can
+  make this button small as possible. Button is just for appearance 
+  */
+  height:10px;
+}
+
+.mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+  cursor: pointer;
+}
+
+/* facs code: end */

@@ -70,7 +70,7 @@ table {
   font-weight: normal;
   font-style: normal;
 }
-html {
+html,body {
   font-family: 'andron_scriptor_webregular' !important;
   font-size: 20px;
   background-color: white;
@@ -363,7 +363,7 @@ choice expan {
   display: none;
 }
 #teibpToolbox {
-  left: 59em;
+  left: 61em;
   top: 10em;
   position: fixed;
   font-size: 70%;
@@ -373,12 +373,14 @@ choice expan {
   border:none;
   background:inherit;
   font-family: Arvo, Verdana, sans-serif;
-  text-align: right;
   -webkit-box-shadow:none;
   -moz-box-shadow:none;
   box-shadow:none;
-  width: 15em;
+  width: 12em;
   z-index:99;
+}
+#teibpToolbox nav a {
+  padding-top: 1em; padding-bottom: 1em;
 }
 #teibpToolbox h1 {
   font-weight: normal;
@@ -1019,6 +1021,12 @@ div.commentary ab {
   display: block !important;
 }
 /* utility classes code: end */
+
+/* bootstrap overrides code: start */
+nav.justify-content-between *:last-child {
+    text-align: right;
+}
+/* bootstrap overrides code: end */
 
 /* poetry guide indicators: start */
 

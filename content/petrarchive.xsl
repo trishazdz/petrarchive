@@ -14,6 +14,9 @@
     <xsl:import href="teibp.xsl"/>
     <xsl:output method="html" encoding="utf-8" version="1.0" indent="yes" standalone="no" media-type="text/html" omit-xml-declaration="no" doctype-system="about:legacy-compat" /> 
     <xsl:param name="pbNote" select="''"/>
+
+    <xsl:param name="bootstrapCSS" select="concat(
+    $filePrefix, '/css/lib/bootstrap.min.css')"/>
     
     <xsl:param name="customCSS.norm" select="concat($filePrefix,'/css/custom_norm.css')"/>
     <xsl:param name="customCSS" select="concat($filePrefix,'/css/custom.css')"/>
@@ -82,6 +85,9 @@
             <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
             -->
             <meta charset="UTF-8"/>
+
+            <link id="bootstrap" rel="stylesheet" type="text/css" href="{$bootstrapCSS}"/>
+
             <link id="maincss" rel="stylesheet" type="text/css" href="{$teibpCSS}"/>
 
             <link id="magnificcss" rel="stylesheet" type="text/css" href="{$magnificCSS}"/>
@@ -95,19 +101,59 @@
             </xsl:if>
         </head>
     </xsl:template>
+  
+    <xsl:template name="getNavHref">
+      <xsl:param name="type"/>
+      
+      <xsl:choose>
+        <xsl:when test=" $type = 'previous' ">
+          <xsl:variable name="the_href" 
+            select="asdf"/>
+        </xsl:when>
+        <xsl:when test=" $type = 'next' ">
+          <xsl:variable name="the_href" 
+            select="asdf"/>
+        </xsl:when>
+      </xsl:choose>
+     
+      
+      <xsl:attribute name="href">
+        <xsl:value-of select="$the_href"></xsl:value-of>
+      </xsl:attribute>
+    </xsl:template>
     
     <!-- Petrarchive Toolbox -->
     <xsl:template name="teibpToolbox">
       <xsl:if test="not(/tei:TEI/@xml:id = 'glossary') and   not(/tei:TEI/@xml:id = 'chronology_petrarch') and not(/tei:TEI/@xml:id='papers_and_presentations')">
         <div id="teibpToolbox">
-            <div>
+            <div class="row">
                 <!--<h1 style="display:inline;">text view </h1>-->
-                <select id="themeBox" onchange="switchCustomCSS(this);">
+                <select id="themeBox" onchange="PT.switchCustomCSS(this);" class="col-12">
                     <option value="{$customCSS}" >diplomatic transcription</option>
                     <option value="{$customCSS.norm}">edited text</option>
                 </select>		
                 
             </div>
+
+            <nav class="row justify-content-between">
+                <a onclick="PT.nav.previous()" class="col-5">
+                 <!-- <xsl:call-template name="getNavHref">
+                    <xsl:with-param name="type">
+                      <xsl:value-of select="previous"></xsl:value-of>
+                    </xsl:with-param>
+                  </xsl:call-template> -->
+                  &lt;
+                </a>
+
+                <a onclick="PT.nav.next()" class="col-5">
+                  <!-- <xsl:call-template name="getNavHref">
+                    <xsl:with-param name="type">
+                      <xsl:value-of select="next"/>
+                    </xsl:with-param>
+                  </xsl:call-template> -->
+                    &gt;
+                </a>
+            </nav>
         </div>
       </xsl:if>
     </xsl:template>
@@ -121,8 +167,8 @@
         Powered by <a href="{$teibpHome}">TEI Boilerplate</a>.
 </footer>
 
-            <script type="text/javascript" src="{$jqueryJS}"></script>
-            <script type="text/javascript" src="{$magnificJS}"></script>
+          <script type="text/javascript" src="{$jqueryJS}"></script>
+          <script type="text/javascript" src="{$magnificJS}"></script>
 
           <script type="text/javascript" src="{$teibpJS}"><xsl:comment> </xsl:comment></script>
           <script type="text/javascript" src="../js/petrarchive.js"><xsl:comment> </xsl:comment></script>
@@ -439,6 +485,8 @@
     </span>
     -->
   </xsl:template>
+
+
   
   
   
@@ -578,7 +626,6 @@
       </header>
       
       <main>
-       
         <!-- commentary body -->
         <section id="{concat($rvfTarget,'_introduction')}">
           <xsl:apply-templates select="tei:note[@type='introduction']" mode="commentary"/>

@@ -14,6 +14,23 @@ function toggle_visibility(id) {
 }
 
 var Petrarchive = function() {
+  var that = this
+
+  this.current = {
+    url: document.URL,
+    urlSplit: undefined,
+    doc: undefined,
+    name: undefined,
+    charta: undefined,
+    rv: undefined
+  }
+
+  this.current.urlSplit = this.current.url.split('/')
+  this.current.doc = this.current.urlSplit[this.current.urlSplit.length - 1]
+  this.current.name = this.current.doc.split('.')[0]
+  this.current.charta = this.current.name.split('_')[0].substring(1,4)
+  this.current.rv = this.current.name.split('_')[0].substring(4,5)
+
   this.toggleElement = function(node, id, display) {
     // If display parameter not supplied then go with default jQuery.toggle()
     if (!display) 
@@ -25,6 +42,53 @@ var Petrarchive = function() {
   this.toggleCommentary = function() {
     this.toggleElement(undefined, 'commentary')
   }
+
+  this.switchCustomCSS = function (theme) {
+    document.getElementById('customcss').href=theme.options[theme.selectedIndex].value
+  }
+
+  this.nav = {
+    previous: function() {
+      var prevCh, prevRV, prevName;
+
+      if (that.current.rv == 'v') {
+        prevRV = 'r'
+        prevCh = that.current.charta
+      } else {
+        prevRV = 'v'
+
+        // Turn currentCh string into number then subtract 1
+        prevCh = (+that.current.charta) - 1
+        // Then convert prevCh back to string with 3 decimal places
+        var s = "00" + prevCh
+        prevCh = s.substr(s.length - 3)
+      }
+
+      prevName = 'c' + prevCh + prevRV + '.xml'
+      window.location.href = prevName
+    },
+
+    next: function() {
+      var nextCh, nextRV, nextName;
+
+      if (that.current.rv == 'r') {
+        nextRV = 'v'
+        nextCh = that.current.charta
+      } else {
+        nextRV = 'r'
+
+        // Turn currentCh string into number then subtract 1
+        nextCh = (+that.current.charta) + 1
+        // Then convert nextCh back to string with 3 decimal places
+        var s = "00" + nextCh
+        nextCh = s.substr(s.length - 3)
+      }
+
+      nextName = 'c' + nextCh + nextRV + '.xml'
+      window.location.href = nextName
+    }
+  }
+
 }
 
 $(document).ready(function() {
@@ -54,7 +118,4 @@ function stylingHacks() {
    styling rules to a seaparte css sheet if using jquery.css
    proves unmaintnable. Fine for current edge case/s
   ************************/
-
-  // First <span class="poem-number"> mysteriously got misstyled
-  // Once I switched the <DOCTYPE> declaration to HTML
 }

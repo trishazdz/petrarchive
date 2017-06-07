@@ -991,20 +991,20 @@ nav.commentary ul {
 
 nav.commentary li {
   display: inline;
-  padding:.5em .5em;
   cursor: pointer;
 }
 
-nav.commentary li:hover {
-  background-color: #ccc;
+nav.commentary li a {
+    padding:.5em .5em;
 }
 
 nav.commentary li a:hover {
   text-decoration: none;
   color: initial;
+  background-color: #ccc;
 }
 
-nav.commentary li.active {
+nav.commentary a.active {
   background-color: #ddd;
 }
 

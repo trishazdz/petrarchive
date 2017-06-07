@@ -551,8 +551,8 @@
   <xsl:template name="commentaryNav">
     <xsl:param name="rvfTarget"/>
       <ul>
-        <li class="active">
-          <a href="{concat('#',$rvfTarget,'_introduction')}">
+        <li>
+          <a class="active" href="{concat('#',$rvfTarget,'_introduction')}">
             Introduction &amp; prosody
           </a>
         </li>

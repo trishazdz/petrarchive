@@ -20,6 +20,7 @@ var Petrarchive = function() {
     url: document.URL,
     urlSplit: undefined,
     doc: undefined,
+    hash: undefined,
     name: undefined,
     charta: undefined,
     rv: undefined
@@ -27,6 +28,8 @@ var Petrarchive = function() {
 
   this.current.urlSplit = this.current.url.split('/')
   this.current.doc = this.current.urlSplit[this.current.urlSplit.length - 1]
+  this.current.hash = this.current.doc.split('#')[1]
+
   this.current.name = this.current.doc.split('.')[0]
   this.current.charta = this.current.name.split('_')[0].substring(1,4)
   this.current.rv = this.current.name.split('_')[0].substring(4,5)
@@ -112,12 +115,11 @@ function events() {
   })
 
   // Navigation between different sections of commentary
-  $('nav.commentary li').click(function(ev) {
+  $('nav.commentary a').click(function(ev) {
 
-    $('nav.commentary li').removeClass('active')
+    $('nav.commentary a').removeClass('active')
 
-    $(ev.delegateTarget)
-      .addClass('active')
+    $(ev.delegateTarget).addClass('active')
   })
 }
 

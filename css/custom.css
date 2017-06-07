@@ -992,6 +992,16 @@ nav.commentary ul {
 nav.commentary li {
   display: inline;
   padding:.5em .5em;
+  cursor: pointer;
+}
+
+nav.commentary li:hover {
+  background-color: #ccc;
+}
+
+nav.commentary li a:hover {
+  text-decoration: none;
+  color: initial;
 }
 
 nav.commentary li.active {

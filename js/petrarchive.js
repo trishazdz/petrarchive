@@ -91,6 +91,7 @@ var Petrarchive = function() {
 
 }
 
+// This is the 'init' function that initiates everything
 $(document).ready(function() {
   window.PT = new Petrarchive()
 
@@ -111,11 +112,11 @@ function events() {
   })
 
   // Navigation between different sections of commentary
-  $('nav.commentary a').click(function(ev) {
+  $('nav.commentary li').click(function(ev) {
 
     $('nav.commentary li').removeClass('active')
 
-    $(ev.delegateTarget).parent()
+    $(ev.delegateTarget)
       .addClass('active')
   })
 }

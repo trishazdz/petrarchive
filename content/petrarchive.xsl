@@ -108,11 +108,11 @@
       <xsl:choose>
         <xsl:when test=" $type = 'previous' ">
           <xsl:variable name="the_href" 
-            select="asdf"/>
+            select="some_href_generated_by_a_function"/>
         </xsl:when>
         <xsl:when test=" $type = 'next' ">
           <xsl:variable name="the_href" 
-            select="asdf"/>
+            select="some_href_generated_by_a_function"/>
         </xsl:when>
       </xsl:choose>
      
@@ -550,22 +550,8 @@
  
   <xsl:template name="commentaryNav">
     <xsl:param name="rvfTarget"/>
-    <nav class="commentary"> 
-      <!-- 
-        John, please output each <li> programmatically
-        
-        I've only added attributes to the 1st <li>
-      -->
-      
       <ul>
-        <li>
-          <!-- 
-            having this href value will allow users - in the future - to
-            copy and paste a URL that opens up the page with a specific 
-            part of the commentary already activated
-            
-            This href will reference an ID in a <section> below
-          -->
+        <li class="active">
           <a href="{concat('#',$rvfTarget,'_introduction')}">
             Introduction &amp; prosody
           </a>
@@ -596,7 +582,7 @@
           </a>
         </li>
       </ul>
-    </nav>
+    
   </xsl:template>
 
   <xsl:template match="tei:div[@type= 'commentary']/tei:note|tei:div[@type= 'commentary']/tei:div[@type= 'translation']" mode="commentary">
@@ -615,14 +601,18 @@
       <xsl:variable name="rvfTarget" select="substring-after(@corresp,'#')"/>
       <xsl:variable name="rvfNum" select="//tei:lg[@xml:id = $rvfTarget]/@n"/>
       
-      <header>
-        <h1>
-          Commentary: <cite>Rvf</cite> <xsl:value-of select="' '"/><xsl:value-of select="$rvfNum"/>
-        </h1>
-
-        <xsl:call-template name="commentaryNav">
-          <xsl:with-param name="rvfTarget" select="$rvfTarget"/>
-        </xsl:call-template>
+      <header class="row">
+        <div class="">
+          <h1>
+            Commentary: <cite>Rvf</cite> <xsl:value-of select="' '"/><xsl:value-of select="$rvfNum"/>
+          </h1>
+        </div>
+        
+        <nav class="commentary">  
+          <xsl:call-template name="commentaryNav">
+            <xsl:with-param name="rvfTarget" select="$rvfTarget"/>
+          </xsl:call-template>
+        </nav>
       </header>
       
       <main>

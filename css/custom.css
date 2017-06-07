@@ -963,7 +963,7 @@ div.commentary {position: fixed;
 div.commentary header {
   position: fixed;
   width: 100%;
-  padding: .2em 1em;
+  padding: 0 1em;
   background-color: white;
 }
 
@@ -974,6 +974,7 @@ div.commentary header * {
 div.commentary header h1 {
   font-size: 12px;
   font-weight: 700 !important;
+  margin-left: 1.2em;
 }
 div.commentary section h1 {
   font-size: 20px;
@@ -982,17 +983,19 @@ div.commentary section h1 {
 
 nav.commentary ul {
   padding: 0;
-  margin: 0 1.5em;
+  margin: 0 0 0 1em;
   font-size: 12.5px;
+  position:relative;
+  top:.35em;
 }
 
 nav.commentary li {
   display: inline;
-  margin-left: 1rem;
+  padding:.5em .5em;
 }
 
-nav.commentary li:first-child {
-  margin-left: 0;
+nav.commentary li.active {
+  background-color: #ddd;
 }
 
 nav.commentary li:before {
@@ -1019,6 +1022,9 @@ div.commentary ab {
 /* utility classes code: start */
 .display-block {
   display: block !important;
+}
+.hidden {
+  display: none;
 }
 /* utility classes code: end */
 

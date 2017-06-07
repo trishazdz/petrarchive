@@ -39,7 +39,7 @@ var Petrarchive = function() {
       $('#' + id).toggleClass('display-' + display)
   }
 
-  this.toggleCommentary = function() {
+  this.toggleCommentary = function(ev) {
     this.toggleElement(undefined, 'commentary')
   }
 
@@ -99,13 +99,24 @@ $(document).ready(function() {
 })
 
 function events() {
-  $('a.commentary-activate').click(function() {
-    PT.toggleCommentary()
+  // Links that toggle commentary section, which is hidden by default
+  $('a.commentary-activate').click(function(ev) {
+    PT.toggleCommentary(ev)
   })
 
+  // Popup the facs image in a lightbox
   $('a.gallery-facs').magnificPopup({
     type: 'image',
     overflowY: 'scroll'
+  })
+
+  // Navigation between different sections of commentary
+  $('nav.commentary a').click(function(ev) {
+
+    $('nav.commentary li').removeClass('active')
+
+    $(ev.delegateTarget).parent()
+      .addClass('active')
   })
 }
 
@@ -117,5 +128,8 @@ function stylingHacks() {
    Possibly consider using addClass method and moving all the 
    styling rules to a seaparte css sheet if using jquery.css
    proves unmaintnable. Fine for current edge case/s
+
+   Holding off on styling hacks for now to see if John can fix
+   Underlying issues in xslt
   ************************/
 }

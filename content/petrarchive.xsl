@@ -99,29 +99,11 @@
             <xsl:if test="$includeAnalytics = true()">
                 <xsl:call-template name="analytics"/>
             </xsl:if>
+
+            <script src="https://use.fontawesome.com/57840704ee.js"></script>
         </head>
     </xsl:template>
   
-    <xsl:template name="getNavHref">
-      <xsl:param name="type"/>
-      
-      <xsl:choose>
-        <xsl:when test=" $type = 'previous' ">
-          <xsl:variable name="the_href" 
-            select="some_href_generated_by_a_function"/>
-        </xsl:when>
-        <xsl:when test=" $type = 'next' ">
-          <xsl:variable name="the_href" 
-            select="some_href_generated_by_a_function"/>
-        </xsl:when>
-      </xsl:choose>
-     
-      
-      <xsl:attribute name="href">
-        <xsl:value-of select="$the_href"></xsl:value-of>
-      </xsl:attribute>
-    </xsl:template>
-    
     <!-- Petrarchive Toolbox -->
     <xsl:template name="teibpToolbox">
       <xsl:if test="not(/tei:TEI/@xml:id = 'glossary') and   not(/tei:TEI/@xml:id = 'chronology_petrarch') and not(/tei:TEI/@xml:id='papers_and_presentations')">
@@ -136,22 +118,13 @@
             </div>
 
             <nav class="row justify-content-between">
-                <a onclick="PT.nav.previous()" class="col-5">
-                 <!-- <xsl:call-template name="getNavHref">
-                    <xsl:with-param name="type">
-                      <xsl:value-of select="previous"></xsl:value-of>
-                    </xsl:with-param>
-                  </xsl:call-template> -->
-                  &lt;
+              <!-- These hrefs are set in the javascript -->
+                <a href="" class="col-6 previous">
+                  <i class="fa fa-arrow-left"></i>
                 </a>
 
-                <a onclick="PT.nav.next()" class="col-5">
-                  <!-- <xsl:call-template name="getNavHref">
-                    <xsl:with-param name="type">
-                      <xsl:value-of select="next"/>
-                    </xsl:with-param>
-                  </xsl:call-template> -->
-                    &gt;
+                <a href="" class="col-6 next">
+                  <i class="fa fa-arrow-right"></i>
                 </a>
             </nav>
         </div>
@@ -428,7 +401,7 @@
       
       <xsl:if test="//tei:back/tei:div[@type = 'commentary']">
         <a class="commentary-activate">
-          C
+          <i class="fa fa-commenting-o"></i>
         </a>
       </xsl:if>
     </span>
@@ -597,7 +570,7 @@
   </xsl:template>
   
   <xsl:template match="tei:div[@type = 'commentary']">
-    <div class="commentary" id="commentary" style="display:none;">
+    <div class="commentary" id="commentary">
       <xsl:variable name="rvfTarget" select="substring-after(@corresp,'#')"/>
       <xsl:variable name="rvfNum" select="//tei:lg[@xml:id = $rvfTarget]/@n"/>
       

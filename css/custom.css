@@ -379,8 +379,15 @@ choice expan {
   width: 12em;
   z-index:99;
 }
+#teibpToolbox nav {
+  margin-top: 1em;
+}
 #teibpToolbox nav a {
-  padding-top: 1em; padding-bottom: 1em;
+  padding-top: .5em; padding-bottom: .5em;
+}
+#teibpToolbox nav a:hover {
+  background-color: #ccc;
+  color: black;
 }
 #teibpToolbox h1 {
   font-weight: normal;
@@ -934,6 +941,10 @@ display:list-item;
 
 /* commentary code: start */
 
+a.commentary-activate {
+  margin-left: .35em;
+}
+
 back note, back ab {display: block;
 padding: .5em 1.5em 1.5em 1.5em;
 text-indent: 0;
@@ -958,6 +969,11 @@ div.commentary {position: fixed;
   height: 12em;
   border-top:1px solid #dcdddb;
   width: 100%;
+  display: none;
+}
+
+div.commentary.active {
+  display: block;
 }
 
 div.commentary header {
@@ -1017,6 +1033,7 @@ div.commentary main {
   top: 2em;
   height: 10em;
   overflow-y: scroll;
+  padding-bottom: 1.4em;
 }
 div.commentary main > section {
   margin-left: 1em;

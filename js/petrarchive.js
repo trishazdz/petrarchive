@@ -144,15 +144,56 @@ NavUtil.prototype.handleAnamolies = function(name, rv) {
       correction: 'c004r-c005r'
     },
     {
+      name: '004',
+      rv: 'v',
+      correction: 'c005v-c007r'
+    },
+    {
       name: '005',
       rv: 'v',
+      correction: 'c005v-c007r'
+    },
+    {
+      name: '006',
+      rv: 'r',
+      correction: 'c007v'
+    },
+    {
+      name: '007',
+      rv: 'r',
       correction: 'c005v-c007r'
     },
     {
       name: '008',
       rv: 'v',
       correction: 'c008v-c009v'
+    },
+    {
+      name: '009',
+      rv: 'r',
+      correction: 'c010r'
+    },
+    {
+      name: '009',
+      rv: 'v',
+      correction: 'c008v-c009v'
+    },
+    {
+      name: '011',
+      rv: 'r',
+      correction: 'c011r-c011v'
+    },
+    {
+      name: '011',
+      rv: 'v',
+      correction: 'c012r-c012v'
+    },
+    {
+      name: '012',
+      rv: 'v',
+      correction: 'c013r-c013v'
     }
+
   ]
 
   var isAnamoly = anamolies.find(function(el) {

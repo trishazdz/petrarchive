@@ -47,7 +47,7 @@ function Petrarchive() {
 }
 
 Petrarchive.prototype.setup = function() {
-
+ 
 }
 
 Petrarchive.prototype.events = function() {
@@ -102,11 +102,57 @@ function NavUtil() {
   s = "00" + prevCh
   prevName = s.substr(s.length - 3)
 
-  nextDoc = 'c' + nextName + nextRV + '.xml'
-  prevDoc = 'c' + prevName + prevRV + '.xml'
+  var nextHref = this.handleAnamolies(nextName, nextRV)
+  var prevHref = this.handleAnamolies(prevName, prevRV)
 
-  next.attr('href', nextDoc)
-  previous.attr('href', prevDoc)
+  console.log(nextHref, prevHref)
+
+  next.attr('href', nextHref) 
+  previous.attr('href', prevHref)
+}
+
+NavUtil.prototype.handleAnamolies = function(name, rv) {
+  var forbiddenNames = [
+    '000'
+  ]
+
+  var isInvalid = forbiddenNames.find(function(el) {
+    if (name == el) {
+      return true
+    }
+  })
+
+  if (isInvalid) { return '#' }
+
+  var anamolies = [
+    {
+      name: '004',
+      rv: 'r',
+      correction: 'c004r-c005r'
+    },
+    {
+      name: '005',
+      rv: 'v',
+      correction: 'c005v-c007r'
+    },
+    {
+      name: '008',
+      rv: 'v',
+      correction: 'c008v-c009v'
+    }
+  ]
+
+  var isAnamoly = anamolies.find(function(el) {
+    if (name == el.name && rv == el.rv) {
+      return true
+    }
+  })
+
+  if (!isAnamoly) {
+    return 'c' + name + rv + '.xml'
+  } else {
+    return isAnamoly.correction + '.xml'
+  }
 }
 
 function CommentaryUtil() {
@@ -136,6 +182,15 @@ function CommentaryUtil() {
         top: document.querySelector('#' + hash).offsetTop
       }
     })
+  }
+
+
+  if (window.location.hash) {
+    var hash = window.location.hash
+    this.activate()
+    window.location.hash = 'dummyhash'
+
+    location.hash = hash
   }
 }
 

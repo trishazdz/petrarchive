@@ -76,39 +76,52 @@ function NavUtil() {
   var previous = $('#teibpToolbox nav a.previous'),
       next = $('#teibpToolbox nav a.next');
 
-  var nextCh, nextRV, nextName, nextDoc;
+  var prevHref = this.setupPrevHref(),
+      nextHref = this.setupNextHref();
+
+ // var nextHref = this.handleAnamolies(nextName, nextRV)
+  //var prevHref = this.handleAnamolies(prevName, prevRV)
+
+  next.attr('href', this.setupNextHref()) 
+  previous.attr('href', this.setupPrevHref())
+}
+
+NavUtil.prototype.setupPrevHref = function() {
   var prevCh, prevRV, prevName, prevDoc;
+
+  if (this.current.rv == 'r') {
+    prevRV = 'v'
+    prevCh = (+this.current.charta) - 1
+  } else {
+    prevRV = 'r'
+    prevCh = this.current.charta
+  }
+
+  // Then convert nextCh back to string with 3 decimal places
+  s = "00" + prevCh
+  prevName = s.substr(s.length - 3)
+
+  return this.handleAnamolies(prevName, prevRV)
+}
+
+NavUtil.prototype.setupNextHref = function() {
+  var nextCh, nextRV, nextName, nextDoc;
 
   if (this.current.rv == 'r') {
     nextRV = 'v'
     nextCh = this.current.charta
-
-    prevRV = 'v'
-    prevCh = (+this.current.charta) - 1
   } else {
     nextRV = 'r'
 
     // Turn currentCh string into number then subtract 1
     nextCh = (+this.current.charta) + 1
-
-    prevRV = 'r'
-    prevCh = this.current.charta
   }
 
   // Then convert nextCh back to string with 3 decimal places
   var s = "00" + nextCh
   nextName = s.substr(s.length - 3)
 
-  s = "00" + prevCh
-  prevName = s.substr(s.length - 3)
-
-  var nextHref = this.handleAnamolies(nextName, nextRV)
-  var prevHref = this.handleAnamolies(prevName, prevRV)
-
-  console.log(nextHref, prevHref)
-
-  next.attr('href', nextHref) 
-  previous.attr('href', prevHref)
+  return this.handleAnamolies(nextName, nextRV)
 }
 
 NavUtil.prototype.handleAnamolies = function(name, rv) {

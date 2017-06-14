@@ -949,7 +949,10 @@ back note, back ab {display: block;
 padding: .5em 1.5em 1.5em 1.5em;
 text-indent: 0;
 font-size: 80%;
-text-align: left;border:none; background-color:inherit; border-radius:0;box-shadow:none;  position:static; margin:0; width:60%;min-width:10em;}
+text-align: left;border:none; 
+background-color:inherit; border-radius:0;box-shadow:none;  
+position:static; margin:0;
+width: 760px;}
 
 back h1 + hr {
   width:60%;margin-left:0;margin-top:0;
@@ -969,6 +972,7 @@ div.commentary {position: fixed;
   height: 12em;
   border-top:1px solid #dcdddb;
   width: 100%;
+  min-width: 840px;
   display: none;
 }
 
@@ -979,7 +983,7 @@ div.commentary.active {
 div.commentary header {
   position: fixed;
   width: 100%;
-  padding: 0 1em;
+  min-width: 840px;
   background-color: white;
 }
 
@@ -990,7 +994,7 @@ div.commentary header * {
 div.commentary header h1 {
   font-size: 12px;
   font-weight: 700 !important;
-  margin-left: 1.2em;
+  margin-left: 1.6em;
 }
 div.commentary section h1 {
   font-size: 20px;
@@ -999,10 +1003,8 @@ div.commentary section h1 {
 
 nav.commentary ul {
   padding: 0;
-  margin: 0 0 0 1em;
   font-size: 12.5px;
   position:relative;
-  top:.35em;
 }
 
 nav.commentary li {
@@ -1026,6 +1028,11 @@ nav.commentary a.active {
 
 nav.commentary li:before {
   content: initial;
+}
+
+div.commentary header button.close {
+  margin-top: .3em;
+  font-size: 1em;
 }
 
 div.commentary main {

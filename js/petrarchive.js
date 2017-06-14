@@ -51,10 +51,8 @@ Petrarchive.prototype.setup = function() {
 }
 
 Petrarchive.prototype.events = function() {
-  // Popup the facs image in a lightbox
-  $('a.gallery-facs').magnificPopup({
-    type: 'image',
-    overflowY: 'scroll' 
+  $('a.gallery-facs').click(function(ev) {
+    console.log(ev)
   })
 }
 
@@ -151,6 +149,10 @@ CommentaryUtil.prototype.events = function(scope) {
     } else {
       that.activate()
     }
+  })
+
+  $('div.commentary header button.close').click(function(ev) {
+    that.deactivate()
   })
 
    // Navigation between different sections of commentary

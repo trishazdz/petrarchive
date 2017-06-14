@@ -574,7 +574,7 @@
       <xsl:variable name="rvfTarget" select="substring-after(@corresp,'#')"/>
       <xsl:variable name="rvfNum" select="//tei:lg[@xml:id = $rvfTarget]/@n"/>
       
-      <header class="row">
+      <header class="">
         <div class="">
           <h1>
             Commentary: <cite>Rvf</cite> <xsl:value-of select="' '"/><xsl:value-of select="$rvfNum"/>
@@ -586,6 +586,10 @@
             <xsl:with-param name="rvfTarget" select="$rvfTarget"/>
           </xsl:call-template>
         </nav>
+
+        <button class="close float-right">
+            <i class="fa fa-window-close-o"></i>
+        </button>
       </header>
       
       <main>

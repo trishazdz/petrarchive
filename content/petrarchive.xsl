@@ -437,8 +437,8 @@
     </span>
     <span class="-teibp-pbFacs">
       <a class="gallery-facs" rel="prettyPhoto[gallery1]">
-        <xsl:attribute name="href">
-            <xsl:value-of select="@facs"/>
+        <xsl:attribute name="onclick">
+          <xsl:value-of select="concat('showFacs(',$apos,$n,$apos,',',$apos,$facs,$apos,',',$apos,$id,$apos,')')"/>
         </xsl:attribute>
 
         <img  alt="{$altTextPbFacs}" class="-teibp-thumbnail">

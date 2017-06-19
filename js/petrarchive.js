@@ -24,14 +24,17 @@ $(document).ready(function() {
   window.PT = new Petrarchive()
   PT.nav = new NavUtil()
   PT.commentary = new CommentaryUtil()
-
-  PT.setup()
-  PT.events()
-  PT.stylingHacks()
+  PT.facsimile = new Facsimile({
+    anchor: $('a.gallery-facs'),
+    ui: $('#pt-facs')
+  })
 })
 
 function Petrarchive() {
   var that = this
+
+  this.events()
+  this.stylingHacks()
 
   this.toggleElement = function(node, id, display) {
     // If display parameter not supplied then go with default jQuery.toggle()
@@ -46,14 +49,8 @@ function Petrarchive() {
   }
 }
 
-Petrarchive.prototype.setup = function() {
- 
-}
-
 Petrarchive.prototype.events = function() {
-  $('a.gallery-facs').click(function(ev) {
-    console.log(ev)
-  })
+
 }
 
 Petrarchive.prototype.stylingHacks = function() {
@@ -76,12 +73,6 @@ function NavUtil() {
   var previous = $('#teibpToolbox nav a.previous'),
       next = $('#teibpToolbox nav a.next');
 
-  var prevHref = this.setupPrevHref(),
-      nextHref = this.setupNextHref();
-
- // var nextHref = this.handleAnamolies(nextName, nextRV)
-  //var prevHref = this.handleAnamolies(prevName, prevRV)
-
   next.attr('href', this.setupNextHref()) 
   previous.attr('href', this.setupPrevHref())
 }
@@ -101,7 +92,7 @@ NavUtil.prototype.setupPrevHref = function() {
   s = "00" + prevCh
   prevName = s.substr(s.length - 3)
 
-  return this.handleAnamolies(prevName, prevRV)
+  return this.handleAnamolies(prevName, prevRV , 'previous')
 }
 
 NavUtil.prototype.setupNextHref = function() {
@@ -121,10 +112,12 @@ NavUtil.prototype.setupNextHref = function() {
   var s = "00" + nextCh
   nextName = s.substr(s.length - 3)
 
-  return this.handleAnamolies(nextName, nextRV)
+  return this.handleAnamolies(nextName, nextRV, 'next')
 }
 
-NavUtil.prototype.handleAnamolies = function(name, rv) {
+NavUtil.prototype.handleAnamolies = function(name, rv, direction) {
+  // Direction is whether navigation direction is going 'next' or 'previous'
+
   var forbiddenNames = [
     '000'
   ]
@@ -152,6 +145,11 @@ NavUtil.prototype.handleAnamolies = function(name, rv) {
       name: '005',
       rv: 'v',
       correction: 'c005v-c007r'
+    },
+    {
+      name: '005',
+      rv: 'r',
+      correction: 'c004r-c005r'
     },
     {
       name: '006',
@@ -186,12 +184,41 @@ NavUtil.prototype.handleAnamolies = function(name, rv) {
     {
       name: '011',
       rv: 'v',
-      correction: 'c012r-c012v'
+      correction: {
+        next: 'c012r-c012v',
+        previous: 'c011r-c011v'
+      }
     },
     {
       name: '012',
       rv: 'v',
-      correction: 'c013r-c013v'
+      correction: {
+        next: 'c013r-c013v',
+        previous: 'c012r-c012v'
+      }
+    },
+    {
+      name: '013',
+      rv: 'v',
+      correction: {
+        next: 'c014r',
+        previous: 'c013r-c013v'
+      }
+    },
+    {
+      name: '015',
+      rv: 'r',
+      correction: 'c015r-c018v'
+    },
+    {
+      name: '015',
+      rv: 'v',
+      correction: 'c019r'
+    },
+    {
+      name: '018',
+      rv: 'v',
+      correction: 'c015r-c018v'
     }
 
   ]
@@ -205,7 +232,12 @@ NavUtil.prototype.handleAnamolies = function(name, rv) {
   if (!isAnamoly) {
     return 'c' + name + rv + '.xml'
   } else {
-    return isAnamoly.correction + '.xml'
+
+    if (typeof isAnamoly.correction === 'string') {
+      return isAnamoly.correction + '.xml'
+    } else {
+      return isAnamoly.correction[direction] + '.xml'
+    }
   }
 }
 
@@ -216,7 +248,7 @@ function CommentaryUtil() {
   this.$content = $('#commentary main')
   this.navMeta
 
-  this.events(this)
+  this.events()
 
   this.activate = function() {
     this.$element.addClass('active')
@@ -248,8 +280,8 @@ function CommentaryUtil() {
   }
 }
 
-CommentaryUtil.prototype.events = function(scope) {
-  var that = scope
+CommentaryUtil.prototype.events = function() {
+  var that = this
 
    // Links that toggle commentary section, which is hidden by default
   $('a.commentary-activate').click(function(ev) {
@@ -262,6 +294,7 @@ CommentaryUtil.prototype.events = function(scope) {
 
   $('div.commentary header button.close').click(function(ev) {
     that.deactivate()
+    window.location.hash = ''
   })
 
    // Navigation between different sections of commentary

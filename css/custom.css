@@ -1105,4 +1105,21 @@ img.mfp-img {
   cursor: pointer;
 }
 
+#pt-facs {
+  display: none;
+}
+
+#pt-facs.active {
+  display: initial;
+  position: fixed;
+  top: 10px;
+  right: 0;
+  width: 400px;
+  height: 100%;
+}
+#pt-facs.active .container {
+  overflow: scroll;
+  height:90%;
+  width:100%;
+}
 /* facs code: end */

@@ -21,10 +21,6 @@
     <xsl:param name="customCSS.norm" select="concat($filePrefix,'/css/custom_norm.css')"/>
     <xsl:param name="customCSS" select="concat($filePrefix,'/css/custom.css')"/>
     
-    <xsl:param name="magnificCSS" select="concat($filePrefix,'/js/magnific-popup/dist/magnific-popup.css')"/>
-    <xsl:param name="magnificJS" select="concat($filePrefix,'/js/magnific-popup/dist/jquery.magnific-popup.js')"/>
-
-    
     <xsl:template name="siteNavigation">
       <xsl:variable name="nav">
         <xsl:copy-of select="document('../nav_content.html')"/>
@@ -90,8 +86,6 @@
 
             <link id="maincss" rel="stylesheet" type="text/css" href="{$teibpCSS}"/>
 
-            <link id="magnificcss" rel="stylesheet" type="text/css" href="{$magnificCSS}"/>
-
             <link id="customcss" rel="stylesheet" type="text/css" href="{$customCSS}"/>
            
             <xsl:call-template name="rendition2style"/>
@@ -138,13 +132,36 @@
         <a xmlns:cc="http://creativecommons.org/ns#" href="http://petrarchive.org" property="cc:attributionName" rel="cc:attributionURL"><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Petr<i>archive</i></span></a> by <a href="http://www.indiana.edu/~frithome/faculty/italian/storey.shtml">H. Wayne Storey</a> and <a href="http://johnwalsh.name/">John A. Walsh</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br/>
         Funding and support provided by the <a href="http://neh.gov/">National Endowment for the Humanities</a> and <a href="http://www.indiana.edu/">Indiana University-Bloomington</a>.<br/>
         Powered by <a href="{$teibpHome}">TEI Boilerplate</a>.
-</footer>
+      </footer>
 
-          <script type="text/javascript" src="{$jqueryJS}"></script>
-          <script type="text/javascript" src="{$magnificJS}"></script>
+      <section id="pt-facs" class="">
+        <div class="container">
+          <img class="facs" src="" />
+        </div>
 
-          <script type="text/javascript" src="{$teibpJS}"><xsl:comment> </xsl:comment></script>
-          <script type="text/javascript" src="../js/petrarchive.js"><xsl:comment> </xsl:comment></script>
+        <div class="meta">
+
+        </div>
+
+        <div class="row">
+            <nav class="zoom col-12">
+              <button class="button out">
+                <i class="fa fa-search-minus"></i>
+              </button>
+
+              <button class="button in">
+                <i class="fa fa-search-plus"></i>
+              </button>
+            </nav>
+        </div>
+      </section>
+
+
+      <script type="text/javascript" src="{$jqueryJS}"></script>
+
+      <script type="text/javascript" src="{$teibpJS}"><xsl:comment> </xsl:comment></script>
+      <script type="text/javascript" src="../js/petrarchive.js"><xsl:comment> </xsl:comment></script>
+      <script type="text/javascript" src="../js/facsimile.js"><xsl:comment> </xsl:comment></script>
     </xsl:variable>
   
 <xd:doc><xd:desc>These lines get line numbers. Canzone is not regular.</xd:desc></xd:doc>
@@ -437,9 +454,11 @@
     </span>
     <span class="-teibp-pbFacs">
       <a class="gallery-facs" rel="prettyPhoto[gallery1]">
+        <!--
         <xsl:attribute name="onclick">
           <xsl:value-of select="concat('showFacs(',$apos,$n,$apos,',',$apos,$facs,$apos,',',$apos,$id,$apos,')')"/>
         </xsl:attribute>
+         -->
 
         <img  alt="{$altTextPbFacs}" class="-teibp-thumbnail">
           <xsl:attribute name="src">
@@ -617,12 +636,6 @@
     </div>
   </xsl:template>
 
-  
-  
-      
-
-    
-   
   
     
 </xsl:stylesheet>

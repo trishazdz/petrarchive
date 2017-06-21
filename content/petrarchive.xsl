@@ -32,6 +32,18 @@
       </xsl:variable>
       <xsl:copy-of select="$nav"/>
     </xsl:template>
+  
+  <xd:doc>
+    <xd:desc>
+      <xd:p>TEI's head changed to tei-head to avoid conflicts with html/head.</xd:p>
+    </xd:desc>
+  </xd:doc>
+  <xsl:template match="tei:head">
+    <tei-head>
+      <xsl:call-template name="addID"/>
+      <xsl:apply-templates select="@*|node()"/>
+    </tei-head>
+  </xsl:template>
     
     <xsl:template match="tei:g" priority="99">
       <xsl:variable name="charId" select="substring-after(@ref,'#')"/>

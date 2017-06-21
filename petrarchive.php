@@ -26,7 +26,11 @@ Class Petrarchive {
 	];
 
 	function __construct() {
-		$this->_base = dirname($_SERVER['PHP_SELF']);
+		if ($_SERVER['HTTP_HOST'] == 'localhost') {
+			$this->_base = dirname($_SERVER['PHP_SELF']);
+		} else {
+			$this->_base = '.';
+		}
 	}
 
 	public function load_css() {

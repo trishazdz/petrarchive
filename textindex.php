@@ -4,18 +4,15 @@
 <head>
     <meta charset="utf-8" />
     <title>Petrarchive: No., first line, and genre index</title>
-    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script>
-        <!--
-        function toggle_visibility(id) {
-            var e = document.getElementById(id);
-            if (e.style.display == 'block')
-                e.style.display = 'none';
-            else
-                e.style.display = 'block';
-        }
 
+    <?php 
+      include "petrarchive.php"; 
+      $PT = new Petrarchive();
+      $PT->load_css();
+      $PT->load_js();
+    ?>
+    
+    <script>
         function onetime(node, type) {
 
             // create event
@@ -70,7 +67,6 @@
     <script type="text/javascript" src="js/sortable/sorttable.js">
         <!-- -->
     </script>
-    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 
     <link type="text/css" rel="subresource" href="js/sortable/example.css" />
 </head>

@@ -15,6 +15,11 @@
     <xsl:output method="html" encoding="utf-8" version="1.0" indent="yes" standalone="no" media-type="text/html" omit-xml-declaration="no" doctype-system="about:legacy-compat" /> 
     <xsl:param name="pbNote" select="''"/>
 
+    <xsl:param name="jqueryUICSS" select="concat($filePrefix, '/js/jquery-ui/themes/base/jquery.ui.all.css')"/>
+    <xsl:param name="jqueryUI" select="concat($filePrefix,'/js/jquery-ui/ui/minified/jquery-ui.min.js')"/>
+
+
+
     <xsl:param name="bootstrapCSS" select="concat(
     $filePrefix, '/css/lib/bootstrap.min.css')"/>
     
@@ -83,6 +88,8 @@
             <meta charset="UTF-8"/>
 
             <link id="bootstrap" rel="stylesheet" type="text/css" href="{$bootstrapCSS}"/>
+            <link id="jqueryuicss" rel="stylesheet" type="text/css" href="{$jqueryUICSS}"/>
+
 
             <link id="maincss" rel="stylesheet" type="text/css" href="{$teibpCSS}"/>
 
@@ -144,13 +151,21 @@
         </div>
 
         <div class="row">
-            <nav class="zoom col-12">
-              <button class="button out">
-                <i class="fa fa-search-minus"></i>
+            <nav>
+              <button class="button zoom out">
+                <i class="fa fa-search-minus fa-2x"></i>
               </button>
 
-              <button class="button in">
-                <i class="fa fa-search-plus"></i>
+              <button class="button zoom in">
+                <i class="fa fa-search-plus fa-2x"></i>
+              </button>
+
+              <button class="button new-tab">
+                <i class="fa fa-file-o fa-2x"></i>
+              </button>
+
+              <button class="button facs-close">
+                <i class="fa fa-close fa-2x"></i>
               </button>
             </nav>
         </div>
@@ -158,6 +173,7 @@
 
 
       <script type="text/javascript" src="{$jqueryJS}"></script>
+      <script type="text/javascript" src="{$jqueryUI}"></script>
 
       <script type="text/javascript" src="{$teibpJS}"><xsl:comment> </xsl:comment></script>
       <script type="text/javascript" src="../js/petrarchive.js"><xsl:comment> </xsl:comment></script>

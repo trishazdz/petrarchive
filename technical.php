@@ -3,18 +3,14 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Petrarchive: People</title>
-	    <script type="text/javascript">
-<!--
-    function toggle_visibility(id) {
-       var e = document.getElementById(id);
-       if(e.style.display == 'block')
-          e.style.display = 'none';
-       else
-          e.style.display = 'block';
-    }
-//-->
-</script>
-    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+  <?php 
+    include "petrarchive.php"; 
+    $PT = new Petrarchive();
+    $PT->load_css();
+    $PT->load_js();
+  ?>
+
 </head>
 <body>
 <?php include("nav.html"); ?>
@@ -30,5 +26,6 @@
 <p>The TEI/XML content, XSLT, CSS, JavaScript, and other files are maintained, with version control, in a GitHub repository.</p>
 </div>
 <?php include("footer.html"); ?>
+
 </body>
 </html>

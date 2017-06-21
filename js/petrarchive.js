@@ -22,12 +22,14 @@ function toggle_visibility(id) {
 // This is the 'init' function that initiates everything
 $(document).ready(function() {
   window.PT = new Petrarchive()
-  PT.nav = new NavUtil()
-  PT.commentary = new CommentaryUtil()
-  PT.facsimile = new Facsimile({
-    anchor: $('a.gallery-facs'),
-    ui: $('#pt-facs')
-  })
+  if (window.NavUtil) {  PT.nav = new NavUtil() }
+  if (window.CommentaryUtil) { PT.commentary = new CommentaryUtil() }
+  if (window.Facsimile) { 
+    PT.facsimile = new Facsimile({
+      anchor: $('a.gallery-facs'),
+      ui: $('#pt-facs')
+    })
+  }
 })
 
 function Petrarchive() {
@@ -37,6 +39,8 @@ function Petrarchive() {
   this.stylingHacks()
 
   this.toggleElement = function(node, id, display) {
+    console.log(node,id,display)
+    
     // If display parameter not supplied then go with default jQuery.toggle()
     if (!display) 
       $('#' + id).toggle()

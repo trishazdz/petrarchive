@@ -7,7 +7,9 @@
     include "petrarchive.php"; 
     $PT = new Petrarchive();
     $PT->load_css();
-    $PT->load_js();
+    $PT->load_js(
+		['files' => ['facsimile']]
+    );
   ?>
 </head>
 <body>

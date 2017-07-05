@@ -89,6 +89,9 @@ a:hover {
 #tei_wrapper {
   margin-top: 3em;
 }
+#tei_wrapper text {
+ 
+}
 #content {
   margin-top: 4em;
 }
@@ -112,6 +115,20 @@ teiHeader {
 /* TEI teiHeader selector is for transcriptions; facsimile viewer teiHeader is not a child of TEI. Let's us have different behavoriors for different interfaces. */
 TEI teiHeader {
   margin-top: 0;
+}
+
+/* Temporary -- maybe long term? -- hack for the tei-head styling
+  that set off the 1st comment and line number icon
+*/
+tei-head {
+      /* clear: both; */
+    /* display: -webkit-box; */
+    /* display: -webkit-flex; */
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    align-items: baseline;
 }
 
 cell {
@@ -1124,30 +1141,35 @@ img.mfp-img {
   background-color: black;
 }
 #pt-facs.active .container {
-  overflow: scroll;
+  overflow: hidden;
   height:100%;
   width:100%;
   padding: 0;
 }
+#pt-facs.active img.facs {
+  cursor: move; /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
 
 #pt-facs.active nav {
-  display: none;
   z-index: 100;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 #pt-facs.active nav.active {
-  display: block;
-  z-index: 100;
-  position: absolute;
-  bottom: 0;
-  left: -3em;
+  
 }
-#pt-facs.active nav.active button {
-  display: block;
-  background: #eee;
-  color: gray;
+#pt-facs.active nav button {
+  display: inline-block;
+  background-color: black;
+  color: #fff;
   padding: .5em;
 }
-#pt-facs.active nav.active button:hover {
+#pt-facs.active nav button:hover {
   cursor: pointer;
   background: #aaa;
   color: black;

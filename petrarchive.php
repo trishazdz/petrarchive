@@ -5,7 +5,8 @@ Class Petrarchive {
 
 	private static $_js = [
 		'lib' => [
-			'jquery' => '/jquery/jquery.min.js'
+			'jquery' => '/jquery/jquery.min.js',
+			'jquery_ui' => '/jquery-ui/ui/minified/jquery-ui.min.js'
 		],
 
 		'files' => [
@@ -16,7 +17,9 @@ Class Petrarchive {
 
 	private static $_css = [
 		'lib' => [
-			'bootstrap' => '/lib/bootstrap.min.css'
+			'bootstrap' => '/lib/bootstrap.min.css',
+			'jquery_ui_css' => '/lib/jquery-ui/themes/base/minified/jquery-ui.min.css'
+
 		],
 
 		'files' => [
@@ -64,7 +67,21 @@ Class Petrarchive {
 		echo $payload;
 	}
 
-	public function load_js() {
+	public function load_js($ignore = null) {
+		/* 
+			$ignore = OPTIONAL ARRAY of files to ignore. Listed files
+			will not be loaded. All others will be loaded.
+
+			Default: null - no files ignored
+
+			Format : [
+				'lib': [],
+				'files': []
+			]
+		*/
+
+		$ignore = self::process_ignore($ignore);
+
 		$payload = '';
 
 		$base = $this->_base . '/js';
@@ -72,19 +89,41 @@ Class Petrarchive {
 		foreach (self::$_js as $key => $val) :
 			if ($key == 'lib') :
 				foreach ($val as $lib_name => $lib_route) {
-					$src = $base . $lib_route;
-					$payload .= '<script type="text/javascript" src="' . $src . '"></script>';
+					if (! in_array($lib_name, $ignore['lib']) ) {
+						$src = $base . $lib_route;
+						$payload .= '<script type="text/javascript" src="' . $src . '"></script>';
+					}
 				}
 			else :
 				foreach ($val as $file_name => $file_route) {
-					$src = $base . $file_route;
-					$payload .= '<script type="text/javascript" src="' . $src . '"></script>';
+					if (! in_array($file_name, $ignore['files']) ) {
+						$src = $base . $file_route;
+						$payload .= '<script type="text/javascript" src="' . $src . '"></script>';
+					}
 				}
 			endif;
 
 		endforeach;
 
 		echo $payload;
+	}
+
+	private static function process_ignore($ignore) {
+		if (!$ignore) {
+			$ignore = [
+				'lib' => [],
+				'files' => []
+			];
+		} else {
+			if (! array_key_exists('lib', $ignore) ) {
+				$ignore['lib'] = [];
+			}
+			if (! array_key_exists('files', $ignore) ) {
+				$ignore['files'] = [];
+			}
+		}
+
+		return $ignore;
 	}
 }
 

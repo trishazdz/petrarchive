@@ -11,7 +11,7 @@ function Facsimile(params) {
 	},
 	resized: {
 		w: this._img.prop('naturalWidth'),
-	  	h: this._img.prop('naturalHeight')
+	  h: this._img.prop('naturalHeight')
 	}
   }
 
@@ -29,7 +29,12 @@ function Facsimile(params) {
   )
 
   this._ui_container = this._ui.children('.container')
+
   this._ui_img = this._ui.find('img.facs')
+  $(this._ui_img).draggable({
+
+  })
+
   this._ui_nav = this._ui.find('nav')
 
   this._ui_img.attr('src', this._img.attr('src'))
@@ -38,6 +43,8 @@ function Facsimile(params) {
   this.isActive = false
 
   this.events()
+
+  this.zoom('out', 60, [0,0])
 }
 
 Facsimile.prototype.events = function() {
@@ -53,17 +60,19 @@ Facsimile.prototype.events = function() {
   	ev.stopPropagation()
   })
 
+  this._ui_img.dblclick((function(ev) {
+    that.zoom('in')
+  }))
+
   this._ui_nav.children('nav button.new-tab').click(function(ev) {
   	// teibp.js TODO : transfer this somewhere else
-  	showFacs()
-  })
+    var r = confirm("Facsimile will open in a new tab. Is that okay?");
 
-  this._ui.mouseenter(function(ev) {
-  	var nav = $(this).find('nav')
-  	nav.addClass('active')
-  }).mouseleave(function(ev) {
-  	console.log(ev)
-  	$(this).find('nav').removeClass('active')
+    if (r == true) {
+      showFacs()
+    } else {
+      return
+    }
   })
 
   this._ui_nav.find('button.facs-close').click(function(ev) {
@@ -81,35 +90,28 @@ Facsimile.prototype.hide = function() {
   this._ui.removeClass('active')
 }
 
-Facsimile.prototype.zoom = function(direction, resize) {
+Facsimile.prototype.zoom = function(direction, resize, position) {
   // direction: 'in' vs 'out'
   // resize: OPTIONAL percentage
+  // position: OPTIONAL ARRAY [top, left]
 
-  var resize = resize || 10, 
-	  currentW  = this.imgMeta.resized.w,
-	  currentH  = this.imgMeta.resized.h;
+  var explicitPos = position || null,
+      resize = resize || 10, 
+      oldW  = this.imgMeta.resized.w,
+      oldH  = this.imgMeta.resized.h;
 
-  
-  var currentScroll = {
-  	x: this._ui_container.scrollLeft(),
-  	y: this._ui_container.scrollTop()
+  var oldPos = {
+    left: this._ui_img.position().left,
+    top: this._ui_img.position().top
   }
-
-  var currentC = {
-  	x: currentScroll.x / currentW,
-  	y: currentScroll.y / currentH
-  }
-
-  var clientWidth = this._ui_container.prop('clientWidth'),
-      clientHeight = this._ui_container.prop('clientHeight');
 
   if (direction == 'in') {
-  	this.imgMeta.resized.h = currentH * (1 + (resize / 100))
-  	this.imgMeta.resized.w = currentW * (1 + (resize / 100))
+  	this.imgMeta.resized.w = oldW * (1 + (resize / 100))
+    this.imgMeta.resized.h = oldH * (1 + (resize / 100))
   }
   else if (direction == 'out') {
-  	this.imgMeta.resized.h = currentH * (1 - (resize / 100))
-    this.imgMeta.resized.w = currentW * (1 - (resize / 100))
+    this.imgMeta.resized.w = oldW * (1 - (resize / 100))
+    this.imgMeta.resized.h = oldH * (1 - (resize / 100))
   }
   else {
   	console.log('must supply "direction" parameter as either "in" or "out"')
@@ -119,22 +121,29 @@ Facsimile.prototype.zoom = function(direction, resize) {
   	.width(this.imgMeta.resized.w)
   	.height(this.imgMeta.resized.h);
 
-  if (direction == 'in') {
-  	var correctionX = (clientWidth * .5 ) * ( 1 + (resize / 100) ),
-  		correctionY = (clientHeight * .5 ) * ( 1 + (resize / 100) )
+  if (direction == 'in') {  
+    var correctionX = -(this.imgMeta.resized.w - oldW) / 2,
+        correctionY = -(this.imgMeta.resized.h - oldH) / 2;
   }
   else if (direction == 'out') {
-  	var correctionX = ( (clientWidth / currentW ) * .5 ) * ( 1 - (resize / 100) )
-  		correctionY = ( (clientHeight / currentH ) * .5 ) * ( 1 - (resize / 100) )
+  	var correctionX = (oldW - this.imgMeta.resized.w) / 2,
+  		  correctionY = (oldH - this.imgMeta.resized.h) / 2;
+  } 
+
+  if (explicitPos) {
+    var newPos = {
+      left: explicitPos[1],
+      top: explicitPos[0]
+    }
+  } else {
+    var newPos = {
+      left: oldPos.left + correctionX,
+      top: oldPos.top + correctionY
+    }
   }
 
-  var newScroll = {
-  	x: currentC.x * this.imgMeta.resized.w,
-  	y: currentC.y * this.imgMeta.resized.h
-  }
-
-  this._ui_container
-  	.scrollLeft(newScroll.x)
-  	.scrollTop(newScroll.y);  
-
+  this._ui_img.css({
+    left: newPos.left,
+    top: newPos.top
+  })
 }

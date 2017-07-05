@@ -15,7 +15,7 @@
     <xsl:output method="html" encoding="utf-8" version="1.0" indent="yes" standalone="no" media-type="text/html" omit-xml-declaration="no" doctype-system="about:legacy-compat" /> 
     <xsl:param name="pbNote" select="''"/>
 
-    <xsl:param name="jqueryUICSS" select="concat($filePrefix, '/js/jquery-ui/themes/base/jquery.ui.all.css')"/>
+    <xsl:param name="jqueryUICSS" select="concat($filePrefix, '/css/lib/jquery-ui/themes/base/minified/jquery-ui.min.css')"/>
     <xsl:param name="jqueryUI" select="concat($filePrefix,'/js/jquery-ui/ui/minified/jquery-ui.min.js')"/>
 
 
@@ -165,19 +165,19 @@
         <div class="row">
             <nav>
               <button class="button zoom out">
-                <i class="fa fa-search-minus fa-2x"></i>
+                <i class="fa fa-search-minus"></i>
               </button>
 
               <button class="button zoom in">
-                <i class="fa fa-search-plus fa-2x"></i>
+                <i class="fa fa-search-plus"></i>
               </button>
 
               <button class="button new-tab">
-                <i class="fa fa-file-o fa-2x"></i>
+                <i class="fa fa-file-o"></i>
               </button>
 
               <button class="button facs-close">
-                <i class="fa fa-close fa-2x"></i>
+                <i class="fa fa-close"></i>
               </button>
             </nav>
         </div>

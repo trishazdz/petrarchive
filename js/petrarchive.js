@@ -298,7 +298,7 @@ CommentaryUtil.prototype.events = function() {
 
   $('div.commentary header button.close').click(function(ev) {
     that.deactivate()
-    window.location.hash = ''
+    window.location.hash = '_'
   })
 
    // Navigation between different sections of commentary

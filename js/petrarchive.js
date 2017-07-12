@@ -26,10 +26,18 @@ $(document).ready(function() {
   if (window.CommentaryUtil) { PT.commentary = new CommentaryUtil() }
   if (window.Facsimile) { 
     PT.facsimile = new Facsimile({
-      anchor: $('a.gallery-facs'),
+      anchor: $('a.facs-thumb'),
       ui: $('#pt-facs')
     })
   }
+
+  // Setup the sticky header
+  var thumbSrc = $('.-teibp-thumbnail').attr('src')
+  $('#sticky-header img').attr('src', thumbSrc)
+
+  var pageNum = $('.-teibp-pageNum').text()
+
+  $('#sticky-header .charta-no').text(pageNum)
 })
 
 function Petrarchive() {
@@ -49,7 +57,13 @@ function Petrarchive() {
   }
 
   this.switchCustomCSS = function (theme) {
-    document.getElementById('customcss').href=theme.options[theme.selectedIndex].value
+    var dict = {
+      diplomatic: '../css/custom.css',
+      edited: '../css/custom_norm.css'
+    }
+
+    var stylesheet = dict[theme.options[theme.selectedIndex].value]
+    document.getElementById('customcss').href=stylesheet
   }
 }
 
@@ -74,11 +88,23 @@ Petrarchive.prototype.stylingHacks = function() {
 function NavUtil() {
   this.current = new PetrarchiveDocument(document.URL)
 
-  var previous = $('#teibpToolbox nav a.previous'),
-      next = $('#teibpToolbox nav a.next');
+  this.previous = $('#page-nav a.previous')
+  this.next = $('#page-nav a.next')
 
-  next.attr('href', this.setupNextHref()) 
-  previous.attr('href', this.setupPrevHref())
+  this.next.attr('href', this.setupNextHref()) 
+  this.previous.attr('href', this.setupPrevHref())
+
+  this.events()
+}
+
+NavUtil.prototype.events = function() {
+  this.previous.hover(function(ev) {
+    console.log(ev)
+  })
+
+  this.next.hover(function(ev) {
+    console.log(ev)
+  })
 }
 
 NavUtil.prototype.setupPrevHref = function() {
@@ -255,10 +281,12 @@ function CommentaryUtil() {
   this.events()
 
   this.activate = function() {
+    $('body').addClass('commentary-active')
     this.$element.addClass('active')
     this.refreshNavMeta()
   }
   this.deactivate = function() {
+    $('body').removeClass('commentary-active')
     this.$element.removeClass('active')
   }
 

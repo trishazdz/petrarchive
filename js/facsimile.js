@@ -1,9 +1,20 @@
+function getParamFromUrl(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
 function Facsimile(params) {
   // Params 
   // anchor: The <a> Tag of thumbnail
   // ui: HTML container that houses the displa of facs
   this._anchor = params.anchor
-  this._img = this._anchor.children('img')
+  this._img = $('.-teibp-pbFacs img') //this._anchor.find('img')
+
   this.imgMeta = {
   	original: {
 	  	w: this._img.prop('naturalWidth'),
@@ -44,7 +55,13 @@ function Facsimile(params) {
 
   this.events()
 
-  this.zoom('out', 60, [0,0])
+  this.zoom('out', 70, [0,0])
+
+  console.log(localStorage.getItem('facs'))
+
+  if (localStorage.getItem('facs') == 'true') {
+    this.show()
+  }
 }
 
 Facsimile.prototype.events = function() {
@@ -83,11 +100,13 @@ Facsimile.prototype.events = function() {
 Facsimile.prototype.show = function() {
   this.isActive = true
   this._ui.addClass('active')
+  localStorage.setItem('facs', 'true')
 }
 
 Facsimile.prototype.hide = function() {
   this.isActive = false
   this._ui.removeClass('active')
+  localStorage.setItem('facs', 'false')
 }
 
 Facsimile.prototype.zoom = function(direction, resize, position) {
@@ -146,4 +165,5 @@ Facsimile.prototype.zoom = function(direction, resize, position) {
     left: newPos.left,
     top: newPos.top
   })
+
 }

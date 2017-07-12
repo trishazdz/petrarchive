@@ -24,7 +24,9 @@
 <xsl:output method="xml" encoding="utf-8" version="1.0" indent="yes" standalone="no" media-type="text/html" omit-xml-declaration="no" doctype-system="about:legacy-compat" />	
 	<xsl:param name="teibpHome" select="'http://dcl.slis.indiana.edu/teibp/'"/>
 	<xsl:param name="inlineCSS" select="true()"/>
-  <xsl:param name="includeNav" select="true()"/>
+  	<xsl:param name="includeNav" select="false()"/>
+    <xsl:param name="includeStickyHeader" select="true()"/>
+
 	<xsl:param name="includeToolbox" select="true()"/>
 	<xsl:param name="includeAnalytics" select="true()"/>
 	<xsl:param name="displayPageBreaks" select="true()"/>
@@ -74,7 +76,10 @@
 			  <xsl:if test="$includeNav = true()">
 			    <xsl:call-template name="siteNavigation"/>
 			  </xsl:if>
-				<xsl:if test="$includeToolbox = true()">
+			  <xsl:if test="$includeStickyHeader = true()">
+			    <xsl:call-template name="stickyHeader"/>
+			  </xsl:if>
+				<xsl:if test="$includeToolbox = false()">
 					<xsl:call-template name="teibpToolbox"/>
 				</xsl:if>
 				<div id="tei_wrapper">
@@ -119,12 +124,15 @@
 			<xd:p>A hack because JavaScript was doing weird things with &lt;title>, probably due to confusion with HTML title. There is no TEI namespace in the TEI Boilerplate output because JavaScript, or at least JQuery, cannot manipulate the TEI elements/attributes if they are in the TEI namespace, so the TEI namespace is stripped from the output. As far as I know, &lt;title> elsewhere does not cause any problems, but we may need to extend this to other occurrences of &lt;title> outside the Header.</xd:p>
 		</xd:desc>
 	</xd:doc>
+
+	
 	<xsl:template match="tei:teiHeader//tei:title">
-		<tei-title>
+		<!--<tei-title>
 			<xsl:call-template name="addID"/>
 			<xsl:apply-templates select="@*|node()"/>
-		</tei-title>
+		</tei-title>-->
 	</xsl:template>
+	
 
 	<xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
 		<xd:desc>
@@ -466,7 +474,7 @@
 		</xsl:param>
 		<xsl:choose>
 		<xsl:when test="$displayPageBreaks = true()">
-					<span class="-teibp-pb">
+					<span class="-teibp-pb" style="display: none">
 						<xsl:call-template name="addID"/>
 						<xsl:call-template name="pb-handler">
 							<xsl:with-param name="n" select="@n"/>

@@ -32,6 +32,13 @@
       </xsl:variable>
       <xsl:copy-of select="$nav"/>
     </xsl:template>
+
+    <xsl:template name="stickyHeader">
+      <xsl:variable name="header">
+        <xsl:copy-of select="document('../sticky_header.html')"/>
+      </xsl:variable>
+      <xsl:copy-of select="$header"/>
+    </xsl:template>
   
   <xd:doc>
     <xd:desc>

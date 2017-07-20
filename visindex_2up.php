@@ -146,7 +146,7 @@
 			<a href="content/c028r-c029r.xml#c028v"><img alt="vat. lat. 3195, c. 28v" class="visindex-verso" src="images/visindex/c028v.svg" id="c028v" /></a>  <a href="content/c028r-c029r.xml#c029r"><img alt="vat. lat. 3195, c. 29r" class="visindex-recto" src="images/visindex/c029r.svg" id="c029r" /></a>  
 		</div>
 		<div>
-			<img alt="vat. lat. 3195, c. 29v" class="visindex-verso" src="images/visindex/c029v.svg" id="c029v" />  <img alt="vat. lat. 3195, c. 30r" class="visindex-recto" src="images/visindex/c030r.svg" id="c030r" />  
+			<img alt="vat. lat. 3195, c. 29v" class="visindex-verso" src="images/visindex/c029v.svg" id="c029v" />  <a href="content/c030r.xml"><img alt="vat. lat. 3195, c. 30r" class="visindex-recto" src="images/visindex/c030r.svg" id="c030r" /></a>  
 		</div>
 		<div>
 			<img alt="vat. lat. 3195, c. 30v" class="visindex-verso" src="images/visindex/c030v.svg" id="c030v" />  <img alt="vat. lat. 3195, c. 31r" class="visindex-recto" src="images/visindex/c031r.svg" id="c031r" />  

@@ -1104,27 +1104,27 @@
                     <td>Canzone</td>
                 </tr>
                 <tr>
-                    <td>130</td>
+                    <td><a href="content/c030r.xml#rvf130">130</a></td>
                     <td>30r</td>
-                    <td>Poi che ’l camin m’è chiuso di mercede</td>
+                    <td><a href="content/c030r.xml#rvf130">Poi che ’l camin m’è chiuso di mercede</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>131</td>
+                    <td><a href="content/c030r.xml#rvf131">131</a></td>
                     <td>30r</td>
-                    <td>Io canterei d’amor sì novamente</td>
+                    <td><a href="content/c030r.xml#rvf131">Io canterei d’amor sì novamente</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>132</td>
+                    <td><a href="content/c030r.xml#rvf132">132</a></td>
                     <td>30r</td>
-                    <td>S’amor non è, che dunque è quel ch’io sento?</td>
+                    <td><a href="content/c030r.xml#rvf132">S’amor non è, che dunque è quel ch’io sento?</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>133</td>
+                    <td><a href="content/c030r.xml#rvf133">133</a></td>
                     <td>30r</td>
-                    <td>Amor m’à posto come segno a strale</td>
+                    <td><a href="content/c030r.xml#rvf133">Amor m’à posto come segno a strale</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>

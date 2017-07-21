@@ -1074,33 +1074,33 @@
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>125</td>
+                    <td><a href="content/c026v.xml#rvf125">125</a></td>
                     <td>26v</td>
-                    <td>Se ’l pensier che mi strugge</td>
+                    <td><a href="content/c026v.xml#rvf125">Se ’l pensier che mi strugge</a></td>
                     <td>Canzone</td>
                 </tr>
                 <tr>
-                    <td><a href="content/c027r.xml#rvf126">126</a></td>
+                    <td><a href="content/c027r-c029v.xml#rvf126">126</a></td>
                     <td>27r</td>
-                    <td><a href="content/c027r.xml#rvf126">Chiare, fresche et dolci acque</a></td>
+                    <td><a href="content/c027r-c029v.xml#rvf126">Chiare, fresche et dolci acque</a></td>
                     <td>Canzone</td>
                 </tr>
                 <tr>
-                    <td><a href="content/c028r-c029v.xml#rvf127">127</a></td>
+                    <td><a href="content/c027r-c029v.xml#rvf127">127</a></td>
                     <td>27r-28r</td>
-                    <td><a href="content/c028r-c029v.xml#rvf127">In quella parte dove Amor mi sprona</a></td>
+                    <td><a href="content/c027r-c029v.xml#rvf127">In quella parte dove Amor mi sprona</a></td>
                     <td>Canzone</td>
                 </tr>
                 <tr>
-                    <td><a href="content/c028r-c029v.xml#rvf128">128</a></td>
+                    <td><a href="content/c027r-c029v.xml#rvf128">128</a></td>
                     <td>28r-29r</td>
-                    <td><a href="content/c028r-c029v.xml#rvf128">Italia mia, benché ’l parlar sia indarno</a></td>
+                    <td><a href="content/c027r-c029v.xml#rvf128">Italia mia, benché ’l parlar sia indarno</a></td>
                     <td>Canzone</td>
                 </tr>
                 <tr>
-                    <td><a href="content/c028r-c029v.xml#rvf129">129</a></td>
+                    <td><a href="content/c027r-c029v.xml#rvf129">129</a></td>
                     <td>29r-29v</td>
-                    <td><a href="content/c028r-c029v.xml#rvf129">Di pensier in pensier, di monte in monte</a></td>
+                    <td><a href="content/c027r-c029v.xml#rvf129">Di pensier in pensier, di monte in monte</a></td>
                     <td>Canzone</td>
                 </tr>
                 <tr>

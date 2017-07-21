@@ -68,7 +68,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Petrarch’s <title rendition="#i">Rerum vulgarium fragmenta</title>: Charta 28 recto - 29 recto</title> 
+            <title>Petrarch’s <title rendition="#i">Rerum vulgarium fragmenta</title>: Charta 28 recto - 29 verso</title> 
             <editor xml:id="hws">H. Wayne Storey</editor>
             <editor xml:id="jaw">John A. Walsh</editor>
             <respStmt>
@@ -76,7 +76,7 @@
                <name xml:id="amm">Allison M. McCormack</name>
             </respStmt>
             <respStmt>
-               <resp>Encoder</resp>
+               <resp>Associate Editor</resp>
                <name xml:id="im">Isabella Magni</name>
             </respStmt>
          </titleStmt>
@@ -880,8 +880,127 @@
                       <l n="20">Et a pena <choice><orig>uorrei</orig><reg>vorrei</reg></choice></l>
                       <l n="21">Cangiar questo mio <choice><orig>uiuer</orig><reg>viver</reg></choice> dolce amaro&p2c;</l>
                   </lg>
-                 </lg>
+
+              <pb n="charta 29 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-029v.jpg" />
+
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="22">Chi dico forse anchor ti serua amore</l>
+                      <l n="23">Adun tempo migliore .</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="24">Forse a te stesso uile &virg; altrui se caro .</l>
+                      <l n="25">Et in questa trapasso sospirando .</l>
+                  </lg>
+                  <lg type="single" corresp="#canvasline">
+                      <l n="26">Or porrebbe esser uero<g ref="#punctinter"/> or come<g ref="#punctinter"/> or quando<g ref="#punctinter"/></l>
+                  </lg>
+              </lg>
+              <lg type="stanza">
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="27"><hi rendition="#red #fs24pt">¶</hi>Oue porge ombra un pino alto odun colle</l>
+                      <l n="28">Talor marresto. &amp7; pur nel primo sasso</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="29">Disegno co la mente il suo bel uiso .</l>
+                      <l n="30">Poi cha me torno &virg; trouo il petto molle</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="31">De la pietate . &amp7; alor dico &virg; Ai lasso &virg;</l>
+                      <l n="32">Doue se giunto<g ref="#punctinter"/> et onde se diuiso<g ref="#punctinter"/></l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="33">Ma mentre tener fiso</l>
+                      <l n="34">Posso al primo pensier la mente uaga &virg;</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="35">Et mirar lei . et obliar me stesso .</l>
+                      <l n="36">Sento amor si da presso &virg;</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="37">Che del suo <choice><abbr>&#42835;prio</abbr><expan>proprio</expan></choice> error lalma sappaga .</l> <!-- abbreviation proprio -->
+                      <l n="38">In tanti parte &virg; et si bella la ueggio .</l>
+                  </lg>
+                  <lg type="single" corresp="#canvasline">
+                      <l n="39">Che se lerror durasse &virg; altro non cheggio.</l>
+                  </lg>
+              </lg>
+              <lg type="stanza">
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="40"><hi rendition="#blue #fs24pt">¶</hi>I lo piu uolte &virg-underdot; or chi fia che mil creda<g ref="#punctinter"/></l>
+                      <l n="41">Ne lacqua chiara &amp7; sopra lerba uerde</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="42">Veduto uiua . &amp7; nel <choice><abbr>trōchon</abbr><expan>tronchon</expan></choice> dun faggio.</l>
+                      <l n="43">En bianca nube si fatta che leda</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="44">Auria ben detto che sua figlia perde &virg;</l>
+                      <l n="45">Come stella &virg; chel sol copre col raggio</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="46">Et quanto in piu seluaggio</l>
+                      <l n="47">Loco mi trouo <g ref="#virgsusp"/> en piu deserto lido &virg;</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="48">Tanto piu bella il mio pensier <choice><abbr>ladōbra</abbr><expan>ladombra</expan></choice> .</l>
+                      <l n="49">Poi quando il uero sgombra</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="50">Quel dolce error &virg; pur li medesmo assido&virg;</l>
+                      <l n="51">Me freddo &virg; p<add>i</add>etra morta in p<add>i</add>etra uiua &virg-underdot;</l> <!-- check the two i -->
+                  </lg>
+                  <lg type="single" corresp="#canvasline">
+                      <l n="52">In guisa duom che pensi &#x2e1d;&amp7; pianga &amp7; scriua .
+                      </l> <!-- check virg here (in doc and facsimile) -->
+                  </lg>
+              </lg>
+              <lg type="stanza">
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="53"><hi rendition="#red #fs24pt">¶</hi>Oue daltra montagna ombra &non; tocchi</l>
+                      <l n="54">Versol maggiore&virg;el piu expedito giogo</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="55">Tirar mi suol un desiderio intenso .</l>
+                      <l n="56">Indi i miei danni a misurar &con; gliocchi</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="57">Comincio . en tanto <choice><abbr>lagrimādo</abbr><expan>lagrimando</expan></choice> sfogo</l>
+                      <l n="58">Di dolorosa nebbia il cor condenso .</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="59">Alor chi miro et penso</l>
+                      <l n="60">Quanta aria dal bel uiso mi diparte</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="61">Che sempre me si presso &amp7; si lontano .</l>
+                      <l n="62">Poscia fra me pian piano</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="63">Che sai tu lasso &virg; forse in quella parte</l>
+                      <l n="64">Or di tua <choice><abbr>lontanāça</abbr><expan>lontanança</expan></choice> si sospira .</l>
+                  </lg>
+                  <lg type="single" corresp="#canvasline">
+                      <l n="65">Et in questo penser lalma respira.</l>
+                  </lg>
+              </lg>
+              <lg type="stanza">
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="66"><hi rendition="#blue #fs24pt">¶</hi>Cançone oltra quellalpe</l>
+                      <l n="67">La doue il ciel e piu sereno &amp7; lieto</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="68">Mi riuedrai sourun ruscel <choice><abbr>corrēte</abbr><expan>corrente</expan></choice> . </l>
+                      <l n="69">Oue laura si sente</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="70">Dun fresco &amp7; odorifero laureto .</l>
+                      <l n="71">Iui el mio cor &virg;&amp7; quella chel minuola .</l>
+                  </lg>
+                  <lg type="single" corresp="#canvasline">
+                      <l n="72">Qui ueder poi limagine mia sola.</l>
+                  </lg>
             </lg>
+          </lg>
       </body>
    </text>
 </TEI>

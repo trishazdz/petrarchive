@@ -68,7 +68,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Petrarch’s <title rendition="#i">Rerum vulgarium fragmenta</title>: Charta 30 verso</title> 
+            <title>Petrarch’s <title rendition="#i">Rerum vulgarium fragmenta</title>: Charta 30 verso and 31 recto</title> 
             <editor xml:id="hws">H. Wayne Storey</editor>
             <editor xml:id="jaw">John A. Walsh</editor>
             <respStmt>
@@ -488,7 +488,7 @@
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
                         <l n="3">Et uolo sopral cielo. &amp7; giaccio in terra.</l>
-                        <l n="4">Et nulla stringo &amp7; tuttol <choice><abbr>mōndo</abbr><expan>mondo</expan></choice> abbraccio.</l>
+                        <l n="4">Et nulla stringo &amp7; tuttol <choice><abbr>mōdo</abbr><expan>mondo</expan></choice> abbraccio.</l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
                         <l n="5">Tal ma in pregion &virg; che &non; mapre ne serra.</l>
@@ -613,7 +613,130 @@
                         <l n="43">Si mi trasporta. chel bel uiso santo.	</l>
                         <l n="44">Et gliocchi uaghi fien cagion chio pera.</l>
                     </lg>
+
+                <pb n="charta 31 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-031r.jpg"/>
+
+                        <lg type="single" corresp="#canvasline">
+                            <l n="45">Di questa fera ( angelica innocente.</l>
+                        </lg>
                 </lg>
+                <lg type="stanza">
+                        <lg type="dblvrs" corresp="#canvasline">
+                            <l n="46"><hi rendition="#red #fs24pt">¶</hi>Surge nel meçço giorno</l>
+                            <l n="47">Vna fontana. e tien nome dal sole.</l>
+                        </lg>
+                        <lg type="dblvrs" corresp="#canvasline">
+                            <l n="48">Che &per; natura sole</l>
+                            <l n="49">Bollir le notti. ensul giorno esser fredda.</l>
+                        </lg>
+                        <lg type="dblvrs" corresp="#canvasline">
+                            <l n="50">E tanto si raffredda</l>
+                            <l n="51">Quantol sol monta. &amp7; quanto e piu da presso.</l>
+                        </lg>
+                        <lg type="dblvrs" corresp="#canvasline">
+                            <l n="52">Cosi auen a me stesso </l>
+                            <l n="53">Che son fonte di lagrime &virg;&amp7; soggiorno.</l>
+                        </lg>
+                        <lg type="dblvrs" corresp="#canvasline">
+                            <l n="54">Quandol bel lume adorno.</l>
+                            <l n="55">Chel mio sol sallontana. &amp7; triste &amp7; sole</l>
+                        </lg>
+                        <lg type="dblvrs" corresp="#canvasline">
+                            <l n="56">Son le mie luci. &amp7; notte oscura &virg; &amp7; loro.</l>
+                            <l n="57">Ardo allor. <subst><del type="erasure"><gap reason="illegible"/></del><add>m</add></subst>a se loro</l>
+                        </lg>
+                        <lg type="dblvrs" corresp="#canvasline">
+                            <l n="58">Ei rai ueggio apparir del uiuo sole &virg;</l>
+                            <l n="59">Tutto dentro &virg;&amp7; di for sento cangiarme.</l>
+                        </lg>
+                        <lg type="single" corresp="#canvasline">
+                            <l n="60">Et ghiaccio farme &virg-underdot; cosi freddo torno.</l>
+                        </lg>
+                </lg>
+                    
+                    <lg type="stanza">
+                        <lg type="dblvrs" corresp="#canvasline">
+                            <l n="61"><hi rendition="#blue #fs24pt">¶</hi>Vnaltra fonte a Epiro &virg;</l>
+                            <l n="62">Di cui si scriue &virg; chessendo fredda ella &virg;</l>                      
+                        </lg>
+                        <lg type="dblvrs" corresp="#canvasline">
+                            <l n="63">Ogni spenta facella</l>
+                            <l n="64">Accende. &amp7; spegne qual trouasse accesa.</l>
+                        </lg>
+                        <lg type="dblvrs" corresp="#canvasline">
+                            <l n="65">Lanima mia choffesa</l>
+                            <l n="66">Anchor non era damoroso foco</l>
+                        </lg>
+                        <lg type="dblvrs" corresp="#canvasline">
+                            <l n="67">Appressandosi un poco</l>
+                            <l n="68">A quella fredda &virg; chio sempre sospiro &virg;</l>
+                        </lg>
+                        <lg type="dblvrs" corresp="#canvasline">
+                            <l n="69">Arse tutta . et martiro</l>
+                            <l n="70">Simil giamai ne sol uide&virg;ne stella.</l>
+                        </lg>
+                        <lg type="dblvrs" corresp="#canvasline">
+                            <l n="71">Chun cor di marmo a pieta mosso aurebbe.</l>
+                            <l n="72">Poi <choice><abbr>chenfiāmata</abbr><expan>chenfiammata</expan></choice> lebbe &virg;</l>
+                        </lg>
+                        <lg type="dblvrs" corresp="#canvasline">
+                            <l n="73">Rispensela uertu gelata &amp7; bella.</l>
+                            <l n="74">Cosi piu uolte al cor racceso &virg;&amp7; spento.</l>
+                        </lg>
+                        <lg type="single" corresp="#canvasline">
+                            <l n="75">Il so chel sento. &amp7; spesso menadiro.</l>
+                        </lg>
+                    </lg>
+                    <lg type="stanza">
+                        <lg type="dblvrs" corresp="#canvasline">
+                            <l n="76"><hi rendition="#blue #fs24pt">¶</hi>Fuor tutti nostri lidi.</l>
+                            <l n="77">Ne lisole famose di fortuna &virg;</l>
+                        </lg>
+                        <lg type="dblvrs" corresp="#canvasline">
+                            <l n="78">Due fonti a. chi de luna</l>
+                            <l n="79">Bee&virg; mor ridendo. &amp7; chi de laltra &virg; scampa.</l>                        
+                        </lg>
+                        <lg type="dblvrs" corresp="#canvasline">
+                            <l n="80">Simil fortuna stampa</l>
+                            <l n="81">Mia uita &virg; che morir poria ridendo &virg;</l>
+                        </lg>
+                        <lg type="dblvrs" corresp="#canvasline">
+                            <l n="82">Del gran piacer &virg; chio prendo.</l>
+                            <l n="83">Se nol <subst><del type="erasure"><gap reason="illegible"/></del><add>te</add></subst>mprassen dolorosi stridi.</l>
+                        </lg>
+                        <lg type="dblvrs" corresp="#canvasline">
+                            <l n="84">Amor chanchor mi guidi</l>
+                            <l n="85">Pur a lombra di fama occulta &amp7; bruna &virg;</l>
+                        </lg>
+                        <lg type="dblvrs" corresp="#canvasline">
+                            <l n="86">Tacerem questa fonte &virg;chognior piena</l>
+                            <l n="87">Ma &con; piu larga uena</l>
+                        </lg>
+                        <lg type="dblvrs" corresp="#canvasline">
+                            <l n="88">Veggiam &virg; &quando; col tauro il sol saduna.</l>
+                            <l n="89">Cosi gliocchi miei <choice><abbr>piāgon</abbr><expan>piangon</expan></choice> dogni tempo.</l>
+                        </lg>
+                        <lg type="single" corresp="#canvasline">
+                            <l n="90">Ma piu nel tempo <g ref="#punctelevhiback"/> che <choice><abbr>madōna</abbr><expan>madonna</expan></choice> uidi.</l>
+                        </lg>
+                    </lg>
+                    <lg type="stanza">
+                        <lg type="dblvrs" corresp="#canvasline">
+                            <l n="91"><hi rendition="#blue #fs24pt">¶</hi>Chi spiasse cançone</l>
+                            <l n="92">Quel chi fo. tu poi dir &virg; Sotto un gran sasso</l>
+                        </lg>
+                        <lg type="dblvrs" corresp="#canvasline">
+                            <l n="93">In una chiusa ualle &virg; ondesce Sorga &virg;</l>
+                            <l n="94">Si sta. ne chi lo scorga</l>
+                        </lg>
+                        <lg type="dblvrs" corresp="#canvasline">
+                            <l n="95">Ve seno amor &virg; che mai nol lascia un passo.</l>
+                            <l n="96">Et limagine duna &virg;che lo strugge <g ref="#virgsusp"/></l>
+                        </lg>
+                        <lg type="single" corresp="#canvasline">
+                            <l n="97">Che &per; se fugge  tuttaltre persone.</l>
+                        </lg>
+                    </lg>
             </lg>
         </body>
     </text>

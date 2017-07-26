@@ -1164,39 +1164,39 @@
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>140</td>
+                    <td><a href="content/c032r.xml#rvf140">140</a></td>
                     <td>32r</td>
-                    <td>Amor, che nel penser mio vive et regna</td>
+                    <td><a href="content/c032r.xml#rvf140">Amor, che nel penser mio vive et regna</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>141</td>
+                    <td><a href="content/c032r.xml#rvf141">141</a></td>
                     <td>32r</td>
-                    <td>Come talora al caldo tempo sole</td>
+                    <td><a href="content/c032r.xml#rvf140">Come talora al caldo tempo sole</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>142</td>
+                    <td><a href="content/c032r.xml#rvf140">142</a></td>
                     <td>32r-32v</td>
-                    <td>A la dolce ombra de le belle frondi</td>
+                    <td><a href="content/c032r.xml#rvf140">A la dolce ombra de le belle frondi</a></td>
                     <td>Sestina</td>
                 </tr>
                 <tr>
-                    <td>143</td>
+                    <td><a href="content/c032v.xml#rvf143">143</a></td>
                     <td>32v</td>
-                    <td>Quand’io v’odo parlar sì dolcemente</td>
+                    <td><a href="content/c032v.xml#rvf143">Quand’io v’odo parlar sì dolcemente</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>144</td>
+                    <td><a href="content/c032v.xml#rvf144">144</a></td>
                     <td>32v</td>
-                    <td id="N">Né così bello il sol giamai levarsi</td>
+                    <td id="N"><a href="content/c032v.xml#rvf144">Né così bello il sol giamai levarsi</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>145</td>
+                    <td><a href="content/c032v.xml#rvf145">145</a></td>
                     <td>32v</td>
-                    <td>Ponmi ove ’l sole occide i fiori et l’erba</td>
+                    <td><a href="content/c032v.xml#rvf145">Ponmi ove ’l sole occide i fiori et l’erba</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>

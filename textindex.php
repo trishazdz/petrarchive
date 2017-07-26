@@ -1128,15 +1128,15 @@
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>134</td>
+                    <td><a href="content/c030v-c031r.xml#rvf134">134</a></td>
                     <td>30v</td>
-                    <td id="P">Pace non trovo, et non ò da far guerra.</td>
+                    <td id="P"><a href="content/c030v-c031r.xml#rvf134">Pace non trovo, et non ò da far guerra.</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>135</td>
+                    <td><a href="content/c030v-c031r.xml#rvf135">135</a></td>
                     <td>30v-31r</td>
-                    <td>Qual più diversa et nova</td>
+                    <td><a href="content/c030v-c031r.xml#rvf135">Qual più diversa et nova</a></td>
                     <td>Canzone</td>
                 </tr>
                 <tr>

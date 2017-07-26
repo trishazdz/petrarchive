@@ -32,7 +32,11 @@ Twitter: <a href="https://twitter.com/jawalsh">@jawalsh</a><br />-->
 </dd>
 </dl>
 <dl>
-<dt>Isabella Magni, Associate Editor<!-- 2013-present --></dt><dd />
+<dt>Isabella Magni, Associate Editor</dt>
+<dd>Mellon Postdoctoral Fellow in Italian Paleography at the <a href="https://www.newberry.org">Newberry Library</a> in Chicago, IL (2017-2019), where she is working on the preparation of an online handbook for Italian paleography. She conducts research on the early manuscript tradition of Petrarch's Fragmenta and on digital approaches to the representation of texts. She earned her PhD (2017) in Italian and Medieval studies from <a href="http://www.indiana.edu">Indiana University</a>. 
+<br/>
+Homepage: &lt;<a href="http://isamagni.com">http://isamagni.com</a>>.<br/>
+</dd>
 </dl>
 
 <dl>
@@ -44,13 +48,17 @@ Twitter: <a href="https://twitter.com/jawalsh">@jawalsh</a><br />-->
 </dl>
 
 <dl>
-<dt>Grace Thomas, Encoder <!-- 2014-present --></dt><dd />
+<dt>Abraham Kim, Web Developer <!-- 2017-present --></dt><dd />
 </dl>
 
-<dl>
-<dt>Laura Pence, Visual Index Designer <!-- 2014-present --></dt><dd />
-</dl>
 <h2>Past Contributors</h2>
+
+<dl>
+<dt>Grace Thomas, Encoder (2014-2016)</dt><dd />
+</dl>
+<dl>
+<dt>Laura Pence, Visual Index Designer (2013-2014)<!-- 2014-present --></dt><dd />
+</dl>
 <dl>
 <dt>Sara Dallavalle, Encoder (2014)</dt><dd />
 

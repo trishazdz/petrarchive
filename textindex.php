@@ -1140,27 +1140,27 @@
                     <td>Canzone</td>
                 </tr>
                 <tr>
-                    <td>136</td>
+                    <td><a href="content/c031v.xml#rvf136">136</a></td>
                     <td>31v</td>
-                    <td>Fiamma dal ciel su le tue treccie piova</td>
+                    <td><a href="content/c031v.xml#rvf136">Fiamma dal ciel su le tue treccie piova</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>137</td>
+                    <td><a href="content/c031v.xml#rvf137">137</a></td>
                     <td>31v</td>
-                    <td>L’avara Babilonia à colmo il sacco</td>
+                    <td><a href="content/c031v.xml#rvf137">L’avara Babilonia à colmo il sacco</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>138</td>
+                    <td><a href="content/c031v.xml#rvf138">138</a></td>
                     <td>31v</td>
-                    <td>Fontana di dolore, albergo d’ira,</td>
+                    <td><a href="content/c031v.xml#rvf138">Fontana di dolore, albergo d’ira,</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>139</td>
+                    <td><a href="content/c031v.xml#rvf139">139</a></td>
                     <td>31v</td>
-                    <td>Quanto più disiose l’ali spando</td>
+                    <td><a href="content/c031v.xml#rvf139">Quanto più disiose l’ali spando</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>

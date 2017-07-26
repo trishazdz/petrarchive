@@ -418,7 +418,7 @@
                     </lg>
                 </lg>
             </lg>
-            <space corresp="#msline"/>
+            <space corresp="#canvasline"/>
             
             <lg xml:id="rvf141" type="sonnet" n="141">
                 <lg type="dblvrs" corresp="#canvasline">
@@ -452,9 +452,9 @@
                     <l n="14">Et cieca al suo morir l<hi rendition="#b">al</hi>ma <choice><abbr>cōs<hi rendition="#b">ente</hi></abbr><expan>cons<hi rendition="#b">ente</hi></expan></choice><hi rendition="#b">.</hi></l>
                 </lg>
             </lg>
-            <space corresp="#msline"/>
+            <space corresp="#canvasline"/>
             
-            <lg xml:id="rvf142" type="sestina" n="142" rendition="#columns_2">
+            <lg xml:id="rvf142" type="sestina" n="142"  rendition="#columns_2">
                 <cb n="1-of-2"/>
                 <l n="1" corresp="#canvasline"><hi rendition="#red #fs24pt">A</hi><hi rendition="#small-caps">l</hi>a dolce ombra de le belle frondi</l>
                 <l n="2" corresp="#canvasline">Corsi fuggendo in dispietato lume</l>
@@ -489,6 +489,132 @@
                 <l n="29" corresp="#canvasline">Fuggir disposi glinuescati rami</l>
                 <l n="30" corresp="#canvasline">Tosto <choice><abbr>chincomīciai</abbr><expan>chincominciai</expan></choice> di ueder lume</l>
             </lg>
+            
+            <pb n="charta 32 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-032v.jpg"/>
+            <lg xml:id="rvf142" type="sestina" n="142" rendition="#columns_2">
+                <cb n="1-of-2"/>
+                <l n="31" corresp="#canvasline"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi>Tanto mi piacque prima il dolce lume</l>
+                <l n="32" corresp="#canvasline">Chi passai con diletto assai gran poggi</l>
+                <l n="33" corresp="#canvasline">Per poter appressar gli amati rami.</l>
+                <l n="34" corresp="#canvasline">Ora la uita breue &virg; el loco |&#183; el tempo</l>
+                <l n="35" corresp="#canvasline"><choice><abbr>Mostrāmi</abbr><expan>Mostranmi</expan></choice> altro sentier di gire al cielo</l>
+                <l n="36" corresp="#canvasline">Et di far frutto non pur fior et frondi .</l>
+                
+                <cb n="2-of-2"/>
+                <l n="37" corresp="#canvasline"><hi rendition="#grey #fs24pt">&pilcrow2section;</hi>Altramor &virg; altre frondi &virg; &amp7; altro lume &virg;</l>
+                <l n="38" corresp="#canvasline">Altro salir al ciel per altri poggi</l>
+                <l n="39" corresp="#canvasline">Cerco<g ref="#punctelevhiback"/> che ne ben tempo . &amp7; altri rami .	</l>
+            </lg>
+            
+            <space corresp="#canvasline"/>
+            <space corresp="#canvasline"/>
+            
+            <lg xml:id="rvf143" type="sonnet" n="143">
+                <lg type="octave">
+                    <lg type="dblvrs" corresp="#canvasline">
+                        <l n="1"><hi rendition="#blue #fs24pt">Q</hi><hi rendition="#small-caps">v</hi>andio uodo parlar si dolcemente</l>
+                        <l n="2">Comamor proprio a suoi seguaci instilla .</l>
+                    </lg>
+                    <lg type="dblvrs" corresp="#canvasline">
+                        <l n="3">Lacceso mio desir tutto sfauilla &virg;</l>
+                        <l n="4">Tal <choice><abbr>chenfiāmar</abbr><expan>chenfiammar</expan></choice> deuria lanime spente</l>
+                    </lg>
+                    <lg type="dblvrs" corresp="#canvasline">
+                        <l n="5">Trouo la bella donna allor <choice><abbr>presēte</abbr><expan>presente</expan></choice></l>
+                        <l n="6">Ouunque mi fu mai dolce o tranquilla</l>
+                    </lg>
+                    <lg type="dblvrs" corresp="#canvasline">
+                        <l n="7">Ne lhabito chal suon &non; daltra squilla .</l>
+                        <l n="8">Ma di sospir mi fa destar souente .</l>
+                    </lg>
+                </lg>
+                <lg type="sestet">
+                    <lg type="dblvrs" corresp="#canvasline">
+                        <l n="9">Le chiome alaura sparse &virg; &amp7; lei <choice><abbr>cōuersa</abbr><expan>conuersa</expan></choice></l>
+                        <l n="10">In dietro ueggio . &amp7; cosi bella riede &virg;</l>
+                    </lg>
+                    <lg type="dblvrs" corresp="#canvasline">
+                        <l n="11">Nel cor &virg; come colei che tien la chiaue .</l>
+                        <l n="12">Mal souerchio piacer &virg; che satrauersa</l>
+                    </lg>
+                    <lg type="dblvrs" corresp="#canvasline">
+                        <l n="13">A la mia lingua qual <choice><abbr>dētro</abbr><expan>dentro</expan></choice> ella siede .</l>
+                        <l n="14">Dimostrar<subst><del type="erasure"><gap reason="illegible"/></del><add>l</add></subst>a in palese ardir non aue .</l>
+                    </lg>
+                </lg>
+            </lg>
+            <space corresp="#canvasline"/>
+            <lg xml:id="rvf144" type="sonnet" n="144">
+                <lg type="octave">
+                    <lg type="dblvrs" corresp="#canvasline">
+                        <l n="1"><hi rendition="#red #fs24pt">N</hi><hi rendition="#small-caps">e</hi>cosi bello il sol giamai leuarsi</l>
+                        <l n="2"><choice><abbr>Quādol</abbr><expan>Quandol</expan></choice> ciel fosse piu de nebbia scarco .</l>
+                    </lg>
+                    <lg type="dblvrs" corresp="#canvasline">
+                        <l n="3">Ne dopo pioggia uidil celeste arco</l>
+                        <l n="4">Per laere in color tanti uariarsi &virg;</l>
+                    </lg>
+                    <lg type="dblvrs" corresp="#canvasline">
+                        <l n="5">In quanti <choice><abbr>fiāmeggiando</abbr><expan>fiammeggiando</expan></choice> trasformarsi</l>
+                        <l n="6">Nel di chio presi lamoroso incarco &virg;</l>
+                    </lg>
+                    <lg type="dblvrs" corresp="#canvasline">
+                        <l n="7">Quel uiso al quale &virg; i son nel mio dir parco &virg;</l>
+                        <l n="8">Nulla cosa mortal pote aguagliarsi.</l>                   
+                    </lg>
+                </lg>
+                <lg type="sestet">
+                    <lg type="dblvrs" corresp="#canvasline">
+                        <l n="9">I uidi amor che begliocchi uolgea</l>
+                        <l n="10">Soaue si &virg; chognialtra uista oscura</l>
+                    </lg>
+                    <lg type="dblvrs" corresp="#canvasline">
+                        <l n="11">Daindi in qua mincomincio apparere .</l>
+                        <l n="12"><choice><abbr>Sēnuccio</abbr><expan>Sennuccio</expan></choice> il uidi . &amp7; larco che tendea .</l>
+                    </lg>
+                    <lg type="dblvrs" corresp="#canvasline">
+                        <l n="13">Tal che mia uita poi &non; fu secura . </l>
+                        <l n="14">Et e si uaga anchor del riuedere .</l>
+                    </lg>
+                </lg>
+            </lg>        
+            <space corresp="#canvasline"/>
+            <lg xml:id="rvf145" type="sonnet" n="145">
+                <lg type="octave">
+                    <lg type="dblvrs" corresp="#canvasline">
+                        <l n="1"><choice><abbr><hi rendition="#fs24pt #blue">P</hi><hi rendition="#small-caps">ō</hi>mi</abbr><expan><hi rendition="#fs24pt #blue">P</hi><hi rendition="#small-caps">o</hi>nmi</expan></choice> ouel sole occide i fiori et lerba &virg;</l>
+                        <l n="2">O doue uince lui il ghiaccio et la neue.</l>
+                    </lg>
+                    <lg type="dblvrs" corresp="#canvasline">
+                        <l n="3"><choice><abbr>Pōmi</abbr><expan>Ponmi</expan></choice> ouel carro suo temprato &amp7; leue.</l>
+                        <l n="4">Et oue chi cel rende o chi cel serba .</l>
+                    </lg>
+                    <lg type="dblvrs" corresp="#canvasline">
+                        <l n="5"><choice><abbr>Pōmi</abbr><expan>Ponmi</expan></choice> in humil fortuna &virg; odin su&per;ba .</l>
+                        <l n="6">Al dolce aere sereno . al fosco &amp7; greue .</l>
+                    </lg>
+                    <lg type="dblvrs" corresp="#canvasline">
+                        <l n="7"><choice><abbr>Pōmi</abbr><expan>Ponmi</expan></choice> a la notte . al di <choice><abbr>lūgo</abbr><expan>lungo</expan></choice> edal breue .</l>
+                        <l n="8">A la matura etate oda lacerba .</l>
+                    </lg>
+                </lg>
+                <lg type="sestet">
+                    <lg type="dblvrs" corresp="#canvasline">
+                        <l n="9"><choice><abbr>Pōmi</abbr><expan>Ponmi</expan></choice> in cielo &virg; odinterra odinabisso .</l>
+                        <l n="10">In alto poggio &virg; in ualle ima &amp7; palustre</l>
+                    </lg>
+                    <lg type="dblvrs" corresp="#canvasline">
+                        <l n="11">Libero spirto &virg; odasuoi <choice><abbr>mēbri</abbr><expan>membri</expan></choice> affisso .</l>
+                        <l n="12"><choice><abbr>Pōmi</abbr><expan>Ponmi</expan></choice> con fama oscura &virg; o &con; ilustre .</l>
+                    </lg>
+                    <lg type="dblvrs" corresp="#canvasline">
+                        <l n="13">Saro qual fui . Viuro comio son uisso .</l>
+                        <l n="14">Continuando il mio sospir trilustre.</l>
+                    </lg>
+                </lg>
+            </lg>
+            
+            <fw type="catch" rendition="#center"><choice><abbr>Odardēte</abbr><expan>Odardente</expan></choice></fw>
         </body>
     </text>
 </TEI>

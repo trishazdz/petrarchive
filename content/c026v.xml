@@ -482,158 +482,158 @@
           <lg type="canzone" xml:id="rvf125" n="125"> 
               <lg type="stanza">
                   <lg type="trplvrs" corresp="#canvasline">
-                      <l n="1"><hi rendition="#red #fs24pt">S</hi><hi rendition="#small-caps">e</hi>l pensier che mi strugge&virg;</l> 
-                      <l n="2">Come <choice><abbr>pungēte</abbr><expan>pungente</expan></choice> &amp7; saldo&virg;</l>
-                      <l n="3">Cosi uestisse dun color conforme .</l>
+                      <l n="1"><choice><orig><hi rendition="#red #fs24pt">S</hi><hi rendition="#small-caps">e</hi>l</orig><reg><hi rendition="#red #fs24pt">S</hi><hi rendition="#small-caps">e</hi> ’l</reg></choice> pensier che mi strugge<choice><orig>&virg;</orig><reg>,</reg></choice></l> 
+                      <l n="2"><choice><orig>Come</orig><reg>Com’è</reg></choice> <choice><abbr>pungēte</abbr><expan>pungente</expan></choice> &amp7; saldo<choice><orig>&virg;</orig><reg>,</reg></choice></l>
+                      <l n="3"><choice><orig>Cosi</orig><reg>Così</reg></choice> <choice><orig>uestisse</orig><reg>vestisse</reg></choice> <choice><orig>dun</orig><reg>d’un</reg></choice> color conforme<choice><orig> .</orig><reg>,</reg></choice></l>
                   </lg>
                   <lg type="trplvrs" corresp="#canvasline">
-                      <l n="4">Forse tal marde &amp7; fugge &virg;</l>
-                      <l n="5">Chauria parte del caldo.</l>
-                      <l n="6">Et destriasi amor la douor dorme .</l>
+                      <l n="4">Forse tal <choice><orig>marde</orig><reg>m’arde</reg></choice> &amp7; fugge&v2c;</l>
+                      <l n="5"><choice><orig>Chauria</orig><reg>Ch’avria</reg></choice> parte del caldo&p2c;</l>
+                      <l n="6">Et destriasi <choice><orig>amor</orig><reg>Amor</reg></choice> <choice><orig>la</orig><reg>là</reg></choice> <choice><orig>douor</orig><reg>dov’or</reg></choice> dorme<choice><orig> .</orig><reg>.</reg></choice></l>
                   </lg>
                   <lg type="trplvrs" corresp="#canvasline">
-                      <l n="7">Men solitarie lorme</l>
-                      <l n="8">Foran de miei pie lassi</l>
-                      <l n="9">Per campagne &virg; et &per; colli.</l>
+                      <l n="7">Men solitarie <choice><orig>lorme</orig><reg>l’orme</reg></choice></l>
+                      <l n="8">Foran de<supplied>’</supplied> miei pie<supplied>’</supplied> lassi</l>
+                      <l n="9">Per campagne<choice><orig> &virg;</orig><reg/></choice> et &per; colli&p2c;</l>
                   </lg>
                   <lg type="dblvrs" corresp="#canvasline">
-                      <l n="10">Men gliocchi adognor molli</l>
-                      <l n="11">Ardendo lei che come un ghiaccio stassi .</l>
+                      <l n="10">Men gliocchi <choice><orig>adognor</orig><reg>ad ognor</reg></choice> molli<supplied>,</supplied></l>
+                      <l n="11">Ardendo lei che come un ghiaccio stassi<choice><orig> .</orig><reg>,</reg></choice></l>
                   </lg>
                   <lg type="dblvrs" corresp="#canvasline">  
                       <l n="12">Et non lascia in me dramma</l>
-                      <l n="13">Che non sia foco et <choice><abbr>fiāma</abbr><expan>fiamma</expan></choice> .</l>
+                      <l n="13">Che non sia foco et <choice><abbr>fiāma</abbr><expan>fiamma</expan></choice><choice><orig> .</orig><reg>.</reg></choice></l>
                   </lg>
               </lg>
               <lg type="stanza">
                   <lg type="trplvrs" corresp="#canvasline">
-                      <l n="14"><hi rendition="#blue #fs24pt">¶</hi>&Per;o chamor mi sforça </l> 
-                      <l n="15">Et di sauer mi spoglia</l>
-                      <l n="16">Parlo &in; rime aspre &virg;&amp7; di dolceçça ignude .</l>
+                      <l n="14"><hi rendition="#blue #fs24pt">¶</hi><choice><orig>&Per;o</orig><reg>Però</reg></choice> <choice><orig>chamor</orig><reg>ch’Amor</reg></choice> mi <choice><orig>sforça</orig><reg>sforza</reg></choice> </l> 
+                      <l n="15">Et di <choice><orig>sauer</orig><reg>saver</reg></choice> mi spoglia<supplied>,</supplied></l>
+                      <l n="16">Parlo &in; rime aspre<choice><orig> &virg;</orig><reg/></choice>&amp7; di <choice><orig>dolceçça</orig><reg>dolcezza</reg></choice> ignude<choice><orig> .</orig><reg>;</reg></choice></l>
                   </lg>
                   <lg type="trplvrs" corresp="#canvasline">
-                      <l n="17">Ma &non; &sempre; a la scorça</l>
-                      <l n="18">Ramo &virg; ne &in; fior &virg; ne<subst><del type="erasure"><gap reason="illegible"/></del><add>n</add></subst> foglia</l>
-                      <l n="19">Mostra di for sua natural uertude .</l>
+                      <l n="17">Ma &non; &sempre; a la <choice><orig>scorça</orig><reg>scorza</reg></choice></l>
+                      <l n="18">Ramo&v2c; <choice><orig>ne</orig><reg>né</reg></choice> &in; fior&v2c; <choice><orig>ne<subst><del type="erasure"><gap reason="illegible"/></del><add>n</add></subst></orig><reg>né ’n</reg></choice> foglia</l>
+                      <l n="19">Mostra di for sua natural <choice><orig>uertude</orig><reg>vertude</reg></choice><choice><orig> .</orig><reg>.</reg></choice></l>
                   </lg>
                   <lg type="trplvrs" corresp="#canvasline">
-                      <l n="20">Miri cio chel cor chiude</l>
-                      <l n="21">Amor &amp7; que be gliocchi &virg;</l>
-                      <l n="22">Oue si siede a lombra</l>
+                      <l n="20">Miri <choice><orig>cio</orig><reg>ciò</reg></choice> <choice><orig>chel</orig><reg>che ’l</reg></choice> cor chiude</l>
+                      <l n="21">Amor &amp7; que<supplied>’</supplied> <choice><orig>be gliocchi</orig><reg>begli occhi</reg></choice>&v2c;</l>
+                      <l n="22"><choice><orig>Oue</orig><reg>Ove</reg></choice> si siede a <choice><orig>lombra</orig><reg>l’ombra</reg></choice></l>
                   </lg>
                   <lg type="dblvrs" corresp="#canvasline">          
-                      <l n="23">Sel dolor che si sgombra</l>
-                      <l n="24">Auen chen pianto &virg; o in lamentar trabocchi &virg;</l>
+                      <l n="23"><choice><orig>Sel</orig><reg>Se ’l</reg></choice> dolor che si sgombra</l>
+                      <l n="24"><choice><orig>Auen</orig><reg>Aven</reg></choice> <choice><orig>chen</orig><reg>che ’n</reg></choice> pianto<choice><orig> &virg;</orig><reg/></choice> o in lamentar trabocchi&v2c;</l>
                   </lg>
                   <lg type="dblvrs" corresp="#canvasline">  
-                      <l n="25">Lun a me noce et laltro</l>
-                      <l n="26">Altrui chio non lo scaltro.</l>
+                      <l n="25"><choice><orig>Lun</orig><reg>L’un</reg></choice> a me noce et <choice><orig>laltro</orig><reg>l’altro</reg></choice></l>
+                      <l n="26">Altrui <choice><orig>chio</orig><reg>ch’io</reg></choice> non lo scaltro.</l>
                   </lg>
               </lg>
               <lg type="stanza">
                   <lg type="trplvrs" corresp="#canvasline">
                       <l n="27"><hi rendition="#red #fs24pt">¶</hi>Dolci rime leggiadre</l> 
                       <l n="28">Che nel primiero assalto</l>
-                      <l n="29">Damor &virg; usai &virg; <choice><abbr>quādio</abbr><expan>quandio</expan></choice> &non; ebbi altrarme.</l>
+                      <l n="29"><choice><orig>Damor</orig><reg>D’amor</reg></choice><choice><orig> &virg;</orig><reg/></choice> usai<choice><orig> &virg;</orig><reg/></choice> <choice><orig><abbr>quādio</abbr><expan>quandio</expan></orig><reg>quand’io</reg></choice> &non; ebbi <choice><orig>altrarme</orig><reg>altr’arme</reg></choice>&p2c;</l>
                   </lg>
                   <lg type="trplvrs" corresp="#canvasline">
-                      <l n="30">Chi uerra mai che squadre</l>
+                      <l n="30">Chi <choice><orig>uerra</orig><reg>verrà</reg></choice> mai che squadre</l>
                       <l n="31">Questo mio cor di smalto</l>
-                      <l n="32">Chalmen comio solea possa sfogarme.</l>
+                      <l n="32"><choice><orig>Chalmen</orig><reg>Ch’almen</reg></choice> <choice><orig>comio</orig><reg>com’io</reg></choice> solea possa sfogarme<choice><orig>.</orig><reg>?</reg></choice></l>
                   </lg>
                   <lg type="trplvrs" corresp="#canvasline">
-                      <l n="33">Chauer dentro a lui parme</l>
+                      <l n="33"><choice><orig>Chauer</orig><reg>Ch’aver</reg></choice> dentro a lui parme</l>
                       <l n="34">Vn che madonna sempre</l>
-                      <l n="35">Depinge &amp7; de lei parla</l>
+                      <l n="35">Depinge &amp7; de lei parla<supplied>.</supplied></l>
                   </lg>
                   <lg type="dblvrs" corresp="#canvasline">                   
-                      <l n="36">A uoler poi ritrarla</l>
-                      <l n="37">Per me non basto . et par chio me ne stempre .</l>
+                      <l n="36">A <choice><orig>uoler</orig><reg>voler</reg></choice> poi ritrarla</l>
+                      <l n="37">Per me non basto<choice><orig> .</orig><reg>,</reg></choice> et par <choice><orig>chio</orig><reg>ch’io</reg></choice> me ne stempre<choice><orig> .</orig><reg>.</reg></choice></l>
                   </lg>
                   <lg type="dblvrs" corresp="#canvasline">  
-                      <l n="38">Lasso cosi me scorso</l>
-                      <l n="39">Lo mio dolce soccorso .</l>
+                      <l n="38">Lasso<supplied>!</supplied> <choice><orig>cosi</orig><reg>così</reg></choice> <choice><orig>me</orig><reg>m’è</reg></choice> scorso</l>
+                      <l n="39">Lo mio dolce soccorso<choice><orig> .</orig><reg>.</reg></choice></l>
                   </lg>  
               </lg>
               <lg type="stanza">
                   <lg type="trplvrs" corresp="#canvasline">
-                      <l n="40"><hi rendition="#blue #fs24pt">¶</hi>Come fanciul cha pena &virg;</l> 
-                      <l n="41">Volge la <choice><abbr>līgua</abbr><expan>lingua</expan></choice> &amp7; snoda.</l>
-                      <l n="41">Che dir &non; sa . mal piu tacer gle noia.</l>
+                      <l n="40"><hi rendition="#blue #fs24pt">¶</hi>Come fanciul <choice><orig>cha</orig><reg>c’a</reg></choice> pena<choice><orig> &virg;</orig><reg/></choice></l> 
+                      <l n="41">Volge la <choice><abbr>līgua</abbr><expan>lingua</expan></choice> &amp7; snoda&p2c;</l>
+                      <l n="41">Che dir &non; sa<choice><orig> .</orig><reg>,</reg></choice> <choice><orig>mal</orig><reg>ma ’l</reg></choice> &piu;piu tacer <choice><orig>gle</orig><reg>gl’è</reg></choice> noia&p2c;</l>
                   </lg>
                   <lg type="trplvrs" corresp="#canvasline">
-                      <l n="43">Cosil desir mi mena</l>
-                      <l n="44">A dire . &amp7; uo che moda</l>
-                      <l n="45">La dolce mia nemica ançi chio moia .</l>
+                      <l n="43"><choice><orig>Cosil</orig><reg>Così ’l</reg></choice> desir mi mena</l>
+                      <l n="44">A dire<choice><orig> .</orig><reg>,</reg></choice> &amp7; <choice><orig>uo</orig><reg>vo’</reg></choice> che <choice><orig>moda</orig><reg>m’oda</reg></choice></l>
+                      <l n="45">La dolce mia nemica <choice><orig>ançi</orig><reg>anzi</reg></choice> <choice><orig>chio</orig><reg>ch’io</reg></choice> moia<choice><orig> .</orig><reg>.</reg></choice></l>
                   </lg>
                   <lg type="trplvrs" corresp="#canvasline">
                       <l n="46">Se forse ogni sua gioia</l>
-                      <l n="47">Nel suo bel uiso e solo &virg;</l>
-                      <l n="48">Et di tuttaltro e schiua .</l>
+                      <l n="47">Nel suo bel <choice><orig>uiso</orig><reg>viso</reg></choice> &e; solo&v2c;</l>
+                      <l n="48">Et di <choice><orig>tuttaltro</orig><reg>tutt’altro</reg></choice> &e; <choice><orig>schiua</orig><reg>schiva</reg></choice><choice><orig> .</orig><reg>,</reg></choice></l>
                   </lg>
                   <lg type="dblvrs" corresp="#canvasline">                
-                      <l n="49">Odil tu uerde riua.</l>
-                      <l n="50">E presta a miei <subst><del type="erasure"><gap reason="illegible"/></del><add>sospir</add></subst> si largo uolo .</l>
+                      <l n="49">Odil tu<supplied>,</supplied> <choice><orig>uerde</orig><reg>verde</reg></choice> <choice><orig>riua</orig><reg>riva</reg></choice>&p2c;</l>
+                      <l n="50">E presta a<supplied>’</supplied> miei <subst><del type="erasure"><gap reason="illegible"/></del><add>sospir</add></subst><supplied>’</supplied> &si; largo <choice><orig>uolo</orig><reg>volo</reg></choice><choice><orig> .</orig><reg>,</reg></choice></l>
                   </lg>
                   <lg type="dblvrs" corresp="#canvasline">  
                       <l n="51">Che sempre si ridica</l>
-                      <l n="52">Come tu meri amica .</l>
+                      <l n="52">Come tu <choice><orig>meri</orig><reg>m’eri</reg></choice> amica<choice><orig> .</orig><reg>.</reg></choice></l>
                   </lg>  
               </lg>
               <lg type="stanza">
                   <lg type="trplvrs" corresp="#canvasline">
-                      <l n="53"><hi rendition="#red #fs24pt">¶</hi>Ben sai che si bel piede</l> 
-                      <l n="54">&Non; toccho terra <choice><abbr>unquācho</abbr><expan>unquancho</expan></choice></l>
-                      <l n="55">Come qu<subst><del type="erasure"><gap reason="illegible"/></del><add>el d</add></subst>i che gia segnata fosti .</l>
+                      <l n="53"><hi rendition="#red #fs24pt">¶</hi>Ben sai che &si; bel piede</l> 
+                      <l n="54">&Non; <choice><orig>toccho</orig><reg>tocchò</reg></choice> terra <choice><abbr>unquācho</abbr><expan>unquancho</expan></choice></l>
+                      <l n="55">Come qu<subst><del type="erasure"><gap reason="illegible"/></del><add>el d</add></subst>i che <choice><orig>gia</orig><reg>già</reg></choice> segnata fosti<choice><orig> .</orig><reg>;</reg></choice></l>
                   </lg>
                   <lg type="trplvrs" corresp="#canvasline">
-                      <l n="56">Ondel cor lasso riede &virg;</l>
+                      <l n="56"><choice><orig>Ondel</orig><reg>Onde ’l</reg></choice> cor lasso riede<choice><orig> &virg;</orig><reg/></choice></l>
                       <l n="57">Col tormentoso fiancho</l>
-                      <l n="58">A partir teco i lor pensier nascosti.</l>
+                      <l n="58">A partir teco i lor pensier<supplied>’</supplied> nascosti.</l>
                   </lg>
                   <lg type="trplvrs" corresp="#canvasline">
-                      <l n="59">Cosi auestu riposti &virg;</l>
-                      <l n="60">De be uestigi sparsi</l>
-                      <l n="61">Anchor tra fiori et lerba</l>
+                      <l n="59"><choice><orig>Cosi</orig><reg>Così</reg></choice> <choice><orig>auestu</orig><reg>avestù</reg></choice> riposti<choice><orig> &virg;</orig><reg/></choice></l>
+                      <l n="60">De<supplied>’</supplied> be<supplied>’</supplied> <choice><orig>uestigi</orig><reg>vestigi</reg></choice> sparsi</l>
+                      <l n="61">Anchor tra fiori et <choice><orig>lerba</orig><reg>l’erba</reg></choice></l>
                   </lg>
                   <lg type="dblvrs" corresp="#canvasline">                     
-                      <l n="62">Che la mia uita acerba</l>
-                      <l n="63">Lagrimando &virg; <subst><del type="erasure"><gap reason="illegible"/></del><add>trouasse</add></subst> oue acquetarsi .</l>
+                      <l n="62">Che la mia <choice><orig>uita</orig><reg>vita</reg></choice> acerba</l>
+                      <l n="63">Lagrimando<choice><orig> &virg;</orig><reg/></choice> <choice><orig><subst><del type="erasure"><gap reason="illegible"/></del><add>trouasse</add></subst></orig><reg>trovasse</reg></choice> <choice><orig>oue</orig><reg>ove</reg></choice> acquetarsi<choice><orig> .</orig><reg>.</reg></choice></l>
                   </lg>
                   <lg type="dblvrs" corresp="#canvasline">  
-                      <l n="64">Ma come po sappaga</l>
-                      <l n="65">Lalma dubbiosa et uaga .</l>
+                      <l n="64">Ma come <choice><orig>po</orig><reg>pò</reg></choice> <choice><orig>sappaga</orig><reg>s’appaga</reg></choice></l>
+                      <l n="65"><choice><orig>Lalma</orig><reg>L’alma</reg></choice> dubbiosa et <choice><orig>uaga</orig><reg>vaga</reg></choice><choice><orig> .</orig><reg>.</reg></choice></l>
                   </lg>  
               </lg>
               <lg type="stanza">
                   <lg type="trplvrs" corresp="#canvasline">
-                      <l n="66"><hi rendition="#blue #fs24pt">¶</hi><choice><abbr>Ouūque</abbr><expan>Ouunque</expan></choice> gliocchi uolgo</l> 
-                      <l n="67">Trouo un dolce sereno</l>
-                      <l n="68"><choice><abbr>Pensādo</abbr><expan>Pensando</expan></choice> qui percosse il uago lume .</l>
+                      <l n="66"><hi rendition="#blue #fs24pt">¶</hi><choice><orig><abbr>Ouūque</abbr><expan>Ouunque</expan></orig><reg>Ovunque</reg></choice> <choice><orig>gliocchi</orig><reg>gli occhi</reg></choice> <choice><orig>uolgo</orig><reg>volgo</reg></choice></l> 
+                      <l n="67"><choice><orig>Trouo</orig><reg>Trovo</reg></choice> un dolce sereno</l>
+                      <l n="68"><choice><abbr>Pensādo</abbr><expan>Pensando</expan></choice><supplied>:</supplied> <choice><orig>qui</orig><reg>Qui</reg></choice> percosse il <choice><orig>uago</orig><reg>vago</reg></choice> lume<choice><orig> .</orig><reg>.</reg></choice></l>
                   </lg>
                   <lg type="trplvrs" corresp="#canvasline">
                       <l n="69"><choice><abbr>Qualūque</abbr><expan>Qualunque</expan></choice> herba o fior colgo</l>
                       <l n="70">Credo che nel terreno</l>
-                      <l n="71">Aggia radice &virg; ouella ebbe &in; costume . </l>
+                      <l n="71">Aggia radice&v2c; <choice><orig>ouella</orig><reg>ov’ella</reg></choice> ebbe &in; costume<choice><orig> .</orig><reg>,</reg></choice></l>
                   </lg>
                   <lg type="trplvrs" corresp="#canvasline">
-                      <l n="72">Gir fra le piagge el fiume .</l>
+                      <l n="72">Gir fra le piagge <choice><orig>el</orig><reg>e ’l</reg></choice> fiume<choice><orig> .</orig><reg>,</reg></choice></l>
                       <l n="73">Et talor farsi un seggio</l>
-                      <l n="74">Fresco fiorito &amp7; uerde .</l>
+                      <l n="74">Fresco<supplied>,</supplied> fiorito &amp7; <choice><orig>uerde</orig><reg>verde</reg></choice><choice><orig> .</orig><reg>.</reg></choice></l>
                   </lg>
                   <lg type="dblvrs" corresp="#canvasline">                    
-                      <l n="75">Cosi nulla sen perde.</l>
-                      <l n="76">Et piu certeçça auerne fora il peggio .</l>
+                      <l n="75"><choice><orig>Cosi</orig><reg>Così</reg></choice> nulla <choice><orig>sen</orig><reg>se ’n</reg></choice> perde&p2c;</l>
+                      <l n="76">Et &piu; <choice><orig>certeçça</orig><reg>certezza</reg></choice> <choice><orig>auerne</orig><reg>averne</reg></choice> fora il peggio<choice><orig> .</orig><reg>.</reg></choice></l>
                   </lg>
                   <lg type="dblvrs" corresp="#canvasline">  
-                      <l n="77">Spirto beato quale</l>
-                      <l n="78">Se &virg; quando altrui fai tale .</l>
+                      <l n="77">Spirto beato<supplied>,</supplied> quale</l>
+                      <l n="78"><choice><orig>Se</orig><reg>Sè</reg></choice>&v2c; quando altrui fai tale<choice><orig> .</orig><reg>?</reg></choice></l>
                   </lg>  
               </lg>
               <lg type="stanza">
                   <lg type="trplvrs" corresp="#canvasline">
-                      <l n="79"><hi rendition="#red #fs24pt">¶</hi>O pouerella mia come se roçça .</l>
-                      <l n="80">Credo che tel conoschi .</l>
+                      <l n="79"><hi rendition="#red #fs24pt">¶</hi>O <choice><orig>pouerella</orig><reg>poverella</reg></choice> mia come <choice><orig>se</orig><reg>sé</reg></choice> <choice><orig>roçça</orig><reg>rozza</reg></choice><choice><orig> .</orig><reg>!</reg></choice></l>
+                      <l n="80">Credo che tel conoschi<choice><orig> .</orig><reg>;</reg></choice></l>
                       <l n="81">Rimanti &in; questi boschi.</l>
                   </lg>
               </lg>

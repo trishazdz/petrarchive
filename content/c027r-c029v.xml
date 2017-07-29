@@ -1170,28 +1170,28 @@
               <pb n="charta 29 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-029v.jpg" />
 
                   <lg type="dblvrs" corresp="#canvasline">
-                      <l n="22">Chi dico forse anchor ti serua amore</l>
-                      <l n="23">Adun tempo migliore .</l>
+                      <l n="22"><choice><orig>Chi</orig><reg>Ch’i’</reg></choice> dico<supplied>:</supplied> <choice><orig>forse</orig><reg>Forse</reg></choice> anchor ti <choice><orig>serua</orig><reg>serva</reg></choice> <choice><orig>amore</orig><reg>Amore</reg></choice></l>
+                      <l n="23"><choice><orig>Adun</orig><reg>Ad un</reg></choice> tempo migliore<choice><orig> .</orig><reg>;</reg></choice></l>
                   </lg>
                   <lg type="dblvrs" corresp="#canvasline">
-                      <l n="24">Forse a te stesso uile &virg; altrui se caro .</l>
-                      <l n="25">Et in questa trapasso sospirando .</l>
+                      <l n="24">Forse a te stesso <choice><orig>uile</orig><reg>vile</reg></choice>&v2c; altrui <choice><orig>se</orig><reg>sè</reg></choice> caro<choice><orig> .</orig><reg>.</reg></choice></l>
+                      <l n="25">Et in questa trapasso sospirando<choice><orig> .</orig><reg>:</reg></choice></l>
                   </lg>
                   <lg type="single" corresp="#canvasline">
-                      <l n="26">Or porrebbe esser uero<g ref="#punctinter"/> or come<g ref="#punctinter"/> or quando<g ref="#punctinter"/></l>
+                      <l n="26">Or porrebbe esser <choice><orig>uero</orig><reg>vero</reg></choice><choice><orig><g ref="#punctinter"/></orig><reg>?</reg></choice> or come<choice><orig><g ref="#punctinter"/></orig><reg>?</reg></choice> or quando<choice><orig><g ref="#punctinter"/></orig><reg>?</reg></choice></l>
                   </lg>
               </lg>
               <lg type="stanza">
                   <lg type="dblvrs" corresp="#canvasline">
-                      <l n="27"><hi rendition="#red #fs24pt">¶</hi>Oue porge ombra un pino alto odun colle</l>
-                      <l n="28">Talor marresto. &amp7; pur nel primo sasso</l>
+                      <l n="27"><hi rendition="#red #fs24pt">¶</hi><choice><orig>Oue</orig><reg>Ove</reg></choice> porge ombra un pino alto <choice><orig>odun</orig><reg>od un</reg></choice> colle</l>
+                      <l n="28">Talor <choice><orig>marresto</orig><reg>m’arresto</reg></choice>&p2c; &amp7; pur nel primo sasso</l>
                   </lg>
                   <lg type="dblvrs" corresp="#canvasline">
-                      <l n="29">Disegno co la mente il suo bel uiso .</l>
-                      <l n="30">Poi cha me torno &virg; trouo il petto molle</l>
+                      <l n="29">Disegno co la mente il suo bel <choice><orig>uiso</orig><reg>viso</reg></choice><choice><orig> .</orig><reg>.</reg></choice></l>
+                      <l n="30">Poi <choice><orig>cha</orig><reg>ch’a</reg></choice> me torno&v2c; <choice><orig>trouo</orig><reg>trovo</reg></choice> il petto molle</l>
                   </lg>
                   <lg type="dblvrs" corresp="#canvasline">
-                      <l n="31">De la pietate . &amp7; alor dico &virg; Ai lasso &virg;</l>
+                      <l n="31">De la pietate<choice><orig> .</orig><reg>;</reg></choice> &amp7; alor dico<choice><orig> &virg;</orig><reg>:</reg></choice> Ai<supplied>!</supplied><supplied>,</supplied> lasso&v2c;</l>
                       <l n="32">Doue se giunto<g ref="#punctinter"/> et onde se diuiso<g ref="#punctinter"/></l>
                   </lg>
                   <lg type="dblvrs" corresp="#canvasline">

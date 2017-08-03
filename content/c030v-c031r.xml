@@ -616,124 +616,123 @@
                 <pb n="charta 31 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-031r.jpg"/>
 
                         <lg type="single" corresp="#canvasline">
-                            <l n="45">Di questa fera ( angelica innocente.</l>
+                            <l n="45">Di questa fera <choice><orig>(</orig><reg/></choice> angelica innocente.</l>
                         </lg>
                 </lg>
                 <lg type="stanza">
                         <lg type="dblvrs" corresp="#canvasline">
-                            <l n="46"><hi rendition="#red #fs24pt">¶</hi>Surge nel meçço giorno</l>
-                            <l n="47">Vna fontana. e tien nome dal sole.</l>
+                            <l n="46"><hi rendition="#red #fs24pt">¶</hi>Surge nel <choice><orig>meçço</orig><reg>mezzo</reg></choice> giorno</l>
+                            <l n="47"><choice><orig>Vna</orig><reg>Una</reg></choice> fontana&p2c; e tien nome dal sole&p2c;</l>
                         </lg>
                         <lg type="dblvrs" corresp="#canvasline">
                             <l n="48">Che &per; natura sole</l>
-                            <l n="49">Bollir le notti. ensul giorno esser fredda.</l>
+                            <l n="49">Bollir le notti&p2c; <choice><orig>ensul</orig><reg>e ’n sul</reg></choice> giorno esser fredda&p2semicolon;</l>
                         </lg>
                         <lg type="dblvrs" corresp="#canvasline">
                             <l n="50">E tanto si raffredda</l>
-                            <l n="51">Quantol sol monta. &amp7; quanto e piu da presso.</l>
+                            <l n="51"><choice><orig>Quantol</orig><reg>Quanto ’l</reg></choice> sol monta&p2c; &amp7; quanto &e; &piu; da presso.</l>
                         </lg>
                         <lg type="dblvrs" corresp="#canvasline">
-                            <l n="52">Cosi auen a me stesso </l>
-                            <l n="53">Che son fonte di lagrime &virg;&amp7; soggiorno.</l>
+                            <l n="52"><choice><orig>Cosi</orig><reg>Così</reg></choice> <choice><orig>auen</orig><reg>aven</reg></choice> a me stesso<supplied>,</supplied></l>
+                            <l n="53">Che son fonte di lagrime<choice><orig> &virg;</orig><reg/></choice>&amp7; soggiorno&p2c;</l>
                         </lg>
                         <lg type="dblvrs" corresp="#canvasline">
-                            <l n="54">Quandol bel lume adorno.</l>
-                            <l n="55">Chel mio sol sallontana. &amp7; triste &amp7; sole</l>
+                            <l n="54"><choice><orig>Quandol</orig><reg>Quando ’l</reg></choice> bel lume adorno&p2c;</l>
+                            <l n="55"><choice><orig>Chel</orig><reg>Ch’è ’l</reg></choice> mio sol <choice><orig>sallontana</orig><reg>s’allontana</reg></choice>&p2c; &amp7; triste &amp7; sole</l>
                         </lg>
                         <lg type="dblvrs" corresp="#canvasline">
-                            <l n="56">Son le mie luci. &amp7; notte oscura &virg; &amp7; loro.</l>
-                            <l n="57">Ardo allor. <subst><del type="erasure"><gap reason="illegible"/></del><add>m</add></subst>a se loro</l>
+                            <l n="56">Son le mie luci&p2c; &amp7; notte oscura&v2c; <choice><orig>&amp7;</orig><reg>è</reg></choice> loro&p2c;</l> <!-- check amp to è -->
+                            <l n="57">Ardo allor&p2semicolon; <subst><del type="erasure"><gap reason="illegible"/></del><add>m</add></subst>a se <choice><orig>loro</orig><reg>l’oro</reg></choice></l>
                         </lg>
                         <lg type="dblvrs" corresp="#canvasline">
-                            <l n="58">Ei rai ueggio apparir del uiuo sole &virg;</l>
-                            <l n="59">Tutto dentro &virg;&amp7; di for sento cangiarme.</l>
+                            <l n="58"><choice><orig>Ei</orig><reg>E i</reg></choice> rai <choice><orig>ueggio</orig><reg>veggio</reg></choice> apparir del <choice><orig>uiuo</orig><reg>vivo</reg></choice> sole&v2c;</l>
+                            <l n="59">Tutto dentro<choice><orig> &virg;</orig><reg/></choice>&amp7; di for sento cangiarme&p2c;</l>
                         </lg>
                         <lg type="single" corresp="#canvasline">
-                            <l n="60">Et ghiaccio farme &virg-underdot; cosi freddo torno.</l>
+                            <l n="60">Et ghiaccio farme<choice><orig> &virg-underdot;</orig><reg>,</reg></choice> <choice><orig>cosi</orig><reg> così</reg></choice> freddo torno.</l>
                         </lg>
                 </lg>
-                    
                     <lg type="stanza">
                         <lg type="dblvrs" corresp="#canvasline">
-                            <l n="61"><hi rendition="#blue #fs24pt">¶</hi>Vnaltra fonte a Epiro &virg;</l>
+                            <l n="61"><hi rendition="#blue #fs24pt">¶</hi><choice><orig>Vnaltra</orig><reg>Un’altra</reg></choice> fonte <choice><orig>a</orig><reg>à</reg></choice> Epiro&v2c;</l>
                             <l n="62">Di cui si scriue &virg; chessendo fredda ella &virg;</l>                      
                         </lg>
                         <lg type="dblvrs" corresp="#canvasline">
                             <l n="63">Ogni spenta facella</l>
-                            <l n="64">Accende. &amp7; spegne qual trouasse accesa.</l>
+                            <l n="64">Accende&p2c; &amp7; spegne qual <choice><orig>trouasse</orig><reg>trovasse</reg></choice> accesa.</l>
                         </lg>
                         <lg type="dblvrs" corresp="#canvasline">
-                            <l n="65">Lanima mia choffesa</l>
-                            <l n="66">Anchor non era damoroso foco</l>
+                            <l n="65"><choice><orig>Lanima</orig><reg>L’anima</reg></choice> mia<supplied>,</supplied> <choice><orig>choffesa</orig><reg>ch’offesa</reg></choice></l>
+                            <l n="66">Anchor non era <choice><orig>damoroso</orig><reg>d’amoroso</reg></choice> foco<supplied>,</supplied></l>
                         </lg>
                         <lg type="dblvrs" corresp="#canvasline">
                             <l n="67">Appressandosi un poco</l>
-                            <l n="68">A quella fredda &virg; chio sempre sospiro &virg;</l>
+                            <l n="68">A quella fredda&v2c; <choice><orig>chio</orig><reg>ch’io</reg></choice> sempre sospiro&v2c;</l>
                         </lg>
                         <lg type="dblvrs" corresp="#canvasline">
-                            <l n="69">Arse tutta . et martiro</l>
-                            <l n="70">Simil giamai ne sol uide&virg;ne stella.</l>
+                            <l n="69">Arse tutta<choice><orig> .</orig><reg>;</reg></choice> et martiro</l>
+                            <l n="70">Simil giamai <choice><orig>ne</orig><reg>né</reg></choice> sol <choice><orig>uide</orig><reg>vide</reg></choice><choice><orig>&virg;</orig><reg>, </reg></choice><choice><orig>ne</orig><reg>né</reg></choice> stella&p2semicolon;</l>
                         </lg>
                         <lg type="dblvrs" corresp="#canvasline">
-                            <l n="71">Chun cor di marmo a pieta mosso aurebbe.</l>
-                            <l n="72">Poi <choice><abbr>chenfiāmata</abbr><expan>chenfiammata</expan></choice> lebbe &virg;</l>
+                            <l n="71"><choice><orig>Chun</orig><reg>Ch’un</reg></choice> cor di marmo a <choice><orig>pieta</orig><reg>pietà</reg></choice> mosso <choice><orig>aurebbe</orig><reg>avrebbe</reg></choice>.</l>
+                            <l n="72">Poi <choice><orig><abbr>chenfiāmata</abbr><expan>chenfiammata</expan></orig><reg>che ’nfiammata</reg></choice> <choice><orig>lebbe</orig><reg>l’ebbe</reg></choice>&v2c;</l>
                         </lg>
                         <lg type="dblvrs" corresp="#canvasline">
-                            <l n="73">Rispensela uertu gelata &amp7; bella.</l>
-                            <l n="74">Cosi piu uolte al cor racceso &virg;&amp7; spento.</l>
+                            <l n="73">Rispensela <choice><orig>uertu</orig><reg>vertù</reg></choice> gelata &amp7; bella.</l>
+                            <l n="74"><choice><orig>Cosi</orig><reg>Così</reg></choice> &piu; &uolte; <choice><orig>al</orig><reg>à ’l</reg></choice> cor racceso<choice><orig> &virg;</orig><reg/></choice>&amp7; spento.</l>
                         </lg>
                         <lg type="single" corresp="#canvasline">
-                            <l n="75">Il so chel sento. &amp7; spesso menadiro.</l>
+                            <l n="75"><choice><orig>Il</orig><reg>I’ ’l</reg></choice> so <choice><orig>chel</orig><reg>che ’l</reg></choice> sento&p2c;<supplied> </supplied> &amp7; spesso <choice><orig>menadiro</orig><reg>me n’adiro</reg></choice>.</l>
                         </lg>
                     </lg>
                     <lg type="stanza">
                         <lg type="dblvrs" corresp="#canvasline">
-                            <l n="76"><hi rendition="#blue #fs24pt">¶</hi>Fuor tutti nostri lidi.</l>
-                            <l n="77">Ne lisole famose di fortuna &virg;</l>
+                            <l n="76"><hi rendition="#red #fs24pt">¶</hi>Fuor tutti nostri lidi&p2c;</l>
+                            <l n="77">Ne <choice><orig>lisole</orig><reg>l’isole</reg></choice> famose di <choice><orig>fortuna</orig><reg>Fortuna</reg></choice>&v2c;</l>
                         </lg>
                         <lg type="dblvrs" corresp="#canvasline">
-                            <l n="78">Due fonti a. chi de luna</l>
-                            <l n="79">Bee&virg; mor ridendo. &amp7; chi de laltra &virg; scampa.</l>                        
+                            <l n="78">Due fonti <choice><orig>a</orig><reg>à</reg></choice>&p2semicolon; chi de <choice><orig>luna</orig><reg>l’una</reg></choice></l>
+                            <l n="79">Bee<choice><orig>&virg;</orig><reg>,</reg></choice> mor ridendo&p2semicolon; &amp7; chi de <choice><orig>laltra</orig><reg>l’altra</reg></choice>&v2c; scampa.</l>                        
                         </lg>
                         <lg type="dblvrs" corresp="#canvasline">
                             <l n="80">Simil fortuna stampa</l>
-                            <l n="81">Mia uita &virg; che morir poria ridendo &virg;</l>
+                            <l n="81">Mia <choice><orig>uita</orig><reg>vita</reg></choice>&v2c; che morir poria ridendo&v2c;</l>
                         </lg>
                         <lg type="dblvrs" corresp="#canvasline">
-                            <l n="82">Del gran piacer &virg; chio prendo.</l>
+                            <l n="82">Del gran piacer<choice><orig> &virg;</orig><reg/></choice> <choice><orig>chio</orig><reg>ch’io</reg></choice> prendo&p2c;</l>
                             <l n="83">Se nol <subst><del type="erasure"><gap reason="illegible"/></del><add>te</add></subst>mprassen dolorosi stridi.</l>
                         </lg>
                         <lg type="dblvrs" corresp="#canvasline">
-                            <l n="84">Amor chanchor mi guidi</l>
-                            <l n="85">Pur a lombra di fama occulta &amp7; bruna &virg;</l>
+                            <l n="84">Amor<supplied>,</supplied> <choice><orig>chanchor</orig><reg>ch’anchor</reg></choice> mi guidi</l>
+                            <l n="85">Pur a <choice><orig>lombra</orig><reg>l’ombra</reg></choice> di fama occulta &amp7; bruna&v2c;</l>
                         </lg>
                         <lg type="dblvrs" corresp="#canvasline">
-                            <l n="86">Tacerem questa fonte &virg;chognior piena</l>
-                            <l n="87">Ma &con; piu larga uena</l>
+                            <l n="86">Tacerem questa fonte<choice><orig> &virg;</orig><reg>, </reg></choice><choice><orig>chognior</orig><reg>ch’ognior</reg></choice> piena<supplied>,</supplied></l>
+                            <l n="87">Ma &con; &piu; larga <choice><orig>uena</orig><reg>vena</reg></choice></l>
                         </lg>
                         <lg type="dblvrs" corresp="#canvasline">
-                            <l n="88">Veggiam &virg; &quando; col tauro il sol saduna.</l>
-                            <l n="89">Cosi gliocchi miei <choice><abbr>piāgon</abbr><expan>piangon</expan></choice> dogni tempo.</l>
+                            <l n="88">Veggiam&v2c; &quando; col <choice><orig>tauro</orig><reg>Tauro</reg></choice> il sol <choice><orig>saduna</orig><reg>s’aduna</reg></choice>.</l>
+                            <l n="89"><choice><orig>Cosi</orig><reg>Così</reg></choice> <choice><orig>gliocchi</orig><reg>gli occhi</reg></choice> miei <choice><abbr>piāgon</abbr><expan>piangon</expan></choice> <choice><orig>dogni</orig><reg>d’ogni</reg></choice> tempo&p2c;</l>
                         </lg>
                         <lg type="single" corresp="#canvasline">
-                            <l n="90">Ma piu nel tempo <g ref="#punctelevhiback"/> che <choice><abbr>madōna</abbr><expan>madonna</expan></choice> uidi.</l>
+                            <l n="90">Ma &piu; nel tempo<choice><orig> <g ref="#punctelevhiback"/></orig><reg/></choice>  che <choice><abbr>madōna</abbr><expan>madonna</expan></choice> <choice><orig>uidi</orig><reg>vidi</reg></choice>.</l>
                         </lg>
                     </lg>
                     <lg type="stanza">
                         <lg type="dblvrs" corresp="#canvasline">
-                            <l n="91"><hi rendition="#blue #fs24pt">¶</hi>Chi spiasse cançone</l>
-                            <l n="92">Quel chi fo. tu poi dir &virg; Sotto un gran sasso</l>
+                            <l n="91"><hi rendition="#blue #fs24pt">¶</hi>Chi spiasse <choice><orig>cançone</orig><reg>canzone</reg></choice><supplied>,</supplied></l>
+                            <l n="92">Quel <choice><orig>chi</orig><reg>ch’i’</reg></choice> fo&p2c; tu <choice><orig>poi</orig><reg>pôi</reg></choice> dir<choice><orig> &virg;</orig><reg>:</reg></choice> Sotto un gran sasso</l>
                         </lg>
                         <lg type="dblvrs" corresp="#canvasline">
-                            <l n="93">In una chiusa ualle &virg; ondesce Sorga &virg;</l>
-                            <l n="94">Si sta. ne chi lo scorga</l>
+                            <l n="93">In una chiusa <choice><orig>ualle</orig><reg>valle</reg></choice>&v2c; <choice><orig>ondesce</orig><reg>ond’esce</reg></choice> Sorga&v2c;</l>
+                            <l n="94">Si sta&p2semicolon; <choice><orig>ne</orig><reg>né</reg></choice> chi lo scorga</l>
                         </lg>
                         <lg type="dblvrs" corresp="#canvasline">
-                            <l n="95">Ve seno amor &virg; che mai nol lascia un passo.</l>
-                            <l n="96">Et limagine duna &virg;che lo strugge <g ref="#virgsusp"/></l>
+                            <l n="95"><choice><orig>Ve</orig><reg>V’è</reg></choice> <choice><orig>seno</orig><reg>se no</reg></choice> <choice><orig>amor</orig><reg>Amor</reg></choice>&v2c; che mai nol lascia un passo&p2c;</l>
+                            <l n="96">Et <choice><orig>limagine</orig><reg>l’imagine</reg></choice> <choice><orig>duna</orig><reg>d’una</reg></choice><choice><orig> &virg;</orig><reg> </reg></choice>che lo strugge<choice><orig> <g ref="#virgsusp"/></orig><reg>;</reg></choice></l>
                         </lg>
                         <lg type="single" corresp="#canvasline">
-                            <l n="97">Che &per; se fugge  tuttaltre persone.</l>
+                            <l n="97"><choice><orig>Che</orig><reg>Ch’e’</reg></choice> &per; <choice><orig>se</orig><reg>sé</reg></choice> fugge  <choice><orig>tuttaltre</orig><reg>tutt’ altre</reg></choice> persone.</l>
                         </lg>
                     </lg>
             </lg>

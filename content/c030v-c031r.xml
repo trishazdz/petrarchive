@@ -655,7 +655,7 @@
                     <lg type="stanza">
                         <lg type="dblvrs" corresp="#canvasline">
                             <l n="61"><hi rendition="#blue #fs24pt">¶</hi><choice><orig>Vnaltra</orig><reg>Un’altra</reg></choice> fonte <choice><orig>a</orig><reg>à</reg></choice> Epiro&v2c;</l>
-                            <l n="62">Di cui si scriue &virg; chessendo fredda ella &virg;</l>                      
+                            <l n="62">Di cui si <choice><orig>scriue</orig><reg>scrive</reg></choice>&v2c; <choice><orig>chessendo</orig><reg>ch’essendo</reg></choice> fredda ella&v2c;</l>                      
                         </lg>
                         <lg type="dblvrs" corresp="#canvasline">
                             <l n="63">Ogni spenta facella</l>

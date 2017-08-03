@@ -552,65 +552,65 @@
                 </lg>
                 <lg type="stanza">
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="16"><hi rendition="#red #fs24pt">¶</hi>Vna petra e si ardita</l>
-                        <l n="17">La &per; lindico mar &virg; che da natura</l>                        
+                        <l n="16"><hi rendition="#red #fs24pt">¶</hi><choice><orig>Vna</orig><reg>Una</reg></choice> petra &e; &si; ardita</l>
+                        <l n="17"><choice><orig>La</orig><reg>Là</reg></choice> &per; <choice><orig>lindico</orig><reg>l’indico</reg></choice> mar&v2c; che da natura</l>                        
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="18">Tragge a se il ferro el fura.</l>
-                        <l n="19">Dal legno &virg; in guisa che  nauigi affonde.</l>
+                        <l n="18">Tragge a <choice><orig>se</orig><reg>sé</reg></choice> il ferro <choice><orig>el</orig><reg>e ’l</reg></choice> fura&p2c;</l>
+                        <l n="19">Dal legno&v2c; in guisa che <supplied>’</supplied> <choice><orig>nauigi</orig><reg>navigi</reg></choice> affonde.</l> <!-- check space in diplomatic -->
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="20">Questo prouio fra londe</l>
-                        <l n="21">Damaro pianto. che quel bello scoglio</l>
+                        <l n="20">Questo <choice><orig>prouio</orig><reg>prov’io</reg></choice> fra <choice><orig>londe</orig><reg>l’onde</reg></choice></l>
+                        <l n="21"><choice><orig>Damaro</orig><reg>D’amaro</reg></choice> pianto&p2c; <choice><orig>che</orig><reg>ché</reg></choice> quel bello scoglio</l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
                         <l n="22">A col suo duro argoglio</l>
-                        <l n="23">Condutta &virg; oue affondar conuen mia uita.</l>
+                        <l n="23">Condutta&v2c; <choice><orig>oue</orig><reg>ove</reg></choice> affondar <choice><orig>conuen</orig><reg>conven</reg></choice><supplied>,</supplied> mia <choice><orig>uita</orig><reg>vita</reg></choice>.</l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="24">Cosi lalma sfornita.</l>
-                        <l n="25">Furandol cor che fu gia cosa dura.</l>
+                        <l n="24"><choice><orig>Cosi</orig><reg>Così</reg></choice> <choice><orig>lalma</orig><reg>l’alm’ à</reg></choice> sfornita&p2c;</l>
+                        <l n="25"><choice><orig>Furandol</orig><reg>Furando ’l</reg></choice> cor che fu <choice><orig>gia</orig><reg>già</reg></choice> cosa dura&p2c;</l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="26">Et me tenne un chor son diuiso &amp7; sparso.</l>
-                        <l n="27">Vn sasso a trar piu scarso</l>
+                        <l n="26">Et me tenne un <choice><orig>chor</orig><reg>ch’or</reg></choice> son <choice><orig>diuiso</orig><reg>diviso</reg></choice> &amp7; sparso&p2c;</l>
+                        <l n="27"><choice><orig>Vn</orig><reg>Un</reg></choice> sasso a trar &piu; scarso</l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="28">carne che ferro. O cruda mia uentura &virg;</l>
-                        <l n="29">Chencarne essendo ueggio trarmi a riua</l>
+                        <l n="28">carne che ferro&p2colon; O cruda mia <choice><orig>uentura</orig><reg>ventura</reg></choice><choice><orig> &virg;</orig><reg>!</reg></choice></l>
+                        <l n="29"><choice><orig>Chencarne</orig><reg>Che ’n carne</reg></choice> essendo<supplied>,</supplied> <choice><orig>ueggio</orig><reg>veggio</reg></choice> trarmi a <choice><orig>riua</orig><reg>riva</reg></choice></l>
                     </lg>
                     <lg type="single" corresp="#canvasline">
-                        <l n="30">Aduna uiua dolce calamita.</l>
+                        <l n="30"><choice><orig>Aduna</orig><reg>Ad una</reg></choice> <choice><orig>uiua</orig><reg>viva </reg></choice> dolce calamita.</l>
                     </lg>
                 </lg>
                 <lg type="stanza">
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="31"><hi rendition="#blue #fs24pt">¶</hi>Nelextremo occidente</l>
-                        <l n="32">Una fera e soaue &amp7; queta tanto</l>
+                        <l n="31"><hi rendition="#blue #fs24pt">¶</hi><choice><orig>Nelextremo</orig><reg>Ne l’extremo</reg></choice> occidente</l>
+                        <l n="32">Una fera &e; <choice><orig>soaue</orig><reg>soave</reg></choice> &amp7; queta tanto</l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="33">Che nulla piu ma pianto &virg;</l>
-                        <l n="34">Et doglia &virg; &amp7; morte dentro a gliocchi porta.</l>                        
+                        <l n="33">Che nulla &piu;<supplied>,</supplied> ma pianto<choice><orig> &virg;</orig><reg/></choice></l>
+                        <l n="34">Et doglia<choice><orig> &virg;</orig><reg/></choice> &amp7; morte dentro <choice><orig>a gliocchi</orig><reg>agli occhi</reg></choice> porta.</l>                        
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="35">Molto conuene accorta</l>
-                        <l n="36">Esser qual uista mai uer lei si giri.</l>
+                        <l n="35">Molto <choice><orig>conuene</orig><reg>convene</reg></choice> accorta</l>
+                        <l n="36">Esser qual <choice><orig>uista</orig><reg>vista</reg></choice> mai <choice><orig>uer</orig><reg>ver</reg></choice> lei si giri&p2semicolon;</l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="37">Pur che gliocchi &non; miri</l>
-                        <l n="38">Laltro puossi ueder securamente.</l>
+                        <l n="37">Pur che <choice><orig>gliocchi</orig><reg>gli occhi</reg></choice> &non; miri</l>
+                        <l n="38"><choice><orig>Laltro</orig><reg>L’altro</reg></choice> puossi <choice><orig>ueder</orig><reg>veder</reg></choice> securamente.</l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="39">Ma io incauto &virg; dolente </l>
-                        <l n="40">Corro sempre al mio male. &amp7; so ben quanto</l>
+                        <l n="39">Ma io incauto&v2c; dolente<supplied>,</supplied></l>
+                        <l n="40">Corro sempre al mio male&p2c; &amp7; so ben quanto</l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="41">No sofferto. &amp7; naspetto. ma lengordo</l>
-                        <l n="42">Voler &virg; che cieco &amp7; sordo</l>
+                        <l n="41"><choice><orig>No</orig><reg>N’ò</reg></choice> sofferto&p2c; &amp7; <choice><orig>naspetto</orig><reg>n’aspetto</reg></choice>&p2semicolon; ma <choice><orig>lengordo</orig><reg>l’engordo</reg></choice></l>
+                        <l n="42">Voler&v2c; <choice><orig>che</orig><reg>ch’è</reg></choice> cieco &amp7; sordo<supplied>,</supplied></l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="43">Si mi trasporta. chel bel uiso santo.	</l>
-                        <l n="44">Et gliocchi uaghi fien cagion chio pera.</l>
+                        <l n="43">&Si; mi trasporta&p2c; <choice><orig>chel</orig><reg>che ’l</reg></choice> bel <choice><orig>uiso</orig><reg>viso</reg></choice> santo<choice><orig>.</orig><reg/></choice></l>
+                        <l n="44">Et <choice><orig>gliocchi</orig><reg>gli occhi</reg></choice> <choice><orig>uaghi</orig><reg>vaghi</reg></choice> <choice><orig>fien</orig><reg>sien</reg></choice> cagion <choice><orig>chio</orig><reg>ch’io</reg></choice> pera&p2c;</l>
                     </lg>
 
                 <pb n="charta 31 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-031r.jpg"/>

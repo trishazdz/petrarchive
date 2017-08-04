@@ -387,34 +387,34 @@
             <lg xml:id="rvf136" type="sonnet" n="136"> 
                 <lg type="octave">
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="1"><choice><abbr><hi rendition="#red #fs24pt">F</hi><hi rendition="#small-caps">i</hi>āma</abbr><expan><hi rendition="#red #fs24pt">F</hi><hi rendition="#small-caps">i</hi>amma</expan></choice> dal ciel su le tue treccie pioua</l>
-                        <l n="2">Maluagia che dal fiume &amp7; da le ghiande</l>
+                        <l n="1"><choice><abbr><hi rendition="#red #fs24pt">F</hi><hi rendition="#small-caps">i</hi>āma</abbr><expan><hi rendition="#red #fs24pt">F</hi><hi rendition="#small-caps">i</hi>amma</expan></choice> dal ciel su le tue treccie <choice><orig>pioua</orig><reg>piova</reg></choice></l>
+                        <l n="2"><choice><orig>Maluagia</orig><reg>Malvagia</reg></choice><supplied>,</supplied> che dal fiume &amp7; da le ghiande</l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="3">Per laltrui impouerir se ricca &amp7; grande</l>
-                        <l n="4">Poi che di mal oprar tanto ti gioua.</l>
+                        <l n="3">Per <choice><orig>laltrui</orig><reg>l’altrui</reg></choice> <choice><orig>impouerir</orig><reg>impoverir</reg></choice> <choice><orig>se</orig><reg>sè</reg></choice> ricca &amp7; grande<supplied>,</supplied></l>
+                        <l n="4">Poi che di mal oprar tanto ti <choice><orig>gioua</orig><reg>giova</reg></choice>&p2semicolon;</l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="5">Nido di tradimenti &virg; in cui si coua</l>
-                        <l n="6">Quanto mal &per; lo mondo oggi si spande.</l>
+                        <l n="5">Nido di tradimenti&v2c; in cui si <choice><orig>coua</orig><reg>cova</reg></choice></l>
+                        <l n="6">Quanto mal &per; lo mondo oggi si spande&p2c;</l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="7">De uin serua &virg;di lecti &virg; &amp7; di uiuande</l>
-                        <l n="8">In cui luxuria fa lultima proua.</l>
+                        <l n="7">De <choice><orig>uin</orig><reg>vin</reg></choice> <choice><orig>serua</orig><reg>serva</reg></choice><choice><orig> &virg;</orig><reg>, </reg></choice>di lecti&v2c; &amp7; di <choice><orig>uiuande</orig><reg>vivande</reg></choice></l>
+                        <l n="8">In cui luxuria fa <choice><orig>lultima</orig><reg>l’ultima</reg></choice> <choice><orig>proua</orig><reg>prova</reg></choice>.</l>
                     </lg>
                 </lg>
                 <lg type="sestet">
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="9">&Per; le camere tue fanciulle &amp7; uecchi</l>
-                        <l n="10">Vanno trescando. &amp7; belçebub in meçço</l>
+                        <l n="9">&Per; le camere tue fanciulle &amp7; <choice><orig>uecchi</orig><reg>vecchi</reg></choice></l>
+                        <l n="10">Vanno trescando&p2c; &amp7; <choice><orig>belçebub</orig><reg>Belzebub</reg></choice> in <choice><orig>meçço</orig><reg>mezzo</reg></choice></l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="11">Co  manti<subst><del type="erasure"><gap reason="illegible"/></del><add>ci</add></subst> &virg;&amp7; col foco &virg; &amp7; co li specchi.</l>
-                        <l n="12">Gia &non; fostu nudrita in piume al reçço.</l>
+                        <l n="11">Co <supplied>’</supplied> manti<subst><del type="erasure"><gap reason="illegible"/></del><add>ci</add></subst><choice><orig> &virg;</orig><reg>, </reg></choice>&amp7; col foco&v2c; &amp7; co li specchi.</l>
+                        <l n="12"><choice><orig>Gia</orig><reg>Già</reg></choice> &non; <choice><orig>fostu</orig><reg>fostù</reg></choice> nudrita in piume al <choice><orig>reçço</orig><reg>rezzo</reg></choice>&p2c;</l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="13">Ma nuda al uento &virg;&amp7; scalça fra gli stecchi.</l>
-                        <l n="14">Or uiui si cha dio ne uenga il leçço.</l>
+                        <l n="13">Ma nuda al <choice><orig>uento</orig><reg>vento</reg></choice><choice><orig> &virg;</orig><reg>, </reg></choice>&amp7; <choice><orig>scalça</orig><reg>scalza</reg></choice> fra gli stecchi.</l>
+                        <l n="14">Or <choice><orig>uiui</orig><reg>vivi</reg></choice> &si; <choice><orig>cha</orig><reg>ch’a</reg></choice> <choice><orig>dio</orig><reg>Dio</reg></choice> ne <choice><orig>uenga</orig><reg>venga</reg></choice> il <choice><orig>leçço</orig><reg>lezzo</reg></choice>.</l>
                     </lg>
                 </lg>
             </lg>
@@ -422,34 +422,34 @@
             <lg xml:id="rvf137" type="sonnet" n="137">
                 <lg type="octave">
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="1"><hi rendition="#blue #fs24pt">L</hi><hi rendition="#small-caps">a</hi>uara babilonia a colmo il sacco</l>
-                        <l n="2">Dira di dio &virg; e di uitij empij &amp7; rei.</l>
+                        <l n="1"><choice><orig><hi rendition="#blue #fs24pt">L</hi><hi rendition="#small-caps">a</hi>uara</orig><reg><hi rendition="#blue #fs24pt">L</hi>’<hi rendition="#small-caps">a</hi>vara</reg></choice> <choice><orig>babilonia</orig><reg>Babilonia</reg></choice> <choice><orig>a</orig><reg>à</reg></choice> colmo il sacco</l>
+                        <l n="2"><choice><orig>Dira</orig><reg>D’ira</reg></choice> di <choice><orig>dio</orig><reg>Dio</reg></choice>&v2c; e di <choice><orig>uitij</orig><reg>vitii</reg></choice> <choice><orig>empij</orig><reg>empii</reg></choice> &amp7; rei&p2c;</l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="3">Tanto che scoppia &virg; e da fatti suoi dei</l>
-                        <l n="4">Non gioue &virg;&amp7; palla. ma Venere&virg;&amp7; bacco.</l>
+                        <l n="3">Tanto che scoppia&v2c; <choice><orig>e da</orig><reg>ed à</reg></choice> fatti suoi <choice><orig>dei</orig><reg>dèi</reg></choice></l>
+                        <l n="4">Non <choice><orig>gioue</orig><reg>Giove</reg></choice> <choice><orig>&virg;</orig><reg/></choice>&amp7; <choice><orig>palla</orig><reg>Palla</reg></choice>&p2c; ma Venere<choice><orig>&virg;</orig><reg> </reg></choice>&amp7; <choice><orig>bacco</orig><reg>Bacco</reg></choice>.</l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="5">Aspectando ragion mi struggo &amp7; fiacco.</l>
-                        <l n="6">Ma pur nouo soldan ueggio &per; lei.</l>
+                        <l n="5">Aspectando ragion mi struggo &amp7; fiacco&p2semicolon;</l>
+                        <l n="6">Ma pur <choice><orig>nouo</orig><reg>novo</reg></choice> soldan <choice><orig>ueggio</orig><reg>veggio</reg></choice> &per; lei&p2c;</l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="7">Lo qual fara &non; gia quandio uorrei</l>
-                        <l n="8">Sol una sede. &amp7; quella fia in Baldacco.</l>
+                        <l n="7">Lo qual <choice><orig>fara</orig><reg>farà</reg></choice> &non; <choice><orig>gia</orig><reg>già</reg></choice> <choice><orig>quandio</orig><reg>quand’io</reg></choice> <choice><orig>uorrei</orig><reg>vorrei</reg></choice></l>
+                        <l n="8">Sol una sede&p2c; &amp7; quella fia in Baldacco.</l>
                     </lg>
                 </lg>
                 <lg type="sestet">
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="9">Glidoli suoi sarranno in terra sparsi.</l>
-                        <l n="10">Et le torre superbe&amp7; al ciel nemiche.</l>
+                        <l n="9"><choice><orig>Glidoli</orig><reg>Gl’idoli</reg></choice> suoi sarranno in terra sparsi&p2c;</l>
+                        <l n="10">Et le torre superbe<supplied>, </supplied>&amp7; al ciel nemiche&p2c;</l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="11">Ei suoi torrer di for come dentro arsi.</l>
-                        <l n="12">Anime belle &virg; &amp7; di uirtute amiche</l>
+                        <l n="11"><choice><orig>Ei</orig><reg>E i</reg></choice> suoi torrer<supplied>’</supplied> di for come dentro arsi.</l>
+                        <l n="12">Anime belle<choice><orig> &virg;</orig><reg/></choice> &amp7; di <choice><orig>uirtute</orig><reg>virtute</reg></choice> amiche</l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="13"><choice><abbr>Terrāno</abbr><expan>Terranno</expan></choice> il mondo. &amp7; poi uedrem lui farsi</l>
-                        <l n="14">Aureo tutto . &amp7; pien de lopre antiche.</l>
+                        <l n="13"><choice><abbr>Terrāno</abbr><expan>Terranno</expan></choice> il mondo&p2semicolon; &amp7; poi <choice><orig>uedrem</orig><reg>vedrem</reg></choice> lui farsi</l>
+                        <l n="14">Aureo tutto<choice><orig> .</orig><reg>,</reg></choice> &amp7; pien de <choice><orig>lopre</orig><reg>l’opre</reg></choice> antiche.</l>
                     </lg>
                 </lg>
             </lg>
@@ -457,34 +457,34 @@
             <lg xml:id="rvf138" type="sonnet" n="138">
                 <lg type="octave">
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="1"><hi rendition="#red #fs24pt">F</hi><hi rendition="#small-caps">o</hi>ntana di dolore &virg; albergo dira.</l>
-                        <l n="2">Scola derrori &virg; et templo deresia.</l>
+                        <l n="1"><hi rendition="#red #fs24pt">F</hi><hi rendition="#small-caps">o</hi>ntana di dolore&v2c; albergo <choice><orig>dira</orig><reg>d’ira</reg></choice>&p2c;</l>
+                        <l n="2">Scola <choice><orig>derrori</orig><reg>d’errori</reg></choice>&v2c; et templo <choice><orig>deresia</orig><reg>d’eresia</reg></choice>&p2c;</l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="3">Gia roma &virg; or babilonia falsa &amp7; ria</l>
-                        <l n="4">&Per; cui tanto si piange&virg; et si sospira.</l>
+                        <l n="3"><choice><orig>Gia</orig><reg>Già</reg></choice> <choice><orig>roma</orig><reg>Roma</reg></choice>&v2c; or <choice><orig>babilonia</orig><reg>Babilonia</reg></choice> falsa &amp7; ria<supplied>,</supplied></l>
+                        <l n="4">&Per; cui tanto si piange<choice><orig>&virg;</orig><reg/></choice> et si sospira&p2semicolon;</l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="5">O fucina dinganni &virg; o pregion dira &virg;</l>
-                        <l n="6">Ouel ben more. el mal si nutre&#x2e1d;&amp7; cria. </l>
+                        <l n="5">O fucina <choice><orig>dinganni</orig><reg>d’inganni</reg></choice>&v2c; o pregion dira&v2c;</l>
+                        <l n="6"><choice><orig>Ouel</orig><reg>Ove ’l</reg></choice> ben more&p2c; <choice><orig>el</orig><reg>e ’l</reg></choice> mal si nutre<choice><orig>&#x2e1d;</orig><reg> </reg></choice>&amp7; cria&p2c;</l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="7">Di uiui inferno &virg; Vn gran miracol fia&virg;</l>
-                        <l n="8">Se <choice><abbr>xp&#769;o</abbr><expan>Christo</expan></choice> teco al fine non sadira.</l>                   
+                        <l n="7">Di <choice><orig>uiui</orig><reg>vivi</reg></choice> inferno<choice><orig> &virg;</orig><reg>!</reg></choice> <choice><orig>Vn</orig><reg>Un</reg></choice> gran miracol fia<choice><orig>&virg;</orig><reg>,</reg></choice></l>
+                        <l n="8">Se <choice><abbr>xp&#769;o</abbr><expan>Christo</expan></choice> teco al fine non <choice><orig>sadira</orig><reg>s’adira</reg></choice>.</l>                   
                     </lg>
                 </lg>
                 <lg type="sestet">
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="9">Fondata in casta &virg;&amp7; humil pouertate</l>
-                        <l n="10"><choice><abbr>Cōtra</abbr><expan>Contra</expan></choice> tuoi fondatori alçi le corna &virg;</l>
+                        <l n="9">Fondata in casta <choice><orig>&virg;</orig><reg/></choice>&amp7; humil <choice><orig>pouertate</orig><reg>povertate</reg></choice><supplied>,</supplied></l>
+                        <l n="10"><choice><abbr>Cōtra</abbr><expan>Contra</expan></choice><supplied> ’</supplied> tuoi fondatori <choice><orig>alçi</orig><reg>alzi</reg></choice> le corna&v2c;</l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="11">Putta sfacciata. &amp7; doue ai posto spene.</l>
-                        <l n="12">Negliadulteri tuoi &virg; ne le mal nate</l>
+                        <l n="11">Putta sfacciata&p2e; &amp7; <choice><orig>doue</orig><reg>dove</reg></choice> <choice><orig>ai</orig><reg>ài</reg></choice> posto spene<choice><orig>.</orig><reg>?</reg></choice></l>
+                        <l n="12"><choice><orig>Negliadulteri</orig><reg>Negli adulteri</reg></choice> tuoi&v2c; ne le mal nate</l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="13">Richeççe tante. or constantin &non; torna.</l>
-                        <l n="14">Ma tolga il <choice><abbr>mōdo</abbr><expan>mondo</expan></choice> tristo chel sostene.</l>
+                        <l n="13"><choice><orig>Richeççe</orig><reg>Richezze</reg></choice> tante<choice><orig>.</orig><reg>?</reg></choice> <choice><orig>or</orig><reg>Or</reg></choice> <choice><orig>constantin</orig><reg>Constantin</reg></choice> &non; torna&p2c;</l>
+                        <l n="14">Ma tolga il <choice><abbr>mōdo</abbr><expan>mondo</expan></choice> tristo <choice><orig>chel</orig><reg>che ’l</reg></choice> sostene.</l>
                     </lg>
                 </lg>
             </lg>        
@@ -492,34 +492,34 @@
             <lg xml:id="rvf139" type="sonnet" n="139">
                 <lg type="octave">
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="1"><hi rendition="#fs24pt #blue">Q</hi><hi rendition="#small-caps">v</hi>anto piu disios<subst><del type="erasure"><gap reason="illegible"/></del><add>e</add></subst> lali spando</l>
-                        <l n="2">Verso di uoi o dolce schiera amica .</l>
+                        <l n="1"><choice><orig><hi rendition="#fs24pt #blue">Q</hi><hi rendition="#small-caps">v</hi>anto</orig><reg><hi rendition="#fs24pt #blue">Q</hi><hi rendition="#small-caps">u</hi>anto</reg></choice> &piu; disios<subst><del type="erasure"><gap reason="illegible"/></del><add>e</add></subst> <choice><orig>lali</orig><reg>l’ali</reg></choice> spando</l>
+                        <l n="2">Verso di <choice><orig>uoi</orig><reg>voi</reg></choice><supplied>,</supplied> o dolce schiera amica<choice><orig> .</orig><reg>,</reg></choice></l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="3">Tanto fortuna &con; piu uisco intrica</l>
-                        <l n="4">Il mio uolare .&amp7; gir mi face errando .</l>
+                        <l n="3">Tanto fortuna &con; &piu; <choice><orig>uisco</orig><reg>visco</reg></choice> intrica</l>
+                        <l n="4">Il mio <choice><orig>uolare</orig><reg>volare</reg></choice><choice><orig> .</orig><reg>, </reg></choice>&amp7; gir mi face errando<choice><orig> .</orig><reg>.</reg></choice></l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="5">Il cor &virg; che mal suo grado a torno <choice><abbr>mādo</abbr><expan>mando</expan></choice> &virg;</l>
-                        <l n="6">E &con; uoi sempre in quella ualle aprica.</l>
+                        <l n="5">Il cor&v2c; che mal suo grado a torno <choice><abbr>mādo</abbr><expan>mando</expan></choice>&v2c;</l>
+                        <l n="6">E &con; <choice><orig>uoi</orig><reg>voi</reg></choice> sempre in quella <choice><orig>ualle</orig><reg>valle</reg></choice> aprica&p2c;</l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="7">Ouel mar nostro piu la terra implica &virg;</l>
-                        <l n="8">Laltrier da lui <choice><abbr>partīmi</abbr><expan>partimmi</expan></choice> lagrimando.</l>
+                        <l n="7"><choice><orig>Ouel</orig><reg>Ove ’l</reg></choice> mar nostro &piu; la terra implica<choice><orig> &virg;</orig><reg>;</reg></choice></l>
+                        <l n="8"><choice><orig>Laltrier</orig><reg>L’altrier</reg></choice> da lui <choice><abbr>partīmi</abbr><expan>partimmi</expan></choice> lagrimando.</l>
                     </lg>
                 </lg>
                 <lg type="sestet">
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="9">I da man manca&virg;. e <choice><abbr>tēne</abbr><expan>tenne</expan></choice> il camin dritto.</l>
-                        <l n="10">I tratto a força. &amp7; e damore scorto.</l>
+                        <l n="9">I<supplied>’</supplied> da man manca<choice><orig>&virg;.</orig><reg>,</reg></choice> e <supplied>’</supplied><choice><abbr>tēne</abbr><expan>tenne</expan></choice> il camin dritto&p2semicolon;</l>
+                        <l n="10">I<supplied>’</supplied> tratto a <choice><orig>força</orig><reg>forza</reg></choice>&p2c; &amp7; e<supplied>’</supplied> <choice><orig>damore</orig><reg>d’amore</reg></choice> scorto&p2semicolon;</l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="11">Egli in Ierusalem. &amp7; io in egipto.</l>
-                        <l n="12">Ma sofferença e nel dolor conforto</l>
+                        <l n="11">Egli in Ierusalem&p2c; &amp7; io in <choice><orig>egipto</orig><reg>Egipto</reg></choice>.</l>
+                        <l n="12">Ma <choice><orig>sofferença</orig><reg>sofferenza</reg></choice> &e; nel dolor conforto<supplied>,</supplied></l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="13">Che &per; lungo uso gia fra noi &pre;scripto. </l>
-                        <l n="14">Il nostro esser insieme e raro &amp7; corto.</l>
+                        <l n="13"><choice><orig>Che</orig><reg>Ché</reg></choice> &per; lungo uso <choice><orig>gia</orig><reg>già</reg></choice> fra noi &pre;scripto&p2c;</l>
+                        <l n="14">Il nostro esser insieme &e; raro &amp7; corto.</l>
                     </lg>
                 </lg>
             </lg>

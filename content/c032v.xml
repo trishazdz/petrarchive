@@ -387,16 +387,16 @@
             <lg xml:id="rvf142" type="sestina" n="142" rendition="#columns_2">
                 <cb n="1-of-2"/>
                 <l n="31" corresp="#canvasline"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi>Tanto mi piacque prima il dolce lume</l>
-                <l n="32" corresp="#canvasline">Chi passai con diletto assai gran poggi</l>
+                <l n="32" corresp="#canvasline"><choice><orig>Chi</orig><reg>Ch’i’</reg></choice> passai con diletto assai gran poggi</l>
                 <l n="33" corresp="#canvasline">Per poter appressar gli amati rami.</l>
-                <l n="34" corresp="#canvasline">Ora la uita breue &virg; el loco |&#183; el tempo</l>
+                <l n="34" corresp="#canvasline">Ora la <choice><orig>uita</orig><reg>vita</reg></choice> <choice><orig>breue</orig><reg>breve</reg></choice>&v2c; <choice><orig>el</orig><reg>e ’l</reg></choice> loco <choice><orig>|&#183;</orig><reg/></choice> <choice><orig>el</orig><reg>e ’l</reg></choice> tempo</l>
                 <l n="35" corresp="#canvasline"><choice><abbr>Mostrāmi</abbr><expan>Mostranmi</expan></choice> altro sentier di gire al cielo</l>
-                <l n="36" corresp="#canvasline">Et di far frutto non pur fior et frondi .</l>
+                <l n="36" corresp="#canvasline">Et di far frutto<supplied>,</supplied> non pur fior<supplied>’</supplied> et frondi<choice><orig> .</orig><reg>.</reg></choice></l>
                 
                 <cb n="2-of-2"/>
-                <l n="37" corresp="#canvasline"><hi rendition="#grey #fs24pt">&pilcrow2section;</hi>Altramor &virg; altre frondi &virg; &amp7; altro lume &virg;</l>
+                <l n="37" corresp="#canvasline"><hi rendition="#grey #fs24pt">&pilcrow2section;</hi><choice><orig>Altramor</orig><reg>Altr’amor</reg></choice>&v2c; altre frondi<choice><orig> &virg;</orig><reg/></choice> &amp7; altro lume&v2c;</l>
                 <l n="38" corresp="#canvasline">Altro salir al ciel per altri poggi</l>
-                <l n="39" corresp="#canvasline">Cerco<g ref="#punctelevhiback"/> che ne ben tempo . &amp7; altri rami .	</l>
+                <l n="39" corresp="#canvasline">Cerco<choice><orig><g ref="#punctelevhiback"/></orig><reg>,</reg></choice> <choice><orig>che</orig><reg>ché</reg></choice> <choice><orig>ne</orig><reg>n’è</reg></choice> ben tempo<choice><orig> .</orig><reg>,</reg></choice> &amp7; altri rami<choice><orig> .</orig><reg>.</reg></choice></l>
             </lg>
             
             <space corresp="#canvasline"/>
@@ -405,34 +405,34 @@
             <lg xml:id="rvf143" type="sonnet" n="143">
                 <lg type="octave">
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="1"><hi rendition="#blue #fs24pt">Q</hi><hi rendition="#small-caps">v</hi>andio uodo parlar si dolcemente</l>
-                        <l n="2">Comamor proprio a suoi seguaci instilla .</l>
+                        <l n="1"><choice><orig><hi rendition="#blue #fs24pt">Q</hi><hi rendition="#small-caps">v</hi>andio</orig><reg><hi rendition="#blue #fs24pt">Q</hi><hi rendition="#small-caps">u</hi>and ’io</reg></choice> <choice><orig>uodo</orig><reg>v’odo</reg></choice> parlar &si; dolcemente</l>
+                        <l n="2"><choice><orig>Comamor</orig><reg>Com’Amor</reg></choice> proprio a<supplied>’</supplied> suoi seguaci instilla<choice><orig> .</orig><reg>,</reg></choice></l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="3">Lacceso mio desir tutto sfauilla &virg;</l>
-                        <l n="4">Tal <choice><abbr>chenfiāmar</abbr><expan>chenfiammar</expan></choice> deuria lanime spente</l>
+                        <l n="3"><choice><orig>Lacceso</orig><reg>L’acceso</reg></choice> mio desir tutto <choice><orig>sfauilla</orig><reg>sfavilla</reg></choice>&v2c;</l>
+                        <l n="4">Tal <choice><orig><abbr>chenfiāmar</abbr><expan>chenfiammar</expan></orig><reg>che ’nfiammar</reg></choice> <choice><orig>deuria</orig><reg>devria</reg></choice> <choice><orig>lanime</orig><reg>l’anime</reg></choice> spente<supplied>.</supplied></l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="5">Trouo la bella donna allor <choice><abbr>presēte</abbr><expan>presente</expan></choice></l>
-                        <l n="6">Ouunque mi fu mai dolce o tranquilla</l>
+                        <l n="5"><choice><orig>Trouo</orig><reg>Trovo</reg></choice> la bella donna allor <choice><abbr>presēte</abbr><expan>presente</expan></choice></l>
+                        <l n="6"><choice><orig>Ouunque</orig><reg>Ovunque</reg></choice> mi fu mai dolce o tranquilla</l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="7">Ne lhabito chal suon &non; daltra squilla .</l>
-                        <l n="8">Ma di sospir mi fa destar souente .</l>
+                        <l n="7">Ne <choice><orig>lhabito</orig><reg>l’habito</reg></choice> <choice><orig>chal</orig><reg>ch’al</reg></choice> suon &non; <choice><orig>daltra</orig><reg>d’altra</reg></choice> squilla<choice><orig> .</orig><reg>,</reg></choice></l>
+                        <l n="8">Ma di sospir<supplied>’</supplied> mi fa destar <choice><orig>souente</orig><reg>sovente</reg></choice><choice><orig> .</orig><reg>.</reg></choice></l>
                     </lg>
                 </lg>
                 <lg type="sestet">
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="9">Le chiome alaura sparse &virg; &amp7; lei <choice><abbr>cōuersa</abbr><expan>conuersa</expan></choice></l>
-                        <l n="10">In dietro ueggio . &amp7; cosi bella riede &virg;</l>
+                        <l n="9">Le chiome <choice><orig>alaura</orig><reg>a l’aura</reg></choice> sparse&v2c; &amp7; <choice><orig>lei</orig><reg>le</reg></choice> <choice><orig><abbr>cōuersa</abbr><expan>conuersa</expan></orig><reg>conversa</reg></choice></l>
+                        <l n="10">In dietro <choice><orig>ueggio</orig><reg>veggio</reg></choice><choice><orig> .</orig><reg>;</reg></choice> &amp7; <choice><orig>cosi</orig><reg>così</reg></choice> bella riede<choice><orig> &virg;</orig><reg/></choice></l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="11">Nel cor &virg; come colei che tien la chiaue .</l>
-                        <l n="12">Mal souerchio piacer &virg; che satrauersa</l>
+                        <l n="11">Nel cor&v2c; come colei che tien la <choice><orig>chiaue</orig><reg>chiave</reg></choice><choice><orig> .</orig><reg>.</reg></choice></l>
+                        <l n="12"><choice><orig>Mal</orig><reg>Ma ’l</reg></choice> <choice><orig>souerchio</orig><reg>soverchio</reg></choice> piacer&v2c; che <choice><orig>satrauersa</orig><reg>s’atraversa</reg></choice></l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="13">A la mia lingua qual <choice><abbr>dētro</abbr><expan>dentro</expan></choice> ella siede .</l>
-                        <l n="14">Dimostrar<subst><del type="erasure"><gap reason="illegible"/></del><add>l</add></subst>a in palese ardir non aue .</l>
+                        <l n="13">A la mia lingua<supplied>,</supplied> qual <choice><abbr>dētro</abbr><expan>dentro</expan></choice> ella siede<choice><orig> .</orig><reg>,</reg></choice></l>
+                        <l n="14"><choice><orig>Dimostrar<subst><del type="erasure"><gap reason="illegible"/></del><add>l</add></subst>a</orig><reg>Di mostrarla</reg></choice> in palese ardir non <choice><orig>aue</orig><reg>ave</reg></choice><choice><orig> .</orig><reg>.</reg></choice></l>
                     </lg>
                 </lg>
             </lg>
@@ -440,7 +440,7 @@
             <lg xml:id="rvf144" type="sonnet" n="144">
                 <lg type="octave">
                     <lg type="dblvrs" corresp="#canvasline">
-                        <l n="1"><hi rendition="#red #fs24pt">N</hi><hi rendition="#small-caps">e</hi>cosi bello il sol giamai leuarsi</l>
+                        <l n="1"><hi rendition="#red #fs24pt">N</hi><hi rendition="#small-caps">e</hi> cosi bello il sol giamai leuarsi</l>
                         <l n="2"><choice><abbr>Quādol</abbr><expan>Quandol</expan></choice> ciel fosse piu de nebbia scarco .</l>
                     </lg>
                     <lg type="dblvrs" corresp="#canvasline">

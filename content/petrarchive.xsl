@@ -17,6 +17,15 @@
 
     <xsl:param name="jqueryUICSS" select="concat($filePrefix, '/css/lib/jquery-ui/themes/base/minified/jquery-ui.min.css')"/>
     <xsl:param name="jqueryUI" select="concat($filePrefix,'/js/jquery-ui/ui/minified/jquery-ui.min.js')"/>
+    <xsl:param name="jqueryMW" select="concat($filePrefix,'/js/jquery-mousewheel/mousewheel.min.js')"/>
+
+    <xsl:param name="knockout" select="concat($filePrefix,'/js/knockout/knockout-3.4.2.js')"/>
+
+    <!-- Bootstrap v4 requires tether -->
+    <xsl:param name="tetherJS" select="concat($filePrefix,'/js/tether/tether.min.js')"/>
+    <xsl:param name="bootstrapJS" select="concat($filePrefix,'/js/bootstrap/bootstrap.min.js')"/>
+
+
 
 
 
@@ -25,6 +34,7 @@
     
     <xsl:param name="customCSS.norm" select="concat($filePrefix,'/css/custom_norm.css')"/>
     <xsl:param name="customCSS" select="concat($filePrefix,'/css/custom.css')"/>
+    <xsl:param name="frameCSS" select="concat($filePrefix,'/css/frame.css')"/>
     
     <xsl:template name="siteNavigation">
       <xsl:variable name="nav">
@@ -113,6 +123,9 @@
             <link id="maincss" rel="stylesheet" type="text/css" href="{$teibpCSS}"/>
 
             <link id="customcss" rel="stylesheet" type="text/css" href="{$customCSS}"/>
+
+            <link id="framecss" rel="stylesheet" type="text/css" href="{$frameCSS}"/>
+
            
             <xsl:call-template name="rendition2style"/>
             <title><xsl:value-of select="$htmlTitle"/><!-- don't leave empty. --></title>
@@ -161,9 +174,6 @@
       </footer>
 
       <section id="pt-facs" class="">
-        <div class="container">
-          <img class="facs" src="" />
-        </div>
 
         <div class="meta">
 
@@ -192,11 +202,18 @@
 
 
       <script type="text/javascript" src="{$jqueryJS}"></script>
+
+      <script type="text/javascript" src="{$tetherJS}"></script>
+      <script type="text/javascript" src="{$bootstrapJS}"></script>
+
       <script type="text/javascript" src="{$jqueryUI}"></script>
+      <script type="text/javascript" src="{$jqueryMW}"></script>
+
+      <script type="text/javascript" src="{$knockout}"></script>
 
       <script type="text/javascript" src="{$teibpJS}"><xsl:comment> </xsl:comment></script>
       <script type="text/javascript" src="../js/petrarchive.js"><xsl:comment> </xsl:comment></script>
-      <script type="text/javascript" src="../js/facsimile.js"><xsl:comment> </xsl:comment></script>
+      <script type="text/javascript" src="../js/frame.js"><xsl:comment> </xsl:comment></script>
     </xsl:variable>
   
 <xd:doc><xd:desc>These lines get line numbers. Canzone is not regular.</xd:desc></xd:doc>
@@ -450,12 +467,6 @@
   <xsl:template name="poemNumber">
     <span class="poem-number">
       <xsl:value-of select="@n"></xsl:value-of>
-      
-      <xsl:if test="//tei:back/tei:div[@type = 'commentary']">
-        <a class="commentary-activate">
-          <i class="fa fa-commenting-o"></i>
-        </a>
-      </xsl:if>
     </span>
   </xsl:template>
   

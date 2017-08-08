@@ -57,8 +57,6 @@ function Facsimile(params) {
 
   this.zoom('out', 70, [0,0])
 
-  console.log(localStorage.getItem('facs'))
-
   if (localStorage.getItem('facs') == 'true') {
     this.show()
   }

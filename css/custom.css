@@ -972,7 +972,6 @@ a.commentary-activate {
   margin-left: .35em;
 }
 a.commentary-activate i {
-  color: #d60505;
 }
 
 back note, back ab {display: block;
@@ -1144,7 +1143,7 @@ img.mfp-img {
   z-index: 10000;
   display: initial;
   position: fixed;
-  top: 2.9em;
+  top: 2.5rem;
   right: 0;
   width: 450px;
   height: 100%;
@@ -1192,9 +1191,29 @@ img.mfp-img {
 
 #sticky-header {
   border-bottom: 1px solid #aaa;
-  padding: 0.5em 1em;
+  padding: 0.3em 1em 0em 1em;
   background-color: white;
 }
+
+#sticky-header .dropdown button {
+  background-color: white;
+  border: none;
+  margin-top:.3em;
+  margin-right: 1em;
+}
+#sticky-header .dropdown button:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+
+#sticky-header .dropdown-toggle::after {
+  content: none;
+}
+
+#sticky-header .charta-no {
+  font-family: Arvo, Verdana, sans-serif;
+}
+
 #sticky-header img {
   max-width: 25px;
   position: static;
@@ -1202,12 +1221,28 @@ img.mfp-img {
 
 #sticky-header h1 {
   font-size: 1em; 
-  margin-top: .3em;
+  margin-top: .4rem;
   color: #555;
 }
 #sticky-header h2 {
   font-size: 1em;
   margin-left: .3em; margin-top: .3em;
+}
+
+#sticky-header .btn {
+  font-size: .7rem;
+  padding: .4rem .6rem;
+  background-color: #dedede;
+}
+#page-nav button {
+  
+}
+
+
+#page-nav a {
+    /*margin-top: .2em;
+    padding: .3em 1em; */
+    background-color: #ddd;
 }
 
 #page-nav a.next:hover,
@@ -1221,7 +1256,6 @@ img.mfp-img {
   position: initial;
   font-size: 70%;
   margin-right: 0;
-  margin-top: .5em;
   padding:0;
   border-radius:0;
   border:none;
@@ -1232,6 +1266,27 @@ img.mfp-img {
   box-shadow:none;
   width: 12em;
   z-index:99;
+}
+
+#teibpToolbox > a {
+  margin-left: .5rem;
+}
+button {
+  cursor: pointer;
+}
+
+.themeBox {
+  margin-right: 1rem;
+}
+
+.themeBox label {
+  cursor: pointer;
+}
+.themeBox label.active {
+  color: black;
+}
+.themeBox label {
+  color: #999;
 }
 
 /* sticky header code: end */

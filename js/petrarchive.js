@@ -24,11 +24,71 @@ $(document).ready(function() {
   window.PT = new Petrarchive()
   if (window.NavUtil) {  PT.nav = new NavUtil() }
   if (window.CommentaryUtil) { PT.commentary = new CommentaryUtil() }
-  if (window.Facsimile) { 
-    PT.facsimile = new Facsimile({
-      anchor: $('a.facs-thumb'),
-      ui: $('#pt-facs')
+  if (window.Frame) {
+    PT.facs = new Frame({
+      img: $('.-teibp-pbFacs img'),
+      frame: $('#pt-facs'),
+      recenter: false
     })
+
+    PT.facs.show($('#pt-facs'), true)
+
+    PT.facs.$frame.resizable(
+      {
+        create: function( event, ui ) {
+          // Prefers an another cursor with two arrows
+          $(".ui-resizable-e").css("cursor","ew-resize")
+        },
+
+        handles: 'w'
+      }
+    )
+
+    var facs = PT.facs
+    var facsNav = $('#pt-facs nav')
+    var facsInited = false
+
+    $('a.facs-thumb').click(function(ev) {
+      if (!facs.isActive) {
+        facs.isActive = true
+        facs.$frame.addClass('active')
+        localStorage.setItem('facs', 'true')
+      } else {
+        facs.isActive = false
+        facs.$frame.removeClass('active')
+        localStorage.setItem('facs', 'false')
+      }
+
+      if (!facsInited) {
+        PT.facs.containImg()
+      }
+    })
+
+    if (localStorage.getItem('facs') == 'true') {
+      $('a.facs-thumb').click()
+    }
+
+    facsNav.children('button.zoom').click(function(ev) {
+      var tgt = $(ev.delegateTarget)
+      tgt.hasClass('in') ? facs.zoomImg(facs._zoom + .03) : facs.zoomImg(facs._zoom - .02)
+      ev.stopPropagation()
+    })
+
+    facsNav.children('button.new-tab').click(function(ev) {
+      // teibp.js TODO : transfer this somewhere else
+      var r = confirm("Facsimile will open in a new tab. Is that okay?");
+
+      if (r == true) {
+        showFacs()
+      } else {
+        return
+      }
+    })
+
+    facsNav.children('button.facs-close').click(function(ev) {
+      $('a.facs-thumb').click()
+    })
+
   }
 
   // Setup the sticky header
@@ -38,12 +98,28 @@ $(document).ready(function() {
   var pageNum = $('.-teibp-pageNum').text()
 
   $('#sticky-header .charta-no').text(pageNum)
+
+  ko.applyBindings(window.PT)
 })
 
 function Petrarchive() {
   var that = this
 
-  this.events()
+  this._theme = ko.observable('diplomatic')
+  this.foobar = function(data, ev) {
+    var newValue = $(ev.delegateTarget).children('input').attr('value')
+    this._theme(newValue)
+
+    var dict = {
+      diplomatic: '../css/custom.css',
+      edited: '../css/custom_norm.css'
+    }
+
+    var stylesheet = dict[this._theme()]
+    document.getElementById('customcss').href=stylesheet
+  }
+
+  this.init()
   this.stylingHacks()
 
   this.toggleElement = function(node, id, display) {
@@ -62,12 +138,17 @@ function Petrarchive() {
       edited: '../css/custom_norm.css'
     }
 
-    var stylesheet = dict[theme.options[theme.selectedIndex].value]
+    var stylesheet = dict[theme]
     document.getElementById('customcss').href=stylesheet
   }
 }
 
+Petrarchive.prototype.init = function() {
+  this.events()
+}
+
 Petrarchive.prototype.events = function() {
+  var that = this
 
 }
 
@@ -371,3 +452,5 @@ function PetrarchiveDocument(url) {
   // should be c00x_with_commentary
   this.commentary = this.name.split('_').length > 1
 }
+
+

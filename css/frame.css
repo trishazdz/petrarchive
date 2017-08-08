@@ -1,0 +1,37 @@
+
+.frame {
+  overflow: hidden;
+  height: 600px;
+  position: relative;
+  padding: 0;
+}
+
+.frame .img-container {
+  height: 100%;
+  width: 100%;
+}
+.frame img.ui-draggable {
+  max-width: initial;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+div.text {
+  font-size: 1em;
+  background-color: #eee;
+  padding: 0.3em 1em;
+  width: 100%;
+  display: inline-block;
+}
+div.text p {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.frame .text-hidden {
+  display: none;
+}
+div.text p {
+  color: black;
+  margin-bottom: 0;
+}

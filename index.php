@@ -35,7 +35,7 @@
 
   <div class="row">
     <p>
-      Why is this built and why are you motivated to build it? Speak to commentary that is provided. State the contribution in a more poetic and digestible way. Point out the value of this and what you hope it allows other scholars to do (motivation). 
+      Why is this built and why are you motivated to build it? Speak to commentary that is provided. State the contribution. Speak to the value of this and what you hope it allows other scholars to do (motivation). 
     </p>
   </div>
 

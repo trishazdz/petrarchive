@@ -31,23 +31,28 @@ $(document).ready(function() {
       recenter: false
     })
 
-    PT.facs.show($('#pt-facs'), true)
+    var facs = PT.facs
+    var facsNav = $('#pt-facs nav')
+    var facsInited = false
 
-    PT.facs.$frame.resizable(
+    facs.show($('#pt-facs'), true)
+
+    facs.$frame.resizable(
       {
         create: function( event, ui ) {
           // Prefers an another cursor with two arrows
           $(".ui-resizable-e").css("cursor","ew-resize")
         },
 
+        stop: function( event, ui) {
+          facs.refresh()
+        },
+
         handles: 'w'
       }
     )
 
-    var facs = PT.facs
-    var facsNav = $('#pt-facs nav')
-    var facsInited = false
-
+  
     $('a.facs-thumb').click(function(ev) {
       if (!facs.isActive) {
         facs.isActive = true
@@ -60,7 +65,7 @@ $(document).ready(function() {
       }
 
       if (!facsInited) {
-        PT.facs.containImg()
+        facs.containImg()
       }
     })
 

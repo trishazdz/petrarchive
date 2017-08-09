@@ -247,6 +247,11 @@ Frame.prototype.loadImg = function() {
   this.$img = $(this.$frame.find('div.img-container').children('img'))
 }
 
+Frame.prototype.refresh = function() {
+  this._zoom = this.getZoom()
+  this._center = this.getCenter()
+}
+
 Frame.prototype.containImg = function() {
   if (!this.$img) { return }
   
@@ -254,8 +259,7 @@ Frame.prototype.containImg = function() {
     .attr('left', 0)
     .attr('top', 0);
 
-  this._zoom = this.getZoom()
-  this._center = this.getCenter()
+  this.refresh()
 
   console.log(this)
 }

@@ -1070,129 +1070,129 @@
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>125</td>
+                    <td><a href="content/c026v.xml#rvf125">125</a></td>
                     <td>26v</td>
-                    <td>Se ’l pensier che mi strugge</td>
+                    <td><a href="content/c026v.xml#rvf125">Se ’l pensier che mi strugge</a></td>
                     <td>Canzone</td>
                 </tr>
                 <tr>
-                    <td><a href="content/c027r.xml#rvf126">126</a></td>
+                    <td><a href="content/c027r-c029v.xml#rvf126">126</a></td>
                     <td>27r</td>
-                    <td><a href="content/c027r.xml#rvf126">Chiare, fresche et dolci acque</a></td>
+                    <td><a href="content/c027r-c029v.xml#rvf126">Chiare, fresche et dolci acque</a></td>
                     <td>Canzone</td>
                 </tr>
                 <tr>
-                    <td><a href="content/c028r-c029r.xml#rvf127">127</a></td>
+                    <td><a href="content/c027r-c029v.xml#rvf127">127</a></td>
                     <td>27r-28r</td>
-                    <td><a href="content/c028r-c029r.xml#rvf127">In quella parte dove Amor mi sprona</a></td>
+                    <td><a href="content/c027r-c029v.xml#rvf127">In quella parte dove Amor mi sprona</a></td>
                     <td>Canzone</td>
                 </tr>
                 <tr>
-                    <td><a href="content/c028r-c029r.xml#rvf128">128</a></td>
+                    <td><a href="content/c027r-c029v.xml#rvf128">128</a></td>
                     <td>28r-29r</td>
-                    <td><a href="content/c028r-c029r.xml#rvf128">Italia mia, benché ’l parlar sia indarno</a></td>
+                    <td><a href="content/c027r-c029v.xml#rvf128">Italia mia, benché ’l parlar sia indarno</a></td>
                     <td>Canzone</td>
                 </tr>
                 <tr>
-                    <td><a href="content/c028r-c029r.xml#rvf129">129</a></td>
+                    <td><a href="content/c027r-c029v.xml#rvf129">129</a></td>
                     <td>29r-29v</td>
-                    <td><a href="content/c028r-c029r.xml#rvf129">Di pensier in pensier, di monte in monte</a></td>
+                    <td><a href="content/c027r-c029v.xml#rvf129">Di pensier in pensier, di monte in monte</a></td>
                     <td>Canzone</td>
                 </tr>
                 <tr>
-                    <td>130</td>
+                    <td><a href="content/c030r.xml#rvf130">130</a></td>
                     <td>30r</td>
-                    <td>Poi che ’l camin m’è chiuso di mercede</td>
+                    <td><a href="content/c030r.xml#rvf130">Poi che ’l camin m’è chiuso di mercede</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>131</td>
+                    <td><a href="content/c030r.xml#rvf131">131</a></td>
                     <td>30r</td>
-                    <td>Io canterei d’amor sì novamente</td>
+                    <td><a href="content/c030r.xml#rvf131">Io canterei d’amor sì novamente</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>132</td>
+                    <td><a href="content/c030r.xml#rvf132">132</a></td>
                     <td>30r</td>
-                    <td>S’amor non è, che dunque è quel ch’io sento?</td>
+                    <td><a href="content/c030r.xml#rvf132">S’amor non è, che dunque è quel ch’io sento?</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>133</td>
+                    <td><a href="content/c030r.xml#rvf133">133</a></td>
                     <td>30r</td>
-                    <td>Amor m’à posto come segno a strale</td>
+                    <td><a href="content/c030r.xml#rvf133">Amor m’à posto come segno a strale</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>134</td>
+                    <td><a href="content/c030v-c031r.xml#rvf134">134</a></td>
                     <td>30v</td>
-                    <td id="P">Pace non trovo, et non ò da far guerra.</td>
+                    <td id="P"><a href="content/c030v-c031r.xml#rvf134">Pace non trovo, et non ò da far guerra.</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>135</td>
+                    <td><a href="content/c030v-c031r.xml#rvf135">135</a></td>
                     <td>30v-31r</td>
-                    <td>Qual più diversa et nova</td>
+                    <td><a href="content/c030v-c031r.xml#rvf135">Qual più diversa et nova</a></td>
                     <td>Canzone</td>
                 </tr>
                 <tr>
-                    <td>136</td>
+                    <td><a href="content/c031v.xml#rvf136">136</a></td>
                     <td>31v</td>
-                    <td>Fiamma dal ciel su le tue treccie piova</td>
+                    <td><a href="content/c031v.xml#rvf136">Fiamma dal ciel su le tue treccie piova</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>137</td>
+                    <td><a href="content/c031v.xml#rvf137">137</a></td>
                     <td>31v</td>
-                    <td>L’avara Babilonia à colmo il sacco</td>
+                    <td><a href="content/c031v.xml#rvf137">L’avara Babilonia à colmo il sacco</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>138</td>
+                    <td><a href="content/c031v.xml#rvf138">138</a></td>
                     <td>31v</td>
-                    <td>Fontana di dolore, albergo d’ira,</td>
+                    <td><a href="content/c031v.xml#rvf138">Fontana di dolore, albergo d’ira,</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>139</td>
+                    <td><a href="content/c031v.xml#rvf139">139</a></td>
                     <td>31v</td>
-                    <td>Quanto più disiose l’ali spando</td>
+                    <td><a href="content/c031v.xml#rvf139">Quanto più disiose l’ali spando</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>140</td>
+                    <td><a href="content/c032r.xml#rvf140">140</a></td>
                     <td>32r</td>
-                    <td>Amor, che nel penser mio vive et regna</td>
+                    <td><a href="content/c032r.xml#rvf140">Amor, che nel penser mio vive et regna</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>141</td>
+                    <td><a href="content/c032r.xml#rvf141">141</a></td>
                     <td>32r</td>
-                    <td>Come talora al caldo tempo sole</td>
+                    <td><a href="content/c032r.xml#rvf140">Come talora al caldo tempo sole</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>142</td>
+                    <td><a href="content/c032r.xml#rvf140">142</a></td>
                     <td>32r-32v</td>
-                    <td>A la dolce ombra de le belle frondi</td>
+                    <td><a href="content/c032r.xml#rvf140">A la dolce ombra de le belle frondi</a></td>
                     <td>Sestina</td>
                 </tr>
                 <tr>
-                    <td>143</td>
+                    <td><a href="content/c032v.xml#rvf143">143</a></td>
                     <td>32v</td>
-                    <td>Quand’io v’odo parlar sì dolcemente</td>
+                    <td><a href="content/c032v.xml#rvf143">Quand’io v’odo parlar sì dolcemente</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>144</td>
+                    <td><a href="content/c032v.xml#rvf144">144</a></td>
                     <td>32v</td>
-                    <td id="N">Né così bello il sol giamai levarsi</td>
+                    <td id="N"><a href="content/c032v.xml#rvf144">Né così bello il sol giamai levarsi</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>145</td>
+                    <td><a href="content/c032v.xml#rvf145">145</a></td>
                     <td>32v</td>
-                    <td>Ponmi ove ’l sole occide i fiori et l’erba</td>
+                    <td><a href="content/c032v.xml#rvf145">Ponmi ove ’l sole occide i fiori et l’erba</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>

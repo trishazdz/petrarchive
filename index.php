@@ -25,7 +25,7 @@
 <style>
   #bannertitle {color: #afafaf;}
   #vizindex img {width:100%;}
-  #vizindex .col-1 {padding: 0; border: 2px solid #afafaf; max-width: 4%;}
+  #vizindex .col-1 {padding: 0; border: 2px solid #afafaf; max-width: 4.1%;}
 </style>
   
 <div id="vizindex" class="container">

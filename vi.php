@@ -12,8 +12,9 @@ foreach ($files as $f) {
     	}
 
         $url = explode(".", $file_name)[0] . '.xml';
+        $alt = explode(".", $file_name)[0];
 
-        $html = '<a class="col-1" href="content/' . $url . '"><img src="images/visindex/' . $file_name . '" /></a>';
+        $html = '<a class="col-1" href="content/' . $url . '"><img alt="' . $alt . '" class="vi-img" src="images/visindex/' . $file_name . '" /></a>';
         echo $html;
     }
 }

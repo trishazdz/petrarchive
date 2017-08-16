@@ -1,3 +1,5 @@
+// THIS IS DEPRECTATED! USE frame.js instead!
+
 function getParamFromUrl(name, url) {
       if (!url) url = window.location.href;
       name = name.replace(/[\[\]]/g, "\\$&");

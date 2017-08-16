@@ -212,8 +212,16 @@
       <script type="text/javascript" src="{$knockout}"></script>
 
       <script type="text/javascript" src="{$teibpJS}"><xsl:comment> </xsl:comment></script>
-      <script type="text/javascript" src="../js/petrarchive.js"><xsl:comment> </xsl:comment></script>
-      <script type="text/javascript" src="../js/frame.js"><xsl:comment> </xsl:comment></script>
+
+    <script type="text/javascript" src="../js/poem.js"><xsl:comment> </xsl:comment></script>
+
+    <script type="text/javascript" src="../js/petrarchive.js"><xsl:comment> </xsl:comment></script>
+
+    <script type="text/javascript" src="../js/frame.js"><xsl:comment> </xsl:comment></script>
+    <script type="text/javascript" src="../js/navutil.js"><xsl:comment> </xsl:comment></script>
+    <script type="text/javascript" src="../js/commentaryutil.js"><xsl:comment> </xsl:comment></script>
+    <script type="text/javascript" src="../js/petrarchivedocument.js"><xsl:comment> </xsl:comment></script>
+
     </xsl:variable>
   
 <xd:doc><xd:desc>These lines get line numbers. Canzone is not regular.</xd:desc></xd:doc>

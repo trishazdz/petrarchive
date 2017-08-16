@@ -1,0 +1,10 @@
+  #bannertitle {color: #afafaf;}
+  #vizindex img {width:100%;}
+  #vizindex .col-1 {padding: 0; border: 2px solid #afafaf; max-width: 4.1%;}
+
+  .ui-tooltip {opacity: 1; max-width: 160px; background-color: white;}
+
+.ui-tooltip p {font-size: .6em;}
+ .ui-tooltip img.facs {width:100%;}
+.ui-widget-shadow {background: white;}
+.ui-widget-content {background: white; border: none;}

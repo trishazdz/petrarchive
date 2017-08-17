@@ -5,21 +5,22 @@
 	<title>Petrachive: An Edition of Petrarch’s Songbook</title>
 
   <link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css" />
-  <link rel="stylesheet" type="text/css" href="js/jquery-ui/themes/base/minified/jquery-ui.min.css" />
+  <link rel="stylesheet" type="text/css" href="js/jquery-ui/jquery-ui.min.css" />
 
-
-  <link rel="stylesheet" type="text/css" href="css/custom.css" />
   <link rel="stylesheet" type="text/css" href="css/stylesheets/screen.css" />
   <link rel="stylesheet" type="text/css" href="css/stylesheets/index.css" />
 </head>
-<body>
+<body class="container">
 <!-- number index, first line index, visual index, genre index -->
-<div id="titlepage">
 <div id="banner">
-<div id="bannertitle">Petr<span class="archive">archive</span></div>
-<div id="bannersubtitle">An edition of Petrarch’s songbook</div>
-<div id="bannerrvf">Rerum vulgarium fragmenta</div>
-<div id="bannerresp">Edited by H. Wayne Storey, John A. Walsh and Isabella Magni</div>
+  <div id="bannertitle">Petr<span class="archive">archive</span></div>
+  <div id="bannersubtitle">An edition of Petrarch’s songbook</div>
+  <div id="bannerrvf">Rerum vulgarium fragmenta</div>
+  <div id="bannerresp">Edited by 
+    <a href="http://frit.indiana.edu/faculty/storey.shtml" target="_blank">H. Wayne Storey</a>, 
+    <a href="http://info.ils.indiana.edu/~jawalsh/" target="_blank">John A. Walsh</a> and 
+    <a href="http://isamagni.com/" target="_blank">Isabella Magni</a>
+  </div>
 </div>
 
 <div id="vizindex" class="container">
@@ -35,13 +36,10 @@
 </div>
 
 <?php include "footer.html"; ?>
-</div>
 
 <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
-<script
-        src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-        crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+
     
 <script type="text/javascript" src="js/index.js"></script>
 </body>

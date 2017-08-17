@@ -2,6 +2,10 @@ $(document).ready(function() {
 
 $(document).tooltip({
 	items: "img",
+   /* hide: {
+        effect: "explode",
+        delay: 30000
+      },*/
     content: function() {
     	var el = $( this )
     	var alt = el.attr('alt')

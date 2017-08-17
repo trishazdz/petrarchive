@@ -1,10 +1,27 @@
-  #bannertitle {color: #afafaf;}
-  #vizindex img {width:100%;}
-  #vizindex .col-1 {padding: 0; border: 2px solid #afafaf; max-width: 4.1%;}
+#bannertitle {color: #afafaf;}
+#vizindex img {width:100%;}
+#vizindex .col-1 {padding: 0; border: 2px solid #afafaf; max-width: 4.1%;}
 
-  .ui-tooltip {opacity: 1; max-width: 160px; background-color: white;}
+.ui-tooltip {opacity: 1; max-width: 160px; background-color: white;}
 
-.ui-tooltip p {font-size: .6em;}
- .ui-tooltip img.facs {width:100%;}
+.ui-tooltip img.facs {width:100%;}
 .ui-widget-shadow {background: white;}
 .ui-widget-content {background: white; border: none;}
+
+.ui-tooltip-content p.charta {
+	font-size: .8em; 
+	text-transform: capitalize;
+	font-family: Arvo, Verdana, sans-serif;
+}
+
+.container {
+	min-width: 900px;
+}
+
+#banner {
+  font-family: "helvetica neue", helvetica, verdana, arial, sans-serif;
+  font-size: 32pt;
+  text-decoration: none;
+  font-weight: 100;
+  line-height: 28pt;
+}

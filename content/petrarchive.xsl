@@ -15,8 +15,8 @@
     <xsl:output method="html" encoding="utf-8" version="1.0" indent="yes" standalone="no" media-type="text/html" omit-xml-declaration="no" doctype-system="about:legacy-compat" /> 
     <xsl:param name="pbNote" select="''"/>
 
-    <xsl:param name="jqueryUICSS" select="concat($filePrefix, '/css/lib/jquery-ui/themes/base/minified/jquery-ui.min.css')"/>
-    <xsl:param name="jqueryUI" select="concat($filePrefix,'/js/jquery-ui/ui/minified/jquery-ui.min.js')"/>
+    <xsl:param name="jqueryUICSS" select="concat($filePrefix, '/js/jquery-ui/jquery-ui.min.css')"/>
+    <xsl:param name="jqueryUI" select="concat($filePrefix,'/js/jquery-ui/jquery-ui.min.js')"/>
     <xsl:param name="jqueryMW" select="concat($filePrefix,'/js/jquery-mousewheel/mousewheel.min.js')"/>
 
     <xsl:param name="knockout" select="concat($filePrefix,'/js/knockout/knockout-3.4.2.js')"/>

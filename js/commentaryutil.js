@@ -40,7 +40,6 @@ function CommentaryUtil() {
   }
 }
 
-
 CommentaryUtil.prototype.events = function() {
   var that = this
 

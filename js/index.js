@@ -11,7 +11,7 @@ $(document).tooltip({
     	var alt = el.attr('alt')
     	var ch = alt.slice(1)
 
-    	var facsSrc = '"images/vat-lat3195-f/vat-lat3195-f-' + ch + '.jpg"'
+    	var facsSrc = '"images/thumb-vat-lat3195-f/vat-lat3195-f-' + ch + '.jpg"'
     	var img = '<img class="facs" src=' + facsSrc + ' />' 
 
     	var prettyCh = prettify(ch)

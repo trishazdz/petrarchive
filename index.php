@@ -25,11 +25,31 @@
 
 <div id="vizindex" class="container">
   <div class="row">
-  <?php include 'vi.php'; ?>
+  <?php include 'vizindex_builder.php'; ?>
   </div>
   <div class="row">
     <p>
-      Why is this built and why are you motivated to build it? Speak to commentary that is provided. State the contribution. Speak to the value of this and what you hope it allows other scholars to do (motivation). 
+      The Petrarchive is designed as a tool both to introduce Petrarch’s collection that
+      continues to influence modern cultures in many languages and to give advanced users
+      access to Petrarch’s “original” text and an extensive “material” commentary for each
+      poem. Within the Petrarchive you will find edited and diplomatic transcriptions of
+      Petrarch’s songbook; visual maps illustrating Petrarch’s design, layout, and visual
+      poetics; and multi-layered commentary addressing prosodic, historic, textual, and
+      thematic issues along with an English translation of the poems.
+    </p>
+
+    <ul>
+      <li>Sonnet</li>
+      <li>Renaissance</li>
+      <li>Western Literature</li>
+      <li>Love Songs</li>
+    </ul>
+
+    <p>
+      When you hear the words sonnet, Renaissance, western literature, love songs, you are
+      hearing the direct influence of Francesco Petrarca (Petrarch) and of his collection of lyric
+      poems that he ironically called “Fragments in the Vernacular” (Rerum vulgarium
+      fragmenta).
     </p>
   </div>
 

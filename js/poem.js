@@ -7,7 +7,14 @@ $(document).ready(function() {
   var thumbSrc = $('.-teibp-thumbnail').attr('src')
   $('#sticky-header img').attr('src', thumbSrc)
 
-  var pageNum = $('.-teibp-pageNum').text()
+  var pageNum,
+  	  $pageNum = $('.-teibp-pageNum');
+
+  if ($pageNum.length == 1) {
+  	pageNum = $pageNum.text()
+  } else {
+  	pageNum = $($pageNum[0]).text() + ' - ' + $($pageNum[$pageNum.length-1]).text()
+  }
 
   $('#sticky-header .charta-no').text(pageNum)
 

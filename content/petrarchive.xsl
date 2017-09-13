@@ -114,7 +114,10 @@
             <script type="text/javascript" src="//use.typekit.net/ctk5ksw.js"></script>
             <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
             -->
-            <meta charset="UTF-8"/>
+             <!-- Required meta tags -->
+            <meta charset="utf-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
 
             <link id="bootstrap" rel="stylesheet" type="text/css" href="{$bootstrapCSS}"/>
             <link id="jqueryuicss" rel="stylesheet" type="text/css" href="{$jqueryUICSS}"/>

@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8" />
+ <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 	<title>Petrachive: An Edition of Petrarch’s Songbook</title>
 
   <link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css" />
@@ -12,14 +15,27 @@
 </head>
 <body class="container">
 <!-- number index, first line index, visual index, genre index -->
-<div id="banner">
-  <div id="bannertitle">Petr<span class="archive">archive</span></div>
-  <div id="bannersubtitle">An edition of Petrarch’s songbook</div>
-  <div id="bannerrvf">Rerum vulgarium fragmenta</div>
-  <div id="bannerresp">Edited by 
-    <a href="http://frit.indiana.edu/faculty/storey.shtml" target="_blank">H. Wayne Storey</a>, 
-    <a href="http://info.ils.indiana.edu/~jawalsh/" target="_blank">John A. Walsh</a> and 
-    <a href="http://isamagni.com/" target="_blank">Isabella Magni</a>
+<div class="row" id="banner">
+  <div class="col-12 hidden-sm-down show-md-up">
+    <div id="bannertitle">Petr<span class="archive">archive</span></div>
+    <div id="bannersubtitle">An edition of Petrarch’s songbook</div>
+    <div id="bannerrvf">Rerum vulgarium fragmenta</div>
+    <div id="bannerresp">Edited by 
+      <a href="http://frit.indiana.edu/faculty/storey.shtml" target="_blank">H. Wayne Storey</a>, 
+      <a href="http://info.ils.indiana.edu/~jawalsh/" target="_blank">John A. Walsh</a> and 
+      <a href="http://isamagni.com/" target="_blank">Isabella Magni</a>
+    </div>
+  </div>
+
+  <div class="col-12 hidden-md-up show-sm-down">
+    <div id="bannertitle">Petr<span class="archive">archive</span></div>
+    <div id="bannersubtitle">An edition of Petrarch’s songbook</div>
+    <div id="bannerrvf">Rerum vulgarium fragmenta</div>
+    <div id="bannerresp">Edited by 
+      <a href="http://frit.indiana.edu/faculty/storey.shtml" target="_blank">H. Wayne Storey</a>, 
+      <a href="http://info.ils.indiana.edu/~jawalsh/" target="_blank">John A. Walsh</a> and 
+      <a href="http://isamagni.com/" target="_blank">Isabella Magni</a>
+    </div>
   </div>
 </div>
 

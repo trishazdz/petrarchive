@@ -1,6 +1,10 @@
 
-function PetrarchiveDocument(url) {
-  this.url = url || undefined
+function PetrarchiveDocument(url, name) {
+  if (url) {
+    this.url = url
+  } else {
+    this.url = '/' + name + '.xml'
+  }
 
   this.urlSplit = this.url.split('/')
   this.doc = this.urlSplit[this.urlSplit.length - 1]

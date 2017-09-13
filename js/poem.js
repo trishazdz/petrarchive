@@ -17,8 +17,4 @@ $(document).ready(function() {
   }
 
   $('#sticky-header .charta-no').text(pageNum)
-
-
-  // Must apply knockout bindings to the created PT object
-  ko.applyBindings(window.PT)
 })

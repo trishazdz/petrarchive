@@ -1,7 +1,10 @@
 #bannertitle {color: #afafaf;}
 #vizindex img {width:100%;}
-#vizindex .col-1 {padding: 0; border: 2px solid #afafaf; max-width: 4.1%;}
 
+@media screen and (min-width: 576px) {
+	#vizindex .col-sm-1-24 {padding: 0; border: 2px solid #afafaf; max-width: 4.1%;}
+}
+.no-file {opacity: .7; cursor: not-allowed;}
 .ui-tooltip {opacity: 1; max-width: 160px; background-color: white;}
 
 .ui-tooltip img.facs {width:100%;}
@@ -15,7 +18,6 @@
 }
 
 .container {
-	min-width: 900px;
 }
 
 #banner {
@@ -25,3 +27,9 @@
   font-weight: 100;
   line-height: 28pt;
 }
+
+.show-sm-down div,
+.show-sm-down #bannerrvf {
+	font-size: 24px;
+}
+

@@ -30,16 +30,26 @@ foreach ($files as $f) {
             if ($charta_meta['commentary']) {
                 $url .= '_with_commentary';
             }
+            $no_file = false;
         } else {
             $url = $exploded_file_name;
+            $no_file = true;
         }
 
         $url .= '.xml';
 
-        $html = '<a class="col-1" href="content/' . $url . '"><img alt="' 
-        . $exploded_file_name 
-        . '" class="vi-img" src="images/visindex/' 
-        . $file_name . '" /></a>';
+        $html = '<a class="col-3 col-sm-1-24';
+        if ($no_file) {
+            $html .= ' no-file';
+            $html .= '" href="">';
+        } else {
+            $html .= '" href="content/' . $url . '">';
+        }
+        $html .= '<img alt="';
+        $html .= $exploded_file_name;
+        $html .= '" class="vi-img';
+        $html .= '" src="images/visindex/';
+        $html .= $file_name . '" /></a>';
 
         echo $html;
     }

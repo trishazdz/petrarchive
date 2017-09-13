@@ -6,20 +6,6 @@
 function Petrarchive() {
   var that = this
 
-  this._theme = ko.observable('diplomatic')
-  this.themeClick = function(data, ev) {
-    var newValue = $(ev.delegateTarget).children('input').attr('value')
-    this._theme(newValue)
-
-    var dict = {
-      diplomatic: '../css/custom.css',
-      edited: '../css/custom_norm.css'
-    }
-
-    var stylesheet = dict[this._theme()]
-    document.getElementById('customcss').href=stylesheet
-  }
-
   this.init()
 
   this.toggleElement = function(node, id, display) {

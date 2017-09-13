@@ -1,18 +1,26 @@
 
-
 function NavUtil() {
   this.current = new PetrarchiveDocument(document.URL)
 
   this.previous = $('#page-nav a.previous')
   this.next = $('#page-nav a.next')
 
-  this.next.attr('href', this.setupNextHref()) 
-  this.previous.attr('href', this.setupPrevHref())
+  this._theme = ko.observable('diplomatic')
 
-  this.events()
+  var that = this
+  $.getJSON("../charta-meta.json", function(meta) {
+    that.chartaMeta = meta
+
+    that.next.attr('href', that.setupNextHref())
+    that.previous.attr('href', that.setupPrevHref())
+
+    that.events()
+  })
 }
 
 NavUtil.prototype.events = function() {
+  var that = this
+
   this.previous.hover(function(ev) {
     console.log(ev)
   })
@@ -20,44 +28,132 @@ NavUtil.prototype.events = function() {
   this.next.hover(function(ev) {
     console.log(ev)
   })
+
+  $('.themeBox label').click(function(ev) {
+    var newValue = $(ev.delegateTarget).children('input').attr('value')
+    that._theme(newValue)
+
+    var dict = {
+      diplomatic: '../css/custom.css',
+      edited: '../css/custom_norm.css'
+    }
+
+    var stylesheet = dict[that._theme()]
+    document.getElementById('customcss').href=stylesheet
+  })
+
+  $('#page-nav .charta-no').click(function(ev) {
+    that.toggleChartaViz()
+  })
+}
+
+NavUtil.prototype.toggleChartaViz = function() {
+  
 }
 
 NavUtil.prototype.setupPrevHref = function() {
-  var prevCh, prevRV, prevName, prevDoc;
+  var prevCh, prevRV, prevName, prevDoc, url;
 
-  if (this.current.rv == 'r') {
+  var current;
+
+  if (name) {
+    current = new PetrarchiveDocument(false, name)
+  } else {
+    current = this.current
+  }
+
+  if (current.rv == 'r') {
     prevRV = 'v'
-    prevCh = (+this.current.charta) - 1
+    prevCh = (+current.charta) - 1
   } else {
     prevRV = 'r'
-    prevCh = this.current.charta
+    prevCh = current.charta
   }
 
   // Then convert nextCh back to string with 3 decimal places
   s = "00" + prevCh
-  prevName = s.substr(s.length - 3)
+  prevName = s.substr(s.length - 3) + prevRV
 
-  return this.handleAnamolies(prevName, prevRV , 'previous')
+  prevDoc = this.chartaMeta[prevName]
+  if (!prevDoc) {
+    this.previous.attr('disabled', true)
+
+    return null
+  }
+
+  if ("document" in prevDoc) {
+    url = prevDoc.document
+
+    // Handle Multiple doc scenario... where more than one charta is handled in one xml document
+    if (url == current.name) {
+      return url = this.setupPrevHref(url.split('-')[0])
+    }
+
+    if (prevDoc.commentary) {
+      url += '_with_commentary'
+    }
+  } else {
+    url = 'c' + prevName 
+
+    if (prevDoc.commentary) {
+      url += '_with_commentary'
+    }
+  }
+
+  return url + '.xml'
 }
 
-NavUtil.prototype.setupNextHref = function() {
+NavUtil.prototype.setupNextHref = function(name) {
   var nextCh, nextRV, nextName, nextDoc;
+  var current;
 
-  if (this.current.rv == 'r') {
+  if (name) {
+    current = new PetrarchiveDocument(false, name)
+  } else {
+    current = this.current
+  }
+
+  if (current.rv == 'r') {
     nextRV = 'v'
-    nextCh = this.current.charta
+    nextCh = current.charta
   } else {
     nextRV = 'r'
 
     // Turn currentCh string into number then subtract 1
-    nextCh = (+this.current.charta) + 1
+    nextCh = (+current.charta) + 1
   }
 
   // Then convert nextCh back to string with 3 decimal places
   var s = "00" + nextCh
-  nextName = s.substr(s.length - 3)
+  nextName = s.substr(s.length - 3) + nextRV
 
-  return this.handleAnamolies(nextName, nextRV, 'next')
+  nextDoc = this.chartaMeta[nextName]
+
+  if (!nextDoc) {
+    this.next.attr('disabled', true)
+    return null
+  }
+
+  if ("document" in nextDoc) {
+    url = nextDoc.document
+
+    // Handle Multiple doc scenario... where more than one charta is handled in one xml document
+    if (url == current.name) {
+      return url = this.setupNextHref(url.split('-')[1])
+    }
+
+    if (nextDoc.commentary) {
+      url += '_with_commentary'
+    }
+  } else {
+    url = 'c' + nextName 
+
+    if (nextDoc.commentary) {
+      url += '_with_commentary'
+    }
+  }
+
+  return url + '.xml'
 }
 
 NavUtil.prototype.handleAnamolies = function(name, rv, direction) {

@@ -478,14 +478,16 @@
   <xsl:template name="poemNumber">
     <span class="poem-number">
       <xsl:value-of select="@n"></xsl:value-of>
-
+      <xsl:if test="//tei:back/tei:div[@type = 'commentary']/@corresp = concat('#',@xml:id)">
+        <xsl:text>BOOM!</xsl:text>
+      </xsl:if>
       <!-- 
         Trying to perform an XSLT XPATH test like:
         if //tei:back:div[@type = 'commentary' && @corresp == @xml:id]
         Confusing thing is that @type and @corresp belongs to tei:back:div
         however the @xml:id belongs to the tei:lg which calls this template.
 
-      <xsl:if test="//tei:back:div[@type = 'commentary']">
+      <xsl:if test="//tei:back:div[@type = 'commentary']/@corresp = concat('#',@xml:id)">
         put <button> element here that is commentary evoker.
         Evoking can be done via javascript event
       </xsl:if>

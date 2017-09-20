@@ -403,7 +403,6 @@ choice expan {
   -webkit-box-shadow:none;
   -moz-box-shadow:none;
   box-shadow:none;
-  width: 12em;
   z-index:99;
 }
 #teibpToolbox nav {
@@ -1275,7 +1274,7 @@ a[disabled] {
   -webkit-box-shadow:none;
   -moz-box-shadow:none;
   box-shadow:none;
-  width: 12em;
+  width: initial;
   z-index:99;
 }
 

@@ -1200,27 +1200,27 @@
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>146</td>
+                    <td><a href="content/c033r.xml#rvf146">146</a></td>
                     <td>33r</td>
-                    <td>O d’ardente vertute ornata et calda</td>
+                    <td><a href="content/c033r.xml#rvf146">O d’ardente vertute ornata et calda</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>147</td>
+                    <td><a href="content/c033r.xml#rvf147">147</a></td>
                     <td>33r</td>
-                    <td>Quando ’l voler, che con duo sproni ardenti</td>
+                    <td><a href="content/c033r.xml#rvf147">Quando ’l voler, che con duo sproni ardenti</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>148</td>
+                    <td><a href="content/c033r.xml#rvf148">148</a></td>
                     <td>33r</td>
-                    <td>Non Tesin, Po, Varo, Arno, Adige, et Tebro,</td>
+                    <td><a href="content/c033r.xml#rvf148">Non Tesin, Po, Varo, Arno, Adige, et Tebro,</a></td>
                     <td>Sonnet</td>
                 </tr>
                 <tr>
-                    <td>149</td>
+                    <td><a href="content/c033r.xml#rvf149">149</a></td>
                     <td>33r</td>
-                    <td>Di tempo in tempo mi si fa men dura</td>
+                    <td><a href="content/c033r.xml#rvf149">Di tempo in tempo mi si fa men dura</a></td>
                     <td>Ballata grande</td>
                 </tr>
                 <tr>

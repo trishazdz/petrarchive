@@ -464,7 +464,7 @@
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="tei:lg[@xml:id]">
+  <xsl:template match="tei:lg[@xml:id[starts-with(.,'rvf')]]">
     <xsl:call-template name="poemNumber" />
     
     <xsl:element name="{local-name()}">
@@ -478,19 +478,10 @@
     <span class="poem-number">
       <xsl:value-of select="@n"></xsl:value-of>
       <xsl:if test="//tei:back/tei:div[@type = 'commentary']/@corresp = concat('#',@xml:id)">
-        <xsl:text>BOOM!</xsl:text>
+        <button class="commentary-activate" id="{@xml:id}">
+            <i class="fa fa-commenting-o"></i>
+        </button>
       </xsl:if>
-      <!-- 
-        Trying to perform an XSLT XPATH test like:
-        if //tei:back:div[@type = 'commentary' && @corresp == @xml:id]
-        Confusing thing is that @type and @corresp belongs to tei:back:div
-        however the @xml:id belongs to the tei:lg which calls this template.
-
-      <xsl:if test="//tei:back:div[@type = 'commentary']/@corresp = concat('#',@xml:id)">
-        put <button> element here that is commentary evoker.
-        Evoking can be done via javascript event
-      </xsl:if>
-      -->
     </span>
   </xsl:template>
   
@@ -659,7 +650,7 @@
   </xsl:template>
   
   <xsl:template match="tei:div[@type = 'commentary']">
-    <div class="commentary" id="commentary">
+    <div class="commentary" id="{substring-after(concat(@corresp, '-commentary'), '#')}">
       <xsl:variable name="rvfTarget" select="substring-after(@corresp,'#')"/>
       <xsl:variable name="rvfNum" select="//tei:lg[@xml:id = $rvfTarget]/@n"/>
       

@@ -973,6 +973,11 @@ a.commentary-activate {
 a.commentary-activate i {
 }
 
+button.commentary-activate {
+  background-color: initial;
+  border: initial;
+}
+
 back note, back ab {display: block;
 padding: .5em 1.5em 1.5em 1.5em;
 text-indent: 0;

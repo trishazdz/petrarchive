@@ -2,20 +2,28 @@
 function CommentaryUtil() {
   var that = this
 
-  this.$element = $('#commentary')
+  this._active = undefined
+
   this.$content = $('#commentary main')
   this.navMeta
 
   this.events()
 
-  this.activate = function() {
+  this.activate = function(rvf) {
     $('body').addClass('commentary-active')
-    this.$element.addClass('active')
-    this.refreshNavMeta()
+    var target = '#' + rvf + '-commentary'
+
+    $(target).addClass('active')
+
+    this._active = rvf
+
+   // this.$element.addClass('active')
+    //this.refreshNavMeta()
   }
   this.deactivate = function() {
     $('body').removeClass('commentary-active')
-    this.$element.removeClass('active')
+    $('.commentary').removeClass('active')
+    this._active = undefined
   }
 
   this.refreshNavMeta = function() {
@@ -43,13 +51,16 @@ function CommentaryUtil() {
 CommentaryUtil.prototype.events = function() {
   var that = this
 
-   // Links that toggle commentary section, which is hidden by default
-  $('a.commentary-activate').click(function(ev) {
-    if (that.$element.hasClass('active')) {
+  $('button.commentary-activate').click(function(ev) {
+    var rvf = $(ev.delegateTarget).attr('id')
+
+    if (that._active == rvf) {
       that.deactivate()
-    } else {
-      that.activate()
+      return
     }
+
+    that.deactivate()
+    that.activate(rvf)
   })
 
   $('div.commentary header button.close').click(function(ev) {

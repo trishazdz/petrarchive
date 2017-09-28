@@ -48,27 +48,25 @@
 <section class="row">
   <main class="col-12">
     <p>
-      The Petrarchive is designed as a tool both to introduce Petrarch’s collection that
-      continues to influence modern cultures in many languages and to give advanced users
-      access to Petrarch’s “original” text and an extensive “material” commentary for each
-      poem. Within the Petrarchive you will find edited and diplomatic transcriptions of
-      Petrarch’s songbook; visual maps illustrating Petrarch’s design, layout, and visual
-      poetics; and multi-layered commentary addressing prosodic, historic, textual, and
-      thematic issues along with an English translation of the poems.
+      When you hear the words <em>sonnet</em>, <em>Renaissance</em>, 
+      <em>western literature</em>, <em>love songs</em>, 
+      you are hearing the direct influence of Francesco Petrarca 
+      (Petrarch) and of his collection of lyric poems that he called 
+      “Fragments in the Vernacular” (<cite>Rerum vulgarium 
+      fragmenta</cite>).
     </p>
 
-    <ul>
-      <li>Sonnet</li>
-      <li>Renaissance</li>
-      <li>Western Literature</li>
-      <li>Love Songs</li>
-    </ul>
-
     <p>
-      When you hear the words sonnet, Renaissance, western literature, love songs, you are
-      hearing the direct influence of Francesco Petrarca (Petrarch) and of his collection of lyric
-      poems that he ironically called “Fragments in the Vernacular” (Rerum vulgarium
-      fragmenta).
+      The Petrarchive is designed as a tool both to introduce Petrarch’s 
+      collection—a collection that continues to influence modern cultures 
+      in many languages—and to give advanced users access to 
+      Petrarch’s “original” text and an extensive “material” 
+      commentary for each poem. Within the Petrarchive you will find 
+      edited and diplomatic transcriptions of Petrarch’s songbook; 
+      visual maps illustrating Petrarch’s design, layout, and 
+      visual poetics; and multi-layered commentary addressing prosodic, historic, 
+      textual, and thematic issues along with an English translation 
+      of the poems.
     </p>
   </main>
 </section>

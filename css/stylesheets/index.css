@@ -36,3 +36,8 @@
 .show-md-up {
 	margin-top: 4rem;
 }
+
+body section main {
+	margin-top: 2rem;
+	font-family: helvetica neue, helvetica;
+}

@@ -8,7 +8,7 @@
 <!ENTITY sempre "<choice><abbr>sēpre</abbr><expan>sempre</expan></choice>">
 <!ENTITY quanto "<choice><abbr>quāto</abbr><expan>quanto</expan></choice>">
 ]>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="papers_and_presentations">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="papers_and_presentations" style="margin-top:41pt;">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -287,11 +287,13 @@ the line wraps. -->
       <body>
         <listBibl style="max-width:800px !important; display:block;">
 
+          <lb/>
+
           <head>Articles</head>
           
           <bibl rendition="#hang">H. Wayne Storey. “The Legacy of Petrarch’s Chartae”, submitted for <title level="m">The Legacies of Petrarch</title>, edited Ernesto Livorni and Jelena Todorović, Tempe, Arizona: Medieval and Renaissance Texts and Studies, forthcoming in 2017.</bibl>
           
- <bibl rendition="#hang">Isabella Magni. “Interpretative mediations of Petrarch’s Fragmenta : from the editio princeps  to new digital practices”, in <title level="m">Manuscript Studies</title>, University of Pennsylvania Press Journals, forthcoming in 2017.</bibl> 
+          <bibl rendition="#hang">Isabella Magni. “Visualising Petrarch's poetics”, in <title level="m">Humanist Studies and the Digital Age</title>, University of Oregon Journals, forthcoming in 2017.</bibl>
 
           <bibl rendition="#hang">———. “The Fragmenta ’s Timeline: Models for Reconstructing and Interpreting the Text” in <title level="m">Mediaevalia</title> special issue Italian Songbooks, forthcoming 2017.</bibl>  
           
@@ -306,7 +308,11 @@ the line wraps. -->
           
           <head>Recent papers and talks</head>
           
-          <bibl rendition="#hang">Isabella Magni. “Medieval textuality in the digital domain” in International Congress on Medieval Studies, Western Michigan University, Kalamazoo, MI, May 11-14, 2017.</bibl> 
+          <bibl rendition="#hang">Isabella Magni. “Collaborative digital editing: re-visualizing Petrarch’s <title level="m">Fragmenta</title>” in BH and DH: Book History and Digital Humanities, University of Wisconsin-Madison, Madison, WI, September 23, 2017.</bibl>
+          
+          <bibl rendition="#hang">H. Wayne Storey. “La filologia materiale negli studi d'Oltreoceano” in Convegno di studi, Filologia materiale fra testo e documento, Universita di Verona, Italy, June 9, 2017.</bibl>
+          
+          <bibl rendition="#hang">Isabella Magni. “Medieval textuality in the digital domain” in International Congress on Medieval Studies, Western Michigan University, Kalamazoo, MI, May 11, 2017.</bibl> 
           
           <bibl rendition="#hang">———. “New digital approaches to Italian studies: ‘connecting’ medieval and 21st  century ‘users’” in MLA 2017 Conference, Philadelphia, PA, January 5, 2017.</bibl>
           

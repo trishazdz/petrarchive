@@ -23,7 +23,8 @@
 <div id="content">
 <h1>People</h1>
 <dl>
-<dt>H. Wayne Storey, Editor</dt><dd />
+<dt>H. Wayne Storey, Editor</dt>
+<dd>Homepage: <a href="http://frit.indiana.edu/faculty/storey.shtml">http://frit.indiana.edu/faculty/storey.shtml</a></dd>
 <dt>John A. Walsh, Editor</dt>
 <dd>John A. Walsh is Associate Professor of Information and Library Science in the <a href="http://soic.indiana.edu">School of Informatics and Computing</a> at <a href="http://www.indiana.edu">Indiana University</a>. He teaches and conducts research in the areas of digital humanities and digital libraries, with particularly interests in nineteenth-century British poetry, comic book studies, and digital scholarly archives and editions of literary and historical texts. In addition to his work as Co-Editor on the Petrarchive, Walsh is the Editor of the <a href="http://swinburneproject.org">Algernon Charles Swinburne Project</a>, and Technical Editor (with Editor William R. Newman) of the <a href="http://chymistry.org">Chymistry of Isaac Newton</a>. Walsh is the lead developer of TEI Boilerplate](http://teiboilerplate.org), a system for publishing documents encoded according to the <a href="http://tei-c.org">Text Encoding Initiative</a> (TEI) <a href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/index.html"><em>Guidelines for Electronic Text Encoding and Interchange</em></a>. He has also developed the <a href="http://cbml.org">Comic Book Markup Language</a>, or CBML, for scholarly encoding of comics and graphic novels, and he is one of the lead researchers on the <a href="http://comics.indiana.edu">Comic Book Readership Archive</a> (CoBRA). Walsh has served on the Technical Council and Board of Directors of the Text Encoding Initiative Consortium. He is the Technical Editor of <a href="http://digitalhumanities.org/dhq/">Digital Humanities Quarterly</a>, an open-access online journal published by the Alliance of Digital Humanities Organizations, and Editor of the <a href="https://jtei.revues.org">Journal of the Text Encoding Initiative</a>. <br/>
 Homepage: &lt;<a href="http://johnwalsh.name">http://johnwalsh.name</a>>.<br/><!--Associate Professor of Information Science, School of Informatics and Computing. Adjunct Associate Professor of English, Department of English. Indiana University–Bloomington.<br />
@@ -33,14 +34,14 @@ Twitter: <a href="https://twitter.com/jawalsh">@jawalsh</a><br />-->
 </dl>
 <dl>
 <dt>Isabella Magni, Associate Editor</dt>
-<dd>Mellon Postdoctoral Fellow in Italian Paleography at the <a href="https://www.newberry.org">Newberry Library</a> in Chicago, IL (2017-2019), where she is working on the preparation of an online handbook for Italian paleography. She conducts research on the early manuscript tradition of Petrarch's Fragmenta and on digital approaches to the representation of texts. She earned her PhD (2017) in Italian and Medieval studies from <a href="http://www.indiana.edu">Indiana University</a>. 
+<dd>Mellon Postdoctoral Fellow in Italian Paleography at the Center for Renaissance Studies at the <a href="https://www.newberry.org">Newberry Library</a> in Chicago, IL (2017-2019), where she is working on the preparation of an online handbook for Italian paleography. She conducts research on the early manuscript tradition of Petrarch's Fragmenta and on digital approaches to the representation of texts. She earned her PhD (2017) in Italian and Medieval studies from <a href="http://www.indiana.edu">Indiana University</a>. 
 <br/>
 Homepage: &lt;<a href="http://isamagni.com">http://isamagni.com</a>>.<br/>
 </dd>
 </dl>
 
 <dl>
-<dt>Erica Hayes, Encoder <!-- 2016-present --></dt><dd />
+<dt>Abraham Kim, Web Developer <!-- 2017-present --></dt><dd />
 </dl>
 
 <dl>
@@ -48,14 +49,20 @@ Homepage: &lt;<a href="http://isamagni.com">http://isamagni.com</a>>.<br/>
 </dl>
 
 <dl>
-<dt>Abraham Kim, Web Developer <!-- 2017-present --></dt><dd />
+<dt>Olivia Wikle, Encoder <!-- 2016-present --></dt><dd />
 </dl>
 
 <h2>Past Contributors</h2>
 
 <dl>
-<dt>Grace Thomas, Encoder (2014-2016)</dt><dd />
+<dt>Erica Hayes, Encoder (2016)</dt><dd />
 </dl>
+
+<dl>
+<dt>Grace Thomas, Encoder (2014-2016)</dt>
+<dd>Homepage: <a href="http://gracethom.com">http://gracethom.com</a></dd>
+</dl>
+
 <dl>
 <dt>Laura Pence, Visual Index Designer (2013-2014)<!-- 2014-present --></dt><dd />
 </dl>

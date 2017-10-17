@@ -34,7 +34,7 @@ Twitter: <a href="https://twitter.com/jawalsh">@jawalsh</a><br />-->
 </dl>
 <dl>
 <dt>Isabella Magni, Associate Editor</dt>
-<dd>Mellon Postdoctoral Fellow in Italian Paleography at the Center for Renaissance Studies at the <a href="https://www.newberry.org">Newberry Library</a> in Chicago, IL (2017-2019), where she is working on the preparation of an online handbook for Italian paleography. She conducts research on the early manuscript tradition of Petrarch's Fragmenta and on digital approaches to the representation of texts. She earned her PhD (2017) in Italian and Medieval studies from <a href="http://www.indiana.edu">Indiana University</a>. 
+<dd>Isabella Magni is Mellon Postdoctoral Fellow at the Center for Renaissance Studies at the <a href="https://www.newberry.org">Newberry Library</a> in Chicago, IL (2017-), where she is working on the preparation of an online handbook for Italian paleography. Her research and publications focus on the early manuscript tradition of Petrarch's Fragmenta, the role of merchants in Medieval and early modern Italy and on digital approaches to the representation of texts. She earned her PhD (2017) in Italian and Medieval studies from <a href="http://www.indiana.edu">Indiana University</a>. 
 <br/>
 Homepage: &lt;<a href="http://isamagni.com">http://isamagni.com</a>>.<br/>
 </dd>

@@ -35,13 +35,7 @@
     <xsl:param name="customCSS.norm" select="concat($filePrefix,'/css/custom_norm.css')"/>
     <xsl:param name="customCSS" select="concat($filePrefix,'/css/custom.css')"/>
     <xsl:param name="frameCSS" select="concat($filePrefix,'/css/frame.css')"/>
-    
-    <xsl:template name="siteNavigation">
-      <xsl:variable name="nav">
-        <xsl:copy-of select="document('../nav_content.html')"/>
-      </xsl:variable>
-      <xsl:copy-of select="$nav"/>
-    </xsl:template>
+
 
     <xsl:template name="stickyHeader">
       <xsl:variable name="header">
@@ -138,36 +132,9 @@
             <script src="https://use.fontawesome.com/57840704ee.js"></script>
         </head>
     </xsl:template>
-  
-    <!-- Petrarchive Toolbox -->
-    <xsl:template name="teibpToolbox">
-      <xsl:if test="not(/tei:TEI/@xml:id = 'glossary') and   not(/tei:TEI/@xml:id = 'chronology_petrarch') and not(/tei:TEI/@xml:id='papers_and_presentations')">
-        <div id="teibpToolbox">
-            <div class="row">
-                <!--<h1 style="display:inline;">text view </h1>-->
-                <select id="themeBox" onchange="PT.switchCustomCSS(this);" class="col-12">
-                    <option value="{$customCSS}" >diplomatic transcription</option>
-                    <option value="{$customCSS.norm}">edited text</option>
-                </select>		
-                
-            </div>
-
-            <nav class="row justify-content-between">
-              <!-- These hrefs are set in the javascript -->
-                <a href="" class="col-6 previous">
-                  <i class="fa fa-arrow-left"></i>
-                </a>
-
-                <a href="" class="col-6 next">
-                  <i class="fa fa-arrow-right"></i>
-                </a>
-            </nav>
-        </div>
-      </xsl:if>
-    </xsl:template>
     
     <xsl:variable name="htmlFooter">
-      <footer>© 2013-2016 H. Wayne Storey &amp; John A. Walsh. This document is part of the Petr<em>archive</em>.<br/>
+      <footer class="col-12">© 2013-2016 H. Wayne Storey &amp; John A. Walsh. This document is part of the Petr<em>archive</em>.<br/>
         Team: H. Wayne Storey, John A. Walsh, Isabella Magni, Grace Thomas, Allison M. McCormack (2013-14), and Laura Pence.<br/>
         <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png" /></a>&#160;
         <a xmlns:cc="http://creativecommons.org/ns#" href="http://petrarchive.org" property="cc:attributionName" rel="cc:attributionURL"><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Petr<i>archive</i></span></a> by <a href="http://www.indiana.edu/~frithome/faculty/italian/storey.shtml">H. Wayne Storey</a> and <a href="http://johnwalsh.name/">John A. Walsh</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br/>
@@ -465,7 +432,7 @@
   </xsl:template>
 
   <xsl:template match="tei:lg[@xml:id[starts-with(.,'rvf')]]">
-    <xsl:call-template name="poemNumber" />
+    <xsl:call-template name="poemNumber" /> 
     
     <xsl:element name="{local-name()}">
       <xsl:call-template name="addID"/>
@@ -484,6 +451,39 @@
       </xsl:if>
     </span>
   </xsl:template>
+
+  <xsl:template match="tei:pb[@facs]">
+    <xsl:param name="pn">
+        <xsl:number count="//tei:pb" level="any"/>    
+    </xsl:param>
+    <xsl:choose>
+    <xsl:when test="$displayPageBreaks = true()">
+        <span class="-teibp-pb">
+            <xsl:call-template name="addID"/>
+            <xsl:call-template name="pb-handler">
+                <xsl:with-param name="n" select="@n"/>
+                <xsl:with-param name="facs" select="@facs"/>
+                <xsl:with-param name="id">
+                    <xsl:choose>
+                    <xsl:when test="@xml:id">
+                        <xsl:value-of select="@xml:id"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="generate-id()"/>
+                    </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:with-param>
+            </xsl:call-template>
+        </span>
+    </xsl:when>
+        <xsl:otherwise>
+            <xsl:copy>
+                <xsl:apply-templates select="@*|node()"/>
+            </xsl:copy>
+        </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+    
   
   <xsl:template match="*" mode="rvf360v"> 
     <xsl:element name="{local-name()}">
@@ -507,36 +507,22 @@
     <xsl:param name="facs"/>
     <xsl:param name="id"/>
     
-    <span class="-teibp-pageNum">
-      <!-- <xsl:call-template name="atts"/> -->
+    <div class="-teibp-pageNum align-items-center">
       <span class="-teibp-pbNote"><xsl:value-of select="$pbNote"/></span>
-      <xsl:value-of select="@n"/>
-      <xsl:text></xsl:text>
-    </span>
-    <span class="-teibp-pbFacs">
+      
+      <i class="fa fa-pagelines"></i> 
+      <xsl:value-of select="@n"/> 
+      <i class="fa fa-pagelines"></i>
+    </div>
+    <span class="-teibp-pbFacs hide">
       <a class="gallery-facs" rel="prettyPhoto[gallery1]">
-        <!--
-        <xsl:attribute name="onclick">
-          <xsl:value-of select="concat('showFacs(',$apos,$n,$apos,',',$apos,$facs,$apos,',',$apos,$id,$apos,')')"/>
-        </xsl:attribute>
-         -->
-
-        <img  alt="{$altTextPbFacs}" class="-teibp-thumbnail">
+        <img alt="{$altTextPbFacs}" class="-teibp-thumbnail">
           <xsl:attribute name="src">
             <xsl:value-of select="@facs"/>
           </xsl:attribute>
         </img>
       </a>
     </span>
-    <!--
-    <span class="petrarchive-visindex-thumbnail">
-      <a href="{concat('../images/visindex/',$id,'.svg')}">
-        <img src="{concat('../images/visindex/',$id,'.svg')}" 
-          height="64" border="1"/>
-        
-      </a>
-    </span>
-    -->
   </xsl:template>
 
 

@@ -6,6 +6,10 @@
 function Petrarchive() {
   var that = this
 
+  this.hasMultipleCh = function() {
+    return $('.-teibp-pbFacs img').length > 1
+  }
+
   this.init()
 
   this.toggleElement = function(node, id, display) {
@@ -30,6 +34,8 @@ function Petrarchive() {
 }
 
 Petrarchive.prototype.init = function() {
+  var that = this
+
   this.events()
 
   this.nav = new NavUtil()
@@ -65,13 +71,31 @@ Petrarchive.prototype.init = function() {
     }
   )
 
+  if (that.hasMultipleCh()) {
+    
+  }
 
   $('a.facs-thumb').click(function(ev) {
+    var img = $($(ev.delegateTarget).children('img'))
+
     if (!facs.isActive) {
+       if (that.hasMultipleCh()) {
+        that.facs.img = img
+        that.facs.loadImg()
+      }
+
       facs.isActive = true
       facs.$frame.addClass('active')
       localStorage.setItem('facs', 'true')
     } else {
+      if (that.hasMultipleCh()) {
+        if (that.facs.img !== img) {
+          that.facs.img = img
+          that.facs.loadImg()
+          return
+        }
+      }
+
       facs.isActive = false
       facs.$frame.removeClass('active')
       localStorage.setItem('facs', 'false')
@@ -83,7 +107,7 @@ Petrarchive.prototype.init = function() {
   })
 
   if (localStorage.getItem('facs') == 'true') {
-    $('a.facs-thumb').click()
+    $($('a.facs-thumb')[0]).click()
   }
 
   facsNav.children('button.zoom').click(function(ev) {
@@ -104,14 +128,29 @@ Petrarchive.prototype.init = function() {
   })
 
   facsNav.children('button.facs-close').click(function(ev) {
-    $('a.facs-thumb').click()
+    facs.isActive = false
+    facs.$frame.removeClass('active')
+    localStorage.setItem('facs', 'false')
   })
+
   /***********
     /End Setup Facs
   ***********/
+
+  var that = this
+  $(window).resize(function() {
+    that.onResize()
+  })
+
+  this.onResize()
 }
 
 Petrarchive.prototype.events = function() {
   var that = this
 
+}
+
+Petrarchive.prototype.onResize = function() {
+    let headerHeight = $('#sticky-header').outerHeight()
+    $('#pt-facs').css('top', headerHeight)
 }

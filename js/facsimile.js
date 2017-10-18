@@ -41,8 +41,6 @@ function Facsimile(params) {
   	}
   )
 
-  this._ui_container = this._ui.children('.container')
-
   this._ui_img = this._ui.find('img.facs')
   $(this._ui_img).draggable({
 
@@ -94,6 +92,10 @@ Facsimile.prototype.events = function() {
 
   this._ui_nav.find('button.facs-close').click(function(ev) {
   	that.hide()
+  })
+
+  $(window).resize(function() {
+   // that.placeFacs()
   })
 }
 

@@ -1,21 +1,29 @@
 $(document).ready(function() {
 
 $(document).tooltip({
-	items: "img",
+	items: "#vizindex a",
    /* hide: {
         effect: "explode",
         delay: 30000
       },*/
     content: function() {
-    	var el = $( this )
-    	var alt = el.attr('alt')
+    	var a = $( this )
+        var noFile = a.hasClass('no-file')
+
+    	var alt = a.find('img').attr('alt')
     	var ch = alt.slice(1)
 
     	var facsSrc = '"images/thumb-vat-lat3195-f/vat-lat3195-f-' + ch + '.jpg"'
     	var img = '<img class="facs" src=' + facsSrc + ' />' 
 
     	var prettyCh = prettify(ch)
-    	var p = '<p class="charta">' + prettyCh + '</p>'
+    	var p = '<p class="charta">' + prettyCh
+
+        if (noFile) {
+            p += ' (Coming Soon)'
+        }
+
+        p += '</p>'
     	var html = p + img
     	return html
     }

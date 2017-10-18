@@ -4,12 +4,15 @@ function CommentaryUtil() {
 
   this._active = undefined
 
-  this.$content = $('#commentary main')
   this.navMeta
 
   this.events()
 
   this.activate = function(rvf) {
+    if (rvf[0] == '#') {
+      rvf = rvf.substring(1)
+    }
+
     $('body').addClass('commentary-active')
     var target = '#' + rvf + '-commentary'
 
@@ -17,8 +20,7 @@ function CommentaryUtil() {
 
     this._active = rvf
 
-   // this.$element.addClass('active')
-    //this.refreshNavMeta()
+    this.refreshNavMeta()
   }
   this.deactivate = function() {
     $('body').removeClass('commentary-active')
@@ -27,7 +29,7 @@ function CommentaryUtil() {
   }
 
   this.refreshNavMeta = function() {
-    this.navMeta = $('nav.commentary a').map(function() {
+    this.navMeta = $('.commentary.active nav a').map(function() {
       var split = this.href.split('#')
       var hash = split[split.length - 1]
 
@@ -41,10 +43,15 @@ function CommentaryUtil() {
 
   if (window.location.hash) {
     var hash = window.location.hash
-    this.activate()
-    window.location.hash = 'dummyhash'
+    console.log(hash)
+    var rvf = hash.split('_')[0]
 
-    location.hash = hash
+    console.log(rvf)
+
+    if (rvf.length == 1) {
+      return
+    }
+    this.activate(rvf)
   }
 }
 
@@ -80,7 +87,7 @@ CommentaryUtil.prototype.events = function() {
     that.refreshNavMeta()
   })
 
-  that.$content.scroll(function(ev) {
+  $('.commentary main').scroll(function(ev) {
     var scrollTop = ev.target.scrollTop
 
     var filtered = that.navMeta.filter(function(i, el) {

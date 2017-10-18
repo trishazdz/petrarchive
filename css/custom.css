@@ -25,7 +25,7 @@ body {
 }
 
 body.commentary-active {
-  margin-bottom: 10.5em;
+  margin-bottom: 12.5em;
 }
 
 /* line 22, ../sass/_meyer-reset.scss */
@@ -74,7 +74,16 @@ table {
   font-weight: normal;
   font-style: normal;
 }
-html,body {
+html {
+  margin: initial;
+  padding: initial;
+  margin-left: initial;
+  margin-right: initial;
+  padding: initial;
+  color: initial;
+  background-color: initial;
+}
+body {
   font-family: 'andron_scriptor_webregular' !important;
   font-size: 20px;
   background-color: white;
@@ -89,16 +98,25 @@ a:hover {
   cursor: pointer;
 }
 
+.content-container {
+}
+
 #tei_wrapper {
-  margin-top: 4em;
-  width: 1100px;
+  margin-left: 6em;
+}
+
+#tei_wrapper > tei {
+  margin-top: 2em;
+  max-width: 1100px;
 }
 #tei_wrapper text {
- 
+  width: 900px;
 }
 #content {
   margin-top: 4em;
 }
+
+
 titleStmt > tei-title {
   font-family: "Helvetica Neue", "Gill Sans", "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
   font-weight: 100  !important;
@@ -113,7 +131,6 @@ teiHeader {
   font-size: 18px;
   font-weight: 200 !important;
   margin-top: 1em;
-  width: 800px;
   margin-bottom: .5em;
   border-bottom: none;
 }
@@ -227,7 +244,9 @@ subst add {
   vertical-align: baseline;
 }
 footer {
+  padding-top: 2em;
   margin-top: 2.5em;
+  margin-bottom: 2em;
   width: 700px;
   font-family: 'Helvetica Neue', 'Gill Sans', Helvetica, Arial, sans-serif;
   font-weight: 200;
@@ -236,16 +255,24 @@ footer {
   clear: both;
 }
 
-
-.-teibp-pb {
-  width: 200px;
-  margin: 2em 0 1em 450px;
-  font-family: 'Helvetica Neue', 'Gill Sans', Helvetica, Arial, sans-serif;
-  font-weight: 200;
+.-teibp-pb:first-child {
+  display: none;
 }
 
-.-teibp-pageNum {
-  margin-right: .5em;
+.-teibp-pb {
+  margin: 2.5em 0 .3em 0;
+  font-family: 'Helvetica Neue', 'Gill Sans', Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  text-align: left;
+  font-size: .7em;
+  color: #bbb;
+}
+
+.-teibp-pageNum i:first-of-type{
+  margin-right: 1rem;
+}
+.-teibp-pageNum i:last-of-type{
+  margin-left: 1rem;
 }
 
 .-teibp-thumbnail {
@@ -1307,3 +1334,23 @@ button {
 }
 
 /* sticky header code: end */
+
+/* Mobile code: start */
+
+@media (max-width: 575px) {
+  #tei_wrapper {
+    margin-left: 0em;
+    overflow-x: scroll;
+  }
+
+  #tei_wrapper text {
+    margin-left: 1em;
+  }
+
+  footer {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+}
+
+/* Mobile code: end */

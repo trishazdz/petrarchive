@@ -72,22 +72,27 @@
 	<xsl:template match="/" name="htmlShell" priority="99">
 		<html>
 			<xsl:call-template name="htmlHead"/>
+
 			<body>
-			  <div class="container-fluid">
-				  <xsl:if test="$includeNav = true()">
-				    <xsl:call-template name="siteNavigation"/>
-				  </xsl:if>
-				  <xsl:if test="$includeStickyHeader = true()">
-				    <xsl:call-template name="stickyHeader"/>
-				  </xsl:if>
-					<xsl:if test="$includeToolbox = false()">
-						<xsl:call-template name="teibpToolbox"/>
-					</xsl:if>
-					<div id="tei_wrapper" class="row">
-						<xsl:apply-templates/>
-					</div>
-					<xsl:copy-of select="$htmlFooter"/>
+			  <xsl:if test="$includeNav = true()">
+			    <xsl:call-template name="siteNavigation"/>
+			  </xsl:if>
+
+			  <div class="container-fluid header-container">
+			    <xsl:if test="$includeStickyHeader = true()">
+			      <xsl:call-template name="stickyHeader"/>
+			    </xsl:if>
 			  </div>
+
+			  <div class="container-fluid content-container">
+				  <div id="tei_wrapper" class="row">
+					  <xsl:apply-templates/>
+				  </div>
+
+				  <div class="col-12">
+				  	<xsl:copy-of select="$htmlFooter"/>
+				  </div>
+		      </div>
 			</body>
 		</html>
 	</xsl:template>

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="petrarchive.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="petrarchive.xsl"?>
+<!DOCTYPE TEI [
+<!ENTITY amp7 "<choice><abbr>⁊</abbr><expan>et</expan></choice>">
+<!ENTITY per "<choice><abbr>ꝑ</abbr><expan>per</expan></choice>">
+<!ENTITY virg "/">
+<!ENTITY sempre "<choice><abbr>sēpre</abbr><expan>sempre</expan></choice>">
+<!ENTITY quanto "<choice><abbr>quāto</abbr><expan>quanto</expan></choice>">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="papers_and_presentations" style="margin-top:41pt;">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Petrarchive: Papers and Presentations</title>
+         </titleStmt>
+            <publicationStmt xml:base="includes/publicationStmt.xml">
+               <publisher>
+                  Digital Culture Lab, <ref target="http://ils.indiana.edu/">Department of Information and Library Science</ref>, <ref target="http://informatics.indiana.edu/">School of Informatics and Computing</ref>, <ref target="http://www.indiana.edu/">Indiana University</ref>
+               </publisher>
+               <pubPlace><settlement>Bloomington</settlement>, <region>IN</region></pubPlace>
+               <date when="2013"/>
+               <availability>
+                  <p>Copyright © 2013-2015</p>
+                  <p>
+                     <ref type="license" target="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><figure><figDesc>Creative Commons License</figDesc> <graphic url="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></figure></ref> <title>The PetrArchive</title> is licensed under a <ref type="license" target="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US">Creative Commons Attribution-NonCommercial 3.0 Unported License</ref>.
+                  </p>
+               </availability>
+            </publicationStmt>
+         <sourceDesc>
+            <p>This TEI/XML document is the original source</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+        <tagsDecl>
+          <!-- Basic text formatting: bold, italic, underline, "normal," etc. -->
+          <rendition xml:id="b" n="tiebp:bold" scheme="css">
+            font-weight:bold;
+          </rendition> 
+          
+          <rendition xml:id="i" n="tiebp:italic" scheme="css">
+            font-style:italic;
+          </rendition> 
+          
+          <rendition xml:id="u" n="tiebp:underline" scheme="css">
+            text-decoration:underline;
+          </rendition> 
+          
+          <rendition xml:id="n" n="teibp:normal" scheme="css">
+            font-weight:normal;
+            text-decoration:none;
+            font-style:normal;
+          </rendition>
+          
+          <rendition xml:id="mono" n="teibp:mono" scheme="css">
+            font-family:Monaco,Courier,monospace;
+          </rendition>
+          
+          <rendition xml:id="super" n="tiebp:super" scheme="css">
+            vertical-align:super;
+            font-size:80%;
+          </rendition>
+          
+          <rendition xml:id="sub" n="tiebp:sub" scheme="css">
+            vertical-align:sub;
+            font-size:80%;
+          </rendition>
+          
+          <rendition xml:id="lowercase" n="tiebp:lowercase" scheme="css">
+            text-transform:lowercase;
+          </rendition>
+          
+          <rendition xml:id="uppercase" n="tiebp:uppercase" scheme="css">
+            text-transform:uppercase;
+          </rendition>
+          
+          <rendition xml:id="capitalize" n="tiebp:capitalize" scheme="css">
+            text-transform:capitalize;
+          </rendition>
+          
+          <rendition xml:id="small-caps" n="tiebp:small-caps" scheme="css">
+            font-variant:small-caps;
+          </rendition>
+          
+          <!-- Blocks. -->
+          <rendition xml:id="block" n="tiebp:block" scheme="css">
+            display:block;
+          </rendition> 
+          
+          <rendition xml:id="blockquote" n="tiebp:blockquote" scheme="css">
+            display:block;
+            font-size:90%;
+            margin-left:3em;
+            padding-left:1em;
+            border-left: 1px solid gray;
+            margin-top:.75em;
+            margin-bottom:.75em;
+            padding-top:.75em;
+            padding-bottom:.75em;
+          </rendition>
+          
+          <rendition corresp="#blockquote" n="tiebp:blockquote" scheme="css" scope="before">
+            <!-- This turns off the default generated quotes for block quotes. -->
+            content:"" !important;
+          </rendition>
+          
+          <rendition corresp="#blockquote" n="tiebp:blockquote" scheme="css" scope="after">
+            <!-- This turns off the default generated quotes for block quotes. -->
+            content:"" !important;
+          </rendition>
+          
+          <rendition xml:id="codeblock" n="teibp:codeblock" scheme="css">
+            display: block;
+            font-size: 80%;
+            margin-left: 1em;
+            padding-left: 1em;
+            border-left: 1px solid gray;
+            margin-top: .75em;
+            margin-bottom: .75em;
+            padding-top: .75em;
+            padding-bottom: .75em;
+            font-family:Monaco,Courier,monospace;
+            white-space:pre;
+          </rendition>
+          
+          <!-- Inline -->
+          
+          <rendition xml:id="inline" n="teibp:inline" scheme="css">
+            display:inline;
+          </rendition>
+          
+          <!-- Alignment. -->
+          <rendition xml:id="center" n="tiebp:center" scheme="css">
+            display:block;
+            text-align:center;
+            margin-left:auto;
+            margin-right:auto;
+          </rendition>
+          
+          <rendition xml:id="left" n="teibp:left" scheme="css">
+            text-align:left;
+          </rendition>
+          
+          <rendition xml:id="right" n="teibp:right" scheme="css">
+            text-align:right;
+          </rendition>
+          
+          <rendition xml:id="justify" n="teibp:justify" scheme="css">
+            text-align:justify;
+          </rendition>
+          
+          <rendition xml:id="center-block" n="tiebp:center-block" scheme="css">
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+          </rendition>
+          
+          <!-- Indentation -->
+          <rendition xml:id="hang" n="teibp:hang" scheme="css">
+            display:block;
+            padding-left:2.5em;
+            text-indent:-2.5em;
+          </rendition>
+          
+          <!-- Indentation for verse lines. Results in a “hanging” indent if
+the line wraps. -->
+          <rendition xml:id="l-indent-01" n="tiebp:l-indent-01" scheme="css">
+            display:block;
+            padding-left:4em;
+            text-indent:-2em;
+          </rendition>
+          
+          <rendition xml:id="l-indent-02" n="tiebp:l-indent-02" scheme="css">
+            display:block;
+            padding-left:6em;
+            text-indent:-2em;
+          </rendition>
+          
+          <rendition xml:id="l-indent-03" n="tiebp:l-indent-03" scheme="css">
+            display:block;
+            padding-left:8em;
+            text-indent:-2em;
+          </rendition>
+          
+          <rendition xml:id="l-indent-04" n="tiebp:l-indent-04" scheme="css">
+            display:block;
+            padding-left:10em;
+            text-indent:-2em;
+          </rendition>
+          
+          <rendition xml:id="l-indent-05" n="tiebp:l-indent-05" scheme="css">
+            display:block;
+            padding-left:12em;
+            text-indent:-2em;
+          </rendition>
+          
+          <rendition xml:id="l-indent-06" n="tiebp:l-indent-06" scheme="css">
+            display:block;
+            padding-left:14em;
+            text-indent:-2em;
+          </rendition>
+          
+          <rendition xml:id="l-indent-07" n="tiebp:l-indent-07" scheme="css">
+            display:block;
+            padding-left:16em;
+            text-indent:-2em;
+          </rendition>
+          
+          <rendition xml:id="l-indent-08" n="tiebp:l-indent-08" scheme="css">
+            display:block;
+            padding-left:18em;
+            text-indent:-2em;
+          </rendition>
+          
+          <rendition xml:id="indent" n="tiebp:indent" scheme="css" scope="before">
+            /* text-indent:4em; */
+            /* The above method of describing an indentation for, say, a paragraph is 
+            preferred. The method being used is in response to a bug in some browsers 
+            whereby a block element, like a paragraph, is erroneously re-indented 
+            after interruption by another block element (like a list, which is valid,
+            in TEI, inside a paragraph). */
+            content:"\A0\A0\A0\A0\A0\A0";
+          </rendition>
+          
+          <!-- font sizes -->
+          
+          <rendition xml:id="small" n="tiebp:small" scheme="css">
+            font-size:90%;
+          </rendition>
+          
+          <rendition xml:id="x-small" n="tiebp:x-small" scheme="css">
+            font-size:85%;
+          </rendition>
+          
+          <rendition xml:id="xx-small" n="tiebp:xx-small" scheme="css">
+            font-size:80%;
+          </rendition>
+          
+          <rendition xml:id="large" n="tiebp:large" scheme="css">
+            font-size:110%;
+          </rendition>
+          
+          <rendition xml:id="x-large" n="tiebp:x-large" scheme="css">
+            font-size:115%;
+          </rendition>
+          
+          <rendition xml:id="xxx-large" n="tiebp:xxx-large" scheme="css">
+            font-size:120%;
+          </rendition>
+          
+          <rendition xml:id="bracket" n="teibp:bracket" scheme="css"/>
+          
+          <rendition corresp="#bracket" n="tiebp:bracket" scheme="css" scope="before">
+            content:"&lt;";
+          </rendition>
+          
+          <rendition corresp="#bracket" n="tiebp:bracket" scheme="css" scope="after">
+            content:">";
+          </rendition>
+          
+          <!-- petrarchive -->
+          <rendition xml:id="red" scheme="css"
+            >color:#9f1706;</rendition>
+          <rendition xml:id="blue" scheme="css"
+            >color:#12398c;</rendition>
+          <rendition xml:id="fs18pt" scheme="css"
+            >font-size:18pt;</rendition>
+          <rendition xml:id="fs24pt" scheme="css"
+            >font-size:24pt;</rendition>
+        </tagsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <!-- replaced PUA u+f1f7 w/ the proper character for virgule u+002f. -->
+   <!-- MS Word label [5; s] becomes <lg type="sonnet" n="5"> -->
+   <!--
+       The standard solution below does not allow us to italicize only the "m" in "sempre."
+       
+       <choice><abbr>sēpre</abbr><expan>sempre</expan></choice>
+  -->
+   <!-- What character is the Italian ampersand/7? -->
+
+   <!-- For p with stroke through descender, I am using ꝑ (u+A751). -->
+
+   <!-- Can erasures be read? -->
+
+   <text>
+      <body>
+        <listBibl style="max-width:800px !important; display:block;">
+
+          <lb/>
+
+          <head>Articles</head>
+          
+          <bibl rendition="#hang">H. Wayne Storey. “The Legacy of Petrarch’s Chartae”, submitted for <title level="m">The Legacies of Petrarch</title>, edited Ernesto Livorni and Jelena Todorović, Tempe, Arizona: Medieval and Renaissance Texts and Studies, forthcoming in 2017.</bibl>
+          
+          <bibl rendition="#hang">Isabella Magni. “Visualising Petrarch's poetics”, in <title level="m">Humanist Studies and the Digital Age</title>, University of Oregon Journals, forthcoming in 2017.</bibl>
+
+          <bibl rendition="#hang">———. “The Fragmenta ’s Timeline: Models for Reconstructing and Interpreting the Text” in <title level="m">Mediaevalia</title> special issue Italian Songbooks, forthcoming 2017.</bibl>  
+          
+          <bibl rendition="#hang">Isabella Magni and John A. Walsh. "Thinking digital: Donna mi uene spesso ne la mente  as a fundamental yet unstable text in the study of the Fragmenta .” with Prof. John Walsh, in <title level="m">Digital Philology</title>  5.2, Johns Hopkins University Press, 2016. </bibl>
+ 
+          <bibl rendition="#hang">Isabella Magni. “I codici paralleli dei Fragmenta ", in <title level="m">Medioevo letterario d’Italia</title>. Vol. 12, 2015.</bibl>
+                    
+          <bibl rendition="#hang">H. Wayne Storey. “Tra edizione e archivio. La tecnologia al servizio della filologia”, in <title level="m">Ecdotica: Rivista di studi testuali</title> 11 (2014), 99–105; and at <ptr target="http://www.ecdotica.org/numero-11/"></ptr>.</bibl>
+          
+          <lb/>
+          <lb/>
+          
+          <head>Recent papers and talks</head>
+          
+          <bibl rendition="#hang">Isabella Magni. “Collaborative digital editing: re-visualizing Petrarch’s <title level="m">Fragmenta</title>” in BH and DH: Book History and Digital Humanities, University of Wisconsin-Madison, Madison, WI, September 23, 2017.</bibl>
+          
+          <bibl rendition="#hang">H. Wayne Storey. “La filologia materiale negli studi d'Oltreoceano” in Convegno di studi, Filologia materiale fra testo e documento, Universita di Verona, Italy, June 9, 2017.</bibl>
+          
+          <bibl rendition="#hang">Isabella Magni. “Medieval textuality in the digital domain” in International Congress on Medieval Studies, Western Michigan University, Kalamazoo, MI, May 11, 2017.</bibl> 
+          
+          <bibl rendition="#hang">———. “New digital approaches to Italian studies: ‘connecting’ medieval and 21st  century ‘users’” in MLA 2017 Conference, Philadelphia, PA, January 5, 2017.</bibl>
+          
+          <bibl rendition="#hang">———. “Textual transmission and interpretative mediations of Petrarch’s Fragmenta” in The Pre-Modern Book in a Global Context , Binghamton, NY, October 22, 2016.</bibl>
+          
+          <bibl rendition="#hang">H. Wayne Storey. “The Revisualization of an Icon of European Literature: Petrarch’s <title level="m">Rerum vulgarium fragmenta</title>”, Rutgers University, September 26, 2016</bibl>
+          
+          <bibl rendition="#hang">Isabella Magni. “Digital representations of Petrarch’s Rerum vulgarium fragmenta” in DHSI Colloquium, University of Victoria, June 7, 2016.</bibl>
+          
+          <bibl rendition="#hang">H. Wayne Storey. “Materialità e immaterialità dei testi nell’era digitale (con prospezioni circa l’edizione critica)”, University of Verona, 11 November 2015.</bibl>
+          
+          <bibl rendition="#hang">Isabella Magni. <title level="a">Petr<hi rendition="#i">archive</hi>. An edition of Petrarch's songbook <title level="m">Rerum vulgarium fragmenta</title></title>, project presentation in The European Summer University in Digital Humanities 2015, Universität Leipzig, August 4 2015.</bibl>
+            
+          <bibl rendition="#hang">John A. Walsh and H. Wayne Storey. <title level="a">Indexicality, Visual Poetics, and the Petr<hi rendition="#i">archive</hi>: A Scholarly Digital Edition of Petrarch’s Songbook</title>. Paper for the 2015 Joint Canadian Society of Digital Humanities/Société canadienne des humanités numériques &amp; Association for Computers and the Humanities Digital Humanities Conference, University of Ottawa, June 1, 2015.</bibl>
+          <bibl rendition="#hang">Isabella Magni. <title level="a">The Fragmenta’s Timeline: Models for Reconstructing and Interpreting the Text</title>, in <title level="m">Authority and Materiality in the Italian Songbook: From the Medieval Lyric to the Early Modern Madrigal</title>, Binghamton NY, May 2, 2015. </bibl>
+          
+          <bibl rendition="#hang">H. Wayne Storey. <title level="a">The Evolving <title level="m">Fragmenta</title>: Editing An Imperfect Holograph</title>, in <title level="m">Authority and Materiality in the Italian Songbook: From the Medieval Lyric to the Early Modern Madrigal</title>, Binghamton NY, May 2, 2015. </bibl>
+          
+          <bibl rendition="#hang">———. <title level="a">Digitally Born Petrarch: Making the <title level="m">Fragmenta</title></title>, in the session Digital Humanities for Medieval Italy, NeMLA, Toronto, April 30, 2015. </bibl>
+          
+          <bibl rendition="#hang">———. <title level="a">Fra edizione e archivio: la critica testuale e il digitale</title>, <title level="m">Giornata di studio per dieci anni della rivista <title level="a" rendition="#n">Ecdotica</title></title>, Bologna, Università di Bologna, May 23, 2014.</bibl>
+          
+          <bibl rendition="#hang">Isabella Magni. <title level="a">Petr<hi rendition="#i">archive</hi>: a new digital frontier in the study of <title level="m">Rerum Vulgarium Fragmenta</title></title>, in <title rendition="#i">The Communities of Italy:  New and Traditional Approaches</title>, the Delaware Valley Medieval Association, April 5, 2014. </bibl>
+            
+          <bibl rendition="#hang">H. Wayne Storey. <title level="a">A Rich-Text Petrarch and the Expansion of Communities</title>, keynote address for the conference <title rendition="#i">The Communities of Italy:  New and Traditional Approaches</title>, the Delaware Valley Medieval Association, April 5, 2014. </bibl>
+          
+           <bibl rendition="#hang">H. Wayne Storey and John A. Walsh. <title level="a">Digital Tools of the Petr<hi rendition="#i">archive</hi> and Editorial Applications</title> featured workshop for the 2014 Society for Textual Scholarship, University of Washington, March 20, 2014. </bibl>    
+          
+          <bibl rendition="#hang">———. “Indexicality, Visual Poetics and the PetrArchive: A Scholarly Digital Edition of Petrarch’s Songbook”, plenary talk for the 10th Conference of the European Society for Textual Scholarship: “Variance in Textual Scholarship and Genetic Criticism / La variance en philologie et dans la critique génétique”, École Normale Supérieure Paris, France, November 22–24, 2013.</bibl>  
+
+          <bibl rendition="#hang">H. Wayne Storey. <title level="a">Digital and Local Materiality: anthologies, booklets and chartae</title>. Paper for the 2013 Conference of the Society for Textual Scholarship, Loyola University–Chicago, April 6, 2013.</bibl> 
+            
+          <bibl rendition="#hang">———. <title level="a">The Rich-Text Edition of the <title level="m">Rerum vulgarium fragmenta</title></title>. Presented at the international conference “Petrarch and His Legacies”, University of Wisconsin–Madison, April 4, 2013.</bibl>
+            
+          <bibl rendition="#hang">———. <title level="a">The Material Evolution of Petrarch’s <title level="m">Rerum vulgarium fragmenta</title></title>. Notre Dame University, <title rendition="#i">The Petrarch Seminar</title>, October 1 2012.</bibl>
+            
+          <bibl rendition="#hang">———. <title level="a">Philology and the Perception of Stability in Digital Contexts</title>. <title rendition="#i">Scholarly Editions and the Digital Age: Text and Music</title>, Center for the History of Music Theory and Literature, Indiana University, Bloomington, August 31, 2012.</bibl>
+            
+          <bibl rendition="#hang">———. <title level="a">Definitions and Matrices of Scholarly Editing: Petrarch</title>. Paper for the 2012 Conference of the Society for Textual Scholarship, University of Texas, Austin, 31 May 2012.</bibl>
+            
+          <bibl rendition="#hang">———. <title level="a">Multiple Forms of E-Text Representation of Petrarch’s canzone <title rendition="#i">Quel’ antiquo mio dolce empio signore</title></title>. Invited paper for conference <title rendition="#i">Innovation and the Ancient: Texts and Editions</title>, University of Mississippi, Oxford, 10 April 2012.</bibl>
+        </listBibl>
+      </body>
+   </text>
+</TEI>

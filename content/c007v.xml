@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="petrarchive.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="petrarchive.xsl"?>
+<!DOCTYPE TEI [
+<!ENTITY amp7 "<choice><abbr>⁊</abbr><expan>et</expan></choice>">
+<!ENTITY amp7 "<choice><abbr>⁊</abbr><expan>et</expan></choice>">
+<!ENTITY per "<choice><abbr>ꝑ</abbr><expan>per</expan></choice>">
+<!ENTITY Per "<choice><abbr>Ꝑ</abbr><expan>Per</expan></choice>">
+<!ENTITY pre "<choice><abbr>&p-macron;</abbr><expan>per</expan></choice>">
+<!ENTITY virg "/">
+<!ENTITY virg-underdot "/&#x0323;">
+<!ENTITY Non "<choice><abbr>Nō</abbr><expan>Non</expan></choice>">
+<!ENTITY impresa "<choice><abbr>īpresa</abbr><expan>impresa</expan></choice>">
+<!ENTITY Impresa "<choice><abbr>Īpresa</abbr><expan>Impresa</expan></choice>">
+<!ENTITY sempre "<choice><abbr>sēpre</abbr><expan>sempre</expan></choice>">
+<!ENTITY Sempre "<choice><abbr>Sēpre</abbr><expan>Sempre</expan></choice>">
+<!ENTITY quanto "<choice><abbr>quāto</abbr><expan>quanto</expan></choice>">
+<!ENTITY Quanto "<choice><abbr>Quāto</abbr><expan>Quanto</expan></choice>">
+<!ENTITY quando "<choice><abbr>quādo</abbr><expan>quando</expan></choice>">
+<!ENTITY Quando "<choice><abbr>Quādo</abbr><expan>Quando</expan></choice>">
+<!ENTITY giorno "<choice><abbr>giõno</abbr><expan>giorno</expan></choice>">
+<!ENTITY non "<choice><abbr>nō</abbr><expan>non</expan></choice>">
+<!ENTITY in "<choice><abbr>ī</abbr><expan>in</expan></choice>">
+<!ENTITY pre "<choice><abbr>&p-macron;</abbr><expan>pre</expan></choice">
+<!ENTITY con "<choice><abbr>cō</abbr><expan>con</expan></choice>">
+<!ENTITY Con "<choice><abbr>cō</abbr><expan>Con</expan></choice>">
+<!ENTITY son "<choice><abbr>sō</abbr><expan>son</expan></choice>">
+<!ENTITY Son "<choice><abbr>sō</abbr><expan>Son</expan></choice>">
+<!ENTITY q-tilde "q&#x0303;">
+<!ENTITY q-macron "q&#x0304;">
+<!ENTITY p-macron "p&#x0304;">
+<!ENTITY b-combtild "b&#xFE23;">
+<!ENTITY p-dot "p&#x0307;">
+<!ENTITY u-vert-tilde "u&#x033E;">
+<!ENTITY p-vert-line "p&#x030D;">
+<!ENTITY uia "<choice><orig>uia</orig><reg>via</reg></choice>">
+<!ENTITY uai "<choice><orig>uai</orig><reg>vai</reg></choice>">
+<!ENTITY vita "<choice><orig>uita</orig><reg>vita</reg></choice>">
+<!ENTITY regapos "<reg>’</reg>">
+<!ENTITY uolta "<choice><orig>uolta</orig><reg>volta</reg></choice>">
+<!ENTITY uolte "<choice><orig>uolte</orig><reg>volte</reg></choice>">
+<!ENTITY perche "<choice><orig>perche</orig><reg>perché</reg></choice>">
+<!ENTITY egrave_reg "<choice><orig>e</orig><reg>è</reg></choice>">
+<!ENTITY si "<choice><orig>si</orig><reg>sì</reg></choice>">
+<!ENTITY Si "<choice><orig>Si</orig><reg>Sì</reg></choice>">
+<!ENTITY e "<choice><orig>e</orig><reg>è</reg></choice>">
+<!ENTITY piu "<choice><orig>piu</orig><reg>più</reg></choice>">
+<!ENTITY Piu "<choice><orig>Piu</orig><reg>Più</reg></choice>">
+<!ENTITY quello "<choice><abbr>&q-macron;llo</abbr><expan>quello</expan></choice>">
+<!ENTITY fiamma "<choice><abbr>fiāma</abbr><expan>fiamma</expan></choice>">
+<!-- period "p" to "2" comma "c" -->
+<!ENTITY p2c "<choice><orig>.</orig><reg>,</reg></choice>">
+<!ENTITY p2colon "<choice><orig>.</orig><reg>:</reg></choice>">
+<!ENTITY p2semicolon "<choice><orig>.</orig><reg>;</reg></choice>">
+<!ENTITY p2e "<choice><orig>.</orig><reg>!</reg></choice>">
+<!ENTITY c2p "<choice><orig>,</orig><reg>.</reg></choice>">
+<!ENTITY v2c "<choice><orig> /</orig><reg>,</reg></choice>">
+<!ENTITY v2q "<choice><orig> /</orig><reg>?</reg></choice>">
+<!ENTITY pilcrow2section "<choice><orig>¶</orig><reg>§</reg></choice>">
+<!ENTITY punctelevhiback "&#xF1FA;">
+<!ENTITY encodingDesc SYSTEM "encodingDesc.xml"> 
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+             <title>Petrarch's <title>Rerum vulgarium fragmenta</title>: Carta 7 verso</title> 
+             <editor xml:id="hws">H. Wayne Storey</editor>
+             <editor xml:id="jaw">John A. Walsh</editor>
+             <respStmt>
+                 <resp>Encoder</resp>
+                 <name xml:id="amm">Allison M. McCormack</name>
+             </respStmt>
+             <respStmt>
+                 <resp>Encoder</resp>
+                 <name xml:id="im">Isabella Magni</name>
+             </respStmt>
+         </titleStmt>
+            <publicationStmt xml:base="includes/publicationStmt.xml">
+               <p/>
+            </publicationStmt>
+         <sourceDesc>
+               <p/>
+         </sourceDesc>
+      </fileDesc>
+
+<encodingDesc xmlns="http://www.tei-c.org/ns/1.0">
+    <p>Where <gi>reg</gi> appears without a parent <gi>choice</gi>, the <gi>reg</gi> indicates supplied text that has been supplied for normalization or modernization purposes. <gi>supplied</gi> was not used because <gi>supplied</gi> is properly for text supplied for text missing due to damage, for instance.</p>
+    <p n="ms lines">In Petrarch's personal copy of the RVF, he consistently uses a ruled 31-line “canvas” for the layout of the poems. There is one exception, Rvf XXX, where an extra line is added to the underlying canvas. Elements that occupy a ruled manuscript line are tagged with the attribute <code>@corresp="#canvasline"</code>, where <code>#msline</code> references a category in a taxonomy of "graphic features" in the <gi>teiHeader</gi></p>
+    <classDecl>
+        <taxonomy n="graphic features">
+            <category xml:id="canvasline"><catDesc>A single ruled line in a manuscript</catDesc></category>
+        </taxonomy>
+      <taxonomy n="spaces">
+        <bibl>
+          <author>Storey, H. Wayne</author>
+          <title>Petrarchive Spaces</title>
+          <ptr target="http://bit.ly/1cXwcIU"/></bibl>
+        <category xml:id="space.placeholder">
+          <catDesc>placeholder</catDesc>
+        </category>
+        <category xml:id="space.stop">
+          <catDesc>stop space</catDesc>
+        </category>
+        <category xml:id="space.potential">
+          <catDesc>potential space</catDesc>
+        </category>
+        <category xml:id="space.reclaimed">
+          <catDesc>reclaimed space</catDesc>
+          <category xml:id="space.reclaimed.erasure_complete_and_recycling">
+            <catDesc>complete erasure and recycling</catDesc>
+          </category>
+          <category xml:id="space.reclaimed.erasure_partial_and_recycling">
+            <catDesc>partial erasure and recycling</catDesc>
+          </category>
+          <category xml:id="space.reclaimed.erasure_and_elimination">
+            <catDesc>erasure and elimination</catDesc>
+          </category>
+          <category xml:id="space.reclaimed.elimination">
+            <catDesc>elimination</catDesc>
+          </category>
+        </category>
+        <category xml:id="space.descriptive_sestina">
+          <catDesc>descriptive sestina space</catDesc>
+        </category>
+        <category xml:id="space">
+          <catDesc>generic space,intercolumnar space, interblock space</catDesc>
+        </category>
+      </taxonomy>
+    </classDecl>
+  <charDecl>
+    <char xml:id="qbardes">
+      <charName>LATIN SMALL LETTER Q WITH STROKE THROUGH DESCENDER</charName>
+      <charProp>
+        <localName>entity</localName>
+        <value>qbardes</value>
+      </charProp>
+      <mapping type="visual">&#xa757;</mapping>
+      <mapping type="MUFI">U+A757</mapping>
+      <mapping type="PUA">U+A757</mapping>
+    </char>
+  </charDecl>
+    <charDecl>
+        <char xml:id="punctelevhiback">
+            <charName>PUNCTUS ELEVATUS WITH HIGH
+                BACK</charName>
+            <charProp>
+                <localName>entity</localName>
+                <value>punctelevhiback</value>
+            </charProp>
+            <mapping type="visual"
+                >.&#x0312;</mapping>
+            <mapping type="MUFI">U+F1FA</mapping>
+            <mapping type="PUA">U+F1FA</mapping>
+        </char>
+    </charDecl>
+    <charDecl>
+        <char xml:id="virgsusp">
+            <charName>VIRGULA SUSPENSIVA</charName>
+            <charProp>
+                <localName>entity</localName>
+                <value>virgsusp</value>
+            </charProp>
+            <mapping type="visual">&#xF1F4;</mapping>
+            <mapping type="MUFI">U+F1F4</mapping>
+            <mapping type="PUA">U+F1F4</mapping>
+        </char>
+    </charDecl>
+    <charDecl>
+        <char xml:id="punctinter">
+            <charName>PUNCTUS INTERROGATIVUS</charName>
+            <charProp>
+                <localName>entity</localName>
+                <value>punctinter</value>
+            </charProp>
+            <mapping type="visual">?</mapping>
+            <mapping type="MUFI">U+F160</mapping>
+            <mapping type="PUA">U+F160</mapping>
+        </char>
+    </charDecl>
+    <charDecl>
+        <char xml:id="brvbar">
+            <charName>BROKEN BAR</charName>
+            <charProp>
+                <localName>entity</localName>
+                <value>brvbar</value>
+            </charProp>
+            <mapping type="visual">&#x00A6;</mapping>
+            <mapping type="MUFI">U+00A6</mapping>
+            <mapping type="PUA">U+00A6</mapping>
+        </char>
+        
+        <char xml:id="pflour">
+            <charName>LATIN SMALL LETTER P WITH
+                FLOURISH</charName>
+            <charProp>
+                <localName>entity</localName>
+                <value>pflour</value>
+            </charProp>
+            <mapping type="visual"
+                >&#xa753;</mapping>
+            <mapping type="MUFI">U+A753</mapping>
+            <mapping type="PUA">U+A753</mapping>
+        </char>
+        
+    </charDecl>
+    <charDecl>
+        <char xml:id="verbar">
+            <charName>VERTICAL LINE</charName>
+            <charProp>
+                <localName>entity</localName>
+                <value>verbar</value>
+            </charProp>
+            <mapping type="visual">&#x007c;</mapping>
+            <mapping type="MUFI">U+007C</mapping>
+            <mapping type="PUA">U+007C</mapping>
+        </char>
+    </charDecl>
+    <charDecl>
+        <char xml:id="parag">
+            <charName>PARAGRAPHUS</charName>
+            <charProp>
+                <localName>entity</localName>
+                <value>parag</value>
+            </charProp>
+
+            <mapping type="visual">&#xF1E1;</mapping>
+        </char>
+    </charDecl>
+    
+    <tagsDecl>
+
+        <rendition xml:id="b" n="tiebp:bold" scheme="css">
+            font-weight:bold;
+        </rendition> 
+        
+        <rendition xml:id="i" n="tiebp:italic" scheme="css">
+            font-style:italic;
+        </rendition> 
+        
+        <rendition xml:id="u" n="tiebp:underline" scheme="css">
+            text-decoration:underline;
+        </rendition> 
+        
+        <rendition xml:id="n" n="teibp:normal" scheme="css">
+            font-weight:normal;
+            text-decoration:none;
+            font-style:normal;
+        </rendition>
+        
+        <rendition xml:id="mono" n="teibp:mono" scheme="css">
+            font-family:Monaco,Courier,monospace;
+        </rendition>
+        
+        <rendition xml:id="super" n="tiebp:super" scheme="css">
+            vertical-align:super;
+            font-size:80%;
+        </rendition>
+        
+        <rendition xml:id="sub" n="tiebp:sub" scheme="css">
+            vertical-align:sub;
+            font-size:80%;
+        </rendition>
+        
+        <rendition xml:id="lowercase" n="tiebp:lowercase" scheme="css">
+            text-transform:lowercase;
+        </rendition>
+        
+        <rendition xml:id="uppercase" n="tiebp:uppercase" scheme="css">
+            text-transform:uppercase;
+        </rendition>
+        
+        <rendition xml:id="capitalize" n="tiebp:capitalize" scheme="css">
+            text-transform:capitalize;
+        </rendition>
+        
+        <rendition xml:id="small-caps" n="tiebp:small-caps" scheme="css">
+            font-variant:small-caps;
+        </rendition>
+        
+
+        <rendition xml:id="block" n="tiebp:block" scheme="css">
+            display:block;
+        </rendition> 
+        
+        <rendition xml:id="blockquote" n="tiebp:blockquote" scheme="css">
+            display:block;
+            font-size:90%;
+            margin-left:3em;
+            padding-left:1em;
+            border-left: 1px solid gray;
+            margin-top:.75em;
+            margin-bottom:.75em;
+            padding-top:.75em;
+            padding-bottom:.75em;
+        </rendition>
+        
+        <rendition corresp="#blockquote" n="tiebp:blockquote" scheme="css" scope="before">
+
+            content:"" !important;
+        </rendition>
+        
+        <rendition corresp="#blockquote" n="tiebp:blockquote" scheme="css" scope="after">
+    
+            content:"" !important;
+        </rendition>
+        
+        <rendition xml:id="codeblock" n="teibp:codeblock" scheme="css">
+            display: block;
+            font-size: 80%;
+            margin-left: 1em;
+            padding-left: 1em;
+            border-left: 1px solid gray;
+            margin-top: .75em;
+            margin-bottom: .75em;
+            padding-top: .75em;
+            padding-bottom: .75em;
+            font-family:Monaco,Courier,monospace;
+            white-space:pre;
+        </rendition>
+        
+        
+        <rendition xml:id="inline" n="teibp:inline" scheme="css">
+            display:inline;
+        </rendition>
+        
+        <rendition xml:id="center" n="tiebp:center" scheme="css">
+            display:block;
+            text-align:center;
+            margin-left:auto;
+            margin-right:auto;
+        </rendition>
+        
+        <rendition xml:id="left" n="teibp:left" scheme="css">
+            text-align:left;
+        </rendition>
+        
+        <rendition xml:id="right" n="teibp:right" scheme="css">
+            text-align:right;
+        </rendition>
+        
+        <rendition xml:id="justify" n="teibp:justify" scheme="css">
+            text-align:justify;
+        </rendition>
+        
+        <rendition xml:id="center-block" n="tiebp:center-block" scheme="css">
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+        </rendition>
+        
+        <rendition xml:id="hang" n="teibp:hang" scheme="css">
+            display:block;
+            padding-left:2.5em;
+            text-indent:-2.5em;
+        </rendition>
+        
+
+        <rendition xml:id="l-indent-01" n="tiebp:l-indent-01" scheme="css">
+            display:block;
+            padding-left:4em;
+            text-indent:-2em;
+        </rendition>
+        
+        <rendition xml:id="l-indent-02" n="tiebp:l-indent-02" scheme="css">
+            display:block;
+            padding-left:6em;
+            text-indent:-2em;
+        </rendition>
+        
+        <rendition xml:id="l-indent-03" n="tiebp:l-indent-03" scheme="css">
+            display:block;
+            padding-left:8em;
+            text-indent:-2em;
+        </rendition>
+        
+        <rendition xml:id="l-indent-04" n="tiebp:l-indent-04" scheme="css">
+            display:block;
+            padding-left:10em;
+            text-indent:-2em;
+        </rendition>
+        
+        <rendition xml:id="l-indent-05" n="tiebp:l-indent-05" scheme="css">
+            display:block;
+            padding-left:12em;
+            text-indent:-2em;
+        </rendition>
+        
+        <rendition xml:id="l-indent-06" n="tiebp:l-indent-06" scheme="css">
+            display:block;
+            padding-left:14em;
+            text-indent:-2em;
+        </rendition>
+        
+        <rendition xml:id="l-indent-07" n="tiebp:l-indent-07" scheme="css">
+            display:block;
+            padding-left:16em;
+            text-indent:-2em;
+        </rendition>
+        
+        <rendition xml:id="l-indent-08" n="tiebp:l-indent-08" scheme="css">
+            display:block;
+            padding-left:18em;
+            text-indent:-2em;
+        </rendition>
+        
+        <rendition xml:id="indent" n="tiebp:indent" scheme="css" scope="before">
+            /* text-indent:4em; */
+            /* The above method of describing an indentation for, say, a paragraph is 
+            preferred. The method being used is in response to a bug in some browsers 
+            whereby a block element, like a paragraph, is erroneously re-indented 
+            after interruption by another block element (like a list, which is valid,
+            in TEI, inside a paragraph). */
+            content:"\A0\A0\A0\A0\A0\A0";
+        </rendition>
+        
+        <!-- font sizes -->
+        
+        <rendition xml:id="small" n="tiebp:small" scheme="css">
+            font-size:90%;
+        </rendition>
+        
+        <rendition xml:id="x-small" n="tiebp:x-small" scheme="css">
+            font-size:85%;
+        </rendition>
+        
+        <rendition xml:id="xx-small" n="tiebp:xx-small" scheme="css">
+            font-size:80%;
+        </rendition>
+        
+        <rendition xml:id="large" n="tiebp:large" scheme="css">
+            font-size:110%;
+        </rendition>
+        
+        <rendition xml:id="x-large" n="tiebp:x-large" scheme="css">
+            font-size:115%;
+        </rendition>
+        
+        <rendition xml:id="xxx-large" n="tiebp:xxx-large" scheme="css">
+            font-size:120%;
+        </rendition>
+        
+        <rendition xml:id="bracket" n="teibp:bracket" scheme="css"/>
+        
+        <rendition corresp="#bracket" n="tiebp:bracket" scheme="css" scope="before">
+            content:"&lt;";
+        </rendition>
+        
+        <rendition corresp="#bracket" n="tiebp:bracket" scheme="css" scope="after">
+            content:">";
+        </rendition>
+        
+
+        <rendition xml:id="red" scheme="css"
+            >color:#9f1706;</rendition>
+        <rendition xml:id="blue" scheme="css"
+            >color:#12398c;</rendition>
+        <rendition xml:id="fs18pt" scheme="css"
+            >font-size:18pt;</rendition>
+        <rendition xml:id="fs24pt" scheme="css"
+            >font-size:24pt;</rendition>
+    </tagsDecl>
+</encodingDesc>
+
+   </teiHeader>
+
+
+   <text>
+      <body>
+          <pb n="charta 7 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-007v.jpg" /> 
+        <lg xml:id="rvf030" type="sestina" n="30"  rendition="#columns_2">
+            <cb n="1-of-2"/>
+            <l n="1" corresp="#canvasline"><choice><orig><hi rendition="#red #fs24pt">G</hi><hi rendition="#small-caps">i</hi>ouane</orig><reg><hi rendition="#red #fs24pt">G</hi><hi rendition="#small-caps">i</hi>ovane</reg></choice> <choice><abbr>dōna</abbr><expan>donna</expan></choice> sotto un <choice><orig>uerde</orig><reg>verde</reg></choice> lauro</l>
+            <l n="2" corresp="#canvasline">Vidi &piu; <choice><abbr>biāca</abbr><expan>biancha</expan></choice> &amp7; &piu; fredda che <choice><orig>neue</orig><reg>neve</reg></choice></l>
+            <l n="3" corresp="#canvasline">&Non; &per;cossa dal sol molti &amp7; <choice><orig><abbr>moltāni</abbr><expan>moltanni</expan></orig><reg>molt’anni</reg></choice>&p2semicolon;</l>
+            <l n="4" corresp="#canvasline"><choice><orig>El</orig><reg>E ’l</reg></choice> suo parlare <choice><orig>el</orig><reg>e ’l</reg></choice> bel <choice><orig>uiso</orig><reg>viso</reg></choice><choice><orig> &virg;</orig><reg/></choice> &amp7; le chiome</l>
+            <l n="5" corresp="#canvasline">Mi piacquen &si; <choice><orig>chi</orig><reg>ch’i’</reg></choice> <choice><orig>lo</orig><reg>l’ò</reg></choice> <choice><abbr>dināçi</abbr><expan>dinançi</expan></choice> <choice><orig>agliocchi</orig><reg>agli occhi</reg></choice><choice><orig> &virg;</orig><reg/></choice></l>
+            <l n="6" corresp="#canvasline"><choice><orig>Edauro</orig><reg>Ed avrò</reg></choice> <choice><abbr>sēpr<subst><del type="erasure"><gap reason="illegible"/></del><add>e</add></subst></abbr><expan>sempr<subst><del type="erasure"><gap reason="illegible"/></del><add>e</add></subst></expan></choice> <choice><orig>ouio</orig><reg>ov’io</reg></choice> sia &in; poggio <choice><orig>on</orig><reg>o ’n</reg></choice> <choice><orig>riua</orig><reg>riva</reg></choice>.</l>
+            <l n="7" corresp="#canvasline"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi>Allor <choice><abbr>sarāno</abbr><expan>saranno</expan></choice> i miei pensieri a <choice><orig>riua</orig><reg>riva</reg></choice></l>
+            <l n="8" corresp="#canvasline">Che foglia <choice><orig>uerde</orig><reg>verde</reg></choice> &non; si <choice><orig>troui</orig><reg>trovi</reg></choice> &in; lauro<supplied>;</supplied></l>
+            <l n="9" corresp="#canvasline">&Quando; <choice><orig>auro</orig><reg>avrò</reg></choice> queto il core&v2c; asciutti gli occhi<supplied>,</supplied></l>
+            <l n="10" corresp="#canvasline">Vedrem ghiacciare il foco&p2c; arder la <choice><orig>neue</orig><reg>neve</reg></choice>.</l>
+            <l n="11" corresp="#canvasline">Non <choice><orig>o</orig><reg>ò</reg></choice> tanti capelli &in; queste chiome</l>
+            <l n="12" corresp="#canvasline"><choice><abbr>Quāti</abbr><expan>Quanti</expan></choice> <choice><orig>uorrei</orig><reg>vorrei</reg></choice> &q-tilde;l giorno <choice><abbr>attēder</abbr><expan>attender</expan></choice> <choice><abbr>āni</abbr><expan>anni</expan></choice>.</l>
+            <l n="13" corresp="#canvasline"><hi rendition="#red #fs24pt">&pilcrow2section;</hi>Ma <choice><orig><abbr>&per;che</abbr><expan>perche</expan></orig><reg>perché</reg></choice> <choice><orig>uola</orig><reg>vola</reg></choice> il <choice><abbr>tēpo</abbr><expan>tempo</expan></choice><choice><orig> &virg;</orig><reg/></choice> &amp7; fuggon gli <choice><abbr>āni</abbr><expan>anni</expan></choice>&v2c;</l>
+            <l n="14" corresp="#canvasline">&Si; <choice><orig>cha</orig><reg>ch ’a</reg></choice> la morte &in; un punto <choice><orig>sarriua</orig><reg>s’arriva</reg></choice>&v2c;</l>
+            <l n="15" corresp="#canvasline">O colle brune<choice><orig> &virg;</orig><reg/></choice> o colle <choice><abbr>biāche</abbr><expan>bianche</expan></choice> chiome<choice><orig> &virg;</orig><reg/></choice></l>
+            <l n="16" corresp="#canvasline"><choice><orig>Seguiro</orig><reg>Seguirò</reg></choice> <choice><orig><abbr>lõbra</abbr><expan>lombra</expan></orig><reg>l’ombra</reg></choice> di quel dolce lauro</l>
+            <l n="17" corresp="#canvasline">&Per; lo &piu; ardente sole<choice><orig> &virg;</orig><reg/></choice> et &per; la <choice><orig>neue</orig><reg>neve</reg></choice>&p2c;</l>
+            <l n="18" corresp="#canvasline">Fin <choice><orig>chelultimo</orig><reg>che l’ultimo</reg></choice> <choice><orig>di</orig><reg>dì</reg></choice> chiuda <choice><orig>questocchi</orig><reg>quest'occhi</reg></choice>.</l>
+            <l n="19" corresp="#canvasline"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi>&Non; fur giamai <choice><orig>ueduti</orig><reg>veduti</reg></choice> &si; <choice><orig>be gliocchi</orig><reg>begli occhi</reg></choice></l>
+            <l n="20" corresp="#canvasline"><choice><orig>Oue</orig><reg>Ove</reg></choice> la nostra etade<choice><orig> &virg;</orig><reg/></choice> o ne<supplied>’</supplied> <choice><orig>primanni</orig><reg>prim’anni</reg></choice>&p2c;</l>
+            <l n="21" corresp="#canvasline">Che mi struggon <choice><orig>cosi</orig><reg>così</reg></choice><choice><orig> &virg;</orig><reg/></choice> <choice><orig>comel</orig><reg>come ’l</reg></choice> sol <choice><orig>neue</orig><reg>neve</reg></choice></l>
+            <l n="22" corresp="#canvasline">Onde procede lagrimosa <choice><orig>riua</orig><reg>riva</reg></choice><supplied>,</supplied></l>
+            <l n="23" corresp="#canvasline"><choice><orig>Chamor</orig><reg>Ch’Amor</reg></choice> conduce a pie<supplied>’</supplied> del duro lauro</l>
+         
+         <cb n="2-of-2"/>
+            <l n="24"><choice><orig>Cha</orig><reg>Ch’à</reg></choice> i rami di <choice><abbr>diāante</abbr><expan>diamante</expan></choice>&v2c; &amp7; <choice><orig><reg>d’or</reg></orig></choice> le chiome.</l>
+            <l n="25"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi>I<supplied>’</supplied> temo di cangiar pria <choice><orig>uolto</orig><reg>volto</reg></choice> &amp7; chiome</l>
+            <l n="26">Che con <choice><orig>uera</orig><reg>vera</reg></choice> <choice><orig>pieta</orig><reg>pietà</reg></choice> mi mostri <choice><orig>gliocchi</orig><reg>gli occhi</reg></choice></l>
+            <l n="27"><choice><orig>Lidolo</orig><reg>L’idolo</reg></choice> mio&v2c; scolpito in <choice><orig>uiuo</orig><reg>vivo</reg></choice> lauro&p2semicolon;</l>
+            <l n="28">Che <choice><orig>sal</orig><reg>s’al</reg></choice> <choice><abbr>cōtar</abbr><expan>contar</expan></choice> &non; erro&v2c; oggi a <choice><orig>settanni</orig><reg>sett’anni</reg></choice></l>
+            <l n="29">Che sospirando <choice><orig>uo</orig><reg>vo</reg></choice> di <choice><orig>riua</orig><reg>riva</reg></choice> in <choice><orig>riua</orig><reg>riva</reg></choice></l>
+            <l n="30">La notte <choice><orig>el</orig><reg>e ’l</reg></choice> giorno&p2c; al caldo <choice><orig>edalaneue</orig><reg>ed a la neve</reg></choice>.</l>
+            <l n="31"><hi rendition="#red #fs24pt">&pilcrow2section;</hi><choice><abbr>Dētro</abbr><expan>Dentro</expan></choice> pur foco &amp7; for candida <choice><orig>neue</orig><reg>neve</reg></choice><supplied>,</supplied></l>
+            <l n="32">Sol &con; questi pensier<supplied>’</supplied>&p2c; &con; altre chiome<supplied>,</supplied></l>
+            <l n="33">Sempre <choice><abbr>piāgēdo</abbr><expan>piangendo</expan></choice> <choice><orig>andro</orig><reg>andrò</reg></choice> &per; ogni <choice><orig>riua</orig><reg>riva</reg></choice>&p2c;</l>
+            <l n="34">&Per; far forse <choice><orig>pieta</orig><reg>pietà</reg></choice> <choice><orig>uenir</orig><reg>veir</reg></choice> <choice><orig>ne gliocchi</orig><reg>negli occhi</reg></choice></l>
+            <l n="35">Di tal che <choice><orig>nascera</orig><reg>nascerà</reg></choice> dopo <choice><orig>millanni</orig><reg>mill’anni</reg></choice>&p2c;</l>
+            <l n="36">Se tanto <choice><orig>uiuer</orig><reg>viver</reg></choice> <choice><orig>po</orig><reg>pò</reg></choice> ben colto lauro.</l>
+            <l n="37"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi><choice><orig>Lauro</orig><reg>L’auro</reg></choice> e i <choice><orig>topacij</orig><reg>topacii</reg></choice> al sol sopra la <choice><orig>neue</orig><reg>neve</reg></choice></l>
+            <l n="38">Vincon le <choice><abbr>biōde</abbr><expan>bionde</expan></choice> chiome &pre;sso <choice><orig>a gliocchi</orig><reg>agli occhi</reg></choice></l>
+            <l n="39">Che menan <choice><orig><abbr>gliāni</abbr><expan>glianni</expan></orig><reg>gli anni</reg></choice> miei &si; tosto a <choice><orig>riua</orig><reg>riva</reg></choice>.</l>        
+      </lg>
+          <space corresp="#canvasline"/>
+          <lg xml:id="rvf031" type="sonnet" n="31">
+              <lg type="octave">
+                  <lg type="dblvrs">
+                      <l n="1"><hi rendition="#red #fs24pt">Q</hi><hi rendition="#small-caps">u</hi>esta anima gentile che si diparte&v2c;</l>	
+                      <l n="2"><choice><orig>Ançi</orig><reg>Anzi</reg></choice> tempo chiamata a <choice><orig>laltra</orig><reg>l’altra</reg></choice> <choice><orig>uita</orig><reg>vita</reg></choice><supplied>,</supplied></l>
+                  </lg>
+                  <lg type="dblvrs">
+                      <l n="3">Se lassuso &e; quanto esser <choice><orig>de</orig><reg>dê</reg></choice> gradita&v2c;</l>		
+                      <l n="4"><choice><orig>Terra</orig><reg>Terrà</reg></choice> del ciel la &piu; beata parte.</l>
+                  </lg>
+                  <lg type="dblvrs">
+                      <l n="5"><choice><orig>Sella</orig><reg>S’ella</reg></choice> riman <choice><orig>fral</orig><reg>fra ’l</reg></choice> <choice><orig>terço</orig><reg>terzo</reg></choice> lume &amp7; <choice><orig>marte</orig><reg>Marte</reg></choice>&p2c;</l> 
+                      <l n="6">Fia la <choice><orig>uista</orig><reg>vista</reg></choice> del sole scolorita&v2c;</l>
+                  </lg>
+                  <lg type="dblvrs">
+                      <l n="7">Poi <choice><orig>cha</orig><reg>ch’a</reg></choice> mirar sua <choice><orig>belleçça</orig><reg>bellezza</reg></choice> infinita</l>	 
+                      <l n="8"><choice><orig>Lanime</orig><reg>L’anime</reg></choice> degne intorno a lei fien sparte.</l>
+                  </lg>
+              </lg>
+              <lg type="sestet">
+                  <lg type="dblvrs">
+                      <l n="9">Se si posasse sotto al quarto nido<supplied>,</supplied></l> 
+                      <l n="10">Ciascuna de le tre saria men bella&p2c;</l>
+                  </lg>
+                  <lg type="dblvrs">
+                      <l n="11">Et essa sola <choice><orig>auria</orig><reg>avria</reg></choice> la fama <choice><orig>el</orig><reg>e ’l</reg></choice> grido.</l> 
+                      <l n="12">Nel quinto giro non habitrebbe ella&p2semicolon;</l>
+                  </lg>
+                  <lg type="dblvrs">
+                      <l n="13">Ma se <choice><orig>uola</orig><reg>vola</reg></choice> &piu; alto&v2c; assai mi fido<choice><orig>.</orig><reg/></choice></l> 
+                      <l n="14">Che con <choice><orig>gioue</orig><reg>Giove</reg></choice> sia <choice><orig>uinta</orig><reg>vinta</reg></choice> ogni altra stella.</l>
+                  </lg>
+              </lg>
+          </lg>     
+      </body>
+   </text>
+</TEI>

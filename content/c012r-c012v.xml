@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="petrarchive.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="petrarchive.xsl"?>
+<!DOCTYPE TEI [
+<!-- Firefox does not play nice with parameter entities. So I had to embed the stuff in here. We can go back to the "better" way with parameter entities, but need to pre-process the documents to remove all entity references before moving to petarchive.org. 
+<!ENTITY % petrarchive_entities SYSTEM "petrarchive.ent">
+%petrarchive_entities;
+-->
+<!ENTITY amp7 "<choice><abbr>⁊</abbr><expan>et</expan></choice>">
+<!ENTITY amp7 "<choice><abbr>⁊</abbr><expan>et</expan></choice>">
+<!ENTITY per "<choice><abbr>ꝑ</abbr><expan>per</expan></choice>">
+<!ENTITY Per "<choice><abbr>Ꝑ</abbr><expan>Per</expan></choice>">
+<!ENTITY virg "/">
+<!ENTITY virg-underdot "/&#x0323;">
+<!ENTITY Non "<choice><abbr>Nō</abbr><expan>Non</expan></choice>">
+<!ENTITY impresa "<choice><abbr>īpresa</abbr><expan>impresa</expan></choice>">
+<!ENTITY Impresa "<choice><abbr>Īpresa</abbr><expan>Impresa</expan></choice>">
+<!ENTITY sempre "<choice><abbr>sēpre</abbr><expan>sempre</expan></choice>">
+<!ENTITY Sempre "<choice><abbr>Sēpre</abbr><expan>Sempre</expan></choice>">
+<!ENTITY quanto "<choice><abbr>quāto</abbr><expan>quanto</expan></choice>">
+<!ENTITY Quanto "<choice><abbr>Quāto</abbr><expan>Quanto</expan></choice>">
+<!ENTITY quando "<choice><abbr>quādo</abbr><expan>quando</expan></choice>">
+<!ENTITY Quando "<choice><abbr>Quādo</abbr><expan>Quando</expan></choice>">
+<!ENTITY giorno "<choice><abbr>giõno</abbr><expan>giorno</expan></choice>">
+<!ENTITY non "<choice><abbr>nō</abbr><expan>non</expan></choice>">
+<!ENTITY in "<choice><abbr>ī</abbr><expan>in</expan></choice>">
+<!ENTITY pre "<choice><abbr>&p-macron;</abbr><expan>pre</expan></choice">
+<!ENTITY con "<choice><abbr>cō</abbr><expan>con</expan></choice>">
+<!ENTITY Con "<choice><abbr>cō</abbr><expan>Con</expan></choice>">
+<!ENTITY son "<choice><abbr>sō</abbr><expan>son</expan></choice>">
+<!ENTITY Son "<choice><abbr>sō</abbr><expan>Son</expan></choice>">
+<!ENTITY q-tilde "q&#x0303;">
+<!ENTITY q-macron "q&#x0304;">
+<!ENTITY p-macron "p&#x0304;">
+<!ENTITY b-combtild "b&#xFE23;">
+<!ENTITY p-dot "p&#x0307;">
+<!ENTITY u-vert-tilde "u&#x033E;">
+<!ENTITY p-vert-line "p&#x030D;">
+<!ENTITY uia "<choice><orig>uia</orig><reg>via</reg></choice>">
+<!ENTITY uai "<choice><orig>uai</orig><reg>vai</reg></choice>">
+<!ENTITY vita "<choice><orig>uita</orig><reg>vita</reg></choice>">
+<!ENTITY regapos "<reg>’</reg>">
+<!ENTITY uolta "<choice><orig>uolta</orig><reg>volta</reg></choice>">
+<!ENTITY uolte "<choice><orig>uolte</orig><reg>volte</reg></choice>">
+<!ENTITY perche "<choice><orig>perche</orig><reg>perché</reg></choice>">
+<!ENTITY egrave_reg "<choice><orig>e</orig><reg>è</reg></choice>">
+<!ENTITY si "<choice><orig>si</orig><reg>sì</reg></choice>">
+<!ENTITY Si "<choice><orig>Si</orig><reg>Sì</reg></choice>">
+<!ENTITY e "<choice><orig>e</orig><reg>è</reg></choice>">
+<!ENTITY piu "<choice><orig>piu</orig><reg>più</reg></choice>">
+<!ENTITY Piu "<choice><orig>Piu</orig><reg>Più</reg></choice>">
+<!ENTITY quello "<choice><abbr>&q-macron;llo</abbr><expan>quello</expan></choice>">
+<!ENTITY fiamma "<choice><abbr>fiāma</abbr><expan>fiamma</expan></choice>">
+<!-- period "p" to "2" comma "c" -->
+<!ENTITY p2c "<choice><orig>.</orig><reg>,</reg></choice>">
+<!ENTITY p2colon "<choice><orig>.</orig><reg>:</reg></choice>">
+<!ENTITY p2semicolon "<choice><orig>.</orig><reg>;</reg></choice>">
+<!ENTITY p2e "<choice><orig>.</orig><reg>!</reg></choice>">
+<!ENTITY c2p "<choice><orig>,</orig><reg>.</reg></choice>">
+<!ENTITY v2c "<choice><orig> /</orig><reg>,</reg></choice>">
+<!ENTITY v2q "<choice><orig> /</orig><reg>?</reg></choice>">
+<!ENTITY pilcrow2section "<choice><orig>¶</orig><reg>§</reg></choice>">
+<!ENTITY punctelevhiback "&#xF1FA;">
+<!ENTITY encodingDesc SYSTEM "encodingDesc.xml"> 
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Petrarch’s <title rendition="#i">Rerum vulgarium fragmenta</title>: Charta 12 recto and verso</title>
+            <editor xml:id="hws">H. Wayne Storey</editor>
+            <editor xml:id="jaw">John A. Walsh</editor>
+            <respStmt>
+               <resp>Encoder</resp>
+               <name xml:id="amm">Allison M. McCormack</name>
+            </respStmt>
+            <respStmt>
+               <resp>Encoder</resp>
+               <name xml:id="im">Isabella Magni</name>
+            </respStmt>
+             <respStmt>
+                 <resp>Encoder</resp>
+                 <name xml:id="gt">Grace Thomas</name>
+             </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+        <seriesStmt>
+          <title>The Petrarchive: An Edition of Petrarch’s Songbook</title>
+          <respStmt>
+            <resp> Edited by </resp>
+            <name> Wayne Storey </name>
+            <name> John Walsh</name>
+          </respStmt>
+        </seriesStmt>
+         <sourceDesc>
+            <msDesc xml:id="vat.lat.3195">
+               <msIdentifier>
+                  <country>Vatican City</country>
+                  <repository>Vatican Library</repository>
+                  <collection>Vat. lat.</collection>
+                  <idno>3195</idno>
+                  <msName>Vat. lat. 3195</msName>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc xmlns="http://www.tei-c.org/ns/1.0">
+    <p>Where <gi>reg</gi> appears without a parent <gi>choice</gi>, the <gi>reg</gi> indicates supplied text that has been supplied for normalization or modernization purposes. <gi>supplied</gi> was not used because <gi>supplied</gi> is properly for text supplied for text missing due to damage, for instance.</p>
+    <p n="ms lines">In Petrarch's personal copy of the RVF, he consistently uses a ruled 31-line “canvas” for the layout of the poems. There is one exception, Rvf XXX, where an extra line is added to the underlying canvas. Elements that occupy a ruled manuscript line are tagged with the attribute <code>@corresp="#canvasline"</code>, where <code>#msline</code> references a category in a taxonomy of "graphic features" in the <gi>teiHeader</gi></p>
+    <classDecl>
+        <taxonomy n="graphic features">
+            <category xml:id="canvasline"><catDesc>A single ruled line in a manuscript</catDesc></category>
+        </taxonomy>
+      <taxonomy n="spaces">
+        <bibl>
+          <author>Storey, H. Wayne</author>
+          <title>Petrarchive Spaces</title>
+          <ptr target="http://bit.ly/1cXwcIU"/></bibl>
+        <category xml:id="space.placeholder">
+          <catDesc>placeholder</catDesc>
+        </category>
+        <category xml:id="space.stop">
+          <catDesc>stop space</catDesc>
+        </category>
+        <category xml:id="space.potential">
+          <catDesc>potential space</catDesc>
+        </category>
+        <category xml:id="space.reclaimed">
+          <catDesc>reclaimed space</catDesc>
+          <category xml:id="space.reclaimed.erasure_complete_and_recycling">
+            <catDesc>complete erasure and recycling</catDesc>
+          </category>
+          <category xml:id="space.reclaimed.erasure_partial_and_recycling">
+            <catDesc>partial erasure and recycling</catDesc>
+          </category>
+          <category xml:id="space.reclaimed.erasure_and_elimination">
+            <catDesc>erasure and elimination</catDesc>
+          </category>
+          <category xml:id="space.reclaimed.elimination">
+            <catDesc>elimination</catDesc>
+          </category>
+        </category>
+        <category xml:id="space.descriptive_sestina">
+          <catDesc>descriptive sestina space</catDesc>
+        </category>
+        <category xml:id="space">
+          <catDesc>generic space,intercolumnar space, interblock space</catDesc>
+        </category>
+      </taxonomy>
+    </classDecl>
+  <charDecl>
+    <char xml:id="qbardes">
+      <charName>LATIN SMALL LETTER Q WITH STROKE THROUGH DESCENDER</charName>
+      <charProp>
+        <localName>entity</localName>
+        <value>qbardes</value>
+      </charProp>
+      <mapping type="visual">&#xa757;</mapping>
+      <mapping type="MUFI">U+A757</mapping>
+      <mapping type="PUA">U+A757</mapping>
+    </char>
+  </charDecl>
+    <charDecl>
+        <char xml:id="punctelevhiback">
+            <charName>PUNCTUS ELEVATUS WITH HIGH
+                BACK</charName>
+            <charProp>
+                <localName>entity</localName>
+                <value>punctelevhiback</value>
+            </charProp>
+            <mapping type="visual"
+                >.&#x0312;</mapping>
+            <mapping type="MUFI">U+F1FA</mapping>
+            <mapping type="PUA">U+F1FA</mapping>
+        </char>
+    </charDecl>
+    <charDecl>
+        <char xml:id="virgsusp">
+            <charName>VIRGULA SUSPENSIVA</charName>
+            <charProp>
+                <localName>entity</localName>
+                <value>virgsusp</value>
+            </charProp>
+            <mapping type="visual">&#xF1F4;</mapping>
+            <mapping type="MUFI">U+F1F4</mapping>
+            <mapping type="PUA">U+F1F4</mapping>
+        </char>
+    </charDecl>
+    <charDecl>
+        <char xml:id="punctinter">
+            <charName>PUNCTUS INTERROGATIVUS</charName>
+            <charProp>
+                <localName>entity</localName>
+                <value>punctinter</value>
+            </charProp>
+            <mapping type="visual">?</mapping>
+            <mapping type="MUFI">U+F160</mapping>
+            <mapping type="PUA">U+F160</mapping>
+        </char>
+    </charDecl>
+    <charDecl>
+        <char xml:id="brvbar">
+            <charName>BROKEN BAR</charName>
+            <charProp>
+                <localName>entity</localName>
+                <value>brvbar</value>
+            </charProp>
+            <mapping type="visual">&#x00A6;</mapping>
+            <mapping type="MUFI">U+00A6</mapping>
+            <mapping type="PUA">U+00A6</mapping>
+        </char>
+        
+        <char xml:id="pflour">
+            <charName>LATIN SMALL LETTER P WITH
+                FLOURISH</charName>
+            <charProp>
+                <localName>entity</localName>
+                <value>pflour</value>
+            </charProp>
+            <mapping type="visual"
+                >&#xa753;</mapping>
+            <mapping type="MUFI">U+A753</mapping>
+            <mapping type="PUA">U+A753</mapping>
+        </char>
+        
+    </charDecl>
+    <charDecl>
+        <char xml:id="verbar">
+            <charName>VERTICAL LINE</charName>
+            <charProp>
+                <localName>entity</localName>
+                <value>verbar</value>
+            </charProp>
+            <mapping type="visual">&#x007c;</mapping>
+            <mapping type="MUFI">U+007C</mapping>
+            <mapping type="PUA">U+007C</mapping>
+        </char>
+    </charDecl>
+    <charDecl>
+        <char xml:id="parag">
+            <charName>PARAGRAPHUS</charName>
+            <charProp>
+                <localName>entity</localName>
+                <value>parag</value>
+            </charProp>
+            <!-- <mapping type="visual">&#x23A7;</mapping> -->
+            <mapping type="visual">&#xF1E1;</mapping>
+        </char>
+    </charDecl>
+    
+    <tagsDecl>
+        <!-- Basic text formatting: bold, italic, underline, "normal," etc. -->
+        <rendition xml:id="b" n="tiebp:bold" scheme="css">
+            font-weight:bold;
+        </rendition> 
+        
+        <rendition xml:id="i" n="tiebp:italic" scheme="css">
+            font-style:italic;
+        </rendition> 
+        
+        <rendition xml:id="u" n="tiebp:underline" scheme="css">
+            text-decoration:underline;
+        </rendition> 
+        
+        <rendition xml:id="n" n="teibp:normal" scheme="css">
+            font-weight:normal;
+            text-decoration:none;
+            font-style:normal;
+        </rendition>
+        
+        <rendition xml:id="mono" n="teibp:mono" scheme="css">
+            font-family:Monaco,Courier,monospace;
+        </rendition>
+        
+        <rendition xml:id="super" n="tiebp:super" scheme="css">
+            vertical-align:super;
+            font-size:80%;
+        </rendition>
+        
+        <rendition xml:id="sub" n="tiebp:sub" scheme="css">
+            vertical-align:sub;
+            font-size:80%;
+        </rendition>
+        
+        <rendition xml:id="lowercase" n="tiebp:lowercase" scheme="css">
+            text-transform:lowercase;
+        </rendition>
+        
+        <rendition xml:id="uppercase" n="tiebp:uppercase" scheme="css">
+            text-transform:uppercase;
+        </rendition>
+        
+        <rendition xml:id="capitalize" n="tiebp:capitalize" scheme="css">
+            text-transform:capitalize;
+        </rendition>
+        
+        <rendition xml:id="small-caps" n="tiebp:small-caps" scheme="css">
+            font-variant:small-caps;
+        </rendition>
+        
+        <!-- Blocks. -->
+        <rendition xml:id="block" n="tiebp:block" scheme="css">
+            display:block;
+        </rendition> 
+        
+        <rendition xml:id="blockquote" n="tiebp:blockquote" scheme="css">
+            display:block;
+            font-size:90%;
+            margin-left:3em;
+            padding-left:1em;
+            border-left: 1px solid gray;
+            margin-top:.75em;
+            margin-bottom:.75em;
+            padding-top:.75em;
+            padding-bottom:.75em;
+        </rendition>
+        
+        <rendition corresp="#blockquote" n="tiebp:blockquote" scheme="css" scope="before">
+            <!-- This turns off the default generated quotes for block quotes. -->
+            content:"" !important;
+        </rendition>
+        
+        <rendition corresp="#blockquote" n="tiebp:blockquote" scheme="css" scope="after">
+            <!-- This turns off the default generated quotes for block quotes. -->
+            content:"" !important;
+        </rendition>
+        
+        <rendition xml:id="codeblock" n="teibp:codeblock" scheme="css">
+            display: block;
+            font-size: 80%;
+            margin-left: 1em;
+            padding-left: 1em;
+            border-left: 1px solid gray;
+            margin-top: .75em;
+            margin-bottom: .75em;
+            padding-top: .75em;
+            padding-bottom: .75em;
+            font-family:Monaco,Courier,monospace;
+            white-space:pre;
+        </rendition>
+        
+        <!-- Inline -->
+        
+        <rendition xml:id="inline" n="teibp:inline" scheme="css">
+            display:inline;
+        </rendition>
+        
+        <!-- Alignment. -->
+        <rendition xml:id="center" n="tiebp:center" scheme="css">
+            display:block;
+            text-align:center;
+            margin-left:auto;
+            margin-right:auto;
+        </rendition>
+        
+        <rendition xml:id="left" n="teibp:left" scheme="css">
+            text-align:left;
+        </rendition>
+        
+        <rendition xml:id="right" n="teibp:right" scheme="css">
+            text-align:right;
+        </rendition>
+        
+        <rendition xml:id="justify" n="teibp:justify" scheme="css">
+            text-align:justify;
+        </rendition>
+        
+        <rendition xml:id="center-block" n="tiebp:center-block" scheme="css">
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+        </rendition>
+        
+        <!-- Indentation -->
+        <rendition xml:id="hang" n="teibp:hang" scheme="css">
+            display:block;
+            padding-left:2.5em;
+            text-indent:-2.5em;
+        </rendition>
+        
+        <!-- Indentation for verse lines. Results in a “hanging” indent if
+the line wraps. -->
+        <rendition xml:id="l-indent-01" n="tiebp:l-indent-01" scheme="css">
+            display:block;
+            padding-left:4em;
+            text-indent:-2em;
+        </rendition>
+        
+        <rendition xml:id="l-indent-02" n="tiebp:l-indent-02" scheme="css">
+            display:block;
+            padding-left:6em;
+            text-indent:-2em;
+        </rendition>
+        
+        <rendition xml:id="l-indent-03" n="tiebp:l-indent-03" scheme="css">
+            display:block;
+            padding-left:8em;
+            text-indent:-2em;
+        </rendition>
+        
+        <rendition xml:id="l-indent-04" n="tiebp:l-indent-04" scheme="css">
+            display:block;
+            padding-left:10em;
+            text-indent:-2em;
+        </rendition>
+        
+        <rendition xml:id="l-indent-05" n="tiebp:l-indent-05" scheme="css">
+            display:block;
+            padding-left:12em;
+            text-indent:-2em;
+        </rendition>
+        
+        <rendition xml:id="l-indent-06" n="tiebp:l-indent-06" scheme="css">
+            display:block;
+            padding-left:14em;
+            text-indent:-2em;
+        </rendition>
+        
+        <rendition xml:id="l-indent-07" n="tiebp:l-indent-07" scheme="css">
+            display:block;
+            padding-left:16em;
+            text-indent:-2em;
+        </rendition>
+        
+        <rendition xml:id="l-indent-08" n="tiebp:l-indent-08" scheme="css">
+            display:block;
+            padding-left:18em;
+            text-indent:-2em;
+        </rendition>
+        
+        <rendition xml:id="indent" n="tiebp:indent" scheme="css" scope="before">
+            /* text-indent:4em; */
+            /* The above method of describing an indentation for, say, a paragraph is 
+            preferred. The method being used is in response to a bug in some browsers 
+            whereby a block element, like a paragraph, is erroneously re-indented 
+            after interruption by another block element (like a list, which is valid,
+            in TEI, inside a paragraph). */
+            content:"\A0\A0\A0\A0\A0\A0";
+        </rendition>
+        
+        <!-- font sizes -->
+        
+        <rendition xml:id="small" n="tiebp:small" scheme="css">
+            font-size:90%;
+        </rendition>
+        
+        <rendition xml:id="x-small" n="tiebp:x-small" scheme="css">
+            font-size:85%;
+        </rendition>
+        
+        <rendition xml:id="xx-small" n="tiebp:xx-small" scheme="css">
+            font-size:80%;
+        </rendition>
+        
+        <rendition xml:id="large" n="tiebp:large" scheme="css">
+            font-size:110%;
+        </rendition>
+        
+        <rendition xml:id="x-large" n="tiebp:x-large" scheme="css">
+            font-size:115%;
+        </rendition>
+        
+        <rendition xml:id="xxx-large" n="tiebp:xxx-large" scheme="css">
+            font-size:120%;
+        </rendition>
+        
+        <rendition xml:id="bracket" n="teibp:bracket" scheme="css"/>
+        
+        <rendition corresp="#bracket" n="tiebp:bracket" scheme="css" scope="before">
+            content:"&lt;";
+        </rendition>
+        
+        <rendition corresp="#bracket" n="tiebp:bracket" scheme="css" scope="after">
+            content:">";
+        </rendition>
+        
+        <!-- petrarchive -->
+        <rendition xml:id="red" scheme="css"
+            >color:#9f1706;</rendition>
+        <rendition xml:id="blue" scheme="css"
+            >color:#12398c;</rendition>
+        <rendition xml:id="fs18pt" scheme="css"
+            >font-size:18pt;</rendition>
+        <rendition xml:id="fs24pt" scheme="css"
+            >font-size:24pt;</rendition>
+    </tagsDecl>
+</encodingDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <pb n="charta 12 recto" facs="../images/vat-lat3195-f/vat-lat3195-f-012r.jpg" />
+         <space corresp="#canvasline"/>
+         <lg xml:id="rvf053" type="canzone" n="53">
+             <lg type="stanza">
+                 <lg type="dblvrs" corresp="#canvasline">
+                     <l n="1"><hi rendition="#red #fs24pt">S</hi><hi rendition="#small-caps">p</hi>irto gentil&v2c; che quelle membra reggi</l>
+                     <l n="2">Dentro a le qua<supplied>’</supplied> peregrinando alberga</l>
+                 </lg>
+               <lg type="dblvrs" corresp="#canvasline">
+                   <l n="3"><choice><orig>Vn</orig><reg>Un</reg></choice> signor <choice><orig>ualoroso</orig><reg>valoroso</reg></choice><supplied>,</supplied> accorto et saggio&p2c;</l>
+                   <l n="4">Poi che <choice><orig>se</orig><reg>sè</reg></choice> giunto a <choice><orig>lonorata</orig><reg>l’onorata</reg></choice> <choice><orig>uerga</orig><reg>verga</reg></choice></l>
+               </lg>
+               <lg type="dblvrs" corresp="#canvasline">
+                   <l n="5">Colla qual <choice><orig>roma</orig><reg>Roma</reg></choice> et suoi erranti <choice><abbr>cōreggi</abbr><expan>correggi</expan></choice>&p2c;</l>
+                   <l n="6">Et la richiami al suo antiquo <choice><orig>uiaggio</orig><reg>viaggio</reg></choice><supplied>,</supplied></l>
+               </lg>
+               <lg type="dblvrs" corresp="#canvasline">
+                   <l n="7">Io parlo a te&p2c; <choice><orig><abbr>ꝑo</abbr><expan>pero</expan></orig><reg>però</reg></choice> <choice><orig>chaltroue</orig><reg>ch’altrove</reg></choice> un raggio</l>
+                   <l n="8">&Non; <choice><orig>ueggio</orig><reg>veggio</reg></choice> di <choice><orig>uertu</orig><reg>vertù</reg></choice>&p2c; <choice><orig>chal</orig><reg>ch’al</reg></choice> <choice><abbr>mōdo</abbr><expan>mondo</expan></choice> &e; <choice><abbr>spēta</abbr><expan>spenta</expan></choice><supplied>,</supplied></l>
+               </lg>
+               <lg type="dblvrs" corresp="#canvasline">
+                   <l n="9"><choice><orig>Ne</orig><reg>Né</reg></choice> <choice><orig>trouo</orig><reg>trovo</reg></choice> chi di mal far si <choice><orig>uergogni</orig><reg>vergogni</reg></choice>.</l>
+                   <l n="10">Che <choice><orig>saspetti</orig><reg>s’aspetti</reg></choice> non so&p2c; <choice><orig>ne</orig><reg>né</reg></choice> che <choice><orig>sagogni</orig><reg>s’agogni</reg></choice>&p2c;</l>
+               </lg>
+               <lg type="dblvrs" corresp="#canvasline">
+                   <l n="11">Italia<supplied>,</supplied> che suoi guai non par che senta&v2c;</l>
+                   <l n="12">Vecchia otiosa et lenta&v2c;</l>
+               </lg>
+               <lg type="dblvrs" corresp="#canvasline">
+                   <l n="13"><choice><orig>Dormira</orig><reg>Dormirà</reg></choice> &sempre;&p2c; &amp7; &non; fia chi la <choice><orig>suegli</orig><reg>svegli</reg></choice><choice><orig>.</orig><reg>?</reg></choice></l>
+                   <l n="14">Le man<supplied>’</supplied> <choice><orig>lauessio</orig><reg>l’avess’io</reg></choice> <choice><orig>auolto</orig><reg>avolto</reg></choice> entro<choice><orig></orig><reg> ’</reg></choice> capegli.</l>
+               </lg>
+             </lg>
+             <lg type="stanza">
+               <lg type="dblvrs" corresp="#canvasline">
+                   <l n="15"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi>Non spero che giamai dal pigro sonno</l>
+                   <l n="16"><choice><orig>Moua</orig><reg>Mova</reg></choice> la testa &per; chiamar <choice><orig>chuom</orig><reg>ch’uom</reg></choice> faccia&p2c;</l>
+               </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="17">&Si; <choice><orig>grauemente</orig><reg>gravemente</reg></choice> &e; oppressa &amp7; di tal soma<choice><orig>.</orig><reg>!</reg></choice></l>
+                      <l n="18">Ma non <choice><orig>sença</orig><reg>senza</reg></choice> destino a le tue braccia<supplied>,</supplied></l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="19">Che scuoter forte et <choice><orig>solleuarla</orig><reg>sollevar la</reg></choice> ponno&v2c;</l>
+                      <l n="20"><choice><orig>E</orig><reg>È</reg></choice> or <choice><abbr>cōmesso</abbr><expan>commesso</expan></choice> il nostro capo <choice><orig>roma</orig><reg>Roma</reg></choice>.</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="21">Pon<supplied>’</supplied> man<supplied>’</supplied> &in; quella <choice><orig>uenerabil</orig><reg>venerabil</reg></choice> chioma</l>
+                      <l n="22">Securamente<supplied>,</supplied> et ne le treccie sparte&p2c;</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="23">&Si; che la neghittosa esca del fango.</l>
+                      <l n="24">I<supplied>’,</supplied> che <choice><orig>di</orig><reg>dì</reg></choice> et notte del suo <choice><orig>straçio</orig><reg>strazio</reg></choice> piango&v2c;</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="25">Di mia <choice><orig>sperança</orig><reg>speranza</reg></choice> <choice><orig>o</orig><reg>ò</reg></choice> in te la maggior parte&p2c;</l>
+                      <l n="26">Che <choice><orig>sel</orig><reg>se ’l</reg></choice> popol di <choice><orig>marte</orig><reg>Marte</reg></choice></l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="27"><choice><orig>Deuesse</orig><reg>Devesse</reg></choice> al <choice><abbr>ꝑprio</abbr><expan>proprio</expan></choice> honore <choice><orig>alçar</orig><reg>alzar</reg></choice> mai <choice><orig>gliocchi</orig><reg>gli occhi</reg></choice>&v2c;</l> <!-- not sure about abbr here "ro" on proprio was italicized in word doc-->
+                      <l n="28">Parmi pur <choice><orig>cha</orig><reg>ch’a</reg></choice><supplied>’</supplied> tuoi <choice><orig>di</orig><reg>dì</reg></choice> la gratia <choice><orig>to[c]chi</orig><reg>tocchi</reg></choice>.</l>
+                  </lg>
+             </lg>
+             <lg type="stanza">
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="29"><hi rendition="#red #fs24pt">&pilcrow2section;</hi><choice><orig>Lantiche</orig><reg>L’antiche</reg></choice> mura <choice><orig>chanchor</orig><reg>ch’anchor</reg></choice> teme et ama<choice><orig> /</orig><reg></reg></choice></l>
+                      <l n="30">Et <choice><orig>tremal</orig><reg>trema ’l</reg></choice> mondo<supplied>,</supplied> quando si rimembra<choice><orig>,</orig><reg></reg></choice></l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="31">Del tempo andato <choice><orig><subst><del type="erasure"><gap reason="illegible"/></del><add>en</add></subst>dietro</orig><reg>e ’ndietro</reg></choice> si <choice><orig>riuolue</orig><reg>rivolve</reg></choice>&p2c;</l>
+                      <l n="32"><choice><orig>Ei</orig><reg>E i</reg></choice> sassi <choice><orig>doue</orig><reg>dove</reg></choice> fur chiuse le membra</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="33">Di ta<supplied>’</supplied> che non saranno <choice><orig>sença</orig><reg>senza</reg></choice> fama&p2c;</l>
+                      <l n="34">Se <choice><orig>luniuerso</orig><reg>l’universo</reg></choice> pria non si <choice><orig>dissolue</orig><reg>dissolve</reg></choice>&p2c;</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="35">Et tutto quel <choice><orig><abbr>chunā</abbr><expan>chunan</expan></orig><reg>ch’una</reg></choice> ruina <choice><orig>inuolue</orig><reg>involve</reg></choice>&v2c;</l>
+                      <l n="36">Per te spera saldar ogni suo <choice><orig>uitio</orig><reg>vitio</reg></choice>.</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="37">O grandi Scipioni&p2c; o fedel Bruto&p2c;</l>
+                      <l n="38">Quanto <choice><orig>uaggrada</orig><reg>v’aggrada</reg></choice> <choice><orig>segli</orig><reg>se gli</reg></choice> &e; anchor <choice><orig>uenuto</orig><reg>venuto</reg></choice></l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="39">Romor <choice><orig>la</orig><reg>là</reg></choice> <choice><orig>giu</orig><reg>giù</reg></choice> del ben locato officio<choice><orig>.</orig><reg>!</reg></choice></l>
+                      <l n="40">Come cre<supplied>’</supplied><choice><orig> /</orig><reg></reg></choice> che Fabritio<choice><orig>	</orig><reg></reg></choice></l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="41">Si faccia lieto<choice><orig> /</orig><reg></reg></choice> udendo la <choice><orig>nouella</orig><reg>novella</reg></choice><choice><orig>.</orig><reg>!</reg></choice></l>
+                      <l n="42">Et dice<choice><orig> /</orig><reg>:</reg></choice> <choice><orig>roma</orig><reg>Roma</reg></choice> mia <choice><orig>sara</orig><reg>sarà</reg></choice> anchor bella.</l>
+                  </lg>
+             </lg>
+             <lg type="stanza">
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="43"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi>Et se cosa di qua nel ciel si cura&p2c;</l>
+                      <l n="44"><choice><orig>Lanime</orig><reg>L’anime</reg></choice> che <choice><orig>lassu</orig><reg>lassù</reg></choice> son citadine<choice><orig> /</orig><reg></reg></choice></l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="45">Et <choice><orig>anno</orig><reg>ànno</reg></choice> i corpi abandonati in terra&v2c;</l>
+                      <l n="46">Del lungo odio <choice><orig>ciuil</orig><reg>civil</reg></choice> ti pregan fine&p2c;</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="47">Per cui la gente ben non <choice><orig>sassecura</orig><reg>s’assecura</reg></choice>&p2c;</l>
+                      <l n="48"><choice><orig>Ondel</orig><reg>Onde ’l</reg></choice> camin a lor tecti si serra<choice><orig><g ref="#punctelevhiback"/></orig><reg>;</reg></choice></l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="49">Che fur <choice><orig>gia</orig><reg>già</reg></choice> &si; <choice><orig>deuoti</orig><reg>devoti</reg></choice>&p2c; &amp7; ora in guerra</l>
+                      <l n="50">Quasi spelunca di ladron<supplied>’</supplied> son fatti&p2c;</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="51">Tal <choice><orig>cha</orig><reg>ch’a</reg></choice><supplied>’</supplied> buon<supplied>’</supplied> solamente uscio si chiude&p2c;</l>
+                      <l n="52">Et tra <choice><orig>glialtari</orig><reg>gli altari</reg></choice> &amp7; tra le statue ignude</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="53">Ogni impresa crudel par che se tratti.</l>
+                      <l n="54">De<supplied>!</supplied> quanto <choice><orig>diuersi</orig><reg>diversi</reg></choice> atti<choice><orig><g ref="#punctelevhiback"/></orig><reg>!</reg></choice></l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="55"><choice><orig>Ne</orig><reg>Né</reg></choice> <choice><orig>sença</orig><reg>senza</reg></choice> squille <choice><orig><abbr>sincōmincia</abbr><expan>sincommincia</expan></orig><reg>s’incomincia</reg></choice> assalto&p2c;</l>
+                      <l n="56">Che &per; <choice><orig>dio</orig><reg>Dio</reg></choice> <choice><abbr>rīgraciar</abbr><expan>ringraciar</expan></choice> fur poste in alto.</l>
+                  </lg>
+             </lg>
+             <lg type="stanza">
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="57"><hi rendition="#red #fs24pt">&pilcrow2section;</hi>Le donne lagrimose&v2c; <choice><orig>el</orig><reg>e ’l</reg></choice> <choice><orig>uulgo</orig><reg>vulgo</reg></choice> inerme</l>
+                      <l n="58">De la tenera etate&v2c; <choice><orig>ei</orig><reg>e i</reg></choice> <choice><orig>uecchi</orig><reg>vecchi</reg></choice> stanchi</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="59"><choice><orig><abbr>Chāno</abbr><expan>Channo</expan></orig><reg>Ch’ànno</reg></choice> <choice><orig>se</orig><reg>sé</reg></choice> in odio et la <choice><orig>souerchia</orig><reg>soverchia</reg></choice> <choice><orig>uita</orig><reg>vita</reg></choice><choice><orig> .</orig><reg>,</reg></choice></l>
+                      <l n="60"><choice><orig>Ei</orig><reg>E i</reg></choice> neri fraticelli <choice><orig>ei</orig><reg>e i</reg></choice> bigi <choice><orig>ei</orig><reg>e i</reg></choice> bianchi&v2c;</l>
+                  </lg>
+                  <lg type="dblvrs" corresp="#canvasline">
+                      <l n="61"><choice><orig>Collaltre</orig><reg>Coll’altre</reg></choice> schiere <choice><orig>trauagliate</orig><reg>travagliate</reg></choice> <choice><orig>enferme</orig><reg>e ’nferme</reg></choice><supplied>,</supplied></l>
+                      <l n="62">Gridan<supplied>:</supplied> <choice><orig>o</orig><reg>O</reg></choice> <choice><orig>signor</orig><reg>Signor</reg></choice> nostro&v2c; aita<choice><orig> /</orig><reg>!</reg></choice> aita<choice><orig>.</orig><reg>!</reg></choice></l>
+                  </lg>
+                 
+                 <pb xml:id="c012v" n="charta 12 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-012v.jpg"/> 
+                 
+                         <lg type="dblvrs" corresp="#canvasline">
+                             <l n="63">Et la <choice><orig>pouera</orig><reg>povera</reg></choice> gente sbigottita</l>
+                             <l n="64">Ti scopre le sue piaghe a mille a mille&p2c;</l>
+                         </lg>
+                         <lg type="dblvrs" corresp="#canvasline">
+                             <l n="65"><choice><orig>Chanibale</orig><reg>Ch’Anibale</reg></choice>&v2c; non <choice><orig>chaltri</orig><reg>ch’altri</reg></choice>&v2c; farian pio.</l>
+                             <l n="66">Et se ben guardi a la magion di <choice><orig>dio</orig><reg>Dio</reg></choice></l>
+                         </lg>
+                         <lg type="dblvrs" corresp="#canvasline">
+                             <l n="67"><choice><orig>Charde</orig><reg>Ch’arde</reg></choice> oggi tutta&p2c; assai poche <choice><orig>fauille</orig><reg>faville</reg></choice></l>
+                             <l n="68">Spegnendo&v2c; fien tranquille</l>
+                         </lg>
+                         <lg type="dblvrs" corresp="#canvasline">
+                             <l n="69">Le <choice><orig>uoglie</orig><reg>voglie</reg></choice><choice><orig> &virg;</orig><reg/></choice> che si mostran <choice><orig>sinfiammate</orig><reg>sì ’nfiammate</reg></choice>&p2c;</l>
+                             <l n="70">Onde fien <choice><orig>lopre</orig><reg>l’opre</reg></choice> tue nel ciel laudate.</l>
+                         </lg>
+                     
+                     <lg type="stanza">
+                         <lg type="dblvrs" corresp="#canvasline">
+                             <l n="71"><hi rendition="#red #fs24pt">¶</hi>Orsi&p2c; lupi&p2c; leoni&p2c; aquile<choice><orig>.</orig><reg/></choice> et serpi</l>
+                             <l n="72">Ad una gran marmorea colomna</l>
+                         </lg>
+                         <lg type="dblvrs" corresp="#canvasline">
+                             <l n="73">fanno noia souente&p2c; et a <choice><orig>se</orig><reg>sé</reg></choice> danno.</l>
+                             <l n="74">Di costor piange quella gentil donna</l>
+                         </lg>
+                         <lg type="dblvrs" corresp="#canvasline">
+                             <l n="75">Che <choice><orig>ta</orig><reg>t’à</reg></choice> chiamato <choice><orig>acio</orig><reg>a ciò</reg></choice> che di lei sterpi</l>
+                             <l n="76">Le male piante<choice><orig> &virg;</orig><reg/></choice> che fiorir non sanno.</l>
+                         </lg>
+                         <lg type="dblvrs" corresp="#canvasline">
+                             <l n="77">Passato &e; <choice><orig>gia</orig><reg>già</reg></choice> &piu; <choice><orig>chel</orig><reg>che ’l</reg></choice> millesimo anno<choice><orig>.</orig><reg/></choice></l>
+                             <l n="78"><choice><orig>Chen</orig><reg>Che ’n</reg></choice> lei <choice><orig>mancar</orig><reg>mancâr</reg></choice> <choice><orig>quellanime</orig><reg>quell’anime</reg></choice> leggiadre&p2c;</l>
+                         </lg>
+                         <lg type="dblvrs" corresp="#canvasline">
+                             <l n="79">Che locata <choice><orig>lauean</orig><reg>l’avean</reg></choice> <choice><orig>la</orig><reg>là</reg></choice> <choice><orig>douellera</orig><reg>dov’ell’era</reg></choice>.</l>
+                             <l n="80">Ai<supplied>!</supplied> <choice><orig>noua</orig><reg>nova</reg></choice> gente oltra misura altera&v2c;</l>
+                         </lg>
+                         <lg type="dblvrs" corresp="#canvasline">
+                             <l n="81"><choice><orig>Irreuerente</orig><reg>Irriverente</reg></choice> a tanta et a tal madre&p2e;</l>
+                             <l n="82">Tu marito&p2c; tu padre&p2c;</l>
+                         </lg>
+                         <lg type="dblvrs" corresp="#canvasline">
+                             <l n="83">Ogni soccorso di tua man <choice><orig>sattende</orig><reg>s’attende</reg></choice>&p2c;</l>
+                             <l n="84"><choice><orig>Chel</orig><reg>Ché ’l</reg></choice> maggior padre <choice><orig>adaltropera</orig><reg>ad altr’opera</reg></choice> intende.</l>
+                         </lg>
+                     </lg>
+                     <lg type="stanza">
+                         <lg type="dblvrs" corresp="#canvasline">
+                             <l n="85"><hi rendition="#blue #fs24pt">¶</hi><choice><orig>Radeuolte</orig><reg>Rade volte</reg></choice> <choice><orig>adiuen</orig><reg>advien</reg></choice> <choice><orig>chalalte</orig><reg>ch’a l’alte</reg></choice> imprese<choice><orig> &virg;</orig><reg/></choice></l>
+                             <l n="86">Fortuna ingiuriosa non contrasti&p2c;</l>
+                         </lg>
+                         <lg type="dblvrs" corresp="#canvasline">
+                             <l n="87"><choice><orig>Chagli</orig><reg>Ch’agli</reg></choice> animosi fatti mal <choice><orig>saccorda</orig><reg>s’accorda</reg></choice>.</l>
+                             <l n="88">Ora<supplied>,</supplied> <choice><orig><abbr>sgombrādol</abbr><expan>sgombrandol</expan></orig><reg>sgombrando ’l</reg></choice> passo<choice><orig> &virg;</orig><reg/></choice> onde tu intrasti<choice><orig> <g ref="#virgsusp"/></orig><reg>,</reg></choice></l>
+                         </lg>
+                         <lg type="dblvrs" corresp="#canvasline">
+                             <l n="89">Famisi perdonar <choice><orig>moltaltre</orig><reg>molt’altre</reg></choice> offese&p2c;</l>
+                             <l n="90"><choice><orig>Chal men</orig><reg>Ch’almen</reg></choice> qui da se stessa si discorda.</l>
+                         </lg>
+                         <lg type="dblvrs" corresp="#canvasline">
+                             <l n="91"><choice><orig>Pero</orig><reg>Però</reg></choice> che <choice><orig>quantol</orig><reg>quanto ’l</reg></choice> mondo si ricorda&v2c;</l>
+                             <l n="92">Ad huom mortal non fu aperta la <choice><orig>uia</orig><reg>via</reg></choice><choice><orig>.</orig><reg/></choice></l>
+                         </lg>
+                         <lg type="dblvrs" corresp="#canvasline">
+                             <l n="93">Per farsi&v2c; come a te<supplied>,</supplied> di fama eterno&p2c;</l>
+                             <l n="94">Che puoi <choice><orig>driççar</orig><reg>drizzar</reg></choice>&v2c; <choice><orig>si</orig><reg>s’i’</reg></choice> non falso discerno&v2c;</l>
+                         </lg>
+                         <lg type="dblvrs" corresp="#canvasline">
+                             <l n="95">In stato la &piu; nobil monarchia.</l>
+                             <l n="96">Quanta gloria ti fia<choice><orig>.</orig><reg/></choice></l>
+                         </lg>
+                         <lg type="dblvrs" corresp="#canvasline">
+                             <l n="97">Dir<supplied>:</supplied> <choice><orig>glialtri</orig><reg>Gli altri</reg></choice> <choice><orig>laitar</orig><reg>l’aitâr</reg></choice> <choice><orig>giouene</orig><reg>giovene</reg></choice> et forte&p2semicolon;</l>
+                             <l n="98">Questi in <choice><orig>uecchieçça</orig><reg>vecchiezza</reg></choice> la <choice><orig>scampo</orig><reg>scampò</reg></choice> da morte.</l>
+                         </lg>
+                     </lg>
+                     <lg type="stanza">
+                         <lg type="dblvrs" corresp="#canvasline">
+                             <l n="99"><hi rendition="#red #fs24pt">¶</hi><choice><orig>Sopral</orig><reg>Sopra ’l</reg></choice> monte Tarpeio<supplied>,</supplied> <choice><orig>cançon</orig><reg>canzon</reg></choice><supplied>,</supplied> <choice><orig>uedrai</orig><reg>vedrai</reg></choice></l>
+                             <l n="100"><choice><orig>Vn</orig><reg>Un</reg></choice> <choice><orig>caualier</orig><reg>cavalier</reg></choice>&v2c; <choice><orig>chitalia</orig><reg>ch’Italia</reg></choice> tutta honora&p2c;</l>
+                         </lg>
+                         <lg type="dblvrs" corresp="#canvasline">
+                             <l n="101">Pensoso &piu; <choice><orig>daltrui</orig><reg>d’altrui</reg></choice><choice><orig>.</orig><reg/></choice> che di se stesso.</l>
+                             <l n="102">Digli<choice><orig> &virg;</orig><reg>:</reg></choice> <choice><orig>Vn</orig><reg>Un</reg></choice> che non ti <choice><orig>uide</orig><reg>vide</reg></choice> anchor da presso<supplied>,</supplied></l>
+                         </lg>
+                         <lg type="dblvrs" corresp="#canvasline">
+                             <l n="103">se non come &per; fama huom <choice><orig><abbr>sīnamora</abbr><expan>sinnamora</expan></orig><reg>s’innamora</reg></choice>&p2c;</l>
+                             <l n="104">Dice che <choice><orig>roma</orig><reg>Roma</reg></choice> ogniora</l>
+                         </lg>
+                         <lg type="dblvrs" corresp="#canvasline">
+                             <l n="105">Con <choice><orig>gliocchi</orig><reg>gli occhi</reg></choice> di dolor bagnati &amp7; molli<supplied>,</supplied></l>
+                             <l n="106">Ti chier <choice><orig>merce</orig><reg>mercé</reg></choice> da tutti sette i colli.</l>
+                         </lg>
+                     </lg>
+             </lg>
+         </lg>
+                 <space corresp="#canvasline"/>
+                 <lg xml:id="rvf054" type="madrigal" n="54"> 
+                     <lg type="dblvrs" corresp="#canvasline">
+                         <l n="1"><choice><orig><hi rendition="#blue #fs24pt">P</hi><hi rendition="#small-caps">e</hi>r chal</orig><reg><hi rendition="#blue #fs24pt">P</hi><hi rendition="#small-caps">e</hi>rch’al</reg></choice> <choice><orig>uiso</orig><reg>viso</reg></choice> <choice><orig>damor</orig><reg>d’Amor</reg></choice> <choice><orig>portaua</orig><reg>portava</reg></choice> insegna&p2c;</l>
+                         <l n="2">Mosse una pellegrina il mio cor <choice><orig>uano</orig><reg>vano</reg></choice>&p2c;</l>
+                     </lg>
+                     <lg type="single" corresp="#canvasline">
+                         <l n="3"><choice><orig>Chognialtra</orig><reg>Ch’ogni altra</reg></choice> mi parea <choice><orig>donor</orig><reg>d’onor</reg></choice> men degna.</l>
+                     </lg>
+                     <lg type="dblvrs" corresp="#canvasline">
+                         <l n="4">Et lei seguendo fu per <choice><orig>lerbe</orig><reg>l’erbe</reg></choice> <choice><orig>uerdi</orig><reg>verdi</reg></choice>&p2c;</l>
+                         <l n="5"><choice><orig>Vdi</orig><reg>Udì’</reg></choice> dir alta <choice><orig>uoce</orig><reg>voce</reg></choice> di lontano<supplied>:</supplied></l>
+                     </lg>
+                     <lg type="single" corresp="#canvasline">
+                         <l n="6">Ai<supplied>!</supplied> quanti passi per la <choice><orig>selua</orig><reg>selva</reg></choice> perdi&p2e;</l>
+                     </lg>
+                     <lg type="dblvrs" corresp="#canvasline">
+                         <l n="7">Allor mi strinsi a <choice><orig><abbr>lōbra</abbr><expan>lombra</expan></orig><reg>l’ombra</reg></choice> <choice><orig>dun</orig><reg>d’un</reg></choice> bel faggio<supplied>,</supplied></l>
+                         <l n="8">Tutto pensoso&p2semicolon; &amp7; rimirando intorno<choice><orig>&virg;</orig><reg>,</reg></choice></l>
+                     </lg>
+                     <lg type="dblvrs" corresp="#canvasline">
+                         <l n="9">Vidi assai periglioso il mio <choice><orig>uiaggio</orig><reg>viaggio</reg></choice>&p2semicolon;</l>
+                         <l n="10">Et tornai &in; dietro quasi a <choice><orig>meççol</orig><reg>mezzo ’l</reg></choice> giorno.</l>
+                     </lg>
+                 </lg>
+      </body>
+   </text>
+</TEI>
+
+

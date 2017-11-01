@@ -1,0 +1,330 @@
+// ---------------------------------------------------------------------------
+// Imports
+
+@import "base";
+@import "meyer-reset";
+@import "susy";
+
+/* -------------------------------------------------------------------------*/
+/* Layout */
+
+@mixin header-footer {
+width:1000px;
+}
+
+.container {
+  @include container;
+  @include susy-grid-background;
+}
+
+// Variables
+$heading-font-stack: "helvetica neue", helvetica, verdana, arial, sans-serif;
+$body-font-stack: "andron_scriptor_webregular", Georgia, Palatino, serif;
+$body-font-size: 14pt;
+$body-font-size-small: 12pt;
+$body-line-height: 18pt;
+$header-border: 1px solid #d7d6d5;
+
+
+/* -------------------------------------------------------------------------*/
+/* Layout */
+
+//More reset
+a {text-decoration: none;
+color:inherit;}
+
+body {
+font-size: $body-font-size;
+font-family: $body-font-stack;
+line-height: $body-line-height;
+/* width: 1100px; */
+max-width:75%;
+margin-right:auto;
+margin-left:auto;
+margin-top:4em;
+font-size:14pt;
+font-family: $body-font-stack;
+}
+
+#content {
+max-width:750px;
+}
+
+h1,h2,h3,h4,h5,h6,dt {
+font-family: $heading-font-stack;
+font-weight:bold;
+margin-top:.5em;
+}
+
+h1 {
+border-bottom:$header-border;
+padding-bottom:.25em;
+margin:1.5em 0 1.5em 0;
+font-size: 115%; /*18pt*/
+}
+
+h2 {
+margin-top:1em;
+}
+
+h3 {
+font-weight:normal;
+font-style:italic;
+}
+
+ul {
+list-style:disc;
+margin-left:2em;
+margin-top:1em;
+}
+
+p, ul, ol, figure {
+line-height:150%;
+margin-top:.5em;
+margin-bottom:.5em;
+}
+
+/* definition lists; dt up with h1,h2,… */
+dl {
+margin-left:3em;
+}
+dt {
+font-weight:300;
+font-size:90%;
+}
+dd {
+margin-left:1.2em;
+font-size: $body-font-size-small;
+}
+
+figure img, figure figcaption {margin-right:auto;
+margin-left:auto;
+display:block;
+}
+
+figcaption {
+margin-top:.5em;
+margin-bottom:.5em;
+text-align:center;
+font-weight:medium;
+font-style:italic;
+font-size:18px;
+margin-right:auto;
+margin-left:auto;
+}
+
+
+
+.subsetfacs {
+max-height:160px;
+float:right;
+border:1px solid gray;
+margin:4px 4px 4px 20px;
+}
+
+.subsetvis {
+max-height:160px;
+max-width:116px;
+float:right;
+border: 1px solid #d9e7ff;
+margin:4px 4px 4px 4px;
+}
+
+.subset, section {
+clear:both;
+}
+
+img {max-width:600px;}
+
+/* banners */
+
+#banner {
+font-family: $heading-font-stack;
+font-size: 32pt;
+text-decoration:none;
+font-weight:100;
+//width:14em;
+line-height:28pt;
+}
+
+#smallbanner {
+font-family: $heading-font-stack;
+font-size: 14pt;
+text-decoration:none;
+font-weight:100;
+//width:14em;
+line-height:12pt;
+padding-bottom:.2em;
+display:inline;
+}
+
+#smallbanner #bannerresp {
+font-size:10pt;
+}
+
+#smallbanner #bannertitle:after {
+content: ": ";
+}
+
+#smallbanner #bannersubtitle:after {
+content: ", ";
+}
+
+#smallbanner #bannerrvf {
+font-style:italic;
+}
+
+#smallbanner #bannerrvf:after {
+content:". ";
+}
+
+#smallbanner div {display:inline;}
+
+#banner .archive {
+font-weight:300;
+}
+
+#bannerresp {
+font-size:18pt;
+}
+
+#titlepage {
+
+}
+
+#titlepage #banner {
+font-family: $heading-font-stack;
+font-size: 32pt;
+text-decoration:none;
+font-weight:100;
+margin-top:3.5em;
+margin-bottom:3em;
+margin-right:auto;
+margin-left:auto;
+// max-width:14em;
+line-height:30pt;
+}
+
+#titlepage #banner .archive {
+font-weight:300;
+}
+
+#titlepage #bannerrvf {
+font-size:24pt;
+font-style:italic;
+}
+
+#titlepage #bannerresp {
+font-size:14pt;
+}
+
+footer {
+@include header-footer;
+border-top: $header-border;
+margin-top:2.5em;
+margin-bottom:2em;
+font-family:'Helvetica Neue','Gill Sans',Helvetica,Arial,sans-serif;
+font-weight:200;
+font-size:8pt;
+line-height:1.5;
+clear:both;
+}
+
+//For number/first-line 
+ul.leaders {
+    max-width: 30em;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none}
+ul.leaders li:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "}
+ul.leaders span:first-child {
+    padding-right: 0.33em;
+    background: white}
+ul.leaders span + span {
+    float: right;
+    padding-left: 0.33em;
+    background: white}
+
+em,cite,i{font-style:italic;}    
+/* nav */
+
+#menu {
+background-color:#e7e8ea;
+padding:.75em 1.25em .75em .75em;
+border: 1px solid #a5a3a1;
+z-index:99;
+position:relative;
+left:-5em;
+}
+nav {display:block;font-size:12pt;}
+nav ul {font-family: $heading-font-stack; font-weight:100; margin-top:0; padding-top:0; margin-left:.75em;}
+ul {list-style: none;}
+ul > li:before {
+color:#a5a3a1;
+font-size:12pt;
+content:"–\00A0\00A0";
+}
+
+nav img {position:relative;left:-2em;top:-4px;}
+
+nav #smallbanner {
+@include header-footer; 
+position:absolute;
+left:-1em;
+display:inline;
+left:0px;
+top:0px;
+/* border-bottom:$header-border; */
+}
+
+
+
+/* links */
+a {text-decoration:none; color:#9b181e;}
+a:hover {text-decoration:underline;}
+#banner a, #smallbanner a {
+color:black;
+}
+
+/* tables for index */
+th {text-align:left; line-height: .8;}
+td, th {border-bottom: $header-border;
+padding:.2em 1em .2em 0;
+font-family: $heading-font-stack;
+font-weight:200;
+}
+
+tr td:first-child {
+min-width:150px;
+}
+
+tr:last-child td {border-bottom: none;}
+
+th .span {
+font-size:10pt;
+}
+
+.help {
+font-size:$body-font-size-small;
+font-family:$heading-font-stack;
+font-style:italic;
+}
+
+.sortarrow {
+position:relative;
+z-index:10;
+text-decoration:none;
+}
+.sortarrow:hover {
+text-decoration:none !important;
+}
+
+strong {font-weight:500;}

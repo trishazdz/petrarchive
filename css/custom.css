@@ -1012,7 +1012,8 @@ font-size: 80%;
 text-align: left;border:none; 
 background-color:inherit; border-radius:0;box-shadow:none;  
 position:static; margin:0;
-width: 760px;}
+width: 100%
+}
 
 back h1 + hr {
   width:60%;margin-left:0;margin-top:0;
@@ -1032,7 +1033,6 @@ div.commentary {position: fixed;
   height: 12em;
   border-top:1px solid #dcdddb;
   width: 100%;
-  min-width: 840px;
   display: none;
 }
 
@@ -1043,7 +1043,6 @@ div.commentary.active {
 div.commentary header {
   position: fixed;
   width: 100%;
-  min-width: 840px;
   background-color: white;
 }
 
@@ -1054,7 +1053,7 @@ div.commentary header * {
 div.commentary header h1 {
   font-size: 12px;
   font-weight: 700 !important;
-  margin-left: 1.6em;
+  margin-left: 1.6em
 }
 div.commentary section h1 {
   font-size: 20px;
@@ -1064,7 +1063,7 @@ div.commentary section h1 {
 nav.commentary ul {
   padding: 0;
   font-size: 12.5px;
-  position:relative;
+  margin-left: 2.25em;
 }
 
 nav.commentary li {
@@ -1091,9 +1090,7 @@ nav.commentary li:before {
 }
 
 div.commentary header button.close {
-  margin-top: .3em;
   font-size: 1em;
-  margin-right: .5em;
 }
 
 div.commentary main {

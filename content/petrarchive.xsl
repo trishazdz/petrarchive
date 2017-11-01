@@ -189,6 +189,7 @@
     <script type="text/javascript" src="../js/frame.js"><xsl:comment> </xsl:comment></script>
     <script type="text/javascript" src="../js/navutil.js"><xsl:comment> </xsl:comment></script>
     <script type="text/javascript" src="../js/commentaryutil.js"><xsl:comment> </xsl:comment></script>
+    <script type="text/javascript" src="../js/utils/browser.js"><xsl:comment> </xsl:comment></script>
     <script type="text/javascript" src="../js/petrarchivedocument.js"><xsl:comment> </xsl:comment></script>
 
     </xsl:variable>
@@ -514,6 +515,7 @@
       <xsl:value-of select="@n"/> 
       <i class="fa fa-pagelines"></i>
     </div>
+
     <span class="-teibp-pbFacs hide">
       <a class="gallery-facs" rel="prettyPhoto[gallery1]">
         <img alt="{$altTextPbFacs}" class="-teibp-thumbnail">
@@ -589,33 +591,33 @@
  
   <xsl:template name="commentaryNav">
     <xsl:param name="rvfTarget"/>
-      <ul>
-        <li>
+      <ul class="col-12">
+        <li class='col-auto'>
           <a class="active" href="{concat('#',$rvfTarget,'_introduction')}">
             Introduction &amp; prosody
           </a>
         </li>
         
-        <li>
+        <li class="col-auto">
           <a href="{concat('#',$rvfTarget,'_genesis')}">
             Genesis &amp; diplomatic condition
           </a>
         </li>
         
-        <li>
+        <li class="col-auto">
           <a href="{concat('#',$rvfTarget,'_syntax')}">
             Syntax, variants, &amp; language
           </a>
         </li>
        
         
-        <li>
+        <li class="col-auto">
           <a href="{concat('#',$rvfTarget,'_thematics')}">
             Thematics
           </a>
         </li>
         
-        <li>
+        <li class="col-auto">
           <a href="{concat('#',$rvfTarget,'_translation')}">
             Translation
           </a>
@@ -640,20 +642,20 @@
       <xsl:variable name="rvfTarget" select="substring-after(@corresp,'#')"/>
       <xsl:variable name="rvfNum" select="//tei:lg[@xml:id = $rvfTarget]/@n"/>
       
-      <header class="">
-        <div class="">
+      <header class="row align-items-center">
+        <div class="col-sm-12 col-md-auto">
           <h1>
             Commentary: <cite>Rvf</cite> <xsl:value-of select="' '"/><xsl:value-of select="$rvfNum"/>
           </h1>
         </div>
         
-        <nav class="commentary">  
+        <nav class="commentary col-auto">  
           <xsl:call-template name="commentaryNav">
             <xsl:with-param name="rvfTarget" select="$rvfTarget"/>
           </xsl:call-template>
         </nav>
 
-        <button class="close float-right">
+        <button class="col-auto close float-right">
             <i class="fa fa-window-close-o"></i>
         </button>
       </header>

@@ -5,12 +5,11 @@
     <meta charset="utf-8" />
     <title>Petrarchive: No., first line, and genre index</title>
 
-    <?php 
-      include "petrarchive.php"; 
-      $PT = new Petrarchive();
-      $PT->load_css();
-      $PT->load_js();
-    ?>
+    <link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="js/jquery-ui/jquery-ui.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/stylesheets/screen.css" />
+  <link rel="stylesheet" type="text/css" href="css/stylesheets/index.css" />
     
     <script>
         function onetime(node, type) {

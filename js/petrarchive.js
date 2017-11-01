@@ -52,6 +52,7 @@ Petrarchive.prototype.init = function() {
 
   var facs = this.facs
   var facsNav = $('#pt-facs nav')
+
   var facsInited = false
 
   facs.show($('#pt-facs'), true)
@@ -59,7 +60,7 @@ Petrarchive.prototype.init = function() {
   facs.$frame.resizable(
     {
       create: function( event, ui ) {
-        // Prefers an another cursor with two arrows
+        // Prefers another cursor with two arrows
         $(".ui-resizable-e").css("cursor","ew-resize")
       },
 
@@ -72,6 +73,19 @@ Petrarchive.prototype.init = function() {
   )
 
   if (that.hasMultipleCh()) {
+    $('.-teibp-pb:first-child').css('display', 'initial')
+
+    if (util_browser.getParam('ch')) {
+      var charta = util_browser.getParam('ch')
+
+      setTimeout(function() {
+        $('html, body').animate({
+          scrollTop: $("#" + charta).offset().top - ($('#sticky-header').height() * 1.5)
+        }, 2500);
+      }, 1500)
+    }
+
+    // scroll to the pertinent chartae
     
   }
 
@@ -79,17 +93,28 @@ Petrarchive.prototype.init = function() {
     var img = $($(ev.delegateTarget).children('img'))
 
     if (!facs.isActive) {
+      // If Facs is inactive, then we first want to activate it
+
        if (that.hasMultipleCh()) {
+        // Within documents with multiple Chartae, we must load the 
+        // correct facs img before activating the facsviewer.
+        // the variable img from above is the facs img of the charta user clicked on
+        // , which is then loaded into the facs viewer here
         that.facs.img = img
         that.facs.loadImg()
       }
 
       facs.isActive = true
       facs.$frame.addClass('active')
-      localStorage.setItem('facs', 'true')
+      util_browser.setParam('facs', 'active')
     } else {
+      // if Facs is already active.
       if (that.hasMultipleCh()) {
+        // this usecase is simple with single charta documents.
+        // Multiple chartae documents must contain conditional logic
         if (that.facs.img !== img) {
+          // user is activating a separate facs. Don't close facs viewer on them.
+          // instead load newly activated facs img
           that.facs.img = img
           that.facs.loadImg()
           return
@@ -98,7 +123,7 @@ Petrarchive.prototype.init = function() {
 
       facs.isActive = false
       facs.$frame.removeClass('active')
-      localStorage.setItem('facs', 'false')
+      util_browser.removeParam('facs')
     }
 
     if (!facsInited) {
@@ -106,7 +131,7 @@ Petrarchive.prototype.init = function() {
     }
   })
 
-  if (localStorage.getItem('facs') == 'true') {
+  if (util_browser.getParam('facs')) {
     $($('a.facs-thumb')[0]).click()
   }
 
@@ -130,7 +155,7 @@ Petrarchive.prototype.init = function() {
   facsNav.children('button.facs-close').click(function(ev) {
     facs.isActive = false
     facs.$frame.removeClass('active')
-    localStorage.setItem('facs', 'false')
+    util_browser.removeParam('facs')
   })
 
   /***********
@@ -151,6 +176,9 @@ Petrarchive.prototype.events = function() {
 }
 
 Petrarchive.prototype.onResize = function() {
-    let headerHeight = $('#sticky-header').outerHeight()
+    var headerHeight = $('#sticky-header').outerHeight()
     $('#pt-facs').css('top', headerHeight)
+
+    var commentaryHeaderHeight = $('.commentary.active header').height()
+    $('.commentary.active main').css('top', commentaryHeaderHeight * 1.2)
 }

@@ -20,7 +20,7 @@ $(document).tooltip({
     	var p = '<p class="charta">' + prettyCh
 
         if (noFile) {
-            p += ' (Coming Soon)'
+            p += ' <cite>Text encoding in progress</cite>'
         }
 
         p += '</p>'

@@ -1,4 +1,3 @@
-
 function NavUtil() {
   this.current = new PetrarchiveDocument(document.URL)
 
@@ -20,14 +19,6 @@ function NavUtil() {
 
 NavUtil.prototype.events = function() {
   var that = this
-
-  this.previous.hover(function(ev) {
-    console.log(ev)
-  })
-
-  this.next.hover(function(ev) {
-    console.log(ev)
-  })
 
   $('.themeBox label').click(function(ev) {
     var newValue = $(ev.delegateTarget).children('input').attr('value')
@@ -62,6 +53,8 @@ NavUtil.prototype.setupPrevHref = function() {
     current = this.current
   }
 
+  console.log(current)
+
   if (current.rv == 'r') {
     prevRV = 'v'
     prevCh = (+current.charta) - 1
@@ -75,10 +68,15 @@ NavUtil.prototype.setupPrevHref = function() {
   prevName = s.substr(s.length - 3) + prevRV
 
   prevDoc = this.chartaMeta[prevName]
-  if (!prevDoc) {
+
+  if (current.charta == '001' && current.rv == 'r') {
     this.previous.attr('disabled', true)
 
     return null
+  }
+
+  if (!prevDoc) {
+    return 'charta-404.xml?ch=asdf'
   }
 
   if ("document" in prevDoc) {
@@ -130,8 +128,7 @@ NavUtil.prototype.setupNextHref = function(name) {
   nextDoc = this.chartaMeta[nextName]
 
   if (!nextDoc) {
-    this.next.attr('disabled', true)
-    return null
+    return 'charta-404.xml?ch=fdoij'
   }
 
   if ("document" in nextDoc) {
@@ -156,128 +153,3 @@ NavUtil.prototype.setupNextHref = function(name) {
   return url + '.xml'
 }
 
-NavUtil.prototype.handleAnamolies = function(name, rv, direction) {
-  // Direction is whether navigation direction is going 'next' or 'previous'
-
-  var forbiddenNames = [
-    '000'
-  ]
-
-  var isInvalid = forbiddenNames.find(function(el) {
-    if (name == el) {
-      return true
-    }
-  })
-
-  if (isInvalid) { return '#' }
-
-  var anamolies = [
-    {
-      name: '004',
-      rv: 'r',
-      correction: 'c004r-c005r'
-    },
-    {
-      name: '004',
-      rv: 'v',
-      correction: 'c005v-c007r'
-    },
-    {
-      name: '005',
-      rv: 'v',
-      correction: 'c005v-c007r'
-    },
-    {
-      name: '005',
-      rv: 'r',
-      correction: 'c004r-c005r'
-    },
-    {
-      name: '006',
-      rv: 'r',
-      correction: 'c007v'
-    },
-    {
-      name: '007',
-      rv: 'r',
-      correction: 'c005v-c007r'
-    },
-    {
-      name: '008',
-      rv: 'v',
-      correction: 'c008v-c009v'
-    },
-    {
-      name: '009',
-      rv: 'r',
-      correction: 'c010r'
-    },
-    {
-      name: '009',
-      rv: 'v',
-      correction: 'c008v-c009v'
-    },
-    {
-      name: '011',
-      rv: 'r',
-      correction: 'c011r-c011v'
-    },
-    {
-      name: '011',
-      rv: 'v',
-      correction: {
-        next: 'c012r-c012v',
-        previous: 'c011r-c011v'
-      }
-    },
-    {
-      name: '012',
-      rv: 'v',
-      correction: {
-        next: 'c013r-c013v',
-        previous: 'c012r-c012v'
-      }
-    },
-    {
-      name: '013',
-      rv: 'v',
-      correction: {
-        next: 'c014r',
-        previous: 'c013r-c013v'
-      }
-    },
-    {
-      name: '015',
-      rv: 'r',
-      correction: 'c015r-c018v'
-    },
-    {
-      name: '015',
-      rv: 'v',
-      correction: 'c019r'
-    },
-    {
-      name: '018',
-      rv: 'v',
-      correction: 'c015r-c018v'
-    }
-
-  ]
-
-  var isAnamoly = anamolies.find(function(el) {
-    if (name == el.name && rv == el.rv) {
-      return true
-    }
-  })
-
-  if (!isAnamoly) {
-    return 'c' + name + rv + '.xml'
-  } else {
-
-    if (typeof isAnamoly.correction === 'string') {
-      return isAnamoly.correction + '.xml'
-    } else {
-      return isAnamoly.correction[direction] + '.xml'
-    }
-  }
-}

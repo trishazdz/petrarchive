@@ -36,7 +36,7 @@ foreach ($files as $f) {
             $no_file = true;
         }
 
-        $url .= '.xml';
+        $url .= '.xml?ch=' . $exploded_file_name;
 
         $html = '<a class="col-3 col-sm-1-24';
         if ($no_file) {

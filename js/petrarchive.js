@@ -38,9 +38,14 @@ Petrarchive.prototype.init = function() {
 
   this.events()
 
-  this.nav = new NavUtil()
-  this.commentary = new CommentaryUtil()
+  if (window.NavUtil) {
+    this.nav = new NavUtil()
+  }
+  if (window.CommentaryUtil) {
+    this.commentary = new CommentaryUtil()
+  }
 
+  if (window.Frame) {
   /* ----------------
    Setup Facs
    ----------------*/
@@ -161,6 +166,7 @@ Petrarchive.prototype.init = function() {
   /***********
     /End Setup Facs
   ***********/
+  }
 
   var that = this
   $(window).resize(function() {

@@ -3,11 +3,12 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Petrarchive: Acknowledgements</title>
-	   
-</head>
+
+	<script type="text/javascript" src="js/auxillary_page.js"></script>
 
     <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-
+	   
+</head>
 <body>
 <?php include("nav.html"); ?>
 <div id="content">

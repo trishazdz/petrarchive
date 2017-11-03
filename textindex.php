@@ -8,8 +8,9 @@
     <link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="js/jquery-ui/jquery-ui.min.css" />
 
-  <link rel="stylesheet" type="text/css" href="css/stylesheets/screen.css" />
-    
+    <script type="text/javascript" src="js/auxillary_page.js"></script>
+
+    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />    
     <script>
         function onetime(node, type) {
 

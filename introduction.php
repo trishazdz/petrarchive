@@ -3,15 +3,10 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Petrarchive: People</title>
-	
-	<?php 
-	    include "petrarchive.php"; 
-	    $PT = new Petrarchive();
-	    $PT->load_css();
-	    $PT->load_js(
-	    	['files' => ['facsimile']]
-	    );
-	?>
+
+	<script type="text/javascript" src="js/auxillary_page.js"></script>
+
+    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <?php include("nav.html"); ?>

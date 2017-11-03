@@ -3,6 +3,9 @@ function PetrarchiveDocument(url, name) {
   if (url) {
     this.url = url
   } else {
+    if (name[0] !== 'c') {
+      name = 'c' + name
+    }
     this.url = '/' + name + '.xml'
   }
 
@@ -22,7 +25,7 @@ function PetrarchiveDocument(url, name) {
 
 
 PetrarchiveDocument.prototype.getPrettyName = function() {
-  var chartaNum = this.charta.substring(0, this.charta.length - 1),
+  var charta = this.charta.replace(/^0+/, ''),
       prettyRV;
 
   if (this.rv == 'r') {
@@ -31,5 +34,5 @@ PetrarchiveDocument.prototype.getPrettyName = function() {
     prettyRV = 'verso'
   }
 
-  return chartaNum + ' ' + prettyRV
+  return charta + ' ' + prettyRV
 }

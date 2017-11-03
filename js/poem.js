@@ -44,12 +44,19 @@ $(document).ready(function() {
 
   if ($pageNum.length == 1) {
   	pageNum = $pageNum.text()
-  } else {
+  } 
+  else if ($pageNum.length > 1) {
     var firstSplit = $($pageNum[0]).text().split(' ').slice(1)
     var firstPage = firstSplit[0] + ' ' + firstSplit[1]
     var lastSplit = $($pageNum[$pageNum.length-1]).text().split(' ').slice(1)
     var lastPage = lastSplit[0] + ' ' + lastSplit[1]
   	pageNum = firstPage + ' - ' + lastPage
+  }
+
+  if (util_browser.getParam('incomplete')) {
+    var prettyName = window.PT.getCurrentDoc().getPrettyName()
+
+    pageNum = 'charta ' + prettyName
   }
 
   $('#sticky-header .charta-no').text(pageNum)

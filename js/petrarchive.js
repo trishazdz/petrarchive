@@ -182,3 +182,7 @@ Petrarchive.prototype.onResize = function() {
     var commentaryHeaderHeight = $('.commentary.active header').height()
     $('.commentary.active main').css('top', commentaryHeaderHeight * 1.2)
 }
+
+Petrarchive.prototype.getCurrentDoc = function() {
+  return this.nav.current
+}

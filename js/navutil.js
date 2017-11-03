@@ -1,5 +1,9 @@
 function NavUtil() {
-  this.current = new PetrarchiveDocument(document.URL)
+  if (util_browser.getParam('incomplete')) {
+    this.current = new PetrarchiveDocument(undefined, util_browser.getParam('ch'))
+  } else {
+    this.current = new PetrarchiveDocument(document.URL)
+  }
 
   this.previous = $('#page-nav a.previous')
   this.next = $('#page-nav a.next')
@@ -76,7 +80,7 @@ NavUtil.prototype.setupPrevHref = function() {
   }
 
   if (!prevDoc) {
-    return 'charta-404.xml?ch=asdf'
+    return 'charta-404.xml?incomplete=true&ch=' + prevName
   }
 
   if ("document" in prevDoc) {
@@ -128,7 +132,7 @@ NavUtil.prototype.setupNextHref = function(name) {
   nextDoc = this.chartaMeta[nextName]
 
   if (!nextDoc) {
-    return 'charta-404.xml?ch=fdoij'
+    return 'charta-404.xml?incomplete=true&ch=' + nextName
   }
 
   if ("document" in nextDoc) {

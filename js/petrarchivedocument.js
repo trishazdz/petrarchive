@@ -20,3 +20,16 @@ function PetrarchiveDocument(url, name) {
   this.commentary = this.name.split('_').length > 1
 }
 
+
+PetrarchiveDocument.prototype.getPrettyName = function() {
+  var chartaNum = this.charta.substring(0, this.charta.length - 1),
+      prettyRV;
+
+  if (this.rv == 'r') {
+    prettyRV = 'recto'
+  } else {
+    prettyRV = 'verso'
+  }
+
+  return chartaNum + ' ' + prettyRV
+}

@@ -3,15 +3,11 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Petrarchive: Acknowledgements</title>
-
-  <?php 
-    include "petrarchive.php"; 
-    $PT = new Petrarchive();
-    $PT->load_css();
-    $PT->load_js();
-  ?>
 	   
 </head>
+
+    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
 <body>
 <?php include("nav.html"); ?>
 <div id="content">

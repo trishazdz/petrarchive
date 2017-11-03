@@ -6,10 +6,9 @@
     <title>Petrarchive: No., first line, and genre index</title>
 
     <link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css" />
-  <link rel="stylesheet" type="text/css" href="js/jquery-ui/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="js/jquery-ui/jquery-ui.min.css" />
 
   <link rel="stylesheet" type="text/css" href="css/stylesheets/screen.css" />
-  <link rel="stylesheet" type="text/css" href="css/stylesheets/index.css" />
     
     <script>
         function onetime(node, type) {

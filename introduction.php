@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>Petrarchive: People</title>
+	<title>Petrarchive: Introduction</title>
 
 	<script type="text/javascript" src="js/auxillary_page.js"></script>
 

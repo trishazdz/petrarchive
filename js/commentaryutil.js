@@ -11,6 +11,8 @@ function CommentaryUtil() {
   this.activate = function(rvf) {
     if (rvf[0] == '#') {
       rvf = rvf.substring(1)
+
+      rvf = rvf.split('?')[0]
     }
 
     $('body').addClass('commentary-active')

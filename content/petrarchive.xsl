@@ -134,8 +134,10 @@
     </xsl:template>
     
     <xsl:variable name="htmlFooter">
-      <footer class="col-12">© 2013-2016 H. Wayne Storey &amp; John A. Walsh. This document is part of the Petr<em>archive</em>.<br/>
-        Team: H. Wayne Storey, John A. Walsh, Isabella Magni, Grace Thomas, Allison M. McCormack (2013-14), and Laura Pence.<br/>
+      <footer class="col-12">© 2013-2017 H. Wayne Storey, John A. Walsh &amp; Isabella Magni. This document is part of the Petr<em>archive</em>.<br/>
+        Team: H. Wayne Storey, John A. Walsh, Isabella Magni, Erica Hayes, Lino Mioni, and Abraham Kim. 
+
+        <br />Past Contributors: Grace Thomas, Allison M. McCormack, and Laura Pence.<br/>
         <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png" /></a>&#160;
         <a xmlns:cc="http://creativecommons.org/ns#" href="http://petrarchive.org" property="cc:attributionName" rel="cc:attributionURL"><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Petr<i>archive</i></span></a> by <a href="http://www.indiana.edu/~frithome/faculty/italian/storey.shtml">H. Wayne Storey</a> and <a href="http://johnwalsh.name/">John A. Walsh</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br/>
         Funding and support provided by the <a href="http://neh.gov/">National Endowment for the Humanities</a> and <a href="http://www.indiana.edu/">Indiana University-Bloomington</a>.<br/>
@@ -443,7 +445,7 @@
   </xsl:template>
  
   <xsl:template name="poemNumber">
-    <span class="poem-number">
+    <span class="poem-number {@n}">
       <xsl:value-of select="@n"></xsl:value-of>
       <xsl:if test="//tei:back/tei:div[@type = 'commentary']/@corresp = concat('#',@xml:id)">
         <button class="commentary-activate" id="{@xml:id}">
@@ -536,7 +538,7 @@
     <div id="{$maniculeId}" class="manicule-palimpsest-trigger">
       <xsl:attribute name="onclick">
         <!-- <xsl:value-of select="concat('showHide(&quot;',$maniculeId,'&quot;,&quot;',tei:subst/tei:del/tei:lg/@xml:id, '&quot;,&quot;',tei:subst/tei:add/tei:lg/@xml:id,'&quot;)'"/> -->
-        <xsl:value-of select="'JavaScript:showHide('"/>
+        <xsl:value-of select="'JavaScript:PT.showHide('"/>
         <xsl:value-of select="$apos"/>
         <xsl:value-of select="$maniculeId"/>
         <xsl:value-of select="concat($apos,',',$apos)"/>

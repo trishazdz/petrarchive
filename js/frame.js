@@ -345,6 +345,13 @@ Frame.prototype.zoomImg = function(zoom, point, cb) {
   var newHeight = this.$img.prop('height') 
 
   if (point) {
+    // Go kind of towards point as center, but not fully
+    // Trying to mimic the way google mapz zoom works
+    var pointRatio = {
+      x: Math.abs(oldCenter.x - point.x),
+      y: Math.abs(oldCenter.y - point.y)
+    }
+
     this.repositionImg(point)
     this._center = point
   } else {

@@ -55,10 +55,16 @@ Petrarchive.prototype.init = function() {
     recenter: false
   })
 
+  this.facsIsActive = function() {
+    console.log(util_browser.getParam('facs')) 
+    console.log(localStorage.getItem('facs'))
+    return (util_browser.getParam('facs')) || (localStorage.getItem('facs') == 'true')
+  }
+
   var facs = this.facs
   var facsNav = $('#pt-facs nav')
 
-  var facsInited = false
+  this.facsInited = false
 
   facs.show($('#pt-facs'), true)
 
@@ -97,21 +103,19 @@ Petrarchive.prototype.init = function() {
   $('a.facs-thumb').click(function(ev) {
     var img = $($(ev.delegateTarget).children('img'))
 
-    if (!facs.isActive) {
+    if (!that.facsIsActive()) {
       // If Facs is inactive, then we first want to activate it
 
        if (that.hasMultipleCh()) {
-        // Within documents with multiple Chartae, we must load the 
-        // correct facs img before activating the facsviewer.
+        // Within documents with multiple Chartae,
+        // correct facs img must be loaded before activating the facsviewer.
         // the variable img from above is the facs img of the charta user clicked on
         // , which is then loaded into the facs viewer here
         that.facs.img = img
         that.facs.loadImg()
       }
 
-      facs.isActive = true
-      facs.$frame.addClass('active')
-      util_browser.setParam('facs', 'active')
+      that.activateFacs()
     } else {
       // if Facs is already active.
       if (that.hasMultipleCh()) {
@@ -126,18 +130,12 @@ Petrarchive.prototype.init = function() {
         }
       }
 
-      facs.isActive = false
-      facs.$frame.removeClass('active')
-      util_browser.removeParam('facs')
-    }
-
-    if (!facsInited) {
-      facs.containImg()
+      that.deactivateFacs()
     }
   })
 
-  if (util_browser.getParam('facs')) {
-    $($('a.facs-thumb')[0]).click()
+  if (this.facsIsActive()) {
+    this.activateFacs()
   }
 
   facsNav.children('button.zoom').click(function(ev) {
@@ -158,9 +156,9 @@ Petrarchive.prototype.init = function() {
   })
 
   facsNav.children('button.facs-close').click(function(ev) {
-    facs.isActive = false
     facs.$frame.removeClass('active')
     util_browser.removeParam('facs')
+    localStorage.setItem('facs', 'false')
   })
 
   /***********
@@ -191,4 +189,41 @@ Petrarchive.prototype.onResize = function() {
 
 Petrarchive.prototype.getCurrentDoc = function() {
   return this.nav.current
+}
+
+Petrarchive.prototype.activateFacs = function() {
+  this.facs.$frame.addClass('active')
+  util_browser.setParam('facs', 'active')
+  localStorage.setItem('facs', 'true')
+
+  if (!this.facsInited) {
+    this.facs.containImg()
+  }
+
+}
+
+Petrarchive.prototype.deactivateFacs = function() {
+  facs.$frame.removeClass('active')
+  util_browser.removeParam('facs')
+  localStorage.setItem('facs', 'false')
+}
+
+Petrarchive.prototype.showHide = function(maniculeId, idToShow, idToHide) {
+  var hide = "#" + idToHide;
+  var show = "#" + idToShow;
+  var manicule = "#" + maniculeId;
+
+  var n = $(hide).attr("n") || $(show).attr("n")
+
+
+  $(hide).siblings('.poem-number').text(n)
+  $(show).siblings('.poem-number').text(n)
+
+  $(hide).css("display","none")
+    .siblings().css("display", "none");
+  $(show).css("display","block")
+    .siblings().css("display", "block");
+
+  var newFunction = "PT.showHide('" + maniculeId + "','" + idToHide + "','" + idToShow + "');";
+  $(manicule).attr("onclick", newFunction);
 }

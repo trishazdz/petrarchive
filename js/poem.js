@@ -60,4 +60,10 @@ $(document).ready(function() {
   }
 
   $('#sticky-header .charta-no').text(pageNum)
+
+  if (window.location.hash) {
+    var currentScroll = $('html').scrollTop()
+
+    $('html, body').scrollTop(currentScroll - ($('#sticky-header').height() * 2))
+  }
 })

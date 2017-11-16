@@ -616,7 +616,7 @@
                   </lg>
               </lg>  
           </lg>
-          <lg type="canzone" xml:id="rvf127" n="127"> 
+          <lg type="canzone_14vv" xml:id="rvf127" n="127"> 
               <lg type="stanza">
                   <lg type="dblvrs" corresp="#canvasline">
                       <l n="1"><hi rendition="#red #fs24pt">I</hi><hi rendition="#small-caps">n</hi> quella parte <choice><orig>doue</orig><reg>dove</reg></choice> <choice><orig>amor</orig><reg>Amor</reg></choice> mi sprona</l>
@@ -853,7 +853,7 @@
             </lg>
           </lg>
             <space corresp="#canvasline"/>
-         <lg xml:id="rvf128" type="canzone" n="128">
+         <lg xml:id="rvf128" type="canzone_16vv" n="128">
              <lg type="stanza">
                <lg type="dblvrs" corresp="#canvasline">
                    <l n="1"><hi rendition="#blue #fs24pt">I</hi><hi rendition="#small-caps">t</hi>alia mia<supplied>,</supplied> <choice><orig>ben chel</orig><reg>benché ’l</reg></choice> parlar sia indarno</l>

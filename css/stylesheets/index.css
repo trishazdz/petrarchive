@@ -1,0 +1,50 @@
+nav #smallbanner {
+	display: none;
+}
+#bannertitle {color: #afafaf;}
+#vizindex img {width:100%;}
+
+@media screen and (min-width: 576px) {
+	#vizindex .col-sm-1-24 {padding: 0; border: 2px solid #afafaf; max-width: 4.1%;}
+}
+.no-file {opacity: .4;}
+.ui-tooltip {opacity: 1; max-width: 160px; background-color: white;}
+
+.ui-tooltip img.facs {width:100%;}
+.ui-widget-shadow {background: white;}
+.ui-widget-content {background: white; border: none;}
+
+.ui-tooltip-content p.charta {
+	font-size: .8em; 
+	text-transform: capitalize;
+	font-family: Arvo, Verdana, sans-serif;
+}
+
+.container {
+}
+
+#banner {
+  font-family: "helvetica neue", helvetica, verdana, arial, sans-serif;
+  font-size: 32pt;
+  text-decoration: none;
+  font-weight: 100;
+  line-height: 28pt;
+}
+
+.show-sm-down div,
+.show-sm-down #bannerrvf {
+	font-size: 24px;
+}
+
+.show-md-up {
+	margin-top: 4rem;
+}
+
+body section main {
+	margin-top: 2rem;
+	font-family: helvetica neue, helvetica;
+}
+
+#textindex-container {
+	margin-top: 3rem;
+}

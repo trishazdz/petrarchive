@@ -28,6 +28,10 @@ function switchThemes(theme) {
 	document.getElementById('maincss').href=theme.options[theme.selectedIndex].value;
 }
 
+function switchCustomCSS(theme) {
+	document.getElementById('customcss').href=theme.options[theme.selectedIndex].value;
+}
+
 function showFacs(num, url, id) {
 	facsWindow = window.open ("about:blank")
 	facsWindow.document.write("<html>")

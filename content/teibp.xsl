@@ -24,7 +24,9 @@
 <xsl:output method="xml" encoding="utf-8" version="1.0" indent="yes" standalone="no" media-type="text/html" omit-xml-declaration="no" doctype-system="about:legacy-compat" />	
 	<xsl:param name="teibpHome" select="'http://dcl.slis.indiana.edu/teibp/'"/>
 	<xsl:param name="inlineCSS" select="true()"/>
-  <xsl:param name="includeNav" select="true()"/>
+  	<xsl:param name="includeNav" select="false()"/>
+    <xsl:param name="includeStickyHeader" select="true()"/>
+
 	<xsl:param name="includeToolbox" select="true()"/>
 	<xsl:param name="includeAnalytics" select="true()"/>
 	<xsl:param name="displayPageBreaks" select="true()"/>
@@ -49,7 +51,9 @@
 	
 	<xsl:param name="teibpCSS" select="concat($filePrefix,'/css/teibp.css')"/>
 	<xsl:param name="customCSS" select="concat($filePrefix,'/css/custom.css')"/>
+
 	<xsl:param name="jqueryJS" select="concat($filePrefix,'/js/jquery/jquery.min.js')"/>
+
 	<xsl:param name="jqueryBlockUIJS" select="concat($filePrefix,'/js/jquery/plugins/jquery.blockUI.js')"/>
 	<xsl:param name="teibpJS" select="concat($filePrefix,'/js/teibp.js')"/>
 	<xsl:param name="theme.default" select="concat($filePrefix,'/css/teibp.css')"/>
@@ -68,17 +72,27 @@
 	<xsl:template match="/" name="htmlShell" priority="99">
 		<html>
 			<xsl:call-template name="htmlHead"/>
+
 			<body>
 			  <xsl:if test="$includeNav = true()">
 			    <xsl:call-template name="siteNavigation"/>
 			  </xsl:if>
-				<xsl:if test="$includeToolbox = true()">
-					<xsl:call-template name="teibpToolbox"/>
-				</xsl:if>
-				<div id="tei_wrapper">
-					<xsl:apply-templates/>
-				</div>
-				<xsl:copy-of select="$htmlFooter"/>
+
+			  <div class="container-fluid header-container">
+			    <xsl:if test="$includeStickyHeader = true()">
+			      <xsl:call-template name="stickyHeader"/>
+			    </xsl:if>
+			  </div>
+
+			  <div class="container-fluid content-container">
+				  <div id="tei_wrapper" class="row">
+					  <xsl:apply-templates/>
+				  </div>
+
+				  <div class="col-12">
+				  	<xsl:copy-of select="$htmlFooter"/>
+				  </div>
+		      </div>
 			</body>
 		</html>
 	</xsl:template>
@@ -117,12 +131,15 @@
 			<xd:p>A hack because JavaScript was doing weird things with &lt;title>, probably due to confusion with HTML title. There is no TEI namespace in the TEI Boilerplate output because JavaScript, or at least JQuery, cannot manipulate the TEI elements/attributes if they are in the TEI namespace, so the TEI namespace is stripped from the output. As far as I know, &lt;title> elsewhere does not cause any problems, but we may need to extend this to other occurrences of &lt;title> outside the Header.</xd:p>
 		</xd:desc>
 	</xd:doc>
+
+	
 	<xsl:template match="tei:teiHeader//tei:title">
-		<tei-title>
+		<!--<tei-title>
 			<xsl:call-template name="addID"/>
 			<xsl:apply-templates select="@*|node()"/>
-		</tei-title>
+		</tei-title>-->
 	</xsl:template>
+	
 
 	<xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
 		<xd:desc>
@@ -306,6 +323,9 @@
 		<head>
 			<meta charset="UTF-8"/>
 
+			<meta http-equiv="X-UA-Compatible” content=”IE=edge"/>
+    		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
 			<link id="maincss" rel="stylesheet" type="text/css" href="{$teibpCSS}"/>
 			<link id="customcss" rel="stylesheet" type="text/css" href="{$customCSS}"/>
 			<script type="text/javascript" src="{$jqueryJS}"></script>
@@ -464,7 +484,7 @@
 		</xsl:param>
 		<xsl:choose>
 		<xsl:when test="$displayPageBreaks = true()">
-					<span class="-teibp-pb">
+					<span class="-teibp-pb" style="display: none">
 						<xsl:call-template name="addID"/>
 						<xsl:call-template name="pb-handler">
 							<xsl:with-param name="n" select="@n"/>

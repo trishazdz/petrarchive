@@ -1,31 +1,47 @@
+<script>
+function toggle_visibility(id) {
+    var e = document.getElementById(id);
+    if (e.style.display == 'block')
+        e.style.display = 'none';
+    else
+        e.style.display = 'block';
+}
+</script>
+
 <nav xmlns="http://www.w3.org/1999/xhtml" style="position:absolute;top:1em;">
-<a style="position:relative;left:-3em;top:-4px;" name="menu_trigger" onclick="toggle_visibility('menu');">
- <img src="images/icon-menu.svg" alt="menu" name="menu"/>
-</a>
-<ul id="menu" style="display:none;">
-<li><a href="introduction.php">Introduction</a></li>
-<li>About the texts</li>
-<li>Editorial conventions</li>
-<li><strong><a href="textindex.php"><cite>Rerum vulgarium fragmenta (Rvf)</cite></a></strong></li>
-<li><a href="visindex.php">A visual index to the <cite>Rvf</cite></a></li>
-<!--<li>Commentary</li>-->
-<li><a href="content/glossary.xml">Appendix: Glossary</a> <!-- Illustrated glossary of textual, paleographic, linguistic and other terminology relevant to the <cite>Rvf</cite>--></li>
-<!--<li><a href="chronology/index.php">Appendix: Timeline</a></li>--> <!-- of Petrarch's Life and the development and history of the <cite>Rvf</cite>-->
-<li>Colophon
-<ul>
-<li><a href="people.php">People</a></li>
-<li><a href="technical.php">Technical architecture</a></li>
-<li>Grant proposals</li>
-<li><a href="content/papers_and_presentations.xml">Papers and presentations</a></li>
-<li>Press</li>
-<li><a href="acknowledgments.php">Acknowledgments</a></li>
-</ul>
-</li>
-</ul><div id="smallbanner">
-<a href="http://petrarchive.org/"><div id="bannertitle">Petr<span class="archive">archive</span></div>
-<div id="bannersubtitle">An edition of Petrarch’s songbook</div>
-<div id="bannerrvf">Rerum vulgarium fragmenta</div>
-<div id="bannerresp">Edited by H. Wayne Storey, John A. Walsh and Isabella Magni</div>
-</a>
-</div>
+	<a style="position:relative;left:-3em;top:0px;" name="menu_trigger" onclick="toggle_visibility('menu');">
+	 <img src="images/icon-menu.svg" alt="menu" name="menu"
+	 	style="cursor: pointer;" />
+	</a>
+
+	<ul id="menu" style="display:none;">
+		<li><a class="" href="index.php">Home</a></li>
+		<li><a href="introduction.php">Introduction</a></li>
+		<li>About the texts</li>
+		<li>Editorial conventions</li>
+		<li><strong><a href="textindex.php"><cite>Rerum vulgarium fragmenta (Rvf)</cite></a></strong></li>
+		<li><a href="visindex.php">A visual index to the <cite>Rvf</cite></a></li>
+		<!--<li>Commentary</li>-->
+		<li><a href="content/glossary.xml">Appendix: Glossary</a> <!-- Illustrated glossary of textual, paleographic, linguistic and other terminology relevant to the <cite>Rvf</cite>--></li>
+		<!--<li><a href="chronology/index.php">Appendix: Timeline</a></li>--> <!-- of Petrarch's Life and the development and history of the <cite>Rvf</cite>-->
+		<li>Colophon
+			<ul>
+			<li><a href="people.php">People</a></li>
+			<li><a href="technical.php">Technical architecture</a></li>
+			<li>Grant proposals</li>
+			<li><a href="content/papers_and_presentations.xml">Papers and presentations</a></li>
+			<li>Press</li>
+			<li><a href="acknowledgments.php">Acknowledgments</a></li>
+			</ul>
+		</li>
+	</ul>
+
+	<div id="smallbanner">
+		<a href="http://petrarchive.org/">
+			<div id="bannertitle">Petr<span class="archive">archive</span></div>
+			<div id="bannersubtitle">An edition of Petrarch’s songbook</div>
+			<div id="bannerrvf">Rerum vulgarium fragmenta</div>
+			<div id="bannerresp">Edited by H. Wayne Storey, John A. Walsh and associate editor Isabella Magni</div>
+		</a>
+	</div>
 </nav>

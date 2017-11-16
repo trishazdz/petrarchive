@@ -3,21 +3,13 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Petrarchive: Acknowledgments</title>
-	    <script type="text/javascript">
-<!--
-    function toggle_visibility(id) {
-       var e = document.getElementById(id);
-       if(e.style.display == 'block')
-          e.style.display = 'none';
-       else
-          e.style.display = 'block';
-    }
-//-->
-</script>
+
+  	<script type="text/javascript" src="js/auxillary_page.js"></script>
+
     <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<?php include("nav.html")?>
+<?php include("nav.html"); ?>
 <!-- number index, first line index, visual index, genre index -->
 
 <div id="content">

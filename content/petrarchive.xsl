@@ -10,22 +10,51 @@
     extension-element-prefixes="exsl msxsl"
     xmlns="http://www.w3.org/1999/xhtml" 
     exclude-result-prefixes="xsl tei xd eg fn #default">
+    
     <xsl:import href="teibp.xsl"/>
-       <xsl:output method="xml" encoding="utf-8" version="1.0" indent="yes" standalone="no" media-type="text/html" omit-xml-declaration="no" doctype-system="about:legacy-compat" /> 
+    <xsl:output method="html" encoding="utf-8" version="1.0" indent="yes" standalone="no" media-type="text/html" omit-xml-declaration="no" doctype-system="about:legacy-compat" /> 
     <xsl:param name="pbNote" select="''"/>
+
+    <xsl:param name="jqueryUICSS" select="concat($filePrefix, '/js/jquery-ui/jquery-ui.min.css')"/>
+    <xsl:param name="jqueryUI" select="concat($filePrefix,'/js/jquery-ui/jquery-ui.min.js')"/>
+    <xsl:param name="jqueryMW" select="concat($filePrefix,'/js/jquery-mousewheel/mousewheel.min.js')"/>
+
+    <xsl:param name="knockout" select="concat($filePrefix,'/js/knockout/knockout-3.4.2.js')"/>
+
+    <!-- Bootstrap v4 requires tether -->
+    <xsl:param name="tetherJS" select="concat($filePrefix,'/js/tether/tether.min.js')"/>
+    <xsl:param name="bootstrapJS" select="concat($filePrefix,'/js/bootstrap/bootstrap.min.js')"/>
+
+
+
+
+
+    <xsl:param name="bootstrapCSS" select="concat(
+    $filePrefix, '/css/lib/bootstrap.min.css')"/>
     
     <xsl:param name="customCSS.norm" select="concat($filePrefix,'/css/custom_norm.css')"/>
     <xsl:param name="customCSS" select="concat($filePrefix,'/css/custom.css')"/>
-  
-    
-  
- 
-    <xsl:template name="siteNavigation">
-      <xsl:variable name="nav">
-        <xsl:copy-of select="document('../nav_content.html')"/>
+    <xsl:param name="frameCSS" select="concat($filePrefix,'/css/frame.css')"/>
+
+
+    <xsl:template name="stickyHeader">
+      <xsl:variable name="header">
+        <xsl:copy-of select="document('../sticky_header.html')"/>
       </xsl:variable>
-      <xsl:copy-of select="$nav"/>
+      <xsl:copy-of select="$header"/>
     </xsl:template>
+  
+  <xd:doc>
+    <xd:desc>
+      <xd:p>TEI's head changed to tei-head to avoid conflicts with html/head.</xd:p>
+    </xd:desc>
+  </xd:doc>
+  <xsl:template match="tei:head">
+    <tei-head>
+      <xsl:call-template name="addID"/>
+      <xsl:apply-templates select="@*|node()"/>
+    </tei-head>
+  </xsl:template>
     
     <xsl:template match="tei:g" priority="99">
       <xsl:variable name="charId" select="substring-after(@ref,'#')"/>
@@ -79,57 +108,92 @@
             <script type="text/javascript" src="//use.typekit.net/ctk5ksw.js"></script>
             <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
             -->
-            <meta charset="UTF-8"/>
+             <!-- Required meta tags -->
+            <meta charset="utf-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+            <link id="bootstrap" rel="stylesheet" type="text/css" href="{$bootstrapCSS}"/>
+            <link id="jqueryuicss" rel="stylesheet" type="text/css" href="{$jqueryUICSS}"/>
+
+
             <link id="maincss" rel="stylesheet" type="text/css" href="{$teibpCSS}"/>
+
             <link id="customcss" rel="stylesheet" type="text/css" href="{$customCSS}"/>
-            <script type="text/javascript" src="{$jqueryJS}"></script>
 
-          <!-- <script type="text/javascript" src="{$jqueryBlockUIJS}"></script>-->
-          <script type="text/javascript" src="{$teibpJS}"><xsl:comment> </xsl:comment></script>
-          <script type="text/javascript" src="../js/petrarchive.js"><xsl:comment> </xsl:comment></script>
+            <link id="framecss" rel="stylesheet" type="text/css" href="{$frameCSS}"/>
 
+           
             <xsl:call-template name="rendition2style"/>
             <title><xsl:value-of select="$htmlTitle"/><!-- don't leave empty. --></title>
             <xsl:if test="$includeAnalytics = true()">
                 <xsl:call-template name="analytics"/>
             </xsl:if>
+
+            <script src="https://use.fontawesome.com/57840704ee.js"></script>
         </head>
     </xsl:template>
     
-    <!-- Petrarchive Toolbox -->
-    <xsl:template name="teibpToolbox">
-      <xsl:if test="not(/tei:TEI/@xml:id = 'glossary') and   not(/tei:TEI/@xml:id = 'chronology_petrarch') and not(/tei:TEI/@xml:id='papers_and_presentations')">
-        <div id="teibpToolbox">
-            <div>
-                <!--<h1 style="display:inline;">text view </h1>-->
-                <select id="themeBox" onchange="switchCustomCSS(this);">
-                    <option value="{$customCSS}" >diplomatic transcription</option>
-                    <option value="{$customCSS.norm}">edited text</option>
-                </select>		
-                
-            </div>
-          <xsl:if test="//tei:back/tei:div[@type = 'commentary']">
-          <div>
-            <!-- <img style="border:0;" src="../images/settings-icon.png"/> -->
-           
-            <select id="commentarySelect" onchange="revealCommentary(this,'commentary')">
-              <option value="hide">hide commentary</option>
-              <option value="show">show commentary</option>             
-            </select>
-          </div>
-          </xsl:if>
-        </div>
-      </xsl:if>
-    </xsl:template>
-    
     <xsl:variable name="htmlFooter">
-      <footer>© 2013-2016 H. Wayne Storey &amp; John A. Walsh. This document is part of the Petr<em>archive</em>.<br/>
-        Team: H. Wayne Storey, John A. Walsh, Isabella Magni, Grace Thomas, Allison M. McCormack (2013-14), and Laura Pence.<br/>
+      <footer class="col-12">© 2013-2017 H. Wayne Storey, John A. Walsh &amp; Isabella Magni. This document is part of the Petr<em>archive</em>.<br/>
+        Team: H. Wayne Storey, John A. Walsh, Isabella Magni, Erica Hayes, Lino Mioni, and Abraham Kim. 
+
+        <br />Past Contributors: Grace Thomas, Allison M. McCormack, and Laura Pence.<br/>
         <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png" /></a>&#160;
         <a xmlns:cc="http://creativecommons.org/ns#" href="http://petrarchive.org" property="cc:attributionName" rel="cc:attributionURL"><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Petr<i>archive</i></span></a> by <a href="http://www.indiana.edu/~frithome/faculty/italian/storey.shtml">H. Wayne Storey</a> and <a href="http://johnwalsh.name/">John A. Walsh</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br/>
         Funding and support provided by the <a href="http://neh.gov/">National Endowment for the Humanities</a> and <a href="http://www.indiana.edu/">Indiana University-Bloomington</a>.<br/>
         Powered by <a href="{$teibpHome}">TEI Boilerplate</a>.
-</footer>
+      </footer>
+
+      <section id="pt-facs" class="">
+
+        <div class="meta">
+
+        </div>
+
+        <div class="row">
+            <nav>
+              <button class="button zoom out">
+                <i class="fa fa-search-minus"></i>
+              </button>
+
+              <button class="button zoom in">
+                <i class="fa fa-search-plus"></i>
+              </button>
+
+              <button class="button new-tab">
+                <i class="fa fa-file-o"></i>
+              </button>
+
+              <button class="button facs-close">
+                <i class="fa fa-close"></i>
+              </button>
+            </nav>
+        </div>
+      </section>
+
+
+      <script type="text/javascript" src="{$jqueryJS}"></script>
+
+      <script type="text/javascript" src="{$tetherJS}"></script>
+      <script type="text/javascript" src="{$bootstrapJS}"></script>
+
+      <script type="text/javascript" src="{$jqueryUI}"></script>
+      <script type="text/javascript" src="{$jqueryMW}"></script>
+
+      <script type="text/javascript" src="{$knockout}"></script>
+
+      <script type="text/javascript" src="{$teibpJS}"><xsl:comment> </xsl:comment></script>
+
+    <script type="text/javascript" src="../js/poem.js"><xsl:comment> </xsl:comment></script>
+
+    <script type="text/javascript" src="../js/petrarchive.js"><xsl:comment> </xsl:comment></script>
+
+    <script type="text/javascript" src="../js/frame.js"><xsl:comment> </xsl:comment></script>
+    <script type="text/javascript" src="../js/navutil.js"><xsl:comment> </xsl:comment></script>
+    <script type="text/javascript" src="../js/commentaryutil.js"><xsl:comment> </xsl:comment></script>
+    <script type="text/javascript" src="../js/utils/browser.js"><xsl:comment> </xsl:comment></script>
+    <script type="text/javascript" src="../js/petrarchivedocument.js"><xsl:comment> </xsl:comment></script>
+
     </xsl:variable>
   
 <xd:doc><xd:desc>These lines get line numbers. Canzone is not regular.</xd:desc></xd:doc>
@@ -369,6 +433,60 @@
       <xsl:apply-templates select="@*|node()"/>
     </xsl:element>
   </xsl:template>
+
+  <xsl:template match="tei:lg[@xml:id[starts-with(.,'rvf')]]">
+    <xsl:call-template name="poemNumber" /> 
+    
+    <xsl:element name="{local-name()}">
+      <xsl:call-template name="addID"/>
+      
+      <xsl:apply-templates select="@*|node()" />
+    </xsl:element>
+  </xsl:template>
+ 
+  <xsl:template name="poemNumber">
+    <span class="poem-number {@n}">
+      <xsl:value-of select="@n"></xsl:value-of>
+      <xsl:if test="//tei:back/tei:div[@type = 'commentary']/@corresp = concat('#',@xml:id)">
+        <button class="commentary-activate" id="{@xml:id}">
+            <i class="fa fa-commenting-o"></i>
+        </button>
+      </xsl:if>
+    </span>
+  </xsl:template>
+
+  <xsl:template match="tei:pb[@facs]">
+    <xsl:param name="pn">
+        <xsl:number count="//tei:pb" level="any"/>    
+    </xsl:param>
+    <xsl:choose>
+    <xsl:when test="$displayPageBreaks = true()">
+        <span class="-teibp-pb">
+            <xsl:call-template name="addID"/>
+            <xsl:call-template name="pb-handler">
+                <xsl:with-param name="n" select="@n"/>
+                <xsl:with-param name="facs" select="@facs"/>
+                <xsl:with-param name="id">
+                    <xsl:choose>
+                    <xsl:when test="@xml:id">
+                        <xsl:value-of select="@xml:id"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="generate-id()"/>
+                    </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:with-param>
+            </xsl:call-template>
+        </span>
+    </xsl:when>
+        <xsl:otherwise>
+            <xsl:copy>
+                <xsl:apply-templates select="@*|node()"/>
+            </xsl:copy>
+        </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+    
   
   <xsl:template match="*" mode="rvf360v"> 
     <xsl:element name="{local-name()}">
@@ -392,34 +510,26 @@
     <xsl:param name="facs"/>
     <xsl:param name="id"/>
     
-    <span class="-teibp-pageNum">
-      <!-- <xsl:call-template name="atts"/> -->
+    <div class="-teibp-pageNum align-items-center">
       <span class="-teibp-pbNote"><xsl:value-of select="$pbNote"/></span>
-      <xsl:value-of select="@n"/>
-      <xsl:text> </xsl:text>
-    </span>
-    <span class="-teibp-pbFacs">
+      
+      <i class="fa fa-pagelines"></i> 
+      <xsl:value-of select="@n"/> 
+      <i class="fa fa-pagelines"></i>
+    </div>
+
+    <span class="-teibp-pbFacs hide">
       <a class="gallery-facs" rel="prettyPhoto[gallery1]">
-        <xsl:attribute name="onclick">
-          <xsl:value-of select="concat('showFacs(',$apos,$n,$apos,',',$apos,$facs,$apos,',',$apos,$id,$apos,')')"/>
-        </xsl:attribute>
-        <img  alt="{$altTextPbFacs}" class="-teibp-thumbnail">
+        <img alt="{$altTextPbFacs}" class="-teibp-thumbnail">
           <xsl:attribute name="src">
             <xsl:value-of select="@facs"/>
           </xsl:attribute>
         </img>
       </a>
     </span>
-    <!--
-    <span class="petrarchive-visindex-thumbnail">
-      <a href="{concat('../images/visindex/',$id,'.svg')}">
-        <img src="{concat('../images/visindex/',$id,'.svg')}" 
-          height="64" border="1"/>
-        
-      </a>
-    </span>
-    -->
   </xsl:template>
+
+
   
   
   
@@ -428,7 +538,7 @@
     <div id="{$maniculeId}" class="manicule-palimpsest-trigger">
       <xsl:attribute name="onclick">
         <!-- <xsl:value-of select="concat('showHide(&quot;',$maniculeId,'&quot;,&quot;',tei:subst/tei:del/tei:lg/@xml:id, '&quot;,&quot;',tei:subst/tei:add/tei:lg/@xml:id,'&quot;)'"/> -->
-        <xsl:value-of select="'JavaScript:showHide('"/>
+        <xsl:value-of select="'JavaScript:PT.showHide('"/>
         <xsl:value-of select="$apos"/>
         <xsl:value-of select="$maniculeId"/>
         <xsl:value-of select="concat($apos,',',$apos)"/>
@@ -444,59 +554,139 @@
         <xsl:apply-templates select="@*|node()"/>
       </xsl:element>
   </xsl:template>
-  
-  <xsl:template match="tei:div[@type = 'commentary']">
-    <div class="commentary" id="commentary" style="display:none;">
-      <xsl:variable name="rvfTarget" select="substring-after(@corresp,'#')"/>
-      <xsl:variable name="rvfNum" select="//tei:lg[@xml:id = $rvfTarget]/@n"/>
-      <h1>Commentary: <cite>Rvf</cite> <xsl:value-of select="' '"/><xsl:value-of select="$rvfNum"/>
-     </h1>
-      <hr/>
-      <xsl:apply-templates/>
-    </div>
-  </xsl:template>
-  
-  <xsl:template match="tei:div[@type= 'commentary']/tei:note|tei:div[@type= 'commentary']/tei:div[@type= 'translation']">
-    <section>
-    <h2>
-      <xsl:choose>
-        <xsl:when test="@type = 'introduction'">
+
+  <xsl:template name="getCommentaryTitle">
+    <xsl:param name="type"/>
+
+    <xsl:choose>
+        <xsl:when test="$type = 'introduction'">
           <xsl:value-of select="'Introduction'"/>
         </xsl:when>
-        <xsl:when test="@type = 'prosodic'">
+        <xsl:when test="$type = 'prosody'">
           <xsl:value-of select="'Prosodic features'"/>
         </xsl:when>
-        <xsl:when test="@type = 'syntactic'">
+        <xsl:when test="$type = 'syntax'">
           <xsl:value-of select="'Syntactic features'"/>
         </xsl:when>
-        <xsl:when test="@type = 'historical'">
+        <xsl:when test="$type = 'genesis'">
           <xsl:value-of select="'Historical genesis'"/>
         </xsl:when>
-        <xsl:when test="@type = 'physical'">
+        <xsl:when test="$type = 'diplomatics'">
           <xsl:value-of select="'Physical collocation and diplomatic conditions'"/>
         </xsl:when>
-        <xsl:when test="@type = 'variants'">
+        <xsl:when test="$type = 'variants'">
           <xsl:value-of select="'Significant variants from the tradition'"/>
         </xsl:when>
-        <xsl:when test="@type = 'language'">
+        <xsl:when test="$type = 'language'">
           <xsl:value-of select="'Language notes'"/>
         </xsl:when>
-        <xsl:when test="@type = 'thematic'">
+        <xsl:when test="$type = 'thematics'">
           <xsl:value-of select="'Thematic notes'"/>
         </xsl:when>
-        <xsl:when test="@type = 'translation'">
+        <xsl:when test="$type = 'translation'">
           <xsl:value-of select="'Translation'"/>
         </xsl:when>
-      </xsl:choose>
-    </h2>
-      <xsl:element name="{local-name()}">
-        <xsl:call-template name="addID"/>
-        <xsl:apply-templates select="@*|node()"/>
-      </xsl:element>
-    </section>
+    </xsl:choose>
   </xsl:template>
-        
   
+  
+ 
+  <xsl:template name="commentaryNav">
+    <xsl:param name="rvfTarget"/>
+      <ul class="col-12">
+        <li class='col-auto'>
+          <a class="active" href="{concat('#',$rvfTarget,'_introduction')}">
+            Introduction &amp; prosody
+          </a>
+        </li>
         
+        <li class="col-auto">
+          <a href="{concat('#',$rvfTarget,'_genesis')}">
+            Genesis &amp; diplomatic condition
+          </a>
+        </li>
+        
+        <li class="col-auto">
+          <a href="{concat('#',$rvfTarget,'_syntax')}">
+            Syntax, variants, &amp; language
+          </a>
+        </li>
+       
+        
+        <li class="col-auto">
+          <a href="{concat('#',$rvfTarget,'_thematics')}">
+            Thematics
+          </a>
+        </li>
+        
+        <li class="col-auto">
+          <a href="{concat('#',$rvfTarget,'_translation')}">
+            Translation
+          </a>
+        </li>
+      </ul>
+    
+  </xsl:template>
+
+  <xsl:template match="tei:div[@type= 'commentary']/tei:note|tei:div[@type= 'commentary']/tei:div[@type= 'translation']" mode="commentary">
+      <section type="{@type}">
+        <h1>
+        <xsl:call-template name="getCommentaryTitle">
+          <xsl:with-param name="type" select="@type" />
+        </xsl:call-template>
+        </h1>
+        <xsl:apply-templates select="."/>
+      </section>
+  </xsl:template>
+  
+  <xsl:template match="tei:div[@type = 'commentary']">
+    <div class="commentary" id="{substring-after(concat(@corresp, '-commentary'), '#')}">
+      <xsl:variable name="rvfTarget" select="substring-after(@corresp,'#')"/>
+      <xsl:variable name="rvfNum" select="//tei:lg[@xml:id = $rvfTarget]/@n"/>
+      
+      <header class="row align-items-center">
+        <div class="col-sm-12 col-md-auto">
+          <h1>
+            Commentary: <cite>Rvf</cite> <xsl:value-of select="' '"/><xsl:value-of select="$rvfNum"/>
+          </h1>
+        </div>
+        
+        <nav class="commentary col-auto">  
+          <xsl:call-template name="commentaryNav">
+            <xsl:with-param name="rvfTarget" select="$rvfTarget"/>
+          </xsl:call-template>
+        </nav>
+
+        <button class="col-auto close float-right">
+            <i class="fa fa-window-close-o"></i>
+        </button>
+      </header>
+      
+      <main>
+        <!-- commentary body -->
+        <section id="{concat($rvfTarget,'_introduction')}">
+          <xsl:apply-templates select="tei:note[@type='introduction']" mode="commentary"/>
+          <xsl:apply-templates select="tei:note[@type='prosody']" mode="commentary"/>
+        </section>
+        <section id="{concat($rvfTarget,'_genesis')}">
+          <xsl:apply-templates select="tei:note[@type='genesis']" mode="commentary"/>
+          <xsl:apply-templates select="tei:note[@type='diplomatics']" mode="commentary"/>
+        </section>
+        <section id="{concat($rvfTarget,'_syntax')}">
+          <xsl:apply-templates select="tei:note[@type='syntax']" mode="commentary"/>
+          <xsl:apply-templates select="tei:note[@type='variants']" mode="commentary"/>
+          <xsl:apply-templates select="tei:note[@type='language']" mode="commentary"/>
+        </section>
+        <section id="{concat($rvfTarget,'_thematics')}">
+          <xsl:apply-templates select="tei:note[@type='thematics']" mode="commentary"/>
+        </section>
+        <section id="{concat($rvfTarget,'_translation')}">
+          <xsl:apply-templates select="tei:div[@type='translation']" mode="commentary"/>
+        </section>
+      </main>
+    </div>
+  </xsl:template>
+
+  
     
 </xsl:stylesheet>

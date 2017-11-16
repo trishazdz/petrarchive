@@ -14,6 +14,7 @@
   <link rel="stylesheet" type="text/css" href="css/stylesheets/index.css" />
 </head>
 <body class="container">
+
 <!-- number index, first line index, visual index, genre index -->
 <div class="row" id="banner">
   <div class="hidden-sm-down show-md-up">
@@ -74,6 +75,9 @@
     </p>
   </main>
 </section>
+
+<?php include( "textindex.html"); ?>
+
 
 <?php include "footer.html"; ?>
 

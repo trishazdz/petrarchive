@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="petrarchive.rnc" type="application/relax-ng-compact-syntax"?>
 <?xml-stylesheet type="text/xsl" href="petrarchive.xsl"?>
+
 <!DOCTYPE TEI [
 <!-- Firefox does not play nice with parameter entities. So I had to embed the stuff in here. We can go back to the "better" way with parameter entities, but need to pre-process the documents to remove all entity references before moving to petarchive.org. 
 <!ENTITY % petrarchive_entities SYSTEM "petrarchive.ent">
@@ -63,44 +64,17 @@
 <!ENTITY punctelevhiback "&#xF1FA;">
 <!ENTITY encodingDesc SYSTEM "encodingDesc.xml"> 
 ]>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Petrarch’s <title rendition="#i">Rerum vulgarium fragmenta</title>: Charta 1 recto</title>
-            <editor xml:id="hws">H. Wayne Storey</editor>
-            <editor xml:id="jaw">John A. Walsh</editor>
-            <respStmt>
-               <resp>Encoder</resp>
-               <name xml:id="amm">Allison M. McCormack</name>
-            </respStmt>
-            <respStmt>
-               <resp>Encoder</resp>
-               <name xml:id="im">Isabella Magni</name>
-            </respStmt>
+            <title>Petrarch’s <title rendition="#i">Rerum vulgarium fragmenta</title></title>
          </titleStmt>
-         <publicationStmt>
-            <p>Publication Information</p>
-         </publicationStmt>
-         <seriesStmt>
-            <title>The Petrarchive: An Edition of Petrarch’s Songbook</title>
-            <respStmt>
-               <resp> Edited by </resp>
-               <name> Wayne Storey </name>
-               <name> John Walsh</name>
-            </respStmt>
-         </seriesStmt>
-         <sourceDesc>
-            <msDesc xml:id="vat.lat.3195">
-               <msIdentifier>
-                  <country>Vatican City</country>
-                  <repository>Vatican Library</repository>
-                  <collection>Vat. lat.</collection>
-                  <idno>3195</idno>
-                  <msName>Vat. lat. 3195</msName>
-               </msIdentifier>
-            </msDesc>
-         </sourceDesc>
+
+         <noDocument>
+            Document is not yet finished.
+         </noDocument>
       </fileDesc>
 
    </teiHeader>
@@ -112,4 +86,8 @@
          Text encoding not yet finished. Coming soon!
       </body>
    </text>
+
+   <vizindex>
+     
+   </vizindex>
 </TEI>

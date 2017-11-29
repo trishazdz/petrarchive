@@ -14,7 +14,7 @@
     <xsl:import href="teibp.xsl"/>
     <xsl:output method="html" encoding="utf-8" version="1.0" indent="yes" standalone="no" media-type="text/html" omit-xml-declaration="no" doctype-system="about:legacy-compat" /> 
     <xsl:param name="pbNote" select="''"/>
-
+    
     <xsl:param name="jqueryUICSS" select="concat($filePrefix, '/js/jquery-ui/jquery-ui.min.css')"/>
     <xsl:param name="jqueryUI" select="concat($filePrefix,'/js/jquery-ui/jquery-ui.min.js')"/>
     <xsl:param name="jqueryMW" select="concat($filePrefix,'/js/jquery-mousewheel/mousewheel.min.js')"/>
@@ -24,9 +24,6 @@
     <!-- Bootstrap v4 requires tether -->
     <xsl:param name="tetherJS" select="concat($filePrefix,'/js/tether/tether.min.js')"/>
     <xsl:param name="bootstrapJS" select="concat($filePrefix,'/js/bootstrap/bootstrap.min.js')"/>
-
-
-
 
 
     <xsl:param name="bootstrapCSS" select="concat(
@@ -43,7 +40,19 @@
       </xsl:variable>
       <xsl:copy-of select="$header"/>
     </xsl:template>
-  
+
+    <!--
+    <xsl:template name="auxHeader">
+        <xsl:copy-of select="document('../nav.html')"/>
+    </xsl:template>
+
+    <xsl:template match="tei:vizindex">
+      <tei:vizindex>
+            <xsl:copy-of select="document('../vizindex.html')"/>
+      </tei:vizindex>
+    </xsl:template>
+    -->
+    
   <xd:doc>
     <xd:desc>
       <xd:p>TEI's head changed to tei-head to avoid conflicts with html/head.</xd:p>
@@ -184,15 +193,18 @@
 
       <script type="text/javascript" src="{$teibpJS}"><xsl:comment> </xsl:comment></script>
 
-    <script type="text/javascript" src="../js/poem.js"><xsl:comment> </xsl:comment></script>
+    <script type="text/javascript" src="../js/utils/browser.js"><xsl:comment> </xsl:comment></script>
+
+    <script type="text/javascript" src="../js/petrarchivedocument.js"><xsl:comment> </xsl:comment></script>
+
 
     <script type="text/javascript" src="../js/petrarchive.js"><xsl:comment> </xsl:comment></script>
 
     <script type="text/javascript" src="../js/frame.js"><xsl:comment> </xsl:comment></script>
     <script type="text/javascript" src="../js/navutil.js"><xsl:comment> </xsl:comment></script>
     <script type="text/javascript" src="../js/commentaryutil.js"><xsl:comment> </xsl:comment></script>
-    <script type="text/javascript" src="../js/utils/browser.js"><xsl:comment> </xsl:comment></script>
-    <script type="text/javascript" src="../js/petrarchivedocument.js"><xsl:comment> </xsl:comment></script>
+
+    <script type="text/javascript" src="../js/poem.js"><xsl:comment> </xsl:comment></script>
 
     </xsl:variable>
   

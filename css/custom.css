@@ -92,6 +92,7 @@ body {
 }
 html > body {
   margin-top: 0;
+  overflow: hidden;
 }
 
 a:hover {
@@ -102,12 +103,14 @@ a:hover {
 }
 
 #tei_wrapper {
-  margin-left: 6em;
+  padding-left: 6.5rem;
+  overflow-y: scroll;
+  height: 100vh;
 }
 
 #tei_wrapper > tei {
   max-width: 1100px;
-  margin-top: 2em;
+  margin-top: 3em;
 }
 #tei_wrapper text {
   width: 900px;
@@ -133,6 +136,7 @@ teiHeader {
   margin-top: 1em;
   margin-bottom: .5em;
   border-bottom: none;
+  display: none;
 }
 /* TEI teiHeader selector is for transcriptions; facsimile viewer teiHeader is not a child of TEI. Let's us have different behavoriors for different interfaces. */
 TEI teiHeader {
@@ -1025,7 +1029,7 @@ font-weight: 200 !important; font-size:80%; margin:0;}
 
 back h1 {font-size:90%;}
 
-div.commentary {position: fixed;
+back div.commentary {position: fixed;
   bottom:0;
   z-index:9999;
   background-color:white;
@@ -1034,6 +1038,9 @@ div.commentary {position: fixed;
   border-top:1px solid #dcdddb;
   width: 100%;
   display: none;
+  font-size: 24px;
+  line-height: 25px;
+  font-family: 'andron_scriptor_webregular' !important;
 }
 
 div.commentary.active {
@@ -1055,6 +1062,13 @@ div.commentary header h1 {
   font-weight: 700 !important;
   margin-left: 1.6em
 }
+
+
+div.commentary section {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 div.commentary section h1 {
   font-size: 20px;
   font-weight: 200;
@@ -1101,7 +1115,7 @@ div.commentary main {
   padding-bottom: 1.4em;
 }
 div.commentary main > section {
-  margin-left: 1em;
+  /*margin-left: 1em; trying out a centered comments approach */
 }
 
 div.commentary section note,
@@ -1226,12 +1240,11 @@ img.mfp-img {
 
 /* sticky header code: start */
 
-a[disabled] {
+a[disabled], a.inactive {
   cursor: not-allowed;
   opacity: .6;
   pointer-events: none;
 }
-
 
 #sticky-header {
   border-bottom: 1px solid #aaa;

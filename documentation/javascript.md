@@ -15,10 +15,13 @@ One other thing poem.js does is to setup functionality related to the sticky-hea
         CommentaryUtil
         Frame
         PetrarchiveDocument
+    utils
+    	browser
+
 _*Since we are using es5.js rather than the more modern es6/es7, every js file must be evoked the old school way via <script> tags in the html... thus there is not point in repeating the dependencies throughout this documentation, since the entire poem experience requires each js file_
 
 ### Petrarchive `object` - /js/petrarchive.js
-poem.js runs the functionality for the poem pages, but it does so by using a Petrarchive object. Similar to how all of jQuery's functionality gets encapsulated within a variable name of $ or jQuery, the functionality that poem.js needs is encapsulated within a Petrarchive object. 
+poem.js runs the functionality for the poem pages, but it does so by constrcting a Petrarchive object. Similar to how all of jQuery's functionality gets encapsulated within a variable name of $ or jQuery, the functionality that poem.js needs is encapsulated within a Petrarchive object. 
 
 navigational functionality @`Petrarchive.nav` which is a `NavUtil` object
 commentary functionality @ `Petrarchive.commentary` which is a `CommentaryUtil` object
@@ -37,3 +40,5 @@ Allows for `<img>` to be framed. Framed `<img>` can be explored via drag and dro
 
 _This is a standalone module that I wrote for another project but fit in perfectly with the required facsimile functionality. I will probably be open sourcing this file in the future, so petrarchive and any other project can simply pull changes/updates from the repo._
 
+### util_browser `object` - /js/utils/browser.js
+Functionality related to getting/manipulating browser attibutes such as cookies and url parameters.

@@ -6,6 +6,7 @@ function CommentaryUtil() {
 
   this.navMeta
 
+  this.init()
   this.events()
 
   this.activate = function(rvf) {
@@ -31,6 +32,9 @@ function CommentaryUtil() {
   }
 
   this.refreshNavMeta = function() {
+    // This keeps the header/nav in the commentary UI
+    // in line and looking good even if the user decides 
+    // to resize and change their browser dimensions.
     this.navMeta = $('.commentary.active nav a').map(function() {
       var split = this.href.split('#')
       var hash = split[split.length - 1]
@@ -57,6 +61,31 @@ function CommentaryUtil() {
   }
 }
 
+CommentaryUtil.prototype.init = function() {
+  $('back').appendTo(".content-container")
+
+  this._resize()
+}
+
+CommentaryUtil.prototype._resize = function() {
+  var wrapper = $('#tei_wrapper'),
+    commentary = $('back'),
+    h = $(window).height();
+
+  if (!commentary.length) {
+    // Don't need to resize for documents that don't yet 
+    // have commentary
+    return
+  }
+
+  if (!this._active) {
+    wrapper.height(h)
+  } else {
+    wrapper.height(h * .65)
+    commentary.height(h * .35)
+  }
+}
+
 CommentaryUtil.prototype.events = function() {
   var that = this
 
@@ -65,16 +94,19 @@ CommentaryUtil.prototype.events = function() {
 
     if (that._active == rvf) {
       that.deactivate()
+      that._resize()
       return
     }
 
     that.deactivate()
     that.activate(rvf)
+    that._resize()
   })
 
   $('div.commentary header button.close').click(function(ev) {
     that.deactivate()
     window.location.hash = '_'
+    that._resize()
   })
 
    // Navigation between different sections of commentary
@@ -87,9 +119,12 @@ CommentaryUtil.prototype.events = function() {
 
   $(window).resize(function() {
     that.refreshNavMeta()
+    that._resize()
   })
 
   $('.commentary main').scroll(function(ev) {
+    // Find scroll position and update commentary header
+    // this will increase navigability and provide sense of position
     var scrollTop = ev.target.scrollTop
 
     var filtered = that.navMeta.filter(function(i, el) {

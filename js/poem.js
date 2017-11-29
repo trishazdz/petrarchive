@@ -7,9 +7,9 @@ $(document).ready(function() {
   setupPageNum()
 
   if (window.location.hash) {
-    var currentScroll = $('html').scrollTop()
+    var currentScroll = $('#tei_wrapper').scrollTop()
 
-    $('html, body').scrollTop(currentScroll - ($('#sticky-header').height() * 2))
+    $('#tei_wrapper').scrollTop(currentScroll - ($('#sticky-header').height() * 2))
   }
 })
 
@@ -22,8 +22,6 @@ function setupFacsThumb() {
     var rv = window.PT.getCurrentDoc().rv
 
     var facsSrc = baseDir + ch + rv + ".jpg"
-
-    console.log(facsSrc)
 
     $('#sticky-header .facs-thumb img').attr('src', facsSrc)
   } else {

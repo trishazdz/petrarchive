@@ -45,7 +45,7 @@
 
 <div id="vizindex" class="container">
   <div style="display: none;" class="built-vizindex">
-    <?php //require 'vizindex_builder.php'; ?>
+    <?php require 'vizindex_builder.php'; ?>
   </div>
 
   <div class="row built-vizindex">

@@ -27,10 +27,13 @@
   	<xsl:param name="includeNav" select="false()"/>
     <xsl:param name="includeStickyHeader" select="true()"/>
 
+
 	<xsl:param name="includeToolbox" select="true()"/>
 	<xsl:param name="includeAnalytics" select="true()"/>
 	<xsl:param name="displayPageBreaks" select="true()"/>
 	
+	<xsl:variable name="documentExists" select="true()"/>
+
 	
 	
 	<!-- special characters -->
@@ -74,6 +77,15 @@
 			<xsl:call-template name="htmlHead"/>
 
 			<body>
+			  <!-- 
+				Walsh Help!
+
+				Trying to see if document can match 
+				tei/teiHeader/fileDesc/noDocument 
+				and IF match is found THEN apply this class attribute
+			  -->
+			  <xsl:attribute name="class">document-404</xsl:attribute>
+
 			  <xsl:if test="$includeNav = true()">
 			    <xsl:call-template name="siteNavigation"/>
 			  </xsl:if>
@@ -82,15 +94,21 @@
 			    <xsl:if test="$includeStickyHeader = true()">
 			      <xsl:call-template name="stickyHeader"/>
 			    </xsl:if>
+
+			    <!--
+			    <xsl:if test="$isAuxPage = true()">
+			    	<xsl:call-template name="auxHeader"/>
+			    </xsl:if>
+				-->
 			  </div>
 
 			  <div class="container-fluid content-container">
 				  <div id="tei_wrapper" class="row">
 					  <xsl:apply-templates/>
-				  </div>
 
-				  <div class="col-12">
-				  	<xsl:copy-of select="$htmlFooter"/>
+					  <div class="row">
+					  	<xsl:copy-of select="$htmlFooter"/>
+					  </div>
 				  </div>
 		      </div>
 			</body>
@@ -132,7 +150,12 @@
 		</xd:desc>
 	</xd:doc>
 
-	
+	<xsl:template match="tei:teiHeader">
+		<div class="hide">
+			<xsl:apply-templates select="@*|node()"/>
+		</div>
+	</xsl:template>
+
 	<xsl:template match="tei:teiHeader//tei:title">
 		<!--<tei-title>
 			<xsl:call-template name="addID"/>

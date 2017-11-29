@@ -108,6 +108,18 @@ NavUtil.prototype.setupPrevHref = function() {
   return url + '.xml'
 }
 
+NavUtil.prototype.delayFn = function(fn, condition) {
+  if (condition()) {
+    //return fn()
+  } else {
+    /*setTimeout(function() {
+      this.delayFn(fn, condition)
+    }, 1200)*/
+  }
+
+  console.log(fn, condition)
+}
+
 NavUtil.prototype.setupNextHref = function(name) {
   var nextCh, nextRV, nextName, nextDoc;
   var current;
@@ -132,6 +144,7 @@ NavUtil.prototype.setupNextHref = function(name) {
   var s = "00" + nextCh
   nextName = s.substr(s.length - 3) + nextRV
 
+  console.log(this)
   nextDoc = this.chartaMeta[nextName]
 
   if (!nextDoc) {

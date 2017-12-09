@@ -56,8 +56,6 @@ Petrarchive.prototype.init = function() {
   })
 
   this.facsIsActive = function() {
-    console.log(util_browser.getParam('facs')) 
-    console.log(localStorage.getItem('facs'))
     return (util_browser.getParam('facs')) || (localStorage.getItem('facs') == 'true')
   }
 
@@ -86,22 +84,16 @@ Petrarchive.prototype.init = function() {
   if (that.hasMultipleCh()) {
     $('.-teibp-pb:first-child').css('display', 'initial')
 
-    if (util_browser.getParam('ch')) {
-      var charta = util_browser.getParam('ch')
-
-      setTimeout(function() {
-        $('html, body').animate({
-          scrollTop: $("#" + charta).offset().top - ($('#sticky-header').height() * 1.5)
-        }, 2500);
-      }, 1500)
-    }
-
     // scroll to the pertinent chartae
     
   }
 
+  console.log($('a.facs-thumb'))
+
   $('a.facs-thumb').click(function(ev) {
     var img = $($(ev.delegateTarget).children('img'))
+
+    console.log(img)
 
     if (!that.facsIsActive()) {
       // If Facs is inactive, then we first want to activate it

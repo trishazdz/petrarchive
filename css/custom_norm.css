@@ -25,9 +25,9 @@ ab[type = 'blockSubst'] > subst > del[type = 'erasure'] {
 
 #rvf360 {display:none;}
 #rvf360v {display:block;
-          margin-top:4em;
+          margin-top:0;
           position:relative;
-          top:-16em;          
+          top:-16.5em;          
 }
 
 

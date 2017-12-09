@@ -1,16 +1,30 @@
 
 // This is the 'init' function that initiates everything
 $(document).ready(function() {
-  window.PT = new Petrarchive()   
-
   setupFacsThumb()
   setupPageNum()
+
+  window.PT = new Petrarchive()   
 
   if (window.location.hash) {
     var currentScroll = $('#tei_wrapper').scrollTop()
 
     $('#tei_wrapper').scrollTop(currentScroll - ($('#sticky-header').height() * 2))
   }
+
+  if (util_browser.getParam('ch')) {
+      var charta = util_browser.getParam('ch')
+
+      setTimeout(function() {
+        $('#tei_wrapper').scrollTop(currentScroll - ($('#sticky-header').height() * 2))
+
+        console.log(charta)
+
+        $('#tei_wrapper').animate({
+          scrollTop: $("#" + charta).offset().top - ($('#sticky-header').height() * 1.5)
+        }, 2500);
+      }, 1500)
+    }
 })
 
 

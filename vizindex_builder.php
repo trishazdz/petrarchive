@@ -44,10 +44,10 @@ foreach ($files as $f) {
         $html = '<a class="col-3 col-sm-1-24';
         if ($no_file) {
             $html .= ' no-file';
-            $html .= '" href="/content/charta-404.xml?incomplete=true&';
+            $html .= '" href="content/charta-404.xml?incomplete=true&';
             $html .= 'ch=' . substr($exploded_file_name, 1) . '">';
         } else {
-            $html .= '" href="/content/' . $url . '">';
+            $html .= '" href="content/' . $url . '">';
         }
         $html .= '<img alt="';
         $html .= $exploded_file_name;

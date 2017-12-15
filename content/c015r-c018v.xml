@@ -889,7 +889,7 @@ the line wraps. -->
                             </lg>
                             <pb xml:id="c016v" n="charta 16 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-016v.jpg"/>
               <lg type="stanza">
-                  <lg type="dblvrs" corresp="#canvasline">
+                  <lg type="dblvrs" corresp="#canvasline" class="no-indent">
                       <l n="97">Fugge al <choice><orig>uostro</orig><reg>vostro</reg></choice> apparire angoscia &amp7; <subst><del type="erasure"><gap reason="illegible"/></del><add>noia</add></subst><choice><orig>&#12539;&#8260;</orig><reg>,</reg></choice></l>
                       <!-- check dot+slash: looks moe like a punctus elevatus with diagonal stroke? 
                      http://abdn.ac.uk/skaldic/db.php?table=mufi_char&if=mufi&range=PUA-8 -->

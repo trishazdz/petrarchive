@@ -6,4 +6,8 @@
 
  rvf-71 line 97 c016v in c015r-c018v - added class 'no-indent' for anamoly case where first 'lg' should NOT be indented
 
- rvf-126 line 2nd to last line c027r in c027r-c29v - I think this is a typo? Second to last line should have pillcrow?
+ rvf-126 line 2nd to last line c027r in c027r-c29v - I think this is a typo? Second to last line should have pillcrow?	
+
+ rvf 142 c032r - example of where line number in right column is dangerously close to the left column text. Should we consider how to handle such situations?
+
+ rvf 50 line 77 c011r-c011v - Why are lines demarcated every n=7. Line 77 shows up in an odd location because of this.

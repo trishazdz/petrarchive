@@ -485,6 +485,7 @@ lg:after, ab:after {
 
 /* For rubrication? */
 lg[type='octave'] > lg[type='dblvrs']:first-of-type,
+lg[type='sonnet'] > lg[type='dblvrs']:first-of-type,
 lg[type='sestina'] l[n='1'],
 lg[type='sestina'] l[n='7'],
 lg[type='sestina'] l[n='13'], 

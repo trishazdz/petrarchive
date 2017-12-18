@@ -489,7 +489,7 @@ the line wraps. -->
                 <l n="3"><choice><orig>Pieta</orig><reg>Pietà</reg></choice> <choice><orig>ui</orig><reg>vi</reg></choice> mosse<choice><orig> .</orig><reg>,</reg></choice> onde<supplied>,</supplied> benignamente<choice><orig> &virg;</orig><reg/></choice></l>
                 <l n="4">Salutando<supplied>,</supplied> teneste in <choice><orig>uita</orig><reg>vita</reg></choice> il core.</l>
             </lg>
-            <lg type="dblvrs" corresp="#canvasline">
+            <lg class="indent" type="dblvrs" corresp="#canvasline">
                 <l n="5"><hi rendition="#red #fs24pt">&pilcrow2section;</hi> La fraile <choice><orig>uita</orig><reg>vita</reg></choice><supplied>,</supplied> <choice><orig>chanchor</orig><reg>ch’anchor</reg></choice> meco alberga<supplied>,</supplied></l>
                 <l n="6">Fu de<supplied>’</supplied> <choice><orig>be gliocchi</orig><reg>begli occhi</reg></choice> <choice><orig>uostri</orig><reg>vostri</reg></choice> aperto dono&p2c;</l>
             </lg>

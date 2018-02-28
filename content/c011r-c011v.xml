@@ -640,7 +640,7 @@
               </lg>
                   <lg type="stanza">
                       <lg type="dblvrs" corresp="#canvasline">
-                          <l n="57">Et <choice><orig>&per;che</orig><reg>perché</reg></choice> un poco nel parlar mi sfogo&p2c;</l>
+                          <l n="57"><hi rendition="#red #fs24pt">¶</hi>Et <choice><orig>&per;che</orig><reg>perché</reg></choice> un poco nel parlar mi sfogo&p2c;</l>
                           <l n="58">Veggio la sera i buoi tornare sciolti</l>
                   </lg>
                       <lg type="dblvrs" corresp="#canvasline">   
@@ -648,7 +648,7 @@
                           <l n="60">I miei sospiri a me <choice><orig>&per;che</orig><reg>perché</reg></choice> non tolti</l>
                   </lg>
                       <lg type="dblvrs" corresp="#canvasline">
-                          <l n="61"><hi rendition="#red #fs24pt">¶</hi>Quando che sia<choice><orig><g ref="#punctinter"/></orig><reg>?</reg></choice> &perche; <choice><orig>nol</orig><reg>no ’l</reg></choice> <choice><orig>graue</orig><reg>grave</reg></choice> giogo<choice><orig><g ref="#punctinter"/></orig><reg>?</reg></choice></l>
+                          <l n="61">Quando che sia<choice><orig><g ref="#punctinter"/></orig><reg>?</reg></choice> &perche; <choice><orig>nol</orig><reg>no ’l</reg></choice> <choice><orig>graue</orig><reg>grave</reg></choice> giogo<choice><orig><g ref="#punctinter"/></orig><reg>?</reg></choice></l>
                           <l n="62"><choice><orig>&Per;che</orig><reg>Perché</reg></choice> <choice><orig>di</orig><reg>dì</reg></choice> &amp7; notte <choice><orig>gliocchi</orig><reg>gli ochhi</reg></choice> miei son molli<choice><orig><g ref="#punctinter"/></orig><reg>?</reg></choice></l>
                       </lg>
                       <lg type="trplvrs" corresp="#canvasline">

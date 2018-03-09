@@ -79,10 +79,6 @@
   </main>
 </section>
 
-<div id="textindex-container">
-  <?php include( "textindex.html"); ?>
-</div>
-
 <?php include "footer.html"; ?>
 
 <script type="text/javascript" src="js/jquery/jquery.min.js"></script>

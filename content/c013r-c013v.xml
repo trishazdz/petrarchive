@@ -453,7 +453,7 @@ the line wraps. -->
               <lg type="single" corresp="#canvasline">
                   <l n="3"><choice><abbr>Fiāma</abbr><expan>Fiamma</expan></choice> et martir <choice><orig>nelanima</orig><reg>ne l’anima</reg></choice> rinfresca.</l>
               </lg>
-              <lg class="indent" type="dblvrs" corresp="#canvasline">
+              <lg type="dblvrs" corresp="#canvasline">
                   <l n="4"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi>Non fur mai tutte spente a quel <choice><orig>chi</orig><reg>ch’i’</reg></choice> <choice><orig>ueggio</orig><reg>veggio</reg></choice>&p2c;</l>
                   <l n="5">Ma ricoperte alquanto le <choice><orig>fauille</orig><reg>faville</reg></choice>&p2c;</l>
               </lg>
@@ -469,7 +469,7 @@ the line wraps. -->
                   <l n="10">Non pur qual fu&v2c; ma pare a me che cresca.</l>
               </lg>
               <lg type="dblvrs" corresp="#canvasline">
-                  <l class="indent" n="11"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi>Qual foco &non; <choice><orig>aurian</orig><reg>avrian</reg></choice> <choice><orig>gia</orig><reg>già</reg></choice> spento &amp7; morto</l>
+                  <l n="11"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi>Qual foco &non; <choice><orig>aurian</orig><reg>avrian</reg></choice> <choice><orig>gia</orig><reg>già</reg></choice> spento &amp7; morto</l>
                   <l n="12"><choice><orig>Londe</orig><reg>L’onde</reg></choice> che gli occhi tristi <choice><orig>uersam</orig><reg>versam</reg></choice> <choice><abbr>sēpre</abbr><expan>sempre</expan></choice><choice><orig><g ref="#punctinter"/></orig><reg>?</reg></choice></l>
               </lg>
               <lg type="dblvrs" corresp="#canvasline">
@@ -598,7 +598,7 @@ the line wraps. -->
             <lg type="single" corresp="#canvasline">
                <l n="3">Del mio fermo <choice><orig>uoler</orig><reg>voler</reg></choice> <choice><orig>gia</orig><reg>già</reg></choice> non mi <choice><orig>suoglia</orig><reg>svoglia</reg></choice>.</l>
             </lg>
-            <lg class="indent" type="dblvrs" corresp="#canvasline">
+            <lg type="dblvrs" corresp="#canvasline">
                <l n="4"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi>Tra le chiome de <choice><orig>lor</orig><reg>l’or</reg></choice> nascose il laccio<choice><orig> &virg-underdot;</orig><reg>,</reg></choice></l>
                <l n="5">Al qual mi strinse<supplied>,</supplied> <choice><orig>amore</orig><reg>Amore</reg></choice>.</l>
             </lg>

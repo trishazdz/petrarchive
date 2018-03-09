@@ -1,11 +1,19 @@
-
-// This is the 'init' function that initiates everything
+// This is the 'init'/bootstrap function that gets everything started
 $(document).ready(function() {
   setupFacsThumb()
   setupPageNum()
+  setupRvf()
+
+  // Too many edge cases to be able to address solely using CSS
+  // so doing some styling via JS
+  applyStyling()
 
   window.PT = new Petrarchive()   
 
+
+  // When hash is clicked we need to give it a vertical cushion equal to 2x the sticky header.
+  // This is because browser loads webpage right at <a> of respective hash tag and will be blocked
+  // by sticy header
   if (window.location.hash) {
     var currentScroll = $('#tei_wrapper').scrollTop()
 
@@ -13,18 +21,18 @@ $(document).ready(function() {
   }
 
   if (util_browser.getParam('ch')) {
-      var charta = util_browser.getParam('ch')
+    var charta = util_browser.getParam('ch')
 
-      setTimeout(function() {
-        $('#tei_wrapper').scrollTop(currentScroll - ($('#sticky-header').height() * 2))
+    setTimeout(function() {
+      $('#tei_wrapper').scrollTop(currentScroll - ($('#sticky-header').height() * 2))
 
-        console.log(charta)
+      console.log(charta)
 
-        $('#tei_wrapper').animate({
-          scrollTop: $("#" + charta).offset().top - ($('#sticky-header').height() * 1.5)
-        }, 2500);
-      }, 1500)
-    }
+      $('#tei_wrapper').animate({
+        scrollTop: $("#" + charta).offset().top - ($('#sticky-header').height() * 1.5)
+      }, 2500);
+    }, 1500)
+  } 
 })
 
 
@@ -98,4 +106,65 @@ function setupPageNum() {
   }
 
   $('#sticky-header .charta-no').text(pageNum)
+}
+
+function applyStyling() {
+  // Apply indent to lg[type='dblvrs'] first line when pillcrow is first character  
+  var lg = $("lg[type='dblvrs']")
+  lg.each(function(i, el) {
+    var l = el.querySelector('l')
+    var firstEl = l.querySelector('*')
+
+    if ($(firstEl).prop('tagName') == 'HI') {
+     $(el).addClass('indent')
+    } else {
+      if (firstEl) {
+        if (firstEl.querySelector('hi')) {
+          console.log('firstEl true', firstEl, firstEl.querySelector('hi'))
+          $(el).addClass('indent')
+        }
+      }
+    }
+  })
+
+  // Apply indent to lg[type='trplvrs'] first line when pillcrow is first character  
+  var tripl = $("lg[type='trplvrs']")
+  tripl.each(function(i, el) {
+    var l = el.querySelector('l')
+    var firstEl = l.querySelector('*')
+
+    if ($(firstEl).prop('tagName') == 'HI') {
+      $(el).addClass('indent')
+     } else {
+       if (firstEl) {
+         if (firstEl.querySelector('hi')) {
+           $(el).addClass('indent')
+         }
+       }
+     }
+  })
+
+  // Apply indent to l in sestina when pillcrow/h1 first character
+  var sestinaL = $("lg[type='sestina'] l")
+  sestinaL.each(function(i, el) {
+    var firstEl = el.querySelector('*')
+
+    if ($(firstEl).prop('tagName') == 'HI') {
+      $(el).addClass('indent')
+     } else {
+       if (firstEl) {
+         if (firstEl.querySelector('hi')) {
+           $(el).addClass('indent')
+         }
+       }
+     }
+  })
+}
+
+function setupRvf() {
+  var rvf = $('lg[n]')
+  var min = $(rvf[0]).attr('n')
+  var max = $(rvf[rvf.length-1]).attr('n')
+  
+  $('.rvf-range').text('Rvf ' + min + '-' + max)
 }

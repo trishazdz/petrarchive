@@ -1,0 +1,21 @@
+html > body {
+    overflow-y: auto;
+    max-width:100%;
+}
+
+.container {
+    background-image: initial;
+}
+
+.poem-only {
+    display: none;
+}
+
+#sticky-header h1 {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: .4em 0;
+}
+
+
+

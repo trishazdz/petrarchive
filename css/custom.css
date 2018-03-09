@@ -230,6 +230,7 @@ lg[type='dblvrs']:first-of-type l:last-of-type {
 lg[type='dblvrs'] l:first-of-type,
 lg[type='trplvrs'] l:first-of-type,
 lg[type='single'] l:first-of-type {
+  /* Abe says: why s ths rule here? */
   float: left;
   margin-right: 1.5em;
 }
@@ -502,15 +503,16 @@ lg[type='canzone_7vv'] lg[type='stanza'] lg[type='dblvrs']:nth-of-type(5n),
 lg[type='canzone_10vv'] lg[type='stanza'] lg[type='dblvrs']:first-of-type,
 lg[type='canzone_14vv'] lg[type='stanza'] lg[type='dblvrs']:first-of-type,
 lg[type='canzone_14vv'] lg[type='stanza'] lg[type='trplvrs']:first-of-type,
-lg[type='canzone_15vv'] lg[type='stanza'] lg[type='dblvrs']:first-of-type,
+/*lg[type='canzone_15vv'] lg[type='stanza'] lg[type='dblvrs']:first-of-type,*/
 lg[type='canzone_16vv'] lg[type='stanza'] lg[type='dblvrs']:first-of-type,
 lg[type='canzone_20vv'] lg[type='stanza'] lg[type='dblvrs']:first-of-type,
 lg[type='madrigal'] lg[type='dblvrs']:first-of-type {
-  position: relative;
-  left: -0.8em;
+  /*position: relative;
+  left: -0.8em;*/
   margin-top: 0;
 }
 
+/*
 lg[type='octave'] > lg[type='dblvrs']:first-of-type span.lno,
 lg[type='sestina'] l[n='1'] span.lno,
 lg[type='sestina'] l[n='7'] span.lno,
@@ -526,10 +528,11 @@ lg[type='canzone_7vv'] lg[type='stanza'] lg[type='dblvrs']:first-of-type span.ln
 lg[type='canzone_7vv'] lg[type='stanza'] lg[type='dblvrs']:nth-of-type(5n) span.lno,
 lg[type='canzone_14vv'] lg[type='stanza'] lg[type='dblvrs']:first-of-type span.lno,
 lg[type='canzone_14vv'] lg[type='stanza'] lg[type='trplvrs']:first-of-type span.lno,
-lg[type='canzone_15vv'] lg[type='stanza'] lg[type='dblvrs']:first-of-type span.lno,
+lg[type='canzone_15vv'] lg[type='stanza'] lg[type='dblvrs']:first-of-type span.lno, 
 lg[type='canzone_16vv'] lg[type='stanza'] lg[type='dblvrs']:first-of-type span.lno,
-lg[type='canzone_20vv'] lg[type='stanza'] lg[type='dblvrs']:first-of-type span.lno,
-lg[type='madrigal'] lg[type='dblvrs']:first-of-type span.lno {
+lg[type='canzone_20vv'] lg[type='stanza'] lg[type='dblvrs']:first-of-type span.lno, 
+lg[type='madrigal'] lg[type='dblvrs']:first-of-type span.lno */
+lg.indent span.lno {
   left: -34px;
 }
 
@@ -542,13 +545,13 @@ lg .indent {
   position: relative;
   left: -0.8em;
 }
-
+/*
 #rvf037 l[n='47'],
 #rvf023 l[n='65']
  {
   margin-left: 0.8em;
 }
-
+*/
 
 
 /*
@@ -884,9 +887,9 @@ lg[id='rvf360'] l[n='138'],
 lg[id='rvf360'] l[n='151'],
 lg[id='rvf360'] l[n='152'],
 lg[id='rvf360'] l[n='153'] {
-  position: relative !important;
+ /* position: relative !important;
   left: -3.5em !important;
-  margin-top: 0 !important;
+  margin-top: 0 !important;*/
 }
 lg[id='rvf360'] {
   font-size: 80%;
@@ -1348,6 +1351,11 @@ a[disabled], a.inactive {
   background-color: white;
 }
 
+#sticky-header h1 {
+  font-family: 'andron_scriptor_webregular';
+  font-weight: 500;
+}
+
 #sticky-header .row {
   margin-left: 0; margin-right: 0;
 }
@@ -1364,7 +1372,7 @@ a[disabled], a.inactive {
   content: none;
 }
 
-#sticky-header .charta-no {
+#sticky-header button {
   font-family: Arvo, Verdana, sans-serif;
 }
 

@@ -421,6 +421,7 @@
             <space corresp="#canvasline"/>
             
             <lg xml:id="rvf141" type="sonnet" n="141">
+              <lg type="octave">
                 <lg type="dblvrs" corresp="#canvasline">
                     <l n="1"><hi rendition="#blue #fs24pt">C</hi><hi rendition="#small-caps">o</hi>me talora al caldo tempo sole</l>
                     <l n="2">Semplicetta farfalla al lume <choice><orig>aueçça</orig><reg>avezza</reg></choice></l>
@@ -437,8 +438,9 @@
                     <l n="7"><choice><orig>Chel</orig><reg>Che ’l</reg></choice> fren de la ragion <choice><orig>amor</orig><reg>Amor</reg></choice> &non; <choice><orig>preçça</orig><reg>prezza</reg></choice>&p2c;</l>
                     <l n="8">E chi discerne &e; <choice><orig>uinto</orig><reg>vinto</reg></choice> da chi <choice><orig>uole</orig><reg>vole</reg></choice>.</l>
                 </lg>
-            </lg>
-            <lg type="sestet">
+              </lg>
+              
+              <lg type="sestet">
                 <lg type="dblvrs" corresp="#canvasline">
                     <l n="9">E <choice><orig>ueggio</orig><reg>veggio</reg></choice> ben <choice><orig><abbr>quātelli</abbr><expan>quantelli</expan></orig><reg>quant’elli</reg></choice> a <choice><orig>schiuo</orig><reg>schivo</reg></choice> <choice><orig><abbr>māno</abbr><expan>manno</expan></orig><reg>m’anno</reg></choice>&p2c;</l>
                     <l n="10">E so <choice><orig>chi</orig><reg>ch’i’</reg></choice> ne <choice><orig>morro</orig><reg>morrò</reg></choice> <choice><orig>ueracemente</orig><reg>veracemente</reg></choice>&p2c;</l>
@@ -451,7 +453,9 @@
                     <l n="13"><choice><orig>Chi</orig><reg>Ch’i’</reg></choice> piango <choice><orig>laltrui</orig><reg>l’altrui</reg></choice> noia<supplied>,</supplied> &amp7; <choice><orig>nol</orig><reg>no ’l</reg></choice> mio <choice><abbr>dāno</abbr><expan>danno</expan></choice>&p2semicolon;</l>
                     <l n="14">Et cieca al suo morir <choice><orig>l<hi rendition="#b">al</hi>ma</orig><reg>l’alma</reg></choice> <choice><abbr>cōs<hi rendition="#b">ente</hi></abbr><expan>cons<hi rendition="#b">ente</hi></expan></choice><hi rendition="#b">.</hi></l>
                 </lg>
+              </lg>
             </lg>
+            
             <space corresp="#canvasline"/>
             
             <lg xml:id="rvf142" type="sestina" n="142"  rendition="#columns_2">

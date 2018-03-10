@@ -1339,6 +1339,13 @@ img.mfp-img {
 
 /* sticky header code: start */
 
+/* hide this class for any page except auxillary pages 
+   refer to auxillaryPage.css for .aux-only rule which turns display on
+*/
+.aux-only {
+  display: none;
+}
+
 a[disabled], a.inactive {
   cursor: not-allowed;
   opacity: .6;

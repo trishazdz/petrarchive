@@ -7,7 +7,7 @@
 %petrarchive_entities;
 -->
 <!ENTITY amp7 "<choice><abbr>⁊</abbr><expan>et</expan></choice>">
-<!ENTITY amp7 "<choice><abbr>⁊</abbr><expan>et</expan></choice>">
+<!ENTITY Amp7 "<choice><abbr>⁊</abbr><expan>Et</expan></choice>">
 <!ENTITY per "<choice><abbr>ꝑ</abbr><expan>per</expan></choice>">
 <!ENTITY Per "<choice><abbr>Ꝑ</abbr><expan>Per</expan></choice>">
 <!ENTITY virg "/">
@@ -591,7 +591,7 @@ the line wraps. -->
                   <l n="10">Che ti sostenne ne la <choice><orig>uita</orig><reg>vita</reg></choice> acerba<supplied>,</supplied></l>
                </lg>
                <lg type="dblvrs" corresp="#canvasline">
-                  <l n="11">Di queste impressioni <choice><orig>laere</orig><reg>l’aere</reg></choice> <choice><abbr>disgōbra</abbr><expan>disgombra</expan></choice>&p2colon;</l>
+                   <l n="11">Di queste <choice><orig>impressioni</orig><reg>impression’</reg></choice> <choice><orig>laere</orig><reg>l’aere</reg></choice> <choice><abbr>disgōbra</abbr><expan>disgombra</expan></choice>&p2colon;</l>
                   <l n="12">&Si; <choice><orig>uedrem</orig><reg>vedrem</reg></choice> poi &per; <choice><orig>merauiglia</orig><reg>meraviglia</reg></choice> &in;seme</l>
                </lg>
                <lg type="dblvrs" corresp="#canvasline">

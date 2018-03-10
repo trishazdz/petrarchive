@@ -3,7 +3,7 @@
 <?xml-stylesheet type="text/xsl" href="petrarchive.xsl"?>
 <!DOCTYPE TEI [
 <!ENTITY amp7 "<choice><abbr>⁊</abbr><expan>et</expan></choice>">
-<!ENTITY amp7 "<choice><abbr>⁊</abbr><expan>et</expan></choice>">
+<!ENTITY Amp7 "<choice><abbr>⁊</abbr><expan>Et</expan></choice>">
 <!ENTITY per "<choice><abbr>ꝑ</abbr><expan>per</expan></choice>">
 <!ENTITY Per "<choice><abbr>Ꝑ</abbr><expan>Per</expan></choice>">
 <!ENTITY virg "/">
@@ -477,7 +477,7 @@ the line wraps. -->
            <lg type="octave">
             <lg type="dblvrs" corresp="#canvasline">
                <l n="1"><hi rendition="#fs24pt">V</hi>incitore Alexandro <choice><orig>lira</orig><reg>l’ira</reg></choice> <choice><orig>uinse</orig><reg>vinse</reg></choice>&p2c;</l>
-               <l n="2">&amp7; <choice><orig>fel minore</orig><reg>fe’ ’lminore</reg></choice> &in; parte che Philippo&p2colon;</l>
+               <l n="2">&Amp7; <choice><orig>fel minore</orig><reg>fe’ ’lminore</reg></choice> &in; parte che Philippo&p2colon;</l>
             </lg>
             <lg type="dblvrs" corresp="#canvasline">
                <l n="3">Che <choice><orig>liual</orig><reg>li val</reg></choice> se Pyrgotile &amp7; 
@@ -546,7 +546,7 @@ the line wraps. -->
                </lg>
                <lg type="dblvrs" corresp="#canvasline">
                   <l n="11"><choice><orig>Ilmal</orig><reg>Il mal</reg></choice> <choice><orig>chemi</orig><reg>che mi</reg></choice> diletta&p2c; &amp7; &non; <choice><orig>midole</orig><reg>mi dole</reg></choice>&p2semicolon;</l>
-                  <l n="12">&amp7; pur <choice><orig><abbr>comītellecto</abbr><expan>comintellecto</expan></orig><reg>com’intellecto</reg></choice> 
+                  <l n="12">&Amp7; pur <choice><orig><abbr>comītellecto</abbr><expan>comintellecto</expan></orig><reg>com’intellecto</reg></choice> 
                      <choice><orig>auesse</orig><reg>avesse</reg></choice> <choice><orig>&virg;</orig><reg/></choice> &amp7; penne<supplied>,</supplied></l>
                </lg>
                <lg type="dblvrs" corresp="#canvasline">
@@ -607,7 +607,7 @@ the line wraps. -->
                <l n="1"><hi rendition="#fs24pt"
                   >L</hi><hi rendition="#small-caps">a</hi>sso<choice><orig> &virg;</orig><reg>!</reg></choice> Amor mi trasporta <choice><orig>&virg;</orig><reg/></choice> 
                   <choice><orig>ouio</orig><reg>ov’io</reg></choice> &non; <choice><orig>uoglio</orig><reg>voglio</reg></choice>&p2c;</l>
-               <l n="2">&amp7; ben <choice><orig>maccorgo</orig><reg>m’accorgo</reg></choice> <choice><orig>cheldeuer</orig><reg>che ’l dever</reg></choice> si <choice><orig>uarcha</orig><reg>varcha</reg></choice>&p2c;</l>
+               <l n="2">&Amp7; ben <choice><orig>maccorgo</orig><reg>m’accorgo</reg></choice> <choice><orig>cheldeuer</orig><reg>che ’l dever</reg></choice> si <choice><orig>uarcha</orig><reg>varcha</reg></choice>&p2c;</l>
             </lg>
             <lg type="dblvrs" corresp="#canvasline">
                <l n="3">Onde&v2c; a chi <choice><orig>nelmio</orig><reg>nel mio</reg></choice> cor siede monarcha&p2c;</l>
@@ -654,5 +654,4 @@ the line wraps. -->
       </body>
    </text>
 </TEI>
-
 

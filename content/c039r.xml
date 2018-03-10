@@ -3,7 +3,7 @@
 <?xml-stylesheet type="text/xsl" href="petrarchive.xsl"?>
 <!DOCTYPE TEI [
 <!ENTITY amp7 "<choice><abbr>⁊</abbr><expan>et</expan></choice>">
-<!ENTITY amp7 "<choice><abbr>⁊</abbr><expan>et</expan></choice>">
+<!ENTITY Amp7 "<choice><abbr>⁊</abbr><expan>Et</expan></choice>">
 <!ENTITY per "<choice><abbr>ꝑ</abbr><expan>per</expan></choice>">
 <!ENTITY Per "<choice><abbr>Ꝑ</abbr><expan>Per</expan></choice>">
 <!ENTITY virg "/">
@@ -609,7 +609,7 @@ the line wraps. -->
                         <choice><orig>tiēme</orig><reg>tiemme</reg></choice>&p2c;</l>
                 </lg>
                 <lg type="dblvrs">
-                    <l n="7">&amp7; <choice><orig>lechiome</orig><reg>le chiome</reg></choice> or <choice><orig>auolte</orig><reg>avolte</reg></choice> &in; perle<choice><orig> /</orig><reg/></choice> 
+                    <l n="7">&Amp7; <choice><orig>lechiome</orig><reg>le chiome</reg></choice> or <choice><orig>auolte</orig><reg>avolte</reg></choice> &in; perle<choice><orig> /</orig><reg/></choice> 
                         <choice><orig><abbr>engēme</abbr><expan>engemme</expan></orig><reg>e ’n gemme</reg></choice>&p2c;</l>
                     <l n="8">Allora sciolte<choice><orig>.</orig><reg/></choice> &amp7; <choice><orig>soura</orig><reg>sovra</reg></choice> or terso bionde&p2c;</l>
                 </lg>
@@ -617,7 +617,7 @@ the line wraps. -->
               <lg type="sestet">
                 <lg type="dblvrs">
                     <l n="9"><choice><orig>Lequali</orig><reg>Le quali</reg></choice> ella spargea&v2c; &si; dolcemente&p2c;</l>
-                    <l n="10">&amp7; raccoglea <choice><orig><abbr>cōsi</abbr><expan>consi</expan></orig><reg>con sì</reg></choice> 
+                    <l n="10">&Amp7; raccoglea <choice><orig><abbr>cōsi</abbr><expan>consi</expan></orig><reg>con sì</reg></choice> 
                         leggiadri modi&p2c;</l>
                 </lg>
                 <lg type="dblvrs">
@@ -628,7 +628,7 @@ the line wraps. -->
                         poi &in; <choice><orig>piu</orig><reg>più</reg></choice> saldi nodi&p2c;</l>
                 </lg>
                 <lg type="dblvrs">
-                    <l n="13">&amp7; <choice><orig><abbr>strīsel</abbr><expan>strinsel</expan></orig><reg>strinse ’l</reg></choice> 
+                    <l n="13">&Amp7; <choice><orig><abbr>strīsel</abbr><expan>strinsel</expan></orig><reg>strinse ’l</reg></choice> 
                         cor <choice><orig>dun</orig><reg>d’un</reg></choice> laccio &si; possente&p2c;</l>
                     <l n="14">Che morte sola fia <choice><orig>chindi</orig><reg>ch’indi</reg></choice> lo snodi.</l>
                 </lg>
@@ -672,7 +672,7 @@ the line wraps. -->
                         <choice><orig><subst><del type="erasure"><gap reason="illegible"/></del><add>falmio cor</add></subst></orig><reg>fa ’l mio cor</reg></choice><choice><orig> /</orig><reg/></choice> un ghiaccio&p2c;</l>
                 </lg>
                 <lg type="dblvrs">
-                    <l n="13">&amp7; di bianca pau<hi rendition="#b">ra</hi> il <choice><orig>uiso</orig><reg>viso</reg></choice> tinge.</l>
+                    <l n="13">&Amp7; di bianca pau<hi rendition="#b">ra</hi> il <choice><orig>uiso</orig><reg>viso</reg></choice> tinge.</l>
                     <l n="14">Ma <choice><orig>liocchi</orig><reg>li occhio</reg></choice> 
                         <choice><orig><abbr>āno</abbr><expan>anno</expan></orig><reg>ànno</reg></choice> 
                         <choice><orig>uertu</orig><reg>vertù</reg></choice> di farne un marmo.</l>
@@ -684,5 +684,4 @@ the line wraps. -->
         </body>
     </text>
 </TEI>
-
 

@@ -115,7 +115,6 @@ h1, h2, h3, h4, h5, h6, dt {
 
 /* line 59, ../sass/screen.scss */
 h1 {
-  border-bottom: 1px solid #d7d6d5;
   padding-bottom: .25em;
   margin: 1.5em 0 1.5em 0;
   font-size: 115%;
@@ -432,7 +431,7 @@ th {
 td, th {
   border-bottom: 1px solid #d7d6d5;
   padding: .2em 1em .2em 0;
-  font-family: "helvetica neue", helvetica, verdana, arial, sans-serif;
+  font-family: 'andron_scriptor_webregular';
   font-weight: 200;
 }
 

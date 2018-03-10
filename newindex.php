@@ -25,7 +25,7 @@
 <div id="bannertitle">Petr<span class="archive">archive</span></div>
 <div id="bannersubtitle">An edition of Petrarch’s songbook</div>
 <div id="bannerrvf">Rerum vulgarium fragmenta</div>
-<div id="bannerresp">Edited by H. Wayne Storey, John A. Walsh and associate editor Isabella Magni</div>
+<div id="bannerresp">Edited by H. Wayne Storey, John A. Walsh and Isabella Magni</div>
 </div>
 <?php include("footer.html"); ?>
 </div>

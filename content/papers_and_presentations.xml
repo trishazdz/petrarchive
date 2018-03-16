@@ -308,7 +308,9 @@ the line wraps. -->
           
           <head>Recent papers and talks</head>
           
-          <bibl rendition="#hang">Isabella Magni. “Collaborative digital editing: re-visualizing Petrarch’s <title level="m">Fragmenta</title>” in BH and DH: Book History and Digital Humanities, University of Wisconsin-Madison, Madison, WI, September 23, 2017.</bibl>
+          <bibl rendition="#hang">Isabella Magni. “Making a Digital Edition: Introduction to Text Encoding and the <title level="a">Petr<hi rendition="#i">archive</hi></title> Project.” invited talk and workshop at DePaul University, Chicago, IL, May 18, 2018.</bibl>
+          
+          <bibl rendition="#hang">———. “Collaborative digital editing: re-visualizing Petrarch’s <title level="m">Fragmenta</title>” in BH and DH: Book History and Digital Humanities, University of Wisconsin-Madison, Madison, WI, September 23, 2017.</bibl>
           
           <bibl rendition="#hang">H. Wayne Storey. “La filologia materiale negli studi d'Oltreoceano” in Convegno di studi, Filologia materiale fra testo e documento, Universita di Verona, Italy, June 9, 2017.</bibl>
           

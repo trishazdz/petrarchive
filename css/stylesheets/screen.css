@@ -46,6 +46,10 @@ table {
   border-spacing: 0;
 }
 
+main.container {
+  margin-bottom: 2em;
+}
+
 /* -------------------------------------------------------------------------*/
 /* Layout */
 /* line 15, ../sass/screen.scss */
@@ -110,15 +114,7 @@ h1, h2, h3, h4, h5, h6, dt {
   font-family: "helvetica neue", helvetica, verdana, arial, sans-serif;
   font-weight: bold;
   margin-top: .5em;
-}
-
-/* line 59, ../sass/screen.scss */
-h1 {
-  border-bottom: 1px solid #d7d6d5;
-  padding-bottom: .25em;
-  margin: 1.5em 0 1.5em 0;
-  font-size: 115%;
-  /*18pt*/
+  margin-bottom: 1em;
 }
 
 /* line 66, ../sass/screen.scss */
@@ -301,10 +297,23 @@ footer {
   margin-bottom: 2em;
   font-family: 'Helvetica Neue','Gill Sans',Helvetica,Arial,sans-serif;
   font-weight: 200;
-  font-size: 8pt;
   line-height: 1.5;
   clear: both;
 }
+
+
+/* petrarchve footer code: start */
+#petrarchive-footer {
+  font-size: .8em;
+  color: #623634;
+  padding: 2.5em 0;
+  background: #e8e3e3;
+  margin: 0;
+  width: initial;
+}
+
+
+/* petrarchve footer code: end */
 
 /* line 234, ../sass/screen.scss */
 ul.leaders {
@@ -359,11 +368,15 @@ nav {
 
 /* line 268, ../sass/screen.scss */
 nav ul {
-  font-family: "helvetica neue", helvetica, verdana, arial, sans-serif;
+  font-family: Open Sans, "helvetica neue", helvetica, verdana, arial, sans-serif;
   font-weight: 100;
   margin-top: 0;
   padding-top: 0;
   margin-left: .75em;
+}
+
+.dropdown-item {
+  font-family: Open Sans, "helvetica neue", helvetica, verdana, arial, sans-serif;
 }
 
 /* line 269, ../sass/screen.scss */
@@ -466,6 +479,14 @@ th .span {
 strong {
   font-weight: 500;
 }
+
+td, th {
+  border-bottom: 1px solid #d7d6d5;
+  padding: .2em 1em .2em 0;
+  font-family: 'andron_scriptor_webregular';
+  font-weight: 200;
+}
+
 
 
 table.sortable th {

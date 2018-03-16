@@ -246,11 +246,11 @@
 		"commentary": false
 	},
 	"032r": {
-		"document": "c032r",
+		"document": "c032r_c032v",
 		"commentary": false
 	},
 	"032v": {
-		"document": "c032v",
+		"document": "c032r-c032v",
 		"commentary": false
 	},
 	"033r": {

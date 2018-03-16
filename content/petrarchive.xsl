@@ -33,7 +33,6 @@
     <xsl:param name="customCSS" select="concat($filePrefix,'/css/custom.css')"/>
     <xsl:param name="frameCSS" select="concat($filePrefix,'/css/frame.css')"/>
 
-
     <xsl:template name="stickyHeader">
       <xsl:variable name="header">
         <xsl:copy-of select="document('../sticky_header.html')"/>
@@ -41,18 +40,6 @@
       <xsl:copy-of select="$header"/>
     </xsl:template>
 
-    <!--
-    <xsl:template name="auxHeader">
-        <xsl:copy-of select="document('../nav.html')"/>
-    </xsl:template>
-
-    <xsl:template match="tei:vizindex">
-      <tei:vizindex>
-            <xsl:copy-of select="document('../vizindex.html')"/>
-      </tei:vizindex>
-    </xsl:template>
-    -->
-    
   <xd:doc>
     <xd:desc>
       <xd:p>TEI's head changed to tei-head to avoid conflicts with html/head.</xd:p>
@@ -79,14 +66,14 @@
     
     <xsl:template match="tei:cb[@n='1-of-2']">
         <xsl:variable name="mycb" select="."/>
-        <div style="float:left;">
+        <div class="sestina_left" style="float:left;">
             <xsl:apply-templates select="ancestor::tei:lg[@type = 'sestina']//tei:l[preceding::tei:cb[@n = '1-of-2'] = $mycb and following::tei:cb[@n='2-of-2']]" mode="process"/>
         </div>
     </xsl:template>
     
     <xsl:template match="tei:cb[@n='2-of-2']">
         <xsl:variable name="mycb" select="."/>
-        <div style="float:left; width:500px; margin-right:2em; margin-left:2em;">
+        <div class="sestina_right" style="float:left; width:500px; margin-right:2em; margin-left:2em;">
             <xsl:apply-templates select="ancestor::tei:lg[@type = 'sestina']//tei:l[preceding::tei:cb[@n = '2-of-2'] = $mycb]" mode="process"/>
         </div>
     </xsl:template>
@@ -101,6 +88,7 @@
       <!-- sestina line numbers -->
       <span class="lno"><xsl:value-of select="@n"/></span>
       </xsl:if>
+      
       <xsl:element name="{local-name()}">
         <xsl:call-template name="addID"/>
         <xsl:apply-templates select="@*|node()"/>
@@ -143,7 +131,7 @@
     </xsl:template>
     
     <xsl:variable name="htmlFooter">
-      <footer class="col-12">© 2013-2017 H. Wayne Storey, John A. Walsh &amp; Isabella Magni. This document is part of the Petr<em>archive</em>.<br/>
+      <footer>© 2013-2017 H. Wayne Storey, John A. Walsh &amp; Isabella Magni. This document is part of the Petr<em>archive</em>.<br/>
         Team: H. Wayne Storey, John A. Walsh, Isabella Magni, Erica Hayes, Lino Mioni, and Abraham Kim. 
 
         <br />Past Contributors: Grace Thomas, Allison M. McCormack, and Laura Pence.<br/>
@@ -457,8 +445,13 @@
   </xsl:template>
  
   <xsl:template name="poemNumber">
-    <span class="poem-number {@n}">
+    <span class="poem-number">
+      <xsl:attribute name="number">
+        <xsl:value-of select="@n"/>
+      </xsl:attribute>
+
       <xsl:value-of select="@n"></xsl:value-of>
+     
       <xsl:if test="//tei:back/tei:div[@type = 'commentary']/@corresp = concat('#',@xml:id)">
         <button class="commentary-activate" id="{@xml:id}">
             <i class="fa fa-commenting-o"></i>

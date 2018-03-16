@@ -163,19 +163,16 @@ cell {
 width:inherit;
 }
 
-/*
-nav {
-  font-family: "Helvetica Neue", "Gill Sans", "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
-  font-size: 16px;
-  font-weight: 200 !important;
-  margin-top: 1em;
-}
-nav a,
-nav a:visited {
-  color: #007aff !important;
-}
 
+/* Custom blank/whtie space 
+    height is applied via JS -> 1.8 em per extent
+    so space[extent='7'] = to 1.8em height
 */
+space[ana='#space-stop'] {
+  width:100%;
+  display:inline-block;
+  height: 12.6em;
+}
 
 lg {
   line-height: 175%;
@@ -796,8 +793,8 @@ lg[id='rvf105'] l[n='81']  */{
 }
 
 lg[id='rvf360'] l{
-  position: relative !important;
-  left: -50px  !important;
+  /*position: relative !important;
+  left: -50px  !important;*/
 }
 
 ab[type= 'diplomatic'] lg[type='canzone_15vv'] l[n='5'],
@@ -826,6 +823,14 @@ ab[type= 'diplomatic'] lg[type='canzone_15vv'] l[n='111']
 {
   position: static;
   left: 0;
+}
+
+
+ab[type='diplomatic'] {
+  display: initial;
+}
+ab[type='edition'] {
+  display: none;
 }
 /*
 lg[id='rvf360'] ab[type='diplomatic'] l[n='81'] {
@@ -892,7 +897,6 @@ lg[id='rvf360'] l[n='153'] {
   margin-top: 0 !important;*/
 }
 lg[id='rvf360'] {
-  font-size: 80%;
 }
 /* code below hides line numbers we don't want displayed. */
 lg[id='rvf360'] l[n='4'] + span.lno,
@@ -993,7 +997,7 @@ nav {
 
 /* line 268, ../sass/screen.scss */
 nav ul {
-  font-family: "helvetica neue", helvetica, verdana, arial, sans-serif;
+  font-family: Open Sans, "helvetica neue", helvetica, verdana, arial, sans-serif;
   font-weight: 100;
   margin-top: 0;
   padding-top: 0;
@@ -1462,6 +1466,7 @@ button {
 }
 
 /* sticky header code: end */
+
 
 /* Mobile code: start */
 

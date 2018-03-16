@@ -115,15 +115,10 @@ function applyStyling() {
     var l = el.querySelector('l')
     var firstEl = l.querySelector('*')
 
-    if ($(firstEl).prop('tagName') == 'HI') {
-     $(el).addClass('indent')
-    } else {
-      if (firstEl) {
-        if (firstEl.querySelector('hi')) {
-          console.log('firstEl true', firstEl, firstEl.querySelector('hi'))
-          $(el).addClass('indent')
-        }
-      }
+    var hiFirstTest = recursiveSearch(l, 'hi')
+    if (hiFirstTest) { 
+      console.log(el)
+      $(el).addClass('indent') 
     }
   })
 
@@ -133,32 +128,80 @@ function applyStyling() {
     var l = el.querySelector('l')
     var firstEl = l.querySelector('*')
 
-    if ($(firstEl).prop('tagName') == 'HI') {
-      $(el).addClass('indent')
-     } else {
-       if (firstEl) {
-         if (firstEl.querySelector('hi')) {
-           $(el).addClass('indent')
-         }
-       }
-     }
+    var hiFirstTest = recursiveSearch(l, 'hi')
+    if (hiFirstTest) { 
+      console.log(el)
+      $(el).addClass('indent') 
+    }
   })
 
   // Apply indent to l in sestina when pillcrow/h1 first character
   var sestinaL = $("lg[type='sestina'] l")
   sestinaL.each(function(i, el) {
-    var firstEl = el.querySelector('*')
-
-    if ($(firstEl).prop('tagName') == 'HI') {
-      $(el).addClass('indent')
-     } else {
-       if (firstEl) {
-         if (firstEl.querySelector('hi')) {
-           $(el).addClass('indent')
-         }
-       }
-     }
+    var hiFirstTest = recursiveSearch(el, 'hi')
+    if (hiFirstTest) { 
+      console.log(el)
+      $(el).addClass('indent') 
+    }
   })
+
+  //Custom blank/whtie space 
+  var blankSpace = $("space[ana='#space-stop']"),
+      blankSpaceExtent = blankSpace.attr('extent');
+    
+  blankSpace.css('height', (blankSpaceExtent * 1.8) + 'em')
+
+
+  // hack for soft launch for rvf142
+  var rvf142 = document.querySelector('#rvfasdf142')
+  if (rvf142) {
+    var firstCol = rvf142.querySelector('div:nth-child(1)') // hide lines greater than 15
+    var secondCol = rvf142.querySelector('div:nth-child(2)') // hide lines greater than 30
+
+    firstCol.querySelectorAll('l').forEach(function(e) {
+      if ($(e).attr('n') > 15) {
+        $(e).css('display', 'none')
+      }
+    })
+    secondCol.querySelectorAll('l').forEach(function(e) {
+      if ($(e).attr('n') > 30) {
+        $(e).css('display', 'none')
+      }
+    })
+
+    $(rvf142.querySelectorAll('div:nth-child(4)')).css('display', 'none')
+    $(rvf142.querySelectorAll('div:nth-child(5)')).css('display', 'none')
+
+  }
+
+}
+
+function recursiveSearch(el, type) {
+  if (!el) { return null }
+
+  type = type.toUpperCase()
+  /*if ($(el).prop('tagName') == type) {
+    console.log('first break', el)
+    return true
+  } */
+
+  //is the first tag/element within the provided el 
+  // of the type desired
+  var typeReg = new RegExp("^<" + type, "i"),
+      firstMatch = el.innerHTML.match(typeReg); 
+
+  if (firstMatch) {
+    return true
+  }
+
+  
+  var firstEl = el.querySelector('*')
+
+  if (!firstEl) { 
+    return null
+  }
+
+  return recursiveSearch(firstEl, type)
 }
 
 function setupRvf() {

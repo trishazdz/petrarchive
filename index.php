@@ -13,10 +13,11 @@
   <link rel="stylesheet" type="text/css" href="css/stylesheets/screen.css" />
   <link rel="stylesheet" type="text/css" href="css/stylesheets/index.css" />
 </head>
-<body class="container">
+<body>
 
-  <?php include("nav.html"); ?>
+<main class="container">
 
+<?php include("nav.html"); ?>
 
 <!-- number index, first line index, visual index, genre index -->
 <div class="row" id="banner">
@@ -44,12 +45,13 @@
 </div>
 
 <div id="vizindex" class="container">
-  <div style="display: none;" class="built-vizindex">
-    <?php //require 'vizindex_builder.php'; ?>
+  <div class="row built-vizindex">
+    <?php require 'vizindex_builder.php'; ?>
+    <?php include('vizindex.html'); ?>
   </div>
 
-  <div class="row built-vizindex">
-    <?php include("vizindex.html"); ?>
+  <div class="row built-vizindex hide">
+    <?php //include("vizindex.html"); ?>
   </div>
 </div>
 
@@ -78,6 +80,7 @@
     </p>
   </main>
 </section>
+</main>
 
 <?php include "footer.html"; ?>
 

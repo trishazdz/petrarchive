@@ -41,7 +41,7 @@ foreach ($files as $f) {
 
         $url .= '.xml?ch=' . $exploded_file_name;
 
-        $html = '<a class="col-3 col-sm-1-24';
+        $html = '<a class="col-4 col-sm-3 col-md-1 col-lg-1-24';
         if ($no_file) {
             $html .= ' no-file';
             $html .= '" href="content/charta-404.xml?incomplete=true&';

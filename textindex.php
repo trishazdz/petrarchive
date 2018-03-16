@@ -9,25 +9,29 @@
     <link rel="stylesheet" type="text/css" href="js/jquery-ui/jquery-ui.min.css" />
 
     
-    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />    
     <link href="css/teibp.css" media="screen, projection" rel="stylesheet" type="text/css" />  
     <link href="css/custom.css" media="screen, projection" rel="stylesheet" type="text/css" />  
     <link href="css/auxillaryPage.css" media="screen, projection" rel="stylesheet" type="text/css" />      
 
+    <link rel="stylesheet" type="text/css" href="css/stylesheets/screen.css" />
+    <link rel="stylesheet" type="text/css" href="css/stylesheets/index.css" />
 </head>
 
-<body class="container">
-    <header>
-        <?php include( "sticky_header.html"); ?>
-    </header>
+<body>
+    <main class="container">
+        <header>
+            <?php include( "sticky_header.html"); ?>
+        </header>
 
-    <main class="row">
-        <div class="col-12">
-            <?php include( "textindex.html"); ?>
-        </div>
+        <main class="row">
+            <div style='margin-top: 2em;' class="col-12">
+                <?php include( "textindex.html"); ?>
+            </div>
+        </main>
     </main>
 
-    <?php include( "footer.html"); ?>
+    <?php include "footer.html"; ?>
+
 
     <script src="https://use.fontawesome.com/57840704ee.js"></script>
 

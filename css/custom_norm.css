@@ -84,3 +84,19 @@ supplied {display:inline;}
 fw,fw[type = "catch"] {
   display:none;
 }
+
+ab[type='diplomatic'], ab[type='diplomatc'] * {
+  display: none;
+}
+ab[type='edition'] {
+  display: inherit;
+}
+
+/* hack for rvf360 due to anamalous encoding. */
+span.poem-number[number='356 \[360\]'] {
+  top: -16em
+}
+
+span.poem-number[number='357 \[361\]'] {
+  top: 163em;
+}

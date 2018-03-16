@@ -145,7 +145,7 @@ p, ul, ol, figure {
 /* definition lists; dt up with h1,h2,… */
 /* line 88, ../sass/screen.scss */
 dl {
-  margin-left: 3em;
+ /* margin-left: 3em;*/
 }
 
 /* line 91, ../sass/screen.scss */

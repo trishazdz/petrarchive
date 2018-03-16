@@ -29,3 +29,7 @@ html > body {
     padding-left:4em;
     padding-top: 2em;
 }
+
+#content {
+    margin-top: 2em;
+}

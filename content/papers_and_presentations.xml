@@ -357,6 +357,9 @@ the line wraps. -->
             
           <bibl rendition="#hang">———. <title level="a">Multiple Forms of E-Text Representation of Petrarch’s canzone <title rendition="#i">Quel’ antiquo mio dolce empio signore</title></title>. Invited paper for conference <title rendition="#i">Innovation and the Ancient: Texts and Editions</title>, University of Mississippi, Oxford, 10 April 2012.</bibl>
         </listBibl>
+
+                <link href="../css/auxillaryPage.css" media="screen, projection" rel="stylesheet" type="text/css" />      
+
       </body>
    </text>
 </TEI>

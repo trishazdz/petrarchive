@@ -1343,6 +1343,27 @@ img.mfp-img {
 
 /* sticky header code: start */
 
+nav ul {
+  font-family: Open Sans, "helvetica neue", helvetica, verdana, arial, sans-serif;
+  font-weight: 100;
+  margin-top: 0;
+  padding-top: 0;
+  margin-left: .75em;
+}
+
+#menu {
+  background-color: #e7e8ea;
+  padding: .75em 1.25em .75em .75em;
+  border: 1px solid #a5a3a1;
+  z-index: 99;
+  position: relative;
+  left: -5em;
+}
+
+.dropdown-item {
+  font-family: Open Sans, "helvetica neue", helvetica, verdana, arial, sans-serif;
+}
+
 /* hide this class for any page except auxillary pages 
    refer to auxillaryPage.css for .aux-only rule which turns display on
 */

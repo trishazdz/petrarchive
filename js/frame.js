@@ -74,7 +74,7 @@ Frame.prototype.show = function(el, explore) {
   if (explore) {
     var that = this
 
-    var checkScenes = debounce(function(ev, ui) {
+    var checkScenes = util_browser.debounce(function(ev, ui) {
       console.log(that.getCenter())
       var potentialScene
 
@@ -169,7 +169,7 @@ Frame.prototype.events = function() {
     ev.preventDefault()
   })
 
-  var recenter = debounce(function() {
+  var recenter = util_browser.debounce(function() {
       console.log(that.getCenter())
       that.repositionImg(that._center)
     }, 250)
@@ -450,22 +450,4 @@ Frame.prototype.setDefaultScene = function(i) {
   console.log(this.scenes)
 }
 
-// https://stackoverflow.com/questions/2854407/javascript-jquery-window-resize-how-to-fire-after-the-resize-is-completed
-  // Returns a function, that, as long as it continues to be invoked, will not
-  // be triggered. The function will be called after it stops being called for
-  // N milliseconds. If `immediate` is passed, trigger the function on the
-  // leading edge, instead of the trailing.
-  function debounce(func, wait, immediate) {
-      var timeout;
-      return function() {
-          var context = this, args = arguments;
-          var later = function() {
-              timeout = null;
-              if (!immediate) func.apply(context, args);
-          };
-          var callNow = immediate && !timeout;
-          clearTimeout(timeout);
-          timeout = setTimeout(later, wait);
-          if (callNow) func.apply(context, args);
-      };
-  };
+

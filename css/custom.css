@@ -24,8 +24,8 @@ body {
   line-height: 1;
 }
 
-body.commentary-active {
-  margin-bottom: 12.5em;
+body.commentary-active #tei_wrapper footer {
+  padding-bottom: 27.5em;
 }
 
 /* line 22, ../sass/_meyer-reset.scss */
@@ -88,7 +88,6 @@ body {
   font-size: 20px;
   background-color: white;
   padding-top: 0;
-  margin-left: 4em;
 }
 html > body {
   margin-top: 0;
@@ -100,18 +99,17 @@ a:hover {
 }
 
 .content-container {
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 #tei_wrapper {
   padding-left: 6.5rem;
-  overflow-y: scroll;
-  height: 100vh;
-}
-
-#tei_wrapper > tei {
   max-width: 1100px;
   margin-top: 3em;
 }
+
+
 #tei_wrapper text {
   width: 1100px;
 }
@@ -1431,6 +1429,14 @@ a[disabled], a.inactive {
 }
 #page-nav button {
   
+}
+
+html > body #sticky-header .facs-thumb.activePb {
+  border: 2px solid black;
+}
+
+html > body.facs-active #sticky-header .facs-thumb.activePb {
+  border: initial;
 }
 
 

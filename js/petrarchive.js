@@ -85,10 +85,32 @@ Petrarchive.prototype.init = function() {
     $('.-teibp-pb:first-child').css('display', 'initial')
 
     // scroll to the pertinent chartae
-    
-  }
 
-  console.log($('a.facs-thumb'))
+
+    var pageBreaks = $.makeArray($('.-teibp-pageNum').map(function(i, el) {
+      console.log($(el))
+      return el.offsetTop
+    }))
+
+    var debouncedPbActivate = util_browser.debounce(function(ev) {
+      var scrollTop = $(ev.delegateTarget).scrollTop()
+
+    
+      var filteredPbs = pageBreaks.filter(function(pb) {
+        console.log(scrollTop, pb)
+        return scrollTop > pb
+      })
+
+      console.log(filteredPbs)
+
+      var activePbsIndex = filteredPbs.length - 1
+
+      $('a.facs-thumb').removeClass('activePb')
+      $($('a.facs-thumb')[activePbsIndex]).addClass('activePb')
+    }, 200)
+    
+    $('.content-container').scroll(debouncedPbActivate)
+  }
 
   $('a.facs-thumb').click(function(ev) {
     var img = $($(ev.delegateTarget).children('img'))
@@ -154,9 +176,7 @@ Petrarchive.prototype.init = function() {
   })
 
   facsNav.children('button.facs-close').click(function(ev) {
-    facs.$frame.removeClass('active')
-    util_browser.removeParam('facs')
-    localStorage.setItem('facs', 'false')
+    that.deactivateFacs()
   })
 
   /***********
@@ -191,6 +211,8 @@ Petrarchive.prototype.getCurrentDoc = function() {
 
 Petrarchive.prototype.activateFacs = function() {
 
+  $('html > body').addClass('facs-active')
+
   this.facs.$frame.addClass('active')
   util_browser.setParam('facs', 'active')
   localStorage.setItem('facs', 'true')
@@ -202,6 +224,8 @@ Petrarchive.prototype.activateFacs = function() {
 }
 
 Petrarchive.prototype.deactivateFacs = function() {
+  $('html > body').removeClass('facs-active')
+
   this.facs.$frame.removeClass('active')
   util_browser.removeParam('facs')
   localStorage.setItem('facs', 'false')

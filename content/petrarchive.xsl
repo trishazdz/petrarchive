@@ -127,6 +127,35 @@
             </xsl:if>
 
             <script src="https://use.fontawesome.com/57840704ee.js"></script>
+
+            <script type="text/javascript" src="{$jqueryJS}"></script>
+
+            <script type="text/javascript" src="{$tetherJS}"></script>
+            <script type="text/javascript" src="{$bootstrapJS}"></script>
+
+            <script type="text/javascript" src="{$jqueryUI}"></script>
+            <script type="text/javascript" src="{$jqueryMW}"></script>
+
+            <script type="text/javascript" src="{$knockout}"></script>
+
+            <script type="text/javascript" src="{$teibpJS}"><xsl:comment> </xsl:comment></script>
+
+            <script type="text/javascript" src="../js/utils/browser.js"><xsl:comment> </xsl:comment></script>
+
+            <script type="text/javascript" src="../js/petrarchivedocument.js"><xsl:comment> </xsl:comment></script>
+
+
+            <script type="text/javascript" src="../js/petrarchive.js"><xsl:comment> </xsl:comment></script>
+
+            <script type="text/javascript" src="../js/frame.js"><xsl:comment> </xsl:comment></script>
+            <script type="text/javascript" src="../js/navutil.js"><xsl:comment> </xsl:comment></script>
+            <script type="text/javascript" src="../js/commentaryutil.js"><xsl:comment> </xsl:comment></script>
+
+            <script type="text/javascript" src="../js/poem.js"><xsl:comment> </xsl:comment></script>
+
+            <meta name="turbolinks-root" content="./"/>
+            <script type="text/javascript" src="../js/turbolinks/turbolinks.min.js"></script>
+
         </head>
     </xsl:template>
     
@@ -167,32 +196,6 @@
             </nav>
         </div>
       </section>
-
-
-      <script type="text/javascript" src="{$jqueryJS}"></script>
-
-      <script type="text/javascript" src="{$tetherJS}"></script>
-      <script type="text/javascript" src="{$bootstrapJS}"></script>
-
-      <script type="text/javascript" src="{$jqueryUI}"></script>
-      <script type="text/javascript" src="{$jqueryMW}"></script>
-
-      <script type="text/javascript" src="{$knockout}"></script>
-
-      <script type="text/javascript" src="{$teibpJS}"><xsl:comment> </xsl:comment></script>
-
-    <script type="text/javascript" src="../js/utils/browser.js"><xsl:comment> </xsl:comment></script>
-
-    <script type="text/javascript" src="../js/petrarchivedocument.js"><xsl:comment> </xsl:comment></script>
-
-
-    <script type="text/javascript" src="../js/petrarchive.js"><xsl:comment> </xsl:comment></script>
-
-    <script type="text/javascript" src="../js/frame.js"><xsl:comment> </xsl:comment></script>
-    <script type="text/javascript" src="../js/navutil.js"><xsl:comment> </xsl:comment></script>
-    <script type="text/javascript" src="../js/commentaryutil.js"><xsl:comment> </xsl:comment></script>
-
-    <script type="text/javascript" src="../js/poem.js"><xsl:comment> </xsl:comment></script>
 
     </xsl:variable>
   

@@ -10,25 +10,26 @@ $(document).ready(function() {
 
   window.PT = new Petrarchive()   
 
+  var currentScroll = $('.content-container').scrollTop()
 
   // When hash is clicked we need to give it a vertical cushion equal to 2x the sticky header.
   // This is because browser loads webpage right at <a> of respective hash tag and will be blocked
   // by sticy header
   if (window.location.hash) {
-    var currentScroll = $('#tei_wrapper').scrollTop()
-
-    $('#tei_wrapper').scrollTop(currentScroll - ($('#sticky-header').height() * 2))
+    setTimeout(function() {
+      $('.content-container').scrollTop(currentScroll - ($('#sticky-header').height() * 2))
+    }, 1500)
   }
 
   if (util_browser.getParam('ch')) {
     var charta = util_browser.getParam('ch')
 
     setTimeout(function() {
-      $('#tei_wrapper').scrollTop(currentScroll - ($('#sticky-header').height() * 2))
+      $('.content-container').scrollTop(currentScroll - ($('#sticky-header').height() * 2))
 
       console.log(charta)
 
-      $('#tei_wrapper').animate({
+      $('.content-container').animate({
         scrollTop: $("#" + charta).offset().top - ($('#sticky-header').height() * 1.5)
       }, 2500);
     }, 1500)

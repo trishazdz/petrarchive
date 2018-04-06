@@ -306,10 +306,19 @@ footer {
 #petrarchive-footer {
   font-size: .8em;
   color: #623634;
-  padding: 2.5em 0;
+  padding: 1em 0;
   background: #e8e3e3;
   margin: 0;
   width: initial;
+}
+
+#petrarchive-footer p {
+  margin-top: 0;
+  margin-bottom: .3em;
+}
+
+#petrarchive-footer section {
+  margin-bottom: 1em;
 }
 
 

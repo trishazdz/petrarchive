@@ -14,7 +14,6 @@
     <link href="css/auxillaryPage.css" media="screen, projection" rel="stylesheet" type="text/css" />      
 
     <link rel="stylesheet" type="text/css" href="css/stylesheets/screen.css" />
-    <link rel="stylesheet" type="text/css" href="css/stylesheets/index.css" />
 </head>
 
 <body>

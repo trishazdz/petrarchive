@@ -1389,16 +1389,27 @@ a[disabled], a.inactive {
 #sticky-header .row {
   margin-left: 0; margin-right: 0;
 }
-#sticky-header .dropdown button {
+.dropdown button {
   background-color: white;
   border: none;
 }
-#sticky-header .dropdown button:hover {
+.dropdown button:hover {
   cursor: pointer;
   background-color: #eee;
 }
 
-#sticky-header .dropdown-toggle::after {
+.dropdown-item {
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.dropdown .divider {
+  margin-left: 1em;
+  margin-top: 1em;
+  font-size: 16px;
+}
+
+.dropdown-toggle::after {
   content: none;
 }
 
@@ -1431,12 +1442,16 @@ a[disabled], a.inactive {
   
 }
 
+html > body .facs-thumb {
+  border: 2px solid transparent;
+}
+
 html > body #sticky-header .facs-thumb.activePb {
-  border: 2px solid black;
+  border: 2px solid #623634;
 }
 
 html > body.facs-active #sticky-header .facs-thumb.activePb {
-  border: initial;
+  border: 2px solid transparent;
 }
 
 

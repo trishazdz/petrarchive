@@ -12,9 +12,7 @@
     <link href="css/custom.css" media="screen, projection" rel="stylesheet" type="text/css" />  
     <link href="css/auxillaryPage.css" media="screen, projection" rel="stylesheet" type="text/css" />      
 
-    <link rel="stylesheet" type="text/css" href="css/stylesheets/screen.css" />
-    <link rel="stylesheet" type="text/css" href="css/stylesheets/index.css" />
-	   
+    <link rel="stylesheet" type="text/css" href="css/stylesheets/screen.css" />	   
 </head>
 <body>
 

@@ -1,3 +1,7 @@
+html > body {
+	overflow-y: auto;
+}
+
 nav #smallbanner {
 	display: none;
 }
@@ -22,7 +26,15 @@ nav #smallbanner {
 	font-family: Arvo, Verdana, sans-serif;
 }
 
+.dropdown-toggle {
+	margin-top: 20px;
+}
+
 .container {
+}
+
+main p {
+	margin-bottom: 1rem;
 }
 
 #banner {

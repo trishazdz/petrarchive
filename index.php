@@ -11,6 +11,7 @@
   <link rel="stylesheet" type="text/css" href="js/jquery-ui/jquery-ui.min.css" />
 
   <link rel="stylesheet" type="text/css" href="css/stylesheets/screen.css" />
+  <link href="css/custom.css" media="screen, projection" rel="stylesheet" type="text/css" />  
   <link rel="stylesheet" type="text/css" href="css/stylesheets/index.css" />
 </head>
 <body>
@@ -199,8 +200,8 @@
 </div>
 
 <section class="row">
-  <main class="col-12">
-    <p>
+  <main class="col-lg-8">
+    <p class="col">
       When you hear the words <em>sonnet</em>, <em>Renaissance</em>, 
       <em>western literature</em>, <em>love songs</em>, 
       you are hearing the direct influence of Francesco Petrarca 
@@ -209,7 +210,7 @@
       fragmenta</cite>).
     </p>
 
-    <p>
+    <p class="col">
       The Petrarchive is designed as a tool both to introduce Petrarch’s 
       collection—a collection that continues to influence modern cultures 
       in many languages—and to give advanced users access to 
@@ -227,8 +228,13 @@
 
 <?php include "footer.html"; ?>
 
+<script src="https://use.fontawesome.com/57840704ee.js"></script>
+
 <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="js/tether/tether.min.js"></script>
+<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
 
     
 <script type="text/javascript" src="js/index.js"></script>

@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 $(document).tooltip({
-	items: "#vizindex a",
+	items: $(".built-vizindex a"),
    /* hide: {
         effect: "explode",
         delay: 30000

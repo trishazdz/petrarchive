@@ -20,7 +20,6 @@
 
 <?php include("nav.html"); ?>
 
-<!-- number index, first line index, visual index, genre index -->
 <div class="row" id="banner">
   <div class="hidden-sm-down show-md-up">
     <div id="bannertitle">Petr<span class="archive">archive</span></div>
@@ -109,7 +108,7 @@
 <a class="col-4 col-sm-3 col-md-1 col-lg-1-24" href="content/c030v-c031r.xml?ch=c030v"><img alt="c030v" class="vi-img" src="images/visindex/c030v.svg" /></a>
 <a class="col-4 col-sm-3 col-md-1 col-lg-1-24" href="content/c030v-c031r.xml?ch=c031r"><img alt="c031r" class="vi-img" src="images/visindex/c031r.svg" /></a>
 <a class="col-4 col-sm-3 col-md-1 col-lg-1-24" href="content/c031v.xml?ch=c031v"><img alt="c031v" class="vi-img" src="images/visindex/c031v.svg" /></a>
-<a class="col-4 col-sm-3 col-md-1 col-lg-1-24" href="content/c032r_c032v.xml?ch=c032r"><img alt="c032r" class="vi-img" src="images/visindex/c032r.svg" /></a>
+<a class="col-4 col-sm-3 col-md-1 col-lg-1-24" href="content/c032r-c032v.xml?ch=c032r"><img alt="c032r" class="vi-img" src="images/visindex/c032r.svg" /></a>
 <a class="col-4 col-sm-3 col-md-1 col-lg-1-24" href="content/c032r-c032v.xml?ch=c032v"><img alt="c032v" class="vi-img" src="images/visindex/c032v.svg" /></a>
 <a class="col-4 col-sm-3 col-md-1 col-lg-1-24" href="content/c033r.xml?ch=c033r"><img alt="c033r" class="vi-img" src="images/visindex/c033r.svg" /></a>
 <a class="col-4 col-sm-3 col-md-1 col-lg-1-24 no-file" href="content/charta-404.xml?incomplete=true&ch=033v"><img alt="c033v" class="vi-img" src="images/visindex/c033v.svg" /></a>
@@ -194,7 +193,7 @@
 
   </div>
 
-  <div class="row built-vizindex hide">
+  <div class="hide">
     <?php //include("vizindex.html"); ?>
   </div>
 </div>
@@ -231,11 +230,11 @@
 <script src="https://use.fontawesome.com/57840704ee.js"></script>
 
 <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
 
 <script type="text/javascript" src="js/tether/tether.min.js"></script>
 <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
 
+<script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
     
 <script type="text/javascript" src="js/index.js"></script>
 </body>

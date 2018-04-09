@@ -160,7 +160,7 @@
     </xsl:template>
     
     <xsl:variable name="htmlFooter">
-      <footer>© 2013-2017 H. Wayne Storey, John A. Walsh &amp; Isabella Magni. This document is part of the Petr<em>archive</em>.<br/>
+      <footer>© 2013-2018 H. Wayne Storey, John A. Walsh &amp; Isabella Magni. This document is part of the Petr<em>archive</em>.<br/>
         Team: H. Wayne Storey, John A. Walsh, Isabella Magni, Erica Hayes, Lino Mioni, and Abraham Kim. 
 
         <br />Past Contributors: Grace Thomas, Allison M. McCormack, and Laura Pence.<br/>

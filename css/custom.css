@@ -1261,6 +1261,12 @@ span.poem-number.357.[361] {
   top: 176.5rem;
 }
 
+.-teibp-pb {
+/* clear:both; is needed when page break occurs within
+columned sestina. */
+clear:both;
+}
+
 /* facs guide indicators: end */
 
 /* facs code: start */

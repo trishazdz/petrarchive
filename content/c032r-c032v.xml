@@ -457,7 +457,7 @@
             <space corresp="#canvasline"/>
             
             <lg xml:id="rvf142" type="sestina" n="142"  rendition="#columns_2">
-                <cb n="1-of-2"/>
+                <cb n="1-of-4"/>
                 <l n="1" corresp="#canvasline"><hi rendition="#red #fs24pt">A</hi><hi rendition="#small-caps">l</hi>a dolce ombra de le belle frondi</l>
                 <l n="2" corresp="#canvasline">Corsi fuggendo in dispietato lume</l>
                 <l n="3" corresp="#canvasline"><choice><orig>Chē</orig><reg>Che</reg></choice> fin qua <choice><orig>giu</orig><reg>giù</reg></choice> <choice><orig>mardea</orig><reg>m’ardea</reg></choice> dal <choice><orig>terço</orig><reg>terzo</reg></choice> cielo&p2semicolon;</l>
@@ -474,7 +474,7 @@
                 <l n="14" corresp="#canvasline">Onde &piu; <choice><orig>uolte</orig><reg>volte</reg></choice> <choice><orig>uago</orig><reg>vago</reg></choice> de<supplied>’</supplied> bei rami</l>
                 <l n="15" corresp="#canvasline">Da po<supplied>’</supplied> son gito per <choice><orig>selue</orig><reg>selve</reg></choice> et per poggi&p2semicolon;</l>
                 
-                <cb n="2-of-2"/>
+                <cb n="2-of-4"/>
                 <l n="16" corresp="#canvasline"><choice><orig>Ne</orig><reg>Né</reg></choice> giamai <choice><orig>ritrouai</orig><reg>ritrovai</reg></choice> tronco <choice><orig>ne</orig><reg>né</reg></choice> frondi</l>
                 <l n="17" corresp="#canvasline">Tanto honorate dal superno lume</l>
                 <l n="18" corresp="#canvasline">Che non mutasser qualitate a tempo.</l>
@@ -493,7 +493,7 @@
                   
             <pb n="charta 32 verso" facs="../images/vat-lat3195-f/vat-lat3195-f-032v.jpg"/>
             
-                <cb n="1-of-2"/>
+                <cb n="3-of-4"/>
                 <l n="31" corresp="#canvasline"><hi rendition="#blue #fs24pt">&pilcrow2section;</hi>Tanto mi piacque prima il dolce lume</l>
                 <l n="32" corresp="#canvasline"><choice><orig>Chi</orig><reg>Ch’i’</reg></choice> passai con diletto assai gran poggi</l>
                 <l n="33" corresp="#canvasline">Per poter appressar gli amati rami.</l>
@@ -501,7 +501,7 @@
                 <l n="35" corresp="#canvasline"><choice><abbr>Mostrāmi</abbr><expan>Mostranmi</expan></choice> altro sentier di gire al cielo</l>
                 <l n="36" corresp="#canvasline">Et di far frutto<supplied>,</supplied> non pur fior<supplied>’</supplied> et frondi<choice><orig> .</orig><reg>.</reg></choice></l>
                 
-                <cb n="2-of-2"/>
+                <cb n="4-of-4"/>
                 <l n="37" corresp="#canvasline"><hi rendition="#grey #fs24pt">&pilcrow2section;</hi><choice><orig>Altramor</orig><reg>Altr’amor</reg></choice>&v2c; altre frondi<choice><orig> &virg;</orig><reg/></choice> &amp7; altro lume&v2c;</l>
                 <l n="38" corresp="#canvasline">Altro salir al ciel per altri poggi</l>
                 <l n="39" corresp="#canvasline">Cerco<choice><orig><g ref="#punctelevhiback"/></orig><reg>,</reg></choice> <choice><orig>che</orig><reg>ché</reg></choice> <choice><orig>ne</orig><reg>n’è</reg></choice> ben tempo<choice><orig> .</orig><reg>,</reg></choice> &amp7; altri rami<choice><orig> .</orig><reg>.</reg></choice></l>

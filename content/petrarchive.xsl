@@ -73,10 +73,38 @@
     
     <xsl:template match="tei:cb[@n='2-of-2']">
         <xsl:variable name="mycb" select="."/>
-        <div class="sestina_right" style="float:left; width:500px; margin-right:2em; margin-left:2em;">
+        <div class="sestina_right" style="float:left; width:500px; margin-right:2em; margin-left:3em;">
             <xsl:apply-templates select="ancestor::tei:lg[@type = 'sestina']//tei:l[preceding::tei:cb[@n = '2-of-2'] = $mycb]" mode="process"/>
         </div>
     </xsl:template>
+  
+  <xsl:template match="tei:cb[@n='1-of-4']">
+    <xsl:variable name="mycb" select="."/>
+    <div class="sestina_left" style="float:left;">
+      <xsl:apply-templates select="ancestor::tei:lg[@type = 'sestina']//tei:l[preceding::tei:cb[@n = '1-of-4'] = $mycb and following::tei:cb[@n='2-of-4']]" mode="process"/>
+    </div>
+  </xsl:template>
+  
+  <xsl:template match="tei:cb[@n='2-of-4']">
+    <xsl:variable name="mycb" select="."/>
+    <div class="sestina_right" style="float:left; width:500px; margin-right:2em; margin-left:3em;">
+      <xsl:apply-templates select="ancestor::tei:lg[@type = 'sestina']//tei:l[preceding::tei:cb[@n = '2-of-4'] = $mycb and following::tei:cb[@n='3-of-4']]" mode="process"/>
+    </div>
+  </xsl:template>
+  
+  <xsl:template match="tei:cb[@n='3-of-4']">
+    <xsl:variable name="mycb" select="."/>
+    <div class="sestina_left" style="float:left;">
+      <xsl:apply-templates select="ancestor::tei:lg[@type = 'sestina']//tei:l[preceding::tei:cb[@n = '3-of-4'] = $mycb and following::tei:cb[@n='4-of-4']]" mode="process"/>
+    </div>
+  </xsl:template>
+  
+  <xsl:template match="tei:cb[@n='4-of-4']">
+    <xsl:variable name="mycb" select="."/>
+    <div class="sestina_right" style="float:left; width:500px; margin-right:2em; margin-left:3em;">
+      <xsl:apply-templates select="ancestor::tei:lg[@type = 'sestina']//tei:l[preceding::tei:cb[@n = '4-of-4'] = $mycb]" mode="process"/>
+    </div>
+  </xsl:template>
     
     <xsl:template match="tei:lg[@type = 'sestina']//tei:l[preceding::tei:cb]"/>
     <xsl:template match="tei:lg[@type = 'sestian']//tei:lg">

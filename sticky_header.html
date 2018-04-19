@@ -114,7 +114,7 @@
 	var r = /content/i
 	var isContentDirectory = href.search(r)
 	if (isContentDirectory > -1) {
-		var links = document.querySelectorAll('#sticky-header a')
+		var links = document.querySelectorAll('#sticky-header .dropdown-menu a')
 		links.forEach(function(el) {
 			var old = el.getAttribute('href')
 			el.setAttribute('href', '../' + old)

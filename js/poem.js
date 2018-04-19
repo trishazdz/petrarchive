@@ -28,6 +28,12 @@ $(document).ready(function() {
 
     setTimeout(function() {
       $('.content-container').scrollTop(currentScroll - ($('#sticky-header').height() * 2))
+
+      console.log(charta)
+
+      $('.content-container').animate({
+        scrollTop: $("#" + charta).offset().top - ($('#sticky-header').height() * 1.5)
+      }, 2500);
     }, 1500)
   } 
 })

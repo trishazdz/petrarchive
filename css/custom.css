@@ -219,8 +219,16 @@ lg[type='single'] {
   margin-bottom: .25em;
 }
 lg[type='dblvrs']:first-of-type l:last-of-type {
-  /* padding-top:.7em; */
-
+  /*padding-top: .2em; */
+}
+lg.indent > l:last-of-type {
+  padding-top: .2em;
+}
+.sestina_right > l:first-of-type {
+  padding-top: .2em;
+}
+.sestina_right > l:first-of-type.indent {
+  padding-top: 0;
 }
 lg[type='dblvrs'] l:first-of-type,
 lg[type='trplvrs'] l:first-of-type,
@@ -539,6 +547,10 @@ lg .no-indent {
 lg .indent {
   position: relative;
   left: -0.8em;
+}
+
+lg .indent.pilcrow {
+  left: -1em;
 }
 /*
 #rvf037 l[n='47'],
@@ -1088,6 +1100,7 @@ font-weight:500;
 }
 
 li {
+
 line-height:18pt;
 display:list-item;
 }
@@ -1107,7 +1120,6 @@ button.commentary-activate {
 }
 
 back note, back ab {display: block;
-padding: .5em 1.5em 1.5em 1.5em;
 text-indent: 0;
 font-size: 80%;
 text-align: left;border:none; 
@@ -1148,6 +1160,7 @@ div.commentary header {
   position: fixed;
   width: 100%;
   background-color: white;
+  padding-left: .25em;
 }
 
 div.commentary header * {
@@ -1157,7 +1170,6 @@ div.commentary header * {
 div.commentary header h1 {
   font-size: 12px;
   font-weight: 700 !important;
-  margin-left: 1.6em
 }
 
 
@@ -1169,14 +1181,26 @@ div.commentary section {
 div.commentary section h1 {
   font-size: 20px;
   font-weight: 200;
+  margin-right: 1.5em;
+}
+
+nav.commentary {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+
+nav.commentary::-webkit-scrollbar {
+  display: none;
 }
 
 nav.commentary ul {
   padding: 0;
   font-size: 12.5px;
-  margin-left: 2.25em;
+  white-space: nowrap;
+  margin: 0
 }
-
 nav.commentary li {
   display: inline;
   cursor: pointer;
@@ -1209,7 +1233,7 @@ div.commentary main {
   top: 2em;
   height: 10em;
   overflow-y: scroll;
-  padding-bottom: 1.4em;
+  padding: 0 .25em 1.4em .25em;
 }
 div.commentary main > section {
   /*margin-left: 1em; trying out a centered comments approach */
@@ -1450,10 +1474,14 @@ html > body #sticky-header .facs-thumb.activePb {
   border: 2px solid #623634;
 }
 
-html > body.facs-active #sticky-header .facs-thumb.activePb {
+html > body.facs-active #sticky-header .facs-thumb.activePb,
+html > body #sticky-header .facs-thumb.activeFacs {
   border: 2px solid transparent;
 }
 
+html > body.facs-active #sticky-header .facs-thumb.activeFacs {
+  border: 2px solid #623634;
+}
 
 #page-nav a {
     /*margin-top: .2em;

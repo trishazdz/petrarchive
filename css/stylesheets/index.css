@@ -7,7 +7,7 @@ nav #smallbanner {
 }
 #bannertitle {color: #afafaf;}
 #vizindex img {width:100%;}
-#vizindex a {border: 2px solid #afafaf; padding: 0}
+#vizindex a { padding: 0}
 
 @media screen and (min-width: 992px) {
 	#vizindex .col-lg-1-24 {

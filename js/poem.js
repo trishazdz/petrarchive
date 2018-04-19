@@ -1,14 +1,16 @@
 // This is the 'init'/bootstrap function that gets everything started
 $(document).ready(function() {
   setupFacsThumb()
-  setupPageNum()
   setupRvf()
+
+  window.PT = new Petrarchive()   
+
+  setupPageNum()
 
   // Too many edge cases to be able to address solely using CSS
   // so doing some styling via JS
   applyStyling()
 
-  window.PT = new Petrarchive()   
 
   var currentScroll = $('.content-container').scrollTop()
 
@@ -26,19 +28,12 @@ $(document).ready(function() {
 
     setTimeout(function() {
       $('.content-container').scrollTop(currentScroll - ($('#sticky-header').height() * 2))
-
-      console.log(charta)
-
-      $('.content-container').animate({
-        scrollTop: $("#" + charta).offset().top - ($('#sticky-header').height() * 1.5)
-      }, 2500);
     }, 1500)
   } 
 })
 
 
 function setupFacsThumb() {
-
   if (util_browser.getParam('incomplete')) {
     var baseDir = "../images/thumb-vat-lat3195-f/vat-lat3195-f-"
     var ch = window.PT.getCurrentDoc().charta
@@ -52,35 +47,26 @@ function setupFacsThumb() {
     var bigThumb = $('.-teibp-thumbnail')
     var bigThumbCount = bigThumb.length
 
-    if (bigThumbCount > 1) {
-      for (var i = 0; i < bigThumbCount; i++) {
-        var bigThumbSrc = $(bigThumb[i]).attr('src')
-        /* Skip this failed optimization for now. Prob won't need it as the rest 
-           of the webpage is not overly large
+    for (var i = 0; i < bigThumbCount; i++) {
+      var bigThumbSrc = $(bigThumb[i]).attr('src')
+      /* Skip this failed optimization for now. Prob won't need it as the rest 
+          of the webpage is not overly large
 
-        var split = bigThumbSrc.split('/')
-        var thumbDir = 'thumb-' + split[2]
-        var compressedThumbSrc =  split[0] + '/' + split[1] + '/' + thumbDir + '/' + split[3]
-        */
-
-        if (i==0) {
-          $('#sticky-header .facs-thumb img').attr('src', bigThumbSrc)
-        } else {
-          $($('#sticky-header .facs-thumb')[i-1]).clone()
-            .appendTo('#sticky-header #teibpToolbox')
-            .children('img')
-            .attr('src', bigThumbSrc)
-        }
-      }
-    } else {
-      var bigThumbSrc = bigThumb.attr('src')
-
-      /* Skip this optimization for same reason listed above 
       var split = bigThumbSrc.split('/')
       var thumbDir = 'thumb-' + split[2]
       var compressedThumbSrc =  split[0] + '/' + split[1] + '/' + thumbDir + '/' + split[3]
       */
-      $('#sticky-header .facs-thumb img').attr('src', bigThumbSrc)
+
+      if (i==0) {
+        $('#sticky-header .facs-thumb img').attr('src', bigThumbSrc)
+      } else {
+        $($('#sticky-header .facs-thumb')[i-1]).clone()
+          .appendTo('#sticky-header #teibpToolbox')
+          .children('img')
+          .attr('src', bigThumbSrc)
+      }
+
+      $($('.facs-thumb')[i]).attr('data-charta', $($('.-teibp-pageNum')[i]).text())
     }
   }
 }
@@ -120,6 +106,10 @@ function applyStyling() {
     if (hiFirstTest) { 
       console.log(el)
       $(el).addClass('indent') 
+
+      if (el.querySelector('.pilcrow')) {
+        $(el).addClass('pilcrow')
+      }
     }
   })
 
@@ -132,7 +122,11 @@ function applyStyling() {
     var hiFirstTest = recursiveSearch(l, 'hi')
     if (hiFirstTest) { 
       console.log(el)
-      $(el).addClass('indent') 
+      $(el).addClass('indent')
+      
+      if (el.querySelector('.pilcrow')) {
+        $(el).addClass('pilcrow')
+      }
     }
   })
 
@@ -141,19 +135,22 @@ function applyStyling() {
   sestinaL.each(function(i, el) {
     var hiFirstTest = recursiveSearch(el, 'hi')
     if (hiFirstTest) { 
-      console.log(el)
       $(el).addClass('indent') 
+
+      if (el.querySelector('.pilcrow')) {
+        $(el).addClass('pilcrow')
+      }
     }
   })
 
-  //Custom blank/whtie space 
+  //Custom blank/white space 
   var blankSpace = $("space[ana='#space-stop']"),
       blankSpaceExtent = blankSpace.attr('extent');
     
   blankSpace.css('height', (blankSpaceExtent * 1.8) + 'em')
 
 
-  // hack for soft launch for rvf142
+  /*
   var rvf142 = document.querySelector('#rvfasdf142')
   if (rvf142) {
     var firstCol = rvf142.querySelector('div:nth-child(1)') // hide lines greater than 15
@@ -174,6 +171,7 @@ function applyStyling() {
     $(rvf142.querySelectorAll('div:nth-child(5)')).css('display', 'none')
 
   }
+  */
 
 }
 
@@ -181,10 +179,6 @@ function recursiveSearch(el, type) {
   if (!el) { return null }
 
   type = type.toUpperCase()
-  /*if ($(el).prop('tagName') == type) {
-    console.log('first break', el)
-    return true
-  } */
 
   //is the first tag/element within the provided el 
   // of the type desired
@@ -192,10 +186,9 @@ function recursiveSearch(el, type) {
       firstMatch = el.innerHTML.match(typeReg); 
 
   if (firstMatch) {
-    return true
+    return firstMatch
   }
 
-  
   var firstEl = el.querySelector('*')
 
   if (!firstEl) { 

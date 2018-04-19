@@ -43,5 +43,5 @@
 <!ENTITY egrave_reg "<choice><orig>e</orig><reg>è</reg></choice>">
 <!ENTITY si "<choice><orig>si</orig><reg>sì</reg></choice>">
 <!ENTITY Si "<choice><orig>Si</orig><reg>Sì</reg></choice>">
-<!ENTITY pilcrow2section "<choice><orig>¶</orig><reg>§</reg></choice>">
+<!ENTITY pilcrow2section "<choice><orig class='pillcrow'>¶</orig><reg>§</reg></choice>">
 <!ENTITY encodingDesc SYSTEM "encodingDesc.xml"> 

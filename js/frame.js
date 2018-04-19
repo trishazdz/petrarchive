@@ -1,10 +1,16 @@
 function Frame(params) {
   var that = this
 
-  this.img = params.img
+  this.img
+  this.$img
+  if (params.img) {
+    this.loadImg(params.img)
+  }
 
-  this.$frame = params.frame || $('.frame')
-  this.$frame.addClass('frame')
+  this_activated = false
+  if (params.frame) {
+    this.activate(params.frame)
+  }
 
   this.$nav = $('nav')
 
@@ -13,6 +19,9 @@ function Frame(params) {
   this._textLoaded = false
   this._explorable = true
 
+  // This maintains focal point by always preserving
+  // the center of the image no matter how
+  // viewport is resized.
   if (params.hasOwnProperty('recenter')) {
     this._recenter = params.recenter
   } else {
@@ -22,102 +31,15 @@ function Frame(params) {
   if (params.text) {
     this.loadText(params.text)
   }
-
-  // show initial scene
-  if (params.hasOwnProperty('scene')) {
-    this.activeSceneIndex = params.scene
-  } else {
-    this.activeSceneIndex = 0
-  }
-
-  this.scenes = []
-  this.defaultScene = 0
-
-  if (window.Scene) {
-    this.scenes.push(new Scene(null, function() {
-      that.showText(0)
-    }))
-    this.activeScene = this.scenes[0].id
-  }
-
-  setTimeout(function() {
-    that.showText(0)
-  }, 100)
 }
 
 Frame.prototype.activate = function(el) {
   if (el) {
     this.$frame = $(el)
+    this.$frame.addClass('frame')
   }
-  this.loadImg()
-  this.events()
-}
-
-Frame.prototype.completed = function(link) {
-  if (!this._completed) {
-    this.revealImg()
-    $('nav a').attr('href', './' + link + '.html')
-  }
-
-  this._completed = true
-}
-
-Frame.prototype.show = function(el, explore) {
-  explore = explore || false
-
-  if (el) {
-    this.$frame = $(el)
-  }
-  this.loadImg()
-  this.events()
-
-  if (explore) {
-    var that = this
-
-    var checkScenes = util_browser.debounce(function(ev, ui) {
-      console.log(that.getCenter())
-      var potentialScene
-
-      var within = that.scenes.filter(function(el, i) {
-        if (el.globalScene) {
-          return el
-        }
-        if (el.point && that.withinBorders(el.point)) {
-          return el
-        }
-      })
-
-      if (within.length) {
-        var nonGlobal = within.filter(function(el, i) {
-          return !el.globalScene
-        })
-
-        if (nonGlobal.length) {
-          if (!that._completed) {
-            potentialScene = nonGlobal[nonGlobal.length - 1]
-          }
-        } else {
-          potentialScene = within[within.length - 1]
-        }
-      }
-
-      console.log(potentialScene)
-      if (potentialScene.id === that.activeScene) {
-        return
-      }
-      that.activeScene = potentialScene.id
-      potentialScene.activate()
-    }, 150)
-
-    this.$img.draggable({
-        stop: function(event, ui) {
-          that._center = that.getCenter()
-        },
-        drag: checkScenes
-    })
-  }
-
-  this._center = this.getCenter()
+  
+  this._activated = true
 }
 
 Frame.prototype.enableExplore = function() {
@@ -170,40 +92,57 @@ Frame.prototype.events = function() {
   })
 
   var recenter = util_browser.debounce(function() {
-      console.log(that.getCenter())
       that.repositionImg(that._center)
     }, 250)
 
   if (this._recenter) {
     $(window).resize(recenter)
   }
+
+  console.log(this.$frame, this.$img)
+  var containment = [-this.$frame.width(), 
+    +(this.$frame.height() - this.$img.height()), 
+    this.$img.width() + this.$frame.width(), 
+    0]
+    console.log(containment)
+  this.$img.draggable({
+    stop: function(event, ui) {
+      that._center = that.getCenter()
+    },
+    containment: containment
+  })
+  console.log(this.$img.draggable('option', 'containment'))
 }
 
-Frame.prototype.loadImg = function() {
-  var src 
-
-  if (this.img instanceof jQuery) {
-    console.log(this.img)
-    src = this.img.attr('src')
+Frame.prototype.loadImg = function(img) {
+  if (img instanceof jQuery) {
+    this.$img = img
+    this.img = this.$img[0]
   } else {
-    console.log(this.img)
-    src = this.img.src
+    this.img = img
+    this.$img = $(this.img)
   }
 
+  var src = this.getImgSrc()
+
   if (this.$frame.find('div.img-container').length) {
-    var img = this.$frame.find('div.img-container').children('img')
-    img.attr('src', src)
+    var el = this.$frame.find('div.img-container').children('img')
+    el.attr('src', src)
   } else {
     var containerHtml = "<div class='img-container'></div>"
     var el = "<img src='" + src + "' />"
     
     var container = $(containerHtml).appendTo(this.$frame)
-    var img = $(el).appendTo(container)
+    var imgEl = $(el).appendTo(container)
   }
 
-  console.log(img, src)
+  console.log(img, this, src)
 
   this.$img = $(this.$frame.find('div.img-container').children('img'))
+
+  var that = this
+  setTimeout(function() {
+    that.events(), 1})
 }
 
 Frame.prototype.refresh = function() {
@@ -257,6 +196,12 @@ Frame.prototype.findImgPoint = function(click) {
   }
 }
 
+Frame.prototype.getImgSrc = function() {
+  console.log(this.img)
+  if (this.img) { return this.img.src }
+  return undefined
+}
+
 Frame.prototype.getZoom = function() {
   var zoom = this.$img.prop('width') / this.$img.prop('naturalWidth')
   return zoom
@@ -295,38 +240,41 @@ Frame.prototype.getProjection = function(point) {
 }
 
 Frame.prototype.repositionImg = function(point, speed) {
-  console.log('reposition', point)
-
   speed = speed || undefined
 
   var frame = {
-    x: this.$frame.prop('clientWidth') / 2,
-    y: this.$frame.prop('clientHeight') / 2
+    x: this.$frame.prop('clientWidth'),
+    y: this.$frame.prop('clientHeight')
   }
 
-  var w = this.$img.prop('width')
-  var h = this.$img.prop('height')
+  var w = this.$img.prop('width'),
+      h = this.$img.prop('height');
 
-  var x = -((point.x * w) - frame.x),
-      y = -((point.y * h) - frame.y);
+  // Halve the frame clientWidth & clientHeight
+  // because we use the half value as 
+  // subtractor to retain center
+  var x = -( (point.x * w) /*pixels*/ - frame.x / 2 ),
+      y = -( (point.y * h) /*pixels*/ - frame.y / 2 );
 
-  if (speed) {
-    var that = this
+  console.log(x, y)
 
-    this.disableExplore()
-    this.$img.animate({
-      left: x,
-      top: y,
-    }, speed, function() {
-      that._zoom = that.$img.prop('width') / that.$img.prop('naturalWidth')
-      that._center = that.getCenter()
-      that.enableExplore()
-    })
-  } else {
-    this.$img.css('left', x)
-      .css('top', y)
+  if (!speed) {
+    this.$img.css('left', x).css('top', y)
     this._center = this.getCenter()
+    return
   }
+
+  var that = this
+
+  this.disableExplore()
+  this.$img.animate({
+    left: x,
+    top: y,
+  }, speed, function() {
+    that._zoom = that.$img.prop('width') / that.$img.prop('naturalWidth')
+    that._center = that.getCenter()
+    that.enableExplore()
+  })
 }
 
 Frame.prototype.zoomImg = function(zoom, point, cb) {
@@ -345,11 +293,12 @@ Frame.prototype.zoomImg = function(zoom, point, cb) {
   var newHeight = this.$img.prop('height') 
 
   if (point) {
-    // Go kind of towards point as center, but not fully
-    // Trying to mimic the way google mapz zoom works
+    // Go kind of towards click coordinate as center, 
+    // but not fully. Trying to mimic the way 
+    // google maps click-zoom works.
     var pointRatio = {
-      x: Math.abs(oldCenter.x - point.x),
-      y: Math.abs(oldCenter.y - point.y)
+      x: Math.abs( oldCenter.x - (point.x / 10) ),
+      y: Math.abs( oldCenter.y - (point.y / 10) )
     }
 
     this.repositionImg(point)
@@ -428,26 +377,6 @@ Frame.prototype.withinBorders = function(point) {
   var borders = this.getBorders()
   return borders[2] >= point.y && point.y >= borders[0] && 
     borders[3] <= point.x && point.x <= borders[1]
-}
-
-Frame.prototype.setScene = function(point, cb, settings) {
-  var that = this
-
-  var scene = new Scene(point, cb, settings)
-  this.scenes.push(scene)
-}
-
-Frame.prototype.setActiveScene = function() {
-
-}
-
-Frame.prototype.removeScene = function(scene) {
-  $(scene).off('drag')
-}
-
-Frame.prototype.setDefaultScene = function(i) {
-  this.scenes[i].globalScene = true
-  console.log(this.scenes)
 }
 
 

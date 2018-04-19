@@ -171,29 +171,28 @@
       </footer>
 
       <section id="pt-facs" class="">
-
-        <div class="meta">
-
-        </div>
-
         <div class="row">
-            <nav>
-              <button class="button zoom out">
-                <i class="fa fa-search-minus"></i>
-              </button>
+          <nav>
+            <button class="button meta">
+              
+            </button>
 
-              <button class="button zoom in">
-                <i class="fa fa-search-plus"></i>
-              </button>
+            <button class="button zoom out">
+              <i class="fa fa-search-minus"></i>
+            </button>
 
-              <button class="button new-tab">
-                <i class="fa fa-file-o"></i>
-              </button>
+            <button class="button zoom in">
+              <i class="fa fa-search-plus"></i>
+            </button>
 
-              <button class="button facs-close">
-                <i class="fa fa-close"></i>
-              </button>
-            </nav>
+            <button class="button new-tab">
+              <i class="fa fa-file-o"></i>
+            </button>
+
+            <button class="button facs-close">
+              <i class="fa fa-close"></i>
+            </button>
+          </nav>
         </div>
       </section>
 
@@ -601,33 +600,33 @@
  
   <xsl:template name="commentaryNav">
     <xsl:param name="rvfTarget"/>
-      <ul class="col-12">
-        <li class='col-auto'>
+      <ul class="">
+        <li class=''>
           <a class="active" href="{concat('#',$rvfTarget,'_introduction')}">
             Introduction &amp; prosody
           </a>
         </li>
         
-        <li class="col-auto">
+        <li class="">
           <a href="{concat('#',$rvfTarget,'_genesis')}">
             Genesis &amp; diplomatic condition
           </a>
         </li>
         
-        <li class="col-auto">
+        <li class="">
           <a href="{concat('#',$rvfTarget,'_syntax')}">
             Syntax, variants, &amp; language
           </a>
         </li>
        
         
-        <li class="col-auto">
+        <li class="">
           <a href="{concat('#',$rvfTarget,'_thematics')}">
             Thematics
           </a>
         </li>
         
-        <li class="col-auto">
+        <li class="">
           <a href="{concat('#',$rvfTarget,'_translation')}">
             Translation
           </a>
@@ -652,22 +651,30 @@
       <xsl:variable name="rvfTarget" select="substring-after(@corresp,'#')"/>
       <xsl:variable name="rvfNum" select="//tei:lg[@xml:id = $rvfTarget]/@n"/>
       
-      <header class="row align-items-center">
-        <div class="col-sm-12 col-md-auto">
+      <header class="row no-gutters justify-content-start">
+        <div class="col col-md-auto">
           <h1>
             Commentary: <cite>Rvf</cite> <xsl:value-of select="' '"/><xsl:value-of select="$rvfNum"/>
           </h1>
         </div>
+
+        <div class="col hidden-md-up text-right">
+          <button class="close">
+            <i class="fa fa-window-close-o"></i>
+          </button>
+        </div>
         
-        <nav class="commentary col-auto">  
+        <nav class="commentary col-md-auto">  
           <xsl:call-template name="commentaryNav">
             <xsl:with-param name="rvfTarget" select="$rvfTarget"/>
           </xsl:call-template>
         </nav>
 
-        <button class="col-auto close float-right">
+        <div class="col-auto hidden-sm-down text-right">
+          <button class="close">
             <i class="fa fa-window-close-o"></i>
-        </button>
+          </button>
+        </div>
       </header>
       
       <main>

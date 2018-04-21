@@ -1,3 +1,13 @@
+<?php
+
+$ajaxCall = array_key_exists('ajax', $_GET);
+if ($ajaxCall) {
+    echo include("textindex.html");
+    die();
+}
+
+?>
+
 <!DOCTYPE HTML system "about:legacy-compat">
 <html lang="en">
 
@@ -42,6 +52,64 @@
 
 
     <script type="text/javascript" src="js/auxillary_page.js"></script>
+
+    <script>
+        function onetime(node, type) {
+
+            // create event
+            node.addEventListener(type, function (e) {
+                // remove event
+                e.target.removeEventListener(e.type, arguments.callee);
+                // call handler
+            });
+
+        }
+
+
+
+        function scrollToAnchor(anchor) {
+            var lineSort = document.getElementsByTagName('th')[2].getAttribute('class');
+            if (lineSort==' ' || !lineSort) {
+                eventFire(document.getElementsByTagName('th')[2], 'click');
+
+                $('.sorttable_sorted').removeClass()
+            }
+            if (lineSort == ' sorttable_sorted_reverse') {
+                x = $('td[id]');
+                for (var i = 0; i < x.length; i++) {
+                    if (x[i].getAttribute('id') == anchor) {
+                        x[i - 1].parentNode.nextSibling.setAttribute('id', 'reverse' + anchor);
+                        $('html,body').animate({
+                            scrollTop: $("#reverse" + anchor).offset().top
+                        }, 800);
+                    }
+                }
+            } else {
+                $('html,body').animate({
+                    scrollTop: $("#" + anchor).offset().top
+                }, 800);
+            }
+
+            return false;
+        }
+
+
+        function eventFire(el, etype) {
+                if (el.fireEvent) {
+                    el.fireEvent('on' + etype);
+                } else {
+                    var evObj = document.createEvent('Events');
+                    evObj.initEvent(etype, true, false);
+                    el.dispatchEvent(evObj);
+                }
+            }
+            //-->
+    </script>
+    <script type="text/javascript" src="js/sortable/sorttable.js">
+        <!-- -->
+    </script>
+
+    <link type="text/css" rel="subresource" href="js/sortable/example.css" />   
 
 </body>
 

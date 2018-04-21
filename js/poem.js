@@ -6,6 +6,7 @@ $(document).ready(function() {
   window.PT = new Petrarchive()   
 
   setupPageNum()
+  setupTextindex()
 
   // Too many edge cases to be able to address solely using CSS
   // so doing some styling via JS
@@ -99,6 +100,19 @@ function setupPageNum() {
   }
 
   $('#sticky-header .charta-no').text(pageNum)
+}
+
+function setupTextindex() {
+  var button = $('#page-nav .page-number'),
+      textindex = $('#poem-textindex');
+  button.click(function(ev) {
+    if (textindex.attr('data-loaded')) {
+      return
+    }
+  
+    textindex.find('.modal-body').load('../textindex.php?ajax=true')
+    textindex.attr('data-loaded', true)
+  })
 }
 
 function applyStyling() {

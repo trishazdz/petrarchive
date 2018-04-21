@@ -6,6 +6,8 @@
 function Petrarchive() {
   var that = this
 
+  this.header = $('#sticky-header')
+
   this.hasMultipleCh = function() {
     return $('.-teibp-pbFacs img').length > 1
   }
@@ -85,8 +87,8 @@ Petrarchive.prototype.init = function() {
 
 
     var pageBreaks = $.makeArray($('.-teibp-pageNum').map(function(i, el) {
-      console.log($(el))
-      return el.offsetTop
+      // must account for the the Y length that fixed header obscures
+      return el.offsetTop - that.header.height() - $(el).height()
     }))
 
     var debouncedPbActivate = util_browser.debounce(function(ev) {
@@ -94,11 +96,8 @@ Petrarchive.prototype.init = function() {
 
     
       var filteredPbs = pageBreaks.filter(function(pb) {
-        console.log(scrollTop, pb)
         return scrollTop > pb
       })
-
-      console.log(filteredPbs)
 
       var activePbsIndex = filteredPbs.length - 1
 
@@ -166,7 +165,7 @@ Petrarchive.prototype.events = function() {
 }
 
 Petrarchive.prototype.onResize = function() {
-    var headerHeight = $('#sticky-header').outerHeight()
+    var headerHeight = this.header.outerHeight()
     $('#pt-facs').css('top', headerHeight)
 
     var commentaryHeaderHeight = $('.commentary.active header').height()

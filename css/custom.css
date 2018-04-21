@@ -1,4 +1,3 @@
-/* Place project-specific CSS here */
 
 /* Meyer reset */
 // http://meyerweb.com/eric/tools/css/reset/
@@ -22,6 +21,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 19, ../sass/_meyer-reset.scss */
 body {
   line-height: 1;
+}
+
+.hide {
+  display: none;
 }
 
 body.commentary-active #tei_wrapper footer {

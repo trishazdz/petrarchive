@@ -11,14 +11,22 @@
   <link rel="stylesheet" type="text/css" href="js/jquery-ui/jquery-ui.min.css" />
 
   <link rel="stylesheet" type="text/css" href="css/stylesheets/screen.css" />
-  <link href="css/custom.css" media="screen, projection" rel="stylesheet" type="text/css" />  
+  <link href="css/custom.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
+  <link href="css/auxillaryPage.css" media="screen, projection" rel="stylesheet" type="text/css" />       
   <link rel="stylesheet" type="text/css" href="css/stylesheets/index.css" />
+  
 </head>
 <body>
 
 <main class="container">
 
-<?php include("nav.html"); ?>
+<header class="flakey">
+  <?php include("nav.html"); ?>
+</header>
+
+<header class="sticky hide">
+  <?php include( "sticky_header.html"); ?>
+</header>
 
 <div class="row" id="banner">
   <div class="hidden-sm-down show-md-up">
@@ -198,9 +206,9 @@
   </div>
 </div>
 
-<section class="row">
-  <main class="col-lg-8">
-    <p class="col">
+<section>
+  <main class="col-8 col-md-12">
+    <p class="">
       When you hear the words <em>sonnet</em>, <em>Renaissance</em>, 
       <em>western literature</em>, <em>love songs</em>, 
       you are hearing the direct influence of Francesco Petrarca 
@@ -209,7 +217,7 @@
       fragmenta</cite>).
     </p>
 
-    <p class="col">
+    <p class="">
       The Petrarchive is designed as a tool both to introduce Petrarch’s 
       collection—a collection that continues to influence modern cultures 
       in many languages—and to give advanced users access to 

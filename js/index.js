@@ -1,5 +1,17 @@
 $(document).ready(function() {
 
+$(window).scroll(function(ev) {
+	var scroll = $(window).scrollTop(),
+		sticky = $('header.sticky'),
+		threshHold = $('#vizindex').offset().top;
+	
+	if (scroll >= threshHold) {
+		sticky.removeClass('hide')
+		return
+	}
+	sticky.addClass('hide')
+})
+
 $(document).tooltip({
 	items: $(".built-vizindex a"),
    /* hide: {

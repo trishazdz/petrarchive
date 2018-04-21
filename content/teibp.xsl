@@ -111,6 +111,26 @@
 					  </div>
 				  </div>
 		      </div>
+
+
+			  <div id="poem-textindex"
+			  class="modal fade" tabindex="-1" role="dialog" 
+			  aria-labelledby="textIndexExplorer" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true"></span>
+							</button>
+						</div>
+
+						<div class="modal-body">
+							
+						</div>
+					</div>
+				</div>
+			  </div>
+	
 			</body>
 		</html>
 	</xsl:template>

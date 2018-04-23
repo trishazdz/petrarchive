@@ -1,7 +1,7 @@
 // This is the 'init'/bootstrap function that gets everything started
 $(document).ready(function() {
-  setupFacsThumb()
   setupRvf()
+  setupFacsThumb()
 
   window.PT = new Petrarchive()   
 
@@ -43,8 +43,8 @@ $(document).ready(function() {
 function setupFacsThumb() {
   if (util_browser.getParam('incomplete')) {
     var baseDir = "../images/thumb-vat-lat3195-f/vat-lat3195-f-"
-    var ch = window.PT.getCurrentDoc().charta
-    var rv = window.PT.getCurrentDoc().rv
+    var ch = window.PT.getCurrentDoc().getChartaFirst().charta
+    var rv = window.PT.getCurrentDoc().getChartaLast().rv
 
     var facsSrc = baseDir + ch + rv + ".jpg"
 
@@ -81,13 +81,6 @@ function setupPageNum() {
   } 
   else if (pages.length > 1) {
     pageNum = 'chartae ' + pages[0].getPrettyName() + ' - ' + pages[pages.length-1].getPrettyName()
-  }
-
-  if (util_browser.getParam('incomplete')) {
-    var prettyName = window.PT.getCurrentDoc().getPrettyName()
-
-    pageNum = 'charta ' + prettyName
-    return
   }
 
   $('#sticky-header .charta-no').text(pageNum)
@@ -205,6 +198,8 @@ function recursiveSearch(el, type) {
 }
 
 function setupRvf() {
+  if (util_browser.getParam('incomplete')) { return }
+
   var rvf = $('lg[n]')
   var min = $(rvf[0]).attr('n')
   var max = $(rvf[rvf.length-1]).attr('n')

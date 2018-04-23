@@ -109,7 +109,7 @@ Frame.prototype.events = function() {
     stop: function(event, ui) {
       that._center = that.getCenter()
     },
-    containment: containment
+    //containment: containment
   })
   console.log(this.$img.draggable('option', 'containment'))
 }

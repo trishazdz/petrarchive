@@ -1568,6 +1568,12 @@ button {
 /* Mobile code: end */
 
 /* TextIndex - Modal: start */
+.modal-backdrop {
+  z-index: 10001;
+}
+.modal {
+  z-index: 10002;
+}
 .modal .textindex tr {
   height: 2rem;
 }

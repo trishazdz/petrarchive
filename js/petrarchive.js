@@ -109,6 +109,7 @@ Petrarchive.prototype.init = function() {
   }
 
   $('a.facs-thumb').click(function(ev) {
+    console.log(ev)
     var img = $($(ev.delegateTarget).children('img'))
     var charta = $(ev.delegateTarget).attr('data-charta')
 
@@ -197,7 +198,7 @@ Petrarchive.prototype.activateFacs = function(img, charta) {
   $('a.facs-thumb[data-charta="' + charta + '"').addClass('activeFacs')
 
   if (!this.facsInited) {
-   // this.facs.containImg()
+    this.facs.containImg()
   }
 
   this.facsInited = true

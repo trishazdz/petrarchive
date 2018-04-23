@@ -51,26 +51,19 @@ function setupFacsThumb() {
     $('#sticky-header .facs-thumb img').attr('src', facsSrc)
   } else {
     // Setup the sticky header
-    var bigThumb = $('.-teibp-thumbnail')
-    var bigThumbCount = bigThumb.length
+    var thumb = $('.-teibp-thumbnail')
+    var thumbCount = thumb.length
 
-    for (var i = 0; i < bigThumbCount; i++) {
-      var bigThumbSrc = $(bigThumb[i]).attr('src')
-      /* Skip this failed optimization for now. Prob won't need it as the rest 
-          of the webpage is not overly large
-
-      var split = bigThumbSrc.split('/')
-      var thumbDir = 'thumb-' + split[2]
-      var compressedThumbSrc =  split[0] + '/' + split[1] + '/' + thumbDir + '/' + split[3]
-      */
+    for (var i = 0; i < thumbCount; i++) {
+      var imgSrc = $(thumb[i]).attr('src')
 
       if (i==0) {
-        $('#sticky-header .facs-thumb img').attr('src', bigThumbSrc)
+        $('#sticky-header .facs-thumb img').attr('src', imgSrc)
       } else {
         $($('#sticky-header .facs-thumb')[i-1]).clone()
           .appendTo('#sticky-header #teibpToolbox')
           .children('img')
-          .attr('src', bigThumbSrc)
+          .attr('src', imgSrc)
       }
 
       $($('.facs-thumb')[i]).attr('data-charta', $($('.-teibp-pageNum')[i]).text())
@@ -80,23 +73,21 @@ function setupFacsThumb() {
 
 function setupPageNum() {
   var pageNum,
-      $pageNum = $('.-teibp-pageNum');
+      $pageNum = $('.-teibp-pageNum'),
+      pages = window.PT.nav.current.getChartae();
 
-  if ($pageNum.length == 1) {
-    pageNum = $pageNum.text()
+  if (pages.length == 1) {
+    pageNum = 'charta ' + pages[0].getPrettyName() //$pageNum.text()
   } 
-  else if ($pageNum.length > 1) {
-    var firstSplit = $($pageNum[0]).text().split(' ').slice(1)
-    var firstPage = firstSplit[0] + ' ' + firstSplit[1]
-    var lastSplit = $($pageNum[$pageNum.length-1]).text().split(' ').slice(1)
-    var lastPage = lastSplit[0] + ' ' + lastSplit[1]
-    pageNum = firstPage + ' - ' + lastPage
+  else if (pages.length > 1) {
+    pageNum = 'chartae ' + pages[0].getPrettyName() + ' - ' + pages[pages.length-1].getPrettyName()
   }
 
   if (util_browser.getParam('incomplete')) {
     var prettyName = window.PT.getCurrentDoc().getPrettyName()
 
     pageNum = 'charta ' + prettyName
+    return
   }
 
   $('#sticky-header .charta-no').text(pageNum)
@@ -107,11 +98,30 @@ function setupTextindex() {
       textindex = $('#poem-textindex');
   button.click(function(ev) {
     if (textindex.attr('data-loaded')) {
+      $('.modal').hide()
+      afterLoad()
       return
-    }
+    }    
   
-    textindex.find('.modal-body').load('../textindex.php?ajax=true')
-    textindex.attr('data-loaded', true)
+    textindex.find('.modal-body').load('../textindex.html', afterLoad)
+
+    function afterLoad() {
+      textindex.attr('data-loaded', true)
+
+      // Let's scroll to currently active charta/e
+      var active = PT.nav.current.getChartaFirst().getPrettyNameTextindex()
+
+      var trArray = textindex.find('table tbody').children('tr').children('td:nth-child(2)').toArray()
+      var activeTr = trArray.find(function(tr) {
+        return tr.innerText == String(active)
+      })
+
+      setTimeout(function() {
+        var trOffset = $(activeTr).offset().top
+        $('.modal').scrollTop(trOffset).show()
+        console.log(trOffset)
+      }, 700  )
+    }
   })
 }
 
@@ -168,30 +178,6 @@ function applyStyling() {
       blankSpaceExtent = blankSpace.attr('extent');
     
   blankSpace.css('height', (blankSpaceExtent * 1.8) + 'em')
-
-
-  /*
-  var rvf142 = document.querySelector('#rvfasdf142')
-  if (rvf142) {
-    var firstCol = rvf142.querySelector('div:nth-child(1)') // hide lines greater than 15
-    var secondCol = rvf142.querySelector('div:nth-child(2)') // hide lines greater than 30
-
-    firstCol.querySelectorAll('l').forEach(function(e) {
-      if ($(e).attr('n') > 15) {
-        $(e).css('display', 'none')
-      }
-    })
-    secondCol.querySelectorAll('l').forEach(function(e) {
-      if ($(e).attr('n') > 30) {
-        $(e).css('display', 'none')
-      }
-    })
-
-    $(rvf142.querySelectorAll('div:nth-child(4)')).css('display', 'none')
-    $(rvf142.querySelectorAll('div:nth-child(5)')).css('display', 'none')
-
-  }
-  */
 
 }
 

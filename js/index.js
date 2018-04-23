@@ -1,16 +1,19 @@
 $(document).ready(function() {
+var $window = $(window),
+	$stickyHeader = $('header.sticky'),
+	$threshHold = $('#vizindex').offset().top;
 
-$(window).scroll(function(ev) {
-	var scroll = $(window).scrollTop(),
-		sticky = $('header.sticky'),
-		threshHold = $('#vizindex').offset().top;
-	
-	if (scroll >= threshHold) {
-		sticky.removeClass('hide')
+var debouncedStickyHeader = util_browser.debounce(function(ev) {	
+	console.log(ev)
+	var scroll = $window.scrollTop()
+	if (scroll >= $threshHold) {
+		$stickyHeader.removeClass('hide')
 		return
 	}
-	sticky.addClass('hide')
-})
+	$stickyHeader.addClass('hide')
+}, 100)
+
+$(window).scroll(debouncedStickyHeader)
 
 $(document).tooltip({
 	items: $(".built-vizindex a"),

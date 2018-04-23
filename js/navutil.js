@@ -3,6 +3,7 @@ function NavUtil() {
     this.current = new PetrarchiveDocument(undefined, util_browser.getParam('ch'))
   } else {
     this.current = new PetrarchiveDocument(document.URL)
+
   }
 
   this.previous = $('#page-nav a.previous')
@@ -39,48 +40,18 @@ NavUtil.prototype.events = function() {
     var stylesheet = dict[that._theme()]
     document.getElementById('customcss').href=stylesheet
   })
-
-  $('#page-nav .charta-no').click(function(ev) {
-    that.toggleChartaViz()
-  })
-}
-
-NavUtil.prototype.toggleChartaViz = function() {
-  
 }
 
 NavUtil.prototype.setupPrevHref = function() {
-  var prevCh, prevRV, prevName, prevDoc, url;
+  var firstCh = this.current.getChartaFirst()
 
-  var current;
-
-  if (name) {
-    current = new PetrarchiveDocument(false, name)
-  } else {
-    current = this.current
-  }
-
-  console.log(current)
-
-  if (current.rv == 'r') {
-    prevRV = 'v'
-    prevCh = (+current.charta) - 1
-  } else {
-    prevRV = 'r'
-    prevCh = current.charta
-  }
-
-  // Then convert nextCh back to string with 3 decimal places
-  s = "00" + prevCh
-  prevName = s.substr(s.length - 3) + prevRV
-
-  prevDoc = this.chartaMeta[prevName]
-
-  if (current.charta == '001' && current.rv == 'r') {
+  if (firstCh.charta == '001' && firstCh.rv == 'r') {
     this.previous.attr('disabled', true)
 
     return null
   }
+  var prevName = firstCh.getPrevCh()
+  prevDoc = this.chartaMeta[prevName]
 
   if (!prevDoc) {
     return 'charta-404.xml?incomplete=true&ch=' + prevName
@@ -90,7 +61,7 @@ NavUtil.prototype.setupPrevHref = function() {
     url = prevDoc.document
 
     // Handle Multiple doc scenario... where more than one charta is handled in one xml document
-    if (url == current.name) {
+    if (url == this.name) {
       return url = this.setupPrevHref(url.split('-')[0])
     }
 
@@ -120,31 +91,8 @@ NavUtil.prototype.delayFn = function(fn, condition) {
   console.log(fn, condition)
 }
 
-NavUtil.prototype.setupNextHref = function(name) {
-  var nextCh, nextRV, nextName, nextDoc;
-  var current;
-
-  if (name) {
-    current = new PetrarchiveDocument(false, name)
-  } else {
-    current = this.current
-  }
-
-  if (current.rv == 'r') {
-    nextRV = 'v'
-    nextCh = current.charta
-  } else {
-    nextRV = 'r'
-
-    // Turn currentCh string into number then subtract 1
-    nextCh = (+current.charta) + 1
-  }
-
-  // Then convert nextCh back to string with 3 decimal places
-  var s = "00" + nextCh
-  nextName = s.substr(s.length - 3) + nextRV
-
-  console.log(this)
+NavUtil.prototype.setupNextHref = function() {
+  var nextName = this.current.getChartaLast().getNextCh()
   nextDoc = this.chartaMeta[nextName]
 
   if (!nextDoc) {
@@ -155,7 +103,7 @@ NavUtil.prototype.setupNextHref = function(name) {
     url = nextDoc.document
 
     // Handle Multiple doc scenario... where more than one charta is handled in one xml document
-    if (url == current.name) {
+    if (url == this.name) {
       return url = this.setupNextHref(url.split('-')[1])
     }
 

@@ -1566,3 +1566,9 @@ button {
 }
 
 /* Mobile code: end */
+
+/* TextIndex - Modal: start */
+.modal .textindex tr {
+  height: 2rem;
+}
+/* TextIndex - Modal: end */

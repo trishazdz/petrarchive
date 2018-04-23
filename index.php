@@ -245,5 +245,6 @@
 <script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
     
 <script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/utils/browser.js"></script>
 </body>
 </html>

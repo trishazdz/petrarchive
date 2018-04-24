@@ -39,17 +39,18 @@ function Petrarchive() {
 
 Petrarchive.prototype.init = function() {
   var that = this
-
-  this.facsInited = false
-
-  this.events()
-
+  
   if (window.NavUtil) {
     this.nav = new NavUtil()
   }
   if (window.CommentaryUtil) {
     this.commentary = new CommentaryUtil()
   }
+
+  this.facsInited = false
+  this.setupFacsThumb()
+
+  this.events()
 
   if (window.Frame) {
   /* ----------------
@@ -163,6 +164,37 @@ Petrarchive.prototype.init = function() {
 Petrarchive.prototype.events = function() {
   var that = this
 
+}
+
+Petrarchive.prototype.setupFacsThumb = function() {
+  if (util_browser.getParam('incomplete')) {
+    var baseDir = "../images/thumb-vat-lat3195-f/vat-lat3195-f-"
+    var ch = this.getCurrentDoc().getChartaFirst().charta
+    var rv = this.getCurrentDoc().getChartaLast().rv
+
+    var facsSrc = baseDir + ch + rv + ".jpg"
+
+    $('#sticky-header .facs-thumb img').attr('src', facsSrc)
+  } else {
+    // Setup the sticky header
+    var thumb = $('.-teibp-thumbnail')
+    var thumbCount = thumb.length
+
+    for (var i = 0; i < thumbCount; i++) {
+      var imgSrc = $(thumb[i]).attr('src')
+
+      if (i==0) {
+        $('#sticky-header .facs-thumb img').attr('src', imgSrc)
+      } else {
+        $($('#sticky-header .facs-thumb')[i-1]).clone()
+          .appendTo('#sticky-header #teibpToolbox')
+          .children('img')
+          .attr('src', imgSrc)
+      }
+
+      $($('.facs-thumb')[i]).attr('data-charta', $($('.-teibp-pageNum')[i]).text())
+    }
+  }
 }
 
 Petrarchive.prototype.onResize = function() {

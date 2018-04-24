@@ -119,9 +119,9 @@
 <a class="col-4 col-sm-3 col-md-1 col-lg-1-24" href="content/c032r-c032v.xml?ch=c032r"><img alt="c032r" class="vi-img" src="images/visindex/c032r.svg" /></a>
 <a class="col-4 col-sm-3 col-md-1 col-lg-1-24" href="content/c032r-c032v.xml?ch=c032v"><img alt="c032v" class="vi-img" src="images/visindex/c032v.svg" /></a>
 <a class="col-4 col-sm-3 col-md-1 col-lg-1-24" href="content/c033r.xml?ch=c033r"><img alt="c033r" class="vi-img" src="images/visindex/c033r.svg" /></a>
-<a class="col-4 col-sm-3 col-md-1 col-lg-1-24 no-file" href="content/charta-404.xml?incomplete=true&ch=033v"><img alt="c033v" class="vi-img" src="images/visindex/c033v.svg" /></a>
-<a class="col-4 col-sm-3 col-md-1 col-lg-1-24 no-file" href="content/charta-404.xml?incomplete=true&ch=034r"><img alt="c034r" class="vi-img" src="images/visindex/c034r.svg" /></a>
-<a class="col-4 col-sm-3 col-md-1 col-lg-1-24 no-file" href="content/charta-404.xml?incomplete=true&ch=034v"><img alt="c034v" class="vi-img" src="images/visindex/c034v.svg" /></a>
+<a class="col-4 col-sm-3 col-md-1 col-lg-1-24" href="content/c033v.xml?ch=c033v"><img alt="c033v" class="vi-img" src="images/visindex/c033v.svg" /></a>
+<a class="col-4 col-sm-3 col-md-1 col-lg-1-24" href="content/c034r.xml?ch=c034r"><img alt="c034r" class="vi-img" src="images/visindex/c034r.svg" /></a>
+<a class="col-4 col-sm-3 col-md-1 col-lg-1-24" href="content/c034v.xml?ch=c034v"><img alt="c034v" class="vi-img" src="images/visindex/c034v.svg" /></a>
 <a class="col-4 col-sm-3 col-md-1 col-lg-1-24 no-file" href="content/charta-404.xml?incomplete=true&ch=035r"><img alt="c035r" class="vi-img" src="images/visindex/c035r.svg" /></a>
 <a class="col-4 col-sm-3 col-md-1 col-lg-1-24 no-file" href="content/charta-404.xml?incomplete=true&ch=035v"><img alt="c035v" class="vi-img" src="images/visindex/c035v.svg" /></a>
 <a class="col-4 col-sm-3 col-md-1 col-lg-1-24 no-file" href="content/charta-404.xml?incomplete=true&ch=036r"><img alt="c036r" class="vi-img" src="images/visindex/c036r.svg" /></a>

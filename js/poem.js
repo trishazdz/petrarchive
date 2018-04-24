@@ -1,9 +1,8 @@
 // This is the 'init'/bootstrap function that gets everything started
 $(document).ready(function() {
-  setupRvf()
-  setupFacsThumb()
-
   window.PT = new Petrarchive()   
+
+  setupRvf()
 
   setupPageNum()
   setupTextindex()
@@ -39,45 +38,13 @@ $(document).ready(function() {
   } 
 })
 
-
-function setupFacsThumb() {
-  if (util_browser.getParam('incomplete')) {
-    var baseDir = "../images/thumb-vat-lat3195-f/vat-lat3195-f-"
-    var ch = window.PT.getCurrentDoc().getChartaFirst().charta
-    var rv = window.PT.getCurrentDoc().getChartaLast().rv
-
-    var facsSrc = baseDir + ch + rv + ".jpg"
-
-    $('#sticky-header .facs-thumb img').attr('src', facsSrc)
-  } else {
-    // Setup the sticky header
-    var thumb = $('.-teibp-thumbnail')
-    var thumbCount = thumb.length
-
-    for (var i = 0; i < thumbCount; i++) {
-      var imgSrc = $(thumb[i]).attr('src')
-
-      if (i==0) {
-        $('#sticky-header .facs-thumb img').attr('src', imgSrc)
-      } else {
-        $($('#sticky-header .facs-thumb')[i-1]).clone()
-          .appendTo('#sticky-header #teibpToolbox')
-          .children('img')
-          .attr('src', imgSrc)
-      }
-
-      $($('.facs-thumb')[i]).attr('data-charta', $($('.-teibp-pageNum')[i]).text())
-    }
-  }
-}
-
 function setupPageNum() {
   var pageNum,
       $pageNum = $('.-teibp-pageNum'),
       pages = window.PT.nav.current.getChartae();
 
   if (pages.length == 1) {
-    pageNum = 'charta ' + pages[0].getPrettyName() //$pageNum.text()
+    pageNum = 'charta ' + pages[0].getPrettyName()
   } 
   else if (pages.length > 1) {
     pageNum = 'chartae ' + pages[0].getPrettyName() + ' - ' + pages[pages.length-1].getPrettyName()

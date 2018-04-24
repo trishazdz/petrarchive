@@ -286,29 +286,25 @@ the line wraps. -->
    <text>
       <body>
         <listBibl style="max-width:800px !important; display:block;">
-
-          <lb/>
-
-          <head>Articles</head>
-          
+          <head style="font-family: 'helvetica nueu', helvetica, sans-serif; font-size:110%; font-weight:bold; padding:1em 0 0 0;">Articles</head>
           <bibl rendition="#hang">H. Wayne Storey. “The Legacy of Petrarch’s Chartae”, submitted for <title level="m">The Legacies of Petrarch</title>, edited Ernesto Livorni and Jelena Todorović, Tempe, Arizona: Medieval and Renaissance Texts and Studies, forthcoming in 2017.</bibl>
           
           <bibl rendition="#hang">Isabella Magni. “Visualising Petrarch's poetics”, in <title level="m">Humanist Studies and the Digital Age</title>, University of Oregon Journals, forthcoming in 2017.</bibl>
 
           <bibl rendition="#hang">———. “The Fragmenta ’s Timeline: Models for Reconstructing and Interpreting the Text” in <title level="m">Mediaevalia</title> special issue Italian Songbooks, forthcoming 2017.</bibl>  
           
-          <bibl rendition="#hang">Isabella Magni and John A. Walsh. "Thinking digital: Donna mi uene spesso ne la mente  as a fundamental yet unstable text in the study of the Fragmenta .” with Prof. John Walsh, in <title level="m">Digital Philology</title>  5.2, Johns Hopkins University Press, 2016. </bibl>
+          <bibl rendition="#hang">Isabella Magni and John A. Walsh. "Thinking digital: Donna mi uene spesso ne la mente  as a fundamental yet unstable text in the study of the Fragmenta .” with Prof. John Walsh, in <title level="m">Digital Philology</title>  5.2, Johns Hopkins University Press, 2016. doi:<ref target="https://doi.org/10.1353/dph.2016.0011">10.1353/dph.2016.0011</ref></bibl>
  
           <bibl rendition="#hang">Isabella Magni. “I codici paralleli dei Fragmenta ", in <title level="m">Medioevo letterario d’Italia</title>. Vol. 12, 2015.</bibl>
                     
           <bibl rendition="#hang">H. Wayne Storey. “Tra edizione e archivio. La tecnologia al servizio della filologia”, in <title level="m">Ecdotica: Rivista di studi testuali</title> 11 (2014), 99–105; and at <ptr target="http://www.ecdotica.org/numero-11/"></ptr>.</bibl>
           
-          <lb/>
-          <lb/>
+        </listBibl>
+        <listBibl>
           
-          <head>Recent papers and talks</head>
+          <head style="font-family: 'helvetica nueu', helvetica, sans-serif; font-size:110%; font-weight:bold; padding:1em 0 0 0;">Recent papers and talks</head>
           
-          <bibl rendition="#hang">Isabella Magni. “Making a Digital Edition: Introduction to Text Encoding and the <title level="a">Petr<hi rendition="#i">archive</hi></title> Project.” invited talk and workshop at DePaul University, Chicago, IL, May 18, 2018.</bibl>
+          <bibl rendition="#hang">Isabella Magni. “Making a Digital Edition: Introduction to Text Encoding and the Petr<hi rendition="#i">archive</hi> Project.” invited talk and workshop at DePaul University, Chicago, IL, May 18, 2018.</bibl>
           
           <bibl rendition="#hang">———. “Collaborative digital editing: re-visualizing Petrarch’s <title level="m">Fragmenta</title>” in BH and DH: Book History and Digital Humanities, University of Wisconsin-Madison, Madison, WI, September 23, 2017.</bibl>
           
@@ -358,7 +354,7 @@ the line wraps. -->
           <bibl rendition="#hang">———. <title level="a">Multiple Forms of E-Text Representation of Petrarch’s canzone <title rendition="#i">Quel’ antiquo mio dolce empio signore</title></title>. Invited paper for conference <title rendition="#i">Innovation and the Ancient: Texts and Editions</title>, University of Mississippi, Oxford, 10 April 2012.</bibl>
         </listBibl>
 
-                <link href="../css/auxillaryPage.css" media="screen, projection" rel="stylesheet" type="text/css" />      
+       <link href="../css/auxillaryPage.css" media="screen, projection" rel="stylesheet" type="text/css" />       
 
       </body>
    </text>

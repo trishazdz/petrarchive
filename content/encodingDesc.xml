@@ -387,7 +387,7 @@ the line wraps. -->
         display:none;
       </rendition>
       <namespace name="http://www.tei-c.org/ns/1.0">
-        <tagUsage gi="form" render="#form"/>
+        <tagUsage gi="form" rendition="#form"/>
       </namespace>
     </tagsDecl>
 </encodingDesc>

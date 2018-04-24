@@ -391,7 +391,7 @@
 	<xsl:template name="rendition2style">
 		<style type="text/css">
             <xsl:apply-templates select="//tei:rendition" mode="rendition2style"/>
-		        <xsl:apply-templates select="//tei:tagUsage[@render]" mode="tagUsage2style"/>
+		        <xsl:apply-templates select="//tei:tagUsage[@rendition]" mode="tagUsage2style"/>
      </style>
 	</xsl:template>
   
@@ -415,7 +415,7 @@
     <xsl:value-of select="'&#x000A;'"/>
     <xsl:value-of select="concat(@gi,' {')"/>
     <xsl:call-template name="tokenizeRenderValues">
-      <xsl:with-param name="list" select="@render"/>
+      <xsl:with-param name="list" select="@rendition"/>
     </xsl:call-template>
     <xsl:value-of select="'}'"/>
   </xsl:template>

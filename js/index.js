@@ -4,7 +4,6 @@ var $window = $(window),
 	$threshHold = $('#vizindex').offset().top;
 
 var debouncedStickyHeader = util_browser.debounce(function(ev) {	
-	console.log(ev)
 	var scroll = $window.scrollTop()
 	if (scroll >= $threshHold) {
 		$stickyHeader.removeClass('hide')

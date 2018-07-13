@@ -8,6 +8,7 @@ function Petrarchive() {
 
   this.header = $('#sticky-header')
 
+  // Figurer out if document hsa more than one charta
   this.hasMultipleCh = function() {
     return $('.-teibp-pbFacs img').length > 1
   }
@@ -39,6 +40,9 @@ function Petrarchive() {
 
 Petrarchive.prototype.init = function() {
   var that = this
+
+  var links = document.querySelectorAll('.convert-url a')
+  this.convertUrl(links)
   
   if (window.NavUtil) {
     this.nav = new NavUtil()
@@ -61,7 +65,8 @@ Petrarchive.prototype.init = function() {
     recenter: false
   })
 
-  this.facsIsActive = false
+  this.facsIsActive = util_browser.getParam('facs') == 'active' ? true : false 
+  this.activeFacs
 
   var facs = this.facs
   var facsNav = $('#pt-facs nav')
@@ -102,14 +107,14 @@ Petrarchive.prototype.init = function() {
 
       var activePbsIndex = filteredPbs.length - 1
 
-      $('a.facs-thumb').removeClass('activePb')
-      $($('a.facs-thumb')[activePbsIndex]).addClass('activePb')
+      $('button.facs-thumb').removeClass('activePb')
+      $($('button.facs-thumb')[activePbsIndex]).addClass('activePb')
     }, 80)
     
     $('.content-container').scroll(debouncedPbActivate)
   }
 
-  $('a.facs-thumb').click(function(ev) {
+  $('button.facs-thumb').click(function(ev) {
     console.log(ev)
     var img = $($(ev.delegateTarget).children('img'))
     var charta = $(ev.delegateTarget).attr('data-charta')
@@ -120,10 +125,10 @@ Petrarchive.prototype.init = function() {
   if (this.facsIsActive) {
     if (util_browser.getParam('incomplete')) {
      setTimeout(function() {
-      $('a.facs-thumb').click() 
+      $('button.facs-thumb').click() 
      }, 3000)
     } else {
-      this.activateFacs()
+      $('button.facs-thumb')[0].click() 
     }
   }
 
@@ -164,6 +169,28 @@ Petrarchive.prototype.init = function() {
 Petrarchive.prototype.events = function() {
   var that = this
 
+}
+
+Petrarchive.prototype.convertUrl = function(links) {
+  // reformat URLs 
+  // relative and absolute urls not working
+  // because sometimes we use same html url from root
+  // othertimes in /content directory
+  var isContentDirectory = location.href.search(/content/i)
+
+  if (isContentDirectory == -1) {
+    return
+  }
+
+  if (links instanceof jQuery) {
+    links = links.toArray()
+  }
+      
+  links.forEach(function(el) {
+    var old = el.getAttribute('href')
+    console.log('../' + old)
+    el.setAttribute('href', '../' + old)
+  })
 }
 
 Petrarchive.prototype.setupFacsThumb = function() {
@@ -210,7 +237,7 @@ Petrarchive.prototype.getCurrentDoc = function() {
 }
 
 Petrarchive.prototype.activateFacs = function(img, charta) {
-  if (this.facs.getImgSrc() == $(img).attr('src')) { 
+  if (charta == this.activeFacs) { 
     this.deactivateFacs()
     return 
   }
@@ -222,12 +249,11 @@ Petrarchive.prototype.activateFacs = function(img, charta) {
 
   this.facs.$frame.addClass('active')
   util_browser.setParam('facs', 'active')
-  localStorage.setItem('facs', 'true')
 
   $('#pt-facs .meta').text(charta)  
 
-  $('a.facs-thumb').removeClass('activeFacs')
-  $('a.facs-thumb[data-charta="' + charta + '"').addClass('activeFacs')
+  $('button.facs-thumb').removeClass('activeFacs')
+  $('button.facs-thumb[data-charta="' + charta + '"]').addClass('activeFacs')
 
   if (!this.facsInited) {
     this.facs.containImg()
@@ -235,6 +261,7 @@ Petrarchive.prototype.activateFacs = function(img, charta) {
 
   this.facsInited = true
   this.facsIsActive = true
+  this.activeFacs = charta
 }
 
 Petrarchive.prototype.deactivateFacs = function() {
@@ -242,13 +269,13 @@ Petrarchive.prototype.deactivateFacs = function() {
 
   this.facs.$frame.removeClass('active')
   util_browser.removeParam('facs')
-  localStorage.setItem('facs', 'false')
 
-  $('a.facs-thumb').removeClass('activeFacs')
+  $('button.facs-thumb').removeClass('activeFacs')
 
   this.facs.img = undefined
 
   this.facsIsActive = false
+  this.activeFacs = undefined
 }
 
 Petrarchive.prototype.showHide = function(maniculeId, idToShow, idToHide) {
@@ -269,8 +296,4 @@ Petrarchive.prototype.showHide = function(maniculeId, idToShow, idToHide) {
 
   var newFunction = "PT.showHide('" + maniculeId + "','" + idToHide + "','" + idToShow + "');";
   $(manicule).attr("onclick", newFunction);
-}
-
-Petrarchive.prototype.addCharta = function(ch) {
-  this.chartae.push(ch)
 }

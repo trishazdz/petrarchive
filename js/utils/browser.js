@@ -1,14 +1,8 @@
 var util_browser = {
 	getParameterByName: function(name, url) {
-		// old way was to use url parameters. Now we switched routing 
-		// without params
-		if (name == 'project_id') {
-			return _s3.project.id
-		}
-
 	    if (!url) url = window.location.href;
-	    console.log(url)
-	    name = name.replace(/[\[\]]/g, "\\$&");
+
+		name = name.replace(/[\[\]]/g, "\\$&");
 	    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
 	        results = regex.exec(url);
 	    if (!results) return null;

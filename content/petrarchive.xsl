@@ -63,7 +63,7 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    
+  
     <xsl:template match="tei:cb[@n='1-of-2']">
         <xsl:variable name="mycb" select="."/>
         <div class="sestina_left" style="float:left;">

@@ -32,9 +32,6 @@
 	<xsl:param name="includeAnalytics" select="true()"/>
 	<xsl:param name="displayPageBreaks" select="true()"/>
 	
-	<xsl:variable name="documentExists" select="true()"/>
-
-	
 	
 	<!-- special characters -->
 	<xsl:param name="quot"><text>"</text></xsl:param>
@@ -77,15 +74,6 @@
 			<xsl:call-template name="htmlHead"/>
 
 			<body>
-			  <!-- 
-				Walsh Help!
-
-				Trying to see if document can match 
-				tei/teiHeader/fileDesc/noDocument 
-				and IF match is found THEN apply this class attribute
-			  -->
-			  <xsl:attribute name="class">document-404</xsl:attribute>
-
 			  <xsl:if test="$includeNav = true()">
 			    <xsl:call-template name="siteNavigation"/>
 			  </xsl:if>
@@ -94,12 +82,6 @@
 			    <xsl:if test="$includeStickyHeader = true()">
 			      <xsl:call-template name="stickyHeader"/>
 			    </xsl:if>
-
-			    <!--
-			    <xsl:if test="$isAuxPage = true()">
-			    	<xsl:call-template name="auxHeader"/>
-			    </xsl:if>
-				-->
 			  </div>
 
 			  <div class="container-fluid content-container">
@@ -117,16 +99,8 @@
 			  class="modal fade" tabindex="-1" role="dialog" 
 			  aria-labelledby="textIndexExplorer" aria-hidden="true">
 				<div class="modal-dialog modal-lg">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true"></span>
-							</button>
-						</div>
-
-						<div class="modal-body">
-							
-						</div>
+					<div class="modal-content container-fluid">
+						
 					</div>
 				</div>
 			  </div>
@@ -175,13 +149,6 @@
 			<xsl:apply-templates select="@*|node()"/>
 		</div>
 	</xsl:template>
-
-	<xsl:template match="tei:teiHeader//tei:title">
-		<!--<tei-title>
-			<xsl:call-template name="addID"/>
-			<xsl:apply-templates select="@*|node()"/>
-		</tei-title>-->
-	</xsl:template>
 	
 
 	<xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
@@ -225,11 +192,6 @@
 	<xsl:template match="@xml:id">
 		<!-- @xml:id is copied to @id, which browsers can use
 			for internal links.
-		-->
-		<!--
-		<xsl:attribute name="xml:id">
-			<xsl:value-of select="."/>
-		</xsl:attribute>
 		-->
 		<xsl:attribute name="id">
 			<xsl:value-of select="."/>
@@ -391,11 +353,11 @@
 	<xsl:template name="rendition2style">
 		<style type="text/css">
             <xsl:apply-templates select="//tei:rendition" mode="rendition2style"/>
-		        <xsl:apply-templates select="//tei:tagUsage[@rendition]" mode="tagUsage2style"/>
-     </style>
+		    <xsl:apply-templates select="//tei:tagUsage[@rendition]" mode="tagUsage2style"/>
+     	</style>
 	</xsl:template>
   
-  <xsl:template match="tei:rendition[@xml:id and @scheme = 'css']" mode="rendition2style">
+    <xsl:template match="tei:rendition[@xml:id and @scheme = 'css']" mode="rendition2style">
 		<xsl:value-of select="concat('[rendition~=&quot;#',@xml:id,'&quot;]')"/>
 		<xsl:if test="@scope">
 			<xsl:value-of select="concat(':',@scope)"/>

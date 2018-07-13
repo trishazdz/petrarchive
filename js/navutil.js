@@ -3,7 +3,6 @@ function NavUtil() {
     this.current = new PetrarchiveDocument(undefined, util_browser.getParam('ch'))
   } else {
     this.current = new PetrarchiveDocument(document.URL)
-
   }
 
   this.previous = $('#page-nav a.previous')
@@ -39,6 +38,32 @@ NavUtil.prototype.events = function() {
 
     var stylesheet = dict[that._theme()]
     document.getElementById('customcss').href=stylesheet
+  })
+
+  this.previous.click(function(ev) {
+    var facsActive = util_browser.getParam("facs")
+    if (facsActive) {
+      that.previous.attr('href', that.previous.attr('href') + "?facs=active")
+    }
+  })
+
+  this.next.click(function(ev) {
+    var facsActive = util_browser.getParam("facs")
+    if (facsActive) {
+      that.next.attr('href', that.next.attr('href') + "?facs=active")
+    }
+
+    $.get(
+      {
+        url: that.next.attr('href'), 
+        dataType: 'text'
+      }, 
+      function(res) {
+        var xmlDoc = $.parseXML(res)
+        console.log(xmlDoc)
+    })
+    
+    ev.preventDefault()
   })
 }
 
@@ -77,18 +102,6 @@ NavUtil.prototype.setupPrevHref = function() {
   }
 
   return url + '.xml'
-}
-
-NavUtil.prototype.delayFn = function(fn, condition) {
-  if (condition()) {
-    //return fn()
-  } else {
-    /*setTimeout(function() {
-      this.delayFn(fn, condition)
-    }, 1200)*/
-  }
-
-  console.log(fn, condition)
 }
 
 NavUtil.prototype.setupNextHref = function() {

@@ -1,13 +1,3 @@
-<?php
-
-$ajaxCall = array_key_exists('ajax', $_GET);
-if ($ajaxCall) {
-    echo include("textindex.html");
-    die();
-}
-
-?>
-
 <!DOCTYPE HTML system "about:legacy-compat">
 <html lang="en">
 

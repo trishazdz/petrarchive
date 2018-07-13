@@ -86,9 +86,12 @@ main.container {
 /* -------------------------------------------------------------------------*/
 /* Layout */
 /* line 33, ../sass/screen.scss */
-a {
-  text-decoration: none;
-  color: inherit;
+a, a:link, a:visited {
+  text-decoration: underline;
+}
+
+a:hover {
+  background-color: rgba(155,24,30, .4);
 }
 
 /* line 36, ../sass/screen.scss */
@@ -96,8 +99,6 @@ body {
   font-size: 14pt;
   font-family: "andron_scriptor_webregular", Georgia, Palatino, serif;
   line-height: 18pt;
-  /* width: 1100px; */
-  /*max-width: 75%; */
   margin-right: auto;
   margin-left: auto;
   font-size: 14pt;
@@ -312,6 +313,16 @@ footer {
   width: initial;
 }
 
+#petrarchive-footer a {
+  text-decoration: none;
+  color: #9B181E;
+}
+
+#petrarchive-footer a:hover {
+  background: none;
+  text-decoration: underline;
+}
+
 #petrarchive-footer p {
   margin-top: 0;
   margin-bottom: .3em;
@@ -384,8 +395,11 @@ nav ul {
   margin-left: .75em;
 }
 
-.dropdown-item {
+.dropdown-item,
+.dropdown-menu a {
   font-family: Open Sans, "helvetica neue", helvetica, verdana, arial, sans-serif;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* line 269, ../sass/screen.scss */
@@ -416,18 +430,6 @@ nav #smallbanner {
   left: 0px;
   top: 0px;
   /* border-bottom:$header-border; */
-}
-
-/* links */
-/* line 291, ../sass/screen.scss */
-a {
-  text-decoration: none;
-  color: #9b181e;
-}
-
-/* line 292, ../sass/screen.scss */
-a:hover {
-  text-decoration: underline;
 }
 
 /* line 293, ../sass/screen.scss */

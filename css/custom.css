@@ -106,6 +106,12 @@ a:hover {
   overflow-y: scroll;
 }
 
+@media (max-width: 576px) { 
+  .content-container {
+    padding:0;
+  }
+}
+
 #tei_wrapper {
   padding-left: 6.5rem;
   max-width: 1100px;
@@ -1477,6 +1483,8 @@ a[disabled], a.inactive {
 
 html > body .facs-thumb {
   border: 2px solid transparent;
+  background: none;
+  padding: 0;
 }
 
 html > body #sticky-header .facs-thumb.activePb {
@@ -1571,10 +1579,30 @@ button {
 .modal-backdrop {
   z-index: 10001;
 }
-.modal {
+#poem-textindex.modal {
   z-index: 10002;
 }
-.modal .textindex tr {
-  height: 2rem;
+
+#poem-textindex .modal-content {
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+#poem-textindex .modal-content table {
+}
+
+#poem-textindex .modal-content thead {
+}
+
+#poem-textindex .modal-content thead th {
+  padding: 1rem 0;
+}
+
+#poem-textindex .modal-content tbody {
+  position: relative;
+}
+
+#poem-textindex .modal-content tr {
+  height: 3rem;
 }
 /* TextIndex - Modal: end */

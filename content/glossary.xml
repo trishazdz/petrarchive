@@ -67,7 +67,7 @@
 <!ENTITY encodingDesc SYSTEM "encodingDesc.xml"> 
 ]>
 
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="glossary" style="margin-top:41pt;">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="glossary">
   <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -91,8 +91,9 @@
   <!--
   (see <ptr target="http://www.treccani.it/enciclopedia/ballata_(Enciclopedia-Italiana)/"/>  and “Genere-ballata” in Storey, “All’interno della poetica grafico-visiva di Petrarca”, pp. 157–59)
   -->
-        <body>
-          <div>
+        <body class="container-fluid">
+          <main class="row">
+          <div class="col-12">
             <head>Glossary</head>
           <entry xml:id="antegraph">
             <form><orth>antegraph</orth></form>
@@ -252,6 +253,7 @@
         </entry>
           </div>
         <link href="../css/auxillaryPage.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
+        </main>
       </body>
   </text>
 </TEI>

@@ -82,9 +82,9 @@
    <!-- check encoding of #bold ~ Rvf2 lines 6, 8 and 10 -->
    
    <text>
-      <body>
+      <body-404>
          Text encoding not yet finished. Coming soon!
-      </body>
+      </body-404>
    </text>
 
    <vizindex>

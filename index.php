@@ -207,7 +207,7 @@
 </div>
 
 <section>
-  <main class="col-8 col-md-12">
+  <main class="col-lg-8 col-md-12">
     <p class="">
       When you hear the words <em>sonnet</em>, <em>Renaissance</em>, 
       <em>western literature</em>, <em>love songs</em>, 

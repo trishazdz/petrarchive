@@ -7,8 +7,8 @@ $(document).ready(function() {
   setupPageNum()
   setupTextindex()
 
-  // Too many edge cases to be able to address solely using CSS
-  // so doing some styling via JS
+  // Too many edge cases to address solely using CSS
+  // using JS for some styling
   applyStyling()
 
 
@@ -38,6 +38,8 @@ $(document).ready(function() {
   } 
 })
 
+
+
 function setupPageNum() {
   var pageNum,
       $pageNum = $('.-teibp-pageNum'),
@@ -54,34 +56,60 @@ function setupPageNum() {
 }
 
 function setupTextindex() {
-  var button = $('#page-nav .page-number'),
-      textindex = $('#poem-textindex');
+  var element = '#poem-textindex',
+      button = $('#page-nav .page-number'),
+      textindex = $(element);
+
+  $(element).on('shown.bs.modal', function () {
+    if (textindex.attr('data-loaded')) {
+      return
+    } 
+
+    textindex.attr('data-loaded', true) 
+
+    var table = textindex.find('tbody')
+
+    // Fix header and format it
+    var header = textindex.find('thead')
+    header.css('position', 'fixed')
+      .css('background', 'white')
+
+    var columns = table.find('tr:first-child td')
+    
+    columns.each(function(i, col) {
+      var child = i + 1
+      header.find('th:nth-child(' + child + ')').css('width', $(col).width())
+    })
+
+    PT.convertUrl(textindex.find('a'))
+
+    // Scroll to current active charta
+    var active = PT.nav.current.getChartaFirst().getPrettyNameTextindex()
+    table.find('tr:first-child td').css('padding-top', header.height())
+
+    var trArray = table.children('tr').toArray()
+    var activeTr = trArray.find(function(tr) {
+      let charta = $(tr).children('td:nth-child(2)')
+      return charta.text() == String(active)
+    })
+
+    var scrollTo = $(activeTr).offset().top - $(activeTr).height()
+    $('.modal-content').scrollTop(scrollTo)
+  })
+  
   button.click(function(ev) {
     if (textindex.attr('data-loaded')) {
-      $('.modal').hide()
-      afterLoad()
       return
     }    
-  
-    textindex.find('.modal-body').load('../textindex.html', afterLoad)
 
-    function afterLoad() {
-      textindex.attr('data-loaded', true)
+    $.get('../textindex.html', function(html) {
+      var $html = $(html),
+          header = $html.children('header'),
+          table = $html.find('table');
 
-      // Let's scroll to currently active charta/e
-      var active = PT.nav.current.getChartaFirst().getPrettyNameTextindex()
-
-      var trArray = textindex.find('table tbody').children('tr').children('td:nth-child(2)').toArray()
-      var activeTr = trArray.find(function(tr) {
-        return tr.innerText == String(active)
-      })
-
-      setTimeout(function() {
-        var trOffset = $(activeTr).offset().top
-        $('.modal').scrollTop(trOffset).show()
-        console.log(trOffset)
-      }, 700  )
-    }
+      textindex.find('.modal-content').html('<table></table>')
+      textindex.find('.modal-content table').append(table.html())
+    })
   })
 }
 

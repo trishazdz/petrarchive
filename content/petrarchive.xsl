@@ -122,6 +122,16 @@
         <xsl:apply-templates select="@*|node()"/>
       </xsl:element>
     </xsl:template>
+
+    <xsl:template match="tei:teiHeader//tei:title">
+      <charta>
+        <xsl:value-of select="normalize-space(substring-after(string(), ':'))"/>
+      </charta>
+
+      <title>
+        <xsl:value-of select="normalize-space(substring-before(string(), ':'))"/>
+      </title>
+	  </xsl:template>
     
     <xsl:param name="htmlTitle">
         <xsl:value-of select="normalize-space(/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[1])"/>        
@@ -180,9 +190,6 @@
             <script type="text/javascript" src="../js/commentaryutil.js"><xsl:comment> </xsl:comment></script>
 
             <script type="text/javascript" src="../js/poem.js"><xsl:comment> </xsl:comment></script>
-
-            <meta name="turbolinks-root" content="./"/>
-            <script type="text/javascript" src="../js/turbolinks/turbolinks.min.js"></script>
 
         </head>
     </xsl:template>

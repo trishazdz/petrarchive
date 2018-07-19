@@ -1,6 +1,14 @@
 // This is the 'init'/bootstrap function that gets everything started
 $(document).ready(function() {
-  window.PT = new Petrarchive()   
+  poemInit()
+})
+
+function poemInit() {
+  if (!window.PT) {
+    window.PT = new Petrarchive()
+  } else {
+    window.PT.refresh()
+  }
 
   setupRvf()
 
@@ -12,31 +20,27 @@ $(document).ready(function() {
   applyStyling()
 
 
-  var currentScroll = $('.content-container').scrollTop()
-
   // When hash is clicked we need to give it a vertical cushion equal to 2x the sticky header.
   // This is because browser loads webpage right at <a> of respective hash tag and will be blocked
   // by sticy header
   if (window.location.hash) {
     setTimeout(function() {
-      $('.content-container').scrollTop(currentScroll - ($('#sticky-header').height() * 2))
-    }, 1500)
+     window.PT.scrollTo(window.location.hash)
+
+     var currentScroll = $('.content-container').scrollTop()
+
+    // $('.content-container').scrollTop(currentScroll - ($('#sticky-header').height() * 2))
+    }, 0)
+  } else {
+    window.PT.scrollTo()
   }
 
   if (util_browser.getParam('ch')) {
     var charta = util_browser.getParam('ch')
 
-    setTimeout(function() {
-      $('.content-container').scrollTop(currentScroll - ($('#sticky-header').height() * 2))
-
-      console.log(charta)
-
-      $('.content-container').animate({
-        scrollTop: $("#" + charta).offset().top - ($('#sticky-header').height() * 1.5)
-      }, 2500);
-    }, 1500)
+    window.PT.scrollTo(charta)
   } 
-})
+}
 
 
 
@@ -59,6 +63,35 @@ function setupTextindex() {
   var element = '#poem-textindex',
       button = $('#page-nav .page-number'),
       textindex = $(element);
+    
+  if (textindex.attr('data-loaded') && textindex.attr('data-events-loaded')) {
+    return
+  } 
+
+  if (!textindex.attr('data-events-loaded')) {
+    // put this into petrarchive.xsl
+    $.get('../textindex.html', function(html) {
+      var $html = $(html),
+          header = $html.children('header'),
+          table = $html.find('table');
+
+      textindex.find('.modal-content').html('<table></table>')
+      textindex.find('.modal-content table').append(table.html())
+
+      PT.convertUrl()
+
+      window.PT.nav.refresh()
+    })
+
+    textindex.click(function(ev) {
+      if (ev.target.localName == 'a') {
+        window.PT.nav.navigateTo($(ev.target).attr('href'))
+        ev.preventDefault()
+      }
+    })
+
+    textindex.attr('data-events-loaded', true)
+  }
 
   $(element).on('shown.bs.modal', function () {
     if (textindex.attr('data-loaded')) {
@@ -81,8 +114,6 @@ function setupTextindex() {
       header.find('th:nth-child(' + child + ')').css('width', $(col).width())
     })
 
-    PT.convertUrl(textindex.find('a'))
-
     // Scroll to current active charta
     var active = PT.nav.current.getChartaFirst().getPrettyNameTextindex()
     table.find('tr:first-child td').css('padding-top', header.height())
@@ -95,21 +126,6 @@ function setupTextindex() {
 
     var scrollTo = $(activeTr).offset().top - $(activeTr).height()
     $('.modal-content').scrollTop(scrollTo)
-  })
-  
-  button.click(function(ev) {
-    if (textindex.attr('data-loaded')) {
-      return
-    }    
-
-    $.get('../textindex.html', function(html) {
-      var $html = $(html),
-          header = $html.children('header'),
-          table = $html.find('table');
-
-      textindex.find('.modal-content').html('<table></table>')
-      textindex.find('.modal-content table').append(table.html())
-    })
   })
 }
 

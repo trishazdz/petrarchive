@@ -5,6 +5,8 @@
 
 function Petrarchive() {
   var that = this
+  this.inited = false
+  this.activeFacs = undefined
 
   this.header = $('#sticky-header')
 
@@ -41,9 +43,10 @@ function Petrarchive() {
 Petrarchive.prototype.init = function() {
   var that = this
 
-  var links = document.querySelectorAll('.convert-url a')
-  this.convertUrl(links)
+  if (this.inited) {return}
   
+  this.inited = true
+
   if (window.NavUtil) {
     this.nav = new NavUtil()
   }
@@ -51,12 +54,12 @@ Petrarchive.prototype.init = function() {
     this.commentary = new CommentaryUtil()
   }
 
+  this.convertUrl()
+
   this.facsInited = false
-  this.setupFacsThumb()
 
   this.events()
 
-  if (window.Frame) {
   /* ----------------
    Setup Facs
    ----------------*/
@@ -65,11 +68,11 @@ Petrarchive.prototype.init = function() {
     recenter: false
   })
 
-  this.facsIsActive = util_browser.getParam('facs') == 'active' ? true : false 
-  this.activeFacs
-
   var facs = this.facs
   var facsNav = $('#pt-facs nav')
+
+  this.setupFacsThumb()
+
 
   facs.$frame.resizable(
     {
@@ -86,51 +89,7 @@ Petrarchive.prototype.init = function() {
     }
   )
 
-  if (that.hasMultipleCh()) {
-    $('.-teibp-pb:first-child').css('display', 'initial')
-
-    // scroll to the pertinent chartae
-
-
-    var pageBreaks = $.makeArray($('.-teibp-pageNum').map(function(i, el) {
-      // must account for the the Y length that fixed header obscures
-      return el.offsetTop - that.header.height() - $(el).height()
-    }))
-
-    var debouncedPbActivate = util_browser.debounce(function(ev) {
-      var scrollTop = $(ev.delegateTarget).scrollTop()
-
-    
-      var filteredPbs = pageBreaks.filter(function(pb) {
-        return scrollTop > pb
-      })
-
-      var activePbsIndex = filteredPbs.length - 1
-
-      $('button.facs-thumb').removeClass('activePb')
-      $($('button.facs-thumb')[activePbsIndex]).addClass('activePb')
-    }, 80)
-    
-    $('.content-container').scroll(debouncedPbActivate)
-  }
-
-  $('button.facs-thumb').click(function(ev) {
-    console.log(ev)
-    var img = $($(ev.delegateTarget).children('img'))
-    var charta = $(ev.delegateTarget).attr('data-charta')
-
-    that.activateFacs(img, charta)
-  })
-
-  if (this.facsIsActive) {
-    if (util_browser.getParam('incomplete')) {
-     setTimeout(function() {
-      $('button.facs-thumb').click() 
-     }, 3000)
-    } else {
-      $('button.facs-thumb')[0].click() 
-    }
-  }
+  var facsNav = $('#pt-facs nav')
 
   facsNav.children('button.zoom').click(function(ev) {
     var tgt = $(ev.delegateTarget)
@@ -153,11 +112,6 @@ Petrarchive.prototype.init = function() {
     that.deactivateFacs()
   })
 
-  /***********
-    /End Setup Facs
-  ***********/
-  }
-
   var that = this
   $(window).resize(function() {
     that.onResize()
@@ -166,12 +120,19 @@ Petrarchive.prototype.init = function() {
   this.onResize()
 }
 
+Petrarchive.prototype.refresh = function() {
+  var that = this
+
+  this.nav.refresh()
+  this.setupFacsThumb()
+}
+
 Petrarchive.prototype.events = function() {
   var that = this
 
 }
 
-Petrarchive.prototype.convertUrl = function(links) {
+Petrarchive.prototype.convertUrl = function() {
   // reformat URLs 
   // relative and absolute urls not working
   // because sometimes we use same html url from root
@@ -182,18 +143,24 @@ Petrarchive.prototype.convertUrl = function(links) {
     return
   }
 
-  if (links instanceof jQuery) {
-    links = links.toArray()
-  }
+  var links = $('.convert-url a')
       
-  links.forEach(function(el) {
+  links.toArray().forEach(function(el) {
     var old = el.getAttribute('href')
-    console.log('../' + old)
     el.setAttribute('href', '../' + old)
   })
+  
+  $('.convert-url').removeClass('convert-url')
 }
 
 Petrarchive.prototype.setupFacsThumb = function() {
+  // Refresh the facs button and img
+  var cloned = $($('.facs-thumb')[0])
+  $('.facs-thumb').remove()
+
+  cloned.removeClass('activeFacs').removeClass('activePb')
+  $('#teibpToolbox').append(cloned)
+
   if (util_browser.getParam('incomplete')) {
     var baseDir = "../images/thumb-vat-lat3195-f/vat-lat3195-f-"
     var ch = this.getCurrentDoc().getChartaFirst().charta
@@ -222,6 +189,64 @@ Petrarchive.prototype.setupFacsThumb = function() {
       $($('.facs-thumb')[i]).attr('data-charta', $($('.-teibp-pageNum')[i]).text())
     }
   }
+
+  var that = this
+
+  $('button.facs-thumb').click(function(ev) {
+    var img = $($(ev.delegateTarget).children('img'))
+    var charta = $(ev.delegateTarget).attr('data-charta')
+
+    that.activateFacs(img, charta)
+  })
+
+  if (this.hasMultipleCh()) {
+    $('.-teibp-pb:first-child').css('display', 'initial')
+
+    // scroll to the pertinent chartae
+    var pageBreaks = $.makeArray($('.-teibp-pageNum').map(function(i, el) {
+      // must account for the the Y length that fixed header obscures
+      return el.offsetTop - that.header.height() - $(el).height()
+    }))
+
+    var debouncedPbActivate = util_browser.debounce(function(ev) {
+      var scrollTop = $(ev.delegateTarget).scrollTop()
+
+    
+      var filteredPbs = pageBreaks.filter(function(pb) {
+        return scrollTop > pb
+      })
+
+      var activePbsIndex = filteredPbs.length - 1
+
+      $('button.facs-thumb').removeClass('activePb')
+      $($('button.facs-thumb')[activePbsIndex]).addClass('activePb')
+    }, 80)
+    
+    $('.content-container').scroll(debouncedPbActivate)
+  }
+
+  this.facsIsActive = util_browser.getParam('facs') == 'active' ? true : false
+
+  if (this.facsIsActive) {
+    $('button.facs-thumb')[0].click() 
+  }
+
+  setTimeout(function() {
+    that.onResize()
+  }, 0)
+}
+
+Petrarchive.prototype.scrollTo = function(hash) {
+  if (!hash) {
+    $('.content-container').scrollTop(0)
+    return
+  }
+
+  setTimeout(function() {
+    $('.content-container').animate({
+      scrollTop: $(hash).position().top
+    }, 1200);
+  }, 0)
 }
 
 Petrarchive.prototype.onResize = function() {
@@ -242,7 +267,6 @@ Petrarchive.prototype.activateFacs = function(img, charta) {
     return 
   }
 
-  //this.facs.img = img
   this.facs.loadImg(img)
   
   $('html > body').addClass('facs-active')

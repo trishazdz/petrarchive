@@ -1575,6 +1575,19 @@ button {
 
 /* Mobile code: end */
 
+/* .textindex - page: start */
+.textindex a, 
+.textindex a:link,
+.textindex a:visited {  
+  text-decoration: none;
+}
+.textindex a:hover {
+  background: none;
+  text-decoration: underline;
+}
+
+/* TextIndex - page: end */
+
 /* TextIndex - Modal: start */
 .modal-backdrop {
   z-index: 10001;

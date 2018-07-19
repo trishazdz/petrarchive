@@ -86,11 +86,13 @@
 
 			  <div class="container-fluid content-container">
 				  <div id="tei_wrapper" class="row">
+				    <div style="position:absolute">
 					  <xsl:apply-templates/>
 
 					  <div class="row">
 					  	<xsl:copy-of select="$htmlFooter"/>
 					  </div>
+					</div>
 				  </div>
 		      </div>
 
@@ -145,12 +147,11 @@
 	</xd:doc>
 
 	<xsl:template match="tei:teiHeader">
-		<div class="hide">
+		<tei_header class="hide">
 			<xsl:apply-templates select="@*|node()"/>
-		</div>
+		</tei_header>
 	</xsl:template>
 	
-
 	<xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
 		<xd:desc>
 			<xd:p>Template to omit processing instructions from output.</xd:p>

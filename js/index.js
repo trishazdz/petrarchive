@@ -24,9 +24,8 @@ $(document).tooltip({
     	var a = $( this )
         var noFile = a.hasClass('no-file')
 
-    	var alt = a.find('img').attr('alt')
-    	var ch = alt.slice(1)
-
+		var ch = a.find('img').attr('alt')
+		
     	var facsSrc = '"images/thumb-vat-lat3195-f/vat-lat3195-f-' + ch + '.jpg"'
     	var img = '<img class="facs" src=' + facsSrc + ' />' 
 

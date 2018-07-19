@@ -1,4 +1,4 @@
-function NavUtil() {
+function NavUtil() {  
   if (util_browser.getParam('incomplete')) {
     this.current = new PetrarchiveDocument(undefined, util_browser.getParam('ch'))
   } else {
@@ -10,18 +10,21 @@ function NavUtil() {
 
   this._theme = ko.observable('diplomatic')
 
-  var that = this
-  $.getJSON("../charta-meta.json", function(meta) {
-    that.chartaMeta = meta
+  this.events()
+}
 
-    that.next.attr('href', that.setupNextHref())
-    that.previous.attr('href', that.setupPrevHref())
+NavUtil.prototype.refresh = function() {
+  if (util_browser.getParam('incomplete')) {
+    this.current = new PetrarchiveDocument(undefined, util_browser.getParam('ch'))
+  } else {
+    this.current = new PetrarchiveDocument(document.URL)
+  }
 
-    that.next.removeClass('hide')
-    that.previous.removeClass('hide')
+  this.next.attr('href', this.setupNextHref())
+  this.previous.attr('href', this.setupPrevHref())
 
-    that.events()
-  })
+  this.next.removeClass('hide')
+  this.previous.removeClass('hide')
 }
 
 NavUtil.prototype.events = function() {
@@ -45,6 +48,10 @@ NavUtil.prototype.events = function() {
     if (facsActive) {
       that.previous.attr('href', that.previous.attr('href') + "?facs=active")
     }
+
+    that.navigateTo(that.previous.attr('href'))
+
+    ev.preventDefault()
   })
 
   this.next.click(function(ev) {
@@ -53,18 +60,43 @@ NavUtil.prototype.events = function() {
       that.next.attr('href', that.next.attr('href') + "?facs=active")
     }
 
-    $.get(
-      {
-        url: that.next.attr('href'), 
-        dataType: 'text'
-      }, 
-      function(res) {
-        var xmlDoc = $.parseXML(res)
-        console.log(xmlDoc)
-    })
-    
+    that.navigateTo(that.next.attr('href'))
+
     ev.preventDefault()
   })
+}
+
+NavUtil.prototype.navigateTo = function(href) {
+  var that = this
+
+  var newDoc = new PetrarchiveDocument(href)
+  
+  if (newDoc.name == this.current.name) {
+    history.pushState({}, null, href)
+    poemInit()
+    return
+  }
+
+  $.get(
+    {
+      url: href, 
+      dataType: 'text'
+    }, 
+    function(res) {
+      var xmlDoc = $.parseXML(res)
+
+      $.get('./petrarchive.xsl', function(xsl){
+        var result = new XSLTProcessor()
+        result.importStylesheet(xsl)
+        result = result.transformToDocument(xmlDoc)
+
+        var tei = $(result).find('#tei_wrapper tei')
+        $('#tei_wrapper tei').html(tei.html())
+        history.pushState({}, null, href)
+        poemInit()
+      })
+  })
+  
 }
 
 NavUtil.prototype.setupPrevHref = function() {
@@ -74,9 +106,21 @@ NavUtil.prototype.setupPrevHref = function() {
     this.previous.attr('disabled', true)
 
     return null
+  } else {
+    this.previous.removeAttr('disabled')
   }
+
   var prevName = firstCh.getPrevCh()
-  prevDoc = this.chartaMeta[prevName]
+
+  var regex = new RegExp(prevName)
+
+  var links = $('#poem-textindex tbody tr td:first-child a').toArray()
+  var prevLink = links.find(function(a) {
+    var href = $(a).attr('href')
+    return regex.test(href)
+  })
+
+ /*
 
   if (!prevDoc) {
     return 'charta-404.xml?incomplete=true&ch=' + prevName
@@ -89,26 +133,24 @@ NavUtil.prototype.setupPrevHref = function() {
     if (url == this.name) {
       return url = this.setupPrevHref(url.split('-')[0])
     }
-
-    if (prevDoc.commentary) {
-      url += '_with_commentary'
-    }
   } else {
     url = 'c' + prevName 
+  } */
 
-    if (prevDoc.commentary) {
-      url += '_with_commentary'
-    }
-  }
-
-  return url + '.xml'
+  return $(prevLink).attr('href')
 }
 
 NavUtil.prototype.setupNextHref = function() {
   var nextName = this.current.getChartaLast().getNextCh()
-  nextDoc = this.chartaMeta[nextName]
+  var regex = new RegExp(nextName)
 
-  if (!nextDoc) {
+  var links = $('#poem-textindex tbody tr td:first-child a').toArray()
+  var nextLink = links.find(function(a) {
+    var href = $(a).attr('href')
+    return regex.test(href)
+  })
+
+  /*if (!nextDoc) {
     return 'charta-404.xml?incomplete=true&ch=' + nextName
   }
 
@@ -129,8 +171,8 @@ NavUtil.prototype.setupNextHref = function() {
     if (nextDoc.commentary) {
       url += '_with_commentary'
     }
-  }
+  } */
 
-  return url + '.xml'
+  return $(nextLink).attr('href')
 }
 

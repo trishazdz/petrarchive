@@ -5,58 +5,79 @@ $dir = __DIR__ . '/images/visindex/';
 $meta_file = file_get_contents('charta-meta.json');
 $meta = json_decode($meta_file, true);
 
+$contents_dir = __DIR__ . '/content/';
+
 $fn = fopen('vizindex.html', 'w') or die("can't open file");
+$textindex = fopen('textindex-2.html', 'w') or die("can't open file");
 
 $files = new DirectoryIterator($dir);
 
 foreach ($files as $f) {
     if (!$f->isDot()) {
-    	$file_name = $f->getFilename();
+        $img_name = $f->getFilename();
 
-    	if (explode(".", $file_name)[1] !== 'svg') {
+    	if (explode(".", $img_name)[1] !== 'svg') {
     		return;
     	}
 
         // remove .svg
-        $exploded_file_name = explode(".", $file_name)[0];
-        $subbed_file_name = substr($exploded_file_name, 1);
+        $exploded_file_name = explode(".", $img_name)[0];
+        $charta = substr($exploded_file_name, 1);
 
-        if (array_key_exists($subbed_file_name, $meta)) {
-            $charta_meta = $meta[$subbed_file_name];
+        if (file_exists($contents_dir . $exploded_file_name . '.xml')) {
+            writeHtml($exploded_file_name, $img_name, $charta);
+            continue;
+        }
+
+        if (array_key_exists($charta, $meta)) {
+            $charta_meta = $meta[$charta];
 
             if (array_key_exists('document', $charta_meta)) {
-                $url = $charta_meta['document'];
-            } else {
-                $url = $exploded_file_name;
-            }
+                writeHtml($charta_meta['document'], $img_name, $charta );
+                continue;
+            } 
 
-            if ($charta_meta['commentary']) {
-                $url .= '_with_commentary';
-            }
-            $no_file = false;
-        } else {
-            $url = $exploded_file_name;
-            $no_file = true;
-        }
+            writeHtml(null, $img_name, $charta);
+            continue;
+        } 
 
-        $url .= '.xml?ch=' . $exploded_file_name;
 
-        $html = '<a class="col-4 col-sm-3 col-md-1 col-lg-1-24';
-        if ($no_file) {
-            $html .= ' no-file';
-            $html .= '" href="content/charta-404.xml?incomplete=true&';
-            $html .= 'ch=' . substr($exploded_file_name, 1) . '">';
-        } else {
-            $html .= '" href="content/' . $url . '">';
-        }
-        $html .= '<img alt="';
-        $html .= $exploded_file_name;
-        $html .= '" class="vi-img';
-        $html .= '" src="images/visindex/';
-        $html .= $file_name . '" /></a>' . "\n";
-        fwrite($fn, $html);
+        writeHtml(null, $img_name, $charta); 
     }
 }
 
-fclose($fn);
+function writeHtml($file, $img, $charta) {
+    global $fn;
+    global $textindex;
+
+    $html = '<a ';
+    $html .= 'data-charta="' . $charta . '"' . ' class="col-4 col-sm-3 col-md-1 col-lg-1-24';
+    if (!$file) {
+        $html .= ' no-file';
+        $html .= '" href="content/charta-404.xml?incomplete=true&';
+        $html .= 'ch=' . $charta . '">';
+    } else {
+        $html .= '" href="content/' . $file . '.xml';
+
+        if ($charta) {
+            $html .= '#c' . $charta;
+        }
+        
+        $html .= '">';
+    }
+
+    // handle textindex write //
+        fwrite($textindex, $html . '</a>');
+    // end textindex write //
+
+    $html .= '<img alt="';
+    $html .= $charta;
+    $html .= '" class="vi-img';
+    $html .= '" src="images/visindex/';
+    $html .= $img . '" /></a>' . "\n";
+
+    fwrite($fn, $html);
+}
+
+fclose($fn); fclose($textindex);
 ?>

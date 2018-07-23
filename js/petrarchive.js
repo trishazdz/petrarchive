@@ -125,6 +125,8 @@ Petrarchive.prototype.refresh = function() {
 
   this.nav.refresh()
   this.setupFacsThumb()
+
+  this.commentary.refresh()
 }
 
 Petrarchive.prototype.events = function() {

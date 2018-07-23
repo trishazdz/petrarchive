@@ -21,6 +21,10 @@
       padding-right: 3rem;
     }
 
+    ol li {
+      margin-bottom: 1rem;
+    }
+
     li > ol {
       margin-left: 2rem;
     }
@@ -35,6 +39,7 @@
 
     section {
       margin-top: 1.5rem;
+    }
   </style>
 </head>
 <body>
@@ -47,7 +52,7 @@
 
     <section class="col-12" id="access">
       <p>
-       Welcome! You’ve reached the instruction page of the Petrarchive through the dropdown menu on the home page. From the home page you can access the texts of Petrarch’s Rerum vulgarium fragmenta (Rvf) by clicking on the ever-growing number of active “chartae”, or pages, of Petrarch’s manuscript, Vatican Latino 3195. From the drop-down list you can access the poems through the <a href="./textindex.php">Rvf TextIndex</a> arranged by their physical order in Latino 3195, or by their first verse that can be reorganized in alphabetical order or by their genre (sonnet, ballata, canzone, madrigal, sestina). For greater material contextualization, you can access the poems in the drop-down list by selecting the Visual Index and scrolling down to the Visual Index Arranged by Fascicles (http://dcl.slis.indiana.edu/petrarchive/visindex_fascicles.php). Clicking on the charta in one of the manuscript’s eleven fascicles will put you in the Rerum vulgarium fragmenta.
+       Welcome! You’ve reached the instruction page of the Petrarchive through the dropdown menu on the home page. From the home page you can access the texts of Petrarch’s Rerum vulgarium fragmenta (Rvf) by clicking on the ever-growing number of active “chartae”, or pages, of Petrarch’s manuscript, Vatican Latino 3195. From the drop-down list you can access the poems through the <a href="./textindex.php">Rvf TextIndex</a> arranged by their physical order in Latino 3195, or by their first verse that can be reorganized in alphabetical order or by their genre (sonnet, ballata, canzone, madrigal, sestina). For greater material contextualization, you can access the poems in the drop-down list by selecting the Visual Index and scrolling down to the <a href="./visindex_fascicles.php">Visual Index Arranged by Fascicles</a>. Clicking on the charta in one of the manuscript’s eleven fascicles will put you in the Rerum vulgarium fragmenta.
       </p>
     </section>
     

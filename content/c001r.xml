@@ -670,10 +670,10 @@ the line wraps. -->
           <note type="thematics" resp="#hws">
               Poetics: Petrarch's <foreign xml:lang="ita" rendition="#i">rime sparse</foreign> and the very sound (<foreign xml:lang="ita" rendition="#i">suono</foreign>) of his verses are equated with the <foreign xml:lang="ita" rendition="#i">sospiri</foreign> popular in Stilnovist, or more specifically the poetic vocabularies of Guido Cavalcanti and Dante Alighieri, as part of youth’s vain love (vv. 1-4); this same poetics is recalled in the poetic formulae: <foreign xml:lang="ita" rendition="#i">piango e ragiono</foreign> (5), <foreign xml:lang="ita" rendition="#i">chi per prova intenda amore</foreign> (7), both Dantean and in diverse poetic contexts (see, for ex., <title level="m">Inf.</title> 5. and the opening verse of the canzone <foreign xml:lang="ita" rendition="#i">Donne ch’avete intelletto d’amore</foreign> in the <title level="m">Vita nova</title>). The sonnet proposes change from the poet’s former self (esp. v. 4) through reflection and subsequent shame and regret over the vanity of worldly love and the vain fame that only results in shame (vv. 6-12) before a public or audience that he addresses directly in the opening vocative <foreign xml:lang="ita" rendition="#i">Voi</foreign> (1) both public (<foreign xml:lang="ita" rendition="#i">al popol tutto</foreign> [9]) but that also constitutes the private audience of Laura (see <title level="m">Rvf</title> 5.1: “Quando io movo i sospiri a chiamar <foreign xml:lang="ita" rendition="#i">voi</foreign>”).
           </note>
-          <div type="translation">
+          <note type="translation">
               <ab>You who listen in scattered rhymes to the sound / of those sighs with which I nourished my heart / in my early youthful error, / when I was in part another man than who I am now; in the various styles in which I weep and sing / among vain hopes and hopeless pain, / where he who by experience understands love, / I hope to find compassion if not forgiveness. But well I see now just how to the public / I was a myth for so long; where often / I feel within myself such shame of myself: / and of my hopeless life whose fruit is shame, / and the pardon I seek and knowing clearly that what pleases the world is nothing but a brief dream.  
             </ab>
-          </div>
+          </note>
         </div>
 
         <!-- FAKE COMMENTARY TO SEE WHAT IT WILL LOOK LIKE -->
@@ -710,11 +710,11 @@ the line wraps. -->
           <note type="thematics" resp="#hws">
               Poetics: Petrarch's <foreign xml:lang="ita" rendition="#i">rime sparse</foreign> and the very sound (<foreign xml:lang="ita" rendition="#i">suono</foreign>) of his verses are equated with the <foreign xml:lang="ita" rendition="#i">sospiri</foreign> popular in Stilnovist, or more specifically the poetic vocabularies of Guido Cavalcanti and Dante Alighieri, as part of youth’s vain love (vv. 1-4); this same poetics is recalled in the poetic formulae: <foreign xml:lang="ita" rendition="#i">piango e ragiono</foreign> (5), <foreign xml:lang="ita" rendition="#i">chi per prova intenda amore</foreign> (7), both Dantean and in diverse poetic contexts (see, for ex., <title level="m">Inf.</title> 5. and the opening verse of the canzone <foreign xml:lang="ita" rendition="#i">Donne ch’avete intelletto d’amore</foreign> in the <title level="m">Vita nova</title>). The sonnet proposes change from the poet’s former self (esp. v. 4) through reflection and subsequent shame and regret over the vanity of worldly love and the vain fame that only results in shame (vv. 6-12) before a public or audience that he addresses directly in the opening vocative <foreign xml:lang="ita" rendition="#i">Voi</foreign> (1) both public (<foreign xml:lang="ita" rendition="#i">al popol tutto</foreign> [9]) but that also constitutes the private audience of Laura (see <title level="m">Rvf</title> 5.1: “Quando io movo i sospiri a chiamar <foreign xml:lang="ita" rendition="#i">voi</foreign>”).
           </note>
-          <div type="translation">
+          <note type="translation">
               <ab>You who listen in scattered rhymes to the sound / of those sighs with which I nourished my heart / in my early youthful error, / when I was in part another man than who I am now; in the various styles in which I weep and sing / among vain hopes and hopeless pain, / where he who by experience understands love, / I hope to find compassion if not forgiveness. But well I see now just how to the public / I was a myth for so long; where often / I feel within myself such shame of myself: / and of my hopeless life whose fruit is shame, / and the pardon I seek and knowing clearly that what pleases the world is nothing but a brief dream.  
             </ab>
-          </div>
-        </div>
+          </note>
+        </div>  
       </back>
    </text>
 </TEI>

@@ -10,11 +10,11 @@ function CommentaryUtil() {
   this.events()
 
   this.activate = function(rvf) {
-    if (rvf[0] == '#') {
+    /*if (rvf[0] == '#') {
       rvf = rvf.substring(1)
 
       rvf = rvf.split('?')[0]
-    }
+    } */
 
     $('body').addClass('commentary-active')
     var target = '#' + rvf + '-commentary'
@@ -45,26 +45,20 @@ function CommentaryUtil() {
       }
     })
   }
-
-
-  if (window.location.hash) {
-    var hash = window.location.hash
-    console.log(hash)
-    var rvf = hash.split('_')[0]
-
-    console.log(rvf)
-
-    if (rvf.length == 1) {
-      return
-    }
-    this.activate(rvf)
-  }
 }
 
-CommentaryUtil.prototype.init = function() {
-  $('back').appendTo(".content-container")
+CommentaryUtil.prototype.init = function() {  
+  $('back').appendTo(".content-container").addClass('current')
 
   this._resize()
+}
+
+CommentaryUtil.prototype.refresh = function() {
+  $('body.commentary-active').removeClass('commentary-active')
+  $('.content-container back.current').remove()
+
+  this.init()
+  this.events()
 }
 
 CommentaryUtil.prototype._resize = function() {
@@ -91,7 +85,7 @@ CommentaryUtil.prototype.events = function() {
 
   $('button.commentary-activate').click(function(ev) {
     var rvf = $(ev.delegateTarget).attr('id')
-
+    
     if (that._active == rvf) {
       that.deactivate()
       that._resize()
@@ -105,7 +99,6 @@ CommentaryUtil.prototype.events = function() {
 
   $('div.commentary header button.close').click(function(ev) {
     that.deactivate()
-    window.location.hash = '_'
     that._resize()
   })
 
@@ -128,7 +121,7 @@ CommentaryUtil.prototype.events = function() {
     var scrollTop = ev.target.scrollTop
 
     var filtered = that.navMeta.filter(function(i, el) {
-      return scrollTop >= el.top
+      return scrollTop >= (el.top - 10)
     })
 
     var active = filtered[filtered.length - 1]

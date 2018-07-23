@@ -91,7 +91,7 @@ a, a:link, a:visited {
 }
 
 a:hover {
-  background-color: rgba(155,24,30, .4);
+  background-color: rgba(155,24,30, .2);
 }
 
 /* line 36, ../sass/screen.scss */

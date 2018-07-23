@@ -731,7 +731,7 @@
           <xsl:apply-templates select="tei:note[@type='thematics']" mode="commentary"/>
         </section>
         <section id="{concat($rvfTarget,'_translation')}">
-          <xsl:apply-templates select="tei:div[@type='translation']" mode="commentary"/>
+          <xsl:apply-templates select="tei:note[@type='translation']" mode="commentary"/>
         </section>
       </main>
     </div>

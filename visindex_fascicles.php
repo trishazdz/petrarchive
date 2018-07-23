@@ -3,8 +3,16 @@
 <head>
 	<meta charset="utf-8" />
 	<title> Petrarchive: Visual Index to Vat. lat. 3195 </title>
-	<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	
+	<link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="js/jquery-ui/jquery-ui.min.css" />
 
+	
+	<link href="css/teibp.css" media="screen, projection" rel="stylesheet" type="text/css" />  
+	<link href="css/custom.css" media="screen, projection" rel="stylesheet" type="text/css" />  
+	<link href="css/auxillaryPage.css" media="screen, projection" rel="stylesheet" type="text/css" />      
+
+	<link rel="stylesheet" type="text/css" href="css/stylesheets/screen.css" />
 
 <!-- 	body {background-color:#251d03; margin:0;} 
 
@@ -13,21 +21,7 @@
 	
 	/* img {max-height:400px;max-width:291px;} */
 	
-	body {
-	/* width:900px; */
-	width:100%;
-	}
 	
-	#content {
-	max-width:100%;
-	}
-
-	
-	#visindex {
-	/* width:600px; */
-	min-width:2800px;
-	
-	}
 	#visindex div {
 	clear:both;
 	}
@@ -77,21 +71,14 @@
 	
 	
 	</style>
-		    <script type="text/javascript">
-<!--
-    function toggle_visibility(id) {
-       var e = document.getElementById(id);
-       if(e.style.display == 'block')
-          e.style.display = 'none';
-       else
-          e.style.display = 'block';
-    }
-//-->
-</script>
 </head>
 <body>
-<?php include("nav.html"); ?>
-<div id="content">
+<div id="content" class="container">
+	<header>
+		<?php include( "sticky_header.html"); ?>
+	</header>
+
+	<main class="row">
 
 	<h1>
 		A visual index to Petrarch's <cite>Rerum vulgarium fragmenta</cite>, Vat. Lat. 3195
@@ -162,7 +149,21 @@
 </div>
 		<!--<div class="page-spacer" style="margin-left:.3em; min-width:291px; min-height:400px" /> -->
 	</div>
+	</main>
+
 	</div>
-<?php include("footer.html"); ?>
+
+	<?php include "footer.html"; ?>
+
+<script src="https://use.fontawesome.com/57840704ee.js"></script>
+
+<script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="js/tether/tether.min.js"></script>
+<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+
+
+<script type="text/javascript" src="js/auxillary_page.js"></script>
 </body>
 </html>

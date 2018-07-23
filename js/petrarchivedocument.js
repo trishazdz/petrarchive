@@ -9,9 +9,14 @@ function PetrarchiveDocument(url, name) {
     this.url = '/' + name + '.xml'
   }
 
-  this.urlSplit = this.url.split('/')
-  this.doc = this.urlSplit[this.urlSplit.length - 1]
-  this.hash = this.doc.split('#')[1]
+  var urlSplit = this.url.split('/')
+
+  if (this.url.match(/#/)) {
+    this.hash = this.url.split('#')[1]
+    this.doc = urlSplit[urlSplit.length - 1].split('#')[0]
+  } else [
+    this.doc = urlSplit[urlSplit.length - 1]
+  ]
 
   this.name = this.doc.split('.')[0]
   this.chartae

@@ -269,7 +269,7 @@ footer {
   font-family: 'Helvetica Neue', 'Gill Sans', Helvetica, Arial, sans-serif;
   font-weight: 200;
   font-size: 8pt;
-  line-height: .75;
+  line-height: .75rem;
   clear: both;
 }
 
@@ -1605,6 +1605,7 @@ button {
 }
 
 #poem-textindex .modal-content thead {
+  z-index: 9999;
 }
 
 #poem-textindex .modal-content thead th {
@@ -1613,6 +1614,7 @@ button {
 
 #poem-textindex .modal-content tbody {
   position: relative;
+  z-index: 9998;
 }
 
 #poem-textindex .modal-content tr {

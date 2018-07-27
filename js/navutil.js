@@ -59,6 +59,8 @@ NavUtil.prototype.events = function() {
 NavUtil.prototype.navigateTo = function(href) {
   var that = this
 
+  console.log(href)
+
   var newDoc = new PetrarchiveDocument(href)
 
   if (util_browser.getParam("facs")) {
@@ -69,6 +71,8 @@ NavUtil.prototype.navigateTo = function(href) {
     }
   }
   
+  console.log(href)
+
   if (newDoc.name == this.current.name) {
     history.pushState({}, null, href)
     poemInit()
@@ -83,18 +87,39 @@ NavUtil.prototype.navigateTo = function(href) {
     function(res) {
       var xmlDoc = $.parseXML(res)
 
-      $.get('./petrarchive.xsl', function(xsl){
+      if (this.xsl) {
+        //TODO : Figure out why this still
+        //evokes extra network calls
+        applyXsl(this.xsl)
+      }
+      else {
+        $.get(
+          {
+            url: './petrarchive.xsl',
+            dataType: 'xml'
+          },
+          function(xsl){
+            that.xsl = xsl
+            applyXsl(xsl)
+          }
+        )
+      }
+
+      function applyXsl(xsl) {
         var result = new XSLTProcessor()
         result.importStylesheet(xsl)
         result = result.transformToDocument(xmlDoc)
 
-        var tei = $(result).find('#tei_wrapper tei')
-        $('#tei_wrapper tei').html(tei.html())
+        var tei = $(result).find('#tei_wrapper')
+
+        console.log(tei)
+        $('#tei_wrapper').html(tei.html())
         history.pushState({}, null, href)
         poemInit()
-      })
-  })
-  
+      }
+    }
+  )
+
 }
 
 NavUtil.prototype.setupPrevHref = function() {

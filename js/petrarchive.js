@@ -127,6 +127,8 @@ Petrarchive.prototype.refresh = function() {
   this.setupFacsThumb()
 
   this.commentary.refresh()
+
+  this.onResize()
 }
 
 Petrarchive.prototype.events = function() {
@@ -198,6 +200,8 @@ Petrarchive.prototype.setupFacsThumb = function() {
     var img = $($(ev.delegateTarget).children('img'))
     var charta = $(ev.delegateTarget).attr('data-charta')
 
+    console.log(ev, img, charta)
+
     that.activateFacs(img, charta)
   })
 
@@ -232,10 +236,6 @@ Petrarchive.prototype.setupFacsThumb = function() {
   if (this.facsIsActive) {
     $('button.facs-thumb')[0].click() 
   }
-
-  setTimeout(function() {
-    that.onResize()
-  }, 0)
 }
 
 Petrarchive.prototype.scrollTo = function(hash) {
@@ -252,11 +252,15 @@ Petrarchive.prototype.scrollTo = function(hash) {
 }
 
 Petrarchive.prototype.onResize = function() {
-    var headerHeight = this.header.outerHeight()
+  var that = this
+  setTimeout(function() { 
+    var headerHeight = that.header.outerHeight()
+    console.log(headerHeight)
     $('#pt-facs').css('top', headerHeight)
 
     var commentaryHeaderHeight = $('.commentary.active header').height()
     $('.commentary.active main').css('top', commentaryHeaderHeight * 1.2)
+  }, 0)
 }
 
 Petrarchive.prototype.getCurrentDoc = function() {
@@ -264,6 +268,7 @@ Petrarchive.prototype.getCurrentDoc = function() {
 }
 
 Petrarchive.prototype.activateFacs = function(img, charta) {
+  console.log(img, charta)
   if (charta == this.activeFacs) { 
     this.deactivateFacs()
     return 

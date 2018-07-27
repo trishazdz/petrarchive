@@ -94,6 +94,32 @@
 					  </div>
 					</div>
 				  </div>
+
+				  <section id="pt-facs" class="">
+					<div class="row">
+					<nav>
+						<button class="button meta">
+						
+						</button>
+
+						<button class="button zoom out">
+						<i class="fa fa-search-minus"></i>
+						</button>
+
+						<button class="button zoom in">
+						<i class="fa fa-search-plus"></i>
+						</button>
+
+						<button class="button new-tab">
+						<i class="fa fa-file-o"></i>
+						</button>
+
+						<button class="button facs-close">
+						<i class="fa fa-close"></i>
+						</button>
+					</nav>
+					</div>
+				</section>
 		      </div>
 
 

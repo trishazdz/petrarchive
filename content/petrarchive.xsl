@@ -205,32 +205,6 @@
         Powered by <a href="{$teibpHome}">TEI Boilerplate</a>.
       </footer>
 
-      <section id="pt-facs" class="">
-        <div class="row">
-          <nav>
-            <button class="button meta">
-              
-            </button>
-
-            <button class="button zoom out">
-              <i class="fa fa-search-minus"></i>
-            </button>
-
-            <button class="button zoom in">
-              <i class="fa fa-search-plus"></i>
-            </button>
-
-            <button class="button new-tab">
-              <i class="fa fa-file-o"></i>
-            </button>
-
-            <button class="button facs-close">
-              <i class="fa fa-close"></i>
-            </button>
-          </nav>
-        </div>
-      </section>
-
     </xsl:variable>
   
 <xd:doc><xd:desc>These lines get line numbers. Canzone is not regular.</xd:desc></xd:doc>

@@ -165,7 +165,7 @@
             </xsl:if>
 
             <script src="https://use.fontawesome.com/57840704ee.js"></script>
-
+            <!--
             <script type="text/javascript" src="{$jqueryJS}"></script>
 
             <script type="text/javascript" src="{$tetherJS}"></script>
@@ -175,9 +175,13 @@
             <script type="text/javascript" src="{$jqueryMW}"></script>
 
             <script type="text/javascript" src="{$knockout}"></script>
+            -->
 
             <script type="text/javascript" src="{$teibpJS}"><xsl:comment> </xsl:comment></script>
 
+            <script type="text/javascript" src="../dist/js/poem.bundle.js"></script>
+
+            <!--
             <script type="text/javascript" src="../js/utils/browser.js"><xsl:comment> </xsl:comment></script>
 
             <script type="text/javascript" src="../js/petrarchivedocument.js"><xsl:comment> </xsl:comment></script>
@@ -190,7 +194,7 @@
             <script type="text/javascript" src="../js/commentaryutil.js"><xsl:comment> </xsl:comment></script>
 
             <script type="text/javascript" src="../js/poem.js"><xsl:comment> </xsl:comment></script>
-
+            -->
         </head>
     </xsl:template>
     

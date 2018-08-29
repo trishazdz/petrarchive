@@ -56,6 +56,7 @@
 
 	<xsl:param name="jqueryBlockUIJS" select="concat($filePrefix,'/js/jquery/plugins/jquery.blockUI.js')"/>
 	<xsl:param name="teibpJS" select="concat($filePrefix,'/js/teibp.js')"/>
+
 	<xsl:param name="theme.default" select="concat($filePrefix,'/css/teibp.css')"/>
 	<xsl:param name="theme.sleepytime" select="concat($filePrefix,'/css/sleepy.css')"/>
 	<xsl:param name="theme.terminal" select="concat($filePrefix,'/css/terminal.css')"/>

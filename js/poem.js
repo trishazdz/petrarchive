@@ -1,14 +1,27 @@
+import $ from 'jquery'
+
+import 'bootstrap'
+
+import Petrarchive from './petrarchive'
+import util_browser from './utils/browser'
+
+let PT
+
 // This is the 'init'/bootstrap function that gets everything started
 $(document).ready(function() {
+  PT = new Petrarchive()
+
   poemInit()
+
+  // This takes care of loading xml and xslt document without 
+  // complete page refresh. Idea is taken from TurboLinks library
+  $(document).on('Petrarchive:async-load', () => {
+    poemInit()
+  })
 })
 
 function poemInit() {
-  if (!window.PT) {
-    window.PT = new Petrarchive()
-  } else {
-    window.PT.refresh()
-  }
+  PT.refresh()
 
   setupRvf()
 
@@ -25,29 +38,23 @@ function poemInit() {
   // by sticy header
   if (window.location.hash) {
     setTimeout(function() {
-     window.PT.scrollTo(window.location.hash)
-
-     var currentScroll = $('.content-container').scrollTop()
-
-    // $('.content-container').scrollTop(currentScroll - ($('#sticky-header').height() * 2))
+     PT.scrollTo(window.location.hash)
     }, 0)
   } else {
-    window.PT.scrollTo()
+    PT.scrollTo()
   }
 
   if (util_browser.getParam('ch')) {
-    var charta = util_browser.getParam('ch')
-
-    window.PT.scrollTo(charta)
+    let charta = util_browser.getParam('ch')
+    PT.scrollTo(charta)
   } 
 }
 
 
 
 function setupPageNum() {
-  var pageNum,
-      $pageNum = $('.-teibp-pageNum'),
-      pages = window.PT.nav.current.getChartae();
+  let pageNum,
+      pages = PT.nav.current.getChartae();
 
   if (pages.length == 1) {
     pageNum = 'charta ' + pages[0].getPrettyName()
@@ -60,8 +67,7 @@ function setupPageNum() {
 }
 
 function setupTextindex() {
-  var element = '#poem-textindex',
-      button = $('#page-nav .page-number'),
+  let element = '#poem-textindex',
       textindex = $(element);
     
   if (textindex.attr('data-loaded') && textindex.attr('data-events-loaded')) {
@@ -71,8 +77,7 @@ function setupTextindex() {
   if (!textindex.attr('data-events-loaded')) {
     // put this into petrarchive.xsl
     $.get('../textindex.html', function(html) {
-      var $html = $(html),
-          header = $html.children('header'),
+      let $html = $(html),
           table = $html.find('table');
 
       textindex.find('.modal-content').html('<table></table>')
@@ -80,12 +85,12 @@ function setupTextindex() {
 
       PT.convertUrl()
 
-      window.PT.nav.refresh()
+      PT.nav.refresh()
     })
 
     textindex.click(function(ev) {
       if (ev.target.localName == 'a') {
-        window.PT.nav.navigateTo($(ev.target).attr('href'))
+        PT.nav.navigateTo($(ev.target).attr('href'))
         ev.preventDefault()
       }
     })
@@ -94,126 +99,117 @@ function setupTextindex() {
   }
 
   $(element).on('shown.bs.modal', function () {
-    if (textindex.attr('data-loaded')) {
-      return
-    } 
+    if (textindex.attr('data-loaded'))
+      return;
 
     textindex.attr('data-loaded', true) 
 
-    var table = textindex.find('tbody')
+    let table = textindex.find('tbody')
 
     // Fix header and format it
-    var header = textindex.find('thead')
+    let header = textindex.find('thead')
     header.css('position', 'fixed')
       .css('background', 'white')
 
-    var columns = table.find('tr:first-child td')
+    let columns = table.find('tr:first-child td')
     
     columns.each(function(i, col) {
-      var child = i + 1
+      let child = i + 1
       header.find('th:nth-child(' + child + ')').css('width', $(col).width())
     })
 
     // Scroll to current active charta
-    var active = PT.nav.current.getChartaFirst().getPrettyNameTextindex()
+    let active = PT.nav.current.getChartaFirst().getPrettyNameTextindex()
     table.find('tr:first-child td').css('padding-top', header.height())
 
-    var trArray = table.children('tr').toArray()
-    var activeTr = trArray.find(function(tr) {
+    let trArray = table.children('tr').toArray()
+    let activeTr = trArray.find(function(tr) {
       let charta = $(tr).children('td:nth-child(2)')
       return charta.text() == String(active)
     })
 
-    var scrollTo = $(activeTr).offset().top - $(activeTr).height()
+    let scrollTo = $(activeTr).offset().top - $(activeTr).height()
     $('.modal-content').scrollTop(scrollTo)
   })
 }
 
 function applyStyling() {
   // Apply indent to lg[type='dblvrs'] first line when pillcrow is first character  
-  var lg = $("lg[type='dblvrs']")
+  let lg = $("lg[type='dblvrs']")
   lg.each(function(i, el) {
-    var l = el.querySelector('l')
-    var firstEl = l.querySelector('*')
+    let l = el.querySelector('l'),
+        hiFirstTest = recursiveSearch(l, 'hi');
 
-    var hiFirstTest = recursiveSearch(l, 'hi')
     if (hiFirstTest) { 
-      console.log(el)
       $(el).addClass('indent') 
 
-      if (el.querySelector('.pilcrow')) {
-        $(el).addClass('pilcrow')
-      }
+      if (el.querySelector('.pilcrow'))
+        $(el).addClass('pilcrow');
     }
   })
 
   // Apply indent to lg[type='trplvrs'] first line when pillcrow is first character  
-  var tripl = $("lg[type='trplvrs']")
+  let tripl = $("lg[type='trplvrs']")
   tripl.each(function(i, el) {
-    var l = el.querySelector('l')
-    var firstEl = l.querySelector('*')
+    let l = el.querySelector('l'),
+        hiFirstTest = recursiveSearch(l, 'hi');
 
-    var hiFirstTest = recursiveSearch(l, 'hi')
     if (hiFirstTest) { 
-      console.log(el)
       $(el).addClass('indent')
       
-      if (el.querySelector('.pilcrow')) {
-        $(el).addClass('pilcrow')
-      }
+      if (el.querySelector('.pilcrow'))
+        $(el).addClass('pilcrow');
     }
   })
 
   // Apply indent to l in sestina when pillcrow/h1 first character
-  var sestinaL = $("lg[type='sestina'] l")
+  let sestinaL = $("lg[type='sestina'] l")
   sestinaL.each(function(i, el) {
-    var hiFirstTest = recursiveSearch(el, 'hi')
+    let hiFirstTest = recursiveSearch(el, 'hi')
     if (hiFirstTest) { 
       $(el).addClass('indent') 
 
-      if (el.querySelector('.pilcrow')) {
-        $(el).addClass('pilcrow')
-      }
+      if (el.querySelector('.pilcrow'))
+        $(el).addClass('pilcrow');
     }
   })
 
   //Custom blank/white space 
-  var blankSpace = $("space[ana='#space-stop']"),
+  let blankSpace = $("space[ana='#space-stop']"),
       blankSpaceExtent = blankSpace.attr('extent');
     
   blankSpace.css('height', (blankSpaceExtent * 1.8) + 'em')
-
 }
 
 function recursiveSearch(el, type) {
-  if (!el) { return null }
+  if (!el)
+    return null;
 
   type = type.toUpperCase()
 
   //is the first tag/element within the provided el 
   // of the type desired
-  var typeReg = new RegExp("^<" + type, "i"),
+  let typeReg = new RegExp("^<" + type, "i"),
       firstMatch = el.innerHTML.match(typeReg); 
 
-  if (firstMatch) {
-    return firstMatch
-  }
+  if (firstMatch) 
+    return firstMatch;
 
-  var firstEl = el.querySelector('*')
+  let firstEl = el.querySelector('*')
 
-  if (!firstEl) { 
-    return null
-  }
+  if (!firstEl)
+    return null;
 
   return recursiveSearch(firstEl, type)
 }
 
 function setupRvf() {
-  if (util_browser.getParam('incomplete')) { return }
+  if (util_browser.getParam('incomplete')) 
+    return;
 
-  var rvf = $('lg[n]')
-  var min = $(rvf[0]).attr('n')
-  var max = $(rvf[rvf.length-1]).attr('n')
+  let rvf = $('lg[n]'),
+      min = $(rvf[0]).attr('n'),
+      max = $(rvf[rvf.length-1]).attr('n');
   
   $('.rvf-range').text('Rvf ' + min + '-' + max)
 }

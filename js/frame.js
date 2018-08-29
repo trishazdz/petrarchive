@@ -1,3 +1,17 @@
+import $ from 'jquery'
+
+import 'jquery-ui/themes/base/core.css'
+import 'jquery-ui/themes/base/resizable.css'
+import 'jquery-ui/themes/base/draggable.css'
+import 'jquery-ui/themes/base/theme.css'
+import 'jquery-ui/ui/core'
+import 'jquery-ui/ui/widgets/resizable'
+import 'jquery-ui/ui/widgets/draggable'
+
+import util_browser from './utils/browser'
+
+export default Frame
+
 function Frame(params) {
   var that = this
 
@@ -7,7 +21,7 @@ function Frame(params) {
     this.loadImg(params.img)
   }
 
-  this_activated = false
+  this._activated = false
   if (params.frame) {
     this.activate(params.frame)
   }
@@ -76,9 +90,7 @@ Frame.prototype.events = function() {
     if (!that._explorable) {
       return
     }
-
-    var direction = ev.deltaY < 0 ? 'down' : 'up'
-    console.log(direction)
+    var direction = ev.originalEvent.deltaY < 0 ? 'down' : 'up'
     var zoom = that._zoom
 
     if (direction == 'up') {
@@ -115,13 +127,17 @@ Frame.prototype.events = function() {
 }
 
 Frame.prototype.loadImg = function(img) {
-  if (img instanceof jQuery) {
+  if (img instanceof $) {
+    console.log('instance of')
     this.$img = img
     this.img = this.$img[0]
   } else {
+    console.log('not instance of')
     this.img = img
     this.$img = $(this.img)
   }
+
+  console.log(this)
 
   var src = this.getImgSrc()
 

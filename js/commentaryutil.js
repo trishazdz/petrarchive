@@ -1,3 +1,6 @@
+import $ from 'jquery'
+
+export default CommentaryUtil
 
 function CommentaryUtil() {
   var that = this

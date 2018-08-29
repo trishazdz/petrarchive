@@ -1,10 +1,14 @@
-// In the near-future, once John and I are more 
-// in flow of collaborating, I will suggest that we use 
-// ES6 Javascript, which will allow for ES6 modules instead of 
-// Loading scripts the old way and sticking everything in one file
+import $ from 'jquery'
+import Frame from './frame'
+
+import NavUtil from './navutil'
+import CommentaryUtil from './commentaryutil'
+
+import util_browser from './utils/browser'
+
+export default Petrarchive
 
 function Petrarchive() {
-  var that = this
   this.inited = false
   this.activeFacs = undefined
 
@@ -19,9 +23,7 @@ function Petrarchive() {
 
   this.init()
 
-  this.toggleElement = function(node, id, display) {
-    console.log(node,id,display)
-    
+  this.toggleElement = function(node, id, display) {    
     // If display parameter not supplied then go with default jQuery.toggle()
     if (!display) 
       $('#' + id).toggle()
@@ -30,29 +32,27 @@ function Petrarchive() {
   }
 
   this.switchCustomCSS = function (theme) {
-    var dict = {
+    let  dict = {
       diplomatic: '../css/custom.css',
       edited: '../css/custom_norm.css'
     }
 
-    var stylesheet = dict[theme]
+    let stylesheet = dict[theme]
     document.getElementById('customcss').href=stylesheet
   }
 }
 
 Petrarchive.prototype.init = function() {
-  var that = this
+  const that = this
 
-  if (this.inited) {return}
+  if (this.inited)
+    return;
   
   this.inited = true
 
-  if (window.NavUtil) {
-    this.nav = new NavUtil()
-  }
-  if (window.CommentaryUtil) {
-    this.commentary = new CommentaryUtil()
-  }
+  this.nav = new NavUtil()
+  this.commentary = new CommentaryUtil()
+  
 
   this.convertUrl()
 
@@ -68,8 +68,8 @@ Petrarchive.prototype.init = function() {
     recenter: false
   })
 
-  var facs = this.facs
-  var facsNav = $('#pt-facs nav')
+  let facs = this.facs,
+      facsNav = $('#pt-facs nav');
 
   this.setupFacsThumb()
 
@@ -89,30 +89,26 @@ Petrarchive.prototype.init = function() {
     }
   )
 
-  var facsNav = $('#pt-facs nav')
-
   facsNav.children('button.zoom').click(function(ev) {
-    var tgt = $(ev.delegateTarget)
+    let  tgt = $(ev.delegateTarget)
     tgt.hasClass('in') ? facs.zoomImg(facs._zoom + .03) : facs.zoomImg(facs._zoom - .02)
     ev.stopPropagation()
   })
 
   facsNav.children('button.new-tab').click(function(ev) {
     // teibp.js TODO : transfer this somewhere else
-    var r = confirm("Facsimile will open in a new tab. Is that okay?");
+    let r = confirm("Facsimile will open in a new tab. Is that okay?");
 
-    if (r == true) {
-      showFacs()
-    } else {
-      return
-    }
+    if (r == true)
+      showFacs();
+    else
+      return;
   })
 
   facsNav.children('button.facs-close').click(function(ev) {
     that.deactivateFacs()
   })
 
-  var that = this
   $(window).resize(function() {
     that.onResize()
   })
@@ -121,8 +117,6 @@ Petrarchive.prototype.init = function() {
 }
 
 Petrarchive.prototype.refresh = function() {
-  var that = this
-
   this.nav.refresh()
   this.setupFacsThumb()
 
@@ -132,7 +126,6 @@ Petrarchive.prototype.refresh = function() {
 }
 
 Petrarchive.prototype.events = function() {
-  var that = this
 
 }
 
@@ -141,16 +134,15 @@ Petrarchive.prototype.convertUrl = function() {
   // relative and absolute urls not working
   // because sometimes we use same html url from root
   // othertimes in /content directory
-  var isContentDirectory = location.href.search(/content/i)
+  let isContentDirectory = location.href.search(/content/i)
 
-  if (isContentDirectory == -1) {
-    return
-  }
+  if (isContentDirectory == -1)
+    return;
 
-  var links = $('.convert-url a')
+  let links = $('.convert-url a')
       
   links.toArray().forEach(function(el) {
-    var old = el.getAttribute('href')
+    let old = el.getAttribute('href')
     el.setAttribute('href', '../' + old)
   })
   
@@ -159,27 +151,26 @@ Petrarchive.prototype.convertUrl = function() {
 
 Petrarchive.prototype.setupFacsThumb = function() {
   // Refresh the facs button and img
-  var cloned = $($('.facs-thumb')[0])
+  let cloned = $($('.facs-thumb')[0])
   $('.facs-thumb').remove()
 
   cloned.removeClass('activeFacs').removeClass('activePb')
   $('#teibpToolbox').append(cloned)
 
   if (util_browser.getParam('incomplete')) {
-    var baseDir = "../images/thumb-vat-lat3195-f/vat-lat3195-f-"
-    var ch = this.getCurrentDoc().getChartaFirst().charta
-    var rv = this.getCurrentDoc().getChartaLast().rv
-
-    var facsSrc = baseDir + ch + rv + ".jpg"
+    let baseDir = "../images/thumb-vat-lat3195-f/vat-lat3195-f-",
+        ch = this.getCurrentDoc().getChartaFirst().charta,
+        rv = this.getCurrentDoc().getChartaLast().rv,
+        facsSrc = baseDir + ch + rv + ".jpg";
 
     $('#sticky-header .facs-thumb img').attr('src', facsSrc)
   } else {
     // Setup the sticky header
-    var thumb = $('.-teibp-thumbnail')
-    var thumbCount = thumb.length
+    let thumb = $('.-teibp-thumbnail'),
+        thumbCount = thumb.length;
 
-    for (var i = 0; i < thumbCount; i++) {
-      var imgSrc = $(thumb[i]).attr('src')
+    for (let i = 0; i < thumbCount; i++) {
+      let imgSrc = $(thumb[i]).attr('src')
 
       if (i==0) {
         $('#sticky-header .facs-thumb img').attr('src', imgSrc)
@@ -194,13 +185,11 @@ Petrarchive.prototype.setupFacsThumb = function() {
     }
   }
 
-  var that = this
+  let that = this
 
   $('button.facs-thumb').click(function(ev) {
-    var img = $($(ev.delegateTarget).children('img'))
-    var charta = $(ev.delegateTarget).attr('data-charta')
-
-    console.log(ev, img, charta)
+    let img = $($(ev.delegateTarget).children('img')),
+        charta = $(ev.delegateTarget).attr('data-charta');
 
     that.activateFacs(img, charta)
   })
@@ -209,20 +198,20 @@ Petrarchive.prototype.setupFacsThumb = function() {
     $('.-teibp-pb:first-child').css('display', 'initial')
 
     // scroll to the pertinent chartae
-    var pageBreaks = $.makeArray($('.-teibp-pageNum').map(function(i, el) {
+    let pageBreaks = $.makeArray($('.-teibp-pageNum').map(function(i, el) {
       // must account for the the Y length that fixed header obscures
       return el.offsetTop - that.header.height() - $(el).height()
     }))
 
-    var debouncedPbActivate = util_browser.debounce(function(ev) {
-      var scrollTop = $(ev.delegateTarget).scrollTop()
+    let debouncedPbActivate = util_browser.debounce(function(ev) {
+      let scrollTop = $(ev.delegateTarget).scrollTop()
 
     
-      var filteredPbs = pageBreaks.filter(function(pb) {
+      let filteredPbs = pageBreaks.filter(function(pb) {
         return scrollTop > pb
       })
 
-      var activePbsIndex = filteredPbs.length - 1
+      let activePbsIndex = filteredPbs.length - 1
 
       $('button.facs-thumb').removeClass('activePb')
       $($('button.facs-thumb')[activePbsIndex]).addClass('activePb')
@@ -252,13 +241,12 @@ Petrarchive.prototype.scrollTo = function(hash) {
 }
 
 Petrarchive.prototype.onResize = function() {
-  var that = this
+  let that = this
   setTimeout(function() { 
-    var headerHeight = that.header.outerHeight()
-    console.log(headerHeight)
+    let headerHeight = that.header.outerHeight()
     $('#pt-facs').css('top', headerHeight)
 
-    var commentaryHeaderHeight = $('.commentary.active header').height()
+    let commentaryHeaderHeight = $('.commentary.active header').height()
     $('.commentary.active main').css('top', commentaryHeaderHeight * 1.2)
   }, 0)
 }
@@ -268,11 +256,8 @@ Petrarchive.prototype.getCurrentDoc = function() {
 }
 
 Petrarchive.prototype.activateFacs = function(img, charta) {
-  console.log(img, charta)
-  if (charta == this.activeFacs) { 
-    this.deactivateFacs()
-    return 
-  }
+  if (charta == this.activeFacs)
+    return this.deactivateFacs();
 
   this.facs.loadImg(img)
   
@@ -286,9 +271,8 @@ Petrarchive.prototype.activateFacs = function(img, charta) {
   $('button.facs-thumb').removeClass('activeFacs')
   $('button.facs-thumb[data-charta="' + charta + '"]').addClass('activeFacs')
 
-  if (!this.facsInited) {
-    this.facs.containImg()
-  }
+  if (!this.facsInited)
+    this.facs.containImg();
 
   this.facsInited = true
   this.facsIsActive = true
@@ -310,11 +294,10 @@ Petrarchive.prototype.deactivateFacs = function() {
 }
 
 Petrarchive.prototype.showHide = function(maniculeId, idToShow, idToHide) {
-  var hide = "#" + idToHide;
-  var show = "#" + idToShow;
-  var manicule = "#" + maniculeId;
-
-  var n = $(hide).attr("n") || $(show).attr("n")
+  let hide = "#" + idToHide,
+      show = "#" + idToShow,
+      manicule = "#" + maniculeId,
+      n = $(hide).attr("n") || $(show).attr("n");
 
 
   $(hide).siblings('.poem-number').text(n)
@@ -325,6 +308,6 @@ Petrarchive.prototype.showHide = function(maniculeId, idToShow, idToHide) {
   $(show).css("display","block")
     .siblings().css("display", "block");
 
-  var newFunction = "PT.showHide('" + maniculeId + "','" + idToHide + "','" + idToShow + "');";
+  let newFunction = "PT.showHide('" + maniculeId + "','" + idToHide + "','" + idToShow + "');";
   $(manicule).attr("onclick", newFunction);
 }

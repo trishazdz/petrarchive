@@ -1,7 +1,7 @@
 # Petrarchive Javascript - How the poems operate
 
 ### poem.js - /js/poem.js
-This is equivalent to what many applications call 'app.js' or 'main.js'. All functionality needed by  the poem page is located and 'run' here. a new Petrarchive object is inited and set to the global scope as PT like so: `window.PT = new Petrarchive()`
+This is equivalent to what many applications call 'app.js' or 'main.js'. All functionality needed by  the poem page is located and 'run' here. a new Petrarchive object is inited and set to the global scope as PT like so: `PT = new Petrarchive()`
 
 One other thing poem.js does is to setup functionality related to the sticky-header.
 ###### Vendor Dependencies

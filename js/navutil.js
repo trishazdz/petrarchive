@@ -1,3 +1,11 @@
+import $ from 'jquery'
+import ko from 'knockout'
+
+import util_browser from './utils/browser'
+import PetrarchiveDocument from './petrarchivedocument'
+
+export default NavUtil
+
 function NavUtil() {  
   if (util_browser.getParam('incomplete')) {
     this.current = new PetrarchiveDocument(undefined, util_browser.getParam('ch'))
@@ -20,26 +28,26 @@ NavUtil.prototype.refresh = function() {
     this.current = new PetrarchiveDocument(document.URL)
   }
 
-  this.next.attr('href', this.setupNextHref())
-  this.previous.attr('href', this.setupPrevHref())
+  this.setupPrevHref()
+  this.setupNextHref()
 
   this.next.removeClass('hide')
   this.previous.removeClass('hide')
 }
 
 NavUtil.prototype.events = function() {
-  var that = this
+  const that = this
 
   $('.themeBox label').click(function(ev) {
-    var newValue = $(ev.delegateTarget).children('input').attr('value')
+    let newValue = $(ev.delegateTarget).children('input').attr('value')
     that._theme(newValue)
 
-    var dict = {
+    let dict = {
       diplomatic: '../css/custom.css',
       edited: '../css/custom_norm.css'
     }
 
-    var stylesheet = dict[that._theme()]
+    let stylesheet = dict[that._theme()]
     document.getElementById('customcss').href=stylesheet
   })
 
@@ -57,11 +65,9 @@ NavUtil.prototype.events = function() {
 }
 
 NavUtil.prototype.navigateTo = function(href) {
-  var that = this
+  const that = this
 
-  console.log(href)
-
-  var newDoc = new PetrarchiveDocument(href)
+  let newDoc = new PetrarchiveDocument(href)
 
   if (util_browser.getParam("facs")) {
     if (newDoc.hash) {
@@ -71,11 +77,10 @@ NavUtil.prototype.navigateTo = function(href) {
     }
   }
   
-  console.log(href)
-
   if (newDoc.name == this.current.name) {
     history.pushState({}, null, href)
-    poemInit()
+    $(document).trigger('Petrarchive:async-load')
+
     return
   }
 
@@ -85,7 +90,8 @@ NavUtil.prototype.navigateTo = function(href) {
       dataType: 'text'
     }, 
     function(res) {
-      var xmlDoc = $.parseXML(res)
+
+      let xmlDoc = $.parseXML(res)
 
       if (this.xsl) {
         //TODO : Figure out why this still
@@ -106,16 +112,15 @@ NavUtil.prototype.navigateTo = function(href) {
       }
 
       function applyXsl(xsl) {
-        var result = new XSLTProcessor()
+        let result = new XSLTProcessor()
         result.importStylesheet(xsl)
         result = result.transformToDocument(xmlDoc)
 
-        var tei = $(result).find('#tei_wrapper')
+        let tei = $(result).find('#tei_wrapper')
 
-        console.log(tei)
         $('#tei_wrapper').html(tei.html())
         history.pushState({}, null, href)
-        poemInit()
+        $(document).trigger('Petrarchive:async-load')
       }
     }
   )
@@ -123,7 +128,7 @@ NavUtil.prototype.navigateTo = function(href) {
 }
 
 NavUtil.prototype.setupPrevHref = function() {
-  var firstCh = this.current.getChartaFirst()
+  let firstCh = this.current.getChartaFirst()
 
   if (firstCh.charta == '001' && firstCh.rv == 'r') {
     this.previous.attr('disabled', true)
@@ -133,29 +138,35 @@ NavUtil.prototype.setupPrevHref = function() {
     this.previous.removeAttr('disabled')
   }
 
-  var prevName = firstCh.getPrevCh()
-
-  var regex = new RegExp(prevName)
-
-  var links = $('#poem-textindex tbody tr td:first-child a').toArray()
-  var prevLink = links.find(function(a) {
-    var href = $(a).attr('href')
+  let prevName = firstCh.getPrevCh(),
+      regex = new RegExp(prevName),
+      links = $('#poem-textindex tbody tr td:first-child a').toArray();
+    
+  let prevLink = links.find(function(a) {
+    let href = $(a).attr('href')
     return regex.test(href)
   })
 
-  return $(prevLink).attr('href')
+  let href = $(prevLink).attr('href') 
+
+  this.previous.attr('href', href)
 }
 
 NavUtil.prototype.setupNextHref = function() {
-  var nextName = this.current.getChartaLast().getNextCh()
-  var regex = new RegExp(nextName)
+  let nextName = this.current.getChartaLast().getNextCh(),
+      regex = new RegExp(nextName),
+      links = $('#poem-textindex tbody tr td:first-child a').toArray();
+  
+      console.log(links)
 
-  var links = $('#poem-textindex tbody tr td:first-child a').toArray()
-  var nextLink = links.find(function(a) {
-    var href = $(a).attr('href')
+  let nextLink = links.find(function(a) {
+    let href = $(a).attr('href')
+    //console.log(href, regex.test(href))
     return regex.test(href)
   })
 
-  return $(nextLink).attr('href')
+  let href = $(nextLink).attr('href')
+
+  this.next.attr('href', href)
 }
 

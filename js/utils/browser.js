@@ -1,4 +1,6 @@
-var util_browser = {
+import $ from 'jquery'
+
+let util_browser = {
 	getParameterByName: function(name, url) {
 	    if (!url) url = window.location.href;
 
@@ -115,3 +117,5 @@ var util_browser = {
 		}
 	}
 }
+
+export default util_browser

@@ -1,3 +1,6 @@
+import $ from 'jquery'
+
+export default PetrarchiveDocument
 
 function PetrarchiveDocument(url, name) {
   if (url) {
@@ -9,7 +12,7 @@ function PetrarchiveDocument(url, name) {
     this.url = '/' + name + '.xml'
   }
 
-  var urlSplit = this.url.split('/')
+  let urlSplit = this.url.split('/')
 
   if (this.url.match(/#/)) {
     this.hash = this.url.split('#')[1]
@@ -31,7 +34,7 @@ function PetrarchiveDocument(url, name) {
 }
 
 PetrarchiveDocument.prototype.setupChartae = function() {
-  var splitNames = this.name.split('-') //[0].substring(1,4)
+  let splitNames = this.name.split('-') //[0].substring(1,4)
   if (splitNames.length > 1) {
     this.chartae = [
       new Charta(splitNames[0]), 
@@ -55,9 +58,7 @@ PetrarchiveDocument.prototype.getChartaLast = function() {
 
 // Get the charta and rvf in accordance to the textindex format
 PetrarchiveDocument.prototype.getChartaTextindex = function() {
-  var formatted,
-      hasMultipleCh = Array.isArray(this.charta);
-  
+  let formatted  
  
   return formatted
 } 
@@ -68,7 +69,7 @@ function Charta(ch) {
 }
 
 Charta.prototype.getPrettyName = function() {
-  var charta = this.charta.replace(/^0+/, ''),
+  let charta = this.charta.replace(/^0+/, ''),
       prettyRV;
 
   if (this.rv == 'r') {
@@ -85,8 +86,7 @@ Charta.prototype.getPrettyNameTextindex = function() {
 }
 
 Charta.prototype.getNextCh = function() {
-  var nextCh, nextRV, nextName, nextDoc;
-  var current;
+  let nextCh, nextRV, nextName;
 
   if (this.rv == 'r') {
     nextRV = 'v'
@@ -99,14 +99,14 @@ Charta.prototype.getNextCh = function() {
   }
 
   // Then convert nextCh back to string with 3 decimal places
-  var s = "00" + nextCh
+  let s = "00" + nextCh
   nextName = s.substr(s.length - 3) + nextRV
 
   return nextName
 }
 
 Charta.prototype.getPrevCh = function() {
-  var prevCh, prevRV, prevName, prevDoc;
+  let prevCh, prevRV, prevName;
 
   if (this.rv == 'r') {
     prevRV = 'v'
@@ -117,7 +117,7 @@ Charta.prototype.getPrevCh = function() {
   }
 
   // Then convert nextCh back to string with 3 decimal places
-  s = "00" + prevCh
+  let s = "00" + prevCh
   prevName = s.substr(s.length - 3) + prevRV
 
   return prevName

@@ -311,6 +311,7 @@ footer {
   background: #e8e3e3;
   margin: 0;
   width: initial;
+  box-shadow: 0 50vh 0 50vh #e8e3e3;
 }
 
 #petrarchive-footer a {

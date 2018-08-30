@@ -14,7 +14,7 @@ nav #smallbanner {
 		max-width: 4.1%;}
 }
 .no-file {opacity: .4;}
-.ui-tooltip {opacity: 1; max-width: 160px; background-color: white;}
+.ui-tooltip {opacity: 1; max-width: 160px !important; background-color: white;}
 
 .ui-tooltip img.facs {width:100%;}
 .ui-widget-shadow {background: white;}

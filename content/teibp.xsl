@@ -133,6 +133,10 @@
 					</div>
 				</div>
 			  </div>
+
+			  <!-- #shadow-data will hold data we need to query via javascript, 
+			  	but we don't want visible to users -->
+			  <div id="shadow-data" style="display: none"></div>
 	
 			</body>
 		</html>

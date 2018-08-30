@@ -7,6 +7,16 @@ import PetrarchiveDocument from './petrarchivedocument'
 export default NavUtil
 
 function NavUtil() {  
+  // fetch and store vizindex.html data in #shadow-data
+  // Then we can query this list of links to compute prev/next hrefs.
+  $.get('../vizindex.html', function(html) {
+    let vizindex = $('<div class="vizindex convert-url"></div>')
+    vizindex.appendTo('#shadow-data')
+    vizindex.append(html)
+
+    util_browser.convertUrl('content')
+  })
+
   if (util_browser.getParam('incomplete')) {
     this.current = new PetrarchiveDocument(undefined, util_browser.getParam('ch'))
   } else {
@@ -132,20 +142,13 @@ NavUtil.prototype.setupPrevHref = function() {
 
   if (firstCh.charta == '001' && firstCh.rv == 'r') {
     this.previous.attr('disabled', true)
-
     return null
   } else {
     this.previous.removeAttr('disabled')
   }
 
   let prevName = firstCh.getPrevCh(),
-      regex = new RegExp(prevName),
-      links = $('#poem-textindex tbody tr td:first-child a').toArray();
-    
-  let prevLink = links.find(function(a) {
-    let href = $(a).attr('href')
-    return regex.test(href)
-  })
+      prevLink = $('#shadow-data .vizindex a[data-charta="' + prevName + '"]');
 
   let href = $(prevLink).attr('href') 
 
@@ -154,16 +157,7 @@ NavUtil.prototype.setupPrevHref = function() {
 
 NavUtil.prototype.setupNextHref = function() {
   let nextName = this.current.getChartaLast().getNextCh(),
-      regex = new RegExp(nextName),
-      links = $('#poem-textindex tbody tr td:first-child a').toArray();
-  
-      console.log(links)
-
-  let nextLink = links.find(function(a) {
-    let href = $(a).attr('href')
-    //console.log(href, regex.test(href))
-    return regex.test(href)
-  })
+      nextLink = $('#shadow-data .vizindex a[data-charta="' + nextName + '"]');
 
   let href = $(nextLink).attr('href')
 

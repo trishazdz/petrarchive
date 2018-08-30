@@ -9,8 +9,6 @@ let PT
 
 // This is the 'init'/bootstrap function that gets everything started
 $(document).ready(function() {
-  PT = new Petrarchive()
-
   poemInit()
 
   // This takes care of loading xml and xslt document without 
@@ -21,7 +19,10 @@ $(document).ready(function() {
 })
 
 function poemInit() {
-  PT.refresh()
+  if (PT) 
+    PT.refresh();
+  else 
+    PT = new Petrarchive()
 
   setupRvf()
 
@@ -83,7 +84,7 @@ function setupTextindex() {
       textindex.find('.modal-content').html('<table></table>')
       textindex.find('.modal-content table').append(table.html())
 
-      PT.convertUrl()
+      util_browser.convertUrl('content')
 
       PT.nav.refresh()
     })

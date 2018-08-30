@@ -9,6 +9,8 @@ function CommentaryUtil() {
 
   this.navMeta
 
+  this.inited = false
+
   this.init()
   this.events()
 
@@ -57,6 +59,8 @@ CommentaryUtil.prototype.init = function() {
 }
 
 CommentaryUtil.prototype.refresh = function() {
+  // check if we indeed need to refresh. On initial page load, we want to bypass,
+  // because this refresh function will be called from Petrarchive.refresh()
   $('body.commentary-active').removeClass('commentary-active')
   $('.content-container back.current').remove()
 

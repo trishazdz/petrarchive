@@ -54,7 +54,7 @@ Petrarchive.prototype.init = function() {
   this.commentary = new CommentaryUtil()
   
 
-  this.convertUrl()
+  util_browser.convertUrl('content')
 
   this.facsInited = false
 
@@ -127,26 +127,6 @@ Petrarchive.prototype.refresh = function() {
 
 Petrarchive.prototype.events = function() {
 
-}
-
-Petrarchive.prototype.convertUrl = function() {
-  // reformat URLs 
-  // relative and absolute urls not working
-  // because sometimes we use same html url from root
-  // othertimes in /content directory
-  let isContentDirectory = location.href.search(/content/i)
-
-  if (isContentDirectory == -1)
-    return;
-
-  let links = $('.convert-url a')
-      
-  links.toArray().forEach(function(el) {
-    let old = el.getAttribute('href')
-    el.setAttribute('href', '../' + old)
-  })
-  
-  $('.convert-url').removeClass('convert-url')
 }
 
 Petrarchive.prototype.setupFacsThumb = function() {

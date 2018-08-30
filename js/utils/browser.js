@@ -115,6 +115,27 @@ let util_browser = {
 			timeout = setTimeout(later, wait);
 			if (callNow) func.apply(context, args);
 		}
+	},
+
+	convertUrl: function(notRootDirectory) {
+		// reformat URLs 
+		// relative and absolute urls not working
+		// because sometimes we use same html url from root
+		// othertimes in /content directory
+		let regex = new RegExp(notRootDirectory, 'i')
+		let isNotRootDirectory = location.href.search(regex)
+	  
+		if (isNotRootDirectory == -1)
+		  return;
+	  
+		let links = $('.convert-url a')
+			
+		links.toArray().forEach(function(el) {
+		  let old = el.getAttribute('href')
+		  el.setAttribute('href', '../' + old)
+		})
+		
+		$('.convert-url').removeClass('convert-url')
 	}
 }
 

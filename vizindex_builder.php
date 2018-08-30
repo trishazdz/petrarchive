@@ -73,7 +73,7 @@ function writeHtml($file, $img, $charta) {
     $html .= '<img alt="';
     $html .= $charta;
     $html .= '" class="vi-img';
-    $html .= '" src="images/visindex/';
+    $html .= '" data-src="images/visindex/';
     $html .= $img . '" /></a>' . "\n";
 
     fwrite($fn, $html);

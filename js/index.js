@@ -1,46 +1,70 @@
-$(document).ready(function() {
-var $window = $(window),
-	$stickyHeader = $('header.sticky'),
-	$threshHold = $('#vizindex').offset().top;
+import $ from 'jquery'
 
-var debouncedStickyHeader = util_browser.debounce(function(ev) {	
-	var scroll = $window.scrollTop()
-	if (scroll >= $threshHold) {
-		$stickyHeader.removeClass('hide')
-		return
-	}
+import 'bootstrap'
+
+import 'jquery-ui/themes/base/core.css'
+import 'jquery-ui/themes/base/theme.css'
+import 'jquery-ui/themes/base/tooltip.css'
+import 'jquery-ui/ui/core'
+import 'jquery-ui/ui/widgets/tooltip'
+
+import util_browser from './utils/browser'
+
+$(document).ready(indexInit)
+
+// This function throttles the checking of the scrollposition to, once per 100ms
+const debouncedStickyHeader = util_browser.debounce(function($window, $threshHold, $stickyHeader) {	
+	let scroll = $window.scrollTop()
+	if (scroll >= $threshHold) 
+		return $stickyHeader.removeClass('hide')
+
 	$stickyHeader.addClass('hide')
 }, 100)
+	
+function indexInit() {
+	let $window = $(window),
+		$stickyHeader = $('header.sticky'),
+		$threshHold = $('#vizindex').offset().top;
 
-$(window).scroll(debouncedStickyHeader)
+	$(window).scroll(() => {
+		debouncedStickyHeader($window, $threshHold, $stickyHeader)
+	})
 
-$(document).tooltip({
-	items: $(".built-vizindex a"),
-   /* hide: {
-        effect: "explode",
-        delay: 30000
-      },*/
-    content: function() {
-    	var a = $( this )
-        var noFile = a.hasClass('no-file')
+	// Add on a facsimile preview tooltip functionality
+	$(document).tooltip({
+		items: $(".built-vizindex a"),
+	/* hide: {
+			effect: "explode",
+			delay: 30000
+		},*/
+		content: function() {
+			var a = $( this )
+			var noFile = a.hasClass('no-file')
 
-		var ch = a.find('img').attr('alt')
-		
-    	var facsSrc = '"images/thumb-vat-lat3195-f/vat-lat3195-f-' + ch + '.jpg"'
-    	var img = '<img class="facs" src=' + facsSrc + ' />' 
+			var ch = a.find('img').attr('alt')
+			
+			var facsSrc = '"images/thumb-vat-lat3195-f/vat-lat3195-f-' + ch + '.jpg"'
+			var img = '<img class="facs" src=' + facsSrc + ' />' 
 
-    	var prettyCh = prettify(ch)
-    	var p = '<p class="charta">' + prettyCh
+			var prettyCh = prettify(ch)
+			var p = '<p class="charta">' + prettyCh
 
-        if (noFile) {
-            p += ' <cite>Text encoding in progress</cite>'
-        }
+			if (noFile) {
+				p += ' <cite>Text encoding in progress</cite>'
+			}
 
-        p += '</p>'
-    	var html = p + img
-    	return html
-    }
-})
+			p += '</p>'
+			var html = p + img
+			return html
+		}
+	})
+
+	$('.built-vizindex img').each((i, el) => {
+		let src = $(el).attr('data-src')
+
+		$(el).attr('src', src)
+	})
+}
 
 function prettify(ugly) {
 	var base = 'charta' 
@@ -55,5 +79,3 @@ function prettify(ugly) {
 
 	return base + ' ' + noZero + ' ' + rv
 }
-
-})

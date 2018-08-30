@@ -214,6 +214,8 @@ Petrarchive.prototype.scrollTo = function(hash) {
   }
 
   setTimeout(function() {
+    if ($(hash).length == 0) return;
+
     $('.content-container').animate({
       scrollTop: $(hash).position().top
     }, 1200);

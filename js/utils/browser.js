@@ -136,6 +136,27 @@ let util_browser = {
 		})
 		
 		$('.convert-url').removeClass('convert-url')
+	},
+
+	turboXml: async function(url, xsl) {
+		let xmlDoc = await $.get({
+			url: url, 
+			dataType: 'xml'
+		})
+		let xslDoc
+
+		if (! util_browser.xslDoc) {
+			xslDoc = await $.get({
+				url: xsl,
+				dataType: 'xml'
+			})
+		} else {
+			xslDoc = util_browser.xslDoc
+		}
+
+		let result = new XSLTProcessor()
+		result.importStylesheet(xslDoc)
+		return result.transformToDocument(xmlDoc)
 	}
 }
 

@@ -28,6 +28,10 @@ function NavUtil() {
 
   this._theme = ko.observable('diplomatic')
 
+  // url to xslt Document we are using
+  this.xsl = './petrarchive.xsl'
+  this.xslDoc
+
   this.events()
 }
 
@@ -94,46 +98,13 @@ NavUtil.prototype.navigateTo = function(href) {
     return
   }
 
-  $.get(
-    {
-      url: href, 
-      dataType: 'text'
-    }, 
-    function(res) {
-
-      let xmlDoc = $.parseXML(res)
-
-      if (this.xsl) {
-        //TODO : Figure out why this still
-        //evokes extra network calls
-        applyXsl(this.xsl)
-      }
-      else {
-        $.get(
-          {
-            url: './petrarchive.xsl',
-            dataType: 'xml'
-          },
-          function(xsl){
-            that.xsl = xsl
-            applyXsl(xsl)
-          }
-        )
-      }
-
-      function applyXsl(xsl) {
-        let result = new XSLTProcessor()
-        result.importStylesheet(xsl)
-        result = result.transformToDocument(xmlDoc)
-
-        let tei = $(result).find('#tei_wrapper')
-
-        $('#tei_wrapper').html(tei.html())
-        history.pushState({}, null, href)
-        $(document).trigger('Petrarchive:async-load')
-      }
-    }
-  )
+  util_browser.turboXml(href, this.xsl).then(function(xmlResult) {
+    let tei = $(xmlResult).find('#tei_wrapper')
+		
+    $('#tei_wrapper').html(tei.html())
+    history.pushState({}, null, href)
+    $(document).trigger('Petrarchive:async-load')
+  })
 
 }
 

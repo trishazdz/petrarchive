@@ -99,9 +99,9 @@ NavUtil.prototype.navigateTo = function(href) {
   }
 
   util_browser.turboXml(href, this.xsl).then(function(xmlResult) {
-    let tei = $(xmlResult).find('#tei_wrapper')
+    let tei = $(xmlResult).find('#tei_wrapper #tei_main')
 		
-    $('#tei_wrapper').html(tei.html())
+    $('#tei_wrapper #tei_main').html(tei.html())
     history.pushState({}, null, href)
     $(document).trigger('Petrarchive:async-load')
   })

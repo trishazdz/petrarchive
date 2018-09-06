@@ -171,6 +171,48 @@ width:inherit;
 }
 
 
+/* petrarchve footer code: start */
+#petrarchive-footer {
+  font-size: .8em;
+  color: #623634;
+  padding: 1em 0;
+  background: #e8e3e3;
+  margin: 0;
+  width: initial;
+  box-shadow: 0 50vh 0 50vh #e8e3e3;
+}
+
+#petrarchive-footer h1 {
+  font-family: "helvetica neue", helvetica, verdana, arial, sans-serif;
+  font-weight: bold;
+  margin-top: .5em;
+  margin-bottom: 1em;
+  font-size: 100%;
+}
+
+#petrarchive-footer a {
+  text-decoration: none;
+  color: #9B181E;
+}
+
+#petrarchive-footer a:hover {
+  background: none;
+  text-decoration: underline;
+}
+
+#petrarchive-footer p {
+  margin-top: 0;
+  margin-bottom: .3em;
+}
+
+#petrarchive-footer section {
+  margin-bottom: 1em;
+}
+
+
+/* petrarchve footer code: end */
+
+
 /* Custom blank/whtie space 
     height is applied via JS -> 1.8 em per extent
     so space[extent='7'] = to 1.8em height
@@ -261,17 +303,7 @@ subst add {
   color: gray;
   vertical-align: baseline;
 }
-footer {
-  padding-top: 2em;
-  margin-top: 2.5em;
-  margin-bottom: 2em;
-  width: 700px;
-  font-family: 'Helvetica Neue', 'Gill Sans', Helvetica, Arial, sans-serif;
-  font-weight: 200;
-  font-size: 8pt;
-  line-height: .75rem;
-  clear: both;
-}
+
 
 .-teibp-pb:first-child {
   display: none;

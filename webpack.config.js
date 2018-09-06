@@ -5,7 +5,8 @@ module.exports = {
     mode: 'development',
     entry: {
         poem: './js/poem.js',
-        index: './js/index.js'
+        index: './js/index.js',
+        glossary: './js/glossary.js'
     },
    /* plugins: [
         new webpack.LoaderOptionsPlugin({

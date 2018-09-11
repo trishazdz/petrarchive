@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML system "about:legacy-compat">
 <html lang="en">
 <head>
@@ -56,7 +57,9 @@
       -->
     </aside>
 
-    <main class="row col-12 col-md-9 glossary">
+    <main class="row col-12 col-md-9 ml-auto glossary">
+      <header>
+      </header>
     </main>
   </main>
 

@@ -99,6 +99,7 @@ NavUtil.prototype.navigateTo = function(href) {
   }
 
   util_browser.turboXml(href, this.xsl).then(function(xmlResult) {
+    console.log(xmlResult)
     let tei = $(xmlResult).find('#tei_wrapper #tei_main')
 		
     $('#tei_wrapper #tei_main').html(tei.html())
@@ -122,6 +123,8 @@ NavUtil.prototype.setupPrevHref = function() {
       prevLink = $('#shadow-data .vizindex a[data-charta="' + prevName + '"]');
 
   let href = $(prevLink).attr('href') 
+  href = href.split('#')[0]
+
 
   this.previous.attr('href', href)
 }
@@ -131,6 +134,7 @@ NavUtil.prototype.setupNextHref = function() {
       nextLink = $('#shadow-data .vizindex a[data-charta="' + nextName + '"]');
 
   let href = $(nextLink).attr('href')
+  href = href.split('#')[0]
 
   this.next.attr('href', href)
 }

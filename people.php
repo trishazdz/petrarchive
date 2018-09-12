@@ -46,13 +46,17 @@
             </dl>
 
             <dl>
-            <dt>Olivia Wikle, Encoder (2016) <!-- 2016-present --></dt><dd />
+            <dt>Rebecca Parker, Encoder (2018) <!-- 2018-present --></dt><dd />
             </dl>
 
             <h2>Past Contributors</h2>
 
             <dl>
             <dt>Lino Mioni, Encoder (2016) <!-- 2016-present --></dt><dd />
+            </dl>
+
+			<dl>
+            <dt>Olivia Wikle, Encoder (2016) <!-- 2016-present --></dt><dd />
             </dl>
 
             <dl>

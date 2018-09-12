@@ -46,7 +46,7 @@
             </dl>
 
             <dl>
-            <dt>Rebecca Parker, Encoder (2018) <!-- 2018-present --></dt><dd />
+            <dt>Rebecca Parker, Encoder and Consultant <!-- 2018-present --></dt><dd />
             </dl>
 
             <h2>Past Contributors</h2>

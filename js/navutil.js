@@ -79,8 +79,6 @@ NavUtil.prototype.events = function() {
 }
 
 NavUtil.prototype.navigateTo = function(href) {
-  const that = this
-
   let newDoc = new PetrarchiveDocument(href)
 
   if (util_browser.getParam("facs")) {
@@ -99,7 +97,6 @@ NavUtil.prototype.navigateTo = function(href) {
   }
 
   util_browser.turboXml(href, this.xsl).then(function(xmlResult) {
-    console.log(xmlResult)
     let tei = $(xmlResult).find('#tei_wrapper #tei_main')
 		
     $('#tei_wrapper #tei_main').html(tei.html())

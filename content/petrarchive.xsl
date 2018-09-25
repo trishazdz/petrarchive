@@ -16,8 +16,6 @@
   <xsl:param name="pbNote" select="''"/>
   
   <xsl:param name="jqueryUICSS" select="concat($filePrefix, '/js/jquery-ui/jquery-ui.min.css')"/>
-  <xsl:param name="jqueryUI" select="concat($filePrefix,'/js/jquery-ui/jquery-ui.min.js')"/>
-  <xsl:param name="jqueryMW" select="concat($filePrefix,'/js/jquery-mousewheel/mousewheel.min.js')"/>  
 
 
   <xsl:param name="bootstrapCSS" select="concat(

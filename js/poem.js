@@ -8,7 +8,7 @@ import util_browser from './utils/browser'
 let PT
 
 // This is the 'init'/bootstrap function that gets everything started
-$(document).ready(function() {
+$(document).ready(function() {  
   poemInit()
 
   // This takes care of loading xml and xslt document without 
@@ -21,8 +21,10 @@ $(document).ready(function() {
 function poemInit() {
   if (PT) 
     PT.refresh();
-  else 
+  else {
     PT = new Petrarchive()
+    window.PT = PT
+  }
 
   setupRvf()
 

@@ -144,6 +144,8 @@ Petrarchive.prototype.setupFacsThumb = function() {
         facsSrc = baseDir + ch + rv + ".jpg";
 
     $('#sticky-header .facs-thumb img').attr('src', facsSrc)
+    
+    $('#sticky-header .facs-thumb').attr('data-charta', "charta " + this.getCurrentDoc().getChartaFirst().getPrettyName())
   } else {
     // Setup the sticky header
     let thumb = $('.-teibp-thumbnail'),
@@ -199,7 +201,6 @@ Petrarchive.prototype.setupFacsThumb = function() {
     
     $('.content-container').scroll(debouncedPbActivate)
   }
-
   this.facsIsActive = util_browser.getParam('facs') == 'active' ? true : false
 
   if (this.facsIsActive) {
@@ -238,6 +239,7 @@ Petrarchive.prototype.getCurrentDoc = function() {
 }
 
 Petrarchive.prototype.activateFacs = function(img, charta) {
+  console.log('foobar', img, charta)
   if (charta == this.activeFacs)
     return this.deactivateFacs();
 

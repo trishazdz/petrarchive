@@ -297,10 +297,14 @@
       insertIntoNav('main.instructions section', 'aside.nav', 'h1')
 
       $('aside.nav a').click(function(ev) {
+        $('aside.nav a').removeClass('active')
+
         var headerHeight = $('#sticky-header').height()
         setTimeout(function() {
           $(window).scrollTop($(window).scrollTop() - (headerHeight * 1.4))
         }, 10)
+
+        $(ev.delegateTarget).addClass('active') 
 
         // wait for click even to go through and then readjust the scroll 
         // so that the sticky header does not cover content

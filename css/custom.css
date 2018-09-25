@@ -118,6 +118,9 @@ a:hover {
   margin-top: 3em;
 }
 
+#tei_main {
+  margin-bottom: 3rem;
+}
 
 #tei_wrapper text {
   width: 1100px;
